@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
+source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
 
 ---
 
@@ -75,15 +75,10 @@ Naast de gebruikershandleiding kunt u de Software Development Kits (SDK&#39;s) d
 Native bibliotheken zijn beschikbaar voor de volgende platforms:
 
 * [Android SDK 4.x voor Experience Cloud-oplossingen](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-
 * [iOS SDK 4.x voor Experience Cloud-oplossingen](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-
 * [Unity Plug-in voor iOS en Android 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/unity/get-started.html)
-
 * [Xamarin Components for Experience Cloud Solutions 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/xamarin/get-started.html)
-
 * [Universal Windows Platform SDK 4.x voor Experience Cloud-oplossingen](https://docs.adobe.com/content/help/en/mobile-services/universal-windows/overview.html)
-
 * [Windows 8.1 Universal App Store](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/overview.html)
 
    * [Windows Visual Studio Extensions for Experience Cloud Solutions 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/win-vse-4x.html)
