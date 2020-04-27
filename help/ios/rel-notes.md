@@ -1,20 +1,29 @@
 ---
 description: Opmerkingen bij de release en bekende problemen met de iOS SDK's 4.x voor Experience Cloud Solutions.
 seo-description: Opmerkingen bij de release en bekende problemen met de iOS SDK's 4.x voor Experience Cloud Solutions.
-seo-title: Opmerkingen bij de release
+seo-title: Release-opmerkingen
 solution: Marketing Cloud,Analytics
-title: Opmerkingen bij de release
+title: Release-opmerkingen
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
 
-# Opmerkingen bij de release {#release-notes}
+# Release notes {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
+
+**24 maart 2020: Versie 4.19.2**
+
+* Algemeen - Bepaalde lekken in de doelcode zijn gecorrigeerd.
+
+**12 maart 2020: Versie 4.19.1**
+
+* Algemeen - lost een potentiële die botsing op wanneer de Swift nummers in contextgegevens voor het volgen van vraag worden veroorzaakt.
+* Doel - Doel - Doel-sessie-id wordt nu toegevoegd als contextegegevensparameter &quot;a.target.sessionId&quot; in de interne analyse voor doelhit die naar Adobe Analytics wordt verzonden.
 
 **4 februari 2020: Versie 4.19.0**
 
