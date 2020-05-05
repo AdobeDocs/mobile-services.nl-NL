@@ -7,7 +7,7 @@ title: Configuratie van Experience Cloud ID
 topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ De identiteitsservice van het Adobe Experience Platform biedt een universele bez
 
 >[!TIP]
 >
->U hoeft deze id alleen in te vullen met de Adobe Experience Platform Identity Service. Zie [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)voor meer informatie.
+>U hoeft deze id alleen in te vullen met de Adobe Experience Platform Identity Service. Zie [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)voor meer informatie.
 
 >[!IMPORTANT]
 >
