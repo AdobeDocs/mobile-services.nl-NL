@@ -7,7 +7,7 @@ title: Voordat u begint
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
-source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -49,7 +49,7 @@ U kunt zich op een van de volgende manieren aanmelden bij de gebruikersinterface
 
 ### Experience Cloud
 
-Meld u aan bij de [Experience Cloud](https://marketing.adobe.com) met uw Adobe-id. Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht in de Experience Cloud en dat u een koppeling hebt gemaakt naar uw account Analytics. Zie [Gebruikers en producten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)van Experience Cloud beheren voor meer informatie.
+Meld u aan bij de [Experience Cloud](https://experiencecloud.adobe.com) met uw Adobe-id. Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht in de Experience Cloud en dat u een koppeling hebt gemaakt naar uw account Analytics. Zie [Gebruikers en producten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)van Experience Cloud beheren voor meer informatie.
 
 >[!TIP]
 >
@@ -57,48 +57,48 @@ Meld u aan bij de [Experience Cloud](https://marketing.adobe.com) met uw Adobe-i
 
 ### Adobe Analytics
 
-Klik en ga uw het bedrijfsnaam van Analytics, uw gebruikersbenaming, en uw wachtwoord in. **[!UICONTROL Sign in with Analytics]**
+Klik op **[!UICONTROL Aanmelden met Analytics]** en voer uw bedrijfsnaam, gebruikersnaam en wachtwoord voor Analytics in.
 
 ## Een rapportsuite maken {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
 Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te definiëren:
 
 1. Meld u aan bij de gebruikersinterface voor mobiele services door [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in een browser te typen.
-1. Klik op **[!UICONTROL Create an App]**.
+1. Klik op **[!UICONTROL Een app]** maken.
 
-   Als deze knop niet wordt weergegeven, klikt u op **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
+   Als deze knop niet wordt weergegeven, klikt u op **[!UICONTROL Toepassingen]** beheren > **[!UICONTROL Toevoegen]**.
 
-1. In the **[!UICONTROL Report Suite]** drop-down, select **[!UICONTROL New Report Suite]**.
+1. Selecteer **[!UICONTROL Nieuwe rapportsuite]** in de vervolgkeuzelijst **[!UICONTROL Rapportsuite]**.
 
 1. Voer de naam van uw app in en selecteer een type rapportsuite.
 
    Een voorbeeld van een rapportsuite-id is `mycomobileappdev`. U moet afzonderlijke rapportsuite en apps instellen voor de ontwikkelings- en productieversies, zodat u deze stappen kunt herhalen wanneer u klaar bent om de productieversie in te stellen.
-1. Controleer **[!UICONTROL Report Suite ID]** in of de naam van de rapportsuite wordt weergegeven.
-1. Controleer **[!UICONTROL Copy Settings From]** in of **[!UICONTROL Mobile App Template]** is geselecteerd.
+1. Controleer in **[!UICONTROL Report Suite ID]** of de naam van uw rapportsuite wordt weergegeven.
+1. Controleer in Instellingen **[!UICONTROL kopiëren van]** of **[!UICONTROL Mobiele toepassingssjabloon]** is geselecteerd.
 
    Met deze sjabloon kunnen tijdstempels offline gegevens verzamelen en worden de variabelen van de mobiele oplossing geactiveerd om levenscyclusmetriek vast te leggen.
 
-1. Selecteer uw tijdzone, uw valuta en klik **[!UICONTROL Save]**.
+1. Selecteer uw tijdzone, uw valuta, en klik **[!UICONTROL sparen]**.
 
 ## De SDK downloaden {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 De mobiele SDK downloaden:
 
 1. Meld u aan bij de gebruikersinterface voor mobiele services door [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in een browser te typen.
-1. Klik in het linkerdeelvenster op de **[!UICONTROL All Apps]** vervolgkeuzelijst en selecteer uw app.
+1. Klik in het linkerdeelvenster op de vervolgkeuzelijst **[!UICONTROL Alle toepassingen]** en selecteer uw app.
 U kunt uw toepassing ook selecteren in het rechterdeelvenster.
 
    >[!IMPORTANT]
    >
    >Als u de app in het rechterdeelvenster wilt weergeven, moet u eerst een app maken. Zie Een nieuwe app [toevoegen voor informatie over het maken van een app.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
 
-1. Klik in het linkerdeelvenster van uw app op **[!UICONTROL Manage App Settings]**.
+1. Klik in het linkerdeelvenster van uw app op **[!UICONTROL Toepassingsinstellingen]** beheren.
 
    >[!IMPORTANT]
    >
-   >Als deze **[!UICONTROL Manage App Settings]** optie niet wordt weergegeven, moet u zich bij Adobe Mobile Services aanmelden. Om te verifiëren, klik het pictogram van de ![oplossingsschakelaar](assets/solution-switcher.png) in de hoogste juiste kant van de pagina en zorg ervoor dat in de bovenkant linkerkant **[!UICONTROL Adobe Mobile Services]** wordt getoond.
+   >Als de optie Toepassingsinstellingen **** beheren niet wordt weergegeven, controleert u of u bent aangemeld bij Adobe Mobile Services. Klik op het pictogram voor de ![oplossingsschakelaar](assets/solution-switcher.png) rechtsboven op de pagina en controleer of **[!UICONTROL Adobe Mobile Services]** linksboven wordt weergegeven.
 
-1. Download onder aan de pagina Toepassingsinstellingen beheren in de **[!UICONTROL App SDK Downloads]** sectie de SDK en de voorbeeldtoepassing voor uw platform.
+1. Download onder aan de pagina App Settings (Toepassingsinstellingen beheren) in de sectie **[!UICONTROL App SDK Downloads]** de SDK en de voorbeeldapp voor uw platform.
 
 >[!TIP]
 >
