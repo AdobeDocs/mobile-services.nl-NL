@@ -8,7 +8,7 @@ title: Vereisten voor het inschakelen van pushberichten
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
-source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -59,19 +59,19 @@ Elke gebruiker moet het account van de Analytics-oplossing koppelen vanuit de Ex
 
 1. Selecteer in de rechterbovenhoek de bedrijfsnaam Analytics.
 
-1. Klik **[!UICONTROL Add Organization]** en selecteer **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** van de drop-down lijst.
+1. Klik op Organisatie **** toevoegen en selecteer **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** in de vervolgkeuzelijst.
 
-1. Typ de bedrijfsnaam, uw gegevens van de nalatenschap voor het opgegeven bedrijf en klik op **[!UICONTROL Link Account]**.
+1. Typ de bedrijfsnaam, de gegevens van uw nalatenschap voor het opgegeven bedrijf en klik op **[!UICONTROL Koppelingsaccount]**.
 
    De Adobe-id is nu gekoppeld aan uw aanmeldingsgegevens voor uw account, bedrijf en account voor Analytics.
 
-Voor meer informatie, zie de Verbinding van de Rekening van het Oplossen van [problemen](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
+Voor meer informatie, zie de Verbinding van de Rekening van het Oplossen van [problemen](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Pushservices en de SDK ID-service configureren in de mobiele gebruikersinterface
 
-Voordat u de id-service voor uw app inschakelt, is de **[!UICONTROL Push Services]** sectie uitgeschakeld. Maar nadat u de dienst van identiteitskaart toelaat, wordt de sectie van de Diensten van de Duw toegelaten. Voor meer informatie over het toelaten van de dupdiensten, zie de dienstopties [van SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)vormen ID.
+Voordat u de id-service voor uw app inschakelt, is de sectie **[!UICONTROL Push Services]** uitgeschakeld. Maar nadat u de dienst van identiteitskaart toelaat, wordt de sectie van de Diensten van de Duw toegelaten. Voor meer informatie over het toelaten van de dupdiensten, zie de dienstopties [van SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)vormen ID.
 
->[!IMPORTANT]: U moet klikken **[!UICONTROL Save]** om uw wijzigingen op te slaan en de pushservices te vernieuwen.
+>[!IMPORTANT]: U moet op **[!UICONTROL Opslaan]** klikken om uw wijzigingen op te slaan en de pushservices te vernieuwen.
 >
 >U kunt in elke rapportsuite één app store-app configureren voor Apple en één voor Google. Als u aanvullende apps nodig hebt, bijvoorbeeld één voor een productieomgeving en één voor een ontwikkelomgeving, stelt u een nieuwe app store-app en een nieuwe rapportsuite in voor elke omgeving.
 
@@ -79,15 +79,15 @@ Voordat u de id-service voor uw app inschakelt, is de **[!UICONTROL Push Service
 
    * Sleep voor de **persoonlijke sleutel** het bestand met de persoonlijke sleutel naar het vak.
 
-      U kunt ook klikken **[!UICONTROL Browse]** om het bestand te selecteren. Dit bestand bevat de persoonlijke sleutel. Het certificaat kan ook in dit bestand worden opgenomen (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
+      U kunt ook op **[!UICONTROL Bladeren]** klikken om het bestand te selecteren. Dit bestand bevat de persoonlijke sleutel. Het certificaat kan ook in dit bestand worden opgenomen (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
    * Typ het wachtwoord als het bestand met de persoonlijke sleutel voor het wachtwoord **voor de** persoonlijke sleutel is versleuteld.
 
-      (Voorwaardelijk) Sleep voor het **certificaat** het certificaatbestand naar het vak. U kunt ook klikken **[!UICONTROL Browse]** om het bestand te selecteren. Dit veld is niet vereist als het bestand met de persoonlijke sleutel ook het certificaat bevat ( `.cert`, `.cer`, `.crt`, `.pem`).
+      (Voorwaardelijk) Sleep voor het **certificaat** het certificaatbestand naar het vak. U kunt ook op **[!UICONTROL Bladeren]** klikken om het bestand te selecteren. Dit veld is niet vereist als het bestand met de persoonlijke sleutel ook het certificaat bevat ( `.cert`, `.cer`, `.crt`, `.pem`).
 
 * Geef voor **Google** de API-sleutel voor de app op.
 
-   Klik **[!UICONTROL Test]** om te controleren of de app en de mobiele services correct zijn geconfigureerd. Deze optie is nuttig voor het zuiveren en het oplossen van problemen.
+   Klik op **[!UICONTROL Testen]** om te controleren of de app en de mobiele services correct zijn geconfigureerd. Deze optie is nuttig voor het zuiveren en het oplossen van problemen.
 
    Typ de pushtokens van het apparaat die u het bericht wilt verzenden. U kunt het bericht naar meerdere apparaten verzenden door tokens op te geven in een lijst met komma&#39;s als scheidingsteken.
 
