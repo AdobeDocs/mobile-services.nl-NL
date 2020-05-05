@@ -1,18 +1,18 @@
 ---
 description: Opmerkingen bij de release en bekende problemen met Android SDK 4.x voor Experience Cloud Solutions.
 seo-description: Opmerkingen bij de release en bekende problemen met Android SDK 4.x voor Experience Cloud Solutions.
-seo-title: Opmerkingen bij de release
+seo-title: Release-opmerkingen
 solution: Marketing Cloud,Analytics
-title: Opmerkingen bij de release
+title: Release-opmerkingen
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# Opmerkingen bij de release {#release-notes}
+# Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor Android SDK 4.x voor Experience Cloud Solutions:
 
@@ -47,4 +47,4 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 * De Dienst van identiteitskaart van de bezoeker - verhoogde verbind en lezingonderbreking van 2 seconden tot 5 seconden.
 
 
-Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij de huidige en vorige release voor alle oplossingen](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij de huidige en vorige release voor alle oplossingen](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
