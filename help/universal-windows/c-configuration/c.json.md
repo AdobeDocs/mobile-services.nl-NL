@@ -7,7 +7,7 @@ title: ADBMobileConfig.json config
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -40,7 +40,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **charset**
 
-   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html)voor meer informatie.
+   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
 
 * **ssl**
 
@@ -52,7 +52,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
    Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit `true`. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit zijn `false`.
 
-   Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de klantenservice als u niet zeker weet of een rapportenpakket geschikt is voor een tijdstempel. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die de `s.timestamp` variabele gebruiken.
+   Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de klantenservice als u niet zeker weet of een rapportenpakket is ingeschakeld. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die de `s.timestamp` variabele gebruiken.
 
    De standaardwaarde is `false`.
 
