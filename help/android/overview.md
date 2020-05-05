@@ -8,7 +8,7 @@ title: Android SDK 4.x voor Experience Cloud-oplossingen
 topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -49,11 +49,11 @@ Enkele informatie die u moet onthouden:
 
 ## Adobe Mobile-gebruikersdocumentatie {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile-services biedt een gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de Adobe Experience Cloud worden samengebracht. Zie [Adobe Mobile Services](https://marketing.adobe.com/resources/help/en_US/mobile/)voor meer informatie over de gebruikersinterface en de gebruikersdocumentatie.
+Adobe Mobile-services biedt een gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de Adobe Experience Cloud worden samengebracht. Zie [Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)voor meer informatie over de gebruikersinterface en de gebruikersdocumentatie.
 
-## Opmerkingen bij de release {#section_F8181DC052D44DD2A99AB40A41F6792C}
+## Releaseopmerkingen {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Zie Opmerkingen bij de release van de [Experience Cloud voor de meest recente informatie over Experience Cloud-releases](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+Zie Opmerkingen bij de release van de [Experience Cloud voor de meest recente informatie over Experience Cloud-releases](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 ## Bloedhond gebruiken
 
