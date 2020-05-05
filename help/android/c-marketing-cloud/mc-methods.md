@@ -8,7 +8,7 @@ title: Methoden van Adobe Experience Platform Identity Service
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -23,7 +23,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
 * **public static String appendToURL(final String URL)**
 
-   Hiermee voegt u gegevens van Adobe-bezoekers toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Hiermee voegt u gegevens van Adobe-bezoekers toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
