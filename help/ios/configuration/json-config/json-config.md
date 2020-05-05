@@ -7,7 +7,7 @@ title: ADBMobile JSON config
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -70,7 +70,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **charset**
 
-   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html)voor meer informatie.
+   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
 
    * Minimale SDK-versie: 4.0
 
@@ -272,7 +272,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
    * Minimale SDK-versie: 4.0
 
 
-## Voorbeeldbestand `ADBMobileConfig.json`{#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Voorbeeldbestand `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Here is a sample `ADBMobileConfig.json` file:
 
