@@ -7,12 +7,12 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# Release notes {#release-notes}
+# Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
 
@@ -62,11 +62,11 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * Analytics - Voeg de status van de push-optie toe aan de gegevens van de levenscyclus wanneer pushberichten zijn ingeschakeld.
 
-**24 mei 2019: Versie 4.18.4**
+**24 mei 2019: Versie 4.18.6**
 
 * Bezoekersidentiteitskaart de Dienst - verhoogde de terugkeeronderbreking voor
    `visitorGetUrlVariablesAsync` API tot 30 seconden.
 
 * De Dienst van identiteitskaart van de bezoeker - de `setPushIdentifier` API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
 
-Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij de huidige en vorige release voor alle oplossingen](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij de huidige en vorige release voor alle oplossingen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
