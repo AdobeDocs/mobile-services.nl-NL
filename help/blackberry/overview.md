@@ -5,7 +5,7 @@ seo-title: BlackBerry 10 SDK 4.x voor Experience Cloud-oplossingen
 title: BlackBerry 10 SDK 4.x voor Experience Cloud-oplossingen
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
 translation-type: tm+mt
-source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
 
 Met BlackBerry 10 SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen BlackBerry 10-toepassingen meten met behulp van Adobe Analytics.
 
-## Aan de slag {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
+## Getting started {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
 Aan de slag met de BlackBerry SDK&#39;s:
 
@@ -34,7 +34,7 @@ Naast de aanzienlijke prestatieverhogingen voegt versie 4 de volgende nieuwe eig
 |--- |--- |
 | Opt-in/Opt-out | U kunt analyses snel in- en uitschakelen. |
 
-Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij](https://marketing.adobe.com/resources/help/en_US/whatsnew/)de release.
+Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)de release.
 
 ## Bloedhond gebruiken
 
