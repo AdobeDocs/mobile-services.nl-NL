@@ -7,7 +7,10 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor Android SDK 4.x voor Experience Cloud Solutions:
+
+**3 april 2020: 4.18.2.**
+
+* In het Overseinen van de Toepassing - om veiligheidsredenen, WebViews die door SDK worden gecreeerd reeks nu bezit &quot;setAllowFileAccess&quot;gelijk aan vals.
+
+**12 maart 2020: 4.18.1.**
+
+* Doel - Doel - Doel-id voor sessie wordt nu toegevoegd als een contextgegevensparameter &quot;a.target.sessionId&quot; in de interne hit Analytics-for-Target die naar Adobe Analytics wordt verzonden.
 
 **16 januari 2020: 4.18.0.**
 
