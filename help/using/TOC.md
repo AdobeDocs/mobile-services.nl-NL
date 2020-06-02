@@ -1,9 +1,13 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services User Help
+user-guide-title: Gebruikershulp voor mobiele services
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
 translation-type: tm+mt
-source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
+source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 8%
 
 ---
 
@@ -11,8 +15,8 @@ source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
 # Gebruikershulp voor mobiele services {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [Opmerkingen bij de release](whatsnew.md)
-+ Aan de slag {#get-started-ug}
++ [Releaseopmerkingen](whatsnew.md)
++ Getting started {#get-started-ug}
    + [Aan de slag](gs/gs.md)
    + [Rollen en machtigingen](gs/c-mob-roles-and-permissions.md)
    + [Aanmelden](gs/gs-signin.md)
@@ -67,7 +71,7 @@ source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
    + [Meest 50 artikelen](dps/dps-top-50-articles.md)
    + [Sociaal delen](dps/dps-social-sharing.md)
    + [Banner Metrics](dps/dps-banner-metrics.md)
-+ Verwerving {#acquisition-main-ug}
++ Acquisitie {#acquisition-main-ug}
    + [Overzicht van overname](acquisition-main/acquisition-main.md)
    + [Verwervingsvoorwaarden](acquisition-main/c-acquisition-prerequisites.md)
    + [Verwerving configureren](acquisition-main/t-enable-acquisition.md)
