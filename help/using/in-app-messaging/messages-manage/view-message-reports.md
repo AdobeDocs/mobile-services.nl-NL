@@ -8,7 +8,10 @@ title: Berichtenrapporten weergeven
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '473'
+ht-degree: 0%
 
 ---
 
@@ -88,4 +91,4 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
 * **[!UICONTROL Blacklisted]**
 
-   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS hebben niet altijd dezelfde betekenis als tokens die op de zwarte lijst staan. Android-tokens worden direct weergegeven op de zwarte lijst. iOS-tokens worden in eerste instantie weergegeven zoals ze worden gepubliceerd, maar gebaseerd op feedback van APNS, worden weergegeven als op de zwarte lijst van volgende berichten.
+   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als in de lijst Weigeren. Android-tokens worden direct weergegeven in de lijst Weigeren. iOS-tokens worden in eerste instantie weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden weergegeven als ontkennend in de volgende berichten.
