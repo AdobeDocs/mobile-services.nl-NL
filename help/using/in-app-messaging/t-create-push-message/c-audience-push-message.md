@@ -8,7 +8,10 @@ title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Ber
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
-source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +24,13 @@ U kunt publieksopties voor pushberichten definiëren en configureren, waaronder 
 
 Wanneer een publiekssegment voor pushberichten wordt gecreeerd, zou het segment gebruikers van één of meerdere apps kunnen impliceren omdat de rapportreeksen of virtuele rapportreeksen gegevens van één of meerdere apps zouden kunnen bevatten. Voor meer informatie over virtuele rapportsuites, zie [Virtuele rapportsuites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services kunnen marketers slechts op één app per platform drukken. Als marketers proberen om op segmenten te gaan die gebruikers van meerdere apps bevatten, wordt een waarschuwing weergegeven met de mededeling dat dit kan leiden tot ernstige pushfouten en een mogelijk zwarte lijst van gebruikers. Als u een drukkwaliteit ervaart, zie *Het oplossen van duwmislukkingen* in het duw overseinen [van het](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)Oplossen van problemen.
+In Adobe Mobile Services kunnen marketers slechts op één app per platform drukken. Als marketers proberen om op segmenten te gaan die gebruikers van meerdere apps bevatten, wordt een waarschuwing weergegeven met de mededeling dat een procedure ernstige pushfouten kan veroorzaken en dat het mogelijk is dat gebruikers niet worden vermeld. Als u een drukkwaliteit ervaart, zie *Het oplossen van duwmislukkingen* in het duw overseinen [van het](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)Oplossen van problemen.
 
 Om de gegevens van de Manager van de Publiek in uw segmentdefinitie te gebruiken, zie Analytics van het [Publiek](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Als gebruikers van de app op de zwarte lijst staan, kunnen marketers **nooit** pushberichten naar de betrokken gebruikers sturen.
+>Als gebruikers van de app de lijst ontkennen, kunnen marketers **nooit** pushberichten naar die betrokken gebruikers opnieuw verzenden.
 
 Als u een publiekssegment selecteert dat gebruikers over veelvoudige apps bevat, zou u het volgende alarm kunnen zien:
 
@@ -50,7 +53,7 @@ Bijvoorbeeld:
 
 Als u het pushbericht wilt blijven verzenden naar de vermelde apps, schakelt u het **[!UICONTROL Yes, I want to proceed.]** selectievakje in en klikt u **[!UICONTROL Send]**.
 
-## Aanbevolen procedures
+## Best practices
 
 Hier volgen enkele aanbevolen procedures:
 
@@ -64,7 +67,7 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
 **Doe**: De Marketer biedt pushcertificaten voor de iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. De Marketer kan een pushmelding verzenden naar een gebruikerssegment dat zich uitstrekt over beide platforms.
 
-**Niet**: Marketers bieden pushcertificaten voor iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. Als de markeerteken de laatste 30 dagen *een segment van* alle actieve gebruikers maakt en naar deze gebruikers doorstuurt, ontvangen alleen de gebruikers van de Adobe Photoshop iOS- en Android-app de pushmelding en worden alle gebruikers van de Adobe Illustrator iOS- en Android-app op de zwarte lijst gezet. Voor meer gedetailleerd, zie het voorbeeld het *Oplossen van de mislukkingen* van het pushbericht in het Overseinen [van de](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)Vraag van het Oplossen van problemen.
+**Niet**: Marketers bieden pushcertificaten voor iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. Als de markeerteken de laatste 30 dagen *een segment van* alle actieve gebruikers maakt en naar deze gebruikers doorstuurt, ontvangen alleen de gebruikers van de Adobe Photoshop iOS- en Android-app de pushmelding en worden alle gebruikers van de Adobe Illustrator iOS- en Android-app geweigerd. Voor meer gedetailleerd, zie het voorbeeld het *Oplossen van de mislukkingen* van het pushbericht in het Overseinen [van de](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)Vraag van het Oplossen van problemen.
 
 ## publiekssegmenten configureren {#section_A92C60885A30421B8150820EC1CCBF13}
 
