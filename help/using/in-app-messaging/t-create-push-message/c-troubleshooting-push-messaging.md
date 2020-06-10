@@ -8,7 +8,10 @@ title: Problemen met pushberichten oplossen
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    De API-sleutel kan om de volgende redenen ongeldig zijn:
 
    * De API-sleutel die u hebt opgegeven, is geen serversleutel met de juiste GCM API-sleutelwaarde.
-   * De serversleutel bevat een whitelist van de IP&#39;s en verhindert dat servers van Adobe een pushbericht verzenden.
+   * Met de serversleutel zijn de IP&#39;s toegestaan en wordt voorkomen dat de servers van Adobe een pushbericht verzenden.
 
 * **De geldigheid van de API-sleutel bepalen**
 
@@ -97,10 +100,10 @@ De volgende klant heeft twee iOS-apps:
    * RSID: PhotoShop_iOS_app_LA
    * VRSID-definitiesegment: `a.os contains “iOS”`
 
-In dit voorbeeld ontvangen alle gebruikers van de *PhotoShop_iOS_app_SF* -app *het pushbericht als een Photoshop-medewerker een push verzendt naar de app* PhotoShop_iOS_app_SF. Maar als de werknemer een bericht naar de app *PhotoShop_iOS_app_LA* verzendt, omdat het VRSID-definitiesegment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht naar **alle** iOS-gebruikers verzonden in *AllAdobe PhotoShop_apps*. Hoewel het bericht nog steeds naar *PhotoShop_iOS_app_LA* -gebruikers gaat, worden in het bericht ook de push-id&#39;s voor *PhotoShop_iOS_app_SF* -gebruikers weergegeven, omdat de *PhotoShop_iOS_app_SF* -app een ander certificaat heeft. Als het segment als `a.os contains “PhotoShop_iOS_app_LA”`gedefinieerd was, zou het pushbericht alleen naar *PhotoShop_iOS_app_LA* -gebruikers zijn verzonden.
+In dit voorbeeld ontvangen alle gebruikers van de *PhotoShop_iOS_app_SF* -app *het pushbericht als een Photoshop-medewerker een push verzendt naar de app* PhotoShop_iOS_app_SF. Maar als de werknemer een bericht naar de app *PhotoShop_iOS_app_LA* verzendt, omdat het VRSID-definitiesegment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht naar **alle** iOS-gebruikers verzonden in *AllAdobe PhotoShop_apps*. Hoewel het bericht nog steeds naar gebruikers van *PhotoShop_iOS_app_LA* gaat, worden in het bericht ook de push-id&#39;s voor gebruikers van *PhotoShop_iOS_app_SF* afgewezen, omdat de *PhotoShop_iOS_app_SF* -app een ander certificaat heeft. Als het segment als `a.os contains “PhotoShop_iOS_app_LA”`gedefinieerd was, zou het pushbericht alleen naar *PhotoShop_iOS_app_LA* -gebruikers zijn verzonden.
 
 Als de id&#39;s met het *PhotoShop_IOS_app_LA* -pushcertificaat worden doorgegeven, worden de push-id&#39;s voor de *PhotoShop_iOS_app_SF* geretourneerd als `invalid`.
 
 >[!CAUTION]
 >
->Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** deze knop klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app een geldig certificaat **moet** hebben. Als elke app **geen** geldig certificaat heeft, worden de publiekssegmenten voor onbepaalde tijd op de zwarte lijst weergegeven en kunt u in de toekomst mogelijk geen pushberichten naar de betrokken gebruikers sturen. Voor meer informatie over publiekssegmenten, zie [Publiek: publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definiëren en configureren.
+>Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** deze knop klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app een geldig certificaat **moet** hebben. Als elke app **geen** geldig certificaat heeft, worden de vermelde publiekssegmenten voor onbepaalde tijd geweigerd en kunt u in de toekomst mogelijk geen pushberichten naar de betrokken gebruikers verzenden. Voor meer informatie over publiekssegmenten, zie [Publiek: publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definiëren en configureren.
