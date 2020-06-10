@@ -5,7 +5,10 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +33,7 @@ Vanaf SDK-versie 4.16.1 kunnen leden van Device Co-op hun gegevens van mobiele a
    Zie [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md)voor meer informatie.
 1. Geef geverifieerde identiteiten zoals CRM-id&#39;s of gehashte e-mails door met een van de hier vermelde synchronisatiemethoden.
 
-   Zie Methoden van de identiteitsservice van [Adobe Experience Platform voor meer informatie](/help/ios/marketing-cloud/mc-methods.md).
+   Zie Methoden van [Adobe Experience Platform Identity Service voor meer informatie](/help/ios/marketing-cloud/mc-methods.md).
 
 ## `coopUnsafe` markeren
 
@@ -41,7 +44,7 @@ Hier is wat extra informatie over de `coopUnsafe` vlag:
 * De standaardwaarde is `false`.
 * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
 
-Voor leden van Coop van het Apparaat die deze waarde vereisen wordt geplaatst aan `true`, moet u met het team van Coop samenwerken om een zwarte lijstvlag op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+Voor de leden van Coop van het Apparaat die deze waarde vereisen wordt geplaatst aan `true`, moet u met het team van Coop werken om te verzoeken ontkent lijstvlag op uw Co-op rekening van het Apparaat. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
 De volgende informatie onthouden:
 
