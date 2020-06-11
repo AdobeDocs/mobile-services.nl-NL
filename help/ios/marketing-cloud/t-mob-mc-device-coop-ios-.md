@@ -5,9 +5,9 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '292'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Hier is wat extra informatie over de `coopUnsafe` vlag:
 * De standaardwaarde is `false`.
 * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
 
-Voor de leden van Coop van het Apparaat die deze waarde vereisen wordt geplaatst aan `true`, moet u met het team van Coop werken om te verzoeken ontkent lijstvlag op uw Co-op rekening van het Apparaat. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+Voor leden van de Co-op van het Apparaat die deze waarde vereisen worden geplaatst aan `true`, moet u met het team van Coop samenwerken om een blocklist vlag op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
 De volgende informatie onthouden:
 
