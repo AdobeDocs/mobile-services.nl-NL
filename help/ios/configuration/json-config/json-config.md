@@ -7,9 +7,9 @@ title: ADBMobile JSON config
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1715'
 ht-degree: 8%
 
 ---
@@ -89,7 +89,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **coopUnsafe**
 
-   Voor de leden van Coop van het Apparaat die deze waarde vereisen wordt geplaatst aan `true`, moet u met het team van Coop werken om te verzoeken ontkent lijstvlag op uw Co-op rekening van het Apparaat. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+   Voor leden van de Co-op van het Apparaat die deze waarde vereisen worden geplaatst aan `true`, moet u met het team van Coop samenwerken om een blocklist vlag op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
    De volgende informatie onthouden:
 
