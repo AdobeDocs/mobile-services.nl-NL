@@ -7,9 +7,9 @@ title: ADBMobile JSON Config
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 4%
 
 ---
@@ -88,7 +88,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
    * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld voor de codering apparaat van de Experience Cloud.
    * De standaardwaarde is `false`.
    * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
-   Voor leden van Coop van het Apparaat die deze waarde vereisen die aan wordt geplaatst, moet u met het team van Coop werken om te verzoeken ontkent lijstvlag op uw Co-op rekening van het Apparaat. `true` Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+   Voor leden van Coop van het Apparaat die deze waarde aan `true`vereisen, moet u met het team van Coop samenwerken om een blocklist vlag op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
    De volgende informatie onthouden:
 
