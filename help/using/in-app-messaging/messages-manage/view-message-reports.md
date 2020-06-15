@@ -8,9 +8,9 @@ title: Berichtenrapporten weergeven
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor in-app berich
 
 * **[!UICONTROL Cancel]**, wanneer een gebruiker op de **[!UICONTROL Cancel]** knop drukt in een waarschuwing of een bericht op volledig scherm.
 
-* **[!UICONTROL Engagement Rate]**, een berekende metrische waarde uit de Analyse van Adobe en is het resultaat van het aantal klikdoorhalingen gedeeld door het aantal beelden.
+* **[!UICONTROL Engagement Rate]**, een berekende metrische waarde uit Adobe Analytics. Dit is het resultaat van het aantal klikdoorhalingen gedeeld door het aantal indrukken.
 
 ## Pushberichten {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -89,6 +89,6 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
    >
    >Als u een ongebruikelijk groot aantal mislukkingen hebt, controleer uw configuratie van de duwdiensten. Neem contact op met de klantenservice van Adobe als de pushservices correct zijn geconfigureerd.
 
-* **[!UICONTROL Blocklisted]**
+* **[!UICONTROL Deny List]**
 
-   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als blocklisted. Android-tokens worden direct weergegeven in het aantal keuzelijsten. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden op volgende berichten weergegeven als blokkeerbaar.
+   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als blocklisted. Android-tokens worden direct weergegeven in het aantal voor weigeren in de lijst (blocklist). iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden op volgende berichten weergegeven als blokkeerbaar.
