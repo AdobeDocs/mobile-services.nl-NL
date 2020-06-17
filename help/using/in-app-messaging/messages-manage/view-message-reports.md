@@ -8,9 +8,9 @@ title: Berichtenrapporten weergeven
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
+source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,6 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
    >
    >Als u een ongebruikelijk groot aantal mislukkingen hebt, controleer uw configuratie van de duwdiensten. Neem contact op met de klantenservice van Adobe als de pushservices correct zijn geconfigureerd.
 
-* **[!UICONTROL Deny List]**
+* **[!UICONTROL Blocklisted]**
 
-   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als blocklisted. Android-tokens worden direct weergegeven in het aantal voor weigeren in de lijst (blocklist). iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden op volgende berichten weergegeven als blokkeerbaar.
+   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als blocklisted. Android-tokens worden direct weergegeven in het aantal keuzelijsten. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden op volgende berichten weergegeven als blokkeerbaar.
