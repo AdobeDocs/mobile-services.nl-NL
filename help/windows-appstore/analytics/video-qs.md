@@ -8,6 +8,9 @@ topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 15%
 
 ---
 
@@ -18,25 +21,25 @@ Informatie die u helpt met Video Analytics.
 
 Videometingen worden gedetailleerd beschreven in de handleiding [Metingaudio en -video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html/) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
-In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
+In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een Analytics-variabele.
 
 * **a.media.name**
 
    (Vereist) Verzamelt de naam van de video, zoals opgegeven in de implementatie, wanneer een bezoeker de video op een of andere manier bekijkt. U kunt classificaties toevoegen voor deze variabele.
 
-   (**Optioneel**) De variabele Aangepast inzicht biedt informatie over het plakken van video.
+   (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Bezoek
-   * Aangepast inzicht (s.prop, wordt gebruikt voor videotekenen)
+   * Custom Insight (s.prop, gebruikt voor videoverven)
 
 * **a.media.name**
 
    (Optioneel) Bevat informatie over het plakken van video. Het plakken moet voor deze variabele door ClientCare worden toegelaten.
 
-   Type gebeurtenis: Aangepast inzicht (s.prop)
+   Type gebeurtenis: Custom Insight (s.prop)
 
-   * Type variabele: Aangepast inzicht (s.prop)
+   * Type variabele: Custom Insight (s.prop)
 
 * **a.media.segment**
 
@@ -47,7 +50,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * video starten (afspelen)
    * begin segment
    * videoeinde (stoppen)
-   Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
+   Analytics telt de eerste segmentweergave bij het begin van het segment, wanneer de bezoeker begint te kijken. Volgende segmentweergaven als het segment begint.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Paginaweergave
