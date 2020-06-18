@@ -8,6 +8,9 @@ topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 3%
 
 ---
 
@@ -18,18 +21,18 @@ U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of
 
 ## Nieuwe Adobe Experience Cloud SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
 >[!IMPORTANT]
 >
->Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+>Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDKs is configureerbaar door [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga naar [Starten](https://launch.adobe.com/)om aan de slag te gaan.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform-SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Als u de Adobe Experience Platform Mobile SDK&#39;s gebruikt met Adobe Launch, **moet** u ook de Adobe Analytics Mobile Services-extensie installeren als u Adobe Mobile Services-functies wilt gebruiken, zoals in-app berichten en pushmeldingen. Zie [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met de Ervaring Cloud SDKs, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Als u de Adobe Experience Platform Mobile SDK&#39;s gebruikt bij Adobe Launch, **moet** u ook de Adobe Analytics Mobile Services-extensie installeren als u Adobe Mobile Services-functies wilt gebruiken, zoals in-app berichten en pushmeldingen. Zie [Adobe Analytics - Mobiele services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met Experience Cloud SDKs, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
