@@ -39,7 +39,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **analyticsForwardingEnabled**
 
-   De eigenschap in het `audienceManager` object. Als `Audience Manager` wordt gevormd en `analyticsForwardingEnabled` aan `true`, al verkeer Analytics door:sturen ook aan de Manager van het Publiek wordt geplaatst. De standaardwaarde is `false`.
+   De eigenschap in het `audienceManager` object. Als `Audience Manager` wordt gevormd en `analyticsForwardingEnabled` wordt geplaatst aan `true`, door:sturen alle verkeer van Analytics ook aan Audience Manager. De standaardwaarde is `false`.
 
    * Minimale SDK-versie: 4.8.0
 
@@ -65,7 +65,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **batchLimit**
 
-   Drempel voor het aantal treffers dat in opeenvolgende vraag moet worden verzonden. Als de waarde bijvoorbeeld op 10 `batchLimit` is ingesteld, wordt elke hit vóór de tiende hit opgeslagen in de wachtrij. Zodra de 10e hit binnenkomt, worden alle 10 treffers achtereenvolgens verzonden.
+   Drempel voor het aantal treffers dat in opeenvolgende vraag moet worden verzonden. Als `batchLimit` deze waarde bijvoorbeeld op 10 is ingesteld, wordt elke hit vóór de tiende hit opgeslagen in de wachtrij. Zodra de 10e hit binnenkomt, worden alle 10 treffers achtereenvolgens verzonden.
 
    * De standaardwaarde is `0`, wat betekent dat batchverwerking niet is ingeschakeld.
    * Vereist `offlineEnabled = true`.
@@ -73,7 +73,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **charset**
 
-   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
+   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
 
    * Minimale SDK-versie: 4.0
 
@@ -83,7 +83,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    >[!IMPORTANT]
    >
-   >Deze variabele wordt vereist door Doel.
+   >Deze variabele wordt vereist door Target.
 
    * Minimale SDK-versie: 4.0
 
@@ -93,12 +93,12 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    De volgende informatie onthouden:
 
-   * Wanneer `coopUnsafe` is ingesteld op `true`, `coop_unsafe=1` worden deze altijd toegevoegd aan Audience Manager- en Bezoekersidentiteitscontroles.
-   * Als u het door:sturen van de server-kant van de Analyse aan de Manager van het Publiek toelaat, zult u ook `coop_unsafe=1` op de treffers van Analytics zien.
+   * Wanneer `coopUnsafe` deze optie is ingesteld op `true`, `coop_unsafe=1` worden deze altijd toegevoegd aan treffers voor Audience Manager- en bezoekersidentiteitskaart.
+   * Als u Analytics server-side het door:sturen aan Audience Manager toelaat, zult u ook `coop_unsafe=1` op de treffers van Analytics zien.
    Hieronder vindt u aanvullende informatie:
 
    * Minimale SDK-versie: 4.16.1
-   * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld voor de codering apparaat van de Experience Cloud.
+   * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld voor de codering van het Experience Cloud-apparaat.
    * De standaardwaarde is `false`.
    * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
 
@@ -139,7 +139,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **org**
 
-   Geeft de Experience Cloud org ID voor de Adobe Experience Platform Identity Service aan.
+   Geeft de Experience Cloud org-id voor de Adobe Experience Platform Identity Service aan.
 
    * Minimale SDK-versie: 4.3
 
@@ -216,7 +216,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **Rsids**
 
-   Een of meer rapportsuites voor het ontvangen van analysegegevens. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
+   Een of meer rapportsuites voor het ontvangen van Analytics-gegevens. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
 
    ```js
    "rsids": "rsid"
@@ -270,7 +270,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **timeout**
 
-   Hiermee bepaalt u hoe lang Doel wacht op een reactie.
+   Hiermee bepaalt u hoe lang Target wacht op een reactie.
 
    * Minimale SDK-versie: 4.0
 
