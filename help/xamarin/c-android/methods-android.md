@@ -1,20 +1,23 @@
 ---
-description: Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+description: Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 keywords: Xamarin
-seo-description: Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+seo-description: Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 seo-title: Methoden van Android
 solution: Marketing Cloud,Developer
 title: Methoden van Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 39%
 
 ---
 
 
 # Methoden van Android{#android-methods}
 
-Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 ## Configuratiemethoden {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -57,6 +60,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x 
    * `ADBMobilePrivacyStatus.OptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatus.OptOut` - treffers worden genegeerd.
    * `ADBMobilePrivacyStatus.Unknown` - Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de status van de privacy verandert in aanmelden (vervolgens worden treffers verzonden) of Afmelden (vervolgens worden treffers verwijderd). Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden.
+
    De standaardwaarde wordt ingesteld in het bestand [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) .
 
    * Hier volgt de syntaxis voor deze methode:
@@ -470,11 +474,11 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x 
       var queueSize = Analytics.QueueSize();
       ```
 
-## Ervaar de methoden van Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
+## Methoden van Experience Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
-   Haalt de Experience Cloud ID op van de ID-service.
+   Haalt de Experience Cloud-id op van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -581,7 +585,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x 
       Target.ClearCookies (); 
       ```
 
-## Auditiebeheer {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
 * **Bezoekerprofiel**
 
