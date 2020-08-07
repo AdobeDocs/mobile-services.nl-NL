@@ -8,7 +8,10 @@ title: Configuratiemethoden
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 22%
 
 ---
 
@@ -147,7 +150,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
       >[!TIP]
       >
-      >Als uw app upgradet van de Experience Cloud 3.x naar de 4.x SDK, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, tot het wordt geplaatst, is het gebruikersherkenningsteken `null`.
+      >Als uw app van de Experience Cloud 3.x naar de 4.x-SDK upgradet, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, tot het wordt geplaatst, is het gebruikersherkenningsteken `null`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -249,8 +252,8 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting &#x200B; LifecycleData**
 
    * Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Hiermee wordt bijvoorbeeld `onPause` een tijdstempel verzameld om de lengte van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus weet dat de app niet vastloopt. Zie [Levenscyclusstatistieken](/help/android/metrics.md)voor meer informatie.
