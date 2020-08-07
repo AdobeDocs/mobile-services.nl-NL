@@ -1,22 +1,25 @@
 ---
-description: Lijst met methoden van Audience Manager die worden geleverd door de Universal Windows Platform-bibliotheek.
-seo-description: Lijst met methoden van Audience Manager die worden geleverd door de Universal Windows Platform-bibliotheek.
+description: Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
+seo-description: Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
 seo-title: Methoden van Audience Manager
 solution: Marketing Cloud,Analytics
 title: Methoden van Audience Manager
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 27%
 
 ---
 
 
 # Methoden van Audience Manager{#audience-manager-methods}
 
-Lijst met methoden van Audience Manager die worden geleverd door de Universal Windows Platform-bibliotheek.
+Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. De methoden van Audience Manager hebben de voorvoegsel `AudienceManager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Managers hebben de voorkeur `AudienceManager`.
 
 >[!TIP]
 >
@@ -111,5 +114,5 @@ Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal dat l
       traits["trait"] = "b";
       ADB.AudienceManager.signalWithData(traits).then(function (visitorProfile) { 
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
-      }); 
-      
+      });
+      ```
