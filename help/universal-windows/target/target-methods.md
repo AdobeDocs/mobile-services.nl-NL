@@ -1,20 +1,23 @@
 ---
-description: Lijst van de methodes van het Doel die door de Universele bibliotheek van het Platform van Vensters worden verstrekt.
-seo-description: Lijst van de methodes van het Doel die door de Universele bibliotheek van het Platform van Vensters worden verstrekt.
+description: Lijst met doelmethoden die worden geleverd door de Universal Windows Platform-bibliotheek.
+seo-description: Lijst met doelmethoden die worden geleverd door de Universal Windows Platform-bibliotheek.
 seo-title: Doelmethoden
 solution: Marketing Cloud,Analytics
 title: Doelmethoden
 topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 34%
 
 ---
 
 
 # Doelmethoden {#target-methods}
 
-Lijst van de methodes van het Doel die door de Universele bibliotheek van het Platform van Vensters worden verstrekt.
+Lijst met doelmethoden die worden geleverd door de Universal Windows Platform-bibliotheek.
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager.
 
@@ -26,7 +29,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 ## Klassenverwijzing: TargetLocationRequest
 
-## Eigenschappen
+## Properties
 
 ```
 property Platform::String ^name; 
@@ -168,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
        autosessionId=ADBMobile.Target.getSessionId(); 
       ```
-
