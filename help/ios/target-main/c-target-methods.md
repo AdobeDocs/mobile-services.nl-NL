@@ -1,22 +1,25 @@
 ---
-description: Hier volgt een lijst met Adobe Target-methoden uit de iOS-bibliotheek.
-seo-description: Hier volgt een lijst met Adobe Target-methoden uit de iOS-bibliotheek.
-seo-title: iOS-doelmethoden voor Adobe Mobile Services
+description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
+seo-description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
+seo-title: iOS-doelmethoden voor mobiele Adobe-services
 solution: Marketing Cloud,Analytics
 title: Doelmethoden voor iOS
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
-source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 21%
 
 ---
 
 
 # Doelmethoden voor iOS {#target-methods}
 
-Hier volgt een lijst met Adobe Target-methoden uit de iOS-bibliotheek.
+Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Doelmethoden hebben bijvoorbeeld de voorvoegsel `target`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Doelmethoden hebben bijvoorbeeld de voorvoegsel `target`.
 
 >[!TIP]
 >
@@ -24,7 +27,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 ## Klassenverwijzing: ADBTargetLocationRequest
 
-### Eigenschappen
+### Properties
 
 ```objective-c
 NSString *name; 
