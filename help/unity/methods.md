@@ -7,7 +7,10 @@ solution: Marketing Cloud,Developer
 title: Methoden van ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 35%
 
 ---
 
@@ -499,11 +502,11 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Ervaar de methoden van Cloud ID
+## Methoden van Experience Cloud ID
 
 * **GetMarketingCloudID**
 
-   Haalt de Experience Cloud ID op van de ID-service.
+   Haalt de Experience Cloud-id op van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
