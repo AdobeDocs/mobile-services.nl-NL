@@ -1,24 +1,27 @@
 ---
-description: Hier volgt een lijst met methoden van Adobe Analytics die in de iOS-bibliotheek worden geleverd.
-seo-description: Hier volgt een lijst met methoden van Adobe Analytics die in de iOS-bibliotheek worden geleverd.
+description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de iOS-bibliotheek.
+seo-description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de iOS-bibliotheek.
 seo-title: Analysemethoden
 solution: Marketing Cloud,Analytics
 title: Analysemethoden
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
-source-git-commit: 82c8e82ce5ce333c2482252e96f928829d322e7e
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 33%
 
 ---
 
 
 # Analysemethoden {#analytics-methods}
 
-Hier volgt een lijst met methoden van Adobe Analytics die in de iOS-bibliotheek worden geleverd.
+Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden van Experience Cloud ID zijn vooraf ingesteld op `track`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben voorrang op `track`.
 
-Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportensuite te verzenden.
+Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden.
 
 * **trackState: &#x200B; gegevens:**
 
@@ -196,7 +199,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackTimedActionUpdate: &#x200B; gegevens:**
 
-   Geef aan `data` om de contextgegevens bij te werken die aan de opgegeven gegevens zijn gekoppeld `action`. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
+   Geef aan `data` om de contextgegevens bij te werken die aan de opgegeven gegevens zijn gekoppeld `action`. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie. Als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
 
    >[!TIP]
    >
