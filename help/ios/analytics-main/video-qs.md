@@ -7,7 +7,10 @@ title: Video Analytics
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 14%
 
 ---
 
@@ -18,7 +21,7 @@ Hier volgt informatie over het meten van video&#39;s op iOS met behulp van miles
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de afspeeltijd te meten. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)voor meer informatie.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de afspeeltijd te meten. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie.
 
 Het algemene proces voor het meten van video is op alle platforms zeer vergelijkbaar. Deze inhoud biedt een basisoverzicht van de ontwikkelaarstaken met codevoorbeelden.
 
@@ -30,18 +33,18 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
    (Vereist) Hiermee wordt de naam van de video verzameld, zoals opgegeven in de implementatie, wanneer een bezoeker de video op een of andere manier weergeeft. U kunt classificaties toevoegen voor deze variabele.
 
-   (Optioneel) De variabele Aangepast inzicht biedt informatie over het plakken van video.
+   (Optioneel) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Bezoek
-   * Aangepast inzicht (s.prop, wordt gebruikt voor videotekenen)
+   * Custom Insight (s.prop, gebruikt voor videoverven)
 
 * **a.media.name**
 
    (Optioneel) Bevat informatie over het plakken van video. Voor deze variabele moet het plakken door de klantenservice worden ingeschakeld.
 
-   * Type variabele: Aangepast inzicht (s.prop)
-   * Type gebeurtenis: Aangepast inzicht (s.prop)
+   * Type variabele: Custom Insight (s.prop)
+   * Type gebeurtenis: Custom Insight (s.prop)
 
 * **a.media.segment**
 
@@ -52,6 +55,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * video starten (afspelen)
    * begin segment
    * videoeinde (stoppen)
+
    Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
 
    * Type variabele: eVar
