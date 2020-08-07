@@ -7,7 +7,7 @@ title: ADBMobile JSON Config
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 4%
@@ -34,13 +34,14 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
    * Hiermee schakelt u aanschaf van mobiele apps in.
       * `server`Dit is de overnameserver die bij de eerste introductie voor een overnameverwijzing wordt gecontroleerd.
       * `appid`, dit is de gegenereerde id die deze toepassing op de overnameserver op unieke wijze identificeert.
+
    Als deze sectie ontbreekt, schakelt u de aanschaf van een mobiele toepassing in en downloadt u het configuratiebestand van de SDK opnieuw. Zie *referenceTimeout* in deze lijst met variabelen voor meer informatie.
 
 * **analyticsForwardingEnabled**
    * De minimale SDK-versie is 4.8.0.
    * De standaardwaarde is `false`.
 
-      De eigenschap in het `audienceManager` object. Als de Manager van het Publiek wordt gevormd, en `analyticsForwardingEnabled` wordt geplaatst aan `true`, door:sturen al verkeer Analytics ook aan de Manager van het Publiek.
+      De eigenschap in het `audienceManager` object. Als de Audience Manager wordt gevormd, en aan `analyticsForwardingEnabled` `true`wordt geplaatst, door:sturen al verkeer Analytics ook aan Audience Manager.
 
 * **backdateSessionInfo**
    * Minimale SDK-versie: 4.6.
@@ -50,9 +51,9 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
 
       **Het toelaten van of het onbruikbaar maken van Hits**
 
-      * Als u de waarde instelt op `false`, worden de treffers **uitgeschakeld**. De SDK keert terug naar zijn gedrag van vóór 4.1 van het samenvatten van de zittingsinformatie voor de vorige zitting met de eerste slag van de verdere zitting. De SDK van Adobe voegt de sessiegegevens ook toe aan de huidige levenscyclus, waardoor het maken van een opgeblazen bezoek wordt voorkomen. Omdat er geen opgeblazen bezoeken meer ontstaan, neemt het aantal bezoeken onmiddellijk af.
+      * Als u de waarde instelt op `false`, worden de treffers **uitgeschakeld**. De SDK keert terug naar zijn gedrag van vóór 4.1 van het samenvatten van de zittingsinformatie voor de vorige zitting met de eerste slag van de verdere zitting. De Adobe SDK voegt de sessiegegevens ook toe aan de huidige levenscyclus, waardoor het maken van een opgepompt bezoek wordt voorkomen. Omdat er geen opgeblazen bezoeken meer ontstaan, neemt het aantal bezoeken onmiddellijk af.
 
-      * Als u geen waarde opgeeft, wordt de standaardwaarde gebruikt `true`en worden treffers **ingeschakeld**. Wanneer de treffers worden toegelaten, backdates de SDK van Adobe de zittingsinfo aan 1 seconde na de definitieve slag in de vorige zitting. Dit betekent dat de neerstorting en zittingsgegevens met de correcte datum zullen correleren waarop zij voorkwamen. Eén bijwerking is dat de SDK een bezoek kan maken voor een melding met terugwerkende kracht. Bij elke nieuwe start van de toepassing wordt een hit hersteld.
+      * Als u geen waarde opgeeft, wordt de standaardwaarde gebruikt `true`en worden treffers **ingeschakeld**. Wanneer de treffers worden toegelaten, backdates de Adobe SDK de zittingsinfo aan 1 seconde na de definitieve slag in de vorige zitting. Dit betekent dat de neerstorting en zittingsgegevens met de correcte datum zullen correleren waarop zij voorkwamen. Eén bijwerking is dat de SDK een bezoek kan maken voor een melding met terugwerkende kracht. Bij elke nieuwe start van de toepassing wordt een hit hersteld.
 
          >[!IMPORTANT]
          >
@@ -85,15 +86,16 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
 
 * **coopUnsafe**
    * Minimale SDK-versie: 4.16.1
-   * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld voor de codering apparaat van de Experience Cloud.
+   * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld in de Mac OS-Op van het Experience Cloud.
    * De standaardwaarde is `false`.
    * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
-   Voor leden van Coop van het Apparaat die deze waarde aan `true`vereisen, moet u met het team van Coop samenwerken om een blocklist vlag op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+
+   Voor leden van Coop van het Apparaat die deze waarde aan `true`vereisen, moet u met het team van Coop samenwerken om een vlag van de lijst van afgewezen personen op uw rekening van de Co-op van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
    De volgende informatie onthouden:
 
-   * Wanneer `coopUnsafe` is ingesteld op `true`, `coop_unsafe=1` worden deze altijd toegevoegd aan Audience Manager- en Bezoekersidentiteitscontroles.
-   * Als u het door:sturen van de server-kant van de Analyse aan de Manager van het Publiek toelaat, zult u ook de `coop_unsafe=1` Bezoekingen van Analytics zien.
+   * Wanneer `coopUnsafe` deze optie is ingesteld op `true`, `coop_unsafe=1` worden deze altijd toegevoegd aan treffers voor Audience Manager- en bezoekersidentiteitskaart.
+   * Als u het door:sturen van de server-kant van de Analyse aan Audience Manager toelaat, zult u ook de `coop_unsafe=1` Inslagen van Analytics zien.
 
 
 * **environmentId**
@@ -113,7 +115,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
 * **berichten**
 
    * Minimale SDK-versie: 4.2
-   * Deze optie wordt automatisch gegenereerd door Adobe Mobile-services en definieert de instellingen voor berichten in apps. Zie de onderstaande sectie *Berichtenbeschrijving* voor meer informatie.
+   * Deze optie wordt automatisch gegenereerd door Adobe Mobile-services en definieert de instellingen voor in-app berichten. Zie de onderstaande sectie *Berichtenbeschrijving* voor meer informatie.
 
 * **offlineEnabled**
 
@@ -128,14 +130,14 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       >
       >Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet **uw** configuratiebezit waar zijn. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet **uw** configuratiebezit vals zijn.
       >
-      >Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportsuite met tijdstempel is ingeschakeld, neemt u contact op met de klantenservice of downloadt u het configuratiebestand van Adobe Mobile-services.
+      >Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportenreeks timestamp toegelaten is, contacteer de Zorg van de Klant of download het configuratiedossier van de Mobiele diensten van Adobe.
 
       Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen in alle JavaScript-resultaten die de `s.timestamp` variabele gebruiken.
 
 * **org**
 
    * Minimale SDK-versie: 4.3
-   * Hiermee geeft u de Cloud-org-id voor de id-service op.
+   * Hiermee geeft u de Experience Cloud org-id voor de id-service op.
 
 * **poi**
    * Minimale SDK-versie: 4.0
@@ -150,10 +152,10 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
              ]
       ```
 
-      Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de toepassing. Voor deze synchronisatie is de `analytics.poi` instelling vereist:
+      Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is de `analytics.poi` instelling vereist:
 
       ```javascript
-      “analytics.poi“: `https://assets.adobedtm.com/`
+        “analytics.poi“: `https://assets.adobedtm.com/`
       …/yourfile.json”`,
       ```
 
@@ -179,6 +181,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       * De treffers `optedin`worden bijvoorbeeld direct verzonden.
       * De treffers `optedout`worden bijvoorbeeld genegeerd.
       * Als uw rapportsuite bijvoorbeeld is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden verwijderd). `optunknown`
+
       Als de tijdstempel-toegelaten rapportreeks niet is, worden de klappen verworpen tot de privacystatus aan verandert. `optedin` Hiermee wordt alleen de beginwaarde ingesteld. Als deze waarde is ingesteld of gewijzigd in code, wordt de nieuwe waarde gebruikt totdat deze opnieuw wordt gewijzigd of wanneer de app wordt verwijderd en opnieuw wordt geïnstalleerd.
 
 
@@ -310,7 +313,7 @@ Here is a sample `ADBMobileConfig.json` file:
 
 ## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Het knooppunt Berichten wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
+Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 
 * &quot;messageId&quot;
 * Gegenereerde id, vereist
