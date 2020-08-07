@@ -8,7 +8,10 @@ title: Methoden van PhoneGap-plug-in
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 33%
 
 ---
 
@@ -91,7 +94,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspatiÃ
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige bezoeker-id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id (zie `getUserIdentifier` hieronder). Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `null`, en het volgen herkenningsteken wordt gebruikt.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige bezoeker-id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id (zie `getUserIdentifier` hieronder). Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `null`, en het volgen herkenningsteken wordt gebruikt.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -230,11 +233,11 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspatiÃ
 
 * **trackAdobeDeepLink**
 
-   Houdt een Deep van Adobe verbinding klik-door bij.
+   Volgt een Deep Verbinding van de Adobe doorklikken-door.
 
    >[!TIP]
    >
-   >Als de Levenscyclusvraag een lanceringsgebeurtenis is, zullen de gegevens van de Verbinding van Adobe worden toegevoegd, anders zal een extra vraag worden verzonden.
+   >Als de Levenscyclusvraag een lanceringsgebeurtenis is, zullen de gegevens van de Verbinding van de Adobe worden toegevoegd, anders zal een extra vraag worden verzonden.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -683,7 +686,7 @@ In `AppDelegate` door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisin
 
 * **publiekSignalWithData**
 
-   Verwerkt een de dienstverzoek van de Manager van de Publiek.
+   Verwerkt een de dienstverzoek van de Audience Manager.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -715,7 +718,7 @@ In `AppDelegate` door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisin
 
 * **bezoekerGetMarketingCloudId**
 
-   Retourneert de Experience Cloud ID van de ID-service.
+   Retourneert de Experience Cloud-id van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
