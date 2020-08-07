@@ -1,23 +1,26 @@
 ---
-description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven ervan te configureren;de SDK-opties configureren voor Adobe Analytics en Adobe Audience Manager;aankoop- en id-serviceopties configureren en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
+description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;de SDK-opties voor Adobe Analytics en Adobe Audience Manager configureren;aankoop- en id-serviceopties configureren;en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
 keywords: mobile
-seo-description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven ervan te configureren;de SDK-opties configureren voor Adobe Analytics en Adobe Audience Manager;aankoop- en id-serviceopties configureren en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
+seo-description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;de SDK-opties voor Adobe Analytics en Adobe Audience Manager configureren;aankoop- en id-serviceopties configureren;en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
 seo-title: Een nieuwe app toevoegen
 solution: Marketing Cloud,Analytics
 title: Een nieuwe app toevoegen
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
 
 # Een nieuwe app toevoegen{#add-a-new-app}
 
-U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren; de SDK-opties configureren voor Adobe Analytics en Adobe Audience Manager; aanschaf- en id-serviceopties configureren; en download het configuratiebestand, de SDK&#39;s en ontwikkelaars- en testergereedschappen.
+U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;u kunt de SDK-opties configureren voor Adobe Analytics en Adobe Audience Manager; aanschaf- en id-serviceopties configureren; en download het configuratiebestand, de SDK&#39;s en ontwikkelaars- en testergereedschappen.
 
-Met deze instructies kunt u een nieuwe app toevoegen en de integratie van Adobe Analytics en Adobe Audience Manager configureren.
+Deze instructies helpen u bij het toevoegen van een nieuwe app en het configureren van Adobe Analytics- en Adobe Audience Manager-integratie.
 
 Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterface van Adobe Mobile Services. Nadat u de app hebt gemaakt, wordt de juiste configuratie gegenereerd en u kunt deze configuratie opgeven voor de ontwikkelaars die de Mobile SDK voor de app implementeren.
 
