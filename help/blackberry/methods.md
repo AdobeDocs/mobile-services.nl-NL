@@ -1,20 +1,23 @@
 ---
 description: Klassen en methoden die worden geleverd door de BlackBerry-bibliotheek.
 seo-description: Klassen en methoden die worden geleverd door de BlackBerry-bibliotheek.
-seo-title: Adobe Mobile-klasse en -methodereferentie
-title: Adobe Mobile-klasse en -methodereferentie
+seo-title: Adobe Mobile-klasse en methodereferentie
+title: Adobe Mobile-klasse en methodereferentie
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 15%
 
 ---
 
 
-# Adobe Mobile-klasse en -methodereferentie {#adobe-mobile-class-and-method-reference}
+# Adobe Mobile-klasse en methodereferentie {#adobe-mobile-class-and-method-reference}
 
 Klassen en methoden die worden geleverd door de BlackBerry-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor Adobe Analytics en methoden bevinden zich in aparte klassen op basis van de oplossing.
+De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinden zich in aparte klassen op basis van de oplossing.
 
 ## SDK-instellingen {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -145,7 +148,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en methoden bevinden z
 
 ## Analysemethoden {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
-Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportensuite te verzenden.
+Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden.
 
 * **trackState**
 
@@ -235,7 +238,7 @@ Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
 
    >[!TIP]
    >
-   >Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit `true`. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit vals zijn. Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html)als u niet zeker weet of een rapportensuite met tijdstempel is ingeschakeld.
+   >Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit `true`. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit vals zijn. Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de [Enterprise Support](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html)als u niet zeker weet of een rapportensuite met tijdstempel is ingeschakeld.
 
    Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die de `s.timestamp` variabele gebruiken.
 
