@@ -7,7 +7,10 @@ title: Methoden van SDK
 topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 22%
 
 ---
 
@@ -130,7 +133,7 @@ De standaardwaarde is `null`.
 
    >[!IMPORTANT]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige id-service (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `null` tot reeks.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige (aangepaste of automatisch gegenereerde) id-service opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `null` tot reeks.
 
    * Hier volgt de syntaxis voor deze methode:
 
