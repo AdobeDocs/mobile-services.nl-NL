@@ -8,7 +8,10 @@ title: Verwerving marketinglink testen
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,8 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
 
    U moet de contextData zien in het JSON-antwoord:
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -48,7 +52,7 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
 1. (Voorwaardelijk) Als de SSL-instelling in het configuratiebestand van uw app is `false`, werkt u uw acquisitie-koppeling bij zodat u het HTTP-protocol in plaats van HTTPS kunt gebruiken.
 1. Klik op de gegenereerde koppeling van het mobiele apparaat waarop u de toepassing wilt installeren.
 
-   De vingerafdruk wordt opgeslagen op de servers (`c00.adobe.com`) van Adobe en omgeleid naar de App Store. De app hoeft niet te worden gedownload om te testen.
+   Adobe (vingerafdruk) en omleiding naar de App Store.`c00.adobe.com` De app hoeft niet te worden gedownload om te testen.
 1. Start de toepassing voor de eerste keer vanaf hetzelfde mobiele apparaat als dat u in stap 6 hebt gebruikt.
 
    U kunt de toepassing indien nodig verwijderen en opnieuw installeren.
