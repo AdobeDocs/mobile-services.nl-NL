@@ -1,22 +1,25 @@
 ---
-description: Lijst met methoden van Audience Manager die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
-seo-description: Lijst met methoden van Audience Manager die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
+description: Lijst met methoden voor Audience Managers die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
+seo-description: Lijst met methoden voor Audience Managers die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 seo-title: Methoden van Audience Manager
 solution: Marketing Cloud,Analytics
 title: Methoden van Audience Manager
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 26%
 
 ---
 
 
 # Methoden van Audience Manager {#audience-manager-methods}
 
-Lijst met methoden van Audience Manager die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
+Lijst met methoden voor Audience Managers die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. De methodes van de Manager van de publiek zijn vooraf bepaald met &quot;AudienceManager.&quot;
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Managers worden vooraf vastgelegd met &quot;AudienceManager&quot;.
 
 >[!NOTE]
 >
@@ -94,7 +97,7 @@ Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal met l
 
 * **SignalWithData (winJS: signaalWithData)**
 
-   Verzendt de Manager van de Publiek een signaal met eigenschappen en krijgt de passende segmenten die in een blokcallback worden teruggekeerd.
+   Verzendt Audience Manager een signaal met eigenschappen en krijgt de passende segmenten die in een blokcallback zijn teruggekeerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
