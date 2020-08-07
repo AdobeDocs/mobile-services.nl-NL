@@ -8,7 +8,10 @@ title: Problemen met In-app-berichten oplossen
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
-source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '593'
+ht-degree: 0%
 
 ---
 
@@ -89,13 +92,13 @@ In-app berichten weergeven in de modus Volledig scherm op een iPhone X:
 1. Stel de juiste opvulling in de CSS in voor het bovenste UI-element, zoals:
 
    ```html
-   topelement {
-     padding-top:20px;
-     /*Status bar height on iOS 11.0*/
-     padding-top:constant(safe-area-inset-top);
-     /*Status bar height on iOS 11+ */
-     padding-top:env(safe-area-inset-top);
-     } 
+    topelement {
+      padding-top:20px;
+      /*Status bar height on iOS 11.0*/
+      padding-top:constant(safe-area-inset-top);
+      /*Status bar height on iOS 11+ */
+      padding-top:env(safe-area-inset-top);
+      } 
    ```
 
    Deze instellingen verhinderen dat de UI-elementen botsen met de statusbalk.
