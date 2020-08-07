@@ -7,7 +7,10 @@ title: TVJS-methoden
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 27%
 
 ---
 
@@ -69,6 +72,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
    * `ADBMobilePrivacyStatusOptIn`: De berichten worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatusOptOut`: Hits worden weggegooid.
    * `ADBMobilePrivacyStatusUnknown`: Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de privacystatus wordt gewijzigd in de optie voor aanmelding (treffers worden verzonden) of de optie voor niet-deelname (treffers worden verwijderd).
+
    Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden.
 
    * Hier volgt de syntaxis voor deze methode:
@@ -108,7 +112,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    >[!IMPORTANT]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is gebruikersidentificatie nihil tot reeks.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is gebruikersidentificatie nihil tot reeks.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -191,7 +195,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
    * Retourneert: N.v.t.
    * Parameters: `logging`
       * Type: `Bool`
-      * Waarde die aangeeft of de Adobe SDK zich moet aanmelden bij de foutopsporingsconsole.
+      * Waarde erop wijst die of de Adobe SDK aan zuivert console zou moeten registreren.
 
 
 ## Analysemethoden {#section_F3DB9BE225F84F86BE5F8D15164C0379}
@@ -368,7 +372,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Een getimede actie beëindigen.
 
-   Als u een callback functie verstrekt, kunt u tot de definitieve tijdwaarden toegang hebben. Als er geen callback is opgegeven of als de callback true retourneert, verzendt de Adobe SDK automatisch een hit. Wanneer een vals van callback is teruggekeerd, wordt de getimede actiereactie onderdrukt.
+   Als u een callback functie verstrekt, kunt u tot de definitieve tijdwaarden toegang hebben. Als geen callback wordt verstrekt, of als callback waar terugkeert, verzendt de Adobe SDK automatisch een klap. Wanneer een vals van callback is teruggekeerd, wordt de getimede actiereactie onderdrukt.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -423,11 +427,11 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Retourneert de automatisch gegenereerde bezoeker-id.
 
-   Dit is een app-specifieke unieke bezoeker-id die wordt gegenereerd door de servers van Adobe. Als de servers van Adobe niet kunnen worden bereikt op het moment van de generatie, wordt de id gegenereerd met behulp van de CFUUID van Apple. De waarde wordt gegenereerd bij de eerste keer starten en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd wanneer de app wordt verwijderd.
+   Dit is een unieke bezoekersidentiteitskaart app-specifiek die door de servers van Adobe wordt geproduceerd. Als Adobe niet kunnen worden bereikt op het moment dat ze worden gegenereerd, wordt de id gegenereerd met de CFUID van Apple. De waarde wordt gegenereerd bij de eerste keer starten en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd wanneer de app wordt verwijderd.
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil`, en het volgen herkenningsteken wordt gebruikt. Zie de rij userIdentifier hieronder voor meer informatie.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil`, en het volgen herkenningsteken wordt gebruikt. Zie de rij userIdentifier hieronder voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -576,7 +580,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
       * Retourneert: N.v.t.
       * Parameter: `dpid`
          * Type: `String`
-         * ID van de gegevensaanbieder van Audience Manager.
+         * ID gegevensaanbieder Audience Manager.
       * Parameter: `dpuuid`
          * Type: `String`
          * Identifier voor de combinatie van gebruiker en gegevensaanbieder.
@@ -589,7 +593,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
 * **publiekSignalWithDataJsCallback**
 
-   Verzendt de Manager van de Publiek een signaal met eigenschappen en krijgt de passende segmenten die in een callback functie zijn teruggekeerd.
+   Verzendt Audience Manager een signaal met eigenschappen en krijgt de passende segmenten die in een callback functie zijn teruggekeerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -602,7 +606,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
          * Traits dictionary for this user.
       * Parameter: `callback`
          * Type: function(profile)
-         * Het profiel dat door de Manager van het Publiek in de parameter voor de callback functie is teruggekeerd.
+         * Het profiel dat door Audience Manager in de parameter voor de callback functie wordt geretourneerd.
    * Hier volgt het codevoorbeeld voor deze methode:
 
       ```objective-c
@@ -616,7 +620,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
 * **publiekReset**
 
-   Hiermee wordt de UUID van Audience Manager opnieuw ingesteld en wordt het huidige bezoekersprofiel gewist.
+   Hiermee wordt de UUID van de Audience Manager opnieuw ingesteld en wordt het huidige bezoekersprofiel gewist.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -637,7 +641,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
 * **bezoekerMarketingCloudID**
 
-   Haalt de Experience Cloud ID op van de ID-service.
+   Haalt de Experience Cloud-id op van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
