@@ -2,13 +2,16 @@
 description: Hier volgt de referentie-informatie voor de standaard mobiele metriek en afmetingen.
 keywords: mobile
 seo-description: Hier volgt de referentie-informatie voor de standaard mobiele metriek en afmetingen.
-seo-title: Referentie voor mobiele meeteenheden en afmetingen
+seo-title: Referentie voor mobiele Dimension
 solution: Marketing Cloud,Analytics
-title: Referentie voor mobiele meeteenheden en afmetingen
+title: Referentie voor mobiele Dimension
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 translation-type: tm+mt
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ Deze informatie helpt u meer over de standaard mobiele metriek en afmetingen te 
 
 >[!TIP]
 >
->De afmetingen en metrische machtigingen die zijn ingesteld in Adobe Analytics zijn van toepassing op Mobile Services. Wanneer u probeert om een rapport zonder de juiste toestemmingen in werking te stellen, komt een fout voor.
+>De afmetingen en metrische toestemmingen die in Adobe Analytics worden geplaatst zijn op de Mobiele Diensten van toepassing. Wanneer u probeert om een rapport zonder de juiste toestemmingen in werking te stellen, komt een fout voor.
 
-## Metrisch {#section_6704C815147D44AF96151D626BEB813C}
+## Cijfers {#section_6704C815147D44AF96151D626BEB813C}
 
 Hier volgt een lijst met standaard mobiele meetgegevens:
 
@@ -38,6 +41,7 @@ Hier volgt een lijst met standaard mobiele meetgegevens:
    Wordt geactiveerd wanneer de toepassing op een bepaalde dag wordt gebruikt.
 
    >[!TIP]
+   >
    >De gebeurtenis Daily Engaged Users wordt niet automatisch opgeslagen in een metrische analyse. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
 * **Maandelijkse deelnemers**
@@ -47,7 +51,7 @@ Hier volgt een lijst met standaard mobiele meetgegevens:
    >[!TIP]
    >De gebeurtenis Maandelijkse gecodeerde gebruikers wordt niet automatisch opgeslagen in een metrische analyse. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
-* **Starten**
+* **Lanceringen**
 
    Teweeggebracht op een looppas die geen installatie of een verbetering is. Dit wordt ook geactiveerd wanneer de toepassing de achtergrond verlaat. Standaard wordt een nieuwe opstart gestart wanneer de toepassing gedurende vijf of meer minuten op de achtergrond wordt uitgevoerd. De hoeveelheid achtergrondtijd voordat een nieuwe start wordt gestart, kan worden geconfigureerd in **[!UICONTROL SDK Analytics Options]** de pagina Toepassingsinstellingen beheren. Zie de rij Time-out *sessie (seconden)* in de rij [Analyseopties](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)SDK configureren voor meer informatie.
 
@@ -65,7 +69,7 @@ Hier volgt een lijst met standaard mobiele meetgegevens:
 
    Geaggregeerde totale sessielengte.
 
-## Afmetingen {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
+## Dimensies {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
 
 Hier volgt een lijst met standaard mobiele afmetingen:
 
