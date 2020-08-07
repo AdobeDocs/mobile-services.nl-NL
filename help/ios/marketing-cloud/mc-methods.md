@@ -7,22 +7,25 @@ title: Methoden van Adobe Experience Platform Identity Service
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 21%
 
 ---
 
 
-# Methoden van Adobe Experience Platform Identity Service {#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service methods {#experience-cloud-id-service-methods}
 
 Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Experience Cloud Visitor ID-service.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Experience Cloud Visitor ID-service.
 
-Methoden worden vooraf ingesteld op basis van de oplossing en methoden van Experience Cloud ID worden vooraf ingesteld op `visitor`. Zie [De Cloud-id](/help/ios/marketing-cloud/mcvid.md)voor ervaring inschakelen voor meer informatie.
+Methoden worden vooraf bepaald volgens de oplossing, en de methodes van Experience Cloud ID worden geprefixeerd met `visitor`. Zie De Experience Cloud-id [inschakelen voor meer informatie](/help/ios/marketing-cloud/mcvid.md).
 
 * **`+`(nullable NSURL`*`)bezoekerAppendToURL:(nullable NSURL`*`)url;**
 
-   Hiermee voegt u gegevens van Adobe-bezoekers toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie Helperfunctie [voor bezoekersidentiteitskaart](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)toevoegen voor meer informatie.
 
    >[!IMPORTANT]
    >
@@ -43,7 +46,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekerMarketingCloudID**
 
-   Haalt de Experience Cloud ID op van de ID-service.
+   Haalt de Experience Cloud-id op van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -138,7 +141,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekorgetUrlVariablesAsync**
 
-   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Zie de methoden [van](/help/ios/reference/hybrid-app.md)Adobe Experience Platform Identity Service voor meer informatie over hoe deze methode wordt gebruikt.
+   Deze methode is geïntroduceerd in versie 4.16.0 en retourneert een correct gevormde tekenreeks die de URL-variabelen van de Bezoeker-id-service bevat. Zie de methoden [van](/help/ios/reference/hybrid-app.md)Adobe Experience Platform Identity Service voor meer informatie over hoe deze methode wordt gebruikt.
 
    * Hier volgt de syntaxis voor deze methode:
 
