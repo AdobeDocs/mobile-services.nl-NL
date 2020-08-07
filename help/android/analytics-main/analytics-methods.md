@@ -1,25 +1,28 @@
 ---
-description: Hier volgt een lijst met methoden van Adobe Analytics die worden geleverd door de Android-bibliotheek.
+description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 keywords: android;library;mobile;sdk
-seo-description: Hier volgt een lijst met methoden van Adobe Analytics die worden geleverd door de Android-bibliotheek.
+seo-description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 seo-title: Analysemethoden
 solution: Marketing Cloud,Analytics
 title: Analysemethoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 28%
 
 ---
 
 
 # Analysemethoden {#analytics-methods}
 
-Hier volgt een lijst met methoden van Adobe Analytics die worden geleverd door de Android-bibliotheek.
+Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen], waaronder Analytics], Target], Audience Manager] en de Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld op basis van de oplossing, de methoden Experience Cloud ID zijn bijvoorbeeld vooraf ingesteld op `analytics`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen [waaronder Analytics], Target], Audience Manager] en Adobe Experience Platform Identity Service]. Methoden worden vooraf ingesteld op basis van de oplossing, waarbij de methoden Experience Cloud ID bijvoorbeeld vooraf zijn ingesteld `analytics`.
 
-Elk van de volgende methoden wordt gebruikt om gegevens naar de rapportsuite van Adobe Analytics te verzenden:
+Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden:
 
 * **trackState**
 
@@ -257,7 +260,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar de rapportsuite van
 
    Hiermee worden acquisitiegegevens opgehaald via de opgegeven URL van de Google Play-installatieverwijzing.
 
-   De gegevens die via deze API worden verzameld, worden verzonden op installatietaken die naar Analytics zijn verzonden en zijn beschikbaar in de Adobe Data Callback.
+   De gegevens die via deze API worden verzameld, worden verzonden bij installatieaanvragen die naar Analytics worden verzonden en zijn beschikbaar in de Adobe Data Callback.
 
    Als de SDK de referentiegegevens al heeft verzameld, resulteert het aanroepen van deze methode in een no-op.
 
