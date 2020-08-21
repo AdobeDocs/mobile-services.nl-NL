@@ -1,20 +1,23 @@
 ---
-description: U kunt de SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
-seo-description: U kunt de SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
+description: U kunt SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
+seo-description: U kunt SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
 seo-title: PII-postbacks
 title: PII-postbacks
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
 translation-type: tm+mt
-source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
 # PII-postbacks {#pii-postbacks}
 
-U kunt de SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
+U kunt SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
 
-Wanneer u de SDK van Adobe wilt gebruiken om PII te verzamelen, zou u een spoorPII vraag moeten verzenden. Hoewel het gebruiken van deze vraag inzameling van PII- gegevens toelaat, verzendt SDK niet automatisch de gegevens naar een eindpunt van Adobe. Een PII type postback moet met het aangewezen eindpunt worden gevormd.
+Wanneer u Adobe SDK wilt gebruiken om PII te verzamelen, zou u een spoorPII vraag moeten verzenden. Hoewel het gebruiken van deze vraag inzameling van PII- gegevens toelaat, verzendt SDK niet automatisch de gegevens naar een eindpunt van Adobe. Een PII type postback moet met het aangewezen eindpunt worden gevormd.
 
 >[!TIP]
 >
@@ -22,7 +25,7 @@ Wanneer u de SDK van Adobe wilt gebruiken om PII te verzamelen, zou u een spoorP
 
 ## PII-postbacks bijhouden {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
-1. Voeg [de bibliotheek aan uw project toe en implementeer levenscyclus.
+1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
    Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
 
