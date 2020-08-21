@@ -8,7 +8,10 @@ title: Doelmethoden voor Android
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 23%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, zoals Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld vooraf ingesteld op `target`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben bijvoorbeeld de voorvoegsel `target`.
 
 >[!TIP]
 >
@@ -25,7 +28,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 ## Klassenverwijzing: TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
-**Eigenschappen:**
+**Properties:**
 
 ```java
 public String name; 
