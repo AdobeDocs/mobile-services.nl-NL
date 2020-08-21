@@ -7,7 +7,10 @@ title: Analysemethoden
 topic: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 26%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Informatie die u helpt bij het gebruik van de Windows 8.1 Universal App Store SDK met Adobe Analytics.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud Solutions], waaronder Analytics], Target] en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Analysemethoden worden voorafgegaan door &quot;Analytics&quot;.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Analysemethoden worden voorafgegaan door &quot;Analytics&quot;.
 
-Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportensuite te verzenden.
+Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden.
 
 >[!TIP]
 >
