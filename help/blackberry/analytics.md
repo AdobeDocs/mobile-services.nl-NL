@@ -1,16 +1,19 @@
 ---
 description: Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
 seo-description: Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
-seo-title: Analyse
-title: Analyse
+seo-title: 'Analytics  '
+title: 'Analytics  '
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 3%
 
 ---
 
 
-# Analyse {#analytics}
+# Analytics{#analytics}  
 
 Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
 
@@ -30,7 +33,7 @@ Voordat u code toevoegt, moet uw Analysesysteembeheerder het volgende invullen o
 
    ![](assets/enable-lifecycle.png)
 
-De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele Rapporten van de Toepassing] verschijnen in het **[!UICONTROL Reports]** menu in de marketing rapportinterface.
+De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele Rapporten van de Toepassing verschijnen in het **[!UICONTROL Reports]** menu in de marketing rapportinterface.
 
 ## Metrische gegevens over de levenscyclus verzamelen {#task_25D469C62DF84573AEB5E8E950B96205}
 
@@ -112,8 +115,8 @@ Contextgegevensvariabelen die incrementele gebeurtenissen definiëren, kunnen de
 
 Als u hits wilt opslaan wanneer het apparaat offline is, kunt u optioneel offline bijhouden inschakelen in het `ADBMobileConfig.json` bestand.
 
-Let heel goed op de tijdstempelvereisten die worden beschreven in de configuratiebestandsverwijzing voordat u offline bijhouden inschakelt.
+Let heel goed op de tijdstempelvereisten die in de configuratiebestandsverwijzing worden beschreven voordat u offline bijhouden inschakelt.
 
 ## Analysemethoden
 
-Zie *Analytics-methoden* in [Adobe Mobile Class and Method Reference](/help/blackberry/methods.md)voor een lijst met Analytics-methoden die beschikbaar zijn voor BlackBerry.
+Zie *Analysemethoden* in [Adobe Mobile Class en Method Reference](/help/blackberry/methods.md)voor een lijst met Analytics-methoden die beschikbaar zijn voor BlackBerry.
