@@ -8,9 +8,9 @@ title: Een nieuwe app toevoegen
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
       * **[!UICONTROL Standard]**
 
-         U kunt de optie **[!UICONTROL Standard}** geselecteerd laten voor de meeste toepassingen.
+         U kunt de **[!UICONTROL Standard]** optie voor de meeste apps geselecteerd laten.
 
       * **[!UICONTROL Publication]**
 
