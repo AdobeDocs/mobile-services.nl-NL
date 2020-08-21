@@ -1,18 +1,21 @@
 ---
-description: Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een andere externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
-seo-description: Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een andere externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
+description: Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
+seo-description: Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
 seo-title: Postbacks configureren
 title: Postbacks configureren
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
 
 # Postbacks configureren {#configure-postbacks}
 
-Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een andere externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
+Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
 
 >[!IMPORTANT]
 >
@@ -32,7 +35,7 @@ Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een and
 
    * **[!UICONTROL URL]**
 
-      Specificeer een geldig eindpunt URL (met aangewezen vraagparameters zoals nodig voor GET verzoeken). U verkrijgt deze URL van de partij u de gegevens naar (ad server of uw eigen eindpunt) verzendt. Bijvoorbeeld `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Specificeer een geldig eindpunt URL (met aangewezen vraagparameters zoals nodig voor GET- verzoeken). U verkrijgt deze URL van de partij u de gegevens naar (ad server of uw eigen eindpunt) verzendt. Bijvoorbeeld `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Context Variable]**
 
@@ -51,7 +54,7 @@ Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een and
       Geef een of meer gegevenstags en -voorwaarden op die de postback activeren. U kunt bijvoorbeeld kiezen **[!UICONTROL Crashed]** als trigger en **[!UICONTROL Exists]** als voorwaarde om de terugmelding te activeren wanneer de toepassing vastloopt. U kunt ook opgeven welke metriek de postback activeert. U kunt bijvoorbeeld **[!UICONTROL Device Name]** als trigger **[!UICONTROL Equals]** en **[!UICONTROL iPhone 6 Plus]** als voorwaarde selecteren om de postback te activeren wanneer de toepassing vastloopt op iPhone 6 Plus-apparaten.
 
    * **[!UICONTROL Trait(s)]**
-   Geef op wie het bericht kan zien wanneer het wordt geactiveerd. U kunt onder andere **[!UICONTROL Session Length**, **[!UICONTROL First Launch Date]** and **[!UICONTROL App ID]**.
+   Geef op wie het bericht kan zien wanneer het wordt geactiveerd. De opties omvatten **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]**, en **[!UICONTROL App ID]**.
 
 1. Klik **[!UICONTROL Save]** om de postback te maken en deze aan de **[!UICONTROL Manage Postbacks]** lijst toe te voegen.
 
