@@ -8,7 +8,10 @@ title: Experience Push Message
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '750'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +107,7 @@ Een pushbericht configureren op de pagina Experience:
 
 1. (Optioneel) Klik op de volgende pictogrammen om een voorvertoning van de lay-out van het bericht weer te geven:
 
-   * **[!UICONTROL x Summary}**
+   * **[!UICONTROL x Summary]**
 
       Hiermee verbergt u het voorvertoningsvenster. Klik op ![Voorvertoning](assets/icon_preview.png) om het voorvertoningsvenster opnieuw weer te geven.
 
