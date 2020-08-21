@@ -1,29 +1,32 @@
 ---
-description: Hier volgen de methoden van de Experience Cloud ID die worden geleverd door de Android-bibliotheek.
+description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 keywords: android;library;mobile;sdk
-seo-description: Hier volgen de methoden van de Experience Cloud ID die worden geleverd door de Android-bibliotheek.
+seo-description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 seo-title: Methoden van Adobe Experience Platform Identity Service
 solution: Marketing Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 23%
 
 ---
 
 
-# Methoden van Adobe Experience Platform Identity Service{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
 
-Hier volgen de methoden van de Experience Cloud ID die worden geleverd door de Android-bibliotheek.
+Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen], waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service.
 
-Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld vooraf ingesteld op `visitor`. Zie [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md)voor meer informatie.
+Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben bijvoorbeeld de voorvoegsel `visitor`. Voor meer informatie, zie de Configuratie [van identiteitskaart van de](/help/android/c-marketing-cloud/mcvid.md)Experience Cloud.
 
 * **public static String appendToURL(final String URL)**
 
-   Hiermee voegt u gegevens van Adobe-bezoekers toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -50,7 +53,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
 * **getMarketingCloudId**
 
-   Haalt de Experience Cloud-id op van de bezoeker-id-service.
+   Hiermee wordt de Experience Cloud-id opgehaald van de service bezoekersidentiteitskaart.
 
    * Hier volgt de syntaxis voor deze methode:
 
