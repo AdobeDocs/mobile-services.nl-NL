@@ -1,36 +1,39 @@
 ---
-description: In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK de overnamegegevens automatisch en verzendt deze naar Adobe Mobile-services.
+description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 keywords: android;library;mobile;sdk
-seo-description: In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK de overnamegegevens automatisch en verzendt deze naar Adobe Mobile-services.
-seo-title: Mobiele toepassing ophalen
+seo-description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
+seo-title: Mobiele app-acquisitie
 solution: Marketing Cloud,Analytics
-title: Mobiele toepassing ophalen
+title: Mobiele app-acquisitie
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
 
-# Aanschaf van mobiele apps {#mobile-app-acquisition}
+# Mobile app acquisition {#mobile-app-acquisition}
 
-In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK de overnamegegevens automatisch en verzendt deze naar Adobe Mobile-services.
+Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
 >Als u Acquisition wilt gebruiken, **moet** u SDK versie 4.1 of hoger hebben.
 
-Verwervingskoppelingen moeten worden gemaakt in Adobe Mobile-services. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
+Verwervingsverbindingen moeten in de Mobiele diensten van Adobe worden gecreeerd. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
 
 **In SDK-versies 4.18.0 en hoger**:
 
@@ -52,7 +55,7 @@ Met de afgekeurde toepassing moet u in plaats van een `BroadcastReceiver`install
 >
 >Om onnodige API-aanroepen in uw app te voorkomen, raadt Google u aan de API slechts één keer onmiddellijk na de installatie aan te roepen.
 
-Raadpleeg de documentatie van Google voor informatie over de beste manier om de Google Play-API&#39;s van de installatieverwijzing in uw app te gebruiken. Hier volgt een voorbeeld van het gebruik van de Adobe SDK met de Google Play-API&#39;s voor installatiebestanden:
+Raadpleeg de documentatie van Google voor informatie over de beste manier om de Google Play-API&#39;s van de installatieverwijzing in uw app te gebruiken. Hier ziet u een voorbeeld van het gebruik van de SDK van Adobe met de Google Play-API&#39;s voor installatiebestanden:
 
 ```java
 void handleGooglePlayReferrer() {
@@ -119,7 +122,7 @@ void handleGooglePlayReferrer() {
 
 **In SDK-versies 4.13.1 en hoger**:
 
-Als u de verwervingskoppelingen die in Adobe Mobile Services zijn gemaakt, niet kunt gebruiken, kunnen de overnamegegevens nog steeds door de SDK worden verzameld en verzonden met Google Play Acquisition.
+Als u de verwervingskoppelingen niet kunt gebruiken die zijn gemaakt in Adobe Mobile Services, kunnen de overnamegegevens nog steeds worden verzameld en verzonden door de SDK met behulp van Google Play Acquisition.
 
 Verzamel verzamelgegevens van een standaard Google Play-acquisitiecampagne:
 
@@ -137,7 +140,7 @@ Verzamel verzamelgegevens van een standaard Google Play-acquisitiecampagne:
 
    * Aangepaste sleutels die deel uitmaakten van de aanschafgegevens van Google Play, krijgen een naamruimte met &quot; `a.acquisition.custom.`&quot;
 
-Als u gebruikmaakt van de verwervingskoppelingen die zijn gemaakt op Adobe Mobile Services, voegt u aangepaste gegevens toe aan de verwervingskoppeling door de volgende taken uit te voeren:
+Als u de Verbindingsverbindingen gebruikt die op de Mobiele Diensten van Adobe werden gecreeerd, voeg douanegegevens aan de verwervingsverbinding toe door de volgende taken te voltooien:
 
 1. Voorvoegsel een verwervingsvariabele met &quot; `adb`&quot;.
 
@@ -155,7 +158,7 @@ Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een ac
 
 ## Mobiele acquisitie volgen {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. Voeg de bibliotheek [toe aan uw project en implementeer levenscyclus.
+1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
    Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
 
