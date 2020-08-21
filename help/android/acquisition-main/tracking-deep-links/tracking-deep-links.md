@@ -1,21 +1,24 @@
 ---
-description: Met de Adobe Mobile Android-SDK kunt u op basis van deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden.
+description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
 keywords: android;library;mobile;sdk
-seo-description: Met de Adobe Mobile Android-SDK kunt u op basis van deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden.
-seo-title: Diepe koppelingen bijhouden in Adobe Mobile Services
+seo-description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
+seo-title: Diepe koppelingen bijhouden in mobiele Adobe-services
 solution: Marketing Cloud,Analytics
 title: Diepe koppelingen bijhouden
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 3%
 
 ---
 
 
 # Diepkoppelingen bijhouden {#tracking-deep-links}
 
-Met de Adobe Mobile Android-SDK kunt u op basis van deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden.
+U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
 
 ## Diepkoppelingen bijhouden
 
@@ -26,7 +29,7 @@ Met de Adobe Mobile Android-SDK kunt u op basis van deze informatie diepe en uit
 1. Registreer de toepassing om URL&#39;s af te handelen.
 
    Zie [URL&#39;s voor meer informatie](https://developer.android.com/training/basics/intents/filters.html).
-1. Geef Activiteit met diepe koppelingsintentie door aan Adobe SDK door te gebruiken `collectLifecycleData`.
+1. Geef Activiteit met diepe verbindingsintentie aan Adobe SDK door te gebruiken `collectLifecycleData`.
 
    Hier volgt een voorbeeld van de diepe koppeling naar de track:
 
@@ -42,7 +45,7 @@ Met de Adobe Mobile Android-SDK kunt u op basis van deze informatie diepe en uit
    }
    ```
 
-De SDK van Adobe Mobile] kan sleutel- en waardeparen gegevens parseren die aan een Diep of Universele Verbinding worden toegevoegd zolang de koppeling een sleutel met het `a.deeplink.id` label en een overeenkomstige niet-null en user-generated waarde bevat. Alle sleutel- en waardeparen met gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een hit tijdens de levenscyclus en verzonden naar Adobe Analytics] zolang de koppeling de `a.deeplink.id` sleutel en waarde bevat.
+De mobiele SDK van Adobe kan sleutel en waardeparen gegevens ontleden die aan om het even welke Diep of Universele Verbinding worden toegevoegd zolang de verbinding een sleutel met het `a.deeplink.id` etiket en een overeenkomstige niet-krachteloze en user-generated waarde bevat. Alle sleutel- en waardeparen gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een levenscyclushit en verzonden naar Adobe Analytics zolang de koppeling de `a.deeplink.id` sleutel en waarde bevat.
 
 Daarnaast kunt u een of meer van de volgende gereserveerde toetsen (met door de gebruiker gegenereerde waarden) toevoegen aan de diepe of Universal Link:
 
