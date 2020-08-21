@@ -7,7 +7,10 @@ title: Snelle start voor ontwikkelaars
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +112,7 @@ Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een l
 ## Voeg de bibliotheek en config dossier aan uw project toe - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
 
 1. Start Visual Studio en open uw oplossing.
-1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop **[!UICONTROL References]** en selecteer **[!UICONTROL voegt Verwijzing** toe.
+1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop aan **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
 
    Zie *Selecteer de sectie Correcte versie* hieronder voor meer informatie.
 
@@ -174,7 +177,7 @@ Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
 Werk minimaal de volgende waarden bij voor de oplossingen die u gebruikt:
 
 * **Analyse**: `rsids` en `server`
-* **Doel**: `clientCode`
+* **Target**: `clientCode`
 * **Publiek beheer**: `server`
 
 Zie [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md)voor meer informatie.
