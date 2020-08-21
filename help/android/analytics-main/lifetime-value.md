@@ -7,7 +7,10 @@ title: Levenswaarde bezoeker
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Telkens wanneer u een waarde met `trackLifetimeValueIncrease`verzendt, wordt de 
 
 ## De levenwaarde van de bezoeker bijhouden {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. Voeg de [bibliotheek aan uw project toe en implementeer levenscyclus.
+1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
    Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
 1. De bibliotheek importeren:
@@ -45,7 +48,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackLifetimeValueIncrease(BigDecimal.valueOf(5.0), cdata);
 ```
 
-Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-ltv.png)
 
