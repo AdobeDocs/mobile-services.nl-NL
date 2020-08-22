@@ -1,20 +1,23 @@
 ---
-description: iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+description: iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 keywords: Xamarin
-seo-description: iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+seo-description: iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 seo-title: iOS-methoden
 solution: Marketing Cloud,Developer
 title: iOS-methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
+source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+workflow-type: tm+mt
+source-wordcount: '1749'
+ht-degree: 39%
 
 ---
 
 
 # iOS-methoden{#ios-methods}
 
-iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
+iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 ## Configuratiemethoden {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -88,6 +91,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
    * `ADBMobilePrivacyStatus.OptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatus.OptOut` - treffers worden genegeerd.
    * ADBMobilePrivacyStatus.Unknown - Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de status van de privacy verandert in opt-in (dan worden treffers verzonden) of opt-out (dan worden treffers genegeerd). Als offline bijhouden is uitgeschakeld, worden treffers verwijderd totdat de privacystatus verandert in aanmelden.
+
    De standaardwaarde wordt ingesteld in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Hier volgt de syntaxis voor deze methode:
@@ -212,9 +216,10 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
 
    Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen zijn vergelijkbaar met die van pagina&#39;s op een website en `TrackState` roepen increment paginaweergaven aan. Als de status leeg is, wordt deze weergegeven als &#39;app name app version (build)&#39; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
 
-   [!TIP]
-   >Dit is de enige volgende vraag die de paginameningen verhoogt.
+   >[!TIP]
    >
+   >Dit is de enige volgende vraag die de paginameningen verhoogt.
+
    * Hier volgt de syntaxis voor deze methode:
 
       ```objective-c
@@ -234,7 +239,8 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
    Tracks an action in your app. Acties zijn de dingen die in uw app gebeuren en die u wilt meten, zoals &#39;sterfte&#39;, &#39;aangewonnen niveau&#39;, &#39;abonnementen voor diervoeders&#39; en andere maatstaven.
 
    >[!TIP]
-   Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld het ophalen van achtergrondgegevens), gebruikt u `trackActionFromBackground` deze.
+   >
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld het ophalen van achtergrondgegevens), gebruikt u `trackActionFromBackground` deze.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -253,7 +259,8 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
    Tracks an action that occurred in the background. Dit onderdrukt levenscyclusgebeurtenissen van het vuren in bepaalde scenario&#39;s.
 
    >[!TIP]
-   Deze methode mag alleen worden aangeroepen in code die wordt uitgevoerd terwijl de toepassing op de achtergrond wordt uitgevoerd.
+   >
+   > Deze methode mag alleen worden aangeroepen in code die wordt uitgevoerd terwijl de toepassing op de achtergrond wordt uitgevoerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -336,7 +343,8 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
    Een getimede actie starten met een naamactie. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
    >[!TIP]
-   Deze aanvraag verzendt geen treffer.
+   >
+   >Deze aanvraag verzendt geen treffer.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -355,7 +363,8 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
    Geef gegevens door om de contextgegevens bij te werken die aan de opgegeven actie zijn gekoppeld. De gegevens die worden doorgegeven, worden toegevoegd aan de bestaande gegevens voor de opgegeven handeling en overschrijft de gegevens als dezelfde toets al voor de handeling is gedefinieerd.
 
    >[!TIP]
-   Deze aanvraag verzendt geen treffer.
+   >
+   >Deze aanvraag verzendt geen treffer.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -455,11 +464,11 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Ervaar de methoden van Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
+## Methoden van Experience Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
-   Haalt de Experience Cloud ID op van de ID-service.
+   Haalt de Experience Cloud-id op van de id-service.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -561,7 +570,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
       ADBMobile.TargetClearCookies(); 
       ```
 
-## Auditiebeheer {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
 * **AudienceVisitorProfile**
 
