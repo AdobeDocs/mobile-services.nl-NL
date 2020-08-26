@@ -7,9 +7,9 @@ title: Windows Visual Studio-extensies voor Experience Cloud Solutions 4.x SDK
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Deze uitbreiding verstrekt een veel gemakkelijkere manier om de verwijzing van d
 
 1. Download de universele SDK van Vensters van [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Pak het gedownloade bestand lokaal uit.
-1. Dubbelklik op het bestand **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsix]** om het installatieprogramma te openen.
+1. Dubbelklik op het **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** bestand om het installatieprogramma te openen.
 1. Selecteer **[!UICONTROL Global Location]** en installeer de bibliotheek.
 
 ## Referenties toevoegen aan uw project {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
