@@ -7,9 +7,9 @@ title: Snelle start voor ontwikkelaars
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een l
 ## Voeg de bibliotheek en config dossier aan uw project toe - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Start Visual Studio en open uw oplossing.
-1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop aan **[!UICONTROL References]** en selecteer **[!UIUCONTROL Voeg Verwijzing]** toe.
+1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop aan **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
 
 1. Selecteer de juiste versie van de bibliotheek en blader naar het bijbehorende `ADBMobile.winmd` bestand.
 
