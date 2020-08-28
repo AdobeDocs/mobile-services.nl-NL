@@ -7,7 +7,10 @@ title: Configuratiemethoden
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 21%
 
 ---
 
@@ -16,15 +19,16 @@ source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 Hier volgt een lijst met methoden die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service.
 
 * **setAppExtensionType**
 
-   Configureert de Adobe Mobile SDK-instelling om te bepalen welk type extensie momenteel wordt uitgevoerd.
+   Vormt de Adobe Mobile SDK-instelling om te bepalen welk type extensie momenteel wordt uitgevoerd.
 
    Stel een van de volgende waarden in:
    * `ADBMobileAppExtensionTypeRegular` - de extensie wordt gebundeld met een bevattende app.
    * `ADBMobileAppExtensionTypeStandAlone` - de extensie wordt niet gebundeld met een bevattende app.
+
    >[!TIP]
    >
    >Deze methode mag **alleen** worden gebruikt als uw app een extensie heeft of een zelfstandige extensie is. Zie *ADBMobileAppExtensionType* hieronder voor meer informatie.
@@ -120,11 +124,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **trackingIdentifier**
 
-   Retourneert de automatisch gegenereerde bezoeker-id. Dit is een app-specifieke unieke bezoeker-id die wordt gegenereerd door de servers van Adobe. Als de servers van Adobe niet kunnen worden bereikt op het moment van de generatie, wordt de id gegenereerd met behulp van de CFUUID van Apple. De waarde wordt gegenereerd bij de eerste keer dat de toepassing wordt gestart en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft bewaard tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd bij het verwijderen.
+   Retourneert de automatisch gegenereerde bezoeker-id. Dit is een unieke bezoekersidentiteitskaart app-specifiek die door de servers van Adobe wordt geproduceerd. Als Adobe niet kunnen worden bereikt op het moment dat ze worden gegenereerd, wordt de id gegenereerd met de CFUID van Apple. De waarde wordt gegenereerd bij de eerste keer dat de toepassing wordt gestart en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft bewaard tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd bij het verwijderen.
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar de 4.x SDK, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Zie de `userIdentifier` rij hieronder voor meer informatie. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil` en het volgen herkenningsteken wordt gebruikt.
+   >Als uw app van de Experience Cloud 3.x naar de 4.x-SDK upgradet, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Zie de `userIdentifier` rij hieronder voor meer informatie. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil` en het volgen herkenningsteken wordt gebruikt.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -140,11 +144,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **userIdentifier**
 
-   Als een aangepaste id is ingesteld, wordt de gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, `nil` wordt deze geretourneerd. De standaardwaarde is `nil`.
+   Als een aangepaste id is ingesteld, wordt de gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, wordt deze `nil` geretourneerd. De standaardwaarde is `nil`.
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK.
 
    Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil` tot reeks.
 
@@ -354,7 +358,10 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
    >[!TIP]
    >
    >Haal de IDFA **alleen** van Apple API&#39;s op als u een advertentieservice gebruikt. Als u IDFA ophaalt en deze niet correct gebruikt, wordt uw app mogelijk afgewezen.
-
+   >
+   >Als voor uw toepassing IDFA is vereist, controleert u de documentatie [van](https://developer.apple.com/documentation/adsupport) Apple om de gebruikersvoorkeuren voor Advertentie te raadplegen en de IDFA-waarde op te halen.
+   >
+   >Voor iOS 14+ moet het nieuwe [app Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency) worden geïmplementeerd om de IDFA-waarde te kunnen ophalen.
    * Hier volgt de syntaxis voor deze methode:
 
       ```objective-c
@@ -364,7 +371,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
    * Hier volgt het codevoorbeeld voor deze methode:
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
