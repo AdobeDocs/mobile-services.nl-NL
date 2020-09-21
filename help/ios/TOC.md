@@ -1,17 +1,21 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services iOS Help
+user-guide-title: iOS-handleiding voor mobiele services
+breadcrumb-title: iOS Guide
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
 
-# Help bij Mobile Services iOS {#ios}
+# iOS-handleiding voor mobiele services {#ios}
 
 + [iOS SDK 4.x voor Experience Cloud-oplossingen](overview.md)
-+ [Opmerkingen bij de release](rel-notes.md)
++ [Releaseopmerkingen](rel-notes.md)
 + Aan de slag {#getting-started-ios}
    + [Aan de slag - overzicht](getting-started/getting-started.md)
    + [Voordat u begint](getting-started/requirements.md)
@@ -27,7 +31,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    + [Configuratiemethoden](configuration/sdk-methods.md)
    + [Beveiliging van toepassingsvervoer](configuration/app-transport-security.md)
 + [Levenscycluswaarden](metrics.md)
-+ Analyse {#analytics-ios}
++ Analytics {#analytics-ios}
    + [Overzicht van analysemogelijkheden](analytics-main/analytics-main.md)
    + [Toepassingsstaten bijhouden](analytics-main/states.md)
    + [Toepassingsacties bijhouden](analytics-main/actions.md)
@@ -37,14 +41,14 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    + Variabele voor producten {#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
-   + [Serienummering voor gebeurtenissen](analytics-main/event-serialization.md)
+   + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
    + [Video Analytics](analytics-main/video-qs.md)
    + Postbacks {#postbacks}
       + [Overzicht van postbacks](analytics-main/postback/postback.md)
       + [Voorbeeld van terugzending](analytics-main/postback/postback-example.md)
       + [PII-postbacks](analytics-main/postback/c-pii-postbacks.md)
    + [Analysemethoden](analytics-main/analytics-methods.md)
-+ Verwerving {#acquisition-ios}
++ Acquisitie {#acquisition-ios}
    + [Overzicht van overname](acquisition-main/acquisition-main.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/c-acquisition-methods.md)
@@ -57,7 +61,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    + [Apple-zoekadvertenties](acquisition-main/c-apple-search-ads.md)
 + Berichten {#messaging-ios}
    + [Overzicht van berichten](messaging-main/messaging-main.md)
-   + In-app berichten {#in-app-messaging}
+   + In-app messaging {#in-app-messaging}
       + [In-app berichten](messaging-main/messaging/messaging.md)
       + [Problemen met in-app messaging oplossen](messaging-main/messaging/in-apps-ts.md)
    + Push messaging {#push-messaging}
@@ -65,24 +69,24 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       + [Push messaging implementeren met deep linking](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [Rich push-berichten ontvangen](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
       + [Probleemoplossing voor pushberichten](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Locatie {#location-ios}
++ Location {#location-ios}
    + [Overzicht van locatie](location/location.md)
    + [Geolocatie en aandachtspunten](location/geo-poi.md)
    + [Beacon tracking](location/ibeacon.md)
-+ Doel {#target-ios}
++ Target {#target-ios}
    + [Doeloverzicht](target-main/target-main.md)
    + [Doelmethoden](target-main/c-target-methods.md)
    + [Prefetch-aanbiedingsinhoud in iOS](target-main/c-mob-target-prefetch-ios.md)
    + [Voorvertoning doel op iOS](target-main/c-mob-target-preview-ios.md)
 + Experience Cloud {#exp-cloud-ios}
    + [Overzicht van Experience Cloud](marketing-cloud/marketing-cloud.md)
-   + [Experience Cloud ID](marketing-cloud/mcvid.md)
+   + [Experience Cloud-id](marketing-cloud/mcvid.md)
    + [Methoden van Adobe Experience Platform Identity Service](marketing-cloud/mc-methods.md)
    + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
 + [Methoden van Audience Manager](amm/aam-methods.md)
 + Apple TV-implementatie met tvOS {#apple-tv-implementation-tvos-ios}
    + [Apple TV-implementatie met tvOS](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
-   + [Adobe-doel voor TVML/TVJS](apple-tv-implementation-tvos/target-for-tvml-tvjs.md)
+   + [Adobe Target voor TVML/TVJS](apple-tv-implementation-tvos/target-for-tvml-tvjs.md)
    + [TVJS-methoden](apple-tv-implementation-tvos/tvjs-methods.md)
 + iOS-extensie-implementatie {#ios-ext}
    + [iOS-extensie-implementatie](ios-ext/ios-ext.md)
