@@ -1,17 +1,21 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Android Help
+user-guide-title: Android-handleiding voor mobiele services
+breadcrumb-title: Android Guide
 translation-type: tm+mt
-source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 6%
 
 ---
 
 
-# Help bij Mobile Services Android{#android}
+# Android-handleiding voor mobiele services{#android}
 
 + [Android SDK 4.x voor Experience Cloud-oplossingen](overview.md)
-+ [Opmerkingen bij de release](rel-notes.md)
++ [Releaseopmerkingen](rel-notes.md)
 + Aan de slag{#getting-started-android}
    + [Aan de slag](getting-started/getting-started.md)
    + [Voordat u begint](getting-started/requirements.md)
@@ -25,7 +29,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Batch](configuration/hit-batching.md)
    + [Configuratiemethoden](configuration/methods.md)
 + [Levenscycluswaarden](metrics.md)
-+ Analyse{#analytics-android}
++ Analytics{#analytics-android}
    + [Overzicht van analysemogelijkheden](analytics-main/analytics-main.md)
    + [Toepassingsstaten bijhouden](analytics-main/states.md)
    + [Toepassingsacties bijhouden](analytics-main/actions.md)
@@ -35,14 +39,14 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + Variabele voor producten{#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
-   + [Serienummering voor gebeurtenissen](analytics-main/event-serialization.md)
+   + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
    + [Video Analytics](analytics-main/video-qs.md)
    + Postbacks{#postbacks}
       + [Overzicht van postbacks](analytics-main/postbacks/postbacks.md)
       + [Postbacks, voorbeeld](analytics-main/postbacks/postback-example.md)
       + [PII-postbacks](analytics-main/postbacks/c-pii-postbacks.md)
    + [Analysemethoden](analytics-main/analytics-methods.md)
-+ Verwerving{#acquisition-android}
++ Acquisitie{#acquisition-android}
    + [Overzicht van overname](acquisition-main/acquisition-main-android.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/acquisition-methods.md)
@@ -55,7 +59,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Problemen met ophalen oplossen](acquisition-main/troubleshoot-acquisition-testing.md)
 + Berichten{#messaging-android}
    + [Overzicht van berichten](messaging-main/messaging-main-android.md)
-   + In-app berichten{#inapp-messaging}
+   + In-app messaging{#inapp-messaging}
       + [In-app berichten](messaging-main/messaging/messaging.md)
       + [In-app-berichten oplossen](messaging-main/messaging/in-apps-ts.md)
    + Push messaging{#push-messaging}
@@ -63,11 +67,11 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
       + [Push messaging implementeren met deep linking](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
       + [Rich push-berichten ontvangen](messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
       + [Pushberichten oplossen](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Locatie{#location}
++ Location{#location}
    + [Overzicht van locatie](location/location.md)
    + [Geolocatie en aandachtspunten](location/geo-poi.md)
    + [Beacon bijhouden](location/beacon.md)
-+ Doel{#target-android}
++ Target{#target-android}
    + [Doeloverzicht](target-main/target-main.md)
    + [Doelconfiguratie](target-main/target.md)
    + [Doelmethoden](target-main/c-target-methods.md)
@@ -75,12 +79,12 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Doelvoorvertoning op Android](target-main/c-mob-target-preview-android.md)
 + Experience Cloud{#experience-cloud-android}
    + [Overzicht van Experience Cloud](c-marketing-cloud/c-marketing-cloud.md)
-   + [Configuratie van Experience Cloud ID](c-marketing-cloud/mcvid.md)
+   + [Experience Cloud ID-configuratie](c-marketing-cloud/mcvid.md)
    + [Methoden van Adobe Experience Platform Identity Service](c-marketing-cloud/mc-methods.md)
    + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
-+ Auditiebeheer{#audience-manager-android}
-   + [Overzicht van Auditiebeheer](audience-manager/audience-manager.md)
-   + [Configuratie van Auditiebeheer](audience-manager/audiencemgmt.md)
++ Audience Manager{#audience-manager-android}
+   + [Overzicht van Audience Manager](audience-manager/audience-manager.md)
+   + [Configuratie van Audience Manager](audience-manager/audiencemgmt.md)
    + [Methoden van Audience Manager](audience-manager/c-audience-manager-methods.md)
 + Woorden{#wearables-android}
    + [Overzicht van Wearables](wearables/wearables.md)
