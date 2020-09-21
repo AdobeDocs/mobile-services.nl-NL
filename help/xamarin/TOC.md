@@ -1,14 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Xamarin Help
+user-guide-title: Xamarin Guide voor mobiele services
+breadcrumb-title: Xamarin Guide
 translation-type: tm+mt
-source-git-commit: 9d1d3a2fa65c6627c748c417aa18f04f8fdc255e
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 5%
 
 ---
 
 
-# Help bij Mobile Services Xamarin {#xamarin}
+# Xamarin Guide voor mobiele services {#xamarin}
 
 + [Xamarin-componenten voor Experience Cloud Solutions 4.x SDK](get-started.md)
 + [Aanroepen uitvoeren naar de bibliotheek](library-calls.md)
