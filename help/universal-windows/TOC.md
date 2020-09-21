@@ -1,28 +1,32 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Universal Windows Platform Help
+user-guide-title: Handleiding voor Universal Windows Platform voor mobiele services
+breadcrumb-title: Universal Windows Platform Guide
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 14%
 
 ---
 
 
-# Mobile Services Universal Windows Platform Help {#universal-windows}
+# Handleiding voor Universal Windows Platform voor mobiele services {#universal-windows}
 
-+ [Universal Windows Platform SDK 4.x voor Experience Cloud-oplossingen](overview.md)
++ [Universal Windows Platform SDK 4.x voor Experience Cloud Solutions](overview.md)
 + Aan de slag {#get-started-univ-win-plat}
    + [Aan de slag](c-getting-started/c-getting-started.md)
    + [Snelle start voor ontwikkelaars](c-getting-started/dev-qs.md)
-+ [Opmerkingen bij de release](release-notes.md)
++ [Releaseopmerkingen](release-notes.md)
 + Configuratie {#config-univ-win-plat}
    + [Overzicht van configuratie](c-configuration/c-configuration.md)
    + [ADBMobileConfig.json config](c-configuration/c.json.md)
    + [Methoden van SDK](c-configuration/methods.md)
-+ Analyse {#analytics-univ-win-plat}
++ Analytics {#analytics-univ-win-plat}
    + [Overzicht van analysemogelijkheden](analytics/analytics.md)
    + [Variabele voor producten](analytics/products.md)
-   + [Serienummering voor gebeurtenissen](analytics/event-serialization.md)
+   + [Gebeurtenisserialisatie](analytics/event-serialization.md)
    + [Video Analytics](analytics/video-qs.md)
    + [Analysemethoden](analytics/analytics-methods.md)
 + [Doelmethoden](target/target-methods.md)
