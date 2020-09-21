@@ -1,22 +1,23 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Gebruikershulp voor mobiele services
-user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
+user-guide-title: Handleiding voor mobiele services
+breadcrumb-title: Mobile Services Guide
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
 translation-type: tm+mt
-source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 8%
+source-wordcount: '321'
+ht-degree: 9%
 
 ---
 
 
-# Gebruikershulp voor mobiele services {#using}
+# Handleiding voor mobiele services {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Releaseopmerkingen](whatsnew.md)
-+ Getting started {#get-started-ug}
++ Aan de slag {#get-started-ug}
    + [Aan de slag](gs/gs.md)
    + [Rollen en machtigingen](gs/c-mob-roles-and-permissions.md)
    + [Aanmelden](gs/gs-signin.md)
@@ -24,7 +25,7 @@ ht-degree: 8%
    + Mobiele meetgegevens {#mobile-metrics}
       + [Mobiele meetgegevens](gs/metrics/metrics.md)
       + [Mobiele meetgegevens weergeven](gs/metrics/overview.md)
-      + [Referentie mobiele meeteenheden en afmetingen](gs/metrics/metrics-reference.md)
+      + [Verwijzing naar mobiele Dimension](gs/metrics/metrics-reference.md)
 + Toepassingen beheren {#manage-apps-ug}
    + [Het overzicht Toepassingen beheren](manage-apps/manage-apps.md)
    + [Een nieuwe app toevoegen](manage-apps/t-new-app.md)
@@ -39,7 +40,7 @@ ht-degree: 8%
       + [Uw app configureren](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Opties voor SDK-analyse configureren](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
       + [Mobiele SDK&#39;s en gereedschappen downloaden](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
-      + [Opties voor Auditiebeheer configureren](c-manage-app-settings/c-mob-confg-app/t-config-aam.md)
+      + [Opties voor Audience Manager configureren](c-manage-app-settings/c-mob-confg-app/t-config-aam.md)
       + [Opties voor SDK-overname configureren](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
       + [Koppelingen naar Apple Universal Links en Android App](c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
       + [Opties voor SDK-id-service configureren](c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)
@@ -92,7 +93,7 @@ ht-degree: 8%
          + [Aankoopkoppelingen importeren of exporteren](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
          + [Marketing-koppelingen beheren](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [Koppelingen voor overname handmatig maken](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
-+ Locatie {#location-ug}
++ Location {#location-ug}
    + [Overzicht van locatie](location/location-overview.md)
    + [Overzicht (locatie)](location/c-location-overview.md)
    + [Kaart](location/c-map-points.md)
@@ -107,7 +108,7 @@ ht-degree: 8%
       + [Ervaring: pushbericht](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [Planning: pushbericht](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [Probleemoplossing voor pushberichten](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
-   + In-app berichten {#inapp-messages}
+   + In-app messages {#inapp-messages}
       + [Een bericht in de app maken](in-app-messaging/t-in-app-message/t-in-app-message.md)
       + [Publiek: bericht in de app](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [Ervaring: bericht in de app](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)
