@@ -3,12 +3,15 @@ description: Met deze informatie kunt u de Android-bibliotheek implementeren en 
 keywords: android;library;mobile;sdk
 seo-description: Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers, enzovoort.
 seo-title: Core-implementatie en levenscyclus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Core-implementatie en levenscyclus
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 translation-type: tm+mt
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
@@ -35,9 +38,9 @@ Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusm
    * `ADBMobileConfig.json`, dit is het SDK-configuratiebestand dat voor uw app is aangepast.
    >[!IMPORTANT]
    >
-   >Als u de SDK buiten de gebruikersinterface van Adobe Mobile-services downloadt, moet het `ADBMobileConfig.json` bestand handmatig worden geconfigureerd. Zie [Voor u begint](/help/android/getting-started/requirements.md)als u nog niet eerder met Analytics en de Mobile SDK werkt en u een ontwikkelrapport wilt instellen en een vooraf ingevulde versie van het configuratiebestand wilt downloaden.
+   >Als u de SDK buiten de gebruikersinterface van de Adobe Mobile-services downloadt, moet het `ADBMobileConfig.json` bestand handmatig worden geconfigureerd. Zie [Voor u begint](/help/android/getting-started/requirements.md)als u nog niet eerder met Analytics en de Mobile SDK werkt en u een ontwikkelrapport wilt instellen en een vooraf ingevulde versie van het configuratiebestand wilt downloaden.
 
-## Voeg SDK en config dossier aan uw IDEA of project van de Verduistering toe IntelliJ {#section_B89510FBB4C646AEA73A185B966E54D3}
+## Voeg SDK en config dossier aan uw IDEA of project van de Clipse IntelliJ toe {#section_B89510FBB4C646AEA73A185B966E54D3}
 
 **IntelliJ IDEA-project**
 
@@ -46,9 +49,9 @@ Om SDK en config dossier aan uw project toe te voegen:
 1. Voeg het `ADBMobileConfig.json` bestand toe aan de `assets` map in uw project.
 
 1. Klik met de rechtermuisknop op het project in het navigatievenster voor het project.
-1. Selecteer Instellingen **[!UICONTROL van module]** Openen.
-1. Selecteer onder **[!UICONTROL Projectinstellingen]** de optie **[!UICONTROL Bibliotheken]**.
-1. Klik op het pictogram **[!UICONTROL +]** om een nieuwe bibliotheek toe te voegen.
+1. Selecteer **[!UICONTROL Open Module Settings]**.
+1. Selecteer onder **[!UICONTROL Project Settings]** de optie **[!UICONTROL Libraries]**.
+1. Click the **[!UICONTROL +]** icon to add a new library.
 1. Selecteer **[!UICONTROL Java]** en navigeer naar het `adobeMobileLibrary.jar` bestand.
 1. Selecteer de modules waar u de mobiele bibliotheek wilt gebruiken.
 1. Click **[!UICONTROL Apply]** and **[!UICONTROL OK]** to close the Module Settings window.
@@ -58,12 +61,12 @@ Om SDK en config dossier aan uw project toe te voegen:
 Om SDK en config dossier aan uw project toe te voegen:
 
 1. Voeg het `ADBMobileConfig.json` bestand toe aan de `assets` map in uw project.
-1. In **[!UICONTROL winde]** Eclipse, klik de projectnaam met de rechtermuisknop aan.
-1. Klik op **[!UICONTROL Pad]** samenstellen > Externe archieven **[!UICONTROL toevoegen]**.
+1. Klik met de rechtermuisknop op de projectnaam **[!UICONTROL Eclipse IDE]** in.
+1. Klik op  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]**.
 1. Selecteer `adobeMobileLibrary.jar`.
-1. Klik op **[!UICONTROL Openen]**.
-1. Klik nogmaals met de rechtermuisknop op het project en selecteer **[!UICONTROL Pad]** samenstellen > **[!UICONTROL Pad]** samenstellen configureren.
-1. Controleer of op het tabblad **[!UICONTROL Volgorde en Exporteren]** **`adobeMobileLibrary.jar`** is geselecteerd.
+1. Klik op **[!UICONTROL Open]**.
+1. Klik nogmaals met de rechtermuisknop op het project en selecteer **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
+1. Controleer of op het **[!UICONTROL Order and Export]** tabblad deze optie **`adobeMobileLibrary.jar`** is geselecteerd.
 
 ## Toepassingsmachtigingen toevoegen {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -140,7 +143,7 @@ public void onResume() {
 }
 ```
 
-Aanvullende waarden voor contextgegevens die worden verzonden met, `collectLifecycleData` moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De extra waarden van contextgegevens die met worden verzonden `collectLifecycleData` moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-lifecycle.png)
 
