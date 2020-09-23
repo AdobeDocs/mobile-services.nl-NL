@@ -2,17 +2,20 @@
 description: Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
 seo-description: Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
 seo-title: Toepassingsacties bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Toepassingsacties bijhouden
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 
-# Toepassingsacties bijhouden {#track-app-actions}
+# Track app actions {#track-app-actions}
 
 Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
 
@@ -36,7 +39,7 @@ Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden 
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. Selecteer uw toepassing in de gebruikersinterface van Adobe Mobile Services en klik op **[!UICONTROL Manage App Settings]**.
+1. Selecteer uw app in de gebruikersinterface van Adobe Mobile Services en klik op **[!UICONTROL Manage App Settings]**.
 1. Klik **[!UICONTROL Manage Variables and Metrics]** en klik op het **[!UICONTROL Custom Metrics]** tabblad.
 
 1. Wijs bijvoorbeeld de naam van de contextgegevens die in de code is gedefinieerd, toe `myapp.ActionName`aan een aangepaste gebeurtenis.
@@ -57,7 +60,7 @@ exampleContextData.put("myapp.social.SocialSource", "Twitter");
 Analytics.trackAction("myapp.SocialShare", exampleContextData);
 ```
 
-Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-action.png)
 
