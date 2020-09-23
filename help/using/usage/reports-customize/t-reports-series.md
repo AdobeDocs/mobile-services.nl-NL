@@ -3,12 +3,15 @@ description: Deze informatie helpt u de ingebouwde rapporten aan te passen door 
 keywords: mobile
 seo-description: Deze informatie helpt u de ingebouwde rapporten aan te passen door extra reeksen (metriek) of apps in verschillende rapportreeksen toe te voegen om gegevens te vergelijken.
 seo-title: Reeks (metriek) toevoegen aan rapporten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Reeks (metriek) toevoegen aan rapporten
 topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
@@ -19,19 +22,19 @@ Deze informatie helpt u de ingebouwde rapporten aan te passen door extra reeksen
 
 >[!IMPORTANT]
 >
->Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een uitsplitsing of rapporttype niet beschikbaar is in Adobe Mobile, kan dit worden gegenereerd door een andere rapportinterface te gebruiken.
+>De mobiele toepassingsmetriek zijn ook beschikbaar in marketing reports and analytics, ad hoc analyse, gegevenspakhuis, en andere Analytics rapporteringsinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
 
 In dit voorbeeld, zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpassen, maar de instructies kunnen op om het even welk rapport van toepassing zijn.
 
 1. Open uw app en klik op **[!UICONTROL Usage]** > **[!UICONTROL Users & Sessions]**.
 
-   ![Stap resultaat](assets/customize1.png)
+   ![Stap Resultaat](assets/customize1.png)
 
    Dit rapport bevat een volledige overloopweergave van gebruikers van de app. We willen echter een reeks toevoegen om melding te maken van vastgelopen apps.
 
 1. Klik op **[!UICONTROL Customize]**.
 
-   ![Stap resultaat](assets/customize2.png)
+   ![Stap Resultaat](assets/customize2.png)
 
 1. Schuif omlaag en klik op **[!UICONTROL Add Series]**.
 
@@ -41,7 +44,7 @@ In dit voorbeeld, zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpa
 
    * Als u een nieuwe (metrische) reeks wilt toevoegen, klikt u op de naam van de reeks die u net hebt gemaakt en selecteert u een nieuwe metrische levenscyclus in de vervolgkeuzelijst.
 
-      ![Stap resultaat](assets/add_series.png)
+      ![Stap Resultaat](assets/add_series.png)
 
    * Als u een nieuwe app wilt toevoegen aan een andere rapportsuite zodat u gegevens kunt vergelijken tussen verschillende apps, klikt u op de naam van de app in de nieuwe serie en selecteert u de gewenste app.
 
