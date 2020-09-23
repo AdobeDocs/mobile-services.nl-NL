@@ -2,12 +2,15 @@
 description: Deze informatie helpt u met een GDPR verzoek om gegevens te schrappen.
 seo-description: Deze informatie helpt u met een GDPR verzoek om gegevens te schrappen.
 seo-title: De status Opt van de gebruiker instellen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: De status Opt van de gebruiker instellen
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +21,9 @@ Deze informatie helpt u met een GDPR verzoek om gegevens te schrappen.
 
 >[!IMPORTANT]
 >
->Vanaf Experience Cloud iOS SDK&#39;s 4.15 kunt u de privacystatus zo instellen dat Audience Manager en Experience Cloud ID-resultaten `unknown` behouden blijven.
+>Vanaf Experience Cloud iOS SDKs 4.15, plaatsend de privacystatus om Audience Manager en Experience Cloud ID klapjes te `unknown` houden.
 
-U kunt controleren of de activiteit van de Manager van de Analyse, van het Doel, en van de Audience op een apparaat door de volgende montages te gebruiken wordt toegestaan:
+U kunt met de volgende instellingen bepalen of de activiteit Analytics, Target en Audience Manager is toegestaan op een apparaat:
 
 * `privacyDefault` in [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
