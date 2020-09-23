@@ -1,25 +1,28 @@
 ---
-description: Met deze informatie kunt u een koppeling naar de aanschafcampagne versie 3 op een Android-apparaat gebruiken om een campagne voor het aanschaffen van een versie 3 uit te voeren.
+description: Met deze informatie kunt u een koppeling naar de aanschaf van een versie 3-campagne op een Android-apparaat uitvoeren.
 keywords: android;library;mobile;sdk
-seo-description: Met deze informatie kunt u een koppeling naar de aanschafcampagne versie 3 op een Android-apparaat gebruiken om een campagne voor het aanschaffen van een versie 3 uit te voeren.
+seo-description: Met deze informatie kunt u een koppeling naar de aanschaf van een versie 3-campagne op een Android-apparaat uitvoeren.
 seo-title: Testversie 3-overname
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testversie 3-overname
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 translation-type: tm+mt
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
 
 # V3-overname testen {#testing-version-acquisition}
 
-Met deze informatie kunt u een koppeling naar de aanschafcampagne versie 3 op een Android-apparaat gebruiken om een campagne voor het aanschaffen van een versie 3 uit te voeren.
+Met deze informatie kunt u een koppeling naar de aanschaf van een versie 3-campagne op een Android-apparaat uitvoeren.
 
 >[!IMPORTANT]
 >
->Verwerving in V3 verwijst naar de aanschafkoppelingen die u maakt met de Verwervingsbouwer in de gebruikersinterface van Adobe Mobile Services. Als u deze functie wilt gebruiken, moet u een upgrade uitvoeren naar Android SDK 4.x voor Experience Cloud Solutions 4.6.0 of hoger.
+>De verwerving in V3 verwijst naar de verwervingsverbindingen die u met de Bouwer van de Aankoop in de Mobiele Diensten UI van Adobe creeert. Als u deze functie wilt gebruiken, moet u een upgrade uitvoeren naar Android SDK 4.x voor Experience Cloud Solutions 4.6.0 of hoger.
 
 Als de mobiele app zich nog niet in Google Play bevindt, kunt u bij het maken van de koppeling naar de campagne elke mobiele app als doel selecteren. Dit is alleen van invloed op de app waarnaar de verwervingsserver u omleidt nadat u op de verwervingskoppeling hebt geklikt, maar heeft geen invloed op de mogelijkheid om de koppeling te testen. Parameters van de queryreeks worden doorgegeven aan de Google Play-winkel, die tijdens de installatie worden doorgegeven aan de app als onderdeel van een campagne-uitzending. Voor het testen van het aanschaffen van mobiele apps voor Roundtrip is de simulatie van dit type uitzending vereist.
 
@@ -81,6 +84,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
    1. Vervangen `com.adobe.android` door de pakketnaam van de toepassing.
    1. Verwijzing naar ontvanger bijwerken met de locatie van de ontvanger voor het bijhouden van de campagne in uw app
    1. Waarden vervangen die zijn gekoppeld aan `utm_content`.
+
    Als de uitzending slaagt, kunt u een reactie verwachten gelijkend op het volgende voorbeeld:
 
    `Broadcasting: Intent
