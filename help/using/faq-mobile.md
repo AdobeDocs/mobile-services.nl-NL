@@ -3,29 +3,32 @@ description: Veelgestelde vragen en antwoorden voor Adobe Mobile Services en een
 keywords: mobile
 seo-description: Veelgestelde vragen en antwoorden voor Adobe Mobile Services en een algemene beschrijving van functies.
 seo-title: Veelgestelde vragen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Veelgestelde vragen
 topic: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1115'
+ht-degree: 2%
 
 ---
 
 
 # Veelgestelde vragen {#frequently-asked-questions}
 
-De volgende tabel bevat een lijst met veelgestelde vragen over Adobe Mobile Services:
+De volgende lijst bevat een lijst van vaak gestelde vragen voor de Mobiele Diensten van Adobe:
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
 ### Wilt u regelmatig updates uitvoeren met de SDK?
 
-Ja, wij maken constant updates in inspanning om u de meest eigenschap rijke, norm-volgzame, en veilige SDKs te krijgen. We geven doorgaans elke maand een nieuwe versie vrij. Deze SDK-updates zijn drop-in vervangingen (voor versie 4x) om de implementatie te vergemakkelijken. Raadpleeg de [opmerkingen bij](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)deze release voor meer informatie over onze updates.
+Ja, wij maken constant updates in inspanning om u de meest eigenschap rijke, norm-volgzame, en veilige SDKs te krijgen. We geven doorgaans elke maand een nieuwe versie vrij. Deze SDK-updates zijn drop-in vervangingen (voor versie 4x) om de implementatie te vergemakkelijken. Raadpleeg de [opmerkingen bij](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html)deze release voor meer informatie over onze updates.
 
 ### Welke SDK-versie moet ik hebben?
 
-Onze huidige SDK&#39;s zijn versie 4.11. Raadpleeg de [Release-notities](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)voor meer informatie.
+Onze huidige SDK&#39;s zijn versie 4.11. Raadpleeg de [Release-notities](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html)voor meer informatie.
 
 ### Waar kan ik SDKs downloaden?
 
@@ -35,9 +38,9 @@ SDK&#39;s voor afzonderlijke mobiele platforms kunnen worden gedownload door de 
 
 Nadat u een nieuwe app-rapportsuite hebt gemaakt, navigeert u naar Toepassingsinstellingen beheren en configureert u alle vereiste opties op de pagina met toepassingsgegevens. Nadat u uw configuratie hebt opgeslagen, downloadt u de vereiste SDK&#39;s onder aan de pagina Toepassingsinstellingen beheren. De SDK wordt vooraf geconfigureerd met de opties die u hebt opgeslagen. U vindt deze in het `ADBMobileConfig.json` bestand in het SDK-pakket. Als u SDK-instellingen wijzigt op de pagina App Settings (Toepassingsinstellingen beheren), moet u de SDK-bestanden opnieuw downloaden of het `ADBMobileConfig.json` bestand bijwerken met de benodigde wijzigingen.
 
-### Biedt de Adobe Mobile SDK ondersteuning voor IPv6 voor iOS?
+### Steunt de Adobe Mobile SDKs IPv6 voor iOS?
 
-De Adobe Mobile-SDK&#39;s gebruiken de standaard iOS- en Android-netwerkstapels. Voor iOS gebruikt de SDK NSURLSessie (iOS versies 7+) en NSURLConnection (iOS versies 7 en hoger) die volledig compatibel zijn met IPv6. De ontwikkelaars die hun eigen voorzien van een netwerkstapel hebben gebouwd of gebruikt zouden kunnen willen herzien als er andere het verlichten overwegingen zijn. Hier volgt een aantal aanvullende informatie van Apple:
+De Adobe Mobile-SDK&#39;s maken gebruik van de standaard iOS- en Android-netwerkstapels. Voor iOS gebruikt de SDK NSURLSessie (iOS versies 7+) en NSURLConnection (iOS versies 7 en hoger) die volledig compatibel zijn met IPv6. De ontwikkelaars die hun eigen voorzien van een netwerkstapel hebben gebouwd of gebruikt zouden kunnen willen herzien als er andere het verlichten overwegingen zijn. Hier volgt een aantal aanvullende informatie van Apple:
 
 *Als u een cliënt-kant app gebruikend high-level voorzien van een netwerkAPIs zoals NSURLSessie en het kader van het Netwerk CFNetwork schrijft en u verbindt door naam, zou u niets voor uw app moeten veranderen om met IPv6 adressen te werken.* Voor meer informatie zie, [ondersteunend IPv6 DNS64/NAT64 Netwerken](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
@@ -58,7 +61,7 @@ Ja. De SDK&#39;s bieden de mogelijkheid om gegevens naar meerdere Adobe Analytic
 
 ### Hoe verschillen mobiele bezoeken van lanceringen?
 
-Een introductie wordt gemeten door de SDK wanneer een gebruiker de app voor de eerste keer opent of naar de app terugkeert nadat hij de app langer heeft verlaten dan de opgegeven time-outwaarde. De standaardtime-out is 5 minuten (300 seconden) in **[!UICONTROL lifecycleTimeout]** het veld, dat zich in het `ADBMobileConfig.json` bestand bevindt. Een bezoek is een serverberekening door Adobe Analytics en is gebaseerd op de eerste en laatste gegevenshits die door de SDK worden verzonden zonder dat een time-out voor een bezoek wordt overschreden. Doorgaans worden sessietime-outs ingesteld op 30 minuten voor een rapportsuite. Hoewel bezoeken afkomstig zijn van traditionele webanalyses, bieden deze resultaten nog steeds waardevolle inzichten in de manier waarop gebruikers uw app kunnen betreden en verlaten.
+Een introductie wordt gemeten door de SDK wanneer een gebruiker de app voor de eerste keer opent of naar de app terugkeert nadat hij de app langer heeft verlaten dan de opgegeven time-outwaarde. De standaardtime-out is 5 minuten (300 seconden) in **[!UICONTROL lifecycleTimeout]** het veld, dat zich in het `ADBMobileConfig.json` bestand bevindt. Een bezoek is een serverberekening door Adobe Analytics en is gebaseerd op de eerste en laatste gegevenstreffers die door de SDK worden verzonden zonder een bezoekonderbreking te overschrijden. Doorgaans worden sessietime-outs ingesteld op 30 minuten voor een rapportsuite. Hoewel bezoeken afkomstig zijn van traditionele webanalyses, bieden deze resultaten nog steeds waardevolle inzichten in de manier waarop gebruikers uw app kunnen betreden en verlaten.
 
 ## Berichten {#section_5EFDD2B2EBA543C09902FF979C89F2EC}
 
@@ -72,7 +75,7 @@ Ja, we zorgen voor een aangepaste pushlading die in JSON kan worden gecodeerd. A
 
 ### Zijn er groottebeperkingen voor in-app berichten?
 
-Gepubliceerde en actieve berichten in de app die zijn gemaakt in Adobe Mobile Services, worden gehost op een server met een maximale grootte van 15 MB per rapportsuite voor de app. Hoewel deze beperking van toepassing is op berichtinhoud en bronnen die worden gehost met Adobe, gelden er geen beperkingen ten aanzien van de bronnen waarnaar het bericht in de app kan verwijzen op andere hosts of op de bronnen in de app.
+Gepubliceerde en actieve in-app berichten die zijn gemaakt in Adobe Mobile Services worden gehost op een server met een 15 MB-groottebeperking per rapportsuite voor de app. Hoewel deze beperking van toepassing is op berichtinhoud en bronnen die worden gehost met Adobe, gelden er geen beperkingen voor de bronnen waarnaar het bericht in de app kan verwijzen op andere hosts of op de bronnen in de app.
 
 ### Kan ik mijn eigen HTML voor in-app berichten gebruiken?
 
@@ -88,17 +91,17 @@ Push-berichten worden verzonden met behulp van bestaande Adobe Analytics-segment
 
 U kunt niet dezelfde naam voor berichten, pushberichten of markeerkoppelingen gebruiken in meerdere apps die dezelfde bovenliggende rapportsuite of VRS gebruiken. Voer een andere naam in voor uw bericht in de app, pushbericht of marketingkoppeling om dit probleem op te lossen.
 
-## Locatie {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## Location {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
 ### Is er een grens aan hoeveel punten van belang (POI&#39;s) kan ik hebben?
 
 Er is geen specifieke beperking, maar voor ideale prestaties en vanwege geheugenbeperkingen op het apparaat van de gebruiker raden we u aan maximaal 5000 POI&#39;s te maken of te uploaden.
 
-## Verwerving {#section_B37F1129CD5843E890D0E54179455357}
+## Acquisitie {#section_B37F1129CD5843E890D0E54179455357}
 
 ### Kan ik campagnes toewijzen aan activiteiten in de app?
 
-Ja. Met Adobe Mobile Services kunt u marketingtrucs maken waarmee u het verkeer naar uw apps kunt bevorderen en stimuleren en acquisitiecampagnes kunt koppelen aan analyses en conversies in de app. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
+Ja. Adobe Mobile Services kan u helpen marketingtrucs te maken die u helpen uw apps te promoten en het verkeer naar uw apps te sturen en acquisitiecampagnes aan analyses en conversies in de app te koppelen. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
 
 ### Hoe kan ik koppelingen instellen om nieuwe gebruikers van apps aan te schaffen en te volgen?
 
