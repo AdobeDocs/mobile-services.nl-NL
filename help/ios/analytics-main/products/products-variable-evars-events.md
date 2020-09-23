@@ -2,12 +2,15 @@
 description: Hier is een voorbeeld van de productvariabele met Merchandising en product-specifieke gebeurtenissen.
 seo-description: Hier is een voorbeeld van de productvariabele met Merchandising en product-specifieke gebeurtenissen.
 seo-title: Productvariabele met handelsstromen en productspecifieke gebeurtenissen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Productvariabele met handelsstromen en productspecifieke gebeurtenissen
 topic: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 
