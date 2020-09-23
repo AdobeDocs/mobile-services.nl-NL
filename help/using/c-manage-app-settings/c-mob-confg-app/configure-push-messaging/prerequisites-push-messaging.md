@@ -3,12 +3,12 @@ description: U moet deze taken voltooien alvorens het Push Overseinen in toepass
 keywords: mobile
 seo-description: U moet deze taken voltooien alvorens het Push Overseinen in toepassingen te vormen.
 seo-title: Vereisten voor het inschakelen van pushberichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Vereisten voor het inschakelen van pushberichten
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%
