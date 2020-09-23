@@ -3,12 +3,12 @@ description: U kunt publieksopties voor pushberichten definiëren en configurere
 keywords: mobile
 seo-description: U kunt publieksopties voor pushberichten definiëren en configureren, waaronder opties voor datumbereik, Analysesegmenten en aangepaste segmenten.
 seo-title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Berichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Berichten
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -24,19 +24,19 @@ U kunt publieksopties voor pushberichten definiëren en configureren, waaronder 
 
 Wanneer een publiekssegment voor pushberichten wordt gecreeerd, zou het segment gebruikers van één of meerdere apps kunnen impliceren omdat de rapportreeksen of virtuele rapportreeksen gegevens van één of meerdere apps zouden kunnen bevatten. Voor meer informatie over virtuele rapportsuites, zie [Virtuele rapportsuites](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services kunnen marketers slechts op één app per platform drukken. Als marketers vanuit meerdere apps proberen naar segmenten te gaan die gebruikers bevatten, wordt een waarschuwing weergegeven met de mededeling dat dit kan leiden tot ernstige pushfouten en het blokkeren van gebruikers. Als u een drukkwaliteit ervaart, zie *Het oplossen van duwmislukkingen* in het duw overseinen [van het](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)Oplossen van problemen.
+In Adobe Mobile Services kunnen marketers slechts op één app per platform drukken. Als marketers vanuit meerdere apps naar segmenten proberen te gaan die gebruikers bevatten, wordt een waarschuwing weergegeven met de mededeling dat dit kan leiden tot ernstige pushfouten en dat gebruikers mogelijk toegevoegd op lijst van gewenste personen kunnen worden. Als u een drukkwaliteit ervaart, zie *Het oplossen van duwmislukkingen* in het duw overseinen [van het](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)Oplossen van problemen.
 
-Om de gegevens van de Manager van de Publiek in uw segmentdefinitie te gebruiken, zie Analytics van het [Publiek](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Zie [Audience Analytics als u Audience Manager-gegevens in uw segmentdefinitie wilt gebruiken](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Als gebruikers van de app blokkeerbaar zijn, kunnen marketers **nooit** pushberichten meer naar de betrokken gebruikers sturen.
+>Als gebruikers van de app zijn toegevoegd op lijst van gewenste personen, kunnen marketers **nooit** pushberichten meer verzenden naar de betrokken gebruikers.
 
 Als u een publiekssegment selecteert dat gebruikers over veelvoudige apps bevat, zou u het volgende alarm kunnen zien:
 
 ![meerdere toepassingsnamen](assets/multiple_appname.png)
 
-De naam van de app is gebaseerd op de geparafeerde versie van de appId, die door de SDK van Mobile Services automatisch naar Adobe Analytics wordt verzonden in de `<app name> <version number> (<bundle id>)` indeling.
+De toepassingsnaam is gebaseerd op de geparafeerde versie van de appId, die automatisch naar Adobe Analytics wordt verzonden door de SDK van Mobile Services in de `<app name> <version number> (<bundle id>)` indeling.
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
 **Doe**: De Marketer biedt pushcertificaten voor de iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. De Marketer kan een pushmelding verzenden naar een gebruikerssegment dat zich uitstrekt over beide platforms.
 
-**Niet**: Marketers bieden pushcertificaten voor iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. Als de markeerteken de laatste 30 dagen *een segment van* alle actieve gebruikers maakt en naar deze gebruikers doorvoert, ontvangen alleen de gebruikers van de Adobe Photoshop iOS- en Android-app de pushmelding en worden alle gebruikers van de Adobe Illustrator iOS- en Android-app geblokkeerd. Voor meer gedetailleerd, zie het voorbeeld het *Oplossen van de mislukkingen* van het pushbericht in het Overseinen [van de](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)Vraag van het Oplossen van problemen.
+**Niet**: Marketers bieden pushcertificaten voor iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. Als de markeerteken de laatste 30 dagen *een segment van* alle actieve gebruikers maakt en naar deze gebruikers doorstuurt, ontvangen alleen de gebruikers van de Adobe Photoshop iOS- en Android-app de push en worden alle gebruikers van de Adobe Illustrator iOS- en Android-app toegevoegd op lijst van gewenste personen. Voor meer gedetailleerd, zie het voorbeeld het *Oplossen van de mislukkingen* van het pushbericht in het Overseinen [van de](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)Vraag van het Oplossen van problemen.
 
 ## publiekssegmenten configureren {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -77,17 +77,17 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
    Houd rekening met de volgende **belangrijke** informatie wanneer u de publieksopties configureert:
 
-   * Dit **[!UICONTROL Estimated Opt-In Audience]** is het aantal apparaten dat overeenkomt met het Adobe Analytics-segment **en het** aantal opted-in-apparaten.
+   * Het **[!UICONTROL Estimated Opt-In Audience]** is het aantal apparaten dat overeenkomt met het Adobe Analytics-segment **en het** aantal opted-in-apparaten.
 
       U kunt een schatting weergeven van het aantal gebruikers in het geselecteerde segment of de geselecteerde segmenten die zich hebben aangemeld voor het ontvangen van berichten en die het pushbericht zullen ontvangen. Het totale aantal gebruikers van de app wordt weergegeven onder de schatting, ongeacht de status van de opt-in.
 
-   * Dit **[!UICONTROL Total]** is het aantal apparaten dat overeenkomt met het Adobe Analytics-segment.
+   * Het **[!UICONTROL Total]** is het aantal apparaten dat overeenkomt met het Adobe Analytics-segment.
 
-   * Pushberichten worden verzonden naar de apparaten die deel uitmaken van een gedefinieerd Adobe Analytics-segment **en die** hebben gekozen voor push-berichten.
+   * Pushberichten worden verzonden naar de apparaten die deel uitmaken van een bepaald Adobe Analytics-segment **en die** hebben gekozen voor push-berichten.
 
       Dit betekent dat de SDK een waarde heeft verzonden van `True` voor de optie Inschakelen voor pushberichten.
 
-   * Hoewel het apparaat een geldig apparaattoken heeft, wordt het bericht niet naar het apparaat geduwd, tenzij Adobe Analytics de markering voor Inschakelen heeft ingesteld.
+   * Hoewel het apparaat een geldig apparaattoken heeft, tenzij Adobe Analytics de markering Opted-In heeft ingesteld, wordt het bericht niet naar het apparaat geduwd.
 
    * Voor meer informatie over het oplossen van problemen duw overseinen, zie het volgende:
 
