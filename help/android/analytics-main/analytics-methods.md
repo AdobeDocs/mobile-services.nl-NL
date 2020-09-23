@@ -3,12 +3,12 @@ description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleve
 keywords: android;library;mobile;sdk
 seo-description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 seo-title: Analysemethoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analysemethoden
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 28%
@@ -135,7 +135,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Geef door `contextData` om de contextgegevens bij te werken die aan de `action`koppeling zijn gekoppeld. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
+   Geef door `contextData` om de contextgegevens bij te werken die aan de `action`koppeling zijn gekoppeld. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie. Als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
 
    >[!TIP]
    >
