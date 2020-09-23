@@ -2,12 +2,12 @@
 description: Hier volgt informatie over het meten van video's op iOS met behulp van milestone-videometingen.
 seo-description: Hier volgt informatie over het meten van video's op iOS met behulp van milestone-videometingen.
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 14%
@@ -21,7 +21,7 @@ Hier volgt informatie over het meten van video&#39;s op iOS met behulp van miles
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de afspeeltijd te meten. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie.
 
 Het algemene proces voor het meten van video is op alle platforms zeer vergelijkbaar. Deze inhoud biedt een basisoverzicht van de ontwikkelaarstaken met codevoorbeelden.
 
