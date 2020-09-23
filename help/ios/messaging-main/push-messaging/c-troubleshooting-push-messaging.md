@@ -3,12 +3,15 @@ description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobile
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
 topic: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    >
    >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
    >
-   >* **APNS**: [Servicekwaliteit](https://developer.apple.com/documentation/usernotifications)
+   >* **APNS**: [Kwaliteit van de dienst](https://developer.apple.com/documentation/usernotifications)
       >
       >
    * **GCM**: [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
