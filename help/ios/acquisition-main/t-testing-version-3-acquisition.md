@@ -2,11 +2,14 @@
 description: Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
 seo-description: Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
 seo-title: V3-overname testen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: V3-overname testen
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoere
 Als de mobiele app zich nog niet in de App Store bevindt, selecteert u bij het maken van de koppeling naar de campagne een willekeurige mobiele app als bestemming. Dit is alleen van invloed op de app waarnaar de verwervingsserver u omleidt nadat u op de verwervingskoppeling hebt geklikt, maar heeft geen invloed op de mogelijkheid om de koppeling te testen.
 
 1. Voltooi de vereiste taken in [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
-1. Navigeer naar de map **[!UICONTROL Acquisition Builder]** in de gebruikersinterface van Adobe Mobile Services en genereren een aankoopcampagne-URL.
+1. Navigeer naar de **[!UICONTROL Acquisition Builder]** in de gebruikersinterface van de Mobiele Diensten van de Adobe en produceer een aanschafcampagne URL.
 
    Bijvoorbeeld:
 
@@ -31,7 +34,7 @@ Als de mobiele app zich nog niet in de App Store bevindt, selecteert u bij het m
    ```
 
 
-   Als u zowel iOS- als Android-apps in de aankoopkoppeling gebruikt, gebruikt u de Apple Store als de standaardwinkel.
+   Als u zowel iOS- als Android-apps gebruikt in de aankoopkoppeling, gebruikt u de Apple Store als de standaardwinkel.
 1. Open de gegenereerde koppeling in een desktopbrowser en ga naar `https://c00.adobe.com/v3/<appid>/end`.
 
    U moet de antwoorden `contextData` in het JSON-antwoord zien:
@@ -52,7 +55,7 @@ Als de mobiele app zich nog niet in de App Store bevindt, selecteert u bij het m
 1. (Voorwaardelijk) Als de `ssl` instelling in het configuratiebestand van uw app waar is, werkt u uw acquisitie-koppeling bij om het HTTPS-protocol te gebruiken.
 1. Klik op de gegenereerde koppeling van het mobiele apparaat waarop u de toepassing wilt installeren.
 
-   De vingerafdruk wordt opgeslagen op de servers van Adobe ( `c00.adobe.com`) en doorgestuurd naar de App Store. De app hoeft niet te worden gedownload om te testen.
+   Adobe () opslag en omleiding naar de App Store. `c00.adobe.com` De app hoeft niet te worden gedownload om te testen.
 1. Start de toepassing voor de eerste keer vanaf hetzelfde mobiele apparaat als dat u in stap 6 hebt gebruikt.
 
    U kunt de toepassing indien nodig verwijderen en opnieuw installeren.
@@ -92,7 +95,7 @@ Er is een netwerkfout opgetreden.
 
          U moet zich op hetzelfde netwerk bevinden wanneer u op de URL klikt en de app opent.
 
-      * Met de HTTP-controlegereedschappen kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
+      * Met de HTTP-controleprogramma&#39;s kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
 
          Er wordt één `/v3/<appid>/start` verzoek en één `/v3/<appid>/end` verzoek naar de verwervingsserver verzonden. De variaties in verzonden user-agent zouden attributie kunnen veroorzaken om te ontbreken.
 
