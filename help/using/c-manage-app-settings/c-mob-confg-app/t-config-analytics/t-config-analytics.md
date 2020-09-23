@@ -3,12 +3,15 @@ description: U kunt de opties voor SDK-analyse configureren op de pagina Toepass
 keywords: mobile
 seo-description: U kunt de opties voor SDK-analyse configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 seo-title: Opties voor SDK-analyse configureren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Opties voor SDK-analyse configureren
 topic: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Typ gegevens in de volgende velden onder **[!UICONTROL SDK Analytics Options]**:
 
 * **[!UICONTROL Backdate Session Hits]**
 
-   Schakel de mogelijkheid voor de SDK van Adobe in of uit om sessieinfo-hits te herstellen. Sessieinfo-hits bestaan momenteel uit vastlopen en sessielengte. Als deze optie is ingeschakeld, biedt de SDK van Adobe een back-up van de sessiegegevens die zijn geraakt tot 1 seconde na de laatste treffer van de vorige sessie. Dit betekent dat crashes en sessiegegevens correleren met de juiste datum waarop ze zijn gebeurd. Bij elke nieuwe start van de toepassing wordt een hit hersteld. Als deze optie is uitgeschakeld, voegt de SDK van Adobe de sessiegegevens bij de huidige levenscyclus.
+   Schakel de mogelijkheid voor de Adobe-SDK in of uit om sessieinfo-hits te herstellen. Sessieinfo-hits bestaan momenteel uit vastlopen en sessielengte. Als deze optie is ingeschakeld, wordt de sessie-info teruggezet naar 1 seconde na de laatste treffer van de vorige sessie. Dit betekent dat crashes en sessiegegevens correleren met de juiste datum waarop ze zijn gebeurd. Bij elke nieuwe start van de toepassing wordt een hit hersteld. Als deze optie is uitgeschakeld, voegt de Adobe SDK de sessiegegevens toe aan de huidige levenscyclus.
 
 * **[!UICONTROL Privacy]**
 
