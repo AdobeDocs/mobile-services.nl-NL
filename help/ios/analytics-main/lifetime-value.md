@@ -2,12 +2,15 @@
 description: Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen.
 seo-description: Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen.
 seo-title: Levenswaarde bezoeker
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Levenswaarde bezoeker
 topic: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
