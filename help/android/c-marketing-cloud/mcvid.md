@@ -1,30 +1,33 @@
 ---
-description: De identiteitsservice van het Adobe Experience Platform biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De id-service wordt vereist door Analytics voor Target, videohartslag en toekomstige Experience Cloud-integratie.
-seo-description: De identiteitsservice van het Adobe Experience Platform biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De id-service wordt vereist door Analytics voor Target, videohartslag en toekomstige Experience Cloud-integratie.
-seo-title: Configuratie van Experience Cloud ID
-solution: Marketing Cloud,Analytics
-title: Configuratie van Experience Cloud ID
+description: De Adobe Experience Platform Identity Service biedt een universele bezoekersidentiteitskaart voor alle Experience Cloud-oplossingen. De dienst van identiteitskaart wordt vereist door Analytics voor Doel, videohartslag, en toekomstige integratie van Experience Cloud.
+seo-description: De Adobe Experience Platform Identity Service biedt een universele bezoekersidentiteitskaart voor alle Experience Cloud-oplossingen. De dienst van identiteitskaart wordt vereist door Analytics voor Doel, videohartslag, en toekomstige integratie van Experience Cloud.
+seo-title: Experience Cloud ID-configuratie
+solution: Experience Cloud,Analytics
+title: Experience Cloud ID-configuratie
 topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 2%
 
 ---
 
 
-# Configuratie van Experience Cloud ID {#experience-cloud-id-configuration}
+# Experience Cloud ID-configuratie {#experience-cloud-id-configuration}
 
-De identiteitsservice van het Adobe Experience Platform biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De id-service wordt vereist door Analytics voor Target, videohartslag en toekomstige Experience Cloud-integratie.
+De Adobe Experience Platform Identity Service biedt een universele bezoekersidentiteitskaart voor alle Experience Cloud-oplossingen. De dienst van identiteitskaart wordt vereist door Analytics voor Doel, videohartslag, en toekomstige integratie van Experience Cloud.
 
 >[!TIP]
 >
->U hoeft deze id alleen in te vullen met de Adobe Experience Platform Identity Service. Zie [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)voor meer informatie.
+>U hoeft deze id alleen in te vullen met de Adobe Experience Platform Identity Service. Zie [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/nl-NL/id-service/using/home.html)voor meer informatie.
 
 >[!IMPORTANT]
 >
 >Voor deze functionaliteit is SDK-versie 4.3 of hoger vereist.
 
-Zo schakelt u de Experience Cloud-id in:
+De Experience Cloud-id inschakelen:
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -44,7 +47,7 @@ Zo schakelt u de Experience Cloud-id in:
    }
    ```
 
-   Ervaar de organisatie-id&#39;s van de cloud die uniek zijn voor elk clientbedrijf in de Adobe Experience Cloud en die overeenkomen met de volgende waarde:
+   De organisatie-id&#39;s van Experience Cloud identificeren uniek elk clientbedrijf in de Adobe Experience Cloud en zijn vergelijkbaar met de volgende waarde:
 
    ```js
    016D5C175213CCA80A490D05@AdobeOrg`
@@ -54,6 +57,6 @@ Zo schakelt u de Experience Cloud-id in:
    >
    >U dient dit op te nemen `@AdobeOrg`.
 
-   Als deze id&#39;s niet zijn geconfigureerd, downloadt u een bijgewerkt `ADBMobileConfig.json` bestand van Adobe Mobile-services. Zie [Voor u begint](/help/android/getting-started/requirements.md)voor meer informatie.
+   Als deze id&#39;s niet zijn geconfigureerd, downloadt u een bijgewerkt `ADBMobileConfig.json` bestand van de Adobe Mobile-services. Zie [Voor u begint](/help/android/getting-started/requirements.md)voor meer informatie.
 
-Nadat de configuratie is voltooid, wordt een Experience Cloud-id gegenereerd en opgenomen in alle hits. Andere id&#39;s, zoals aangepaste en automatisch gegenereerde id&#39;s, worden bij elke treffer nog steeds verzonden.
+Nadat de configuratie volledig is, wordt een identiteitskaart van de Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere id&#39;s, zoals aangepaste en automatisch gegenereerde id&#39;s, worden bij elke treffer nog steeds verzonden.
