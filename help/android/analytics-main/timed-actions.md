@@ -2,12 +2,15 @@
 description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 seo-description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 seo-title: Gedetailleerde handelingen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Gedetailleerde handelingen
 topic: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
-source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +75,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackTimed​ActionUpdate("TimeUntilPurchase", cdata);
 ```
 
-Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-ltv.png)
 
