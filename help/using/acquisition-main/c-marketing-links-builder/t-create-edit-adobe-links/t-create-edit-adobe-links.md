@@ -3,12 +3,15 @@ description: U kunt marketingkoppelingen maken of bewerken om deze diep te koppe
 keywords: mobile
 seo-description: U kunt marketingkoppelingen maken of bewerken om deze diep te koppelen aan uw mobiele app of uw website.
 seo-title: Marketingkoppelingen maken of bewerken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Marketingkoppelingen maken of bewerken
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '564'
+ht-degree: 1%
 
 ---
 
@@ -86,6 +89,7 @@ U kunt marketingkoppelingen maken of bewerken om deze diepgaand te koppelen aan 
       * **[!UICONTROL Web Link]**
       * **[!UICONTROL App Deep Link]**
       * **[!UICONTROL Hybrid Link]**
+
       >[!TIP]
       >
       >Wanneer u het **[!UICONTROL Web Link]** doeltype gebruikt met een koppeling naar de App Store, wordt de overname niet bijgehouden. Om verwervingen te volgen, gebruik het **[!UICONTROL App Store]** bestemmingstype.
