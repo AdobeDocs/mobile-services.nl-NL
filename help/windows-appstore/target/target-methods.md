@@ -2,12 +2,15 @@
 description: Lijst met doelmethoden die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 seo-description: Lijst met doelmethoden die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 seo-title: Doelmethoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Doelmethoden
 topic: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 32%
 
 ---
 
@@ -26,7 +29,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 ## Referentie klasse: TargetLocationRequest
 
-### Eigenschappen
+### Properties
 
 ```
 property Platform::String ^name; 
