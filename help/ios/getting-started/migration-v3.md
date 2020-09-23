@@ -2,12 +2,15 @@
 description: Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek naar versie 4.x.
 seo-description: Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek naar versie 4.x.
 seo-title: Migreren naar de 4.x iOS-bibliotheek
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migreren naar de 4.x iOS-bibliotheek
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 2%
 
 ---
 
@@ -113,11 +116,11 @@ Verplaats de waarde van de eerste kolom naar de variabele in de tweede kolom.
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | Verwijderen, niet meer gebruikt. |
 | linkTrackEvents | Verwijderen, niet meer gebruikt. |
-| tijdstempel | Verwijderen, niet meer configureerbaar. |
+| timestamp | Verwijderen, niet meer configureerbaar. |
 | dc | Verwijderen, niet meer gebruikt. |
 | userAgent | Verwijderen, niet meer configureerbaar. |
 | dynamicVariablePrefix | Verwijderen, niet meer gebruikt. |
-| bezoekerNamespace | Verwijderen, niet meer gebruikt. |
+| visitorNamespace | Verwijderen, niet meer gebruikt. |
 | usePlugins | Verwijderen, niet meer gebruikt. |
 | useBestPractices alle aanroepen naar churn measurement ( getChurnInstance ) | Verwijderen, vervangen door levenscyclusmetriek. Zie [Levenscyclusstatistieken](//help/ios/metrics.md)voor meer informatie. |
 
@@ -169,7 +172,7 @@ Vervang in uw code de volgende methoden door een aanroep van `trackState` of `tr
 * `track (trackState)`
 * `trackLink (trackAction)`
 
-## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Vervang de `visitorID` variabele door een vraag aan `setUserIdentifier:`.
 
