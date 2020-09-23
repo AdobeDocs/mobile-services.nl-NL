@@ -3,12 +3,15 @@ description: U kunt een app toevoegen vanuit de Apple App Store of Google Play.
 keywords: mobile
 seo-description: U kunt een app toevoegen vanuit de Apple App Store of Google Play.
 seo-title: Een app toevoegen vanuit een App Store
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Een app toevoegen vanuit een App Store
 topic: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 1%
 
 ---
 
