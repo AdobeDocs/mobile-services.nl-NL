@@ -3,12 +3,15 @@ description: U kunt de pagina Marketing Links gebruiken om marketingkoppelingen 
 keywords: mobile
 seo-description: U kunt de pagina Marketing Links gebruiken om marketingkoppelingen te maken, te gebruiken en te archiveren.
 seo-title: Marketing-koppelingen beheren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Marketing-koppelingen beheren
 topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
