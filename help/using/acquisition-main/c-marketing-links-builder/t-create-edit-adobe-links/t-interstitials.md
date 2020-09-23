@@ -3,12 +3,15 @@ description: U kunt gebruikers naar een bestemming leiden afhankelijk van het fe
 keywords: mobile
 seo-description: U kunt gebruikers naar een bestemming leiden afhankelijk van het feit of ze de app hebben geïnstalleerd (een koppeling om de app te verkennen) of niet (naar een website of een App Store).
 seo-title: Verspreide advertenties
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verspreide advertenties
 topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 1%
 
 ---
 
