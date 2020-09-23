@@ -3,12 +3,15 @@ description: U kunt verschillende meetgegevens meten met Adobe Mobile en de meet
 keywords: mobile
 seo-description: U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
 seo-title: Mobiele metriek
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobiele metriek
 topic: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ De volgende typen metingen worden gemeten:
 
    Op Android-apparaten kunt u de Google Play-naslaggids gebruiken om te meten hoe gebruikers naar de App Store gaan voordat ze uw app downloaden.
 
-* **Ontvangsten**
+* **Omzet**
 
    U kunt de opbrengsten die door App-winkels zijn geïnd, weergeven en de opbrengsten direct meten met aankoopgebeurtenissen in de app. Andere maateenheden voor winkelwagentjes zijn beschikbaar in [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen.
 
