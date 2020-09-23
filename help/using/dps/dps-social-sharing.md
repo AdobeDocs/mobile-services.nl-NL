@@ -3,12 +3,15 @@ description: In het rapport Sociaal delen wordt een zonneexplosieve visualisatie
 keywords: mobile
 seo-description: In het rapport Sociaal delen wordt een zonneexplosieve visualisatie voor uw bestaande gegevens weergegeven. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suites (DPS).
 seo-title: Sociaal delen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Sociaal delen
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 translation-type: tm+mt
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
