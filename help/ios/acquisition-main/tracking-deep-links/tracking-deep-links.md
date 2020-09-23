@@ -1,19 +1,22 @@
 ---
-description: Met behulp van de Adobe Mobile iOS SDK kunt u met deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps volgen.
-seo-description: Met behulp van de Adobe Mobile iOS SDK kunt u met deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps volgen.
+description: Met deze informatie kunt u diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden met de Adobe Mobile iOS SDK.
+seo-description: Met deze informatie kunt u diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden met de Adobe Mobile iOS SDK.
 seo-title: Diepkoppelingen bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Diepkoppelingen bijhouden
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
 # Diepkoppelingen bijhouden{#tracking-deep-links}
 
-Met behulp van de Adobe Mobile iOS SDK kunt u met deze informatie diepe en uitgestelde diepe koppelingen in uw mobiele apps volgen.
+Met deze informatie kunt u diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden met de Adobe Mobile iOS SDK.
 
 Voor meer informatie over hoe de marketers diep het verbinden in hun toepassingen gebruiken, zie [Verwerving](/help/ios/acquisition-main/acquisition.md) in de Mobiele documentatie van de Diensten.
 
@@ -48,7 +51,7 @@ Voor meer informatie over hoe de marketers diep het verbinden in hun toepassinge
    }
    ```
 
-De Adobe Mobile SDK kan sleutel- en waardeparen gegevens parseren die aan een diepe of Universal Link zijn toegevoegd, op voorwaarde dat de koppeling een sleutel bevat met een `a.deeplink.id` label en een corresponderende, niet-null en door de gebruiker gegenereerde waarde. Alle sleutel- en waardeparen met gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een levenscyclushit en verzonden naar Adobe Analytics, op voorwaarde dat de koppeling de `a.deeplink.id` sleutel en waarde bevat.
+De mobiele SDK van Adobe kan sleutel en waardeparen gegevens ontleden die aan om het even welke diepe of Universele Verbinding worden toegevoegd, op voorwaarde dat de verbinding een sleutel met een `a.deeplink.id` etiket en een overeenkomstige niet-krachteloze en gebruiker geproduceerde waarde bevat. Alle sleutel- en waardeparen gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een levenscyclushit en verzonden naar Adobe Analytics, op voorwaarde dat de koppeling de `a.deeplink.id` sleutel en waarde bevat.
 
 U zou ook kunnen verkiezen om één of meerdere van de volgende gereserveerde sleutels (met user-generated waarden) aan de diepe of Universele Verbinding toe te voegen:
 
@@ -62,7 +65,7 @@ Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytic
 
 ### Uitgestelde diepe koppelingen bijhouden
 
-1. Adobe-gegevenscallback registreren
+1. Registreer Adobe-gegevenscallback.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
