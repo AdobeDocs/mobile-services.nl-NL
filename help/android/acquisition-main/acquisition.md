@@ -3,12 +3,12 @@ description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegeneree
 keywords: android;library;mobile;sdk
 seo-description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 seo-title: Mobiele app-acquisitie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobiele app-acquisitie
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%
