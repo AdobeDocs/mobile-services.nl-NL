@@ -2,12 +2,15 @@
 description: De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten wordt verzonden.
 seo-description: De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten wordt verzonden.
 seo-title: iOS-apparaatversies
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS-apparaatversies
 topic: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 18%
 
 ---
 
