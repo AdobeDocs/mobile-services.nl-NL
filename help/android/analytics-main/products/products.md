@@ -2,13 +2,16 @@
 description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten op de servervraag te plaatsen.
 keywords: android;library;mobile;sdk
 seo-description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten op de servervraag te plaatsen.
-seo-title: Variabele voor producten
-solution: Marketing Cloud,Analytics
-title: Variabele voor producten
+seo-title: Productvariabele
+solution: Experience Cloud,Analytics
+title: Productvariabele
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 
