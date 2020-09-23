@@ -3,12 +3,15 @@ description: Maak, beheer en rapporteer over in-app- en pushberichten.
 keywords: mobile
 seo-description: Maak, beheer en rapporteer over in-app- en pushberichten.
 seo-title: Berichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Berichten
 topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
@@ -19,18 +22,18 @@ U kunt in-app- en pushberichten maken, beheren en rapporteren.
 
 ## Nieuwe Adobe Experience Cloud SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga naar [Starten](https://launch.adobe.com/)om aan de slag te gaan.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Als u de Adobe Experience Platform Mobile SDK&#39;s gebruikt met Adobe Launch, **moet** u ook de Adobe Analytics Mobile Services-extensie installeren als u functies als Verwervingskoppelingen voor Adobe Mobile Services wilt gebruiken. Zie [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor informatie over het gebruiken van duw overseinen en in-app overseinen met het Platform SDKs van de Ervaring, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Als u de Adobe Experience Platform Mobile SDKs met de Lancering van de Adobe gebruikt, **moet** u ook de uitbreiding van de Diensten van Adobe Analytics Mobile installeren om de eigenschappen van de Diensten van de Adobe Mobiele te gebruiken zoals de verbindingen van de Aankoop. Zie [Adobe Analytics - Mobiele services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor informatie over het gebruiken van duw overseinen en in-app overseinen met de Experience Platform SDKs, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
-## In-app berichten {#section_8984F4568BC24D32A87429FFCB5184A6}
+## In-app messages {#section_8984F4568BC24D32A87429FFCB5184A6}
 
 Berichten in de app worden in realtime aan gebruikers geleverd op basis van hun handelingen en kenmerken. De berichten worden geactiveerd op basis van analysegegevens die al door de SDK worden bijgehouden.
 
