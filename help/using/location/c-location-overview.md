@@ -3,12 +3,15 @@ description: In het rapport Locatieoverzicht kunt u de verschillende landen, reg
 keywords: mobile
 seo-description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
 seo-title: Overzicht (locatie)
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Overzicht (locatie)
 topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 Met het **[!UICONTROL Location Overview]** rapport kunt u de verschillende landen, regio&#39;s en belangengebieden (POI) zien waarin uw app wordt gebruikt.
 
-Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt stellen in de Experience Cloud.
+Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt maken in de Experience Cloud.
 
 Hieronder vindt u aanvullende informatie over dit rapport:
 
