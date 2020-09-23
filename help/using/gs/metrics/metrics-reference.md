@@ -1,14 +1,14 @@
 ---
-description: Hier volgt de referentie-informatie voor de standaard mobiele metriek en afmetingen.
+description: Hier is de referentieinformatie voor de standaard mobiele metriek en afmetingen.
 keywords: mobile
-seo-description: Hier volgt de referentie-informatie voor de standaard mobiele metriek en afmetingen.
+seo-description: Hier is de referentieinformatie voor de standaard mobiele metriek en afmetingen.
 seo-title: Referentie voor mobiele Dimension
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Referentie voor mobiele Dimension
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 1%
