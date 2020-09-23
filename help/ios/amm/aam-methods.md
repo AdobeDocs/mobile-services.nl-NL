@@ -1,24 +1,27 @@
 ---
-description: Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de iOS-bibliotheek.
-seo-description: Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de iOS-bibliotheek.
+description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de iOS-bibliotheek.
+seo-description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de iOS-bibliotheek.
 seo-title: Methoden van Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
 topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
 
 # Methoden van Audience Manager {#audience-manager-methods}
 
-Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de iOS-bibliotheek.
+Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld op basis van de oplossing en methoden in Audience Manager worden voorafgegaan door &quot; `audience`&quot;.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. De methoden worden vooraf bepaald volgens de oplossing en de Audience Manager wordt voorgefixeerd met &quot; `audience`.&quot;
 
-Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met levenscyclusmetriek verzonden `application:didFinishLaunchingWithOptions:`.
+Als Audience Manager in uw JSON-bestand is geconfigureerd, wordt een signaal met levenscyclusmetriek verzonden `application:didFinishLaunchingWithOptions:`.
 
 * **publiekVisitorProfile**
 
@@ -72,7 +75,7 @@ Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met
 
    Hiermee stelt u de DPID en DPUUID in. Wanneer reeks, allebei zal aan elk signaal worden toegevoegd.
 
-   * Identiteitskaart van de Leverancier van **Gegevens (DPID)** is identiteitskaart van de gegevenspartner die door de Manager van het Publiek wordt toegewezen.
+   * Identiteitskaart van de Leverancier van **Gegevens (DPID)** is identiteitskaart van de gegevenspartner die door Audience Manager wordt toegewezen.
    * De unieke gebruikersnaam van de **gegevensaanbieder (DPUUID)** is de unieke id van de gegevensaanbieder voor de gebruiker.
 
       >[!IMPORTANT]
@@ -95,7 +98,7 @@ Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met
 
 * **publiekReset**
 
-   Hiermee wordt de UUID van Audience Manager opnieuw ingesteld en wordt het huidige bezoekersprofiel gewist.
+   Hiermee wordt de UUID van de Audience Manager opnieuw ingesteld en wordt het huidige bezoekersprofiel gewist.
 
    * Hier volgt de syntaxis voor deze methode:
 
