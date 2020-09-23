@@ -3,12 +3,15 @@ description: Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verz
 keywords: android;library;mobile;sdk
 seo-description: Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verzenden vanuit uw PhoneGap-project.
 seo-title: Overzicht van de PhoneGap-plug-in
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Overzicht van de PhoneGap-plug-in
 topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 1%
 
 ---
 
@@ -17,14 +20,14 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verzenden vanuit uw PhoneGap-project. Zie [PhoneGap om een PhoneGap-project te maken](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## De insteekmodule installeren met npm {#section_43229E57C16944C0B51531CB92089189}
@@ -55,7 +58,7 @@ cordova plugin add adobe-mobile-services
    </feature>
    ```
 
-   Als uw pakket bijvoorbeeld een naam heeft, krijgt u de volgende `com.example.phonegaptest``android-package` waarde:
+   Als uw pakket bijvoorbeeld een naam krijgt, krijgt u de volgende `com.example.phonegaptest``android-package` waarde:
 
    ```xml
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
@@ -100,7 +103,7 @@ android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
 
-Als u modale lay-out selecteert wanneer u een bericht maakt in Adobe Mobile Services, selecteert u een van de volgende thema&#39;s:
+Als u modale lay-out selecteert wanneer u een bericht maakt in mobiele Adobe-services, selecteert u een van de volgende thema&#39;s:
 
 * `Theme.Translucent.NoTitleBar.Fullscreen`
 * `Theme.Translucent.NoTitleBar`
