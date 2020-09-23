@@ -2,17 +2,20 @@
 description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
 seo-description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
 seo-title: Bezoeker die tussen een app en een mobiel web volgt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Bezoeker die tussen een app en een mobiel web volgt
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
 
 
-# Bezoekerspatiëring tussen een app en een mobiel web {#visitor-tracking-between-an-app-and-mobile-web}
+# Bezoekerspatiëring tussen een app en een mobiel web  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
 
@@ -56,7 +59,7 @@ U kunt als volgt dezelfde bezoeker-id gebruiken in de app en het mobiele web en 
    }];
    ```
 
-De code van de dienst van identiteitskaart op het bestemmingsdomein haalt MID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De de dienstcode van identiteitskaart op de bestemmingspagina gebruikt overgegaan MID om de bezoeker te volgen.
+De de dienstcode van identiteitskaart op het bestemmingsdomein haalt MID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De de dienstcode van identiteitskaart op de bestemmingspagina gebruikt overgegaan MID om de bezoeker te volgen.
 
 Controleer bij treffers van de mobiele webinhoud of de `mid` parameter aanwezig is op elke treffer en of deze waarde overeenkomt met de waarde `mid` die door de toepassingscode wordt verzonden.
 
@@ -64,15 +67,15 @@ Controleer bij treffers van de mobiele webinhoud of de `mid` parameter aanwezig 
 
 ### Ik zie het niet `[ADBMobile visitorAppendToURL:]`.
 
-Controleer of de Adobe SDK die in de bovenliggende toepassing is gebundeld, versie 4.12.0 of hoger is.
+Controleer of de Adobe-SDK die in de bovenliggende toepassing is gebundeld, versie 4.12.0 of hoger is.
 
-### Ik zie Adobe-id&#39;s niet in mijn URL.
+### Ik zie geen Adobe-id&#39;s in mijn URL.
 
 Controleer het volgende:
 
-* De URL-tekenreeks waarmee de webweergave wordt geopend, is gegenereerd door `[ADBMobile visitorAppendToURL:]`
+* De URL-tekenreeks waarmee de webweergave wordt geopend, is gegenereerd door  `[ADBMobile visitorAppendToURL:]`
 
-* De Adobe-id&#39;s zijn gecodeerd.
+* De Adobe-id&#39;s worden gecodeerd.
 
    Om te verifiëren dat IDs aan URL wordt toegevoegd die wordt geopend, zoek de `adobe_mc` vraagparameter.
 
@@ -84,8 +87,8 @@ Controleer het volgende:
 
    De URL-tekenreeks bevat Adobe-parameters.
 
-   De tekenreeks moet `adobe_mc="SAMPLE_ID_DATA"` waar `"SAMPLE_ID_DATA"` de id&#39;s bevatten die in de Adobe Mobile SDK worden gegenereerd.
+   De tekenreeks moet bevatten `adobe_mc="SAMPLE_ID_DATA"` waar `"SAMPLE_ID_DATA"` de id&#39;s staan die worden gegenereerd in de Adobe Mobile SDK.
 
 * Het `VisitorAPI.js` is versie 1.7.0 of hoger.
 
-Als deze het oplossen van problemenstappen uw kwesties niet oplossen, contacteer de Zorg van de Cliënt van Adobe; is voorbereid om een voorbeeldtoepassing en de bijbehorende site te delen, zodat Adobe de implementatie kan valideren.
+Als deze het oplossen van problemenstappen uw kwesties niet oplossen, contacteer de Zorg van de Adobe Cliënt; bereid zijn om een steekproeftoepassing en de bijbehorende plaats te delen zodat Adobe de implementatie kan bevestigen.
