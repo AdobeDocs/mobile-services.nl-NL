@@ -2,12 +2,12 @@
 description: Informatie die u helpt met Video Analytics.
 seo-description: Informatie die u helpt met Video Analytics.
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 15%
@@ -19,9 +19,9 @@ ht-degree: 15%
 
 Informatie die u helpt met Video Analytics.
 
-Videometingen worden gedetailleerd beschreven in de handleiding [Metingaudio en -video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html/) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
+Videometingen worden gedetailleerd beschreven in de handleiding [Metingaudio en -video in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html/) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
-In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een Analytics-variabele.
+In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
 
 * **a.media.name**
 
@@ -43,14 +43,15 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.segment**
 
-   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in het `1:M:0-25` segment Var.
+   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in de eVar van het `1:M:0-25` segment.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
    * video starten (afspelen)
    * begin segment
    * videoeinde (stoppen)
-   Analytics telt de eerste segmentweergave bij het begin van het segment, wanneer de bezoeker begint te kijken. Volgende segmentweergaven als het segment begint.
+
+   Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Paginaweergave
