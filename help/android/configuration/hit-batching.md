@@ -3,12 +3,15 @@ description: Het slaan van het haar staat toepassingen toe om klappen te houden 
 keywords: android;library;mobile;sdk
 seo-description: Het slaan van het haar staat toepassingen toe om klappen te houden van worden verzonden tot het aantal klappen in de rij de gevormde grens hebben overschreden.
 seo-title: Batch gebruiken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Batch gebruiken
 topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
