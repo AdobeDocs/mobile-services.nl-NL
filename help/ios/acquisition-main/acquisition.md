@@ -1,24 +1,27 @@
 ---
-description: In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de aanschafgegevens en stuurt deze naar Adobe Mobile-services.
-seo-description: In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de aanschafgegevens en stuurt deze naar Adobe Mobile-services.
+description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
+seo-description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 seo-title: Aanschaf van mobiele apps
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Aanschaf van mobiele apps
 topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
 
-# Aanschaf van mobiele apps {#mobile-app-acquisition}
+# Mobile app acquisition {#mobile-app-acquisition}
 
-In Adobe Mobile-services kunnen overnamekoppelingen met unieke volgcodes worden gegenereerd. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de aanschafgegevens en stuurt deze naar Adobe Mobile-services.
+Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de Apple App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 
 Als u Acquisition wilt gebruiken, **moet** u SDK versie 4.1 of hoger hebben.
 
-Verwervingskoppelingen moeten worden gemaakt in Adobe Mobile-services. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
+Verwervingsverbindingen moeten in de Mobiele diensten van Adobe worden gecreeerd. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
 
 Aan de hand van de informatie in deze sectie kan de SDK aanschafgegevens verzenden vanuit een acquisitie-koppeling.
 
@@ -59,9 +62,9 @@ Nadat deze instellingen zijn ingeschakeld, worden acquisitiegegevens automatisch
 
 ## Uw iOS-app inschakelen voor Universal Links
 
-Als u Universal Links gebruikt in uw app, voegt u uw Adobe Marketing Links-domein toe aan de lijst Gekoppelde domeinen voor uw app.
+Als u Universal Links gebruikt in uw app, voegt u het domein Adobe-marketingkoppelingen toe aan de lijst Gekoppelde domeinen voor uw app.
 
-Als u in Xcode uw Adobe Marketing Links-domein wilt toevoegen aan de lijst Gekoppelde domeinen:
+In Xcode, om uw domein van de Verbindingen van de Adobe Marketing aan de Gekoppelde lijst van Domeinen toe te voegen:
 
 1. Ga naar uw projectdoel en klik de **[!UICONTROL Capabilities]** tabel.
 2. Schuif omlaag naar de **[!UICONTROL Associated Domains]** sectie en schakel deze in.
