@@ -2,12 +2,15 @@
 description: Met behulp van iBeacon tracking kunt u microlocaties meten en als doel instellen met iBeacon en Low Energy Bluetooth.
 seo-description: Met behulp van iBeacon tracking kunt u microlocaties meten en als doel instellen met iBeacon en Low Energy Bluetooth.
 seo-title: Beacon tracking
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Beacon tracking
 topic: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
