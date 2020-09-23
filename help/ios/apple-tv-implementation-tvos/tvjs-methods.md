@@ -2,12 +2,12 @@
 description: Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aangeboden.
 seo-description: Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aangeboden.
 seo-title: TVJS-methoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: TVJS-methoden
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 27%
