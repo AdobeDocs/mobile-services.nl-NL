@@ -1,20 +1,23 @@
 ---
-description: Met Adobe Mobile en de Adobe Mobile SDK kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
-seo-description: Met Adobe Mobile en de Adobe Mobile SDK kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
+description: Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
+seo-description: Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
 seo-title: Push Messaging
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Push Messaging
 topic: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
 translation-type: tm+mt
-source-git-commit: 17cb91a28966cf32f955a2cb724e89ab228de5b8
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 8%
 
 ---
 
 
 # Push messaging {#push-messaging}
 
-Met Adobe Mobile en de Adobe Mobile SDK kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
+Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
 
 Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
 
