@@ -3,12 +3,15 @@ description: U kunt de pagina Doelen van de Verbinding gebruiken om, bestaande b
 keywords: mobile
 seo-description: U kunt de pagina Doelen van de Verbinding gebruiken om, bestaande bestemming uit te geven, te archiveren, unarchive, of te schrappen.
 seo-title: Koppelingsdoelen beheren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Koppelingsdoelen beheren
 topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Om de Manage pagina van de Doelen van de Verbinding te tonen:
       >
       >Het kan tot 15 minuten duren voordat deze wijzigingen van kracht worden.
 
-   * **Archief**
+   * **Archivering**
 
       U kunt koppelingsbestemmingen archiveren die u wilt behouden, maar u wilt uit de **[!UICONTROL Link Destinations]** lijst verwijderen.
 
@@ -49,6 +52,7 @@ Om de Manage pagina van de Doelen van de Verbinding te tonen:
       1. click **[!UICONTROL View Archive]**.
       1. Selecteer een of meer selectievakjes naast de koppelingsnamen die u wilt verwijderen.
       1. Klik op **[!UICONTROL Unarchive Selected]**.
+
       De **[!UICONTROL View Archive]** optie wordt alleen weergegeven als u eerder koppelingsdoelen hebt gearchiveerd.
 
    * **Verwijderen**
