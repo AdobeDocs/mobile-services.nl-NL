@@ -2,12 +2,15 @@
 description: De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
 seo-description: De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
 seo-title: Variabele voor producten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variabele voor producten
 topic: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
 
-Als u de *`products`* variabele wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"`, en stelt u de waarde in met de syntaxis die voor de *`products`*:
+Als u de *`products`* variabele wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"`, en stelt u de waarde in met de syntaxis die voor de variabele is gedefinieerd *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
