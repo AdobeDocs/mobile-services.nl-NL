@@ -3,11 +3,11 @@ description: In dit onderwerp wordt beschreven hoe u aan de slag kunt met de Xam
 keywords: Xamarin
 seo-description: In dit onderwerp wordt beschreven hoe u aan de slag kunt met de Xamarin-componenten voor mobiele oplossingen 4.x SDK.
 seo-title: Xamarin-componenten voor Experience Cloud Solutions 4.x SDK
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Xamarin-componenten voor Experience Cloud Solutions 4.x SDK
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 3%
