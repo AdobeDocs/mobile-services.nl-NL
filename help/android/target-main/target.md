@@ -3,12 +3,15 @@ description: U kunt gerichte inhoud leveren in Android-toepassingen.
 keywords: android;library;mobile;sdk
 seo-description: U kunt gerichte inhoud leveren in Android-toepassingen.
 seo-title: Doelconfiguratie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Doelconfiguratie
 topic: Developer and implementation
 uuid: 09fe2c9c-7b60-49c3-bb9d-36a30ce7c350
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
