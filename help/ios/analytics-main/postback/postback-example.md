@@ -2,12 +2,15 @@
 description: Definitie en voorbeelden van broncode voor de functie Postbacks.
 seo-description: Definitie en voorbeelden van broncode voor de functie Postbacks.
 seo-title: Voorbeeld van terugzending
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Voorbeeld van terugzending
 topic: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Definitie en voorbeelden van broncode voor de functie Postbacks.
 
 >[!CAUTION]
 >
->Dit voorbeeld wordt alleen ter informatie verstrekt. Het `ADBMobileConfig.json` bestand moet worden geconfigureerd in de gebruikersinterface van Adobe Mobile en mag niet handmatig worden gewijzigd. Een manueel uitgegeven configuratiedossier kan gevaarlijk zijn wanneer u toegelaten verre berichtconfiguratie hebt.
+>Dit voorbeeld wordt alleen ter informatie verstrekt. Het `ADBMobileConfig.json` bestand moet worden geconfigureerd in de mobiele gebruikersinterface van Adobe en mag niet handmatig worden gewijzigd. Een manueel uitgegeven configuratiedossier kan gevaarlijk zijn wanneer u toegelaten verre berichtconfiguratie hebt.
 
 ## ADBMobileConfig.json-definitie {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -51,7 +54,7 @@ Definitie en voorbeelden van broncode voor de functie Postbacks.
 ] 
 ```
 
-## Codevoorbeeld {#section_8169B88A2C634CB788DA574EE8C4B1DC}
+## Code sample {#section_8169B88A2C634CB788DA574EE8C4B1DC}
 
 ```objective-c
 NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"}; 
