@@ -3,12 +3,15 @@ description: De verkopers kunnen verbindingsbestemmingen, zoals Web, diep, of an
 keywords: mobile
 seo-description: De verkopers kunnen verbindingsbestemmingen, zoals Web, diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 seo-title: Doelen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Doelen
 topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
