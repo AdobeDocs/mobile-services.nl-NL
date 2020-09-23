@@ -3,12 +3,15 @@ description: 'De volgende overnamemethoden worden geleverd door de Android-bibli
 keywords: android;library;mobile;sdk
 seo-description: 'De volgende overnamemethoden worden geleverd door de Android-bibliotheek '
 seo-title: Verwervingsmethoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verwervingsmethoden
 topic: Developer and implementation
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 18%
 
 ---
 
