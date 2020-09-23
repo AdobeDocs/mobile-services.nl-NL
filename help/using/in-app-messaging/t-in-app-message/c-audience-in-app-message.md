@@ -3,12 +3,15 @@ description: U kunt publieksopties configureren voor berichten in de app, zoals 
 keywords: mobile
 seo-description: U kunt publieksopties configureren voor berichten in de app, zoals opties voor weergave, trigger en gedrag.
 seo-title: Bericht 'Publiek in toepassing'
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Bericht 'Publiek in toepassing'
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +71,7 @@ Nadat u de afbeelding bevestigt, selecteer de aangewezen matcher of logische exp
 
 De volgende scenario&#39;s helpen u bepalen of om metrisch of een variabele als uw trekker te selecteren:
 
-### Metrisch
+### Metrics
 
 Een metrische waarde is een getal en een voorbeeld is het aantal aankopen.
 
