@@ -3,12 +3,15 @@ description: U kunt pushberichten naar Analytics-segmenten verzenden vanuit de g
 keywords: mobile
 seo-description: U kunt pushberichten naar Analytics-segmenten verzenden vanuit de gebruikersinterface van Mobiele services om uw robuuste analysegegevens te gebruiken tijdens het werken met gebruikers.
 seo-title: Een pushbericht maken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Een pushbericht maken
 topic: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
