@@ -2,12 +2,15 @@
 description: Informatie die u helpt met Video Analytics.
 seo-description: Informatie die u helpt met Video Analytics.
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 translation-type: tm+mt
-source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 15%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
 Informatie die u helpt met Video Analytics.
 
-Videometing wordt gedetailleerd beschreven in de handleiding [Metingsvideo en -audio in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
+Videometing wordt gedetailleerd beschreven in de handleiding [Metingsvideo en -audio in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
 In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
 
@@ -24,24 +27,24 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
    (**Vereist**) Hiermee wordt de naam van de video verzameld, zoals opgegeven in de implementatie, wanneer een bezoeker de video op een of andere manier bekijkt. U kunt classificaties toevoegen voor deze variabele.
 
-   (**Optioneel**) De variabele Aangepast inzicht biedt informatie over het plakken van video.
+   (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Bezoek
-   * Aangepast inzicht (s.prop, wordt gebruikt voor videotekenen)
+   * Custom Insight (s.prop, gebruikt voor videoverven)
 
 * **a.media.name**
 
    (**Optioneel**) Bevat informatie over het plakken van video. Het plakken moet voor deze variabele door ClientCare worden toegelaten.
 
    * Type gebeurtenis: Custom Insight (s.prop).
-   * Type variabele: Aangepast inzicht (s.prop)
+   * Type variabele: Custom Insight (s.prop)
 
 * **a.media.segment**
 
    (**Vereist**) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt.
 
-   Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst de volgende gegevens mogelijk in de `1:M:0-25` segmenten Var.
+   Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video weergeeft, kan SiteCatalyst het volgende verzamelen in de eVar van de `1:M:0-25` segmenten.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten: videobegin (spel), segmentbegin, en videoeind (einde). Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
 
