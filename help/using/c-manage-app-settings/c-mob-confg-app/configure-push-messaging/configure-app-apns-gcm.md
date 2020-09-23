@@ -3,12 +3,15 @@ description: U kunt uw app zo configureren dat deze Apple Push Notification Serv
 keywords: mobile
 seo-description: U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
 seo-title: App configureren voor gebruik van APNS of FCM
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App configureren voor gebruik van APNS of FCM
 topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 translation-type: tm+mt
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 11%
 
 ---
 
