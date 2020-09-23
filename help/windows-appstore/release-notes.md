@@ -1,20 +1,23 @@
 ---
-description: Opmerkingen bij de release en bekende problemen voor Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
-seo-description: Opmerkingen bij de release en bekende problemen voor Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
-seo-title: Opmerkingen bij de release
-solution: Marketing Cloud,Analytics
-title: Opmerkingen bij de release
+description: Opmerkingen bij de release en bekende problemen met Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
+seo-description: Opmerkingen bij de release en bekende problemen met Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
+seo-title: Releaseopmerkingen
+solution: Experience Cloud,Analytics
+title: Releaseopmerkingen
 topic: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
 
-# Opmerkingen bij de release{#release-notes}
+# Releaseopmerkingen{#release-notes}
 
-Opmerkingen bij de release en bekende problemen voor Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
+Opmerkingen bij de release en bekende problemen met Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions.
 
 ## Opmerkingen bij de huidige release {#section_DC697A291F0A4CB7B669B24488E07DC1}
 
@@ -28,4 +31,4 @@ Naast de aanzienlijke prestatieverhogingen voegt versie 4 de volgende nieuwe eig
 | Opt-in/Opt-out | U kunt analyses snel in- en uitschakelen. |
 
 
-Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)de release.
+Voor meer informatie over de versienota&#39;s voor alle oplossingen, zie de Nota&#39;s [van de Versie van](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html)Adobe Experience Cloud.
