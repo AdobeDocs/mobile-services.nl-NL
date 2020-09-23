@@ -2,12 +2,12 @@
 description: Deze informatie helpt u begrijpen hoe de neerstortingen worden gevolgd en de beste praktijken om valse neerstortingen te behandelen.
 seo-description: Deze informatie helpt u begrijpen hoe de neerstortingen worden gevolgd en de beste praktijken om valse neerstortingen te behandelen.
 seo-title: App vastlopen bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App vastlopen bijhouden
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 translation-type: tm+mt
-source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
