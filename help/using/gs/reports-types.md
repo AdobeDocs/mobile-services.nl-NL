@@ -3,17 +3,20 @@ description: Wanneer het aanpassen van rapporten, zou de brede flexibiliteit som
 keywords: mobile
 seo-description: Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 seo-title: Rapporttypen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporttypen
 topic: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 0%
 
 ---
 
 
-# Rapporttypen {#report-types}
+# Report Types {#report-types}
 
 Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 
@@ -23,9 +26,9 @@ Alvorens rapporten aan te passen, moet u het verschil tussen metrisch en een afm
 
    Metrisch wordt gebruikt om uw gegevens te meten. Metrische waarden zijn waarden die kunnen worden geteld en toegevoegd en die worden gebruikt om te zien hoe vaak specifieke acties in uw app voorkomen. De gemeenschappelijke metriek omvat installaties, lanceringen, opbrengst, levenwaarde, en logins. Elke keer dat uw app bijvoorbeeld wordt gestart, wordt de waarde van _launches_verhoogd met één.
 
-* Dimensie
+* Dimension
 
-   Een dimensie wordt gebruikt om uw gegevens te beschrijven. Dimensies worden vertegenwoordigd door een tekenreeks te gebruiken, of een getal dat als een tekenreeks fungeert (zoals een postcode) en dat wordt gebruikt om uw gegevens te ordenen en te segmenteren. Voorbeelden van veelvoorkomende afmetingen zijn onder andere de versie van het besturingssysteem, de naam van de campagne, de productnaam en de mobiele provider. Elke dimensie heeft een aantal specifieke waarden die met die dimensie worden geassocieerd. De versiedimensie van het besturingssysteem heeft bijvoorbeeld waarden zoals _iOS 7_ en _Android 4.1.2_.
+   Een dimensie wordt gebruikt om uw gegevens te beschrijven. Dimension worden vertegenwoordigd door een koord, of een aantal te gebruiken dat als een koord (zoals een postcode handelt, en gebruikt om uw gegevens te organiseren en te segmenteren. Voorbeelden van veelvoorkomende afmetingen zijn onder andere de versie van het besturingssysteem, de naam van de campagne, de productnaam en de mobiele provider. Elke dimensie heeft een aantal specifieke waarden die met die dimensie worden geassocieerd. De versiedimensie van het besturingssysteem heeft bijvoorbeeld waarden zoals _iOS 7_ en _Android 4.1.2_.
 
 Hier zijn de soorten rapporten die u in Mobiele UI kunt produceren:
 
