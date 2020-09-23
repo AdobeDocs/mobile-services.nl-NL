@@ -3,12 +3,15 @@ description: Het Versierapport is een rapport dat tijdens runtime informatie wee
 keywords: mobile
 seo-description: Het Versierapport is een rapport dat tijdens runtime informatie weergeeft over de verschillende versies van uw app die op het apparaat van een gebruiker worden uitgevoerd.
 seo-title: Versierapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Versierapport
 topic: Reports,Metrics
 uuid: 67e759d3-7e4f-4985-9e74-61c782f0fbb5
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 0%
 
 ---
 
