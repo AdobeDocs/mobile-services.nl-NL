@@ -3,12 +3,15 @@ description: U kunt een interactieve kaart bekijken die uw Punten van Interesse 
 keywords: mobile
 seo-description: U kunt een interactieve kaart bekijken die uw Punten van Interesse en andere gegevenstellers toont.
 seo-title: Kaart
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Kaart
 topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
