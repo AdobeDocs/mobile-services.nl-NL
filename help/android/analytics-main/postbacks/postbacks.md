@@ -3,12 +3,15 @@ description: Met Postbacks kunt u gegevens die door de SDK zijn verzameld, naar 
 keywords: android;library;mobile;sdk
 seo-description: Met Postbacks kunt u gegevens die door de SDK zijn verzameld, naar een externe server verzenden. Door gebruik te maken van dezelfde triggers en kenmerken die u gebruikt om een bericht in de app weer te geven, kunt u de SDK zodanig configureren dat aangepaste gegevens naar een bestemming van een derde worden verzonden.
 seo-title: Postbacks
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Overzicht van postbacks
 topic: Developer and implementation
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
 translation-type: tm+mt
-source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 0%
 
 ---
 
