@@ -2,12 +2,15 @@
 description: Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
 seo-description: Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
 seo-title: iOS-extensie-implementatie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS-extensie-implementatie
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 0%
 
 ---
 
@@ -16,16 +19,16 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Aanbevelingen voor het gebruik van de iOS SDK in plaats van de wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## Recommendations voor het gebruik van de iOS SDK in plaats van uw wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
@@ -45,6 +48,7 @@ Zelfs als deze drie traceringsmethoden aan uw vereisten voldoen, gebruikt u de i
 >
 >* Eén doel dat de app moet bevatten.
 >* Eén doel voor de extensie.
+
 >
 
 
@@ -65,7 +69,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 
 1. Open het **[!UICONTROL Capabilities]** tabblad van het doel van de bevattende app, schakel **[!UICONTROL App Groups]** deze in en voeg een nieuwe toepassingsgroep toe (bijvoorbeeld `group.com.adobe.testAp`).
 
-1. Stel in uw gedelegeerde toepassing de toepassingsgroep in `application:didFinishLaunchingWithOptions` voordat u interacties uitvoert met de Adobe Mobile-bibliotheek:
+1. Stel in uw gedelegeerde toepassing de toepassingsgroep in `application:didFinishLaunchingWithOptions` voordat u interacties maakt met de mobiele Adobe-bibliotheek:
 
    ```objective-c
    [ADBMobile 
@@ -85,7 +89,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 
 1. Open het **[!UICONTROL Capabilities]** tabblad van het doel van de extensie, schakel de app-groep in die u hebt toegevoegd in stap 4 van de bovenstaande **[!UICONTROL App Groups]** Inhoudsapp ** configureren.
 
-1. Stel in uw InterfaceController de toepassingsgroep in `awakeWithContext:` voordat u andere interacties uitvoert met de Adobe Mobile-bibliotheek:
+1. Stel in uw InterfaceController de toepassingsgroep in `awakeWithContext:` voordat u andere interacties maakt met de mobiele Adobe-bibliotheek:
 
    ```objective-c
    [ADBMobile 
