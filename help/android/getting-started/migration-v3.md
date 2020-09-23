@@ -3,12 +3,15 @@ description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van d
 keywords: android;library;mobile;sdk
 seo-description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bibliotheek naar versie 4.x.
 seo-title: Migreren naar de Android 4.x-bibliotheek
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migreren naar de Android 4.x-bibliotheek
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 2%
 
 ---
 
@@ -110,11 +113,11 @@ Als u van versie 2.x naar versie 4 wilt migreren, verplaatst u de waarde van de 
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | Verwijderen, niet meer gebruikt. |
 | linkTrackEvents | Verwijderen, niet meer gebruikt. |
-| tijdstempel | Verwijderen, niet meer configureerbaar. |
+| timestamp | Verwijderen, niet meer configureerbaar. |
 | dc | Verwijderen, niet meer gebruikt. |
 | userAgent | Verwijderen, niet meer configureerbaar. |
 | dynamicVariablePrefix | Verwijderen, niet meer gebruikt. |
-| bezoekerNamespace | Verwijderen, niet meer gebruikt. |
+| visitorNamespace | Verwijderen, niet meer gebruikt. |
 | usePlugins | Verwijderen, niet meer gebruikt. |
 | useBestPractices alle aanroepen naar churn measurement ( getChurnInstance) | Verwijderen, vervangen door Levenscyclusstatistieken. |
 
@@ -164,7 +167,7 @@ Vervang de volgende methoden door een aanroep van `trackState` of `trackAction`:
    * `track (trackState)`
    * `trackLink (trackAction)`
 
-## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Vervang de `visitorID` variabele door een vraag aan `setUserIdentifier`.
 
