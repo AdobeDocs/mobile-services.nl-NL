@@ -3,12 +3,15 @@ description: Hier volgt informatie over het meten van video's op Android met de 
 keywords: android;library;mobile;sdk
 seo-description: Hier volgt informatie over het meten van video's op Android met de video-meetoplossing.
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +22,7 @@ Hier volgt informatie over het meten van video&#39;s op Android met de video-mee
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de afspeeltijd te meten. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)voor meer informatie over de meetoplossing voor video&#39;s van Adobe.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie over Video-meetoplossing voor Adobe.
 
 Het algemene proces voor het meten van video is op alle platforms vergelijkbaar. Deze inhoud biedt een overzicht van de ontwikkelaarstaken met codevoorbeelden. In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. De regels van de verwerking worden gebruikt om de contextgegevens aan een variabele van de Analyse in kaart te brengen.
 
@@ -28,31 +31,32 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
 * **a.media.name**
    * Type variabele: eVar
       * Standaardvervaldatum: Bezoek
-      * Aangepast inzicht (s.prop, wordt gebruikt voor videotekenen)
+      * Custom Insight (s.prop, gebruikt voor videoverven)
    * (**Vereist**) Wanneer een bezoeker de video op een of andere manier bekijkt, verzamelt deze contextgegevensvariabele de naam van de video, zoals opgegeven in de implementatie. U kunt classificaties toevoegen voor deze variabele.
-   * (**Optioneel**) De variabele Aangepast inzicht biedt informatie over het plakken van video.
+   * (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
 
 * **a.media.name**
-   * Type variabele: Aangepast inzicht (s.prop)
+   * Type variabele: Custom Insight (s.prop)
    * (**Optioneel**) Bevat informatie over het plakken van video.
 
       >[!IMPORTANT]
       >
       >Pathing moet voor deze variabele door ExpCare worden toegelaten.
-   * Type gebeurtenis: Aangepast inzicht (s.prop)
+   * Type gebeurtenis: Custom Insight (s.prop)
 
 * **a.media.segment**
    * Type variabele: eVar
    * Standaardvervaldatum: Paginaweergave
    * (**Vereist**) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt.
 
-      Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen bij het automatisch bijhouden van spelergebeurtenissen of door een aangepaste segmentnaam in te stellen bij het handmatig bijhouden van spelergebeurtenissen. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video weergeeft, kan SiteCatalyst het volgende verzamelen in de Segmenten Var: `1:M:0-25`.
+      Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen bij het automatisch bijhouden van spelergebeurtenissen of door een aangepaste segmentnaam in te stellen bij het handmatig bijhouden van spelergebeurtenissen. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in de eVar Segmenten: `1:M:0-25`.
 
       De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
       * video starten (afspelen)
       * begin segment
       * videoeinde (stoppen)
+
       Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
 
 
