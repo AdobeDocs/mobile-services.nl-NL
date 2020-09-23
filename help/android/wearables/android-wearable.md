@@ -2,12 +2,15 @@
 description: Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u gegevens kunt verzamelen van uw Android Wearable-app.
 seo-description: Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u gegevens kunt verzamelen van uw Android Wearable-app.
 seo-title: Aan de slag met Android-kabels
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Aan de slag met Android-kabels
 topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
