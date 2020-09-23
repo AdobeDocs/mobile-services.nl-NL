@@ -2,12 +2,15 @@
 description: Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 seo-description: Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
 seo-title: Methoden van SDK
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van SDK
 topic: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 21%
 
 ---
 
@@ -122,7 +125,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x SDK, wordt de vorige id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is gebruikersidentificatie `null` tot reeks.
+   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x-SDK, wordt de vorige id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is gebruikersidentificatie `null` tot reeks.
 
    * Hier volgt de syntaxis voor deze methode:
 
