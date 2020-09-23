@@ -3,12 +3,15 @@ description: U kunt een nieuwe koppelingsbestemming maken die gebruikers naar ee
 keywords: mobile
 seo-description: U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een diepe koppeling in uw app stuurt.
 seo-title: Nieuw koppelingsdoel maken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Nieuw koppelingsdoel maken
 topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een 
 1. Typ gegevens in de volgende velden:
    * **[!UICONTROL Title]**
 
-      Typ een beschrijvende naam voor de bestemming van de App Link. De titel wordt alleen weergegeven op de pagina Bestemmingen van koppeling beheren in de gebruikersinterface van Adobe Mobile Services. Een beschrijvende naam helpt u of anderen in uw organisatie om snel een specifieke verbindingsbestemming te vinden en kan inzicht in zijn doel verstrekken.
+      Typ een beschrijvende naam voor de bestemming van de App Link. De titelvertoningen slechts op de Manage pagina van de Doelen van de Verbinding in de Mobiele Diensten UI van Adobe. Een beschrijvende naam helpt u of anderen in uw organisatie om snel een specifieke verbindingsbestemming te vinden en kan inzicht in zijn doel verstrekken.
 
    * **[!UICONTROL Link Type]**
 
@@ -54,7 +57,7 @@ Selecteer de app die is gekoppeld aan de koppeling die u wilt opgeven.
 
    * **[!UICONTROL Notes]**
 
-      Typ optionele notities voor uw doel. De extra nota&#39;s tonen slechts op de Manage pagina van de Doelen van de Verbinding in de UI van de Diensten van de Mobiele van Adobe. De extra nota&#39;s kunnen u of anderen in uw organisatie snel helpen een specifieke verbindingsbestemming vinden en kunnen inzicht in zijn doel, de campagne verstrekken waaraan het wordt gebonden, of iets anders verstrekken dat u belangrijk vindt.
+      Typ optionele notities voor uw doel. De extra nota&#39;s tonen slechts op de Manage pagina van de Doelen van de Verbinding in de Mobiele Diensten van Adobe UI. De extra nota&#39;s kunnen u of anderen in uw organisatie snel helpen een specifieke verbindingsbestemming vinden en kunnen inzicht in zijn doel, de campagne verstrekken waaraan het wordt gebonden, of iets anders verstrekken dat u belangrijk vindt.
 
 
 1. Klik op **Opslaan**.
