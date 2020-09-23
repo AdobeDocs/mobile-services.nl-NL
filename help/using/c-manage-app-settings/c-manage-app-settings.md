@@ -3,12 +3,15 @@ description: Als u uw apps beheert, moet u een app configureren en een groot aan
 keywords: mobile
 seo-description: Als u uw apps beheert, moet u een app configureren en een groot aantal variabelen en metriek beheren.
 seo-title: Toepassingsinstellingen beheren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Toepassingsinstellingen beheren
 topic: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
