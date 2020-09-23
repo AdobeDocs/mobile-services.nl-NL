@@ -3,17 +3,20 @@ description: U kunt een bericht in de app maken voor levering aan mobiele gebrui
 keywords: mobile
 seo-description: U kunt een bericht in de app maken voor levering aan mobiele gebruikers. Wanneer het creëren van het bericht, vormt u het berichttype, het publiek, de ervaring, en het programma.
 seo-title: Een bericht in de app maken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Een bericht in de app maken
 topic: Metrics
 uuid: 15b52713-9ffc-4df9-b21a-6b0576a96a54
 translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 0%
 
 ---
 
 
-# Een bericht in de app maken{#create-an-in-app-message}
+# Create an in-app message{#create-an-in-app-message}
 
 U kunt een bericht in de app maken voor levering aan mobiele gebruikers. Wanneer het creëren van het bericht, vormt u het berichttype, het publiek, de ervaring, en het programma.
 
