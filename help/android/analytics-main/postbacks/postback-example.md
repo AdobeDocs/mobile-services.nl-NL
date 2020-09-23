@@ -3,12 +3,15 @@ description: U kunt deze informatie gebruiken om u te helpen postbacks zijn en h
 keywords: android;library;mobile;sdk
 seo-description: U kunt deze informatie gebruiken om u te helpen postbacks zijn en hoe zij werken.
 seo-title: Voorbeeld postbacks
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Voorbeeld postbacks
 topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ U kunt deze informatie gebruiken om u te helpen begrijpen wat postbacks zijn en 
 
 >[!CAUTION]
 >
->Dit voorbeeld wordt alleen ter informatie verstrekt. Het `ADBMobileConfig.json` bestand moet worden geconfigureerd in de gebruikersinterface van Adobe Mobile en mag niet handmatig worden gewijzigd. Een manueel uitgegeven configuratiedossier kan gevaarlijk zijn wanneer u toegelaten verre berichtconfiguratie hebt.
+>Dit voorbeeld wordt alleen ter informatie verstrekt. Het `ADBMobileConfig.json` bestand moet worden geconfigureerd in de mobiele gebruikersinterface van Adobe en mag niet handmatig worden gewijzigd. Een manueel uitgegeven configuratiedossier kan gevaarlijk zijn wanneer u toegelaten verre berichtconfiguratie hebt.
 
 ## `ADBMobileConfig.json` definitie {#section_8751E8176F3546C09420341A39758AFF}
 
@@ -52,7 +55,7 @@ U kunt deze informatie gebruiken om u te helpen begrijpen wat postbacks zijn en 
 ] 
 ```
 
-## Codevoorbeeld {#section_D063DE82976D4EDEA97E804BD1C4718F}
+## Code sample {#section_D063DE82976D4EDEA97E804BD1C4718F}
 
 ```js
 HashMap<String, Object> contextData = new HashMap<String, Object>(); 
