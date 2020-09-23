@@ -2,17 +2,20 @@
 description: Frames zijn de verschillende schermen of weergaven in uw toepassing.
 seo-description: Frames zijn de verschillende schermen of weergaven in uw toepassing.
 seo-title: App-statussen bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App-statussen bijhouden
 topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 3%
 
 ---
 
 
-# Toepassingsstaten bijhouden {#track-app-states}
+# Track app states {#track-app-states}
 
 Frames zijn de verschillende schermen of weergaven in uw toepassing.
 
@@ -43,7 +46,7 @@ Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, w
    }
    ```
 
-Het `"State Name"` wordt gemeld in de `View State` variabele in de diensten van Adobe Mobile, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces, `View State` wordt gemeld zoals `Page Name`, en `state views` wordt gemeld zoals `page views`.
+Het `"State Name"` wordt gemeld in de `View State` variabele in de Mobiele diensten van Adobe, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces, `View State` wordt gemeld zoals `Page Name`, en `state views` wordt gemeld zoals `page views`.
 
 ## Extra gegevens verzenden {#section_CFDB4F944496401786A145C209AB387C}
 
@@ -62,7 +65,7 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-state.png)
 
