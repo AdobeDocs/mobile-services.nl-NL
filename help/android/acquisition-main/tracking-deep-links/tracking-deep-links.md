@@ -3,12 +3,12 @@ description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe kopp
 keywords: android;library;mobile;sdk
 seo-description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
 seo-title: Diepe koppelingen bijhouden in mobiele Adobe-services
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Diepe koppelingen bijhouden
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 3%
