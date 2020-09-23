@@ -3,12 +3,15 @@ description: Met het rapport Technologie kunt u de verschillende apparaattypen, 
 keywords: mobile
 seo-description: Met het rapport Technologie kunt u de verschillende apparaattypen, besturingssystemen, versies van besturingssystemen en mobiele providers bekijken waarop uw app wordt gebruikt.
 seo-title: Technologieverslag
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Technologieverslag
 topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Met dit **[!UICONTROL Technology]** rapport kunt u de verschillende apparaattypen, besturingssystemen, versies van het besturingssysteem en mobiele providers bekijken waarop uw app wordt gebruikt.
 
-Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt stellen in de Experience Cloud.
+Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt maken in de Experience Cloud.
 
 ## Navigatie en gebruik {#section_83CA60E1AE6245FEBCBFF3205615C4DF}
 
