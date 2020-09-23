@@ -1,25 +1,28 @@
 ---
-description: Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de Android-bibliotheek.
+description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 keywords: android;library;mobile;sdk
-seo-description: Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de Android-bibliotheek.
+seo-description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 seo-title: Methoden van Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
 topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 25%
 
 ---
 
 
 # Methoden van Audience Manager{#audience-manager-methods}
 
-Hier volgt een lijst met de methoden van Audience Manager die worden geleverd door de Android-bibliotheek.
+Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld vooraf ingesteld op `audience manager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben bijvoorbeeld de voorvoegsel `audience manager`.
 
-Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal dat levenscyclusmetriek bevat verzonden bij een hit op de levenscyclus.
+Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met levenscyclusmetriek verzonden bij een hit tijdens de levenscyclus.
 
 * **getVisitorProfile**
 
