@@ -3,12 +3,15 @@ description: Hier worden de metriek en afmetingen weergegeven die automatisch do
 keywords: android;library;mobile;sdk
 seo-description: Hier worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten.
 seo-title: Levenscycluswaarden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Levenscycluswaarden
 topic: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 0%
 
 ---
 
@@ -20,27 +23,27 @@ Hier worden de metriek en afmetingen weergegeven die automatisch door de mobiele
 Zie [Problemen met levenscyclusgegevens](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)oplossen voor meer informatie.
 
 
-## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wanneer gevormd, worden de metriek van de levenscyclus verzonden in de parameters van contextgegevens naar Analytics, in parameters aan Doel met elke mbox vraag, en als signaal aan publieksbeheer. Analytics en Target gebruiken dezelfde indeling, terwijl het publieksbeheer voor elke meting een ander voorvoegsel gebruikt.
 
 Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraag worden verzonden automatisch gevangen en op door metrisch of afmeting te gebruiken gemeld. Uitzonderingen worden vermeld in de inhoud.
 
-## Metrisch
+## Metrics
 
 * **Eerste keer starten**
 
    Wordt geactiveerd bij de eerste run na installatie of herinstallatie.
 
    * Contextgegevens/doelparameter voor analyse: `a.InstallEvent`
-   * signaal van Audience Manager: `c_a_InstallEvent`
+   * Audience Manager signaal: `c_a_InstallEvent`
 
 * **Upgrades**
 
    Teweeggebracht bij de eerste looppas na een verbetering of wanneer het versieaantal verandert.
 
    * Contextgegevens/doelparameter voor analyse: `a.UpgradeEvent`
-   * signaal van Audience Manager: `c_a_UpgradeEvent`
+   * Audience Manager signaal: `c_a_UpgradeEvent`
 
 * **Dagelijkse deelnemers**
 
@@ -51,7 +54,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrisch wordt niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
    * Contextgegevens/doelparameter voor analyse: `a.DailyEngUserEvent`
-   * signaal van Audience Manager: `c_a_DailyEngUserEvent`
+   * Audience Manager signaal: `c_a_DailyEngUserEvent`
 
 * **Maandelijkse deelnemers**
 
@@ -62,87 +65,87 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrisch wordt niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
    * Contextgegevens/doelparameter voor analyse: `a.MonthlyEngUserEvent`
-   * signaal van Audience Manager: `c_a_MonthlyEngUserEvent`
+   * Audience Manager signaal: `c_a_MonthlyEngUserEvent`
 
-* **Starten**
+* **Lanceringen**
 
    Teweeggebracht bij elke looppas, met inbegrip van neerstortingen en installaties. Wordt ook geactiveerd op een hervat vanaf de achtergrond wanneer de time-out van de levenscyclussessie is overschreden.
 
    * Contextgegevens/doelparameter voor analyse: `a.LaunchEvent`
-   * signaal van Audience Manager: `c_a_LaunchEvent`
+   * Audience Manager signaal: `c_a_LaunchEvent`
 
 * **Crashes**
 
-   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart. Adobe Mobile-crashrapportage implementeert geen algemene handler voor niet-afgevangen uitzonderingen.
+   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart. Bij het rapporteren van Adobe Mobile-crashes wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
 
    * Contextgegevens/doelparameter voor analyse: `a.CrashEvent`
-   * signaal van Audience Manager: `c_a_CrashEvent`
+   * Audience Manager signaal: `c_a_CrashEvent`
 
 * **Lengte vorige sessie**
 
    Meldt het aantal seconden dat een vorige toepassingssessie heeft geduurd, op basis van de duur van de toepassing en op de voorgrond.
 
    * Contextgegevens/doelparameter voor analyse: `a.PrevSessionLength`
-   * signaal van Audience Manager: `c_a_PrevSessionLength`
+   * Audience Manager signaal: `c_a_PrevSessionLength`
 
 
-## Afmetingen
+## Dimensies
 
 * **Installatiedatum**
 
    Datum van eerste lancering na installatie. De datumnotatie is `MM/DD/YYYY`.
 
    * Contextgegevens/doelparameter voor analyse: `a.InstallDate`
-   * signaal van Audience Manager: `c_a_InstallDate`
+   * Audience Manager signaal: `c_a_InstallDate`
 
 * **Toepassings-id**
 
    Hiermee slaat u de toepassingsnaam en -versie op in de `[AppName] [BundleVersion]` indeling. Een voorbeeld van deze indeling is `myapp 1.1`.
 
    * Contextgegevens/doelparameter voor analyse: `a.AppID`
-   * signaal van Audience Manager: `c_a_AppID`
+   * Audience Manager signaal: `c_a_AppID`
 
 * **Startnummer**
 
    Aantal keren dat de toepassing is gestart of van de achtergrond is verwijderd.
 
    * Contextgegevens/doelparameter voor analyse: `a.Launches`
-   * signaal van Audience Manager: `c_a_Launches`
+   * Audience Manager signaal: `c_a_Launches`
 
 * **Dagen sinds eerste gebruik**
 
    Aantal dagen sinds de eerste run.
 
    * Contextgegevens/doelparameter voor analyse: `a.DaysSinceFirstUse`
-   * signaal van Audience Manager: `c_a_DaysSinceFirstUse`
+   * Audience Manager signaal: `c_a_DaysSinceFirstUse`
 
 * **Dagen sinds laatste gebruik**
 
    Aantal dagen sinds laatste gebruik.
 
    * Contextgegevens/doelparameter voor analyse: `a.DaysSinceLastUse`
-   * signaal van Audience Manager: `c_a_DaysSinceLastUse`
+   * Audience Manager signaal: `c_a_DaysSinceLastUse`
 
 * **Uur van dag**
 
-   Hiermee wordt het uur gemeten waarop de app is gestart. Deze metrische waarde gebruikt het 24-uurs numerieke formaat en wordt gebruikt voor tijd het ontleden om piekgebruikstijden te bepalen.
+   Hiermee wordt het uur gemeten waarop de app is gestart. Deze metrische waarde gebruikt het 24-uurs numerieke formaat en voor tijd het ontleden gebruikt om piekgebruikstijden te bepalen.
 
    * Contextgegevens/doelparameter voor analyse: `a.HourOfDay`
-   * signaal van Audience Manager: `c_a_HourOfDay`
+   * Audience Manager signaal: `c_a_HourOfDay`
 
 * **Weekdag**
 
    Aantal dagen in een week waarin de app is gestart.
 
    * Contextgegevens/doelparameter voor analyse: `a.DayOfWeek`
-   * signaal van Audience Manager: `c_a_DayOfWeek`
+   * Audience Manager signaal: `c_a_DayOfWeek`
 
 * **Versie besturingssysteem**
 
    De versie van het besturingssysteem.
 
    * Contextgegevens/doelparameter voor analyse: `a.OSVersion`
-   * signaal van Audience Manager: `c_a_OSVersion`
+   * Audience Manager signaal: `c_a_OSVersion`
 
 * **Dagen sinds laatste upgrade**
 
@@ -153,7 +156,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrische waarde wordt niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om deze waarde te kopiëren naar een variabele Analytics voor rapportage.
 
    * Contextgegevens/doelparameter voor analyse: `a.DaysSinceLastUpgrade`
-   * signaal van Audience Manager: `c_a_DaysSinceLastUpgrade`
+   * Audience Manager signaal: `c_a_DaysSinceLastUpgrade`
 
 * **Starten sinds laatste upgrade**
 
@@ -164,14 +167,14 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrische waarde wordt niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om deze waarde te kopiëren naar een variabele Analytics voor rapportage.
 
    * Contextgegevens/doelparameter voor analyse: `a.LaunchesSinceUpgrade`
-   * signaal van Audience Manager: `c_a_LaunchesSinceUpgrade`
+   * Audience Manager signaal: `c_a_LaunchesSinceUpgrade`
 
 * **Apparaatnaam**
 
    Hiermee slaat u de apparaatnaam op.
 
    * Contextgegevens/doelparameter voor analyse: `a.DeviceName`
-   * signaal van Audience Manager: `c_a_DeviceName`
+   * Audience Manager signaal: `c_a_DeviceName`
 
 * **Naam vervoerder**
 
@@ -182,43 +185,43 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrische waarde wordt niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om deze waarde te kopiëren naar een variabele Analytics voor rapportage.
 
    * Contextgegevens/doelparameter voor analyse: `a.CarrierName`
-   * signaal van Audience Manager: `c_a_CarrierName`
+   * Audience Manager signaal: `c_a_CarrierName`
 
 * **Resolutie**
 
    Breedte x Hoogte in werkelijke pixels.
 
    * Contextgegevens/doelparameter voor analyse: `a.Resolution`
-   * signaal van Audience Manager: `c_a_Resolution`
+   * Audience Manager signaal: `c_a_Resolution`
 
 
 ## Extra mobiele meeteenheden en afmetingen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 De volgende meetwaarden en afmetingen worden met de volgende methode vastgelegd in variabelen voor mobiele oplossingen:
 
-### Metrisch
+### Metrics
 
 * **Totale tijd van handeling**
 
    Bevolkt met `trackTimedAction` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.total`
-   * signaal van Audience Manager: `c_a_action_time_total`
+   * Audience Manager signaal: `c_a_action_time_total`
 
 * **Tijd van handeling in toepassing**
 
    Bevolkt met `trackTimedAction` methoden.
    * Contextgegevens/doelparameter voor analyse: `a.action.time.inapp`
-   * signaal van Audience Manager: `c_a_action_time_inapp`
+   * Audience Manager signaal: `c_a_action_time_inapp`
 
 * **Lifetime-waarde (gebeurtenis)**
 
    Bevolkt met `trackLifetimeValue` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
-   * signaal van Audience Manager: `c_a_ltv_amount`
+   * Audience Manager signaal: `c_a_ltv_amount`
 
-### Afmetingen
+### Dimensies
 
 * **Locatie (tot 10 km)**
 
@@ -228,7 +231,7 @@ De volgende meetwaarden en afmetingen worden met de volgende methode vastgelegd 
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Handeling(en) in Audience Manager:
+   * Audience Manager(en):
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -242,7 +245,7 @@ De volgende meetwaarden en afmetingen worden met de volgende methode vastgelegd 
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Handeling(en) in Audience Manager:
+   * Audience Manager(en):
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -256,7 +259,7 @@ De volgende meetwaarden en afmetingen worden met de volgende methode vastgelegd 
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Handeling(en) in Audience Manager:
+   * Audience Manager(en):
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -267,18 +270,18 @@ De volgende meetwaarden en afmetingen worden met de volgende methode vastgelegd 
    Wordt gevuld met `trackLocation` methoden wanneer het apparaat zich in een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse: `a.loc.poi`
-   * Status van Audience Manager: `c_a_loc_poi`
+   * Audience Manager: `c_a_loc_poi`
 
 * **Afstand tot belangencentrum**
 
    Wordt gevuld door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse: `a.loc.dist`
-   * Status van Audience Manager: `c_a_loc_dist`
+   * Audience Manager: `c_a_loc_dist`
 
 * **Lifetime-waarde (conversievariabele)**
 
    Bevolkt met `trackLifetimeValue` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
-   * Status van Audience Manager: `c_a_ltv_amount`
+   * Audience Manager: `c_a_ltv_amount`
