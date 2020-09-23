@@ -1,20 +1,23 @@
 ---
-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Universal Windows Platform 4.x SDK for Experience Cloud Solutions kunt migreren.
-seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Universal Windows Platform 4.x SDK for Experience Cloud Solutions kunt migreren.
+description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een vorige Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
+seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een vorige Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
 seo-title: Migreren naar 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migreren naar 4.x
 topic: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
 
 # Migreren naar de 4.x SDK&#39;s{#migrate-to-x}
 
-In deze sectie wordt beschreven hoe u van de 3.x-versie van de mobiele SDK van Windows naar de Universal Windows Platform 4.x SDK for Experience Cloud Solutions kunt migreren.
+In deze sectie wordt beschreven hoe u van de 3.x-versie van de Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
 
 Met de overgang naar versie 4.x is alle functionaliteit nu toegankelijk via statische methoden. U hoeft uw eigen objecten niet meer bij te houden.
 
@@ -96,7 +99,7 @@ Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan
 
 ### AppSection/Server, GeoZip, transactie-id, Campaign en andere standaardvariabelen
 
-In plaats daarvan moeten alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, worden toegevoegd aan de contextgegevens. Dat wil zeggen dat de enige gegevens die met een `TrackState` of `TrackAction` aanroep worden verzonden, de payload in de `data` parameter zijn.
+Alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, moeten in plaats daarvan worden toegevoegd aan contextgegevens. Dat wil zeggen dat de enige gegevens die met een `TrackState` of `TrackAction` aanroep worden verzonden, de payload in de `data` parameter zijn.
 
 **Trackingaanroepen vervangen**
 
