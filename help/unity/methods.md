@@ -3,11 +3,11 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: Methoden van ADBMobile.cs
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Methoden van ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 35%
