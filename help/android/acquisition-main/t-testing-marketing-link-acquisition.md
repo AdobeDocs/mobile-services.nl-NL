@@ -3,12 +3,12 @@ description: De volgende instructies helpen u een acquisitiecampagne met een Mar
 keywords: android;library;mobile;sdk
 seo-description: De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
 seo-title: Verwerving marketingkoppeling testen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verwerving marketingkoppeling testen
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 1%
@@ -72,7 +72,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
 
    | Instelling | Waarde |
    |--- |--- |
-   | verwerving | De server zou moeten zijn, `c00.adobe.com`, en *`appid`* zou het `appid` in uw aanschafverbinding gelijk moeten zijn. |
+   | verwerving | De server moet gelijk zijn aan `c00.adobe.com`de *`appid`* `appid` verwervingskoppeling. |
    | analyse | Voor testdoeleinden stelt u de time-out van de referentie zo in dat er voldoende tijd (60 seconden of meer) is om de uitzending handmatig te verzenden. U kunt de oorspronkelijke time-outinstelling na de test herstellen. |
 
 1. Sluit het apparaat aan op een computer, verwijder en installeer de toepassing opnieuw.
