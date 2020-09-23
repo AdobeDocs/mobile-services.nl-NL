@@ -3,12 +3,12 @@ description: U kunt ervaringsopties configureren voor pushberichten en uitgebrei
 keywords: mobile
 seo-description: U kunt ervaringsopties configureren voor pushberichten en uitgebreide pushberichten, zoals naam, berichttekst en bestemmingsopties. U kunt ook geavanceerde opties configureren, zoals opties voor het laden van de lading en aangepaste opties voor iOS-apparaten.
 seo-title: Experience Push Message
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Experience Push Message
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
