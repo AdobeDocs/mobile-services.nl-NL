@@ -2,12 +2,15 @@
 description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw iOS-apps.
 seo-description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw iOS-apps.
 seo-title: Geo-Locatie en belangenpunten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Geo-Locatie en belangenpunten
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en
 
 Elke `trackLocation` vraag verzendt het volgende:
 
-* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in Adobe Mobile-services.
+* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in mobiele Adobe-services.
 
    Deze informatie wordt doorgegeven aan mobiele oplossingvariabelen voor automatische rapportage.
 
@@ -28,7 +31,7 @@ Elke `trackLocation` vraag verzendt het volgende:
 
 ## Dynamische POI-updates {#section_3747B310DD5147E2AAE915E762997712}
 
-Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de toepassing. Voor deze synchronisatie is een `analytics.poi` instelling in het `ADBMobile.json` bestand vereist:
+Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is een `analytics.poi` instelling in het `ADBMobile.json` bestand vereist:
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
@@ -93,7 +96,7 @@ De coördinaten lat = 40,93231, lon = -111,93152 vertegenwoordigen bijvoorbeeld 
 
 Sommige precisieniveaus worden weergegeven als &quot;00&quot;, afhankelijk van de nauwkeurigheid van de huidige locatie. Als de locatie momenteel bijvoorbeeld nauwkeurig is tot 100 m, wordt &quot;00&quot; `a.loc.lat.c` `a.loc.lon.c` ingevuld.
 
-## Aanvullende informatie {#section_931AC1E0D88147E29FE1B6E3CC1E9550}
+## Extra informatie {#section_931AC1E0D88147E29FE1B6E3CC1E9550}
 
 De volgende informatie onthouden:
 
@@ -112,5 +115,5 @@ De volgende informatie onthouden:
 
 * Wanneer twee POIs overlappende diameters hebben, wordt eerste POI die de huidige plaats bevat gebruikt.
 
-   Als uw POIs overlappen, zou u POIs in orde van het meest korrelige aan minst korrelig moeten opsommen om ervoor te zorgen dat de meest korrelige POI wordt gemeld.
+   Als uw POIs overlappen, zou u POIs in orde van het meest korrelige aan minst korrelig moeten opsommen om ervoor te zorgen dat de korrelbelangrijkste POI wordt gemeld.
 
