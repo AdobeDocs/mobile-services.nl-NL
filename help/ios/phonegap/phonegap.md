@@ -3,12 +3,15 @@ description: Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit u
 keywords: phonegap
 seo-description: Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit uw PhoneGap-project verzenden.
 seo-title: PhoneGap-plug-in
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap-plug-in
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
@@ -17,14 +20,14 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit uw PhoneGap-project verzenden.
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## Een PhoneGap-project maken
@@ -70,6 +73,7 @@ De AppMeturement-bibliotheek vereist het volgende:
    1. Selecteer **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Selecteer **[!UICONTROL Create groups for any added folders]**.
    1. Selecteer de doelen waar u de code AppMeasurement wilt gebruiken en klik **[!UICONTROL Finish]**.
+
    ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
 1. In the **[!UICONTROL Build Phases]** tab of your project’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
