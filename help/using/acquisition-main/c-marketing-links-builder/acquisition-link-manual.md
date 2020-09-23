@@ -3,12 +3,15 @@ description: U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele 
 keywords: mobile
 seo-description: U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct aan te schaffen door de URL-parameters handmatig te configureren.
 seo-title: Koppelingen voor overname handmatig maken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Koppelingen voor overname handmatig maken
 topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
-source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Het volgende diagram illustreert de componenten van een manueel gebouwde het vol
 
 ![](assets/acquisition_url.png)
 
-Deze koppeling is geconfigureerd voor het uitvoeren van een platformspecifieke omleiding naar de Google Play-winkel of de Apple App Store voor een mobiele app. Als de bestemming niet kan worden bepaald, is de standaardwinkel ingesteld op de Apple App Store. Nadat de app is geïnstalleerd, wordt de `my.custom.key:test` aangepaste contextsleutel aan de Analytics Install Hit gekoppeld.
+Deze koppeling is geconfigureerd voor het uitvoeren van een platformspecifieke omleiding naar de Google Play-winkel of de Apple App Store voor een mobiele app. Als de bestemming niet kan worden bepaald, is de standaardwinkel ingesteld op de Apple App Store. Nadat de app is geïnstalleerd, wordt de `my.custom.key:test` aangepaste contextsleutel gekoppeld aan de Analytics Install Hit.
 
 Gebruik de volgende URL-indeling om handmatig koppelingen te maken:
 
