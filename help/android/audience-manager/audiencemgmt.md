@@ -2,20 +2,23 @@
 description: U kunt signalen verzenden en bezoekerssegmenten van publieksbeheer terugwinnen.
 keywords: android;library;mobile;sdk
 seo-description: U kunt signalen verzenden en bezoekerssegmenten van publieksbeheer terugwinnen.
-seo-title: Configuratie van Auditiebeheer
-solution: Marketing Cloud,Analytics
-title: Configuratie van Auditiebeheer
+seo-title: Configuratie van Audience Manager
+solution: Experience Cloud,Analytics
+title: Configuratie van Audience Manager
 topic: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 9%
 
 ---
 
 
-# Configuratie van Auditiebeheer{#audience-manager-configuration}
+# Configuratie van Audience Manager{#audience-manager-configuration}
 
-U kunt signalen verzenden en bezoekerssegmenten van de Manager van het Publiek terugwinnen.
+U kunt signalen verzenden en bezoekerssegmenten van Audience Manager terugwinnen.
 
 ## De toepassingscontext instellen {#section_37CAE496FF894FCA821F7760605574CA}
 
