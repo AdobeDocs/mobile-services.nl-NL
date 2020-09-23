@@ -2,12 +2,15 @@
 description: Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
 seo-description: Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
 seo-title: Core-implementatie en levenscyclus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Core-implementatie en levenscyclus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +53,7 @@ De SDK downloaden:
 
 >[!IMPORTANT]
 >
->Als u de SDK buiten de gebruikersinterface van Adobe Mobile-services downloadt, moet het `ADBMobileConfig.json` bestand handmatig worden geconfigureerd. Zie [Voordat u begint](/help/ios/getting-started/requirements.md) met het instellen van een ontwikkelrapportsuite en download een vooraf ingevulde versie van het configuratiebestand als u nog niet eerder met Analytics en de Mobile SDK werkt.
+>Als u de SDK buiten de gebruikersinterface van de Adobe Mobile-services downloadt, moet het `ADBMobileConfig.json` bestand handmatig worden geconfigureerd. Zie [Voordat u begint](/help/ios/getting-started/requirements.md) met het instellen van een ontwikkelrapportsuite en download een vooraf ingevulde versie van het configuratiebestand als u nog niet eerder met Analytics en de Mobile SDK werkt.
 
 ## SDK en configuratiebestand toevoegen aan uw project {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
@@ -61,11 +64,12 @@ De SDK downloaden:
    * Het **[!UICONTROL Copy Items if needed]** selectievakje is ingeschakeld.
    * **[!UICONTROL Create groups]** is geselecteerd.
    * Geen enkel selectievakje in de **[!UICONTROL Add to targets]** sectie is geselecteerd.
+
    ![](assets/step_3.png)
 
 1. Klik op **[!UICONTROL Finish]**.
 1. In **[!UICONTROL Project Navigator]** selecteert u **`ADBMobileConfig.json`**.
-1. Voeg het JSON-bestand toe **[!UICONTROL File Inspector]** aan eventuele doelen in uw project die de SDK van Adobe gebruiken.
+1. Voeg in **[!UICONTROL File Inspector]**, het JSON- dossier aan om het even welke doelstellingen in uw project toe die Adobe SDK zullen gebruiken.
 
    ![](assets/step_4.png)
 
@@ -93,6 +97,7 @@ De SDK downloaden:
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > Het koppelen van meerdere `AdobeMobileLibrary*.a` bestanden in hetzelfde doel leidt tot onverwacht gedrag of tot de onmogelijkheid om te bouwen.
@@ -122,7 +127,7 @@ Om extra gegevens met metrische vraag van de levenscyclus te omvatten, gebruik `
 
 >[!IMPORTANT]
 >
->Alle gegevens die via de SDK worden doorgegeven, `collectLifecycleDataWithAdditionalData:` blijven in `NSUserDefaults` de SDK behouden. De SDK slaat de waarden in de `NSDictionary` parameter over die niet van het `NSString` of `NSNumber` type zijn.
+>Alle gegevens die via de SDK worden doorgegeven, `collectLifecycleDataWithAdditionalData:` blijven in `NSUserDefaults` de SDK behouden. De SDK slaat de waarden in de `NSDictionary` parameter over die niet van de `NSString` of `NSNumber` typen zijn.
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -133,7 +138,7 @@ Om extra gegevens met metrische vraag van de levenscyclus te omvatten, gebruik `
 }
 ```
 
-Aanvullende waarden voor contextgegevens die worden verzonden met, `collectLifecycleDataWithAdditionalData` moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
+De extra waarden van contextgegevens die met worden verzonden `collectLifecycleDataWithAdditionalData` moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-lifecycle.png)
 
@@ -144,4 +149,4 @@ Andere levenscyclusmetriek worden automatisch verzameld. Zie [Levenscyclusstatis
 Voer de volgende taken uit:
 
 * [App-statussen bijhouden](/help/ios/analytics-main/states.md)
-* [Toepassingshandelingen bijhouden](/help/ios/analytics-main/actions.md)
+* [App-acties bijhouden](/help/ios/analytics-main/actions.md)
