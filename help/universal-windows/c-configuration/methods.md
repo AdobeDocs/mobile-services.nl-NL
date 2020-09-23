@@ -2,12 +2,12 @@
 description: Klassen en methoden die worden geleverd door de Universal Windows Platform-bibliotheek.
 seo-description: Klassen en methoden die worden geleverd door de Universal Windows Platform-bibliotheek.
 seo-title: Methoden van SDK
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van SDK
 topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 22%
