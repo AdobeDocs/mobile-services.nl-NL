@@ -1,24 +1,27 @@
 ---
-description: Informatie die u helpt bij het gebruik van de Universal Windows Platform SDK met Adobe Analytics.
-seo-description: Informatie die u helpt bij het gebruik van de Universal Windows Platform SDK met Adobe Analytics.
+description: Informatie om u te helpen de Universal Windows Platform SDK met Adobe Analytics gebruiken.
+seo-description: Informatie om u te helpen de Universal Windows Platform SDK met Adobe Analytics gebruiken.
 seo-title: Analysemethoden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analysemethoden
 topic: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 28%
 
 ---
 
 
 # Analysemethoden {#analytics-methods}
 
-Informatie die u helpt bij het gebruik van de Universal Windows Platform SDK met Adobe Analytics.
+Informatie om u te helpen de Universal Windows Platform SDK met Adobe Analytics gebruiken.
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Analysemethoden worden voorafgegaan door &quot;Analytics&quot;.
 
-Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportensuite te verzenden.
+Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden.
 
 >[!TIP]
 >
