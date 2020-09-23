@@ -1,13 +1,13 @@
 ---
-description: Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens de hele levensduur aankopen, weergaven, voltooide video's, sociale shares, uploads van foto's enzovoort op te slaan.
-seo-description: Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens de hele levensduur aankopen, weergaven, voltooide video's, sociale shares, uploads van foto's enzovoort op te slaan.
+description: Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens het leven aankopen, weergaven, voltooide video's, sociale aandelen, uploads van foto's, enzovoort op te slaan.
+seo-description: Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens het leven aankopen, weergaven, voltooide video's, sociale aandelen, uploads van foto's, enzovoort op te slaan.
 seo-title: Levenswaarde bezoeker
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Levenswaarde bezoeker
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Levenswaarde bezoeker {#visitor-lifetime-value}
 
-Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens de hele levensduur aankopen, weergaven, voltooide video&#39;s, sociale shares, uploads van foto&#39;s enzovoort op te slaan.
+Met de levenwaarde kunt u een levensduurwaarde voor elke Android-gebruiker meten en als doel instellen. De waarde kan worden gebruikt om tijdens het leven aankopen, weergaven, voltooide video&#39;s, sociale aandelen, uploads van foto&#39;s, enzovoort op te slaan.
 
 Telkens wanneer u een waarde met `trackLifetimeValueIncrease`verzendt, wordt de waarde toegevoegd aan de bestaande waarde. De waarde van het leven wordt opgeslagen op apparaat en kan op elk ogenblik worden teruggewonnen door te roepen `lifetimeValue`.
 
