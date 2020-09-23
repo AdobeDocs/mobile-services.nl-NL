@@ -3,12 +3,15 @@ description: Configureer ervaringsopties voor in-app berichten, zoals tekst (vol
 keywords: mobile
 seo-description: Configureer ervaringsopties voor in-app berichten, zoals tekst (volledig scherm, waarschuwing of melding) en weergave-, tekst- en knopopties.
 seo-title: Bericht over ervaring in de app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Bericht over ervaring in de app
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '624'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +44,7 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
 
       1. Klik op een HTML-bestand **[!UICONTROL Browse]** en download het of sleep een HTML-document naar het venster.
       1. Klik **[!UICONTROL Download Example]** om voorbeelden van aangepaste HTML-inhoud weer te geven.
+
       >[!TIP]
       >
       >Deze optie wordt alleen weergegeven wanneer u het berichttype **[!FVolledig scherm]** selecteert.
@@ -50,6 +54,7 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
 1. Vul de velden in de **[!UICONTROL Display]** sectie in:
 
    * **[!UICONTROL Theme]**
+
    Selecteer een thema voor uw bericht.
 
    * **[!UICONTROL Layout]**
@@ -91,6 +96,7 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
       * `{trackingId}`, die wordt vervangen door de steun (correleert met *s_vi* cookie).
       * `{messageId}`, die wordt vervangen door de unieke id voor het bericht in de app.
       * `{lifetimeValue}`, die door de levenwaarde of 0 wordt vervangen als geen levenwaarde bestaat.
+
       Hier volgt een voorbeeld van het bijhouden van de gebruikersnaam: `https://www.mysite.com?uid={userId}`.
 
       Als de doorklikkings-URL gebruikt `https://` of `https://`, opent URL in apparatenbrowser buiten app. Anders ondersteunt elk platform schema&#39;s waarmee u uw app kunt openen of ernaar kunt verwijzen als de app is ontwikkeld ter ondersteuning van het aangepaste schema.
