@@ -2,17 +2,20 @@
 description: Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
 seo-description: Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
 seo-title: In-app berichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: In-app berichten
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
 
-# In-app berichten {#in-app-messaging}
+# In-app messaging {#in-app-messaging}
 
 Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
 
@@ -20,7 +23,7 @@ Als u in-app berichten wilt gebruiken, **moet** u SDK versie 4.2 of hoger hebben
 
 Enkele informatie die u moet onthouden:
 
-* Berichten en de regels die bepalen wanneer de berichten worden getoond worden gecreeerd in de diensten van Adobe Mobile. Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie.
+* De berichten en de regels die bepalen wanneer de berichten worden getoond worden gecreeerd in de Mobiele diensten van Adobe. Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie.
 * De updates die in deze sectie worden beschreven moeten aan SDK worden gemaakt om in-app berichten te tonen.
 
    >[!TIP]
@@ -69,7 +72,7 @@ Enkele informatie die u moet onthouden:
    >
    >`messages` of `remotes` is vereist.
 
-   Als deze objecten niet zijn geconfigureerd, downloadt u een bijgewerkt `ADBMobileConfig.json` bestand van Adobe Mobile-services. Zie [Core Implementation en Lifecycle](/help/ios/getting-started/requirements.md)voor meer informatie.
+   Als deze voorwerpen niet worden gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Zie [Core Implementation en Lifecycle](/help/ios/getting-started/requirements.md)voor meer informatie.
 
 ## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
@@ -90,6 +93,7 @@ De SDK&#39;s van iOS Mobile Services volgen de volgende meetgegevens voor uw in-
 
    * **[!UICONTROL Impressions]**: wanneer de gebruiker het bericht activeert.
    * **[!UICONTROL Opens]**: wanneer de gebruiker de toepassing opent vanuit het bericht.
+
    Hier volgt een voorbeeld van de manier waarop u open tracking kunt opnemen:
 
    ```objective-c
@@ -107,7 +111,7 @@ De SDK&#39;s van iOS Mobile Services volgen de volgende meetgegevens voor uw in-
 
 ## Lokale fallback-afbeelding {#section_DEACC1CE549B4573B556A44A52409941}
 
-Als u een volledig-schermbericht maakt in Adobe Mobile-services, kunt u desgewenst een fallback-afbeelding opgeven. Als uw bericht de bedoelde afbeelding niet van het web kan ophalen, probeert de SDK de afbeelding met dezelfde naam uit uw toepassingsbundel te laden. Op deze manier kunt u uw bericht in de oorspronkelijke vorm weergeven, zelfs als de gebruiker offline is of als de vooraf ingestelde afbeelding onbereikbaar is.
+Wanneer u een volledig-schermbericht maakt in Adobe Mobile-services, kunt u desgewenst een fallback-afbeelding opgeven. Als uw bericht de bedoelde afbeelding niet van het web kan ophalen, probeert de SDK de afbeelding met dezelfde naam uit uw toepassingsbundel te laden. Op deze manier kunt u uw bericht in de oorspronkelijke vorm weergeven, zelfs als de gebruiker offline is of als de vooraf ingestelde afbeelding onbereikbaar is.
 
 De naam van het fallback-afbeeldingselement wordt opgegeven bij het configureren van het bericht in Adobe Mobile-services.
 
