@@ -3,12 +3,15 @@ description: Het rapport Overzicht App Store bevat een momentopname van de maats
 keywords: mobile
 seo-description: Het rapport Overzicht App Store bevat een momentopname van de maatstaven van uw App Store, waaronder het aantal downloads, aankopen in de app, de gemiddelde waardering van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
 seo-title: Overzicht App Store-rapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Overzicht App Store-rapport
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -29,11 +32,11 @@ U kunt op elke metrische waarde klikken om de bijbehorende lijn te verbergen of 
 
 >[!IMPORTANT]
 >
->Metrische gegevens van de App Store, zoals downloads, rang, opbrengst, classificatie, etc. in Adobe Analytics vereisen een integratie van de Verbinding van Gegevens met een aangewezen verkoper. `appFigures` biedt momenteel een integratie, waarvoor u het juiste product en/of de juiste service moet aanschaffen `appFigures` voordat **** u de integratie kunt inschakelen. Voor meer informatie over de integratie van de Verbinding van Gegevens, zie [de Uitwisseling](https://www.adobeexchange.com/experiencecloud.html)van Adobe.
+>De gegevens van de App store, zoals downloads, rang, opbrengst, classificatie, etc. in Adobe Analytics vereisen een integratie van de Verbinding van Gegevens met een aangewezen verkoper. `appFigures` biedt momenteel een integratie, waarvoor u het juiste product en/of de juiste service moet aanschaffen `appFigures` voordat **** u de integratie kunt inschakelen. Voor meer informatie over de integratie van de Verbinding van Gegevens, zie [Adobe Uitwisseling](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Naast het veranderen van de de datumwaaier van het rapport door het kalenderpictogram in het hoogste recht te klikken, kunt u sommige boor-benedenrapporten aanpassen, filters en reeksen (metriek) toevoegen, plakfilters toevoegen, en het rapport in formaat downloaden PDF of CSV. Zie Rapporten [](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
+>Naast het veranderen van de de datumwaaier van het rapport door het kalenderpictogram in het hoogste recht te klikken, kunt u sommige boor-benedenrapporten aanpassen, filters en reeksen (metriek) toevoegen, plakfilters toevoegen, en het rapport in formaat downloaden PDF of CSV. Zie [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
 
 ## Gemiddelde beoordeling App Store {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
