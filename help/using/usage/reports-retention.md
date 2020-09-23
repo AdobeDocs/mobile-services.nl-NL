@@ -3,12 +3,15 @@ description: Het retentierapport (voorheen bekend als First Launch Cohorts) is e
 keywords: mobile
 seo-description: Het retentierapport (voorheen bekend als First Launch Cohorts) is een cohortrapport waarin wordt weergegeven hoeveel unieke gebruikers uw app voor de eerste keer hebben gestart en de app vervolgens ten minste één keer in de daaropvolgende maanden opnieuw hebben gestart.
 seo-title: Bewaarrapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Bewaarrapport
 topic: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
