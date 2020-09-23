@@ -2,12 +2,15 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Snelle start voor ontwikkelaars
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Snelle start voor ontwikkelaars
 topic: Developer and implementation
 uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -162,7 +165,7 @@ Werk minimaal de volgende waarden bij voor de oplossingen die u gebruikt:
 
 * **Adobe Analytics**: `rsids` en `server`
 
-* **Adobe-doel**: `clientCode`
+* **Adobe Target**: `clientCode`
 
 * **Adobe Audience Manager**: `server`
 
@@ -186,5 +189,5 @@ Voor C Sharp- en JavaScript-toepassingen moet u foutopsporing in native code ins
 
 1. Wijzig de vervolgkeuzelijst van het foutopsporingstype in **[!UICONTROL Native Only]**.
 
-Dat is het! U kunt nu Analytics, Target en Audience Management implementeren in uw Universal Windows Platform-app.
+Dat is het! U bent nu klaar om Analytics, Doel, en het Beheer van het Publiek in uw Universal Windows Platform app uit te voeren.
 
