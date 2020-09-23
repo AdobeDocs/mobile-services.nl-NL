@@ -3,12 +3,12 @@ description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobile
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -50,7 +50,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    De API-sleutel kan om de volgende redenen ongeldig zijn:
 
    * De API-sleutel die u hebt opgegeven, is geen serversleutel met de juiste GCM API-sleutelwaarde.
-   * Met de serversleutel zijn de IP&#39;s toegestaan en wordt voorkomen dat de servers van Adobe een pushbericht verzenden.
+   * De serversleutel heeft IPs toegestaan en blokkeert servers om een pushbericht te verzenden.
 
 * **De geldigheid van de API-sleutel bepalen**
 
@@ -91,19 +91,19 @@ In het volgende voorbeeld ziet u hoe u een pushfout kunt verhelpen bij het gebru
 
 De volgende klant heeft twee iOS-apps:
 
-* Toepassingsnaam: PhotoShop_app_iOS
-   * Bovenliggende RSID: AllAdobe PhotoShop_apps
-   * VRSID: PhotoShop_iOS_app_SF
+* Toepassingsnaam: Photoshop_app_iOS
+   * Bovenliggende RSID: AllAdobe Photoshop_apps
+   * VRSID: Photoshop_iOS_app_SF
    * VRSID-definitiesegment: `a.appid contains “PhotoShop_iOS_app_SF”`
-* Toepassingsnaam: PhotoShop_app_iOS
-   * Bovenliggende RSID: AllAdobe PhotoShop_apps
-   * RSID: PhotoShop_iOS_app_LA
+* Toepassingsnaam: Photoshop_app_iOS
+   * Bovenliggende RSID: AllAdobe Photoshop_apps
+   * RSID: Photoshop_iOS_app_LA
    * VRSID-definitiesegment: `a.os contains “iOS”`
 
-In dit voorbeeld ontvangen alle gebruikers van de *PhotoShop_iOS_app_SF* -app *het pushbericht als een Photoshop-medewerker een push verzendt naar de app* PhotoShop_iOS_app_SF. Maar als de werknemer een bericht naar de app *PhotoShop_iOS_app_LA* verzendt, omdat het VRSID-definitiesegment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht naar **alle** iOS-gebruikers verzonden in *AllAdobe PhotoShop_apps*. Hoewel het bericht nog steeds naar gebruikers van *PhotoShop_iOS_app_LA* gaat, blokkeert het ook de push-id&#39;s voor gebruikers van *PhotoShop_iOS_app_SF* omdat de *PhotoShop_iOS_app_SF* -app een ander certificaat heeft. Als het segment als `a.os contains “PhotoShop_iOS_app_LA”`gedefinieerd was, zou het pushbericht alleen naar *PhotoShop_iOS_app_LA* -gebruikers zijn verzonden.
+Als een Photoshop-medewerker in dit voorbeeld een push verzendt naar de *Photoshop_iOS_app_SF* -app, ontvangen alle gebruikers van de *Photoshop_iOS_app_SF-app* het pushbericht zoals verwacht. Maar als de werknemer een bericht naar de app *Photoshop_iOS_app_LA* verzendt, omdat zijn Segment van de Definitie VRSID (in`iOS` plaats van `a.os contains "PhotoShop_iOS_app_LA"`) onjuist is, wordt het bericht verzonden naar **alle** iOS gebruikers in *AlleAdobe Photoshop_apps*. Hoewel het bericht nog steeds naar *Photoshop_iOS_app_LA* -gebruikers gaat, worden in het bericht ook de push-id&#39;s voor *Photoshop_iOS_app_SF* -gebruikers toegevoegd op lijst van gewenste personen, omdat de *Photoshop_iOS_app_SF* -app een ander certificaat heeft. Als het segment als `a.os contains “PhotoShop_iOS_app_LA”`gedefinieerd was, zou het pushbericht alleen naar *Photoshop_iOS_app_LA* -gebruikers zijn verzonden.
 
-Als de id&#39;s met het *PhotoShop_IOS_app_LA* -pushcertificaat worden doorgegeven, worden de push-id&#39;s voor de *PhotoShop_iOS_app_SF* geretourneerd als `invalid`.
+Als de id&#39;s met het *Photoshop_IOS_app_LA* -pushcertificaat worden doorgegeven, worden de push-id&#39;s voor de *Photoshop_iOS_app_SF* geretourneerd als `invalid`.
 
 >[!CAUTION]
 >
->Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** deze knop klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app een geldig certificaat **moet** hebben. Als elke app **geen** geldig certificaat heeft, worden de publiekssegmenten mogelijk voor onbepaalde tijd geblokkeerd en kunt u in de toekomst mogelijk geen pushberichten naar de betrokken gebruikers verzenden. Voor meer informatie over publiekssegmenten, zie [Publiek: publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definiëren en configureren.
+>Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** deze knop klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app een geldig certificaat **moet** hebben. Als elke app **geen** geldig certificaat heeft, kunnen uw publiekssegmenten voor onbepaalde tijd worden toegevoegd op lijst van gewenste personen en kunt u in de toekomst mogelijk geen pushberichten naar de betrokken gebruikers verzenden. Voor meer informatie over publiekssegmenten, zie [Publiek: publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definiëren en configureren.
