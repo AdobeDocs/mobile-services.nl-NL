@@ -2,17 +2,20 @@
 description: Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan het nieuwsvoer navigeert, zou een vraag van de spoorstaat moeten worden verzonden. In iOS wordt een status doorgaans bijgehouden in de methode viewDoLoad van elke weergave.
 seo-description: Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan het nieuwsvoer navigeert, zou een vraag van de spoorstaat moeten worden verzonden. In iOS wordt een status doorgaans bijgehouden in de methode viewDoLoad van elke weergave.
 seo-title: App-statussen bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App-statussen bijhouden
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
 
-# Toepassingsstaten bijhouden {#track-app-states}
+# Track app states {#track-app-states}
 
 Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan het nieuwsvoer navigeert, zou een vraag van de spoorstaat moeten worden verzonden. In iOS wordt een status doorgaans bijgehouden in de methode viewDoLoad van elke weergave.
 
