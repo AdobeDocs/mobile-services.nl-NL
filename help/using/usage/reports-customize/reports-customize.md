@@ -3,12 +3,15 @@ description: Deze informatie helpt u de ingebouwde rapporten te begrijpen en aan
 keywords: mobile
 seo-description: Deze informatie helpt u de ingebouwde rapporten te begrijpen en aan te passen.
 seo-title: Rapporten aanpassen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporten aanpassen
 topic: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 2%
 
 ---
 
