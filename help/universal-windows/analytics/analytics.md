@@ -1,18 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Analyse
-solution: Marketing Cloud,Analytics
-title: Analyse
+seo-title: Analytics
+solution: Experience Cloud,Analytics
+title: Analytics
 topic: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 2%
 
 ---
 
 
-# Analyse {#analytics}
+# Analytics {#analytics}
 
 Nadat u de bibliotheek aan uw project hebt toegevoegd, kunt u elke willekeurige aanroep van de methode Analytics overal in uw app uitvoeren.
 
@@ -40,7 +43,7 @@ De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele R
 
 ### Nieuwe versies
 
-Periodiek worden nieuwe versies van de rapportage van mobiele toepassingen uitgebracht. Nieuwe versies worden niet automatisch toegepast op uw rapportsuite. U moet deze stappen herhalen om de upgrade uit te voeren. Telkens wanneer u nieuwe Experience Cloud-functionaliteit toevoegt aan uw app, raden we u aan deze stappen te herhalen om ervoor te zorgen dat u over de nieuwste configuratie beschikt.
+Periodiek worden nieuwe versies van de rapportage van mobiele toepassingen uitgebracht. Nieuwe versies worden niet automatisch toegepast op uw rapportsuite. U moet deze stappen herhalen om de upgrade uit te voeren. Elke keer dat u nieuwe Experience Cloud-functionaliteit toevoegt aan uw app, raden we u aan deze stappen te herhalen om ervoor te zorgen dat u de meest recente configuratie hebt.
 
 ## Levenscycluswaarden {#section_532702562A7A43809407C9A2CBA80E1E}
 
