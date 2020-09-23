@@ -2,12 +2,15 @@
 description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
 seo-description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
 seo-title: Geo-Locatie en belangenpunten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Geo-Locatie en belangenpunten
 topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en
 
 Elke `trackLocation` vraag verzendt de volgende informatie:
 
-* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in de gebruikersinterface van Adobe Mobile Services.
+* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in de gebruikersinterface van Mobiele services Adobe.
 
    Deze informatie wordt doorgegeven aan mobiele oplossingvariabelen voor automatische rapportage.
 
@@ -75,7 +78,7 @@ Location currentLocation = new Location("my location here");
 Analytics.trackLocation(currentLocation, locationContextData);
 ```
 
-De waarden van contextgegevens moeten worden toegewezen aan aangepaste variabelen in de gebruikersinterface van Adobe Mobile Services:
+De waarden van contextgegevens moeten aan douanevariabelen in de UI van de Diensten van de Mobiele Adobe worden in kaart gebracht:
 
 ![](assets/map-location-context-data.png)
 
