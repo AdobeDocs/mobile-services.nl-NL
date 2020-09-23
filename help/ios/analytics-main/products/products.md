@@ -1,13 +1,16 @@
 ---
 description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In de iOS 4.x SDK moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten rechtstreeks in te stellen op de serveraanroep.
 seo-description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In de iOS 4.x SDK moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten rechtstreeks in te stellen op de serveraanroep.
-seo-title: Variabele voor producten
-solution: Marketing Cloud,Analytics
-title: Variabele voor producten
+seo-title: Productvariabele
+solution: Experience Cloud,Analytics
+title: Productvariabele
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
