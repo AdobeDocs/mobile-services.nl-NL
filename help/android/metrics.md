@@ -3,12 +3,15 @@ description: Hier volgen de afmetingen en metriek die automatisch door de mobiel
 keywords: android;library;mobile;sdk
 seo-description: Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 seo-title: Levenscycluswaarden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Levenscycluswaarden
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 2%
 
 ---
 
@@ -17,36 +20,36 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 Deze sectie bevat informatie over de metriek en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen. Ga voor meer informatie over probleemoplossing naar [Problemen met levenscyclusgegevens](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)oplossen.
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wanneer gevormd, worden de metriek van de levenscyclus verzonden in de parameters van contextgegevens naar Analytics, in parameters aan Doel met elke mbox vraag, en als signaal aan publieksbeheer. Analytics en Target gebruiken dezelfde indeling, terwijl het publieksbeheer voor elke meting een ander voorvoegsel gebruikt.
 
 Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraag worden verzonden automatisch binnen gevangen en gemeld door metrisch of afmeting te gebruiken, en de uitzonderingen worden genoteerd.
 
-### Metrisch
+### Metrics
 
 * **Eerste keer starten**
 
    Wordt geactiveerd bij de eerste run na installatie of herinstallatie.
 
    * Contextgegevens/doelparameter voor analyse: `a.InstallEvent`
-   * Audience Manager-signaal: `c_a_InstallEvent`
+   * Audience Manager signaal: `c_a_InstallEvent`
 
 * **Upgrades**
 
    Teweeggebracht bij de eerste looppas na een verbetering of wanneer het versieaantal verandert.
 
    * Contextgegevens/doelparameter voor analyse: `a.UpgradeEvent`
-   * Audience Manager-signaal: `c_a_UpgradeEvent`
+   * Audience Manager signaal: `c_a_UpgradeEvent`
 
 * **Dagelijkse deelnemers**
 
@@ -57,7 +60,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrisch wordt niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
    * Contextgegevens/doelparameter voor analyse: `a.DailyEngUserEvent`
-   * Audience Manager-signaal: `c_a_DailyEngUserEvent`
+   * Audience Manager signaal: `c_a_DailyEngUserEvent`
 
 * **Maandelijkse deelnemers**
 
@@ -68,9 +71,9 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrisch wordt niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
    * Contextgegevens/doelparameter voor analyse: `a.MonthlyEngUserEvent`
-   * Audience Manager-signaal: `c_a_MonthlyEngUserEvent`
+   * Audience Manager signaal: `c_a_MonthlyEngUserEvent`
 
-* **Starten**
+* **Lanceringen**
 
    Teweeggebracht bij elke looppas, met inbegrip van neerstortingen en installaties. Wordt ook geactiveerd op een hervat vanaf de achtergrond wanneer de time-out van de levenscyclussessie is overschreden.
 
@@ -79,24 +82,24 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    >Deze metrisch wordt niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metrische waarde vast te leggen.
 
    * Contextgegevens/doelparameter voor analyse: `a.LaunchEvent`
-   * Audience Manager-signaal: `c_a_LaunchEvent`
+   * Audience Manager signaal: `c_a_LaunchEvent`
 
 * **Crashes**
 
-   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart.  Adobe Mobile-crashrapportage implementeert geen algemene handler voor niet-afgevangen uitzonderingen.
+   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart.  Bij het rapporteren van Adobe Mobile-crashes wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
 
    * Contextgegevens/doelparameter voor analyse: `a.CrashEvent`
-   * Audience Manager-signaal: `c_a_CrashEvent`
+   * Audience Manager signaal: `c_a_CrashEvent`
 
 * **Lengte vorige sessie**
 
    Meldt het aantal seconden dat een vorige toepassingssessie heeft geduurd, op basis van de duur van de toepassing en op de voorgrond.
 
    * Contextgegevens/doelparameter voor analyse: `a.PrevSessionLength`
-   * Audience Manager-signaal: `c_a_PrevSessionLength`
+   * Audience Manager signaal: `c_a_PrevSessionLength`
 
 
-### Afmetingen
+### Dimensies
 
 * **Installatiedatum**
 
@@ -205,30 +208,30 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 De volgende meetwaarden en afmetingen worden in mobiele oplossingsvariabelen vastgelegd met de methode die in de kolom **Beschrijving** wordt vermeld.
 
-### Metrisch
+### Metrics
 
 * **Totale tijd van handeling**
 
    Bevolkt met `trackTimedAction` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.total`
-   * Audience Manager Trait: `c_a_action_time_total`
+   * Audience Manager: `c_a_action_time_total`
 
 * **Tijd van handeling in toepassing**
 
    Bevolkt met `trackTimedAction` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.inapp`
-   * Audience Manager Trait: `c_a_action_time_inapp`
+   * Audience Manager: `c_a_action_time_inapp`
 
 * **Lifetime-waarde (gebeurtenis)**
 
    Bevolkt met `trackLifetimeValue` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Manager: `c_a_ltv_amount`
 
-### Afmetingen
+### Dimensies
 
 * **Locatie (tot 10 km)**
 
@@ -238,7 +241,7 @@ De volgende meetwaarden en afmetingen worden in mobiele oplossingsvariabelen vas
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager Traits:
+   * Audience Manager:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -252,7 +255,7 @@ De volgende meetwaarden en afmetingen worden in mobiele oplossingsvariabelen vas
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager Traits:
+   * Audience Manager:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -266,7 +269,7 @@ De volgende meetwaarden en afmetingen worden in mobiele oplossingsvariabelen vas
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager Traits:
+   * Audience Manager:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -277,60 +280,60 @@ De volgende meetwaarden en afmetingen worden in mobiele oplossingsvariabelen vas
    Wordt gevuld door trackLocation-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameters voor analyse: `a.loc.poi`
-   * Audience Manager Trait: `c_a_loc_poi`
+   * Audience Manager: `c_a_loc_poi`
 
 * **Afstand tot belangencentrum**
 
    Wordt gevuld door trackLocation-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameters voor analyse: `a.loc.dist`
-   * Audience Manager Trait: `c_a_loc_dist`
+   * Audience Manager: `c_a_loc_dist`
 
 * **Lifetime-waarde (conversievariabele)**
 
    Bevolkt door trackLifetimeValue-methoden.
 
    * Contextgegevens/doelparameters voor analyse: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Manager: `c_a_ltv_amount`
 
 * **Trackingcode**
 
-   Wordt gevuld door Mobile App Acquisition en wordt automatisch gegenereerd door Adobe Mobile-services.
+   Bevolkt door Mobile App Acquisition en automatisch gegenereerd door Adobe mobile services.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.trackingcode`
-   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
+   * Audience Manager: `c_a_referrer_campaign_trackingcode`
 
-* **Campagne**
+* **Campaign**
 
    Naam van de campagne, die ook in de campagnevariabele wordt opgeslagen. Bevolkt door Mobile App Acquisition.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.name`
-   * Audience Manager Trait: `c_a_referrer_campaign_name`
+   * Audience Manager: `c_a_referrer_campaign_name`
 
 * **Campagne-inhoud**
 
    De naam of id van de inhoud die de koppeling heeft weergegeven. Bevolkt door Mobile App Acquisition.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.content`
-   * Audience Manager Trait: `c_a_referrer_campaign_content`
+   * Audience Manager: `c_a_referrer_campaign_content`
 
 * **Campagne normaal**
 
    Marketingmedium, zoals een banner of e-mail. Bevolkt door Mobile App Acquisition.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.medium`
-   * Audience Manager Trait: `c_a_referrer_campaign_medium`
+   * Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Bron campagne**
 
    Originele referentie, zoals een nieuwsbrief of een netwerk van sociale media. Bevolkt door Mobile App Acquisition.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.source`
-   * Audience Manager Trait: `c_a_referrer_campaign_source`
+   * Audience Manager: `c_a_referrer_campaign_source`
 
 * **Campagneperiode**
 
    Betaalde trefwoorden of andere termen die u met deze overname wilt bijhouden. Bevolkt door Mobile App Acquisition.
 
    * Contextgegevens/doelparameters voor analyse: `a.referrer.campaign.term`
-   * Audience Manager Trait: `c_a_referrer_campaign_term`
+   * Audience Manager: `c_a_referrer_campaign_term`
