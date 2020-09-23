@@ -3,12 +3,15 @@ description: Deze informatie helpt u bij het downloaden van SDK's en tools voor 
 keywords: mobile;android;ios;sdk
 seo-description: Deze informatie helpt u bij het downloaden van SDK's en tools voor mobiele services om u te helpen met de implementatie van uw mobiele services.
 seo-title: Mobiele SDK's en tools downloaden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobiele SDK's en tools downloaden
 topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 0%
 
 ---
 
@@ -32,5 +35,5 @@ Configureer uw app in Adobe Mobile-services zodat u een aangepast pakket kunt do
 * [iOS-instructies](/help/ios/getting-started/requirements.md)
 * [Android-instructies](/help/android/getting-started/requirements.md)
 
-Raadpleeg de sectie *SDK-documentatie* in [Adobe Mobile Services](/help/using/home.md)voor de documentatie van native bibliotheken, waaronder Windows Phone 8, Blackberry, Xamarin en andere.
+Raadpleeg de sectie *SDK-documentatie* in Mobiele services [voor](/help/using/home.md)Adobe voor meer informatie over de documentatie voor native bibliotheken, waaronder Windows Phone 8, Blackberry, Xamarin en andere.
 
