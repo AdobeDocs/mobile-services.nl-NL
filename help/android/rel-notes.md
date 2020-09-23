@@ -2,12 +2,12 @@
 description: Opmerkingen bij de release en bekende problemen met Android SDK 4.x voor Experience Cloud Solutions.
 seo-description: Opmerkingen bij de release en bekende problemen met Android SDK 4.x voor Experience Cloud Solutions.
 seo-title: Release-opmerkingen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Release-opmerkingen
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 **12 maart 2020: 4.18.1.**
 
-* Doel - Doel - Doel-id voor sessie wordt nu toegevoegd als een contextgegevensparameter &quot;a.target.sessionId&quot; in de interne hit Analytics-for-Target die naar Adobe Analytics wordt verzonden.
+* Doel - Doel-doel-sessie-id wordt nu toegevoegd als een contextgegevensparameter &quot;a.target.sessionId&quot; in de interne hit Analytics-for-Target die naar Adobe Analytics wordt verzonden.
 
 **16 januari 2020: 4.18.0.**
 
@@ -39,7 +39,7 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 **18 juli 2019: Versie 4.17.8**
 
-* Adobe-doel: Alle verzoeken omvatten nu de cliënt en sessionId in de URL vraagparameters.
+* Adobe Target: Alle verzoeken omvatten nu de cliënt en sessionId in de URL vraagparameters.
 * Berichten in de app: Probleem verholpen waarbij Android-apps vastliepen toen een bericht werd gestart met een lege klikthrough-URL.
 * Bezoeker-id-service: De `Visitor.appendToURL` API&#39;s en de API&#39; `Visitor.getUrlVariablesAsync` s coderen hun retourwaarden niet meer.
 
@@ -58,4 +58,4 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 * De Dienst van identiteitskaart van de bezoeker - verhoogde verbind en lezingonderbreking van 2 seconden tot 5 seconden.
 
 
-Zie Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij de huidige en vorige release voor alle oplossingen](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie de Nota&#39;s [van de Versie van](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)Adobe Experience Cloud.
