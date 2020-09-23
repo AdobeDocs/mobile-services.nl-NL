@@ -2,12 +2,12 @@
 description: Deze Uitbreidingen verstrekken u een veel gemakkelijkere manier om de verwijzing van de Vensters SDK van de Oplossingen 4.x van Experience Cloud in uw project toe te voegen.
 seo-description: Deze Uitbreidingen verstrekken u een veel gemakkelijkere manier om de verwijzing van de Vensters SDK van de Oplossingen 4.x van Experience Cloud in uw project toe te voegen.
 seo-title: Windows Visual Studio-extensies voor Experience Cloud Solutions 4.x SDK
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Windows Visual Studio-extensies voor Experience Cloud Solutions 4.x SDK
 topic: Developer and implementation
 uuid: 7d0ea312-340b-46ea-a737-b70a6766a536
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
