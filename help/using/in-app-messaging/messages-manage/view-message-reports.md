@@ -3,12 +3,12 @@ description: U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 keywords: mobile
 seo-description: U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 seo-title: Berichtenrapporten weergeven
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Berichtenrapporten weergeven
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -29,7 +29,7 @@ U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 >
 >Afhankelijk van het type van bericht u bekijkt, zou het rapport kunnen variëren.
 
-## In-app berichten {#section_90B79BA58E8141F78538C187EB1BF8C7}
+## In-app messages {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
 Als u rapporten bekijkt voor een bericht in de app, ziet het rapport er ongeveer als volgt uit:
 
@@ -45,7 +45,7 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor in-app berich
 
 * **[!UICONTROL Cancel]**, wanneer een gebruiker op de **[!UICONTROL Cancel]** knop drukt in een waarschuwing of een bericht op volledig scherm.
 
-* **[!UICONTROL Engagement Rate]**, een berekende metrische waarde uit Adobe Analytics. Dit is het resultaat van het aantal klikdoorhalingen gedeeld door het aantal indrukken.
+* **[!UICONTROL Engagement Rate]**, een berekende metrische waarde uit Adobe Analytics en is het resultaat van het aantal klikdoorslagen gedeeld door het aantal indrukkingen.
 
 ## Pushberichten {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -82,7 +82,7 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
    * Een ongeldige pushID
 
-   * Het push-platform (APNS, FCM enzovoort) dat is gegeven om naar te gaan, bestaat niet voor de toepassing van de taak. Het platform verzamelt bijvoorbeeld iOS-pushtokens, maar de APNS-service is niet geconfigureerd.
+   * Het push-platform (APNS, FCM enzovoort) dat is opgegeven om naar te gaan, bestaat niet voor de toepassing van de taak. Het platform verzamelt bijvoorbeeld iOS-pushtokens, maar de APNS-service is niet geconfigureerd.
 
    * Het bericht zou kunnen ontbroken hebben omdat de dupdienst niet correct werd gevormd of het Mobiele systeem van de Diensten neer is.
    >[!IMPORTANT]
@@ -91,4 +91,4 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
 * **[!UICONTROL Blocklisted]**
 
-   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen van mening wanneer tokens worden geteld als blocklisted. Android-tokens worden direct weergegeven in het aantal keuzelijsten. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden op volgende berichten weergegeven als blokkeerbaar.
+   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen onderling wanneer tokens worden geteld als toegevoegd op lijst van gewenste personen. Android-tokens worden direct weergegeven in het aantal lijsten van afgewezen personen. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden weergegeven als toegevoegd op lijst van gewenste personen op volgende berichten.
