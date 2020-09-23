@@ -3,12 +3,15 @@ description: Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
 keywords: mobile
 seo-description: Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
 seo-title: Problemen met In-app-berichten oplossen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Problemen met In-app-berichten oplossen
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '635'
+ht-degree: 0%
 
 ---
 
