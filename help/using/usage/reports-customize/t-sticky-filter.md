@@ -3,12 +3,15 @@ description: Creeer een filter dat verschillende rapporten overspant om te zien 
 keywords: mobile
 seo-description: Creeer een filter dat verschillende rapporten overspant om te zien hoe een bepaald segment over alle mobiele rapporten presteert. Met een plakfilter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten.
 seo-title: Filter Notitie toevoegen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Filter Notitie toevoegen
 topic: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 0%
 
 ---
 
