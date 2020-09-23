@@ -1,21 +1,24 @@
 ---
-description: Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne uitvoeren op een Android-apparaat.
+description: Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne op een Android-apparaat routeren.
 keywords: android;library;mobile;sdk
-seo-description: Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne uitvoeren op een Android-apparaat.
+seo-description: Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne op een Android-apparaat routeren.
 seo-title: Verouderde overname testen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verouderde overname testen
 topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
 
 # Verouderde overname testen {#testing-legacy-acquisition}
 
-Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne uitvoeren op een Android-apparaat.
+Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne op een Android-apparaat routeren.
 
 Als de mobiele app nog niet in Google Play is, kunt u elke mobiele app als doel selecteren wanneer u de koppeling voor de campagne maakt. Dit is alleen van invloed op de app waarnaar de verwervingsserver u omleidt, nadat u op de verwervingskoppeling klikt en niet op de mogelijkheid om de verwervingskoppeling te testen. Parameters van de queryreeks worden doorgegeven aan de Google Play-winkel, die tijdens de installatie worden doorgegeven aan de app als onderdeel van een campagne-uitzending. Voor het testen van het aanschaffen van mobiele apps voor Roundtrip is de simulatie van dit type uitzending vereist.
 
@@ -42,4 +45,4 @@ Als de uitzending is gelukt, wordt een reactie weergegeven die lijkt op de onder
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-Er wordt ook een verzoek om een afbeelding verzonden naar de gegevensverzamelingsservers van Adobe. Als de SDK wacht op de volledige duur van de verwijzingsonderbreking, die u instelt in stap 1, met een afbeeldingsverzoek dat geen campagneparameters bevat, is de uitzending mislukt.
+U zult ook een verzoek dat naar de servers van de beeldinzameling van Adobe wordt verzonden zien. Als de SDK wacht op de volledige duur van de verwijzingsonderbreking, die u instelt in stap 1, met een afbeeldingsverzoek dat geen campagneparameters bevat, is de uitzending mislukt.
