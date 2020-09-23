@@ -3,12 +3,12 @@ description: De volgende instructies helpen u een aanschafcampagne met een Verbi
 keywords: android;library;mobile;sdk
 seo-description: De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
 seo-title: Verwerving marketinglink testen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verwerving marketinglink testen
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
