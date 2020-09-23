@@ -1,20 +1,23 @@
 ---
-description: De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met behulp van de functie Mix en Match in de iOS Developer Library.
-seo-description: De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met behulp van de functie Mix en Match in de iOS Developer Library.
+description: De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met de functie Mix en Match in de iOS Developer Library.
+seo-description: De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met de functie Mix en Match in de iOS Developer Library.
 seo-title: Swift-integratie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Swift-integratie
 topic: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 0%
 
 ---
 
 
 # Swift-integratie {#swift-integration}
 
-De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met behulp van de functie Mix en Match in de iOS Developer Library.
+De iOS Adobe Mobile SDK kan naadloos worden geïntegreerd in een Swift-project met de functie Mix en Match in de iOS Developer Library.
 
 Zie [Taalinteroperabiliteit](https://developer.apple.com/documentation/swift#2984801.html)voor meer informatie.
 
