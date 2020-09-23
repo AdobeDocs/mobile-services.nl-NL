@@ -3,12 +3,15 @@ description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobile
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
 topic: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 translation-type: tm+mt
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 
    Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
 
-   * **APNS**: [Servicekwaliteit](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   * **APNS**: [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
    * **FCM**: [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Waarom worden mijn pushberichten afgesneden of worden ze niet uitgebreid?
