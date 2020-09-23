@@ -2,12 +2,15 @@
 description: Vanaf WatchOS 2 worden de WatchKit Extensions uitgevoerd op een Apple Watch-apparaat. Toepassingen die in deze omgeving worden uitgevoerd, vereisen het WatchConnectivity-framework om gegevens te delen met de bijbehorende iOS-app.
 seo-description: Vanaf WatchOS 2 worden de WatchKit Extensions uitgevoerd op een Apple Watch-apparaat. Toepassingen die in deze omgeving worden uitgevoerd, vereisen het WatchConnectivity-framework om gegevens te delen met de bijbehorende iOS-app.
 seo-title: Apple Watch-implementatie met WatchOS 2
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple Watch-implementatie met WatchOS 2
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +23,14 @@ Vanaf WatchOS 2 kunnen uw WatchKit Extensions worden uitgevoerd op een Apple Wat
 >
 >Vanaf `AdobeMobileLibrary` v4.6.0 wordt `WatchConnectivity` dit ondersteund.
 
-## Nieuwe release van Adobe Experience Platform Mobile SDK
+## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie over de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
-Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via het [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar Adobe Experience Platform Launch.
-* Ga naar [Github om te zien wat er in de repositories van Experience Platform SDK staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Aan de slag {#section_70BC28BB69414F169196953D3D264BC1}
 
@@ -38,6 +41,7 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 >* De bevattende app
 >* De app WatchKit
 >* De extensie WatchKit
+
 >
 
 
@@ -82,7 +86,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 
 1. Implementeer de methoden `session:didReceiveMessage:` `session:didReceiveUserInfo:` en methoden in uw gedelegeerde app.
 
-   `syncSettings:` wordt aangeroepen in de `ADBMobile` bibliotheek, die een bool retourneert die aangeeft of het woordenboek is bedoeld voor gebruik door de `ADBMobile` bibliotheek. Als het bericht wordt geretourneerd, is het niet vanuit de SDK van Adobe gestart. `No`
+   `syncSettings:` wordt aangeroepen in de `ADBMobile` bibliotheek, die een bool retourneert die aangeeft of het woordenboek is bedoeld voor gebruik door de `ADBMobile` bibliotheek. Als het terugkeert `No`, werd het bericht niet in werking gesteld van Adobe SDK.
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -139,7 +143,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 
 1. In uw uitbreidingsafgevaardigde, voer de `session:didReceiveMessage:` `session:didReceiveUserInfo:` en de methodes uit.
 
-   `syncSettings:` wordt aangeroepen in de `ADBMobile` bibliotheek, die een bool retourneert die aangeeft of het woordenboek is bedoeld voor gebruik door de `ADBMobile` bibliotheek. Als het bericht wordt geretourneerd, is het niet vanuit de SDK van Adobe gestart. `NO`
+   `syncSettings:` wordt aangeroepen in de `ADBMobile` bibliotheek, die een bool retourneert die aangeeft of het woordenboek is bedoeld voor gebruik door de `ADBMobile` bibliotheek. Als het terugkeert `NO`, werd het bericht niet in werking gesteld van Adobe SDK.
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -156,7 +160,7 @@ Voer de volgende stappen uit in uw Xcode-project:
    } 
    ```
 
-## Aanvullende informatie {#section_7BCDB5CF0D424DCA97883753D1881233}
+## Additional Information {#section_7BCDB5CF0D424DCA97883753D1881233}
 
 De volgende informatie onthouden:
 
