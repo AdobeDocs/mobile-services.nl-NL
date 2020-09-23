@@ -2,12 +2,15 @@
 description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
 seo-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
 seo-title: Verwerkingsregels en contextgegevens
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verwerkingsregels en contextgegevens
 topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 
