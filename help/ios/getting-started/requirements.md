@@ -2,12 +2,15 @@
 description: Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
 seo-description: Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
 seo-title: Voordat u begint
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Voordat u begint
 topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +27,7 @@ Analysebeheerders en toepassingsontwikkelaars moeten de volgende taken uitvoeren
 
 Een rapportsuite configureren en gegevens van mobiele apps verzamelen:
 
-1. Voltooi een van de secties in [Meld u aan bij de gebruikersinterface](/help/ios/getting-started/getting-started.md)van Adobe Mobile Services.
+1. Voltooi een van de secties in [Login aan de gebruikersinterface](/help/ios/getting-started/getting-started.md)van de Mobiele Diensten van de Adobe.
 1. Maak een analyseaccount voor elke ontwikkelaar van de app.
 
 App-ontwikkelaars hebben nu toegang tot de rapportsuite(s) die u hebt gemaakt.
@@ -37,26 +40,26 @@ App-ontwikkelaars hebben nu toegang tot de rapportsuite(s) die u hebt gemaakt.
 
 1. Controleer of de beheerder van de Analyse de stappen in de bovenstaande sectie *Analysebeheerders* heeft uitgevoerd.
 
-1. Controleer of de beheerder van de Analyse een van de secties in de *aanmelding bij de gebruikersinterface* van Adobe Mobile Services heeft voltooid.
+1. Controleer of de beheerder van de Analyse een van de secties in de *aanmelding bij de gebruikersinterface* voor mobiele Adobe-services hieronder heeft voltooid.
 1. Nadat de rapportsuite is geconfigureerd, voert u de volgende stappen uit in de sectie *Download de SDK* .
 
 Voor meer informatie over rollen en toestemmingen, zie [Rollen en Toestemmingen](/help/using/gs/c-mob-roles-and-permissions.md).
 
 ## Aanmelden bij de gebruikersinterface van Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile-services is de primaire rapportinterface voor analyses en doelwitten van mobiele apps. Nadat u deze stappen voltooit kunt u een configuratiedossier downloaden dat met uw server van de gegevensinzameling, rapportreeks, en vele andere montages vooraf wordt gevormd.
+Adobe Mobile-services is de primaire rapportageinterface voor analyses en doelwitten van mobiele apps. Nadat u deze stappen voltooit kunt u een configuratiedossier downloaden dat met uw server van de gegevensinzameling, rapportreeks, en vele andere montages vooraf wordt gevormd.
 
-U kunt zich op een van de volgende manieren aanmelden bij Adobe Mobile Services:
+U kunt zich op een van de volgende manieren aanmelden bij de Adobe Mobile Services:
 
 * **Experience Cloud**
 
-   Meld u aan bij de [Experience Cloud](https://marketing.adobe.com) met uw Adobe-id.
+   Meld u aan bij de [Experience Cloud](https://marketing.adobe.com) met uw Adobe ID.
 
-   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Zie Gebruikers en producten [van Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)beheren voor meer informatie over provisioning. Zie [Organisaties en accountkoppelingen](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)voor meer informatie over het koppelen van uw account.
+   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Zie Gebruikers en producten [van Experience Cloud](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html)beheren voor meer informatie over provisioning. Zie [Organisaties en accountkoppelingen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)voor meer informatie over het koppelen van uw account.
 
    >[!TIP]
    >
-   >Als u niet zeker weet of uw bedrijf voorzieningen heeft getroffen in de Experience Cloud, gebruikt u uw bestaande Adobe Analytics-account.
+   >Als u niet zeker weet of uw bedrijf provisioned in de Experience Cloud is, gebruik uw bestaande rekening van Adobe Analytics.
 
 * **Adobe Analytics**
 
