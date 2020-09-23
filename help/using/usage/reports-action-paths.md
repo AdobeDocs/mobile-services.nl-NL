@@ -3,12 +3,15 @@ description: Het rapport Paden van de Actie is gebaseerd op weganalyse en toont 
 keywords: mobile
 seo-description: Het rapport Paden van de Actie is gebaseerd op weganalyse en toont een het kleven grafiek die de wegen vertegenwoordigt die van één staat aan een andere staat in app worden genomen.
 seo-title: Rapport voor paden naar actie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport voor paden naar actie
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 2%
 
 ---
 
