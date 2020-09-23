@@ -3,17 +3,20 @@ description: Serienummering van gebeurtenissen wordt niet ondersteund door verwe
 keywords: android;library;mobile;sdk
 seo-description: Serienummering van gebeurtenissen wordt niet ondersteund door verwerkingsregels. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om geserialiseerde gebeurtenissen op de servervraag direct te plaatsen.
 seo-title: Serienummering van gebeurtenissen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Serienummering van gebeurtenissen
 topic: Developer and implementation
 uuid: acdeda16-ab83-4cfc-907d-33448b801b31
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 3%
 
 ---
 
 
-# Serienummering voor gebeurtenissen {#event-serialization}
+# Gebeurtenisserialisatie {#event-serialization}
 
 Serienummering van gebeurtenissen wordt niet ondersteund door verwerkingsregels. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om geserialiseerde gebeurtenissen op de servervraag direct te plaatsen.
 
