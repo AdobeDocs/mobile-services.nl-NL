@@ -3,12 +3,12 @@ description: Hier volgen de methoden van de Experience Cloud-id die worden gelev
 keywords: android;library;mobile;sdk
 seo-description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 seo-title: Methoden van Adobe Experience Platform Identity Service
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 23%
