@@ -2,12 +2,12 @@
 description: U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
 seo-description: U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
 seo-title: In-app berichten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: In-app berichten
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# In-app berichten {#in-app-messaging}
+# In-app messaging {#in-app-messaging}
 
 U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
 
@@ -25,20 +25,20 @@ Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience P
 
 >[!IMPORTANT]
 >
->Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDKs is configureerbaar door [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+>Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga naar [Starten](https://launch.adobe.com/)om aan de slag te gaan.
-* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform-SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Als u de Adobe Experience Platform Mobile SDK&#39;s gebruikt bij Adobe Launch, **moet** u ook de Adobe Analytics Mobile Services-extensie installeren als u Adobe Mobile Services-functies wilt gebruiken, zoals in-app berichten en pushmeldingen. Zie [Adobe Analytics - Mobiele services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met Experience Cloud SDKs, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Als u Adobe Experience Platform Mobile SDKs met de Lancering van de Adobe gebruikt, **moet** u ook de uitbreiding van de Diensten van Adobe Analytics Mobiele installeren om de eigenschappen van de Diensten van de Adobe Mobiele van de Diensten zoals in-app overseinen en dupberichten te gebruiken. Zie [Adobe Analytics - Mobiele services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)voor meer informatie. Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met Experience Cloud SDKs, zie [Opstelling dupoverseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
 >Als u in-app berichten wilt gebruiken, **moet** u SDK versie 4.2 of hoger hebben.
 
-U kunt in Adobe Mobile-services berichten en regels maken die bepalen wanneer berichten worden weergegeven. Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie. Als u in-app berichten wilt weergeven, moet de SDK worden bijgewerkt. U kunt deze stappen zelfs voltooien als u nog geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en weergegeven zonder dat de App Store wordt bijgewerkt.
+U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen die bepalen wanneer de berichten worden getoond. Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie. Als u in-app berichten wilt weergeven, moet de SDK worden bijgewerkt. U kunt deze stappen zelfs voltooien als u nog geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en weergegeven zonder dat de App Store wordt bijgewerkt.
 
 ## In-app berichten inschakelen {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -60,6 +60,7 @@ U kunt in Adobe Mobile-services berichten en regels maken die bepalen wanneer be
    * `Theme.Translucent.NoTitleBar.Fullscreen`
    * `Theme.Translucent.NoTitleBar`
    * `Theme.Translucent`
+
    Bijvoorbeeld:
 
    ```java
@@ -116,7 +117,7 @@ U kunt in Adobe Mobile-services berichten en regels maken die bepalen wanneer be
    }
    ```
 
-   Als dit object niet is geconfigureerd, downloadt u een bijgewerkt `ADBMobileConfig.json` bestand van Adobe Mobile-services. Zie [Voor u begint](/help/android/getting-started/requirements.md)voor meer informatie.
+   Als dit object niet is geconfigureerd, downloadt u een bijgewerkt `ADBMobileConfig.json` bestand van de Adobe Mobile-services. Zie [Voor u begint](/help/android/getting-started/requirements.md)voor meer informatie.
 
 ## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
@@ -143,7 +144,7 @@ Wanneer u een bericht op volledig scherm maakt, kunt u desgewenst een fallback-a
 
 >[!IMPORTANT]
 >
->De naam van het fallback-afbeeldingselement wordt opgegeven wanneer u het bericht configureert in Adobe Mobile-services en u moet ervoor zorgen dat de opgegeven bron beschikbaar is.
+>De naam van het fallback afbeeldingselement wordt opgegeven wanneer u het bericht configureert in de services van Adobe Mobile en u moet ervoor zorgen dat de opgegeven bron beschikbaar is.
 
 ## Meldingspictogrammen configureren {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
