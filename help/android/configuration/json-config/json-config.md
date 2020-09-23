@@ -2,12 +2,12 @@
 description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
 seo-description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
 seo-title: ADBMobile JSON Config
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile JSON Config
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 4%
@@ -331,11 +331,11 @@ Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services 
 
 * &quot;endDate&quot;
    * aantal seconden sinds 1 januari 1970
-   * default is 2524730400
+   * standaard is dit 2524730400
 
 * &quot;startDate&quot;
    * aantal seconden sinds 1 januari 1970
-   * default is 0
+   * standaard is dit 0
 
 * &quot;payload&quot;
    * &quot;html&quot;
