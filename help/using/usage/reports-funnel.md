@@ -3,12 +3,15 @@ description: Het rapport van de Groep identificeert waar de klanten een marketin
 keywords: mobile
 seo-description: Het rapport van de Groep identificeert waar de klanten een marketing campagne verlieten of van een bepaald omzettingsweg terwijl het in wisselwerking staan met uw mobiele app afgeleid. U kunt het rapport van het Kanaal ook gebruiken om de acties van verschillende segmenten te vergelijken.
 seo-title: Taalverslag
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Taalverslag
 topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ In het **[!UICONTROL Funnel]** rapport wordt aangegeven waar klanten een marketi
 
 Door bij elke stap zichtbaarheid in de beslissingen van de klant te krijgen, kunt u beter begrijpen waar ze worden afgeschrikt, welk pad ze meestal volgen en wanneer klanten uw app verlaten.
 
-Wanneer u het **[!UICONTROL Funnel]** rapport opent, moet u een douanetrechter tot stand brengen. Zie [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
+Wanneer u het **[!UICONTROL Funnel]** rapport opent, moet u een douanetrechter tot stand brengen. Zie Rapporten [](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
 
 >[!TIP]
 >
