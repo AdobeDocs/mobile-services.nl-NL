@@ -3,12 +3,15 @@ description: Met deze informatie kunt u de opties voor pushservices configureren
 keywords: mobile
 seo-description: Met deze informatie kunt u de opties voor pushservices configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 seo-title: Push Messaging configureren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Push Messaging configureren
 topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 translation-type: tm+mt
-source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
