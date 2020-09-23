@@ -2,12 +2,15 @@
 description: Deze informatie helpt u begrijpen hoe de neerstortingen worden gevolgd en de beste praktijken om valse neerstortingen te behandelen.
 seo-description: Deze informatie helpt u begrijpen hoe de neerstortingen worden gevolgd en de beste praktijken om valse neerstortingen te behandelen.
 seo-title: App vastlopen bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App vastlopen bijhouden
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ iOS gebruikt systeemmeldingen waarmee ontwikkelaars verschillende statussen en g
 
 De AdobeMobile iOS SDK heeft een meldingshandler die reageert op het `UIApplicationDidEnterBackgroundNotification` bericht. In deze code wordt een waarde ingesteld die aangeeft dat de gebruiker een achtergrond voor de toepassing heeft ingesteld. Als die waarde niet kan worden gevonden bij een volgende keer starten, wordt een crash gerapporteerd.
 
-## Waarom meet Adobe crashes op deze manier?
+## Waarom crasht Adobe zo?
 
 Deze methode voor het meten van crashes biedt een antwoord op hoog niveau op de vraag *Heeft de gebruiker mijn app opzettelijk afgesloten?*
 
-Crash reporting libraries door bedrijven als Apteligent (voorheen Crittercisme) gebruiken een global `NSException` handler voor gedetailleerdere crashrapportage. Uw app mag niet meer dan een van deze handlers hebben. Adobe heeft besloten geen globale `NSException` manager uit te voeren om bouwstijlfouten te verhinderen, wetend dat onze klanten andere botsingsrapporteringsleveranciers zouden kunnen gebruiken.
+Crash reporting libraries door bedrijven als Apteligent (voorheen Crittercisme) gebruiken een global `NSException` handler voor gedetailleerdere crashrapportage. Uw app mag niet meer dan een van deze handlers hebben. Adobe besloot geen globale `NSException` manager uit te voeren om bouwstijlfouten te verhinderen, wetend dat onze klanten andere botsingsrapporteringsleveranciers zouden kunnen gebruiken.
 
 ## Wat kan ertoe leiden dat een fout wordt gemeld?
 
@@ -53,7 +56,7 @@ Van de volgende scenario&#39;s is bekend dat ze er ten onrechte toe leiden dat d
    >Achtergrondactiviteit die zich buiten de `lifecycleTimeout` drempelwaarde voordoet, kan ook resulteren in een extra valse start.
 
 * Als uw app op de achtergrond wordt gestart als gevolg van een ophaalbewerking op de achtergrond, een update van de locatie, enzovoort, en door het besturingssysteem wordt beëindigd zonder naar de voorgrond te gaan, resulteert de volgende opstart (achtergrond of voorgrond) in een crash.
-* Als u de pauzemarkering van Adobe programmatisch verwijdert `NSUserDefaults`terwijl de app op de achtergrond wordt uitgevoerd, loopt de volgende keer dat u de app start of hervat, vast.
+* Als u programmatisch de pauzekarkering van Adobe verwijdert `NSUserDefaults`, terwijl de app op de achtergrond wordt uitgevoerd, loopt de volgende keer dat u de app start of hervat, vast.
 
 ## Hoe kan ik voorkomen dat valse crashes worden gemeld?
 
