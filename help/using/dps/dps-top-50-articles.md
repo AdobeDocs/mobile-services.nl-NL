@@ -3,21 +3,24 @@ description: Het rapport Top 50 van Artikelen toont een staafdiagram en gerangsc
 keywords: mobile
 seo-description: Het rapport Top 50 van Artikelen toont een staafdiagram en gerangschikt rapport dat de meest gelezen artikelen toont die worden getoond gebruikend app. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suites (DPS).
 seo-title: Meest 50 artikelen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Meest 50 artikelen
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 translation-type: tm+mt
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
 
-# Top 50 van artikelen{#top-articles}
+# Top 50 van het rapport Artikelen{#top-articles}
 
 In het **[!UICONTROL Top 50 Articles]** rapport wordt een staafdiagram weergegeven en in het gerangschikte rapport worden de meest gelezen artikelen weergegeven met de app. Dit rapport is alleen beschikbaar voor DPS-klanten.
 
-Hoewel in het standaardrapport gegevens voor de laatste 30 dagen worden weergegeven op basis van het aantal lezers, kunt u het rapport aanpassen.
+Hoewel het standaardrapport de gegevens voor de laatste 30 dagen door aantal lezers toont, kunt u het rapport aanpassen.
 
 ![](assets/dps_top_50.png)
 
