@@ -3,11 +3,11 @@ description: Android-methoden voor Xamarin-componenten voor Experience Cloud opl
 keywords: Xamarin
 seo-description: Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 seo-title: Methoden van Android
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Methoden van Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 39%
