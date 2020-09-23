@@ -3,12 +3,15 @@ description: U kunt een of meer verwervingskoppelingen verwijderen wanneer deze 
 keywords: mobile
 seo-description: U kunt een of meer verwervingskoppelingen verwijderen wanneer deze niet meer nodig zijn.
 seo-title: Koppelingen voor overname verwijderen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Koppelingen voor overname verwijderen
 topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 1%
 
 ---
 
