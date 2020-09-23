@@ -3,12 +3,15 @@ description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app d
 keywords: mobile
 seo-description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 seo-title: Uw app beheren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Uw app beheren
 topic: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +66,7 @@ De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele 
 
 * **[!UICONTROL Persistence (Custom Variables and Custom List Variables)]**
 
-   Persistentie bepaalt het punt waarop een waarde van de Variabele van de Douane (eVar) zal verlopen of niet meer met extra klusjes wordt geassocieerd. Als een eVar is verlopen wanneer een hit wordt geactiveerd, wordt de waarde Geen gekoppeld aan de waarde die voor die Var wordt gevonden. Dit betekent dat er geen eVar-waarde actief was toen de hit werd geactiveerd.
+   Persistentie bepaalt het punt waarop een waarde van de Variabele van de Douane (eVar) zal verlopen of niet meer met extra klusjes zal worden geassocieerd. Als een eVar is verlopen wanneer een hit wordt geactiveerd, wordt de waarde Geen gekoppeld aan de waarde bij die hit voor die eVar. Dit betekent dat er geen eVar-waarde actief was toen de hit werd geactiveerd.
 
    U kunt een van de volgende opties selecteren:
 
@@ -73,14 +76,14 @@ De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele 
 
    * **[!UICONTROL Tracking Call]**
 
-      De waarde eVar blijft slechts voor de volgende vraag voortbestaan of het raken waarin het inbegrepen was.
+      De waarde van de eVar blijft slechts voor de volgende vraag voortbestaan of het raken waarin het inbegrepen was.
 
    * **[!UICONTROL Never Expire]**
 
-      De eVar waarde blijft voor alle verdere volgende het volgen vraag.
+      De waarde van de eVar blijft voor alle verdere het volgen vraag voortbestaan.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics heeft een geavanceerdere gebruikersinterface voor het instellen van persistentie voor eVars. Als een persistentiewaarde voor eVar wordt geplaatst die niet in de Mobiele Diensten wordt gesteund, wordt deze waarde getoond in de Mobiele UI van de Diensten.
+      Adobe Analytics heeft een geavanceerdere interface voor het instellen van persistentie voor eVars. Als een persistentiewaarde voor de eVar wordt geplaatst die niet in de Mobiele Diensten wordt gesteund, wordt deze waarde getoond in Mobiele Diensten UI.
 
       Klik op **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
@@ -100,7 +103,7 @@ U kunt extra variabelen toelaten gebruikend de drop-down lijst bij de bodem van 
 
 Selecteer een ongebruikt variabelenummer en typ een naam. U kunt optioneel de variabele van contextgegevens verstrekken die u en om het even welke extra informatie wilt opslaan.
 
-* **Aangepaste afmetingen**
+* **Aangepaste cijfers**
 
    Metrische gegevens (of gebeurtenissen) beantwoorden de vragen *hoeveel?* of *hoeveel?*. Gebeurtenissen kunnen telkens toenemen wanneer de gebruiker een handeling uitvoert of numerieke waarden zoals een prijs vasthoudt. Aangepaste meetgegevens zijn onder andere gebeurtenissen zoals een app die is gemaakt, het PDF- of CSV-bestand is gedownload of geëxporteerd, een campagne is opgeslagen, de SDK is gedownload, een rapport is uitgevoerd, een koppeling naar de App Store is toegevoegd, een bericht in de app is geactiveerd, enzovoort.
 
@@ -120,4 +123,4 @@ U kunt koppelingsdoelen maken, bewerken, archiveren/ongedaan maken en verwijdere
 
 ## Postbacks beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
-Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een andere externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Vorm Postbacks](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
+Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Vorm Postbacks](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
