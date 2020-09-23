@@ -3,11 +3,14 @@ description: Informatie die u helpt bij het implementeren van levenscyclusmetrie
 keywords: Xamarin
 seo-description: Informatie die u helpt bij het implementeren van levenscyclusmetriek voor Android. Metrische gegevens over de levenscyclus worden automatisch verzameld voor iOS.
 seo-title: Levenscyclus implementeren
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Levenscyclus implementeren
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 1%
 
 ---
 
