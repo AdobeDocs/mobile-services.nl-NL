@@ -2,12 +2,15 @@
 description: Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfstandige extensie wordt genoemd en die u kunt distribueren zonder een omvattende app. Met deze extensie hebt u geen app-groep nodig, omdat er geen app is waarin gegevens kunnen worden gedeeld.
 seo-description: Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfstandige extensie wordt genoemd en die u kunt distribueren zonder een omvattende app. Met deze extensie hebt u geen app-groep nodig, omdat er geen app is waarin gegevens kunnen worden gedeeld.
 seo-title: Standalone extensie-implementatie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Standalone extensie-implementatie
 topic: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
