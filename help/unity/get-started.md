@@ -1,22 +1,25 @@
 ---
-description: Met deze plug-in kunt u aanroepen van Adobe Analytics vanuit uw eenheidstoepassingen verzenden.
+description: Met deze plug-in kunt u Adobe Analytics-aanroepen vanuit uw eenheidstoepassingen verzenden.
 keywords: Unity
-seo-description: Met deze plug-in kunt u aanroepen van Adobe Analytics vanuit uw eenheidstoepassingen verzenden.
+seo-description: Met deze plug-in kunt u Adobe Analytics-aanroepen vanuit uw eenheidstoepassingen verzenden.
 seo-title: Insteekmodule Unity voor de SDK's van iOS en Android 4.x
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Insteekmodule Unity voor de SDK's van iOS en Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 3%
 
 ---
 
 
 # Insteekmodule Unity voor de SDK&#39;s van iOS en Android 4.x {#unity-plug-in-for-the-ios-and-android-x-sdks}
 
-Met deze plug-in kunt u aanroepen van Adobe Analytics vanuit uw eenheidstoepassingen verzenden.
+Met deze plug-in kunt u Adobe Analytics-aanroepen vanuit uw eenheidstoepassingen verzenden.
 
-Laatste update: 10 **maart 2020**
+Laatste update: **10 maart 2020**
 * [Unity-v4.19.0](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases/tag/v4.19.0-Unity)
 
 ## Aan de slag {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
