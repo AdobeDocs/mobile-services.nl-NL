@@ -1,21 +1,24 @@
 ---
-description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct wordt bezorgd, dat later wordt bezorgd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
+description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct moet worden bezorgd, dat later moet worden geleverd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
 keywords: mobile
-seo-description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct wordt bezorgd, dat later wordt bezorgd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
+seo-description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct moet worden bezorgd, dat later moet worden geleverd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
 seo-title: Push-bericht plannen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Push-bericht plannen
 topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Planning: pushberichten{#schedule-push-message}
 
-In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct wordt bezorgd, dat later wordt bezorgd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
+In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct moet worden bezorgd, dat later moet worden geleverd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
 
 >[!TIP]
 >
@@ -74,10 +77,10 @@ U **moet** de volgende informatie begrijpen voordat u terugkerende pushberichten
    * **[!UICONTROL Never]**
    * **[!UICONTROL Every day]**
    * **[!UICONTROL Every Tuesday]**
-   * **`<Day x>`van de maand **
+   * **`<Day x>`van de maand**
 
       De weergegeven opties veranderen afhankelijk van de dag die u hebt geselecteerd of als startdag hebt getypt.
-   * **`<nth day>`van elke maand **
+   * **`<nth day>`van elke maand**
 
       De weergegeven waarde verandert afhankelijk van de datum die u hebt geselecteerd of als begindatum hebt getypt.
 
