@@ -3,12 +3,15 @@ description: In verbruiksrapporten worden de gemiddelde sessielengte, de dagelij
 keywords: mobile
 seo-description: In verbruiksrapporten worden de gemiddelde sessielengte, de dagelijkse en maandelijkse betrokkenheid van gebruikers, upgrades en andere inzichten weergegeven die u helpen te begrijpen hoe en hoe vaak uw app wordt gebruikt. In retentierapporten worden de niveaus voor het bewaren van de gebruiker snel 1 dag, 7 dagen en 28 dagen na de eerste keer starten weergegeven.
 seo-title: Rapporten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporten
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 3%
 
 ---
 
