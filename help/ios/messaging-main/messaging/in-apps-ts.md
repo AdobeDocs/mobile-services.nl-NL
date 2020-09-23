@@ -3,12 +3,12 @@ description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 keywords: mobile
 seo-description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 seo-title: Problemen met In-app-berichten oplossen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Problemen met In-app-berichten oplossen
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest word
 
 Schakel de lijstweergave op de pagina Bericht in de app beheren in de kolom Status in en controleer of deze live is.
 
-## Kijk eens *tonen eens*, *tonen altijd*, *tonen off-line* montages op het lusje van het Publiek.
+## Kijk eens *tonen eens*, *tonen altijd*, *tonen off-line* montages op het lusje van de Publiek.
 
 Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het **[!UICONTROL Audience]** tabblad de **[!UICONTROL Trigger]** opties waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
