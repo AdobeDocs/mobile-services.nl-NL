@@ -1,20 +1,23 @@
 ---
-description: Opmerkingen bij de release en bekende problemen met Universal Windows Platform SDK 4.x voor Experience Cloud Solutions.
-seo-description: Opmerkingen bij de release en bekende problemen met Universal Windows Platform SDK 4.x voor Experience Cloud Solutions.
-seo-title: Opmerkingen bij de release
-solution: Marketing Cloud,Analytics
-title: Opmerkingen bij de release
+description: De nota's van de versie en bekende kwesties voor Universal Windows Platform SDK 4.x voor de Oplossingen van Experience Cloud.
+seo-description: De nota's van de versie en bekende kwesties voor Universal Windows Platform SDK 4.x voor de Oplossingen van Experience Cloud.
+seo-title: Releaseopmerkingen
+solution: Experience Cloud,Analytics
+title: Releaseopmerkingen
 topic: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 15%
 
 ---
 
 
-# Opmerkingen bij de release {#release-notes}
+# Releaseopmerkingen {#release-notes}
 
-Opmerkingen bij de release en bekende problemen met Universal Windows Platform SDK 4.x voor Experience Cloud Solutions.
+De nota&#39;s van de versie en bekende kwesties voor Universal Windows Platform SDK 4.x voor de Oplossingen van Experience Cloud.
 
 ## Opmerkingen bij de huidige release {#section_DC697A291F0A4CB7B669B24488E07DC1}
 
@@ -22,7 +25,7 @@ Naast de aanzienlijke prestatieverhogingen voegt versie 4.x de volgende nieuwe e
 
 | Functie | Beschrijving |
 |--- |--- |
-| Universal Windows Platform SDK 4.x voor Experience Cloud-oplossingen | Eerste release. |
+| Universal Windows Platform SDK 4.x voor Experience Cloud Solutions | Eerste release. |
 
 
-Raadpleeg de opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de opmerkingen bij](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)de release.
+Raadpleeg de Opmerkingen bij de release van [Adobe Experience Cloud voor meer informatie over de releaseopmerkingen](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html)voor alle oplossingen.
