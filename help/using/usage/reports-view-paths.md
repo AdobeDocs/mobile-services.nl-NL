@@ -3,12 +3,15 @@ description: In het rapport Paden weergeven, dat is gebaseerd op padanalyse, wor
 keywords: mobile
 seo-description: In het rapport Paden weergeven, dat is gebaseerd op padanalyse, wordt een paddiagram weergegeven dat de paden vertegenwoordigt die tussen frames in de app zijn gemaakt.
 seo-title: Rapport Paden weergeven
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport Paden weergeven
 topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ U kunt de volgende opties voor dit rapport vormen:
 * **[!UICONTROL Time Period]**
 Klik op het **[!UICONTROL Calendar]** pictogram om een aangepaste periode te selecteren of om een vooraf ingestelde tijdsperiode te selecteren in de vervolgkeuzelijst.
 * **[!UICONTROL Customize]**
-Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, extra reeksen (metriek) toe te voegen, en meer. Zie [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
+Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, extra reeksen (metriek) toe te voegen, en meer. Zie Rapporten [](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
 * **[!UICONTROL Filter]**
 Klik **[!UICONTROL Filter]** om een filter te creëren dat verschillende rapporten overspant om te zien hoe een segment over alle mobiele rapporten presteert. Met een kleverig filter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten. Zie Filter [](/help/using/usage/reports-customize/t-sticky-filter.md)Vaste selectie toevoegen voor meer informatie.
 * **[!UICONTROL Download]**
