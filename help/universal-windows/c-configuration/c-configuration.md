@@ -1,17 +1,20 @@
 ---
-description: Informatie die u helpt de Universal Windows Platform SDK configureren, inclusief JSON-configuratie, hit batching en SDK-methoden.
-seo-description: Informatie die u helpt de Universal Windows Platform SDK configureren, inclusief JSON-configuratie, hit batching en SDK-methoden.
+description: Informatie om u te helpen de Universele Platform SDK van Vensters, met inbegrip van configuratie JSON, slag het slaan, en methodes SDK vormen.
+seo-description: Informatie om u te helpen de Universele Platform SDK van Vensters, met inbegrip van configuratie JSON, slag het slaan, en methodes SDK vormen.
 seo-title: Configuratie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Configuratie
 topic: Developer and implementation
 uuid: f49667b9-b87b-42bd-b7a6-4c6154d1b137
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 5%
 
 ---
 
 
 # Configuratie{#configuration}
 
-Informatie die u helpt de Universal Windows Platform SDK configureren, inclusief JSON-configuratie, hit batching en SDK-methoden.
+Informatie om u te helpen de Universele Platform SDK van Vensters, met inbegrip van configuratie JSON, slag het slaan, en methodes SDK vormen.
