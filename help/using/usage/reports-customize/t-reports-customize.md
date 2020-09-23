@@ -3,12 +3,15 @@ description: Deze informatie helpt u de ingebouwde rapporten aan te passen door 
 keywords: mobile
 seo-description: Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters (segmenten) toe te voegen.
 seo-title: Filters toevoegen aan rapporten
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Filters toevoegen aan rapporten
 topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters
 
 >[!IMPORTANT]
 >
->Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een uitsplitsing of rapporttype niet beschikbaar is in Adobe Mobile, kan dit worden gegenereerd door een andere rapportinterface te gebruiken.
+>Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
 
 In dit voorbeeld zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpassen, maar de instructies zijn op om het even welk rapport van toepassing.
 
@@ -68,4 +71,4 @@ In dit voorbeeld zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpas
 
    ![](assets/customize7.png)
 
-   Neem wat tijd om de verschillende opties in het menu van de rapportaanpassing te testen, en ervoor te zorgen dat u referentie uw favorieten. Rapport-URL&#39;s in Adobe Mobile zijn functioneel en kunnen worden gemaild of toegevoegd aan uw favorieten.
+   Neem wat tijd om de verschillende opties in het menu van de rapportaanpassing te testen, en ervoor te zorgen dat u referentie uw favorieten. De rapport-URL&#39;s in Adobe Mobile zijn functioneel en kunnen worden gemaild of toegevoegd aan uw favorieten.
