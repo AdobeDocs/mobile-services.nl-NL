@@ -3,12 +3,15 @@ description: Bij het bijhouden van baken kunt u microlocaties meten en als doel 
 keywords: android;library;mobile;sdk
 seo-description: Bij het bijhouden van baken kunt u microlocaties meten en als doel instellen met behulp van iBeacon en Bluetooth Low Energy.
 seo-title: Beacon bijhouden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Beacon bijhouden
 topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-De waarden van contextgegevens moeten worden toegewezen aan aangepaste variabelen in de Adobe Mobile-services:
+De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-ltv.png)
 
