@@ -1,20 +1,23 @@
 ---
-description: De SDK van Adobe maakt gebruik van API's voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen toepassingsdownloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, bij te houden en te kenmerken.
-seo-description: De SDK van Adobe maakt gebruik van API's voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen toepassingsdownloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, bij te houden en te kenmerken.
+description: De Adobe SDK gebruikt de API's voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen app-downloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en aan te duiden.
+seo-description: De Adobe SDK gebruikt de API's voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen app-downloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en aan te duiden.
 seo-title: Apple-zoekadvertenties
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple-zoekadvertenties
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
 # Apple-zoekadvertenties {#apple-search-ads}
 
-De SDK van Adobe maakt gebruik van API&#39;s voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen toepassingsdownloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, bij te houden en te kenmerken. Raadpleeg [zoekadvertenties](https://searchads.apple.com)van Apple voor meer informatie over campagnes voor Zoeken in advertenties.
+De Adobe SDK gebruikt de API&#39;s voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen app-downloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en aan te duiden. Raadpleeg [zoekadvertenties](https://searchads.apple.com)van Apple voor meer informatie over campagnes voor Zoeken in advertenties.
 
 ## Voordelen {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -31,7 +34,7 @@ Hier volgen enkele voordelen van het gebruik van Apple-advertenties:
 
 Uw app inschakelen voor kenmerk Zoeken en toevoegen:
 
-1. Implementeer Adobe SDK versie 4.13.2 of hoger.
+1. Voer versie 4.13.2 of hoger van Adobe SDK uit.
 
    Zie [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md)voor meer informatie.
 
