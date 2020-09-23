@@ -3,12 +3,15 @@ description: U kunt de belangrijkste prestatiewaarden weergeven van de apps die 
 keywords: mobile
 seo-description: U kunt de belangrijkste prestatiewaarden weergeven van de apps die u het laatst hebt bekeken. Standaard kunt u maximaal twaalf apps weergeven. U kunt het datumbereik wijzigen en filters maken om de gegevens te segmenteren en elke app op de overzichtspagina te bewerken.
 seo-title: Mobiele gegevens weergeven
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobiele gegevens weergeven
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 translation-type: tm+mt
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
