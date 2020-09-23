@@ -2,12 +2,12 @@
 description: Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
 seo-description: Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
 seo-title: Methoden van Adobe Experience Platform Identity Service
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 21%
@@ -25,7 +25,7 @@ Methoden worden vooraf bepaald volgens de oplossing, en de methodes van Experien
 
 * **`+`(nullable NSURL`*`)bezoekerAppendToURL:(nullable NSURL`*`)url;**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie Helperfunctie [voor bezoekersidentiteitskaart](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)toevoegen voor meer informatie.
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -141,7 +141,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekorgetUrlVariablesAsync**
 
-   Deze methode is geïntroduceerd in versie 4.16.0 en retourneert een correct gevormde tekenreeks die de URL-variabelen van de Bezoeker-id-service bevat. Zie de methoden [van](/help/ios/reference/hybrid-app.md)Adobe Experience Platform Identity Service voor meer informatie over hoe deze methode wordt gebruikt.
+   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Zie de methoden [van](/help/ios/reference/hybrid-app.md)Adobe Experience Platform Identity Service voor meer informatie over hoe deze methode wordt gebruikt.
 
    * Hier volgt de syntaxis voor deze methode:
 
