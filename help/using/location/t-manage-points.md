@@ -3,12 +3,15 @@ description: U kunt interessante punten maken en beheren, waarmee u geografische
 keywords: mobile
 seo-description: U kunt interessante punten maken en beheren, waarmee u geografische locaties kunt definiëren die u kunt gebruiken voor correlatiedoeleinden, u kunt richten op berichten in de app, enzovoort. Wanneer een treffer wordt verzonden in een belangenpunt, wordt het aandachtspunt verbonden aan de treffer.
 seo-title: Belangenpunten beheren
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Belangenpunten beheren
 topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Voer de volgende taken uit om Locatie te gebruiken:
 1. Klik op de naam van de toepassing om naar de pagina Toepassingsinstellingen beheren te gaan.
 1. Klik op **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
 
-   ![Stap resultaat](assets/poi.png)
+   ![Stap Resultaat](assets/poi.png)
 
 1. Typ de informatie in elk van de volgende velden:
 
@@ -66,4 +69,4 @@ Voer de volgende taken uit om Locatie te gebruiken:
 
 Als u een of meer POI&#39;s wilt verwijderen, schakelt u de desbetreffende selectievakjes in en klikt u **[!UICONTROL Remove Selected]** op OK.
 
-Klik **[!UICONTROL Import]** of **[!UICONTROL Export]** om met de gegevens te werken door een `.csv` bestand te gebruiken in plaats van de Adobe Mobile-gebruikersinterface.
+Klik **[!UICONTROL Import]** of **[!UICONTROL Export]** om met de gegevens te werken door een `.csv` dossier in plaats van het gebruiken van de Mobiele gebruikersinterface van Adobe te gebruiken.
