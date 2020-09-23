@@ -3,12 +3,12 @@ description: U kunt deze informatie gebruiken om een nieuwe app te maken en de b
 keywords: mobile
 seo-description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;de SDK-opties voor Adobe Analytics en Adobe Audience Manager configureren;aankoop- en id-serviceopties configureren;en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
 seo-title: Een nieuwe app toevoegen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Een nieuwe app toevoegen
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
