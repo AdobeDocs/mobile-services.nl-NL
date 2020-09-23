@@ -1,20 +1,23 @@
 ---
-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions kunt migreren.
-seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions kunt migreren.
+description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK voor Experience Cloud Solutions kunt migreren.
+seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK voor Experience Cloud Solutions kunt migreren.
 seo-title: Migreren naar de 4.x SDK's
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migreren naar de 4.x SDK's
 topic: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '683'
+ht-degree: 0%
 
 ---
 
 
 # Migreren naar de 4.x SDK&#39;s {#migrate-to-the-x-sdks}
 
-In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions kunt migreren.
+In deze sectie wordt beschreven hoe u van de 3.x-versie van een eerdere Windows Mobile SDK naar de Windows 8.1 Universal App Store 4.x SDK voor Experience Cloud Solutions kunt migreren.
 
 Met de overgang naar versie 4.x is alle functionaliteit nu toegankelijk via statische methoden, zodat u uw eigen objecten niet meer kunt bijhouden.
 
@@ -92,7 +95,7 @@ Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan
 
 **AppSection/Server, GeoZip, Transaction ID, Campaign en andere standaardvariabelen**
 
-In plaats daarvan moeten alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, worden toegevoegd aan de contextgegevens.
+Alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, moeten in plaats daarvan worden toegevoegd aan contextgegevens.
 
 Om het eenvoudig te zetten, de enige gegevens die binnen met een `TrackState` of `TrackAction` vraag worden verzonden is de lading in de `data` parameter.
 
@@ -107,7 +110,7 @@ Door uw code, vervang de volgende methodes met een vraag aan `trackState` of `tr
 * `Track` (TrackAction)
 * `TrackLinkURL` (TrackAction)
 
-## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Vervang de `visitorID` variabele door een vraag aan `setUserIdentifier`.
 
