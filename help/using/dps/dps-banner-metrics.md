@@ -1,14 +1,17 @@
 ---
-description: In het rapport Banner Metrics wordt een zonneexplosieve visualisatie voor uw bestaande gegevens weergegeven. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suite (DPS).
+description: Het rapport Banner Metrics geeft een zonneexplosieve visualisatie voor uw bestaande gegevens weer. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suite (DPS).
 keywords: mobile
-seo-description: In het rapport Banner Metrics wordt een zonneexplosieve visualisatie voor uw bestaande gegevens weergegeven. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suite (DPS).
+seo-description: Het rapport Banner Metrics geeft een zonneexplosieve visualisatie voor uw bestaande gegevens weer. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suite (DPS).
 seo-title: Banner Metrics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Banner Metrics
 topic: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
 translation-type: tm+mt
-source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
