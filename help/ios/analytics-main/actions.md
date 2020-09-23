@@ -1,18 +1,21 @@
 ---
 description: Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
 seo-description: Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
-seo-title: Toepassingshandelingen bijhouden
-solution: Marketing Cloud,Analytics
-title: Toepassingshandelingen bijhouden
+seo-title: App-acties bijhouden
+solution: Experience Cloud,Analytics
+title: App-acties bijhouden
 topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 1%
 
 ---
 
 
-# Toepassingsacties bijhouden {#track-app-actions}
+# Track app actions {#track-app-actions}
 
 Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
 
@@ -40,7 +43,7 @@ Handelingen worden niet automatisch bijgehouden, dus als u een gebeurtenis wilt 
    >
    >Als de code waar u deze aanroep toevoegt mogelijk wordt uitgevoerd terwijl de toepassing zich op de achtergrond bevindt, roept u deze aan `trackActionFromBackground` in plaats van `trackAction`.
 
-1. Selecteer uw toepassing in de gebruikersinterface van Adobe Mobile-services en klik op **[!UICONTROL Manage App Settings]**.
+1. Selecteer uw toepassing in de gebruikersinterface van Mobiele Adobe-services en klik op **[!UICONTROL Manage App Settings]**.
 
 1. Klik **[!UICONTROL Manage Variables and Metrics]** en klik op het **[!UICONTROL Custom Metrics]** tabblad.
 
@@ -75,5 +78,5 @@ Als u een handeling bijhoudt in code die kan worden uitgevoerd wanneer de toepas
 | Interface | Rapport |
 |--- |--- |
 | Adobe Mobile Services | **[!UICONTROL Action Paths]** verslag. Geef de volgorde weer waarin acties in uw app plaatsvinden. U kunt ook op elk rapport klikken **[!UICONTROL Customize]** om gerangschikte, beheerde acties of een defecatierapport weer te geven of een filter toepassen om acties voor een bepaald segment weer te geven. |
-| Marketingrapporten en analyses | **[!UICONTROL Custom Event]** verslag.  Nadat een handeling is toegewezen aan een aangepaste gebeurtenis, kunt u mobiele gebeurtenissen weergeven die vergelijkbaar zijn met alle andere analytische gebeurtenissen. |
+| Marketing reports and analytics | **[!UICONTROL Custom Event]** verslag.  Nadat een handeling is toegewezen aan een aangepaste gebeurtenis, kunt u mobiele gebeurtenissen weergeven die vergelijkbaar zijn met alle andere analytische gebeurtenissen. |
 | Ad-hocanalyse | **[!UICONTROL Custom Event]** verslag. Nadat een handeling is toegewezen aan een aangepaste gebeurtenis, kunt u mobiele gebeurtenissen weergeven die vergelijkbaar zijn met alle andere analytische gebeurtenissen. |
