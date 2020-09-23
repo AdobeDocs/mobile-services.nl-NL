@@ -3,12 +3,15 @@ description: U kunt koppelingen naar App Store maken waarmee u toepassingen rech
 keywords: mobile
 seo-description: U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden vanuit de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
 seo-title: Een verwervingskoppeling maken
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Een verwervingskoppeling maken
 topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +44,7 @@ Geef betaalde voorwaarden of andere zoektermen op voor de advertentie.
       Selecteer een App Store:
       * Apple App Store
       * Google Play
+
       De opties voor elke App Store variëren, zoals hieronder beschreven.
 
    * **[!UICONTROL Browser Region (Apple App Store Only)]**
