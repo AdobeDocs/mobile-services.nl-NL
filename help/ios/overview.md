@@ -7,7 +7,7 @@ title: iOS SDK 4.x voor Experience Cloud-oplossingen
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -58,4 +58,4 @@ Voor meer informatie over de Mobiele UI van de Diensten en lees de gebruikersdoc
 
 >[!IMPORTANT]
 >
->Op 30 **april 2017** is Adobe Bloodhound. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
+>Op 30 **april 2017** is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
