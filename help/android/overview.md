@@ -8,7 +8,7 @@ title: Android SDK 4.x voor Experience Cloud-oplossingen
 topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 4%
@@ -62,4 +62,4 @@ Voor de recentste informatie over de versies van Experience Cloud, zie de Nota&#
 
 >[!IMPORTANT]
 >
->Op 30 **april 2017** is Adobe Bloodhound. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
+>Op 30 **april 2017** is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
