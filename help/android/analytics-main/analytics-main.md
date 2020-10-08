@@ -8,7 +8,7 @@ title: Overzicht van analysemogelijkheden
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 In SDKs, worden de herkenningstekens gebruikt om gebruikers te volgen, en hier is de hiërarchie van herkenningstekens:
 
 1. Aangepaste bezoeker-id (VID)
-2. Identificatiecode voor analytische tracking (AID)
-3. Experience Cloud-id (MID)
+1. Identificatiecode voor analytische tracking (AID)
+1. Experience Cloud-id (MID)
 
 >[!TIP]
 >
