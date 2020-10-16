@@ -2,11 +2,11 @@
 product: mobile-services
 audience: end-user
 user-guide-title: iOS-handleiding voor mobiele services
-breadcrumb-title: iOS Guide
+breadcrumb-title: iOS-handleiding
 translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
