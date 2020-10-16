@@ -6,8 +6,8 @@ breadcrumb-title: Universal Windows Platform Guide
 translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 14%
+source-wordcount: '72'
+ht-degree: 13%
 
 ---
 
