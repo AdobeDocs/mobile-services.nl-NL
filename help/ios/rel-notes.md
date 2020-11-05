@@ -7,10 +7,10 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 3%
 # Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
+
+**4 november 2020: Versie 4.20.0**
+
+* Bezoekersidentiteitskaart de Dienst - Toegevoegde apparaat_toestemmingsstatusparameter wanneer setAdvertisingIdentifier wordt geroepen nadat het volgen van advertenties wordt toegelaten/gehandicapt.
+* Analytics - Het probleem waarbij het verzenden van iAd.framework tijdens een koppeling naar iAd.framework werd vertraagd, is opgelost. Op dit apparaat is &quot;Beperkte Advertentie bijhouden&quot; ingeschakeld.
 
 **16 juli 2020: Versie 4.19.3**
 
