@@ -23,7 +23,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 Methoden worden vooraf bepaald volgens de oplossing, en de methodes van Experience Cloud ID worden geprefixeerd met `visitor`. Zie De Experience Cloud-id [inschakelen voor meer informatie](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL`*`)bezoekerAppendToURL:(nullable NSURL`*`)url;**
+* **`+`(nullable NSURL `*`)bezoekerAppendToURL:(nullable NSURL `*`)url;**
 
    Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
