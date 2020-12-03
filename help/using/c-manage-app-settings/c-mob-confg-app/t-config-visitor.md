@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 8%
+ht-degree: 16%
 
 ---
 
@@ -27,4 +27,4 @@ Schakel deze optie in als u de id-service wilt gebruiken. Voor meer informatie, 
 
    * **[!UICONTROL Organization]**
 Selecteer uw organisatie in de vervolgkeuzelijst.
-Een [!UICONTROL Experience Cloud] organisatie is de entiteit die een beheerder toelaat om groepen en gebruikers te vormen, en om enig teken-binnen in te controleren [!UICONTROL Experience Cloud]. De organisatie functioneert als een login bedrijf dat alle producten en oplossingen van de Experience Cloud overspant. Normaal, is de organisatie de naam van uw bedrijf, maar een bedrijf zou vele organisaties kunnen hebben. Zie [Organisaties en accountkoppelingen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)voor meer informatie.
+An [!UICONTROL Experience Cloud] organization is the entity that enables an administrator to configure groups and users, and to control single sign-on in the [!UICONTROL Experience Cloud]. De organisatie functioneert als een aanmeldingsbedrijf dat alle producten en oplossingen van Experience Cloud omvat. Normaal, is de organisatie de naam van uw bedrijf, maar een bedrijf zou vele organisaties kunnen hebben. Zie [Organisaties en accountkoppelingen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)voor meer informatie.
