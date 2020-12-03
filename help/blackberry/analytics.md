@@ -1,8 +1,8 @@
 ---
 description: Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
 seo-description: Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
-seo-title: 'Analytics  '
-title: 'Analytics  '
+seo-title: Analytics
+title: Analytics
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
@@ -13,7 +13,7 @@ ht-degree: 3%
 ---
 
 
-# Analytics{#analytics}  
+# Analytics {#analytics}
 
 Nadat u de bibliotheek aan uw project toevoegt, kunt u om het even welke de methodevraag van Analytics overal in uw App (zorg ervoor u ADBMobile.h in uw klasse invoert) maken.
 
@@ -115,7 +115,7 @@ Contextgegevensvariabelen die incrementele gebeurtenissen definiëren, kunnen de
 
 Als u hits wilt opslaan wanneer het apparaat offline is, kunt u optioneel offline bijhouden inschakelen in het `ADBMobileConfig.json` bestand.
 
-Let heel goed op de tijdstempelvereisten die in de configuratiebestandsverwijzing worden beschreven voordat u offline bijhouden inschakelt.
+Let heel goed op de tijdstempelvereisten die worden beschreven in de configuratiebestandsverwijzing voordat u offline bijhouden inschakelt.
 
 ## Analysemethoden
 
