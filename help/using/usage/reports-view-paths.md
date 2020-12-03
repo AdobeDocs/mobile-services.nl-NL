@@ -39,7 +39,7 @@ Als u de weergave wilt uitvouwen, klikt u op het **[!UICONTROL +]** pictogram om
 
 ![](assets/view_paths_expand.png)
 
-Klik op het ![focuspictogram](assets/icon_focus.png) om het knooppunt te isoleren en om de paden weer te geven die naar en uit het geselecteerde knooppunt komen. In de onderstaande afbeelding zijn de volgende paden voor gebruikers weergegeven die de hoofdweergave van de app bekeken:
+Klik op het ![focuspictogram](assets/icon_focus.png) om het knooppunt te isoleren en om de paden weer te geven die naar en uit het geselecteerde knooppunt komen. In de onderstaande afbeelding zijn de volgende paden voor gebruikers geplaatst die de hoofdweergave van de app bekeken:
 
 * iteminfo
 * itemkiezer
