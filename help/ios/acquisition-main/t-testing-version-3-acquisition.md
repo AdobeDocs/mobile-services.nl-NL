@@ -95,7 +95,7 @@ Er is een netwerkfout opgetreden.
 
          U moet zich op hetzelfde netwerk bevinden wanneer u op de URL klikt en de app opent.
 
-      * Met de HTTP-controleprogramma&#39;s kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
+      * Met de HTTP-controlegereedschappen kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
 
          Er wordt één `/v3/<appid>/start` verzoek en één `/v3/<appid>/end` verzoek naar de verwervingsserver verzonden. De variaties in verzonden user-agent zouden attributie kunnen veroorzaken om te ontbreken.
 
