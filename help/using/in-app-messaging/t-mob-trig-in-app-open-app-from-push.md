@@ -6,6 +6,9 @@ title: Een bericht in de app activeren wanneer de app vanuit een pushbericht wor
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 translation-type: tm+mt
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
@@ -41,5 +44,6 @@ U kunt instellen dat de berichttrigger in de app de pushbericht-id is die wordt 
 
    * Nadat u het bericht in de app hebt opgeslagen, duurt het ongeveer 45 seconden voordat het gehoste configuratiebestand wordt bijgewerkt met het nieuwe bericht.
    * De app zoekt naar updates van configuratiebestanden (het nieuwe bericht in de app) wanneer er een **nieuwe** start plaatsvindt. U moet dus controleren of de app een nieuwe start uitvoert wanneer op het pushbericht wordt geklikt.
+
    Dit betekent doorgaans dat u ervoor moet zorgen dat de sessietime-out is opgetreden. De standaardtime-out is 5 minuten.
 
