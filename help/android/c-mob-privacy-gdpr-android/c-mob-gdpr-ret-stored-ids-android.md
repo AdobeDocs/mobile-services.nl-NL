@@ -6,6 +6,9 @@ title: Opgeslagen id's ophalen
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ SDK-identiteiten (indien van toepassing) worden lokaal opgeslagen en geretournee
 
 * Bedrijfcontext - IMS-organisatie-id&#39;s
 * Gebruikersnamen
-* Experience Cloud iD (MID), voorheen bekend als Marketing Cloud ID
+* Experience Cloud iD (MID), voorheen bekend als Marketing Cloud-ID
 * Integratiecodes (ADID, Push ID)
 * Gegevensbron-id&#39;s (DPID, DPUUID)
 * Analytische id&#39;s (AVID, AID, VID en bijbehorende RSID&#39;s)
