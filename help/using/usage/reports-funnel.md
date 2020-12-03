@@ -22,7 +22,7 @@ In het **[!UICONTROL Funnel]** rapport wordt aangegeven waar klanten een marketi
 
 Door bij elke stap zichtbaarheid in de beslissingen van de klant te krijgen, kunt u beter begrijpen waar ze worden afgeschrikt, welk pad ze meestal volgen en wanneer klanten uw app verlaten.
 
-Wanneer u het **[!UICONTROL Funnel]** rapport opent, moet u een douanetrechter tot stand brengen. Zie Rapporten [](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
+Wanneer u het **[!UICONTROL Funnel]** rapport opent, moet u een douanetrechter tot stand brengen. Zie [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen voor meer informatie.
 
 >[!TIP]
 >
