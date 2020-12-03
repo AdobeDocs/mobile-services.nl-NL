@@ -30,7 +30,7 @@ U kunt de volgende opties voor dit rapport vormen:
 
 * **[!UICONTROL Customize]**
 
-   Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, extra reeksen (metriek) toe te voegen, en meer. Zie [Rapporten](/help/using/usage/reports-customize/t-reports-customize.md)aanpassen voor meer informatie.
+   Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, extra reeksen (metriek) toe te voegen, en meer. Zie Rapporten [](/help/using/usage/reports-customize/t-reports-customize.md)aanpassen voor meer informatie.
 
 * **[!UICONTROL Filter]**
 
