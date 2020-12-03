@@ -33,7 +33,7 @@ Om nauwkeurige neerstorting rapportering te verzekeren, moet u `pauseCollectingL
 
 Zie [Activiteiten](https://developer.android.com/guide/components/activities.html)voor meer informatie over de levenscyclus van de Android-activiteit.
 
-*Deze Android-levenscyclusillustratie is gemaakt en[gedeeld door het Android Open Source Project](https://source.android.com/)en wordt gebruikt volgens de voorwaarden in de[Creative Commons 2.5-kenmerklicentie](https://creativecommons.org/licenses/by/2.5/).*
+*Deze Android-levenscyclusillustratie is gemaakt en [gedeeld door het Android Open Source Project](https://source.android.com/) en wordt gebruikt volgens de voorwaarden in de [Creative Commons 2.5-kenmerklicentie](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Wat kan ertoe leiden dat een fout wordt gemeld?
 
