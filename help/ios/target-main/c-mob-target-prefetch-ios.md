@@ -1,24 +1,27 @@
 ---
-description: De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK's om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
-seo-description: De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK's om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+description: De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK's om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
+seo-description: De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK's om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
 seo-title: Prefetch-aanbiedingsinhoud in iOS
 title: Prefetch-aanbiedingsinhoud in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
 
 # Prefetch-aanbiedingsinhoud in iOS {#prefetch-offer-content-in-ios}
 
-De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK&#39;s om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK&#39;s om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
 
 >[!IMPORTANT]
 >
->De functie Prefetch in de mobiele SDK&#39;s voor iOS wordt niet ondersteund voor de activiteitentypen Automatisch doelbewust, Automatisch toewijzen en Automatisch aanpassen aan persoonlijke instellingen in Adobe Target.
+>De functie Prefetch in de mobiele SDK&#39;s voor iOS wordt niet ondersteund voor de activatietypen Auto Target, Auto Allocate en Automated Personalization in Adobe Target.
 
-Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van de doos die door de gebruiker van de mobiele app is bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
+Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van welke box de gebruiker van de mobiele app heeft bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
 
 Prefetch-inhoud blijft niet behouden bij alle opstarters. De inhoud van de prefetch wordt in de cache geplaatst zolang de toepassing leeft of totdat de `clearPrefetchCache()` methode wordt aangeroepen.
 
@@ -192,7 +195,7 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
 
    * **Type**: Functie
 
-## Codevoorbeeld {#section_BF7F49763D254371B4656E17953D520C}
+## Code sample {#section_BF7F49763D254371B4656E17953D520C}
 
 Hier volgt een voorbeeld van hoe u inhoud vooraf kunt instellen met behulp van de iOS SDK&#39;s:
 
@@ -280,7 +283,7 @@ Hier volgt een voorbeeld van de batch `loadRequest` met behulp van de iOS SDK&#3
     [ADBMobile targetLoadRequests:requestArray withProfileParameters:profileParmeters];
 ```
 
-## Aanvullende informatie {#section_A454BAD1CD49423E86C71BAEE06125FD}
+## Extra informatie {#section_A454BAD1CD49423E86C71BAEE06125FD}
 
 Hieronder vindt u aanvullende informatie over deze voorbeelden:
 
