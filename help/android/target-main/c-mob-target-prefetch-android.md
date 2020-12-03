@@ -1,24 +1,27 @@
 ---
-description: De Adobe Target-prefetch-functie gebruikt de Android Mobile SDK's om inhoud van aanbiedingen zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
-seo-description: De Adobe Target-prefetch-functie gebruikt de Android Mobile SDK's om inhoud van aanbiedingen zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+description: De Adobe Target-prefetch-functie gebruikt de SDK's van Android Mobile om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+seo-description: De Adobe Target-prefetch-functie gebruikt de SDK's van Android Mobile om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
 seo-title: Inhoud van Prefetch-aanbieding in Android
 title: Inhoud van Prefetch-aanbieding in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 4%
 
 ---
 
 
 # Inhoud van Prefetch-aanbieding in Android {#prefetch-offer-content-in-android}
 
-De Adobe Target-prefetch-functie gebruikt de Android Mobile SDK&#39;s om inhoud van aanbiedingen zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+De Adobe Target-prefetch-functie gebruikt de SDK&#39;s van Android Mobile om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
 
 >[!IMPORTANT]
 >
->De functie Prefetch in de mobiele SDK&#39;s voor Android wordt niet ondersteund voor de activiteitstypen Automatisch doel, Automatisch toewijzen en Geautomatiseerd aanpassen in Adobe Target.
+>De functie Prefetch in de mobiele SDK&#39;s voor Android wordt niet ondersteund voor de activatietypen Auto Target, Auto Allocate en Automated Personalization in Adobe Target.
 
-Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van de doos die door de gebruiker van de mobiele app is bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
+Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van welke box de gebruiker van de mobiele app heeft bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
 
 Prefetch-inhoud blijft niet behouden bij alle opstarters. De inhoud van de prefetch wordt in de cache geplaatst zolang de toepassing leeft of totdat de `clearPrefetchCache()` methode wordt aangeroepen.
 
@@ -207,9 +210,9 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
    * **Type**: Target.TargetCallback`<String>`
 
 
-## Codevoorbeeld {#section_BF7F49763D254371B4656E17953D520C}
+## Code sample {#section_BF7F49763D254371B4656E17953D520C}
 
-Hier ziet u een voorbeeld van het vooraf instellen van inhoud met de SDK&#39;s van Android:
+Hier ziet u een voorbeeld van het vooraf instellen van inhoud met behulp van de Android-SDK&#39;s:
 
 ```java
 // When your app launches, prefetch the content for a list of locations. 
@@ -275,7 +278,7 @@ locationRequests.add(Target.createTargetRequestObject("mboxName2", "defaultConte
 Target.loadRequests(locationRequests, profileParameters); 
 ```
 
-## Aanvullende informatie {#section_A454BAD1CD49423E86C71BAEE06125FD}
+## Extra informatie {#section_A454BAD1CD49423E86C71BAEE06125FD}
 
 Hieronder vindt u aanvullende informatie over deze voorbeelden:
 
