@@ -208,7 +208,7 @@ Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
 
 * **Rsids**
 
-   (Vereist) Een of meer rapportensuites om analysegegevens te ontvangen. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
+   (Vereist) Een of meer rapportensuites voor het ontvangen van analysegegevens. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
 
    Hier volgt het codevoorbeeld voor deze variabele:
 
