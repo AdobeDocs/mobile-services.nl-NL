@@ -5,6 +5,9 @@ description: Met de BlackBerry Developer Quick Start Guide krijgt u inzicht in h
 seo-description: Met de BlackBerry Developer Quick Start Guide krijgt u inzicht in het proces voor het implementeren van de BlackBerry-bibliotheek voor Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
@@ -87,6 +90,6 @@ Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
 }
 ```
 
-U moet de parameters `rsids` en `server` parameters minstens bijwerken. Zie [Adobe Mobile-klasse en -methodereferentie](/help/blackberry/methods.md)voor meer informatie.
+U moet de parameters `rsids` en `server` parameters minstens bijwerken. Zie [Adobe Mobile-klasse en -methodeverwijzing](/help/blackberry/methods.md)voor meer informatie.
 
 U kunt Analytics nu implementeren in uw BlackBerry 10-app.
