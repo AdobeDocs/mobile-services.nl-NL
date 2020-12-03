@@ -6,6 +6,9 @@ title: Rollen en machtigingen
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +23,7 @@ De volgende rollen beheren toestemmingen in Mobiele Diensten UI:
 
 ### Analysebeheer
 
-Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. Met Experience Cloud Admin koppelt u uw Adobe-id aan uw Adobe Analytics-account. Hiermee kunt u zich aanmelden bij de gebruikersinterface voor mobiele services met uw Adobe-id. Zie [Beheer - Gebruikersbeheer en Veelgestelde vragen](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)voor meer informatie over de Experience Cloud Administrator.
+Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Beleid - Gebruikersbeheer en Veelgestelde vragen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -28,9 +31,9 @@ Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één
 
 Zie de volgende inhoud voor meer informatie over deze rol:
 
-* [Overzicht van gebruikersbeheer](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
+* [Overzicht van User Management](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
 
-* [Wijzigingen in machtigingen voor gebruikers en groepen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Wijzigingen in gebruikers- en groepstoestemmmingen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### Mobiele toepassingsbeheerder
 
@@ -94,7 +97,7 @@ Hier zijn de rollen in Mobiele Diensten UI, met hun relevante toestemmingen:
 
 Zie voor meer informatie over groepen en gebruikers:
 
-* [Gebruikersgroepinstellingen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
+* [Gebruikersgroepsinstellingen](https://docs.adobe.com/content/help/nl-NL/analytics/admin/user-product-management/user-groups/groups.html)
 * [Een gebruiker aan een groep toevoegen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Gebruiker van mobiele services
@@ -106,7 +109,7 @@ Deze rol heeft mening-slechts toestemmingen en kan terugkoppelen in de Mobiele U
 
    >[!IMPORTANT]
    >
-   >Gebruikers kunnen de rapportsuite alleen bekijken in Adobe Analytics.
+   >Gebruikers kunnen alleen de rapportsuites zien waartoe zij in Adobe Analytics toegang hebben.
 
 * App-instellingen weergeven
 
