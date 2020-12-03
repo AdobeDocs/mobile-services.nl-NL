@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ In deze handleiding worden technische documentatie en zelfhulp voor Adobe Mobile
 
 ## Aankondiging van einde ondersteuning voor 4x SDK&#39;s
 
-Na 30 september 2020 kunnen klanten de versie 4 SDK&#39;s blijven downloaden en gebruiken, maar er is geen ondersteuning voor de klantenservice of toegang tot forums. De Adobe Experience Platform Mobile SDK (voorheen v5 genoemd) biedt uitsluitend ondersteuning voor toekomstige Adobe Experience Cloud-functies en -functionaliteit.
+Na 30 september 2020 kunnen klanten de versie 4 SDK&#39;s blijven downloaden en gebruiken, maar er is geen ondersteuning voor de klantenservice of toegang tot forums. De Adobe Experience Platform Mobile SDK (vroeger v5 genoemd) ondersteunt uitsluitend nieuwe Adobe Experience Cloud-functies.
 
 Raadpleeg het einde van de [veelgestelde vragen](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq) over ondersteuning voor meer informatie.
 
