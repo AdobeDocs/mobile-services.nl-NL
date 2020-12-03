@@ -6,6 +6,9 @@ title: Het volgen van derde Uitgestelde Diepe Verbindingen
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
 Gebruik de iOS SDK om het bijhouden van uitgebreide koppelingen van derden te implementeren.
 
-## Klassieke Adobe Mobile SDK, diep koppelen {#section_D114FA1EB9664EAA82E036A990694B26}
+## Diepe koppeling van de klassieke Adobe Mobile SDK {#section_D114FA1EB9664EAA82E036A990694B26}
 
-De SDK van Adobe Mobile ondersteunt momenteel diepe koppelingen, waarbij de ontwikkelaar van de app naar verwachting de `trackAdobeDeepLink` API aanroept en de deep linking-URL doorgeeft. Dit is de vingerprinter-URL die tijdens de configuratie in Adobe Mobile Services wordt gegenereerd. De SDK pingelt de vingerprinter om aanschafgegevens te verkrijgen en voegt deze toe aan de analytische gegevens voor installeren/starten en roept contextgegevens aan als onderdeel van de levenscyclus. Daarnaast voegt de SDK ook de gegevens van de deplink-URL-parameters toe. Voor meer informatie bij diepe verbinding, zie het [Volgen Diepe Verbindingen](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
+De SDK van Adobe Mobile ondersteunt momenteel diepe koppelingen, waarbij de ontwikkelaar van de app naar verwachting de `trackAdobeDeepLink` API zal aanroepen en de deep linking-URL zal doorgeven. Dit is de vingerprinter-URL die tijdens de configuratie wordt gegenereerd in Adobe Mobile Services. De SDK pingelt de vingerprinter om aanschafgegevens te verkrijgen en voegt deze toe aan de analytische gegevens voor installeren/starten en roept contextgegevens aan als onderdeel van de levenscyclus. Daarnaast voegt de SDK ook de gegevens van de deplink-URL-parameters toe. Voor meer informatie bij diepe verbinding, zie het [Volgen Diepe Verbindingen](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
 
 ## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-Een maker van een advertentie kan een advertentie op Facebook maken als een diepe koppeling. Wanneer gebruikers op de advertentie op Facebook klikken, gaat het rechtstreeks naar de informatie waarin ze geïnteresseerd zijn in de app. De diepe koppeling is **geen** vingerprinter-URL. Tijdens de configuratie van de advertentie is er echter een optie om een diepe koppeling-URL van derden op te geven. Een toepassingsontwikkelaar die de Experience Cloud Mobile SDK&#39;s en services gebruikt, moet de door Mobile Services geconfigureerde vingerprinter-URL in dit veld invoeren. Als alles correct is ingesteld, geeft de SDK van Facebook deze URL door aan de toepassing wanneer de app wordt geïnstalleerd of gestart.
+Een maker van een advertentie kan een advertentie op Facebook maken als een diepe koppeling. Wanneer gebruikers op de advertentie op Facebook klikken, gaat het rechtstreeks naar de informatie waarin ze geïnteresseerd zijn in de app. De diepe koppeling is **geen** vingerprinter-URL. Tijdens de configuratie van de advertentie is er echter een optie om een diepe koppeling-URL van derden op te geven. Een app-ontwikkelaar die de Experience Cloud Mobile SDK&#39;s en services gebruikt, moet de door Mobile Services geconfigureerde vingerprinter-URL in dit veld invoeren. Als alles correct is ingesteld, geeft de SDK van Facebook deze URL door aan de toepassing wanneer de app wordt geïnstalleerd of gestart.
 
 ## SDK&#39;s instellen {#section_834CD3109175432B8173ECB6EA7DE315}
 
