@@ -22,7 +22,7 @@ Deze informatie helpt u de ingebouwde rapporten aan te passen door extra reeksen
 
 >[!IMPORTANT]
 >
->De mobiele toepassingsmetriek zijn ook beschikbaar in marketing reports and analytics, ad hoc analyse, gegevenspakhuis, en andere Analytics rapporteringsinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
+>De mobiele toepassingsmetriek zijn ook beschikbaar in marketing reports and analytics, ad hoc analyse, gegevenspakhuis, en andere Analytics rapporteringsinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobiel is, kan het worden geproduceerd door een verschillende rapporteringsinterface te gebruiken.
 
 In dit voorbeeld, zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpassen, maar de instructies kunnen op om het even welk rapport van toepassing zijn.
 
