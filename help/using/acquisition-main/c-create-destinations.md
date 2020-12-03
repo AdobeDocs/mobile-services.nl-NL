@@ -26,7 +26,7 @@ U kunt de volgende typen koppelingsdoelen maken:
 
 * **[!UICONTROL App Deep Link]**
 
-   Diepe-koppelingsdoelen van de app zijn diepgaande koppelingen in het URI-schema waarmee gebruikers naar een Diepe koppeling in uw app worden geleid. U kunt gebruikers bijvoorbeeld naar een productreeks in de mobiele app van een online detailhandelaar leiden.
+   Diepe-koppelingsdoelen van de app zijn diepgaande koppelingen in het URI-schema waarmee gebruikers naar een Diepe koppeling in uw app worden geleid. U kunt gebruikers bijvoorbeeld naar een productlijn in de mobiele app van een online detailhandelaar leiden.
 
 * **[!UICONTROL Web Link]**
 
