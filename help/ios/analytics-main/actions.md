@@ -43,7 +43,7 @@ Handelingen worden niet automatisch bijgehouden, dus als u een gebeurtenis wilt 
    >
    >Als de code waar u deze aanroep toevoegt mogelijk wordt uitgevoerd terwijl de toepassing zich op de achtergrond bevindt, roept u deze aan `trackActionFromBackground` in plaats van `trackAction`.
 
-1. Selecteer uw toepassing in de gebruikersinterface van Mobiele Adobe-services en klik op **[!UICONTROL Manage App Settings]**.
+1. Selecteer uw app in de gebruikersinterface van Adobe Mobile Services en klik op **[!UICONTROL Manage App Settings]**.
 
 1. Klik **[!UICONTROL Manage Variables and Metrics]** en klik op het **[!UICONTROL Custom Metrics]** tabblad.
 
