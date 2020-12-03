@@ -1,18 +1,21 @@
 ---
-description: U kunt Adobe Target gebruiken in uw TVML/TVJS-apps door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
-seo-description: U kunt Adobe Target gebruiken in uw TVML/TVJS-apps door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
-seo-title: Adobe-doel voor TVML/TVJS
-title: Adobe-doel voor TVML/TVJS
+description: U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
+seo-description: U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
+seo-title: Adobe Target voor TVML/TVJS
+title: Adobe Target voor TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
 
-# Adobe-doel voor TVML/TVJS{#adobe-target-for-tvml-tvjs}
+# Adobe Target voor TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
-U kunt Adobe Target gebruiken in uw TVML/TVJS-apps door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
+U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
 
 >[!IMPORTANT]
 >
@@ -75,7 +78,7 @@ In het `ADBTarget` element, moet u de naam Mbox in het `mbox` bezit verstrekken.
 
 * **`mboxParameters`**
 
-   Een lijst met sleutelwaardeparen voor `mboxParameters`. Elk item in deze tekenreeks wordt gescheiden door een puntkomma en sleutelwaarden worden gescheiden door een dubbele punt.
+   Een lijst met sleutelwaardeparen voor `mboxParameters`. Elk item in deze tekenreeks wordt gescheiden door een puntkomma en de sleutelwaarden worden gescheiden door een dubbele punt.
 
    * Hier volgt het codevoorbeeld voor deze eigenschap:
 
