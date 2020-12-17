@@ -7,9 +7,9 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 2%
 # Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
+
+**15 december 2020: Versie 4.21.0**
+
+* Algemeen - De SDK wordt nu gedistribueerd met behulp van XCFrameworks om hardware met de nieuwe Apple M1-architectuur te ondersteunen en tegelijk ondersteuning voor bestaande Intel-architectuur te behouden.
+   * BELANGRIJK: Voor een upgrade naar Adobe Mobile XCFrameworks is Xcode 12.0 of hoger vereist
+   * BELANGRIJK: Als u Cocoapods gebruikt, vereist een upgrade naar AdobeMobile XCFrameworks Cocoapods 1.10.0 of hoger
 
 **4 november 2020: Versie 4.20.0**
 
@@ -49,8 +55,8 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * In App Messaging:
 
-   * Op apparaten met iOS 10 of hoger wordt het `UserNotifications` framework nu gebruikt om lokale meldingen te plannen voor apps die zijn gekoppeld aan de `UserNotifications.framework`toepassing.
-   * Volledig scherm berichten gebruiken nu WKWebViews van `WebKit.framework`, die in uw Xcode project moeten worden verbonden.
+   * Op apparaten met iOS 10 of hoger wordt het `UserNotifications`-framework nu gebruikt om lokale meldingen te plannen voor toepassingen die zijn gekoppeld aan `UserNotifications.framework`.
+   * Berichten op volledig scherm gebruiken nu WKWebViews van `WebKit.framework`, die in uw project van Xcode moeten worden verbonden.
    * Probleem verholpen waarbij de aankliklading met één druk niet kon worden gebruikt als kenmerken voor In-App Overseinen.
    * Probleem met vastlopen verholpen.
 
@@ -60,13 +66,13 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * Een wijziging die werd geïntroduceerd in versie 4.18.6, die in sommige omgevingen tot een crash leidde op apparaten met een iOS-versie ouder dan 11.0.
 
-* Adobe Target: De `requestLocationParameters` eigenschap is toegevoegd in `ADBTargetRequestObject`, waardoor de indrukId kan worden verzonden met Target-aanvragen.
+* Adobe Target: De eigenschap `requestLocationParameters` is toegevoegd in `ADBTargetRequestObject`, waardoor de impositieId kan worden verzonden met Target-aanvragen.
 
 **18 juli 2019: Versie 4.18.6**
 
 * Adobe Target: Alle verzoeken omvatten nu de cliënt en `sessionId` in de URL vraagparameters.
 * Adobe Target: Een geheugenlek verholpen.
-* Bezoeker-id-service: De `visitorAppendToURL` API&#39;s en de API&#39; `visitorGetUrlVariablesAsync` s coderen hun retourwaarden niet meer.
+* Bezoeker-id-service: De API&#39;s `visitorAppendToURL` en `visitorGetUrlVariablesAsync` coderen hun retourwaarden niet meer.
 
    Door de dubbele codering werden de geretourneerde waarden van deze API&#39;s gemarkeerd door bepaalde beveiligingsrevisies.
 
@@ -81,4 +87,4 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * De Dienst van identiteitskaart van de bezoeker - de `setPushIdentifier` API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
 
-Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie de Nota&#39;s [van de Versie van](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html)Adobe Experience Cloud.
+Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Nota&#39;s van de Versie van Adobe Experience Cloud](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
