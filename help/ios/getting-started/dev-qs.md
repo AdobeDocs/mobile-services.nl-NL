@@ -7,9 +7,9 @@ title: Core-implementatie en levenscyclus
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
+source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -39,20 +39,21 @@ De SDK downloaden:
 
 1. Download, decomprimeer het `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`-bestand en controleer of de volgende softwarecomponenten in de map `AdobeMobileLibrary` staan:
 
+   * `ADBMobile.h` - het objectc-headerbestand dat wordt gebruikt voor iOS SDK.
    * `ADBMobileConfig.json` - het SDK-configuratiebestand dat voor uw app is aangepast.
-   * `AdobeMobile.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64). Bevat ook het koptekstbestand `ADBMobile.h` voor de SDK.
+   * `AdobeMobile.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
 
       Dit XCF-framework moet worden gekoppeld wanneer u zich richt op een iOS-app.
 
-   * `AdobeMobileExtension.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64). Bevat ook het koptekstbestand `ADBMobile.h` voor de SDK.
+   * `AdobeMobileExtension.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
 
       Dit XCFFramework moet worden gekoppeld wanneer u een iOS-extensie als doel instelt.
 
-   * `AdobeMobileWatch.xcframework` - bevat twee vetbinaire getallen, elk voor watchOS-apparaten (arm64_32, armv7k) en simulatoren (i386, x86_64, arm64). Bevat ook het koptekstbestand `ADBMobile.h` voor de SDK.
+   * `AdobeMobileWatch.xcframework` - bevat twee vetbinaire getallen, elk voor watchOS-apparaten (arm64_32, armv7k) en simulatoren (i386, x86_64, arm64).
 
       Dit XCFFramework moet worden gekoppeld wanneer u zich richt op een Apple Watch (watchOS)-app.
 
-   * `AdobeMobileTV.xcframework` - bevat twee vetbinaire getallen, elk voor tvOS-apparaten (arm64) en simulatoren (x86_64, arm64). Bevat ook het koptekstbestand `ADBMobile.h` voor de SDK.
+   * `AdobeMobileTV.xcframework` - bevat twee vetbinaire getallen, elk voor tvOS-apparaten (arm64) en simulatoren (x86_64, arm64).
 
       Dit XCF-framework moet worden gekoppeld wanneer het programma is gericht op een Apple TV-app (tvOS).
 
