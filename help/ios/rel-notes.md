@@ -7,9 +7,9 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
+source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 # Releaseopmerkingen {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
+
+**13 januari 2021: Versie 4.21.1**
+
+* Algemeen - Probleem verholpen waarbij SQLite-uitzonderingen konden optreden wanneer de app werd afgesloten.
 
 **15 december 2020: Versie 4.21.0**
 
