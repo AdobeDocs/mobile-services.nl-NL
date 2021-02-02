@@ -7,10 +7,10 @@ title: Release-opmerkingen
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 **16 januari 2020: 4.18.0.**
 
-* Verwerving - Er is een nieuwe API toegevoegd `Analytics.processGooglePlayInstallReferrerUrl(final String url)`ter ondersteuning van de Google Play-API&#39;s van de installatieverwijzing.
+* Verwerving - Er is een nieuwe API toegevoegd, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, ter ondersteuning van de Google Play-API&#39;s van de installatieverwijzing.
 
-   Voor meer informatie over Install Referrer APIs, zie [nog het Gebruiken van InstallBroadcast? Schakel tegen 1 maart 2020 over naar de Play Reference API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
+   Zie [Nog steeds InstallBroadcast gebruiken voor meer informatie over de Install Referrer-API&#39;s? Schakel tegen 1 maart 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) over naar de API van de Play Referrer.
 
 **20 september 2019: Versie 4.17.10**
 
@@ -41,7 +41,7 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * Adobe Target: Alle verzoeken omvatten nu de cliënt en sessionId in de URL vraagparameters.
 * Berichten in de app: Probleem verholpen waarbij Android-apps vastliepen toen een bericht werd gestart met een lege klikthrough-URL.
-* Bezoeker-id-service: De `Visitor.appendToURL` API&#39;s en de API&#39; `Visitor.getUrlVariablesAsync` s coderen hun retourwaarden niet meer.
+* Bezoeker-id-service: De API&#39;s `Visitor.appendToURL` en `Visitor.getUrlVariablesAsync` coderen hun retourwaarden niet meer.
 
    Door de dubbele codering werden de geretourneerde waarden van deze API&#39;s gemarkeerd door bepaalde beveiligingsrevisies.
 
@@ -53,9 +53,10 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 **24 mei 2019: Versie 4.17.6**
 
 * Bezoekersidentiteitsservice - De
-   `setPushIdentifier` De API vraag verzendt nu asynchrone vraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
+   `setPushIdentifier` De API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
 
-* De Dienst van identiteitskaart van de bezoeker - verhoogde verbind en lezingonderbreking van 2 seconden tot 5 seconden.
+* De Dienst van identiteitskaart van de bezoeker - verhoogde verbindt en leest
+onderbrekingen van 2 seconden tot 5 seconden.
 
 
-Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie de Nota&#39;s [van de Versie van](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)Adobe Experience Cloud.
+Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Nota&#39;s van de Versie van Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
