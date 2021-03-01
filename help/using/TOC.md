@@ -7,8 +7,8 @@ user-guide-description: Mobiele services is een complete oplossing waarmee u geb
 translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 9%
    + [Rollen en machtigingen](gs/c-mob-roles-and-permissions.md)
    + [Aanmelden](gs/gs-signin.md)
    + [Rapporttypen](gs/reports-types.md)
-   + Mobiele meetgegevens {#mobile-metrics}
+   + Mobiele metriek {#mobile-metrics}
       + [Mobiele meetgegevens](gs/metrics/metrics.md)
       + [Mobiele meetgegevens weergeven](gs/metrics/overview.md)
       + [Verwijzing naar mobiele Dimension](gs/metrics/metrics-reference.md)
@@ -30,13 +30,13 @@ ht-degree: 9%
    + [Het overzicht Toepassingen beheren](manage-apps/manage-apps.md)
    + [Een nieuwe app toevoegen](manage-apps/t-new-app.md)
    + [Virtuele rapportsuites](manage-apps/c-mob-vrs.md)
-   + App-store {#app-store}
+   + App store {#app-store}
       + [Overzicht van App Store](manage-apps/c-app-store/c-app-store.md)
       + [Een app toevoegen vanuit een App Store](manage-apps/c-app-store/t-app-store-app.md)
       + [Een app verwijderen](manage-apps/t-delete-apps.md)
 + Toepassingsinstellingen beheren {#manage-app-settings-ug}
    + [Toepassingsinstellingen beheren](c-manage-app-settings/c-manage-app-settings.md)
-   + Uw app configureren {#configuring-app}
+   + Uw app {#configuring-app} configureren
       + [Uw app configureren](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Opties voor SDK-analyse configureren](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
       + [Mobiele SDK&#39;s en gereedschappen downloaden](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
@@ -85,7 +85,7 @@ ht-degree: 9%
          + [Opbouwfunctie voor marketingkoppelingen](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [Marketing-koppelingen maken of bewerken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [Verspreide advertenties](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
-      + Legacy Acquisition links {#legacy-acquisition-links}
+      + Verouderde overnamekoppelingen {#legacy-acquisition-links}
          + [Koppelingen voor verouderde overname gebruiken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
          + [Een verwervingskoppeling maken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/t-acquisition-link.md)
          + [Aankoopkoppelingen beheren](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/c-manage-acquisition-links.md)
@@ -93,7 +93,7 @@ ht-degree: 9%
          + [Aankoopkoppelingen importeren of exporteren](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
          + [Marketing-koppelingen beheren](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [Koppelingen voor overname handmatig maken](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
-+ Location {#location-ug}
++ Locatie {#location-ug}
    + [Overzicht van locatie](location/location-overview.md)
    + [Overzicht (locatie)](location/c-location-overview.md)
    + [Kaart](location/c-map-points.md)
@@ -108,7 +108,7 @@ ht-degree: 9%
       + [Ervaring: pushbericht](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [Planning: pushbericht](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [Probleemoplossing voor pushberichten](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
-   + In-app messages {#inapp-messages}
+   + In-app berichten {#inapp-messages}
       + [Een bericht in de app maken](in-app-messaging/t-in-app-message/t-in-app-message.md)
       + [Publiek: bericht in de app](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [Ervaring: bericht in de app](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)
