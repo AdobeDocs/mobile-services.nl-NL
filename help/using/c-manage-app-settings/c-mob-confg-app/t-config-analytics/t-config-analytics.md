@@ -1,6 +1,6 @@
 ---
 description: U kunt de opties voor SDK-analyse configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt de opties voor SDK-analyse configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 seo-title: Opties voor SDK-analyse configureren
 solution: Experience Cloud,Analytics
@@ -10,7 +10,7 @@ uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 U kunt de opties voor SDK-analyse configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 
-Typ gegevens in de volgende velden onder **[!UICONTROL SDK Analytics Options]**:
+Typ informatie in de volgende velden onder **[!UICONTROL SDK Analytics Options]**:
 
 * **[!UICONTROL Use HTTPS]**
 
@@ -51,6 +51,6 @@ Typ gegevens in de volgende velden onder **[!UICONTROL SDK Analytics Options]**:
 
 * **[!UICONTROL More Details]**
 
-   Klik op de **[!UICONTROL More Details]** koppeling om de rapportsuite-id en de trackingserver weer te geven, offline bijhouden in of uit te schakelen en het gebruikte tekencoderingsmodel (zoals UTF-8) weer te geven.
+   Klik op de koppeling **[!UICONTROL More Details]** om de rapportsuite-id en de trackingserver weer te geven, offline bijhouden in of uit te schakelen en het gebruikte tekencoderingsmodel (zoals UTF-8) weer te geven.
 
    Wanneer offline bijhouden is ingeschakeld, worden gegevens die door het apparaat worden gegenereerd terwijl ze offline zijn, voorzien van een tijdstempel en later verzonden. Als deze optie is uitgeschakeld, worden offlinegegevens verwijderd.
