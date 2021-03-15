@@ -23,7 +23,7 @@ De volgende rollen beheren toestemmingen in Mobiele Diensten UI:
 
 ### Analysebeheer
 
-Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Beleid - Gebruikersbeheer en Veelgestelde vragen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Beleid - Gebruikersbeheer en FAQ](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -41,9 +41,9 @@ Deze rol is Admin voor de Mobiele UI van de Diensten.
 
 >[!IMPORTANT]
 >
->Voor sommige functies, zoals pushberichten, moet de Analysebeheerder het **[!UICONTROL Segment Creation]** selectievakje in Gebruikersbeheer inschakelen.
+>Voor sommige functies, zoals pushberichten, moet Analysebeheer het selectievakje **[!UICONTROL Segment Creation]** in Gebruikersbeheer inschakelen.
 
-## Toegang beheren {#section_E6939C2695AA4A0DBF432D50B2670920}
+## Toegang {#section_E6939C2695AA4A0DBF432D50B2670920} beheren
 
 Hier is wat extra informatie over de toegang tot van opties in de Mobiele UI van de Diensten:
 
@@ -97,7 +97,7 @@ Hier zijn de rollen in Mobiele Diensten UI, met hun relevante toestemmingen:
 
 Zie voor meer informatie over groepen en gebruikers:
 
-* [Gebruikersgroepsinstellingen](https://docs.adobe.com/content/help/nl-NL/analytics/admin/user-product-management/user-groups/groups.html)
+* [Gebruikersgroepsinstellingen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
 * [Een gebruiker aan een groep toevoegen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Gebruiker van mobiele services
