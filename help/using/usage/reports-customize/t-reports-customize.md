@@ -1,20 +1,20 @@
 ---
 description: Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters (segmenten) toe te voegen.
-keywords: mobile
+keywords: mobiel
 seo-description: Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters (segmenten) toe te voegen.
 seo-title: Filters toevoegen aan rapporten
 solution: Experience Cloud,Analytics
 title: Filters toevoegen aan rapporten
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
+exl-id: eb0589e9-668e-42d7-8f7a-00d7f0a2e3ff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # Filters toevoegen aan rapporten{#add-filters-to-reports}
 
@@ -22,9 +22,9 @@ Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters
 
 >[!IMPORTANT]
 >
->Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
+>Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobiel is, kan het worden geproduceerd door een verschillende rapporteringsinterface te gebruiken.
 
-In dit voorbeeld zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpassen, maar de instructies zijn op om het even welk rapport van toepassing.
+In dit voorbeeld, zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpassen, maar de instructies zijn op om het even welk rapport van toepassing.
 
 1. Open uw app en klik op **[!UICONTROL Usage]** > **[!UICONTROL Users & Sessions]**.
 
@@ -36,9 +36,9 @@ In dit voorbeeld zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpas
 
    ![](assets/customize2.png)
 
-1. Klik onder **[!UICONTROL Users]** en klik **[!UICONTROL Add Filter]** op **[!UICONTROL Add Rule]**.
+1. Klik onder **[!UICONTROL Users]** op **[!UICONTROL Add Filter]** en klik op **[!UICONTROL Add Rule]**.
 
-1. Selecteer **[!UICONTROL Operating Systems]** en selecteer in de vervolgkeuzelijst de optie **[!UICONTROL iOS]**.
+1. Selecteer **[!UICONTROL Operating Systems]**, en van de drop-down lijst, en selecteer **[!UICONTROL iOS]**.
 
    ![](assets/customize3.png)
 
@@ -58,14 +58,14 @@ In dit voorbeeld zullen wij het **[!UICONTROL Users & Sessions]** rapport aanpas
    ![](assets/customize5.png)
 
    U kunt dit rapport verder aanpassen. Vanuit iOS 8.3 kunt u de metrische gegevens Eerste starten toevoegen met een versiefilter van het besturingssysteem iOS 8.3 om te zien hoeveel iOS 8.3-klanten hun apps hebben geüpgraded en een eerste keer hebben gestart.
-1. Klik onder **[!UICONTROL First Launches]**, klik **[!UICONTROL Add Filter]**, **[!UICONTROL Add Rule]** selecteer **[!UICONTROL Operating Systems]** van de drop-down lijst, en selecteer **[!UICONTROL iOS]**.
+1. Klik onder **[!UICONTROL First Launches]** op **[!UICONTROL Add Filter]**, klik op **[!UICONTROL Add Rule]**, selecteer **[!UICONTROL Operating Systems]** in de vervolgkeuzelijst en selecteer **[!UICONTROL iOS]**.
 1. Klik **[!UICONTROL And]**, selecteer **[!UICONTROL Operating System Versions]** van de drop-down lijst, en selecteer **[!UICONTROL iOS 8.3]**.
 
    De filters moeten er nu als volgt uitzien:
 
    ![](assets/customize6.png)
 
-1. Klik **[!UICONTROL Update]** en **[!UICONTROL Run]**.
+1. Klik op **[!UICONTROL Update]** en **[!UICONTROL Run]**.
 
    In dit rapport worden nu gebruikers met iOS 8.3 getoond die de app voor het eerst hebben gestart.
 
