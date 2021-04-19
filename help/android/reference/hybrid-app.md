@@ -4,18 +4,18 @@ seo-description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat be
 seo-title: Bezoeker bijhouden tussen een app en een mobiel web
 solution: Experience Cloud,Analytics
 title: Bezoeker bijhouden tussen een app en een mobiel web
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
+exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-
-# Bezoekerspatiëring tussen een app en het mobiele web {#visitor-tracking-between-an-app-and-mobile-web}
+# Bezoekerspatiëring tussen een toepassing en het mobiele web {#visitor-tracking-between-an-app-and-mobile-web}
 
 Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze van het ene naar het andere mobiele web gaan.
 
@@ -29,15 +29,15 @@ De Android-SDK genereert een unieke bezoeker-id wanneer een toepassing wordt ge�
 
 ## Bezoeker-id&#39;s op het mobiele web
 
-Voor mobiele webimplementaties wordt gebruikgemaakt van dezelfde standaard Analytics `s_code.js` of `AppMeasurement.js` die wordt gebruikt in desktopsites. De JavaScript-bibliotheken beschikken over eigen methoden voor het genereren van unieke bezoeker-id&#39;s, waardoor een andere bezoeker-id wordt gegenereerd wanneer u mobiele webinhoud opent vanuit uw app.
+Voor mobiele webimplementaties worden doorgaans dezelfde standaard Analytics `s_code.js` of `AppMeasurement.js` gebruikt als voor desktopsites. De JavaScript-bibliotheken beschikken over eigen methoden voor het genereren van unieke bezoeker-id&#39;s, waardoor een andere bezoeker-id wordt gegenereerd wanneer u mobiele webinhoud opent vanuit uw app.
 
-## Controleren van bezoekers tussen een app en het mobiele web implementeren {#section_1755BCCFD42D456EB2319141030FDDFF}
+## Het volgen van bezoekers tussen een toepassing en het mobiele Web {#section_1755BCCFD42D456EB2319141030FDDFF} uitvoeren
 
 Dezelfde bezoekers-id gebruiken in de app en op het mobiele web:
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
 1. Als u bezoekersinformatie wilt toevoegen aan de URL waarmee de webweergave wordt geopend, roept u `visitorAppendToURL`:
 
@@ -48,7 +48,7 @@ Dezelfde bezoekers-id gebruiken in de app en op het mobiele web:
    startActivity(browserIntent);
    ```
 
-   U kunt ook uw eigen URL aanroepen `Visitor.getUrlVariablesAsync` en genereren, te beginnen met SDK versie 4.16.0:
+   U kunt `Visitor.getUrlVariablesAsync` ook aanroepen en uw eigen URL genereren, te beginnen met SDK versie 4.16.0:
 
    ```java
    final String urlString = "https://www.mydomain.com/index.php"; 
@@ -64,11 +64,11 @@ Dezelfde bezoekers-id gebruiken in de app en op het mobiele web:
 
 De de dienstcode van identiteitskaart op het bestemmingsdomein haalt MID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De code gebruikt de doorgegeven MID om de bezoeker bij te houden.
 
-Controleer bij hits in de mobiele webinhoud of de `mid` parameter bij elke treffer aanwezig is en of deze waarde overeenkomt met de `mid` parameter die door de toepassingscode wordt verzonden.
+Bij hits van de mobiele webinhoud controleert u of de parameter `mid` bij elke treffer aanwezig is en of deze waarde overeenkomt met de parameter `mid` die door de toepassingscode wordt verzonden.
 
-## Problemen met het bijhouden van bezoekers oplossen {#section_9B641F8569E34A089C52AA28EA4C891D}
+## Bezig met opsporen van problemen bij bezoekers {#section_9B641F8569E34A089C52AA28EA4C891D}
 
-### Ik zie het niet `Visitor.appendToURL`.
+### Ik zie `Visitor.appendToURL` niet.
 
 Controleer of de Adobe-SDK die in de bovenliggende toepassing is gebundeld, versie 4.12.0 of hoger is.
 
@@ -77,21 +77,20 @@ Controleer of de Adobe-SDK die in de bovenliggende toepassing is gebundeld, vers
 * Controleer het volgende:
    * De URL-tekenreeks waarmee de webweergave wordt geopend, is gegenereerd door `Visitor.appendToURL(urlString)`.
    * De Adobe-id&#39;s worden gecodeerd.
-Controleer of de `adobe_mc` queryparameter in de URL wordt weergegeven om ervoor te zorgen dat de id&#39;s die aan de URL worden toegevoegd, ook daadwerkelijk worden weergegeven.
+Om ervoor te zorgen dat IDs die aan URL worden toegevoegd die wordt geopend, verifieer dat de `adobe_mc` vraagparameter in URL verschijnt.
 
 ### Mijn `mid` is in mijn app niet identiek aan mijn webweergave.
 
 * Controleer het volgende:
 
-   * De URL-tekenreeks waarmee de webweergave wordt geopend, is gegenereerd door `Visitor.appendToURL(urlString)`.
+   * De URL-tekenreeks die wordt gebruikt om de webweergave te openen, is gegenereerd door `Visitor.appendToURL(urlString)`.
    * De URL-tekenreeks bevat Adobe-parameters.
 
-      De tekenreeks moet bevatten `adobe_mc="SAMPLE_ID_DATA"` waar `"SAMPLE_ID_DATA"` de id&#39;s staan die worden gegenereerd in de Adobe Mobile SDK.
-   * Het `VisitorAPI.js` is versie 1.7.0 of hoger.
+      De tekenreeks moet `adobe_mc="SAMPLE_ID_DATA"` bevatten waarin `"SAMPLE_ID_DATA"` de id&#39;s bevat die worden gegenereerd in de SDK van Adobe Mobile.
+   * De `VisitorAPI.js` is versie 1.7.0 of hoger.
 
 Neem contact op met de Adobe Experience Care als deze stappen voor het oplossen van problemen uw problemen niet oplossen.
 
 >[!IMPORTANT]
 >
 >Als Adobe de implementatie kan valideren, moet u een voorbeeldtoepassing en de bijbehorende site delen.
-
