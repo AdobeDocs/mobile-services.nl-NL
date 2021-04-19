@@ -1,24 +1,24 @@
 ---
 description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
-keywords: mobile
+keywords: mobiel
 seo-description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
 seo-title: Overzicht (locatie)
 solution: Experience Cloud,Analytics
 title: Overzicht (locatie)
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
+exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-
 # Overzicht (locatie){#overview-location}
 
-Met het **[!UICONTROL Location Overview]** rapport kunt u de verschillende landen, regio&#39;s en belangengebieden (POI) zien waarin uw app wordt gebruikt.
+Met het **[!UICONTROL Location Overview]**-rapport kunt u de verschillende landen, regio&#39;s en belangengroepen (POI) zien waarin uw app wordt gebruikt.
 
 Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt maken in de Experience Cloud.
 
@@ -30,21 +30,21 @@ Deze visualisatie verstrekt, bijvoorbeeld, het basisrapport met onderverdelingen
 
 >[!TIP]
 >
->Naast deze informatie, kunt u een in-product leerprogramma bekijken dat beschrijft hoe te met de zonneburstgrafiek in wisselwerking te staan. Als u de zelfstudie wilt starten, klikt u op **[!UICONTROL Location Breakdown]** de titelbalk van het rapport en klikt u op het **[!UICONTROL i]** pictogram.
+>Naast deze informatie, kunt u een in-product leerprogramma bekijken dat beschrijft hoe te met de zonneburstgrafiek in wisselwerking te staan. Als u de zelfstudie wilt starten, klikt u op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klikt u op het pictogram **[!UICONTROL i]**.
 
 ![](assets/location.png)
 
-Deze zonneburstgrafiek is interactief. U kunt de tijdsperiode wijzigen door op het **[!UICONTROL Calendar]** pictogram in de rechterbovenhoek te klikken. Plaats de muis boven een willekeurig deel van het diagram om meer informatie weer te geven. In de volgende afbeelding ziet u bijvoorbeeld het totale aantal en het percentage gebruikers dat uw app in de Verenigde Staten gebruikt.
+Deze zonneburstgrafiek is interactief. U kunt de tijdsperiode wijzigen door in de rechterbovenhoek op het pictogram **[!UICONTROL Calendar]** te klikken. Plaats de muis boven een willekeurig deel van het diagram om meer informatie weer te geven. In de volgende afbeelding ziet u bijvoorbeeld het totale aantal en het percentage gebruikers dat uw app in de Verenigde Staten gebruikt.
 
 ![](assets/location_mouse.png)
 
-In deze afbeelding kunt u met de **[!UICONTROL Categories]** knoppen in de rechterbovenhoek schakelen tussen het weergeven van informatie over de tien bovenste landen, regio&#39;s en de drie bovenste landen **[!UICONTROL Points of Interest]**.
+In deze afbeelding kunt u met de **[!UICONTROL Categories]**-knoppen in de rechterbovenhoek schakelen tussen het weergeven van informatie over de tien bovenste landen, gebieden en de drie bovenste landen **[!UICONTROL Points of Interest]**.
 
-Hier is de visualisatie wanneer u selecteert **[!UICONTROL Country]**:
+Hier is de visualisatie wanneer u **[!UICONTROL Country]** selecteert:
 
 ![](assets/location_countries.png)
 
-Hier is de visualisatie wanneer u selecteert **[!UICONTROL Points of Interest]**:
+Hier is de visualisatie wanneer u **[!UICONTROL Points of Interest]** selecteert:
 
 ![](assets/location_poi.png)
 
@@ -56,7 +56,7 @@ U kunt secundaire metrisch op de rechterkant klikken om het aan visualisatie toe
 
 ![](assets/location_secondary.png)
 
-## Uitsplitsingen en metriek toevoegen {#section_15833511E82648869E7B1EFC24EF7B82}
+## Uitsplitsingen en cijfers toevoegen {#section_15833511E82648869E7B1EFC24EF7B82}
 
 U kunt onderverdelingen en secundaire metriek toevoegen, die de hoogte van elk publiek met betrekking tot het andere publiek in de grafiek veranderen.
 
@@ -64,15 +64,15 @@ U kunt onderverdelingen en secundaire metriek toevoegen, die de hoogte van elk p
 >
 >Hoe meer ringen u toevoegt aan de zonneexplosie, des te langer duurt het om te verwerken.
 
-Als u uitsplitsingen en secundaire metriek wilt toevoegen, klikt u **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klikt u **[!UICONTROL Customize]** om de rechtertrack te openen.
+Als u uitsplitsingen en secundaire metriek wilt toevoegen, klikt u op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klikt u op **[!UICONTROL Customize]** om het rechterspoor te openen.
 
 ![](assets/location_rail.png)
 
-Wanneer u klikt **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]**, wordt een nieuw punt getoond met de zelfde naam zoals het vorige punt in de respectieve lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
+Wanneer u **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]** klikt, toont een nieuw punt met de zelfde naam zoals het vorige punt in de respectieve lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
 
-## Een plakfilter maken {#section_365999D49FC744ECBF9273132497E06C}
+## Een kleverig filter maken {#section_365999D49FC744ECBF9273132497E06C}
 
-Klik op een segment in de ring om het publiek te selecteren waarvoor u een plakfilter wilt maken en klik **[!UICONTROL Sticky Filter]**. Met dit plakfilter kunt u de huidige filters toepassen en een nieuw rapport uitvoeren op basis van de filters.
+Klik op een segment in de ring om het publiek te selecteren waarvoor u een plakfilter wilt maken en klik op **[!UICONTROL Sticky Filter]**. Met dit plakfilter kunt u de huidige filters toepassen en een nieuw rapport uitvoeren op basis van de filters.
 
 ## Rapporten delen {#section_F8AF2AA73D4C4C008976D45847F82D0B}
 
