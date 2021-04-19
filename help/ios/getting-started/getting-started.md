@@ -4,16 +4,16 @@ seo-description: 'De volgende informatie helpt u aan de slag te gaan met de iOS 
 seo-title: Aan de slag - overzicht
 solution: Experience Cloud,Analytics
 title: Aan de slag - overzicht
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
+exl-id: bf1c059d-3ca7-4d77-8acb-597350c03433
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 1%
 
 ---
-
 
 # Aan de slag - overzicht {#getting-started}
 
@@ -21,7 +21,7 @@ De volgende informatie helpt u aan de slag te gaan met de iOS SDK voor Experienc
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
