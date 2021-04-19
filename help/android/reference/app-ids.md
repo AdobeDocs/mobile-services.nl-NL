@@ -4,16 +4,16 @@ seo-description: In de volgende tabel worden de verschillende toepassings-id's b
 seo-title: Toepassings-id's
 solution: Experience Cloud,Analytics
 title: Toepassings-id's
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
+exl-id: 28358dd6-50dd-4ba9-9fb0-5271eae69d28
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Toepassings-id&#39;s{#app-ids}
 
