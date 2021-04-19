@@ -4,22 +4,22 @@ seo-description: Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichte
 seo-title: Push Messaging
 solution: Experience Cloud,Analytics
 title: Push Messaging
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
+exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 8%
 
 ---
 
-
 # Push messaging {#push-messaging}
 
 Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers melden die uw app hebben geopend nadat u via een pushbericht hebt geklikt.
 
-Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
+Als u pushberichten wilt gebruiken, hebt u **must** SDK versie 4.6 of hoger.
 
 >[!IMPORTANT]
 >
@@ -27,15 +27,15 @@ Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
 >
 >Het verplaatsen van uw app naar een nieuwe rapportsuite wordt niet ondersteund. Als u naar een nieuwe rapportreeks migreert, kan uw dupconfiguratie breken, en de berichten zouden niet kunnen worden verzonden.
 
-## Pushberichten inschakelen {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## Enable push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
 >[!TIP]
 >
 >Als uw app al is ingesteld voor het gebruik van berichten via Firebase Cloud Messaging (FCM), kunnen enkele van de volgende stappen al zijn voltooid.
 
-1. Controleer of het `ADBMobileConfig.json` bestand de vereiste instellingen voor pushberichten bevat.
+1. Controleer of het `ADBMobileConfig.json`-bestand de vereiste instellingen voor pushberichten bevat.
 
-   Voor het `"marketingCloud"` object moet de `"org"` eigenschap zijn geconfigureerd voor pushberichten.
+   Voor het `"marketingCloud"`-object moet de `"org"`-eigenschap zijn geconfigureerd voor pushberichten.
 
    ```js
    "marketingCloud": { 
@@ -51,7 +51,7 @@ Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
 
-1. De registratie-id/token moet aan de SDK worden doorgegeven met behulp van de `Config.setPushIdentifier(final String registrationId)` methode.
+1. De registratie-id/token moet worden doorgegeven aan de SDK met behulp van de methode `Config.setPushIdentifier(final String registrationId)`.
 
    ```js
    Config.setPushIdentifier(token); // token was obtained in step 2
@@ -61,7 +61,7 @@ Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
 
    Hier zijn de vereisten om duw klik-door rapportering toe te laten:
 
-   * In uw implementatie van `FireBaseMessageService`, moet het voorwerp van de Bundel dat de berichtgegevens bevat, die in de `onMessageReceived` methode met het voorwerp RemoteMessage wordt overgegaan, aan de Intentie worden toegevoegd die wordt gebruikt om de doelactiviteit op klikthrough te openen. Dit kan met de `putExtras` methode worden gedaan. Zie [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))voor meer informatie.
+   * In uw implementatie van `FireBaseMessageService`, moet het voorwerp van de Bundel dat de berichtgegevens bevat, die in de `onMessageReceived` methode met het voorwerp RemoteMessage wordt overgegaan, aan de Intentie worden toegevoegd die wordt gebruikt om de doelactiviteit op klikthrough te openen. Dit kan worden gedaan gebruikend de `putExtras` methode. Zie [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle)) voor meer informatie.
 
    ```java
    Intent intent = new Intent(this, MainActivity.class);
@@ -76,7 +76,4 @@ Als u pushberichten wilt gebruiken, **moet** u SDK versie 4.6 of hoger hebben.
 
       * Gebruik `Config.collectLifecycleData(this)` of `Config.collectLifecycleData(this, contextData)`.
 
-      * Niet **gebruiken** `Config.collectLifecycleData()`.
-
-
-
+      * Gebruik **not** `Config.collectLifecycleData()`.
