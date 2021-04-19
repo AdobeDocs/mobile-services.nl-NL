@@ -4,16 +4,16 @@ seo-description: Deze informatie helpt u begrijpen hoe de neerstortingen worden 
 seo-title: App vastlopen bijhouden
 solution: Experience Cloud,Analytics
 title: App vastlopen bijhouden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
+exl-id: d8d59b4e-0231-446d-9ba1-8a9809be9c61
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
 
 ---
-
 
 # Toepassingscrashes bijhouden {#track-app-crashes}
 
@@ -21,19 +21,19 @@ Deze informatie helpt u begrijpen hoe de neerstortingen worden gevolgd en de bes
 
 >[!TIP]
 >
->App-crashes worden bijgehouden als onderdeel van levenscyclusmetriek. Voordat u vastloopt, voegt u de bibliotheek toe aan uw project en implementeert u de levenscyclus. Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+>App-crashes worden bijgehouden als onderdeel van levenscyclusmetriek. Voordat u vastloopt, voegt u de bibliotheek toe aan uw project en implementeert u de levenscyclus. Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
-Wanneer de metriek van de levenscyclus wordt uitgevoerd, wordt een vraag gemaakt aan `Config.collectLifecycleData` in de `OnResume` methode van elke activiteit. In de `onPause` methode, wordt een vraag gemaakt aan `Config.pauseCollectingLifeCycleData`.
+Wanneer levenscyclusmetriek worden uitgevoerd, wordt een vraag aan `Config.collectLifecycleData` in de `OnResume` methode van elke activiteit gemaakt. In de `onPause` methode, wordt een vraag gemaakt aan `Config.pauseCollectingLifeCycleData`.
 
-In de `pauseCollectingLifeCycleData`sectie wordt een markering ingesteld om een vreedzame uitgang aan te geven. Wanneer de app opnieuw wordt gestart of hervat, `collectLifecycleData` wordt deze markering gecontroleerd. Als de app niet correct is afgesloten, zoals bepaald door de vlagstatus, worden `a.CrashEvent` contextgegevens verzonden bij de volgende oproep en wordt een crash-gebeurtenis gerapporteerd.
+In `pauseCollectingLifeCycleData`, wordt een vlag geplaatst om op een graceful uitgang te wijzen. Wanneer de app opnieuw wordt gestart of hervat, controleert `collectLifecycleData` deze markering. Als de app niet correct is afgesloten, zoals bepaald door de vlagstatus, worden er een `a.CrashEvent` contextgegevens verzonden met de volgende aanroep en wordt een crash-gebeurtenis gerapporteerd.
 
-Om nauwkeurige neerstorting rapportering te verzekeren, moet u `pauseCollectingLifeCycleData` `onPause` de methode van elke activiteit roepen. Om te begrijpen waarom dit van essentieel belang is, is hier een voorbeeld van de levenscyclus van de Android-activiteit:
+Om nauwkeurige neerstortreportage te verzekeren, moet u `pauseCollectingLifeCycleData` in `onPause` methode van elke activiteit roepen. Om te begrijpen waarom dit van essentieel belang is, is hier een voorbeeld van de levenscyclus van de Android-activiteit:
 
 ![](assets/android-lifecycle.png)
 
-Zie [Activiteiten](https://developer.android.com/guide/components/activities.html)voor meer informatie over de levenscyclus van de Android-activiteit.
+Zie [Activiteiten](https://developer.android.com/guide/components/activities.html) voor meer informatie over de levenscyclus van de Android-activiteit.
 
-*Deze Android-levenscyclusillustratie is gemaakt en [gedeeld door het Android Open Source Project](https://source.android.com/) en wordt gebruikt volgens de voorwaarden in de [Creative Commons 2.5-kenmerklicentie](https://creativecommons.org/licenses/by/2.5/).*
+*Deze Android-levenscyclusillustratie is gemaakt en  [gedeeld door de Open Source ](https://source.android.com/) Projectand van Android en wordt gebruikt volgens de voorwaarden in de  [Creative Commons 2.5-kenmerklicentie](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Wat kan ertoe leiden dat een fout wordt gemeld?
 
@@ -43,7 +43,7 @@ Zie [Activiteiten](https://developer.android.com/guide/components/activities.htm
    >
    >U kunt voorkomen dat de toepassing vastloopt door de toepassing te onderbreken voordat u de toepassing opnieuw start vanaf de IDE.
 
-1. Als de laatste voorgrondactiviteit van uw app achtergronds is en niet `Config.pauseCollectingLifecycleData();` binnen roept `onPause`, en uw app manueel gesloten of gedood door OS is, resulteert de volgende lancering in een botsing.
+1. Als de laatste voorgrondactiviteit van uw app achtergronds is en `Config.pauseCollectingLifecycleData();` niet aanroept in `onPause` en uw app handmatig wordt afgesloten of gedood door het besturingssysteem, resulteert de volgende keer dat de app wordt gestart in een crash.
 
 ## Hoe moeten Fragments worden behandeld?
 
@@ -55,9 +55,9 @@ Fragmenten hebben toepassingslevenscyclusgebeurtenissen die vergelijkbaar zijn m
 
 ## (Optioneel) Activiteitenlevenscycluscallbacks implementeren
 
-Vanaf API Level 14 staat Android wereldwijde callbacks voor activiteiten toe. Zie [Toepassing](https://developer.android.com/reference/android/app/Application)voor meer informatie.
+Vanaf API Level 14 staat Android wereldwijde callbacks voor activiteiten toe. Zie [Toepassing](https://developer.android.com/reference/android/app/Application) voor meer informatie.
 
-U kunt deze callbacks gebruiken om ervoor te zorgen dat al uw Activiteiten correct roepen `collectLifecycleData()` en `pauseCollectingLifecycleData()`. U hoeft deze code alleen toe te voegen aan uw hoofdactiviteit en aan elke andere activiteit waarin uw app kan worden gestart:
+U kunt deze callbacks gebruiken om ervoor te zorgen dat al uw Activiteiten `collectLifecycleData()` en `pauseCollectingLifecycleData()` correct roepen. U hoeft deze code alleen toe te voegen aan uw hoofdactiviteit en aan elke andere activiteit waarin uw app kan worden gestart:
 
 ```js
 import com.adobe.mobile.Config; 
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 }
 ```
 
-Om extra contextgegevens met uw levenscyclusvraag te verzenden door te gebruiken `Config.collectLifecycleData(Activity activity`, `Map<String`, `Object> contextData)`, moet u de `onResume` methode voor die Activiteit met voeten treden en ervoor zorgen dat u `super.onResume()` na manueel het roepen `collectLifecycleData`roept.
+Als u aanvullende contextgegevens wilt verzenden met uw levenscyclusaanroep met `Config.collectLifecycleData(Activity activity`, `Map<String` of `Object> contextData)`, moet u de methode `onResume` voor die activiteit negeren en ervoor zorgen dat u `super.onResume()` aanroept nadat u `collectLifecycleData` handmatig hebt aangeroepen.
 
 ```js
 @Override 
@@ -111,4 +111,3 @@ protected void onResume() {
     super.onResume(); 
 }
 ```
-
