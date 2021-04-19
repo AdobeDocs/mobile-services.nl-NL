@@ -4,22 +4,22 @@ seo-description: De productvariabele kan niet worden ingesteld door verwerkingsr
 seo-title: Productvariabele
 solution: Experience Cloud,Analytics
 title: Productvariabele
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
+exl-id: c945add4-5358-44f6-b445-554b0df056c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 1%
 
 ---
 
-
-# Variabele voor producten {#products-variable}
+# Variabele {#products-variable}
 
 De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In de iOS 4.x SDK moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten rechtstreeks in te stellen op de serveraanroep.
 
-Als u de *`products`* variabele wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"`en stelt u de waarde in met de syntaxis die voor de *`products`* variabele is gedefinieerd:
+Als u de variabele *`products`* wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"` en stelt u de waarde in met de syntaxis die is gedefinieerd voor de variabele *`products`*:
 
 ```objective-c
 [contextData setObject:@"Category;Product;Quantity;Price[,Category;Product;Quantity;Price]" forKey:@"&&products"];
@@ -48,4 +48,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ![](assets/map-products.png)
 
-U hoeft de *`products`* variabele niet aan de hand van verwerkingsregels toe te wijzen, omdat deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
+U hoeft de variabele *`products`* niet toe te wijzen met behulp van verwerkingsregels, omdat deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
