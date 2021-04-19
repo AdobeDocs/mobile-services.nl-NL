@@ -1,26 +1,26 @@
 ---
 description: Met de iOS PhoneGap-plug-inmethoden kunt u een groot aantal taken uitvoeren.
-keywords: phonegap
+keywords: fonegap
 seo-description: Met de iOS PhoneGap-plug-inmethoden kunt u een groot aantal taken uitvoeren.
 seo-title: Methoden van PhoneGap-plug-in
 solution: Experience Cloud,Analytics
 title: Methoden van PhoneGap-plug-in
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
+exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1731'
 ht-degree: 33%
 
 ---
-
 
 # Methoden van PhoneGap-plug-in {#phonegap-plug-in-methods}
 
 U kunt de iOS PhoneGap-plug-inmethoden gebruiken om een groot aantal taken uit te voeren.
 
-Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√´ring wilt gebruiken:
+Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de tag `<head>`:
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
@@ -34,8 +34,8 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
    * `ADB.optedIn`, waarbij treffers direct worden verzonden.
    * `ADB.optedOut`, waar treffers worden genegeerd.
-   * `ADB.optUnknown`Als de rapportsuite **is** ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in een aanmeldingsprocedure (hits worden verzonden) of een opt-out (hits worden genegeerd). Als de rapportsuite niet **met tijdstempels** is ingeschakeld, worden treffers verwijderd totdat de privacystatus is gewijzigd en u zich aanmeldt.\
-      De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
+   * `ADB.optUnknown`Als uw rapportsuite  **** is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden verwijderd). Als uw rapportsuite **niet** tijdstempel-ingeschakeld is, worden treffers verwijderd totdat de privacystatus verandert in aanmelden.\
+      De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
 
       * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -45,12 +45,12 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **setPrivacyStatus**
 
-   Hiermee stelt u de privacystatus voor de huidige gebruiker in `status`. U kunt een van de volgende statussen instellen:
+   Stelt de privacystatus voor de huidige gebruiker in op `status`. U kunt een van de volgende statussen instellen:
    * `ADB.optedIn`, waarbij treffers direct worden verzonden.
    * `ADB.optedOut`, waar treffers worden genegeerd.
-   * `ADB.optUnknown` - Als de rapportsuite **is** ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in een aanmeldingsprocedure (hits worden verzonden) of een opt-out (hits worden genegeerd).
+   * `ADB.optUnknown` - Als de  **** optie voor tijdstempels in uw rapportsuite is ingeschakeld, worden treffers opgeslagen totdat de privacystatus verandert in een aanmeldingsnaam (treffers worden verzonden) of de optie om te weigeren (treffers worden verwijderd).
 
-      Als de rapportsuite niet **met tijdstempels** is ingeschakeld, worden treffers verwijderd totdat de privacystatus is gewijzigd en u zich aanmeldt.
+      Als uw rapportsuite **niet** tijdstempel-ingeschakeld is, worden treffers verwijderd totdat de privacystatus verandert in aanmelden.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -70,7 +70,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **setDebugLogging**
 
-   Schakelt de weergave van foutopsporingsinformatie in (`true`) of uit (`false`). Deze variabele is standaard `false`.
+   Schakelt (`true`) in of schakelt (`false`) het bekijken zuivert informatie uit. Deze variabele is standaard `false`.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -104,7 +104,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **getUserIdentifier**
 
-   Retourneert de aangepaste gebruikers-id als er een aangepaste id is ingesteld en retourneert `null` als er geen aangepaste id is ingesteld. De standaardwaarde is `null`.
+   Retourneert de aangepaste gebruikers-id als een aangepaste id is ingesteld en retourneert `null` als er geen aangepaste id is ingesteld. De standaardwaarde is `null`.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -114,7 +114,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **setUserIdentifier**
 
-   Hiermee stelt u de gebruikers-id in op `identifier`.
+   Hiermee stelt u de gebruikersnaam in op `identifier`.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -144,7 +144,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
    >[!IMPORTANT]
    >
-   >Door een aanroep `keepLifecycleSessionAlive` wordt voorkomen dat uw app een nieuwe sessie start wanneer deze opnieuw op de achtergrond wordt uitgevoerd. Gebruik deze methode alleen als uw app zich registreert voor meldingen op de achtergrond.
+   >Door `keepLifecycleSessionAlive` aan te roepen, voorkomt u dat uw app een nieuwe sessie start wanneer deze de volgende keer vanaf de achtergrond wordt hervat. Gebruik deze methode alleen als uw app zich registreert voor meldingen op de achtergrond.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -202,7 +202,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **collectionLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/ios/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Metriek van levenscyclus](/help/ios/metrics.md) voor meer informatie.
 
    * Hier volgt het codevoorbeeld voor deze methode:
 
@@ -229,7 +229,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
       ADB.collectPII({'k1':'v1','k2':'v2','k3':'v3'}, function (value) { alert('success'); },function (value) { alert('fail'); });
       ```
 
-## Traceringsmethoden {#section_7946BB753A4446FE8A3ED728AEF97D04}
+## Methoden {#section_7946BB753A4446FE8A3ED728AEF97D04} bijhouden
 
 * **trackAdobeDeepLink**
 
@@ -285,7 +285,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan. cData is een JSON-object met sleutel-waardeparen die in contextgegevens moeten worden verzonden.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart` enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op. cData is een JSON-object met sleutel-waardeparen die in contextgegevens moeten worden verzonden.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -305,7 +305,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackAction**
 
-   Tracks an action in your app. Handelingen zijn de dingen die in uw app gebeuren en die u wilt meten, opnemen `logins`, `banner taps``feed subscriptions` en andere meetgegevens.
+   Tracks an action in your app. Handelingen zijn de dingen die in uw app voorkomen en die u wilt meten, zoals `logins`, `banner taps`, `feed subscriptions` en andere metriek.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -345,7 +345,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackLocation**
 
-   Verzendt de huidige x- en y-co√∂rdinaten. Gebruikt ook de aandachtspunten die in het `ADBMobileConfig.json` dossier werden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POIs is. Als de huidige co√∂rdinaten zich binnen bepaalde POI bevinden, wordt een variabele van contextgegevens bevolkt en verzonden met de `trackLocation` vraag.
+   Verzendt de huidige x- en y-co√∂rdinaten. Gebruikt ook de aandachtspunten die in het `ADBMobileConfig.json` dossier werden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POIs is. Als de huidige co√∂rdinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -361,7 +361,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackLifetime &#x200B; ValueIncrease**
 
-   Hiermee voegt u `amount` de levensduurwaarde van de gebruiker toe.
+   Voegt `amount` aan de levenwaarde van de gebruiker toe.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -377,7 +377,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackTimed &#x200B; ActionStart**
 
-   Start een getimede actie met naam `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
+   Start een getimede actie met de naam `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
    >[!TIP]
    >
@@ -397,7 +397,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Geef aan `cData` om de contextgegevens bij te werken die aan de opgegeven gegevens zijn gekoppeld `action`. De `cData` doorgegeven code wordt toegevoegd aan de bestaande gegevens voor de opgegeven actie en overschrijft de gegevens als dezelfde sleutel al is gedefinieerd voor `action`.
+   Geef `cData` door om de contextgegevens bij te werken die aan gegeven `action` worden geassocieerd. De `cData` die wordt doorgegeven, wordt toegevoegd aan de bestaande gegevens voor de opgegeven handeling en overschrijft de gegevens als dezelfde sleutel al is gedefinieerd voor `action`.
 
    >[!TIP]
    >
@@ -440,7 +440,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **targetLoadRequest**
 
-   Verzendt verzoek naar uw gevormde `Target` server en keert de koordwaarde van de aanbieding terug.
+   Verzendt verzoek naar uw geconfigureerde `Target`-server en retourneert de tekenreekswaarde van de aanbieding.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -529,7 +529,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **targetSessionID**
 
-   Hiermee wordt de waarde opgehaald van het `SessionID` cookie dat door de doelserver voor deze bezoeker wordt geretourneerd.
+   Hiermee wordt de waarde opgehaald van het cookie `SessionID` dat door de doelserver voor deze bezoeker is geretourneerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -545,7 +545,7 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
 
 * **targetPcID**
 
-   Hiermee wordt de waarde opgehaald van het `PcID` cookie dat door de doelserver voor deze bezoeker wordt geretourneerd.
+   Hiermee wordt de waarde opgehaald van het cookie `PcID` dat door de doelserver voor deze bezoeker is geretourneerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -610,9 +610,9 @@ Voeg het volgende toe aan de `html` `<head>` tag in bestanden waar u tekstspati√
       ```
 
 
-## Reclameaanduiding {#section_194607D101B047A19C51B19E176E1500}
+## Reclame-id {#section_194607D101B047A19C51B19E176E1500}
 
-In `AppDelegate` door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisingIdentifier:]` in de `application:didFinishLaunchingWithOptions:` afgevaardigde methode die. Voor meer informatie, zie de Methoden [van de](/help/ios/configuration/sdk-methods.md)Configuratie.
+In `AppDelegate` die door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisingIdentifier:]` in `application:didFinishLaunchingWithOptions:` afgevaardigde methode. Zie [Configuratiemethoden](/help/ios/configuration/sdk-methods.md) voor meer informatie.
 
 ## Methoden van Audience Manager {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
@@ -802,7 +802,7 @@ In `AppDelegate` door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisin
 
 * **bezoekerGetIDs**
 
-   Retourneert alle `visitorIDs` gesynchroniseerde gegevens.
+   Retourneert alle `visitorIDs` die zijn gesynchroniseerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -815,4 +815,3 @@ In `AppDelegate` door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisin
       ```java
       ADB.visitorGetIDs(function(value){alert(value);},function(value){alert('fail');}); 
       ```
-
