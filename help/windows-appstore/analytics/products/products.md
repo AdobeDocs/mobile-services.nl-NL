@@ -4,22 +4,22 @@ seo-description: De productvariabele kan niet worden ingesteld met verwerkingsre
 seo-title: Variabele voor producten
 solution: Experience Cloud,Analytics
 title: Variabele voor producten
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
+exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 1%
 
 ---
 
-
-# Variabele voor producten{#products-variable}
+# Productvariabele{#products-variable}
 
 De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
 
-Als u de *`products`* variabele wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"`, en stelt u de waarde in met de syntaxis die voor de variabele is gedefinieerd *`products`*:
+Als u de variabele *`products`* wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"` en stelt u de waarde in met de syntaxis die is gedefinieerd voor *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -49,4 +49,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-U hoeft de *`products`* variabele niet aan de hand van verwerkingsregels toe te wijzen, omdat deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
+U hoeft de *`products`*-variabele niet aan de hand van verwerkingsregels toe te wijzen, aangezien deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
