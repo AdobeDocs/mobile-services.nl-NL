@@ -4,28 +4,28 @@ seo-description: Met deze informatie kunt u het configuratiebestand ADBMobile.js
 seo-title: ADBMobile JSON config
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON config
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
+exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 8%
 
 ---
 
-
 # ADBMobile JSON config {#adbmobile-json-config}
 
 Deze informatie helpt u het `ADBMobile.json` configuratiedossier gebruiken.
 
-## Referentie van ADBMobileConfig.json-configuratiebestand {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Referentie ADBMobileConfig.json-configuratiebestand {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worden gebruikt:
 
 >[!TIP]
 >
->Op **iOS** kan het `ADBMobileConfig.json` bestand overal worden geplaatst waar het in uw bundel toegankelijk is.
+>Op **iOS** kan het `ADBMobileConfig.json`-bestand worden geplaatst op een willekeurige locatie die toegankelijk is in de bundel.
 
 * **verwerving**
 
@@ -39,7 +39,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **analyticsForwardingEnabled**
 
-   De eigenschap in het `audienceManager` object. Als `Audience Manager` wordt gevormd en `analyticsForwardingEnabled` wordt geplaatst aan `true`, door:sturen al verkeer Analytics ook aan Audience Manager. De standaardwaarde is `false`.
+   De eigenschap in het object `audienceManager`. Als `Audience Manager` wordt gevormd en `analyticsForwardingEnabled` wordt geplaatst aan `true`, door:sturen al verkeer Analytics ook aan Audience Manager. De standaardwaarde is `false`.
 
    * Minimale SDK-versie: 4.8.0
 
@@ -49,11 +49,11 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    Sessieinfo-hits bestaan momenteel uit crashes en sessielengte en kunnen worden in- of uitgeschakeld.
 
-   * Als u de waarde instelt op `false`, worden de treffers **uitgeschakeld**.
+   * Als u de waarde instelt op `false`, zijn de treffers **disabled**.
 
       De SDK keert terug naar zijn gedrag van vóór 4.1 van het samenvatten van de zittingsinformatie voor de vorige zitting met de eerste slag van de verdere zitting. De Adobe SDK voegt de sessiegegevens ook toe aan de huidige levenscyclus, waardoor het maken van een opgepompt bezoek wordt voorkomen. Omdat er geen opgeblazen bezoeken meer ontstaan, neemt het aantal bezoeken onmiddellijk af.
 
-   * Als u geen waarde opgeeft, wordt de standaardwaarde gebruikt `true`en worden treffers **ingeschakeld**.
+   * Als u geen waarde opgeeft, is de standaardwaarde `true` en worden treffers **enabled**.
 
       Wanneer de treffers worden toegelaten, backdates de Adobe SDK de zittingsinfo aan 1 seconde na de definitieve slag in de vorige zitting. Dit betekent dat de neerstorting en zittingsgegevens met de correcte datum zullen correleren waarop zij voorkwamen. Eén bijwerking is dat de SDK een bezoek kan maken voor een melding met terugwerkende kracht. Bij elke nieuwe start van de toepassing wordt een hit hersteld.
 
@@ -65,15 +65,15 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **batchLimit**
 
-   Drempel voor het aantal treffers dat in opeenvolgende vraag moet worden verzonden. Als de waarde bijvoorbeeld op 10 `batchLimit` is ingesteld, wordt elke hit vóór de tiende hit opgeslagen in de wachtrij. Zodra de 10e hit binnenkomt, worden alle 10 treffers achtereenvolgens verzonden.
+   Drempel voor het aantal treffers dat in opeenvolgende vraag moet worden verzonden. Als `batchLimit` bijvoorbeeld is ingesteld op 10, wordt elke hit vóór de tiende hit opgeslagen in de wachtrij. Zodra de 10e hit binnenkomt, worden alle 10 treffers achtereenvolgens verzonden.
 
    * De standaardwaarde is `0`, wat betekent dat batchverwerking niet is ingeschakeld.
-   * Vereist `offlineEnabled = true`.
+   * `offlineEnabled = true` vereist.
    * Minimale SDK-versie: 4.1
 
 * **charset**
 
-   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
+   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html) voor meer informatie.
 
    * Minimale SDK-versie: 4.0
 
@@ -89,25 +89,25 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **coopUnsafe**
 
-   Voor leden van Coop van het Apparaat die deze waarde aan vereisen wordt geplaatst `true`, moet u met het team van Coop samenwerken om een vlag van de lijst van afgewezen personen op uw rekening van de Co-op van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+   Voor leden van Coop van het Apparaat die deze waarde vereisen worden geplaatst aan `true`, moet u met het team van Coop werken om een vlag van de lijst van gewezen personen op uw rekening van de Co-op van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
    De volgende informatie onthouden:
 
-   * Wanneer `coopUnsafe` deze optie is ingesteld op `true`, `coop_unsafe=1` worden deze altijd toegevoegd aan treffers voor Audience Manager- en bezoekersidentiteitskaart.
-   * Als u het door:sturen van de server-kant van de Analyse aan Audience Manager toelaat, zult u ook `coop_unsafe=1` op de treffers van Analytics zien.
+   * Als `coopUnsafe` is ingesteld op `true`, wordt `coop_unsafe=1` altijd toegevoegd aan Audience Manager- en bezoekersidentiteitscontroles.
+   * Als u het door:sturen van de server-kant van Analytics aan Audience Manager toelaat, zult u `coop_unsafe=1` op de treffers van Analytics ook zien.
 
    Hieronder vindt u aanvullende informatie:
 
    * Minimale SDK-versie: 4.16.1
-   * De Booleaanse eigenschap van het `marketingCloud` object dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld in de Mac OS-Op van het Experience Cloud.
+   * De eigenschap Boolean van het object `marketingCloud` dat, wanneer ingesteld op `true`, ervoor zorgt dat het apparaat wordt uitgeschakeld in Apparaat Co-Op.
    * De standaardwaarde is `false`.
-   * Deze instelling wordt **alleen** gebruikt voor klanten die via Device Co-op zijn ingericht.
+   * Deze instelling wordt alleen gebruikt **alleen** voor klanten met apparaatco-op-provisioning.
 
 
 
 * **environmentId**
 
-   De id van de omgeving die u wilt gebruiken. U kunt een geldige id (`environmentId=8`) opgeven en als deze `environmentId` niet is opgenomen, wordt de standaardproductieomgeving gebruikt.
+   De id van de omgeving die u wilt gebruiken. U kunt een geldige id (`environmentId=8`) specificeren, en als `environmentId` niet inbegrepen is, wordt de standaardmilieu van de Productie gebruikt.
 
    * Minimale SDK-versie: 4.14
 
@@ -121,7 +121,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **berichten**
 
-   Deze optie wordt automatisch gegenereerd door Adobe Mobile-services en definieert de instellingen voor in-app berichten. Zie de onderstaande sectie *Berichtenbeschrijving* voor meer informatie.
+   Deze optie wordt automatisch gegenereerd door Adobe Mobile-services en definieert de instellingen voor in-app berichten. Zie de sectie *Beschrijving van berichten* hieronder voor meer informatie.
 
    * Minimale SDK-versie: 4.2
 
@@ -131,10 +131,10 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    Hier volgt een aantal belangrijke informatie:
 
-   * Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit waar zijn.
-   * Als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit vals zijn.
+   * Als timestamps op uw rapportreeks worden toegelaten, `offlineEnabled` configuratiebezit *must* is waar.
+   * Als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` configuratiebezit *moet* vals zijn.
 
-      Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportsuite met tijdstempel is ingeschakeld, neemt u contact op met de klantenservice of downloadt u het configuratiebestand van de Adobe Mobile-services. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen in alle JavaScript-resultaten die de `s.timestamp` variabele gebruiken.
+      Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportsuite met tijdstempel is ingeschakeld, neemt u contact op met de klantenservice of downloadt u het configuratiebestand van de Adobe Mobile-services. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen in alle JavaScript-resultaten die de variabele `s.timestamp` gebruiken.
 
    * Minimale SDK-versie: 4.0
 
@@ -146,7 +146,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **poi**
 
-   Elke POI-array bevat de POI-naam, breedte, lengte en straal (in meters) voor het gebied van het punt. De POI-naam kan elke tekenreeks zijn. Wanneer een `trackLocation` vraag wordt verzonden, als de huidige coördinaten in bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met de `trackLocation` vraag.
+   Elke POI-array bevat de POI-naam, breedte, lengte en straal (in meters) voor het gebied van het punt. De POI-naam kan elke tekenreeks zijn. Wanneer een `trackLocation` vraag wordt verzonden, als de huidige coördinaten in bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
 
    * Minimale SDK-versie: 4.0
 
@@ -159,13 +159,13 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    >[!TIP]
    >
-   >Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is de `analytics.poi` instelling vereist:
+   >Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is de instelling `analytics.poi` vereist:
 
    ```js
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   Als deze instelling niet is geconfigureerd, moet het `ADBMobile.json` bestand worden bijgewerkt om deze regel op te nemen. Zie [Voordat u begint](/help/ios/getting-started/requirements.md)voordat u een bijgewerkt configuratiebestand downloadt.
+   Als deze instelling niet is geconfigureerd, moet het `ADBMobile.json`-bestand worden bijgewerkt om deze regel op te nemen. Als u een bijgewerkt configuratiebestand wilt downloaden, raadpleegt u [Voordat u ](/help/ios/getting-started/requirements.md) start.
 
 * **postback**
 
@@ -179,15 +179,15 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   Het `payload` object in de code is een voorbeeld van een lading voor een berichtdefinitie die in het `ADBMobileConfig.json` bestand zou komen. Zie [Postbacks](/help/ios/analytics-main/postback/postback.md)voor meer informatie.
+   Het `payload` voorwerp in de code is een voorbeeldlading voor een berichtdefinitie die in `ADBMobileConfig.json` dossier zou gaan. Zie [Postbacks](/help/ios/analytics-main/postback/postback.md) voor meer informatie.
 
    * Minimale SDK-versie: 4.6
 
 * **privacyDefault**
 
-   * De treffers `optedin`worden bijvoorbeeld direct verzonden.
-   * De treffers `optedout`worden bijvoorbeeld genegeerd.
-   * Als uw rapportsuite bijvoorbeeld is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden verwijderd). `optunknown`
+   * Voor `optedin` worden de treffers onmiddellijk verzonden.
+   * Bij `optedout` worden de treffers genegeerd.
+   * Als voor `optunknown` de rapportsuite is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in opt-in (hits worden verzonden) of opt-out (hits worden genegeerd).
 
       Als uw rapportsuite niet is ingeschakeld voor tijdstempels, worden treffers genegeerd totdat de privacystatus verandert en u zich aanmeldt.
 
@@ -201,7 +201,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    >[!IMPORTANT]
    >
-   >Deze variabele wordt vereist door Opname. Als de variabele is ingesteld op `0`, of niet is opgenomen in, wacht de SDK niet op aanschafgegevens en worden de aanschafmeetgegevens niet bijgehouden.
+   >Deze variabele wordt vereist door Opname. Als de variabele is ingesteld op `0` of niet is opgenomen, wacht de SDK niet op aanschafgegevens en worden de aanschafwaarden niet bijgehouden.
 
    * Minimale SDK-versie: 4.1
 
@@ -237,9 +237,9 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    De Analytics- of Audience Management-server, gebaseerd op het bovenliggende knooppunt.
 
-   Deze variabele zou met het serverdomein, zonder een `https://` of `https://` protocolprefix moeten worden bevolkt. Dit voorvoegsel wordt automatisch verwerkt door de bibliotheek en is gebaseerd op de `ssl` variabele.
+   Deze variabele moet worden gevuld met het serverdomein, zonder het protocolvoorvoegsel `https://` of `https://`. Dit voorvoegsel wordt automatisch verwerkt door de bibliotheek en is gebaseerd op de variabele `ssl`.
 
-   Als `ssl` `true`dit het geval is, wordt een veilige verbinding gemaakt met deze server. Als `ssl` `false`dit het geval is, wordt een niet-veilige verbinding gemaakt met deze server.
+   Als `ssl` `true` is, wordt een veilige verbinding gemaakt met deze server. Als `ssl` `false` is, wordt een onveilige verbinding gemaakt met deze server.
 
    >[!IMPORTANT]
    >
@@ -253,7 +253,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
    >
    > Vanaf versie 4.10.0 staat SSL standaard op true als de markering niet is ingesteld.
 
-   Schakelt de mogelijkheid in (`true`) of uit (`false`) om meetgegevens te verzenden met behulp van SSL (HTTPS).
+   Hiermee schakelt u (`true`) of schakelt u de mogelijkheid uit om meetgegevens te verzenden met behulp van SSL (HTTPS).`false`
 
    De definitie voor het &quot;callback&quot;berichtmalplaatje wordt hieronder getoond:
 
@@ -265,7 +265,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   Het `payload` object in de code is een voorbeeldlading voor een berichtdefinitie die in het `ADBMobileConfig.json` bestand wordt weergegeven. Zie [Postbacks](/help/ios/analytics-main/postback/postback.md)voor meer informatie.
+   Het `payload` voorwerp in de code is een steekproeflading voor een berichtdefinitie die in het `ADBMobileConfig.json` dossier gaat. Zie [Postbacks](/help/ios/analytics-main/postback/postback.md) voor meer informatie.
 
    * Minimale SDK-versie: 4.0
 
@@ -276,9 +276,9 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
    * Minimale SDK-versie: 4.0
 
 
-## Voorbeeldbestand `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Voorbeeld `ADBMobileConfig.json` bestand {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
-Here is a sample `ADBMobileConfig.json` file:
+Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 { 
@@ -345,7 +345,7 @@ Here is a sample `ADBMobileConfig.json` file:
 }
 ```
 
-## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
+## Beschrijving van berichten {#section_B97D654BA92149CE91F525268D7AD71F}
 
 Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 
@@ -464,5 +464,5 @@ Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services 
    Hetzelfde als audiences, maar hier worden de acties weergegeven in plaats van het audience:
 
    * &quot;key&quot;
-   * &quot;matches&quot;
+   * &quot;match&quot;
    * &quot;values&quot;
