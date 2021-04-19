@@ -4,18 +4,18 @@ seo-description: Met getimede acties kunt u de tijd in de app en de totale tijd 
 seo-title: Gedetailleerde acties
 solution: Experience Cloud,Analytics
 title: Gedetailleerde acties
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
+exl-id: 3499766b-55f6-4861-8291-2269d56ba983
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-
-# Gedetailleerde acties {#timed-actions}
+# Gedetailleerde handelingen {#timed-actions}
 
 Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd die de sessie in beslag neemt om de handeling te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 
@@ -30,25 +30,25 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 * Voeg contextgegevens toe voordat u de tijdsduur doorgeeft.
 * Druk op Annuleren en duur nog niet verzonden.
 
-## Acties met tijdslimiet bijhouden {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## Handelingen met tijdslimiet {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1} bijhouden
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Zie SDK en configuratiebestand *toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md)voor meer informatie.
+   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 1. De bibliotheek importeren:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Vraag `trackTimedActionStart` en verstrek een getimede actienaam en facultatieve contextgegevens.
+1. Roep `trackTimedActionStart` aan en geef een naam voor een getimede actie en optionele contextgegevens op.
 
    ```objective-c
    [ADBMobile trackTimedActionStart:@"TimeUntilPurchase"  
                                data:@{@"ExperienceName" : experience}];
    ```
 
-1. (Optioneel) Als u aanvullende contextgegevens wilt toevoegen, kunt u op elk gewenst moment een oproep doen `trackTimedActionUpdate` met de naam van de getimede actie.
+1. (Optioneel) Als u aanvullende contextgegevens wilt toevoegen, kunt u `trackTimedActionUpdate` met de naam van de getimede actie aanroepen.
 
    ```objective-c
    [ADBMobile trackTimedActionUpdate:@"TimeUntilPurchase"  
@@ -64,7 +64,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
                             logic:nil];
    ```
 
-## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
 
 Naast de naam van de getimede actie kunt u aanvullende contextgegevens verzenden met de aanroepen van het begin en de update van de actie:
 
@@ -101,4 +101,3 @@ Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen:
                                         return YES; //return YES to send the hit, NO to cancel 
                                      }];
 ```
-
