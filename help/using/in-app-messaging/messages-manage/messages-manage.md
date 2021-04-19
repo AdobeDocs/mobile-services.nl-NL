@@ -1,20 +1,20 @@
 ---
 description: Een lijst met uw in-app- en pushberichten weergeven met informatie over wanneer elk bericht voor het laatst is bijgewerkt en of de berichten live of gedeactiveerd zijn.
-keywords: mobile
+keywords: mobiel
 seo-description: Een lijst met uw in-app- en pushberichten weergeven met informatie over wanneer elk bericht voor het laatst is bijgewerkt en of de berichten live of gedeactiveerd zijn.
 seo-title: Berichten beheren
 solution: Experience Cloud,Analytics
 title: Berichten beheren
-topic: Metrics
+topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
+exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Berichten beheren{#manage-messages}
 
@@ -30,11 +30,11 @@ Hier is extra informatie over de taken u op berichten kunt voltooien:
 
 * **Berichten zoeken en filteren**
 
-   Gebruik het zoekvak boven aan de lijst om berichten te zoeken en te filteren. Alles wat u in het zoekvak typt, toont de bijbehorende berichten uit de lijst. De zoekopdracht werkt in alle tabelkolommen. U kunt bijvoorbeeld typen `Draft` om alleen berichten met die status weer te geven. U kunt de naam van een gebruiker ook typen om alleen berichten weer te geven die door die gebruiker zijn bijgewerkt.
+   Gebruik het zoekvak boven aan de lijst om berichten te zoeken en te filteren. Alles wat u in het zoekvak typt, toont de bijbehorende berichten uit de lijst. De zoekopdracht werkt in alle tabelkolommen. U kunt bijvoorbeeld `Draft` typen om alleen berichten met die status weer te geven. U kunt de naam van een gebruiker ook typen om alleen berichten weer te geven die door die gebruiker zijn bijgewerkt.
 
    Naast het zoekvak kunt u ook op een kolomkop klikken om de lijst in oplopende of aflopende volgorde te sorteren op de inhoud van die kolom.
 
-   Als u bijvoorbeeld de **[!UICONTROL Message Type]** kolom in oplopende volgorde sorteert, worden alle in-app-berichten vóór uw pushberichten weergegeven. Als u de **[!UICONTROL Last Updated]** kolom in aflopende volgorde sorteert, worden in de lijst de meest recente bijgewerkte berichten boven aan de lijst weergegeven.
+   Als u bijvoorbeeld de kolom **[!UICONTROL Message Type]** in oplopende volgorde sorteert, worden alle in-app berichten vóór uw pushberichten weergegeven. Als u de **[!UICONTROL Last Updated]** kolom in dalende orde sorteert, toont de lijst uw onlangs bijgewerkte berichten bij de bovenkant van de lijst.
 
 * **Berichten dupliceren**
 
@@ -44,13 +44,13 @@ Hier is extra informatie over de taken u op berichten kunt voltooien:
 
       Als u een bericht voor dezelfde app wilt dupliceren, typt u een nieuwe naam voor het bericht. Als u dezelfde naam hebt als u het oorspronkelijke bericht wilt overschrijven. Als u een bericht voor een andere app dupliceert, kunt u dezelfde naam behouden zonder het oorspronkelijke bericht te overschrijven.
 
-   1. Klik **[!UICONTROL Duplicate]** of **[!UICONTROL Overwrite]**, indien nodig.
+   1. Klik indien nodig op **[!UICONTROL Duplicate]** of **[!UICONTROL Overwrite]**.
 
 * **Berichten deactiveren of activeren**
 
    Als u een bericht wilt deactiveren, schakelt u het selectievakje naast ten minste één actief bericht in en klikt u op **[!UICONTROL Deactivate Selected]**.
 
-   Als u een gedectiveerd bericht wilt activeren, schakelt u het selectievakje naast ten minste één gedeactiveerd bericht in en klikt u **[!UICONTROL Activate Selected]** op OK.
+   Als u een gedectiveerd bericht wilt activeren, schakelt u het selectievakje naast ten minste één gedeactiveerd bericht in en klikt u op **[!UICONTROL Activate Selected]**.
 
 * **Berichten archiveren**
 
@@ -66,4 +66,3 @@ Hier is extra informatie over de taken u op berichten kunt voltooien:
 
    1. Klik op **[!UICONTROL View Archive]**.
    1. Schakel het selectievakje naast ten minste één gearchiveerd bericht in en klik op **[!UICONTROL Unarchive Selected]**.
-
