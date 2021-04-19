@@ -4,16 +4,16 @@ seo-description: Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliot
 seo-title: TVJS-methoden
 solution: Experience Cloud,Analytics
 title: TVJS-methoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
+exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 27%
 
 ---
-
 
 # TVJS-methoden {#tvjs-methods}
 
@@ -49,7 +49,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
    * `ADBMobilePrivacyStatusOptOut`: Hits worden weggegooid.
    * `ADBMobilePrivacyStatusUnknown`: Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de privacystatus wordt gewijzigd in opt-in (hits worden verzonden) of opt-out (treffers worden verwijderd).
 
-      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
+      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -261,7 +261,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Verzendt de huidige breedte- en lengtecoördinaten.
 
-   Gebruikt ook punten van belang (POI) die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen of de plaats die u als parameter inging in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en met de `trackLocation` vraag verzonden.
+   Gebruikt ook punten van belang (POI) die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen of de plaats die u als parameter inging in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en verzonden met de `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -512,7 +512,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Retourneert het bezoekersprofiel dat het laatst is verkregen.
 
-   Retourneert null als er nog geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `NSUserDefaults` zodat u eenvoudig toegang hebt tot meerdere startpagina&#39;s van uw app.
+   Retourneert null als er nog geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -726,7 +726,8 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
          * Type: `String`
          * Waarde van de id die u synchroniseert.
       * Parameter: `authState`
-         * Type: ADBMobileVisitorAuthenticationStateAuthentication-status van de gebruiker. Mogelijke waarden zijn:
+         * Type: ADBMobileVisitorAuthenticationState
+Verificatiestatus van de gebruiker. Mogelijke waarden zijn:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
