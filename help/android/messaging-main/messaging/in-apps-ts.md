@@ -1,22 +1,22 @@
 ---
 description: Deze informatie helpt u in-app overseinen problemen op te lossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 seo-title: In-app-berichten oplossen
 solution: Experience Cloud,Analytics
 title: In-app-berichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
 
-
-# In-app-berichten oplossen{#troubleshooting-in-app-messaging}
+# Problemen met in-app messaging oplossen{#troubleshooting-in-app-messaging}
 
 Deze informatie helpt u in-app overseinen problemen op te lossen.
 
@@ -24,7 +24,7 @@ Controleer de volgende items als u alle vereisten voor In-App-berichten hebt vol
 
 ## Zet u de nieuwe configuratie en de nieuwe SDK in de app?
 
-Zorg ervoor dat u een [In-App het Overseinen](/help/android/messaging-main/messaging/messaging.md) sectie in uw configuratie (gedownload JSON dossier) hebt of een ver eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
+Zorg ervoor dat u een [In-App Overseinen](/help/android/messaging-main/messaging/messaging.md) sectie in uw configuratie (gedownload JSON dossier) hebt of een verre eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
 
 ## Mijn volledige-schermbericht in Android wordt niet weergegeven. Ik gebruik correcte SDK, configuratie, en mijn trekkers worden ontmoet.
 
@@ -32,19 +32,19 @@ Hebt u het manifestbestand bijgewerkt om de volledige schermactiviteit te defini
 
 ## Mijn lokale meldingsbericht in Android werkt niet.
 
-Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap 2 in het *Toelatend Overseinen* in-app in het Overseinen [in-app](/help/android/messaging-main/messaging/messaging.md).
+Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap 2 in *In-App Overseinen toelaten* in [In-App Overseinen](/help/android/messaging-main/messaging/messaging.md).
 
 ## Is het bericht live?
 
-Om te verifiëren of uw bericht live is, controleert u op de pagina Bericht in de app beheren in de **[!UICONTROL Status]** kolom de lijst met berichten.
+Om te verifiëren of uw bericht live is, controleert u op de pagina Bericht in de app beheren in de kolom **[!UICONTROL Status]** de lijst met berichten.
 
-## Kijk eens *tonen eens*, *tonen altijd*, *tonen off-line* montages op het lusje van de Publiek.
+## Bekijk *show eens*, *show altijd*, *show off-line* montages op het lusje van de Publiek.
 
-Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het **[!UICONTROL Audience]** tabblad de **[!UICONTROL Trigger]** opties waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
+Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het tabblad **[!UICONTROL Audience]** de opties **[!UICONTROL Trigger]**, waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
 ## Als u een startgebeurtenis als trigger gebruikt...
 
-Hiermee wordt alleen een nieuwe sessie gestart. Voor meer informatie over wanneer een zitting begint, zie de `lifecycleTimeout` rij in [JSON Config](/help/android/configuration/json-config/json-config.md).
+Hiermee wordt alleen een nieuwe sessie gestart. Voor meer informatie over wanneer een zitting begint, zie `lifecycleTimeout` rij in [JSON Config](/help/android/configuration/json-config/json-config.md).
 
 ## Ik heb mijn bericht op afstand bijgewerkt, maar mijn app toont nog steeds het oude bericht.
 
@@ -53,7 +53,7 @@ De volgende informatie onthouden:
 * Het dynamische markeringsbeheer kan een paar notulen nemen om zijn eindpunt met uw nieuwe definitie bij te werken. Wacht even en probeer het opnieuw.
 * De config zal slechts op een nieuwe lancering bijwerken. Als de app opnieuw is gestart tijdens de sessietime-out van de levenscyclus, is de nieuwe configuratie mogelijk niet gedownload.
 
-Zie [Levenscyclusstatistieken](/help/android/metrics.md)voor meer informatie.
+Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
 
 ## Mijn afbeelding past niet precies in de ruimte die de sjabloon biedt.
 
@@ -70,6 +70,4 @@ Hier volgen de exacte plaatsings- en grootteregels voor elke richting:
 * **Liggend**
    * De afbeelding wordt geschaald naar 100% van de hoogte van het apparaat.
    * De breedte is 75% van het apparaat, met een uitfade aan het recht.
-
    Als u problemen hebt met de sjabloon Volledig scherm, kunt u de aangepaste HTML-sjabloon downloaden en gebruiken. Deze sjabloon biedt meer flexibiliteit voor afbeeldingen en biedt volledige controle over de sjabloon.
-
