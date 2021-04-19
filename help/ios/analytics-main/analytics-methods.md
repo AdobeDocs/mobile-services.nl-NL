@@ -4,28 +4,28 @@ seo-description: Hier volgt een lijst met Adobe Analytics-methoden die worden ge
 seo-title: Analysemethoden
 solution: Experience Cloud,Analytics
 title: Analysemethoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
+exl-id: 327ec44a-be15-47af-a2c8-a373124999ad
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 33%
 
 ---
 
-
 # Analysemethoden {#analytics-methods}
 
 Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben voorrang op `track`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben de voorvoegsel `track`.
 
 Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden.
 
 * **trackState: &#x200B; gegevens:**
 
-   Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan. Als deze `state` leeg is, wordt deze weergegeven als toepassingsversie (build) *voor de* toepassingsnaam in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u `state` in elke `trackState` vraag plaatst.
+   Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart` enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op. Als `state` leeg is, wordt deze als *app name app version (build)* weergegeven in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u `state` in elke `trackState` vraag plaatst.
 
    >[!TIP]
    >
@@ -47,11 +47,11 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackAction: &#x200B; gegevens:**
 
-   Tracks an action in your app. Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions`en andere metriek, vinden plaats in uw app.
+   Tracks an action in your app. Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions` en andere metriek, vinden plaats in uw app.
 
    >[!TIP]
    >
-   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld het ophalen van achtergrondgegevens), gebruikt u `trackActionFromBackground` deze.
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -107,7 +107,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackLocation: &#x200B; gegevens:**
 
-   Verzendt de huidige x y-coördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en met de `trackLocation` vraag verzonden.
+   Verzendt de huidige x y-coördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en verzonden met de `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -159,7 +159,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackLifetimeValueIncrease: &#x200B; gegevens:**
 
-   Hiermee voegt u `amount` de levensduurwaarde van de gebruiker toe.
+   Voegt `amount` aan de levenwaarde van de gebruiker toe.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -177,7 +177,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackTimedActionStart: &#x200B; gegevens:**
 
-   Start een getimede actie met naam `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
+   Start een getimede actie met de naam `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
    >[!TIP]
    >
@@ -199,7 +199,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackTimedActionUpdate: &#x200B; gegevens:**
 
-   Geef aan `data` om de contextgegevens bij te werken die aan de opgegeven gegevens zijn gekoppeld `action`. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie. Als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
+   Geef `data` door om de contextgegevens bij te werken die aan gegeven `action` worden geassocieerd. De `data` die wordt doorgegeven, wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, overschrijft de gegevens.
 
    >[!TIP]
    >
@@ -221,11 +221,11 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackTimedActionEnd: &#x200B; logica:**
 
-   Een getimede actie beëindigen. Als u verstrekt `block`, zult u toegang tot de definitieve tijdwaarden hebben en zal kunnen manipuleren `data` alvorens de definitieve slag te verzenden.
+   Een getimede actie beëindigen. Als u `block` verstrekt, zult u toegang tot de definitieve tijdwaarden hebben en `data` kunnen manipuleren alvorens de definitieve slag te verzenden.
 
    >[!TIP]
    >
-   >Als u `block`dat opgeeft, moet u terugkeren `YES` om een hit te verzenden. Als u `nil` `block` voor inchecken kiest, wordt de laatste treffer verzonden.
+   >Als u `block` verstrekt, moet u `YES` terugkeren om een slag te verzenden. Als u `nil` doorgeeft voor `block`, wordt de laatste hit verzonden.
 
    * Hier volgt de syntaxis voor deze methode:
 
