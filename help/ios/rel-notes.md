@@ -4,18 +4,18 @@ seo-description: Opmerkingen bij de release en bekende problemen met iOS SDK's 4
 seo-title: Release-opmerkingen
 solution: Experience Cloud,Analytics
 title: Release-opmerkingen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
+exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
 translation-type: tm+mt
-source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
 
 ---
 
-
-# Releaseopmerkingen {#release-notes}
+# Aanvullende informatie {#release-notes}
 
 Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
 
