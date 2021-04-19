@@ -4,16 +4,16 @@ seo-description: Klassen en methoden die worden geleverd door de Windows 8.1 Uni
 seo-title: Methoden van SDK
 solution: Experience Cloud,Analytics
 title: Methoden van SDK
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
+exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 21%
 
 ---
-
 
 # Methoden van SDK {#sdk-methods}
 
@@ -21,7 +21,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 >[!TIP]
 >
->Wanneer u methoden van winJS (JavaScript) gebruikt, wordt de eerste letter van alle methoden automatisch verlaagd. `winmd`
+>Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
    * `ADBMobilePrivacyStatusOptOut` - treffers worden genegeerd.
    * `ADBMobilePrivacyStatusUnknown` - Als uw rapportsuite is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de status van de privacy verandert in aanmelden (resultaten worden verzonden) of Afmelden (resultaten worden verwijderd). Als uw rapportsuite niet is ingeschakeld voor tijdstempels, worden treffers genegeerd totdat de privacystatus verandert en u zich aanmeldt.
 
-      De standaardwaarde wordt ingesteld in het [ADBMobileConfig.json-configuratiebestand](/help/windows-appstore/c-configuration/c.json.md) .
+      De standaardwaarde wordt ingesteld in het bestand [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -75,7 +75,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
-   Hiermee stelt u de privacystatus voor de huidige gebruiker in `status`. Stel een van de volgende waarden in:
+   Stelt de privacystatus voor de huidige gebruiker in op `status`. Stel een van de volgende waarden in:
 
    * `ADBMobilePrivacyStatusOptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatusOptOut` - treffers worden genegeerd.
@@ -125,7 +125,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
    >[!TIP]
    >
-   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x-SDK, wordt de vorige id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is gebruikersidentificatie `null` tot reeks.
+   >Als uw app upgradet van de Experience Cloud 3.x naar 4.x-SDK, wordt de vorige id (aangepast of automatisch gegenereerd) opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen upgrades van de SDK. Voor nieuwe installaties op 4.x SDK, is het gebruikers herkenningsteken `null` tot reeks.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -142,7 +142,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 * **SetUserIdentifier (winJS: setUserIdentifier)**
 
-   Hiermee stelt u de gebruikers-id in op `identifier`.
+   Hiermee stelt u de gebruikersnaam in op `identifier`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -176,7 +176,7 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Hiermee stelt u de voorkeur voor foutopsporing in op `debugLogging`. Debug registreren werkt slechts wanneer het gebruiken van zuivert versie van de bibliotheek, negeert de versieversie dit het plaatsen.
+   Stelt de voorkeur voor foutopsporing in op `debugLogging`. Debug registreren werkt slechts wanneer het gebruiken van zuivert versie van de bibliotheek, negeert de versieversie dit het plaatsen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -193,11 +193,11 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 * **CollectLifecycleData (winJS: collectionLifecycleData)**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusstatistieken](/help/windows-appstore/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/windows-appstore/metrics.md) voor meer informatie.
 
    >[!TIP]
    >
-   >Roep deze methode aan in de `onResume()` methode in elke activiteit binnen uw toepassing, zoals aangetoond in het volgende voorbeeld. Wij adviseren ook het overgaan van de Activiteit of de Dienst als contextvoorwerp in plaats van de globale context van de Toepassing.
+   >Roep deze methode aan in de methode `onResume()` in elke Activiteit binnen van uw toepassing, zoals aangetoond in het volgende voorbeeld. Wij adviseren ook het overgaan van de Activiteit of de Dienst als contextvoorwerp in plaats van de globale context van de Toepassing.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -214,11 +214,11 @@ Klassen en methoden die worden geleverd door de Windows 8.1 Universal App Store-
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseCollecting &#x200B; LifecycleData)**
 
-   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusstatistieken](/help/windows-appstore/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusmetriek](/help/windows-appstore/metrics.md) voor meer informatie.
 
    >[!TIP]
    >
-   >Roep deze methode aan in de `onPause()` methoden in elke activiteit binnen uw toepassing, zoals in het voorbeeld wordt getoond. Wij adviseren ook het overgaan van de Activiteit of de Dienst als contextvoorwerp in plaats van de globale context van de Toepassing.
+   >Roep deze methode aan in de `onPause()` methoden in elke activiteit binnen Uw toepassing, zoals in het voorbeeld wordt getoond. Wij adviseren ook het overgaan van de Activiteit of de Dienst als contextvoorwerp in plaats van de globale context van de Toepassing.
 
    * Hier volgt de syntaxis voor deze methode:
 
