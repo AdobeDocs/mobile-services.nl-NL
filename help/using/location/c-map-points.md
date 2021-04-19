@@ -1,20 +1,20 @@
 ---
 description: U kunt een interactieve kaart bekijken die uw Punten van Interesse en andere gegevenstellers toont.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt een interactieve kaart bekijken die uw Punten van Interesse en andere gegevenstellers toont.
 seo-title: Kaart
 solution: Experience Cloud,Analytics
 title: Kaart
-topic: Metrics
+topic-fix: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
+exl-id: a7e75333-2919-44bf-9963-f40cdee2d6b6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
-
 
 # Kaart {#map}
 
@@ -56,16 +56,16 @@ U kunt de volgende opties voor dit rapport vormen:
 
 * **[!UICONTROL Time Period]**
 
-   Klik op het **[!UICONTROL Calendar]** pictogram om een aangepaste periode te selecteren of om een vooraf ingestelde tijdsperiode te selecteren in de vervolgkeuzelijst.
+   Klik op het pictogram **[!UICONTROL Calendar]** om een aangepaste periode te selecteren of om een vooraf ingestelde tijdsperiode in de vervolgkeuzelijst te selecteren.
 
 * **[!UICONTROL Customize]**
 
-   Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, extra reeksen (metriek) toe te voegen, en meer. Zie [Rapporten](/help/using/usage/reports-customize/t-reports-customize.md)aanpassen voor meer informatie.
+   Pas uw rapporten aan door de **[!UICONTROL Show By]** opties te veranderen, metriek en filters toe te voegen, en extra reeksen (metriek) toe te voegen, en meer. Zie [Rapporten aanpassen](/help/using/usage/reports-customize/t-reports-customize.md) voor meer informatie.
 
 * **[!UICONTROL Filter]**
 
-   Klik **[!UICONTROL Filter]** om een filter te creëren dat verschillende rapporten overspant om te zien hoe een segment over alle mobiele rapporten presteert. Met een kleverig filter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten. Zie [Een plakfilter](/help/using/usage/reports-customize/t-sticky-filter.md)toevoegen voor meer informatie.
+   Klik **[!UICONTROL Filter]** om een filter tot stand te brengen dat verschillende rapporten overspant om te zien hoe een segment over alle mobiele rapporten presteert. Met een kleverig filter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten. Zie [Een kleverig filter toevoegen](/help/using/usage/reports-customize/t-sticky-filter.md) voor meer informatie.
 
 * **[!UICONTROL Download]**
 
-   Klik **[!UICONTROL PDF]** of **[!UICONTROL CSV]** om documenten te downloaden of te openen en deze te delen met gebruikers die geen toegang hebben tot Mobile Services of om het bestand in presentaties te gebruiken.
+   Klik op **[!UICONTROL PDF]** of **[!UICONTROL CSV]** om documenten te downloaden of te openen en deze te delen met gebruikers die geen toegang hebben tot Mobile Services of om het bestand te gebruiken in presentaties.
