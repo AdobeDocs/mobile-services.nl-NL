@@ -1,28 +1,28 @@
 ---
 description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 seo-title: Mobiele app-acquisitie
 solution: Experience Cloud,Analytics
 title: Mobiele app-acquisitie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
+exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 1%
 
 ---
 
-
-# Mobile app acquisition {#mobile-app-acquisition}
+# Aanschaf van mobiele apps {#mobile-app-acquisition}
 
 Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
@@ -31,21 +31,21 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 
 >[!IMPORTANT]
 >
->Als u Acquisition wilt gebruiken, **moet** u SDK versie 4.1 of hoger hebben.
+>Om Acquisition te gebruiken, **must** heeft SDK versie 4.1 of later.
 
-Verwervingsverbindingen moeten in de Mobiele diensten van Adobe worden gecreeerd. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
+Verwervingsverbindingen moeten in de Mobiele diensten van Adobe worden gecreeerd. Zie [Acquisitie](/help/using/acquisition-main/acquisition-main.md) voor meer informatie.
 
 **In SDK-versies 4.18.0 en hoger**:
 
-Vanaf 1 maart 2020 wordt het uitzendmechanisme van de install_reference intent door Google vervangen. Voor meer informatie, zie [nog het Gebruiken van InstallBroadcast? Schakel tegen 1 maart 2020 over naar de Play Reference API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). Als u informatie over de installatieverwijzing wilt blijven verzamelen in de Google Play-winkel, moet u uw toepassing bijwerken naar SDK versie 4.18.0 of hoger.
+Vanaf 1 maart 2020 wordt het uitzendmechanisme van de install_reference intent door Google vervangen. Voor meer informatie, zie [nog het Gebruiken van InstallBroadcast? Schakel tegen 1 maart 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) over naar de API van de Play Referrer. Als u informatie over de installatieverwijzing wilt blijven verzamelen in de Google Play-winkel, moet u uw toepassing bijwerken naar SDK versie 4.18.0 of hoger.
 
-Met de afgekeurde toepassing moet u in plaats van een `BroadcastReceiver`installatieverwijzing de URL van de installatieverwijzing verzamelen via een nieuwe Google API en de resulterende URL doorgeven aan de SDK.
+Met de afgekeurde toepassing moet u in plaats van een `BroadcastReceiver` te maken de URL van de installatieverwijzing verzamelen via een nieuwe Google API en de resulterende URL doorgeven aan de SDK.
 
 1. Voeg het Google Play-pakket met installatieverwijzing toe aan de afhankelijkheden van het onbewerkte bestand:
 
    `implementation 'com.android.installreferrer:installreferrer:1.1'`
 
-1. Als u de URL van de referentie wilt ophalen van de installatiereferor-API, voert u de stappen uit om de [installatiereferator](https://developer.android.com/google/play/installreferrer/library#install-referrer)op te halen.
+1. Als u de URL van de referentie wilt ophalen van de installatiereferor-API, voert u de stappen uit in [De installatieferentie ophalen](https://developer.android.com/google/play/installreferrer/library#install-referrer).
 
 1. Geef de referentie-URL door aan de SDK:
 
@@ -132,35 +132,35 @@ Verzamel verzamelgegevens van een standaard Google Play-acquisitiecampagne:
 
 * Wanneer de gebruiker een app downloadt en uitvoert als gevolg van een Google Play Store-aankoop, worden de gegevens van de referentie verzameld en naar Adobe Mobile Services verzonden.
 
-   * De gegevens worden opgeslagen en beschikbaar in de `AdobeDataCallback` instantie die eerder bij de SDK is geregistreerd.
+   * De gegevens worden opgeslagen en beschikbaar in de `AdobeDataCallback`-instantie die eerder bij de SDK is geregistreerd.
 
-      Voor meer informatie, zie de Methoden [van de](/help/android/configuration/methods.md)Configuratie.
+      Zie [Configuratiemethoden](/help/android/configuration/methods.md) voor meer informatie.
 
-   * Het `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` gebeurtenistype of het `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` gebeurtenistype wordt gebruikt.
+   * Het gebeurtenistype `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` of `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` wordt gebruikt.
 
    * Aangepaste sleutels die deel uitmaakten van de aanschafgegevens van Google Play, krijgen een naamruimte met &quot; `a.acquisition.custom.`&quot;
 
 Als u de Verbindingsverbindingen gebruikt die op de Mobiele Diensten van Adobe werden gecreeerd, voeg douanegegevens aan de verwervingsverbinding toe door de volgende taken te voltooien:
 
-1. Voorvoegsel een verwervingsvariabele met &quot; `adb`&quot;.
+1. Plaats een verwervingsvariabele vooraf met &quot; `adb`&quot;.
 
-   Wanneer de SDK de aanschafgegevens van Adobe Mobile Services ontvangt bij de eerste keer dat deze wordt gestart, worden de gegevens opgeslagen en zijn deze beschikbaar in de `AdobeDataCallback` instantie die eerder bij de SDK is geregistreerd. Voor meer informatie, zie de Methoden [van de](/help/android/configuration/methods.md)Configuratie.
+   Wanneer de SDK de aanschafgegevens van Adobe Mobile Services ontvangt bij de eerste keer dat deze wordt gestart, worden de gegevens opgeslagen en beschikbaar in de `AdobeDataCallback`-instantie die eerder bij de SDK is geregistreerd. Zie [Configuratiemethoden](/help/android/configuration/methods.md) voor meer informatie.
 
-1. Het `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` gebeurtenistype of het `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` gebeurtenistype wordt gebruikt.
+1. Het gebeurtenistype `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` of `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` wordt gebruikt.
 
-1. De aangepaste gegevenssleutels hebben de voorvoegsel &quot;`a.acquisition.custom.`&quot;
+1. De sleutels van douanegegevens worden vooraf bepaald met &quot;`a.acquisition.custom.`&quot;
 
 >[!TIP]
 >
->Als u gegevens naar meerdere rapportenreeksen verzendt, gebruikt u de aankoopgegevens van de app die is gekoppeld aan de eerste rapportsuite in uw lijst met id&#39;s van rapportsuite.
+>Als u gegevens naar meerdere rapportenreeksen verzendt, gebruikt u de aankoopgegevens van de app die aan de eerste rapportsuite in uw lijst met rapportsuite-id&#39;s is gekoppeld.
 
 Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een acquisitie-koppeling.
 
-## Mobiele acquisitie volgen {#section_CEA30C652AC8470784B8054E299B80FA}
+## Mobiele acquisitie bijhouden {#section_CEA30C652AC8470784B8054E299B80FA}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
 1. De bibliotheek importeren:
 
@@ -168,7 +168,7 @@ Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een ac
    import com.adobe.mobile.*;
    ```
 
-1. Voer het `BroadcastReceiver` voor de verwijzende uit:
+1. Implementeer `BroadcastReceiver` voor de verwijzende:
 
    ```java
    package com.your.package.name;  // replace with your app package name
@@ -185,7 +185,7 @@ Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een ac
    }
    ```
 
-1. Update `AndroidManifest.xml` om het `BroadcastReceiver` bestand in te schakelen dat in de vorige stap is gemaakt:
+1. `AndroidManifest.xml` bijwerken om de `BroadcastReceiver` in te schakelen die in de vorige stap is gemaakt:
 
    ```xml
    <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
@@ -195,7 +195,7 @@ Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een ac
    </receiver>
    ```
 
-1. Controleer of het `ADBMobileConfig.json` bestand de vereiste acquisitie-instellingen bevat:
+1. Controleer of het `ADBMobileConfig.json`-bestand de vereiste acquisitie-instellingen bevat:
 
    ```xml
    "acquisition": {
@@ -211,7 +211,7 @@ Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een ac
    >
    >Als u gegevens naar meerdere rapportenreeksen verzendt, gebruikt u de aankoopinstellingen (acquisitieserver en appid) van de app die is gekoppeld aan de eerste rapportsuite in uw lijst met id&#39;s van rapportsuite.
 
-   De `acquisition` instellingen worden gegenereerd door Adobe Mobile-services en mogen niet worden gewijzigd. Voor meer informatie over hoe te om een aangepast `ADBMobileConfig.json` dossier met de vooraf gevormde montages te downloaden, zie `acquisition` alvorens u begint [](/help/android/getting-started/requirements.md).
+   De `acquisition`-instellingen worden gegenereerd door Adobe Mobile-services en mogen niet worden gewijzigd. Voor meer informatie over hoe te om een aangepast `ADBMobileConfig.json` dossier met `acquisition` vooraf gevormde montages te downloaden, zie [Voor u ](/help/android/getting-started/requirements.md) begint.
 
 Nadat deze instellingen zijn ingeschakeld, worden aanschafgegevens na de eerste keer dat de app wordt gestart automatisch verzonden met de eerste levenscyclusaanroep.
 
