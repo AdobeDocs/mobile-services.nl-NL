@@ -1,32 +1,32 @@
 ---
 description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 seo-title: Methoden van Adobe Experience Platform Identity Service
 solution: Experience Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
+exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 23%
 
 ---
 
-
-# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
+# Methoden van Adobe Experience Platform Identity Service{#experience-cloud-id-service-methods}
 
 Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service.
 
-Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben bijvoorbeeld de voorvoegsel `visitor`. Voor meer informatie, zie de Configuratie [van identiteitskaart van de](/help/android/c-marketing-cloud/mcvid.md)Experience Cloud.
+Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld voorafgegaan door `visitor`. Voor meer informatie, zie [Experience Cloud ID Configuratie](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie Helperfunctie voor [bezoekersidentiteitskaart toevoegen voor meer informatie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie [Helperfunctie voor bezoeker-id toevoegen](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html) voor meer informatie.
 
    >[!IMPORTANT]
    >
@@ -69,7 +69,7 @@ Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methode
 
       >[!IMPORTANT]
       >
-      >Deze methode kan een het blokkeren netwerkvraag veroorzaken en zou **niet** van een draad UI moeten worden geroepen.
+      >Deze methode kan een blokkerende netwerkvraag veroorzaken en zou **not** van een draad moeten worden geroepen UI.
 
 * **syncIdentifiers**
 
@@ -93,7 +93,7 @@ Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methode
 
    Hiermee synchroniseert u het opgegeven id-type en de opgegeven waarde met de service Bezoeker-id.
 
-   Geef de waarde door `authenticationState` als een van de volgende waarden:
+   Geef `authenticationState` door als een van de volgende waarden:
 
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
@@ -115,7 +115,7 @@ Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methode
 
    Synchroniseert de verstrekte herkenningstekens aan de dienst van identiteitskaart
 
-   Geef de waarde door `authenticationState` als een van de volgende waarden:
+   Geef `authenticationState` door als een van de volgende waarden:
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
@@ -136,7 +136,7 @@ Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methode
 
 * **getIdentifiers**
 
-   Hiermee wordt een lijst met alleen-lezen `ADBVisitorID` objecten opgehaald.
+   Hiermee wordt een lijst met alleen-lezen `ADBVisitorID`-objecten opgehaald.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -152,7 +152,7 @@ Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methode
 
 * **getUrlVariablesAsync**
 
-   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Zie de methoden [van](/help/android/reference/hybrid-app.md)Adobe Experience Platform Identity Service voor meer informatie over hoe deze methode wordt gebruikt.
+   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Voor meer informatie over hoe deze methode wordt gebruikt, zie [Methoden van de Dienst van de Identiteit van Adobe Experience Platform](/help/android/reference/hybrid-app.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
