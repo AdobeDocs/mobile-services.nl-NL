@@ -1,20 +1,20 @@
 ---
 description: Bij het bijhouden van baken kunt u microlocaties meten en als doel instellen met behulp van iBeacon en Bluetooth Low Energy.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Bij het bijhouden van baken kunt u microlocaties meten en als doel instellen met behulp van iBeacon en Bluetooth Low Energy.
 seo-title: Beacon bijhouden
 solution: Experience Cloud,Analytics
 title: Beacon bijhouden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
+exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
-
 
 # Beacon bijhouden {#beacon-tracking}
 
@@ -36,11 +36,11 @@ Dit zijn wat deze waarden betekenen:
 
 Deze baken-gegevens worden vastgelegd in variabelen voor mobiele oplossingen.
 
-## Ballonen bijhouden {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Acties bijhouden {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
 1. De bibliotheek importeren:
 
@@ -70,7 +70,7 @@ Deze baken-gegevens worden vastgelegd in variabelen voor mobiele oplossingen.
    Analytics.clearBeacon();
    ```
 
-## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Aanvullende gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de bakengegevens, kunt u extra contextgegevens met elke `trackBeacon` vraag verzenden:
 
@@ -83,4 +83,3 @@ Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
 
 ![](assets/map-variable-context-ltv.png)
-
