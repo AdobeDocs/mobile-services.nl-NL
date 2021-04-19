@@ -1,22 +1,22 @@
 ---
 description: Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
 seo-title: Problemen met In-app-berichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met In-app-berichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
+exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
-
-# Problemen met in-app messaging oplossen{#troubleshooting-in-app-messaging}
+# Probleemoplossing in app messaging{#troubleshooting-in-app-messaging}
 
 Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
 
@@ -26,7 +26,7 @@ Als u alle vereisten voor Overseinen in-App voltooide, maar de berichten verschi
 
 * Controleer of de SDK versie 4.2 of hoger is en correct is geconfigureerd.
 
-* Zorg ervoor dat u een sectie van het [Overseinen](/help/using/in-app-messaging/in-app-messaging.md) in uw configuratie (het gedownloade JSON- dossier) hebt of een ver eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
+* Zorg ervoor dat u [Messaging](/help/using/in-app-messaging/in-app-messaging.md) sectie in uw configuratie (het gedownloade JSON dossier) hebt of een verre eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
 
 ## Mijn volledige-schermbericht in Android wordt niet weergegeven. Ik gebruik correcte SDK, configuratie, en mijn trekkers worden ontmoet.
 
@@ -34,19 +34,19 @@ Hebt u het manifestbestand bijgewerkt om de volledige schermactiviteit te defini
 
 ## Mijn lokale meldingsbericht in Android werkt niet.
 
-Verifieer dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Zie stap 1 in [In-app messaging](/help/android/messaging-main/messaging/messaging.md)voor meer informatie.
+Verifieer dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap #1 in [In-app overseinen](/help/android/messaging-main/messaging/messaging.md).
 
 ## Is het bericht live?
 
-Controleer de lijstmening in de **[!UICONTROL Status]** kolom op de Manage In-App pagina van het Bericht en verifieer of het bericht live is.
+Controleer de lijstmening in de **[!UICONTROL Status]** kolom op de Manage in-app pagina van het Bericht en verifieer of het bericht levend is.
 
-## Kijk eens *tonen eens*, *tonen altijd*, *tonen off-line* montages op de pagina van het Publiek.
+## Bekijk *show eens*, *show altijd*, *show off-line* montages op de pagina van het Publiek.
 
-Controleer of deze instellingen correct zijn. Controleer op de pagina Publiek de opties op het **[!UICONTROL Trigger]** tabblad, waar u kunt opgeven hoe vaak het bericht wordt weergegeven.
+Controleer of deze instellingen correct zijn. Controleer op de pagina Publiek de opties op het tabblad **[!UICONTROL Trigger]**, waar u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
 ## Bij gebruik van de gebeurtenis launch als trigger...
 
-Hiermee wordt alleen een nieuwe sessie gestart. Voor informatie over wanneer een zitting begint, zie `lifecycleTimeout` in het [JSON config](/help/ios/configuration/json-config/json-config.md) dossier ADBMobile.
+Hiermee wordt alleen een nieuwe sessie gestart. Voor informatie over wanneer een zitting begint, zie `lifecycleTimeout` in [ADBMobile JSON config](/help/ios/configuration/json-config/json-config.md) dossier.
 
 ## Ik heb mijn bericht op afstand bijgewerkt, maar mijn app geeft nog steeds het oude bericht weer.
 
@@ -82,5 +82,5 @@ Voer de volgende stappen uit:
 
 1. Koop de URL van uw berichten in uw configuratiebestand om te controleren of het externe bericht is bijgewerkt (bijvoorbeeld `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
 1. Sluit de toepassing.
-1. Wacht op een tijdspanne die langer is dan `lifecycleTimeout` in het config- dossier.
+1. Wacht op een tijdspanne die langer is dan `lifecycleTimeout` in het config dossier.
 1. Open de app, navigeer naar de locatie waar het bericht moet worden weergegeven en controleer of deze is bijgewerkt.
