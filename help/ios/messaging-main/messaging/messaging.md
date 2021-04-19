@@ -4,37 +4,37 @@ seo-description: Met deze informatie kunt u in-app berichten gebruiken in uw iOS
 seo-title: In-app berichten
 solution: Experience Cloud,Analytics
 title: In-app berichten
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
+exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
-# In-app messaging {#in-app-messaging}
+# In-app berichten {#in-app-messaging}
 
 Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
 
-Als u in-app berichten wilt gebruiken, **moet** u SDK versie 4.2 of hoger hebben.
+Om in-app overseinen te gebruiken, **must** heeft SDK versie 4.2 of later.
 
 Enkele informatie die u moet onthouden:
 
-* De berichten en de regels die bepalen wanneer de berichten worden getoond worden gecreeerd in de Mobiele diensten van Adobe. Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie.
+* De berichten en de regels die bepalen wanneer de berichten worden getoond worden gecreeerd in de Mobiele diensten van Adobe. Zie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md) voor meer informatie.
 * De updates die in deze sectie worden beschreven moeten aan SDK worden gemaakt om in-app berichten te tonen.
 
    >[!TIP]
    >
-   >U kunt deze stappen zelfs uitvoeren als er geen berichten zijn gedefinieerd. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en zonder update van de App Store weergegeven.
+   >U kunt deze stappen zelfs voltooien als u geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en zonder update van de App Store weergegeven.
 
-## In-app-berichten inschakelen {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## In-app berichten {#section_79F984271C3B4366B7B04F864F4FF8C2} inschakelen
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Zie SDK en configuratiebestand *toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/requirements.md)voor meer informatie.
+   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/requirements.md) voor meer informatie.
 
 1. De bibliotheek importeren:
 
@@ -42,8 +42,8 @@ Enkele informatie die u moet onthouden:
    #import "ADBMobile.h"
    ```
 
-1. Controleer of het `ADBMobileConfig.json` bestand de vereiste instellingen voor In-App-berichten bevat.
-1. Als u wilt dat in-app-berichten tijdens het starten dynamisch worden bijgewerkt, moet het `remotes` object aanwezig zijn en correct zijn geconfigureerd:
+1. Controleer of het `ADBMobileConfig.json`-bestand de vereiste instellingen voor In-App-berichten bevat.
+1. Voor berichten in de app die dynamisch moeten worden bijgewerkt bij het starten, moet het `remotes`-object aanwezig zijn en correct zijn geconfigureerd:
 
    ```js
    “messages”: [ 
@@ -70,24 +70,24 @@ Enkele informatie die u moet onthouden:
 
    >[!TIP]
    >
-   >`messages` of `remotes` is vereist.
+   >`messages` of  `remotes` is vereist.
 
-   Als deze voorwerpen niet worden gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Zie [Core Implementation en Lifecycle](/help/ios/getting-started/requirements.md)voor meer informatie.
+   Als deze voorwerpen niet worden gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Zie [Core Implementation and Lifecycle](/help/ios/getting-started/requirements.md) voor meer informatie.
 
-## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## In-app berichten {#section_B85CDF6929564AAEA79338B55E5CB1E8} bijhouden
 
 De SDK&#39;s van iOS Mobile Services volgen de volgende meetgegevens voor uw in-app-berichten:
 
 * Voor volledig scherm en waakzame stijl binnen-app berichten:
 
    * **[!UICONTROL Impressions]**: wanneer de gebruiker een bericht in de app activeert.
-   * **[!UICONTROL Click throughs]**: wanneer de gebruiker op de **[!UICONTROL Click-through]** knop drukt.
-   * **[!UICONTROL Cancels]**: wanneer de gebruiker op de **[!UICONTROL Cancel]** knop drukt.
+   * **[!UICONTROL Click throughs]**: wanneer de gebruiker op de  **[!UICONTROL Click-through]** knop drukt.
+   * **[!UICONTROL Cancels]**: wanneer de gebruiker op de  **[!UICONTROL Cancel]** knop drukt.
 
 * Voor aangepaste, volledig scherm in-app berichten moet de HTML-inhoud in het bericht de juiste code bevatten om de SDK een melding te geven van de volgende knoppen:
 
-   * **[!UICONTROL Click-through]** (omleiden) voorbeeld bijhouden: `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL Cancel]** (close) voorbeeld tracking: `adbinapp://cancel`
+   * **[!UICONTROL Click-through]** (omleiden) voorbeeld bijhouden:  `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL Cancel]** (close) voorbeeld tracking:  `adbinapp://cancel`
 
 * Voor lokale (externe) meldingen:
 
@@ -118,4 +118,3 @@ De naam van het fallback-afbeeldingselement wordt opgegeven bij het configureren
 >[!IMPORTANT]
 >
 >U moet ervoor zorgen dat de opgegeven bron beschikbaar is.
-
