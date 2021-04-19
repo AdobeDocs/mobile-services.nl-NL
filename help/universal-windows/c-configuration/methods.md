@@ -4,16 +4,16 @@ seo-description: Klassen en methoden die worden geleverd door de Universal Windo
 seo-title: Methoden van SDK
 solution: Experience Cloud,Analytics
 title: Methoden van SDK
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 22%
 
 ---
-
 
 # Methoden van SDK {#sdk-methods}
 
@@ -21,7 +21,7 @@ Klassen en methoden die worden geleverd door de Universal Windows Platform-bibli
 
 >[!TIP]
 >
->Wanneer u methoden van winJS (JavaScript) gebruikt, wordt de eerste letter van alle methoden automatisch verlaagd. `winmd`
+>Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Klassen en methoden die worden geleverd door de Universal Windows Platform-bibli
    * `ADBMobilePrivacyStatusOptOut` - Hits worden weggegooid.
    * `ADBMobilePrivacyStatusUnknown` - Als uw rapportsuite is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden verwijderd). Als uw rapportsuite niet is ingeschakeld voor tijdstempels, worden treffers genegeerd totdat de privacystatus verandert en u zich aanmeldt.
 
-      De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` configuratiebestand. Zie het [configuratiebestand](/help/universal-windows/c-configuration/c.json.md)ADBMobileConfig.json voor meer informatie.
+      De standaardwaarde wordt geplaatst in het `ADBMobileConfig.json` configuratiedossier. Zie [ADBMobileConfig.json config file](/help/universal-windows/c-configuration/c.json.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -78,7 +78,7 @@ Klassen en methoden die worden geleverd door de Universal Windows Platform-bibli
 
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
-   Hiermee stelt u de privacystatus voor de huidige gebruiker in `status`. Stel een van de volgende waarden in:
+   Stelt de privacystatus voor de huidige gebruiker in op `status`. Stel een van de volgende waarden in:
    * `ADBMobilePrivacyStatusOptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatusOptOut` - treffers worden genegeerd.
    * `DBMobilePrivacyStatusUnknown` - Als uw rapportsuite is ingeschakeld voor tijdstempels, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden verwijderd). Als uw rapportsuite niet is ingeschakeld voor tijdstempels, worden treffers genegeerd totdat de privacystatus verandert en u zich aanmeldt.
@@ -128,7 +128,7 @@ Klassen en methoden die worden geleverd door de Universal Windows Platform-bibli
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Retourneert de aangepaste gebruikers-id als er een aangepaste id is ingesteld. Retourneert `null` of er geen aangepaste id is ingesteld.
+   Retourneert de aangepaste gebruikers-id als er een aangepaste id is ingesteld. Retourneert `null` als er geen aangepaste id is ingesteld.
 De standaardwaarde is `null`.
 
    >[!IMPORTANT]
@@ -150,7 +150,7 @@ De standaardwaarde is `null`.
 
 * **SetUserIdentifier (winJS: setUserIdentifier)**
 
-   Hiermee stelt u de gebruikers-id in op `identifier`.
+   Hiermee stelt u de gebruikersnaam in op `identifier`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -184,7 +184,7 @@ De standaardwaarde is `null`.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Hiermee stelt u de voorkeur voor foutopsporing in op `debugLogging`. Debug registreren werkt slechts wanneer het gebruiken van zuivert versie van de bibliotheek, negeert de versieversie dit het plaatsen.
+   Stelt de voorkeur voor foutopsporing in op `debugLogging`. Debug registreren werkt slechts wanneer het gebruiken van zuivert versie van de bibliotheek, negeert de versieversie dit het plaatsen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -201,7 +201,7 @@ De standaardwaarde is `null`.
 
 * **CollectLifecycleData (winJS: collectionLifecycleData)**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/universal-windows/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Metriek van levenscyclus](/help/universal-windows/metrics.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -218,7 +218,7 @@ De standaardwaarde is `null`.
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseCollecting &#x200B; LifecycleData)**
 
-   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusstatistieken](/help/universal-windows/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusmetriek](/help/universal-windows/metrics.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
