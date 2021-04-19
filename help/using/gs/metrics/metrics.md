@@ -1,22 +1,22 @@
 ---
 description: U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
 seo-title: Mobiele metriek
 solution: Experience Cloud,Analytics
 title: Mobiele metriek
-topic: Metrics
+topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
+exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-
-# Mobiele meetgegevens{#mobile-metrics}
+# Mobiele metriek{#mobile-metrics}
 
 U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
 
@@ -34,7 +34,7 @@ De volgende typen metingen worden gemeten:
 
 * **Omzet**
 
-   U kunt de opbrengsten die door App-winkels zijn geïnd, weergeven en de opbrengsten direct meten met aankoopgebeurtenissen in de app. Andere maateenheden voor winkelwagentjes zijn beschikbaar in [Rapporten](/help/using/usage/reports-customize/reports-customize.md)aanpassen.
+   U kunt de opbrengsten die door App-winkels zijn geïnd, weergeven en de opbrengsten direct meten met aankoopgebeurtenissen in de app. Andere maateenheden voor winkelwagentjes zijn beschikbaar door [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md).
 
 * **App-gebeurtenissen**
 
