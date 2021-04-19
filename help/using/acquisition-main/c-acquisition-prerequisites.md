@@ -1,20 +1,20 @@
 ---
 description: Vul de volgende voorwaarden in voordat u verwervingskoppelingen kunt gebruiken.
-keywords: mobile
+keywords: mobiel
 seo-description: Vul de volgende voorwaarden in voordat u verwervingskoppelingen kunt gebruiken.
 seo-title: Vereisten voor overname
 solution: Experience Cloud,Analytics
 title: Vereisten voor overname
-topic: Metrics
+topic-fix: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
+exl-id: 31201bec-e823-47b1-8912-2f8d69cea5be
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 6%
 
 ---
-
 
 # Verwervingsvoorwaarden{#acquisition-prerequisites}
 
@@ -24,7 +24,7 @@ Om de Verbindingen van de Marketing te volgen, zorg ervoor dat u aan de volgende
 
 1. Zorg ervoor dat u een rapportenpakket voor mobiele apps hebt.
 
-   U moet een nieuwe rapportenreeks voor mobiele apps maken of een bestaande rapportsuite hebben die gegevens kan verzamelen, bijhouden en rapporteren die via uw marketingkoppelingen zijn verzameld. Zie Een nieuwe app [toevoegen voor meer informatie over het maken van een nieuwe rapportensuite voor mobiele apps](/help/using/manage-apps/t-new-app.md).
+   U moet een nieuwe rapportenreeks voor mobiele apps maken of een bestaande rapportsuite hebben die gegevens kan verzamelen, bijhouden en rapporteren die via uw marketingkoppelingen zijn verzameld. Zie [Nieuwe app toevoegen](/help/using/manage-apps/t-new-app.md) voor meer informatie over het maken van een nieuwe rapportensuite voor mobiele apps.
 
 1. Controleer uw SDK-versie.
 
@@ -40,8 +40,8 @@ Om de Verbindingen van de Marketing te volgen, zorg ervoor dat u aan de volgende
 
 1. Opties voor SDK-overname inschakelen
 
-   Het volgen moet in de configuratie van SDK worden toegelaten alvorens de verbindingen kunnen worden gevolgd en worden gemeld. Voor meer informatie, zie [Vorm Opname](/help/using/acquisition-main/t-enable-acquisition.md).
+   Het volgen moet in de configuratie van SDK worden toegelaten alvorens de verbindingen kunnen worden gevolgd en worden gemeld. Voor meer informatie, zie [Acquisitie](/help/using/acquisition-main/t-enable-acquisition.md) vormen.
 
 1. App Store-apps toevoegen
 
-   U moet de app toevoegen vanuit de Apple App Store of Google Play. Zie Een app [toevoegen vanuit een App Store](/help/using/manage-apps/c-app-store/t-app-store-app.md)voor meer informatie.
+   U moet de app toevoegen vanuit de Apple App Store of Google Play. Zie [Een app toevoegen vanuit een App Store](/help/using/manage-apps/c-app-store/t-app-store-app.md) voor meer informatie.
