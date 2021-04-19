@@ -4,16 +4,16 @@ seo-description: Met Universal Links (iOS) en App Links (Android) kunt u verbind
 seo-title: Koppelingen naar Apple Universal Links en Android App
 solution: Experience Cloud,Analytics
 title: Handleiding voor Universal Links en App Links
-topic: Metrics
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
-
 
 # Universele koppelingen vs. App-koppelingen: Hoe werken ze? {#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ U kunt deze marketingkoppelingen nu gebruiken in berichten en andere gebieden in
 >[!IMPORTANT]
 >
 >Er worden geen tellingen voor bijhouden van klikken weergegeven met Universal Links of App Links en u kunt ook geen interstitiële elementen gebruiken.
-
