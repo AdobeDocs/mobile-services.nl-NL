@@ -4,18 +4,18 @@ seo-description: Met behulp van iBeacon tracking kunt u microlocaties meten en a
 seo-title: Beacon tracking
 solution: Experience Cloud,Analytics
 title: Beacon tracking
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
+exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-
-# Beacon tracking {#ibeacon-tracking}
+# Beacon bijhouden {#ibeacon-tracking}
 
 Met behulp van iBeacon tracking kunt u microlocaties meten en als doel instellen met iBeacon en Low Energy Bluetooth.
 
@@ -35,7 +35,7 @@ De volgende bakengegevens worden verzonden naar Analytics en Target wanneer `tra
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Zie SDK en configuratiebestand *toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md)voor meer informatie.
+   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 1. De bibliotheek importeren:
 
    ```objective-c
@@ -54,7 +54,7 @@ De volgende bakengegevens worden verzonden naar Analytics en Target wanneer `tra
    [ADBMobile trackingClearCurrentBeacon];
    ```
 
-## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Aanvullende gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de naam van de getimede actie kunt u aanvullende contextgegevens verzenden met elke aanroep van de trackactie:
 
@@ -80,4 +80,3 @@ Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen:
 // When the user leaves the proximity of the beacon, clear the current beacon 
 [ADBMobile trackingClearCurrentBeacon];
 ```
-
