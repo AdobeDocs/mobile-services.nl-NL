@@ -1,22 +1,22 @@
 ---
 description: U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een diepe koppeling in uw app stuurt.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een diepe koppeling in uw app stuurt.
 seo-title: Nieuw koppelingsdoel maken
 solution: Experience Cloud,Analytics
 title: Nieuw koppelingsdoel maken
-topic: Metrics
+topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
+exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# Een nieuw doel voor een koppeling maken {#create-new-link-destination}
+# Een nieuwe koppelingsbestemming maken {#create-new-link-destination}
 
 U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een diepe koppeling in uw app stuurt.
 
@@ -39,7 +39,7 @@ U kunt een nieuwe koppelingsbestemming maken die gebruikers naar een web of een 
 
       * **[!UICONTROL Web Link]**
 
-         Typ bijvoorbeeld een web-HTTP- of HTTPS-URL`https://adobe.com`. Webkoppelingsdoelen leiden gebruikers naar een URL. U kunt gebruikers bijvoorbeeld naar een productlijn op de website van een online detailhandelaar leiden.
+         Typ een web HTTP- of HTTPS-URL, bijvoorbeeld `https://adobe.com`. Webkoppelingsdoelen leiden gebruikers naar een URL. U kunt gebruikers bijvoorbeeld naar een productlijn op de website van een online detailhandelaar leiden.
 
       * **[!UICONTROL Hybrid Link]**
 
@@ -49,7 +49,7 @@ Selecteer de app die is gekoppeld aan de koppeling die u wilt opgeven.
 
       >[!TIP]
       >
-      >Deze informatie wordt vereist slechts als u een Deep Verbinding van de App of een Hybride Verbinding binnen selecteerde **[!UICONTROL Link Type]**. Als de app niet in de selectielijst wordt weergegeven, klikt u **[!UICONTROL Add New App]** om naar een nieuwe app in een App Store te verwijzen.
+      >Deze informatie wordt vereist slechts als u een Deep Verbinding van de App of een Hybride Verbinding in **[!UICONTROL Link Type]** selecteerde. Als de app niet in de selectielijst wordt weergegeven, klikt u op **[!UICONTROL Add New App]** om naar een nieuwe app in een App Store te verwijzen.
 
    * **[!UICONTROL Link type]**
 
@@ -60,4 +60,4 @@ Selecteer de app die is gekoppeld aan de koppeling die u wilt opgeven.
       Typ optionele notities voor uw doel. De extra nota&#39;s tonen slechts op de Manage pagina van de Doelen van de Verbinding in de Mobiele Diensten van Adobe UI. De extra nota&#39;s kunnen u of anderen in uw organisatie snel helpen een specifieke verbindingsbestemming vinden en kunnen inzicht in zijn doel, de campagne verstrekken waaraan het wordt gebonden, of iets anders verstrekken dat u belangrijk vindt.
 
 
-1. Klik op **Opslaan**.
+1. Klik **Opslaan**.
