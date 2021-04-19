@@ -4,16 +4,16 @@ seo-description: De volgende tabel bevat de iOS-versietekenreeks die door veel i
 seo-title: iOS-apparaatversies
 solution: Experience Cloud,Analytics
 title: iOS-apparaatversies
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
+exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 18%
 
 ---
-
 
 # iOS-apparaatversies {#ios-device-versions}
 
@@ -23,7 +23,7 @@ De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten word
 >
 >Deze lijst is gebaseerd op interne tests en online-informatie en kan onnauwkeurigheden of onvolledige informatie bevatten.
 
-Ga voor meer informatie over iOS-apparaten naar sites zoals [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
+Ga voor meer informatie over iOS-apparaten naar sites zoals [De iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
 | **iPhone** | **Versie** |
 |---|---|
@@ -31,7 +31,7 @@ Ga voor meer informatie over iOS-apparaten naar sites zoals [The iPhone Wiki](ht
 | 3G | iPhone1,2 |
 | 3GS | iPhone2,1 |
 | 4 (GSM) (geleverd met firmware 4.0) | iPhone3,1 |
-| 4 (GSM) (geleverd met firmware 6.0) | iPhone3,2 |
+| 4 (GSM) (geleverd met firmware 6.0) | iPhone3,3 |
 | 4 (CDMA) | iPhone3,3 |
 | 4S | iPhone4,1 |
 | 5 (GSM) | iPhone5,1 |
@@ -97,4 +97,3 @@ Ga voor meer informatie over iOS-apparaten naar sites zoals [The iPhone Wiki](ht
 | iPad Pro 2, 12,9 inch (LTE) | iPad7,2 |
 | iPad Pro, 10,5 inch (Wi-Fi) | iPad7,3 |
 | iPad Pro, 10,5 inch (LTE) | iPad7,4 |
-
