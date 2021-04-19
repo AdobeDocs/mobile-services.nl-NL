@@ -1,22 +1,22 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
+exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-
-# Pushberichten oplossen {#troubleshooting-push-messaging}
+# Pushberichten {#troubleshooting-push-messaging} oplossen
 
 Met deze informatie kunt u problemen met pushberichten oplossen.
 
@@ -30,7 +30,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 
 * Wachten op pushservice
 
-   De pushservice (APNS of FCM) verzendt het bericht mogelijk niet meteen. Hoewel dit soms voorkomt, hebben we een vertraging van 5 tot 10 minuten gezien. Op de pagina van Berichten, kunt u verifiëren dat het duwbericht naar de drukkerij is verzonden door de verbinding voor het bericht te klikken. **[!UICONTROL View]** In het rapport wordt het aantal geslaagde verzendingen naar de pushservice vermeld in de **[!UICONTROL Published]** kolom.
+   De pushservice (APNS of FCM) verzendt het bericht mogelijk niet meteen. Hoewel dit soms voorkomt, hebben we een vertraging van 5 tot 10 minuten gezien. Op de pagina van Berichten, kunt u verifiëren dat het duwbericht naar de dupdienst is verzonden door de **[!UICONTROL View]** verbinding voor het bericht te klikken. In het rapport wordt het aantal geslaagde verzendingen naar de pushservice vermeld in de kolom **[!UICONTROL Published]**.
 
    >[!TIP]
    >
@@ -38,9 +38,9 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 
    Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
 
-   * **APNS**: [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   * **FCM**:  [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Waarom worden mijn pushberichten afgesneden of worden ze niet uitgebreid?
 
-Bij sommige Android-apparaten moet u mogelijk berichten weergeven `NotificationCompat.BigTextStyle` .
+Bij sommige Android-apparaten moet u mogelijk `NotificationCompat.BigTextStyle` gebruiken wanneer u berichten weergeeft.
