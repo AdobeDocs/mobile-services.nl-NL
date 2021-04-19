@@ -1,22 +1,22 @@
 ---
 description: U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
 seo-title: App configureren voor gebruik van APNS of FCM
 solution: Experience Cloud,Analytics
 title: App configureren voor gebruik van APNS of FCM
-topic: Metrics
+topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
+exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 11%
+source-wordcount: '589'
+ht-degree: 12%
 
 ---
 
-
-# Uw app configureren voor gebruik van APNS of FCM{#configure-app-to-use-apns-or-fcm}
+# Uw app configureren voor het gebruik van APNS of FCM{#configure-app-to-use-apns-or-fcm}
 
 U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
 
@@ -34,17 +34,17 @@ Uw Android-app configureren voor gebruik van FCM in dit scenario:
 
 1. Klik **[!UICONTROL Create project]** en wacht tot het project wordt gecreeerd.
 
-1. Klik op het gemaakte project en de **[!UICONTROL Project Overview]** pagina voor het gemaakte project moet worden weergegeven. Klik op de knop met het Android-pictogram om een Android-app toe te voegen aan het project.
+1. Klik op het gecreeerde project en **[!UICONTROL Project Overview]** de pagina voor het gecreeerde project zou moeten worden getoond. Klik op de knop met het Android-pictogram om een Android-app toe te voegen aan het project.
 
 1. Voer zo nodig de naam van het toepassingspakket, de bijnaam van de toepassing en het handtekeningcertificaat in.
 
-1. Volg de extra stappen die door de opstellingstovenaar worden voorgesteld. Ga terug naar de **[!UICONTROL Project Overview]** pagina nadat u de Firebase-instelling hebt gecontroleerd door de communicatie met de Firebase-servers te testen.
+1. Volg de extra stappen die door de opstellingstovenaar worden voorgesteld. Nadat u de configuratie van Firebase hebt gecontroleerd door de communicatie met de Firebase-servers te testen, gaat u terug naar de pagina **[!UICONTROL Project Overview]**.
 
-1. Klik op het tandwielpictogram rechts van de **[!UICONTROL Project Overview]** knop en klik **[!UICONTROL Project Settings]**.
+1. Klik op het tandwielpictogram rechts van de knop **[!UICONTROL Project Overview]** en klik op **[!UICONTROL Project Settings]**.
 
-1. Klik op het **[!UICONTROL Cloud Messaging]** tabblad.
+1. Klik op het tabblad **[!UICONTROL Cloud Messaging]**.
 
-1. Kopieer het bestand **[!UICONTROL Legacy server key]** en **[!UICONTROL Sender ID]** voor later gebruik.
+1. Kopieer **[!UICONTROL Legacy server key]** en **[!UICONTROL Sender ID]** voor later gebruik.
 
    Bijvoorbeeld:
 
@@ -64,11 +64,11 @@ Uw Android-app configureren voor gebruik van FCM in dit scenario:
 
 1. Klik op **[!UICONTROL Get Started]**. Hiermee wordt de pagina met de projectindex geopend. Zoek het Firebase-ingeschakelde project dat is gekoppeld aan uw Android-app en klik op de projectkaart.
 
-1. Het **[!UICONTROL Project Overview]** project moet dan worden geladen. Klik op het tandwielpictogram rechts van de **[!UICONTROL Project Overview]** knop en klik **[!UICONTROL Project Settings]**.
+1. **[!UICONTROL Project Overview]** voor het project zou dan moeten worden geladen. Klik op het tandwielpictogram rechts van de knop **[!UICONTROL Project Overview]** en klik op **[!UICONTROL Project Settings]**.
 
-1. Klik op het **[!UICONTROL Cloud Messaging]** tabblad.
+1. Klik op het tabblad **[!UICONTROL Cloud Messaging]**.
 
-1. Kopieer het bestand **[!UICONTROL Legacy server key]** en **[!UICONTROL Sender ID]** voor later gebruik.
+1. Kopieer **[!UICONTROL Legacy server key]** en **[!UICONTROL Sender ID]** voor later gebruik.
 
    Bijvoorbeeld:
 
@@ -82,20 +82,20 @@ Uw Android-app configureren voor gebruik van FCM in dit scenario:
 
 
 
-## iOS-apps {#section_2031DAB485FC4D2B9027E42AD90B294D}
+## iOS-toepassingen {#section_2031DAB485FC4D2B9027E42AD90B294D}
 
 Uw iOS-app configureren voor het gebruik van APNS:
 
 1. Ga naar [https://developer.apple.com/account](https://developer.apple.com/account) en meld u aan bij uw [Apple Developer-account](https://developer.apple.com/account).
 1. Selecteer onder **[!UICONTROL iOS Apps]** de optie **[!UICONTROL Identifiers]**.
 1. Ga naar Stap 11 als u een app-id hebt ingesteld voor push.
-1. Druk op de **[!UICONTROL +]** knop om een nieuwe toepassings-id te maken.
+1. Druk **[!UICONTROL +]** knoop om een nieuwe identiteitskaart van de Toepassing tot stand te brengen.
 1. Typ een beschrijving van de toepassings-id.
 1. Typ een achtervoegsel voor de toepassings-id.
 
    >[!IMPORTANT]
    >
-   >Voor ondersteuning van push moet u een expliciete toepassings-id gebruiken die **geen** jokerteken gebruikt (bijvoorbeeld `- com.tester.pushSample`).
+   >Als u push wilt ondersteunen, moet u een expliciete toepassings-id gebruiken die **not** een wilde-kaart gebruikt (bijvoorbeeld `- com.tester.pushSample`).
 
 1. Schakel onder **[!UICONTROL App Services]** het selectievakje **[!UICONTROL Push Notifications]** in.
 1. Klik op **[!UICONTROL Continue]**.
@@ -121,9 +121,8 @@ Ga als volgt te werk om uw SSL-certificaat en persoonlijke sleutel (APNS) op te 
 
 1. Vouw het certificaat uit en controleer of het een persoonlijke sleutel bevat.
 1. Klik met de rechtermuisknop op de persoonlijke sleutel en selecteer **[!UICONTROL  Export " *`<name of key>`*]**.
-1. Typ de benodigde gegevens in het dialoogvenster en sla het nieuwe `.p12` bestand op.
+1. Typ de benodigde gegevens in het dialoogvenster en sla het nieuwe `.p12`-bestand op.
 
    U hoeft geen wachtwoord in te voeren.
 
-1. Typ het **[!UICONTROL Private Key]** bestand in het `.p12` vak.
-
+1. Typ in **[!UICONTROL Private Key]** het bestand `.p12`.
