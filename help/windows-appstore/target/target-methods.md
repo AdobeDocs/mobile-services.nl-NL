@@ -4,16 +4,16 @@ seo-description: Lijst met doelmethoden die worden geleverd door de Windows 8.1 
 seo-title: Doelmethoden
 solution: Experience Cloud,Analytics
 title: Doelmethoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
+exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 32%
 
 ---
-
 
 # Doelmethoden {#target-methods}
 
@@ -21,11 +21,11 @@ Lijst met doelmethoden die worden geleverd door de Windows 8.1 Universal App Sto
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Analysemethoden hebben de voorvoegsel &quot;Doel&quot;.
 
-[Levenscyclusmetriek](/help/windows-appstore/metrics.md) worden als parameters naar elke mbox-lading verzonden.
+[Levenscyclusmetriek ](/help/windows-appstore/metrics.md) wordt als parameters naar elke mbox-lading verzonden.
 
 >[!TIP]
 >
->Wanneer u methoden van winJS (JavaScript) gebruikt, wordt de eerste letter van alle methoden automatisch verlaagd. `winmd`
+>Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
 
 ## Referentie klasse: TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Verzendt `request` naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok wordt geproduceerd `callback`.
+   Verzendt `request` naar uw geconfigureerde doelserver en retourneert de tekenreekswaarde van de aanbieding die in een blok `callback` is gegenereerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest()**
 
-   Maakt een `TargetLocationRequest` object met de opgegeven parameters.
+   Maakt een `TargetLocationRequest`-object met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Maakt een `TargetLocationRequest` object met de opgegeven parameters.
+   Maakt een `TargetLocationRequest`-object met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -171,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
       auto sessionId = ADBMobile.Target.getSessionId(); 
       ```
-
