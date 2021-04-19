@@ -4,28 +4,28 @@ seo-description: Acties zijn de gebeurtenissen die in uw Android-app optreden en
 seo-title: Toepassingsacties bijhouden
 solution: Experience Cloud,Analytics
 title: Toepassingsacties bijhouden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 1%
 
 ---
 
-
-# Track app actions {#track-app-actions}
+# Toepassingshandelingen bijhouden {#track-app-actions}
 
 Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
 
-Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. Bijvoorbeeld, zou u een `trackAction` vraag voor elk nieuw abonnement kunnen verzenden, telkens als een artikel wordt bekeken, of telkens als een niveau wordt voltooid. Handelingen worden niet automatisch bijgehouden. U moet dus een aanroep doen `trackAction` wanneer een gebeurtenis plaatsvindt die u wilt bijhouden en de handeling toewijzen aan een aangepaste gebeurtenis.
+Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. Bijvoorbeeld, zou u een `trackAction` vraag voor elk nieuw abonnement kunnen verzenden, telkens als een artikel wordt bekeken, of telkens als een niveau wordt voltooid. Handelingen worden niet automatisch bijgehouden, dus u moet `trackAction` aanroepen wanneer een gebeurtenis plaatsvindt die u wilt bijhouden en de handeling toewijzen aan een aangepaste gebeurtenis.
 
-## Handelingen bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Handelingen {#section_380DF56C4EE4432A823940E4AE4C9E91} bijhouden
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
 1. De bibliotheek importeren:
 
@@ -39,18 +39,18 @@ Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden 
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. Selecteer uw app in de gebruikersinterface van Adobe Mobile Services en klik op **[!UICONTROL Manage App Settings]**.
-1. Klik **[!UICONTROL Manage Variables and Metrics]** en klik op het **[!UICONTROL Custom Metrics]** tabblad.
+1. Selecteer uw toepassing in de gebruikersinterface van Mobiele services Adobe en klik op **[!UICONTROL Manage App Settings]**.
+1. Klik **[!UICONTROL Manage Variables and Metrics]** en klik **[!UICONTROL Custom Metrics]** tabel.
 
-1. Wijs bijvoorbeeld de naam van de contextgegevens die in de code is gedefinieerd, toe `myapp.ActionName`aan een aangepaste gebeurtenis.
+1. Wijs de naam van de contextgegevens die in uw code, bijvoorbeeld, `myapp.ActionName`, aan een douanegebeurtenis wordt bepaald.
 
    ![](assets/map-event-context-data.png)
 
-U kunt ook een eigenschap instellen om alle actiewaarden in te houden door een aangepaste eigenschap met een naam als **[!UICONTROL Custom Actions]** en de waarde in te stellen op `a.action`.
+U kunt ook een eigenschap instellen om alle actiewaarden in te houden door een aangepaste eigenschap met een naam als **[!UICONTROL Custom Actions]** toe te wijzen en de waarde in te stellen op `a.action`.
 
 ![](assets/map-custom-prop.png)
 
-## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
 
 Naast de naam van de handeling kunt u aanvullende contextgegevens verzenden bij elke aanroep van een trackactie:
 
@@ -64,11 +64,10 @@ De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele dienste
 
 ![](assets/map-variable-context-action.png)
 
-## Actierapport {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Melding van handelingen {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 | Interface | Rapport |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL Action Paths]** verslag.  Geef de volgorde weer waarin acties in uw app plaatsvinden. U kunt ook op elk rapport klikken **[!UICONTROL Customize]** om gerangschikte, beheerde acties of een defecatierapport weer te geven of een filter toepassen om acties voor een bepaald segment weer te geven. |
+| Adobe Mobile Services | **[!UICONTROL Action Paths]** verslag.  Geef de volgorde weer waarin acties in uw app plaatsvinden. U kunt **[!UICONTROL Customize]** op om het even welk rapport ook klikken om gerangschikte, georiënteerde acties, of in een verdelingsrapport te bekijken of een filter op meningsacties voor een specifiek segment toe te passen. |
 | Marketingrapporten en -analyses | **[!UICONTROL Custom Event]** verslag.  Nadat een handeling is toegewezen aan een aangepaste gebeurtenis, kunt u mobiele gebeurtenissen weergeven die vergelijkbaar zijn met alle andere analytische gebeurtenissen. |
 | Ad-hocanalyse | **[!UICONTROL Custom Event]** verslag.  Nadat een handeling is toegewezen aan een aangepaste gebeurtenis, kunt u mobiele gebeurtenissen weergeven die vergelijkbaar zijn met alle andere analytische gebeurtenissen. |
-
