@@ -4,16 +4,16 @@ seo-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëre
 seo-title: Verwerkingsregels en contextgegevens
 solution: Experience Cloud,Analytics
 title: Verwerkingsregels en contextgegevens
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
 
 ---
-
 
 # Verwerkingsregels en contextgegevens{#processing-rules-and-context-data}
 
@@ -21,10 +21,10 @@ De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contex
 
 Zie de volgende inhoud voor meer informatie:
 
-* [Opleiding](https://tv.adobe.com/embed/1181/16506/) verwerkingsregels @ top 2013
+* [Opleiding](https://tv.adobe.com/embed/1181/16506/) @ top 2013 over verwerkingsregels
 * Word gemachtigd om verwerkingsregels te gebruiken
 
-   Zie Overzicht [van](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)verwerkingsregels voor meer informatie over verwerkingsregels.
+   Voor meer informatie over verwerkingsregels, zie [Overzicht van de Regels van de Verwerking](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
@@ -46,7 +46,7 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
    "eVar1":"jimbo"
    ```
 
-   Dit zou het *lichtjes* gemakkelijker kunnen maken wanneer u de éénmalige afbeelding in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en toekomstige codeupdates, wat moeilijker kan zijn. Gebruik in plaats daarvan beschrijvende namen voor sleutels en waarden:
+   Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de éénmalige afbeelding in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en toekomstige codeupdates, die moeilijker kunnen zijn. Gebruik in plaats daarvan beschrijvende namen voor sleutels en waarden:
 
    ```js
    "username":"jimbo"
@@ -66,5 +66,4 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
 >[!TIP]
 >
->Adobe behoudt de naamruimte `a.`&quot;. Naast die beperking, om botsingen te vermijden, is het enige vereiste dat de variabelen van contextgegevens in uw login bedrijf uniek zijn.
-
+>Adobe behoudt de naamruimte &quot; `a.`&quot;. Naast die beperking, om botsingen te vermijden, is het enige vereiste dat de variabelen van contextgegevens in uw login bedrijf uniek zijn.
