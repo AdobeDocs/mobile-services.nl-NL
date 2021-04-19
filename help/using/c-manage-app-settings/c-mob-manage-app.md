@@ -1,22 +1,22 @@
 ---
 description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 seo-title: Uw app beheren
 solution: Experience Cloud,Analytics
 title: Uw app beheren
-topic: Metrics
+topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
+exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
 
-
-# Uw app beheren {#managing-your-app}
+# Uw app {#managing-your-app} beheren
 
 U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 
@@ -39,7 +39,7 @@ U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een versc
 
 Klik op **[!UICONTROL Manage App Settings]** > **[!UICONTROL Manage Variables & Metrics]** > **[!UICONTROL Custom Variables]**.
 
-Deze toewijzingen roepen de zelfde API die in de Regels [van de](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)Verwerking wordt gebruikt.
+Deze toewijzingen roepen zelfde API die in [Verwerkingsregels](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) wordt gebruikt.
 
 ![Contextgegevenstoewijzing](assets/custom_data_content.png)
 
@@ -49,8 +49,8 @@ Hier is een lijst van de douanevariabelen die u kunt vormen:
 
    Wanneer een waarde voor een bezit in een volgende vraag (of een klap) wordt geplaatst, is het slechts op die vraag van toepassing.
 
-* De **[!UICONTROL Custom Variables]** (evars) beantwoorden ook de vraag &quot;welke?&quot; Een vage waarde kan echter niet alleen van toepassing zijn op de treffer die wordt verzonden, maar ook op variabelen en metriek die in volgende treffers worden verzonden tot de waarde verloopt of een nieuwe waarde wordt geplaatst.
-* Het **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** gedraagt zich het zelfde als variabelen behalve zij staan u toe om veelvoudige waarden op één slag te vangen. Zie Variabelen [](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html)weergeven voor meer informatie.
+* De **[!UICONTROL Custom Variables]** (of evars) beantwoorden ook de vraag &quot;welke?&quot; Een vage waarde kan echter niet alleen van toepassing zijn op de treffer die wordt verzonden, maar ook op variabelen en metriek die in volgende treffers worden verzonden tot de waarde verloopt of een nieuwe waarde wordt geplaatst.
+* De **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** gedraagt zich het zelfde als variabelen behalve zij staan u toe om veelvoudige waarden op één slag te vangen. Zie [Variabelen weergeven](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html) voor meer informatie.
 
 De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele services.
 
@@ -85,7 +85,7 @@ De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele 
 
       Adobe Analytics heeft een geavanceerdere interface voor het instellen van persistentie voor eVars. Als een persistentiewaarde voor de eVar wordt geplaatst die niet in de Mobiele Diensten wordt gesteund, wordt deze waarde getoond in Mobiele Diensten UI.
 
-      Klik op **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
+      Als u eVars wilt beheren, klikt u op **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
    * **[!UICONTROL List Support]**
 
@@ -105,7 +105,7 @@ Selecteer een ongebruikt variabelenummer en typ een naam. U kunt optioneel de va
 
 * **Aangepaste cijfers**
 
-   Metrische gegevens (of gebeurtenissen) beantwoorden de vragen *hoeveel?* of *hoeveel?*. Gebeurtenissen kunnen telkens toenemen wanneer de gebruiker een handeling uitvoert of numerieke waarden zoals een prijs vasthoudt. Aangepaste meetgegevens zijn onder andere gebeurtenissen zoals een app die is gemaakt, het PDF- of CSV-bestand is gedownload of geëxporteerd, een campagne is opgeslagen, de SDK is gedownload, een rapport is uitgevoerd, een koppeling naar de App Store is toegevoegd, een bericht in de app is geactiveerd, enzovoort.
+   De metriek (of de gebeurtenissen) beantwoorden de vragen *hoeveel?* of  *hoeveel?*. Gebeurtenissen kunnen telkens toenemen wanneer de gebruiker een handeling uitvoert of numerieke waarden zoals een prijs vasthoudt. Aangepaste meetgegevens zijn onder andere gebeurtenissen zoals een app die is gemaakt, het PDF- of CSV-bestand is gedownload of geëxporteerd, een campagne is opgeslagen, de SDK is gedownload, een rapport is uitgevoerd, een koppeling naar de App Store is toegevoegd, een bericht in de app is geactiveerd, enzovoort.
 
    Selecteer een van de volgende aangepaste metrische typen:
 
@@ -113,14 +113,14 @@ Selecteer een ongebruikt variabelenummer en typ een naam. U kunt optioneel de va
    * **[!UICONTROL Decimal number]**
    * **[!UICONTROL Currency]**
 
-## Belangenpunten beheren {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6}
+## Punten {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6} beheren
 
-Met interessepunten kunt u geografische locaties definiëren die u kunt gebruiken voor correlatiedoeleinden, als doel instellen voor berichten in de app, enzovoort. Wanneer een treffer wordt verzonden in een belangenpunt, wordt het aandachtspunt verbonden aan de treffer. Zie [Belangenpunten](/help/using/location/t-manage-points.md)beheren voor meer informatie over aandachtspunten.
+Met interessepunten kunt u geografische locaties definiëren die u kunt gebruiken voor correlatiedoeleinden, als doel instellen voor berichten in de app, enzovoort. Wanneer een treffer wordt verzonden in een belangenpunt, wordt het aandachtspunt verbonden aan de treffer. Zie [Punten van interesse beheren](/help/using/location/t-manage-points.md) voor meer informatie over aandachtspunten.
 
-## Koppelingsdoelen beheren {#section_F722A387E22A430187B063D358A87711}
+## Koppelingsbestemmingen beheren {#section_F722A387E22A430187B063D358A87711}
 
-U kunt koppelingsdoelen maken, bewerken, archiveren/ongedaan maken en verwijderen. Deze doelen kunnen vervolgens inline worden genoemd bij het samenstellen van marketingkoppelingen, pushberichten of in-app-berichten. Voor meer informatie over verbindingsbestemmingen, zie de Doelen van de Verbinding [beheren](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
+U kunt koppelingsdoelen maken, bewerken, archiveren/ongedaan maken en verwijderen. Deze doelen kunnen vervolgens inline worden genoemd bij het samenstellen van marketingkoppelingen, pushberichten of in-app-berichten. Voor meer informatie over verbindingsbestemmingen, zie [De Doelen van de Verbinding](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md) beheren.
 
-## Postbacks beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
+## Terugbetalingen beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
-Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Vorm Postbacks](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
+Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Configure Postbacks](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
