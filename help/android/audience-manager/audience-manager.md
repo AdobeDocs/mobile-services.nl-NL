@@ -1,20 +1,20 @@
 ---
 description: Deze informatie helpt u signalen verzenden en bezoekerssegmenten van Audience Manager terugwinnen.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Deze informatie helpt u signalen verzenden en bezoekerssegmenten van Audience Manager terugwinnen.
 seo-title: Overzicht van Audience Manager
 solution: Experience Cloud,Analytics
 title: Overzicht van Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
+exl-id: b6cbe410-3ee4-44d4-a4e6-74291f45be81
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '143'
 ht-degree: 8%
 
 ---
-
 
 # Overzicht van Audience Manager {#audience-manager}
 
@@ -22,7 +22,7 @@ De informatie in deze sectie helpt u signalen verzenden en bezoekerssegmenten va
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
