@@ -4,16 +4,16 @@ seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een
 seo-title: Migreren naar de 4.x SDK's
 solution: Experience Cloud,Analytics
 title: Migreren naar de 4.x SDK's
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
+exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
 
 ---
-
 
 # Migreren naar de 4.x SDK&#39;s {#migrate-to-the-x-sdks}
 
@@ -23,9 +23,9 @@ Met de overgang naar versie 4.x is alle functionaliteit nu toegankelijk via stat
 
 In de volgende secties vindt u een migratie van versie 3.x naar versie 4.x.
 
-## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+## Ongebruikte eigenschappen {#section_145222EAA20F4CC2977DD883FDDBBFC5} verwijderen
 
-U hebt waarschijnlijk een nieuw `ADBMobileConfig.json` bestand ontdekt dat bij uw download is opgenomen. Dit bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json` bestand:
+U hebt waarschijnlijk een nieuw `ADBMobileConfig.json`-bestand opgemerkt dat bij uw download is opgenomen. Dit bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 { 
@@ -57,7 +57,7 @@ De volgende lijsten maken een lijst van de configuratievariabelen die u naar het
 
 ## Migreren vanaf 3.x
 
-| Configuratievariabele/Methode | Variabele in het `ADBMobileConfig.json` bestand. |
+| Configuratievariabele/Methode | Variabele in het `ADBMobileConfig.json`-bestand. |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;sids&quot; |
@@ -71,17 +71,17 @@ De volgende lijsten maken een lijst van de configuratievariabelen die u naar het
 
 ## Trackaanroepen en trackingvariabelen bijwerken {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-In plaats van de web-focused `Track` en de `TrackLink` vraag te gebruiken, gebruikt versie 4 SDK twee methodes die een weinig steek in de mobiele wereld maken:
+In plaats van de webgerichte `Track`- en `TrackLink`-aanroepen te gebruiken, gebruikt de versie 4-SDK twee methoden die in de mobiele wereld wat meer zin hebben:
 
-* `TrackState` Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan.
+* `TrackState` Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
 
 * `TrackAction` Handelingen zijn de dingen die in uw app gebeuren en die u wilt meten, zoals &#39;logons&#39;, &#39;bannertiketten&#39;, &#39;feed-abonnementen&#39; en andere meetwaarden. Deze vraag verhoogt geen paginameningen.
 
-De `contextData` parameter voor beide methoden bevat naam-waardeparen die als contextgegevens worden verzonden.
+De parameter `contextData` voor beide methoden bevat naam-waardeparen die als contextgegevens worden verzonden.
 
 ## Gebeurtenissen, Props, Vars
 
-Als u naar de methodes [van](/help/windows-appstore/c-configuration/methods.md)SDK hebt gekeken, vraagt u zich waarschijnlijk af waar te om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
+Als u [SDK methodes](/help/windows-appstore/c-configuration/methods.md) hebt bekeken, bent u waarschijnlijk benieuwd waar te om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
 
 De verwerkingsregels bieden u verschillende voordelen:
 
@@ -89,15 +89,15 @@ De verwerkingsregels bieden u verschillende voordelen:
 * U kunt betekenisvolle namen voor gegevens gebruiken in plaats van het plaatsen van variabelen die voor een rapportreeks specifiek zijn.
 * Het verzenden van extra gegevens heeft weinig effect. Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen.
 
-Zie *Verwerkingsregels* in [Analytics](/help/windows-appstore/analytics/analytics.md)voor meer informatie.
+Zie *Verwerkingsregels* in [Analytics](/help/windows-appstore/analytics/analytics.md) voor meer informatie.
 
-Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan contextgegevens. Dit betekent dat aanroepen naar `SetProp`, `SetEvar`en toewijzingen aan permanente contextgegevens allemaal moeten worden verwijderd en dat de waarden moeten worden toegevoegd aan contextgegevens.
+Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan contextgegevens. Dit betekent dat aanroepen naar `SetProp`, `SetEvar` en toewijzingen naar permanente contextgegevens allemaal moeten worden verwijderd en de waarden moeten worden toegevoegd aan contextgegevens.
 
 **AppSection/Server, GeoZip, Transaction ID, Campaign en andere standaardvariabelen**
 
 Alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, moeten in plaats daarvan worden toegevoegd aan contextgegevens.
 
-Om het eenvoudig te zetten, de enige gegevens die binnen met een `TrackState` of `TrackAction` vraag worden verzonden is de lading in de `data` parameter.
+Om het eenvoudig te zetten, de enige gegevens die met een `TrackState` of `TrackAction` vraag worden verzonden is de lading in de `data` parameter.
 
 ### Trackingaanroepen vervangen
 
@@ -110,13 +110,13 @@ Door uw code, vervang de volgende methodes met een vraag aan `trackState` of `tr
 * `Track` (TrackAction)
 * `TrackLinkURL` (TrackAction)
 
-## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
 
-Vervang de `visitorID` variabele door een vraag aan `setUserIdentifier`.
+Vervang de `visitorID` variabele met een vraag aan `setUserIdentifier`.
 
 ## Offline bijhouden {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json` bestand. Alle andere off-line configuratie wordt gedaan automatisch.
+Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json`-bestand. Alle andere off-line configuratie wordt gedaan automatisch.
 
 Door uw code, verwijder vraag aan de volgende methodes:
 
@@ -125,9 +125,9 @@ Door uw code, verwijder vraag aan de volgende methodes:
 * `SetOnline`
 * `SetOffline`
 
-## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om in te stellen `products`:
+Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products` te plaatsen:
 
 ```js
 // create a processing rule to set the corresponding product event. 
@@ -139,4 +139,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-In dit voorbeeld is de waarde van `"&&products"` is `";Cool Shoe`&quot; en moet deze de syntaxis volgen van de producttekenreeks voor het type gebeurtenis dat u bijhoudt.
+In dit voorbeeld is de waarde van `"&&products"` `";Cool Shoe`&quot; en moet deze de syntaxis van de producttekenreeks volgen voor het type gebeurtenis dat u bijhoudt.
