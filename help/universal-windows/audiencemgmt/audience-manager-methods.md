@@ -4,32 +4,32 @@ seo-description: Lijst met methoden voor Audience Managers die worden geleverd d
 seo-title: Methoden van Audience Manager
 solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
+exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 27%
 
 ---
 
-
-# Methoden van Audience Manager{#audience-manager-methods}
+# Methoden voor Audience Manager{#audience-manager-methods}
 
 Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Managers hebben de voorkeur `AudienceManager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Managers worden voorafgegaan door `AudienceManager`.
 
 >[!TIP]
 >
->Wanneer u methoden van winJS (JavaScript) gebruikt, wordt de eerste letter van alle methoden automatisch verlaagd. `winmd`
+>Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
 
 Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal dat levenscyclusmetriek bevat verzonden met uw hit tijdens de levenscyclus.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` of nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `SharedPreferences` zodat u eenvoudig toegang hebt tot meerdere startpagina&#39;s van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere keren starten van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
