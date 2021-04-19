@@ -1,35 +1,35 @@
 ---
 description: U kunt berichtrapporten weergeven voor in-app- en pushberichten.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 seo-title: Berichtenrapporten weergeven
 solution: Experience Cloud,Analytics
 title: Berichtenrapporten weergeven
-topic: Metrics
+topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
+exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
-
-# Berichtenrapporten weergeven{#view-message-reports}
+# Berichtrapporten weergeven{#view-message-reports}
 
 U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 
-1. Klik ![rapportpictogram](assets/icon_report.png) in de **[!UICONTROL Report]** kolom voor een bericht.
-1. (**Optioneel**) Maak een plakfilter voor het rapport of wijzig de tijdsperiode door op het **[!UICONTROL Calendar]** pictogram te klikken.
+1. Klik ![rapportpictogram](assets/icon_report.png) in **[!UICONTROL Report]** kolom voor een bericht.
+1. (**Optioneel**) Maak een plakfilter voor het rapport of wijzig de tijdsperiode door op het pictogram **[!UICONTROL Calendar]** te klikken.
 
-   Zie [Een plakfilter](/help/using/usage/reports-customize/t-sticky-filter.md)toevoegen voor meer informatie over het maken van een plakfilter.
+   Zie [Een kleverig filter toevoegen](/help/using/usage/reports-customize/t-sticky-filter.md) voor meer informatie over het maken van een kleverig filter.
 
 >[!TIP]
 >
 >Afhankelijk van het type van bericht u bekijkt, zou het rapport kunnen variëren.
 
-## In-app messages {#section_90B79BA58E8141F78538C187EB1BF8C7}
+## In-app berichten {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
 Als u rapporten bekijkt voor een bericht in de app, ziet het rapport er ongeveer als volgt uit:
 
@@ -41,9 +41,9 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor in-app berich
 
 * **[!UICONTROL Impression]**, wanneer een bericht wordt geactiveerd.
 
-* **[!UICONTROL Click through]**, wanneer een gebruiker op de **[!UICONTROL Click Through]** knop drukt in een waarschuwing of een bericht op een volledig scherm en wanneer een gebruiker de app opent vanuit een lokaal bericht.
+* **[!UICONTROL Click through]**, wanneer een gebruiker op de  **[!UICONTROL Click Through]** knop drukt in een waarschuwing of een bericht op een volledig scherm en wanneer een gebruiker de app opent vanuit een lokaal bericht.
 
-* **[!UICONTROL Cancel]**, wanneer een gebruiker op de **[!UICONTROL Cancel]** knop drukt in een waarschuwing of een bericht op volledig scherm.
+* **[!UICONTROL Cancel]**, wanneer een gebruiker op de  **[!UICONTROL Cancel]** knop drukt in een waarschuwing of een bericht op volledig scherm.
 
 * **[!UICONTROL Engagement Rate]**, een berekende metrische waarde uit Adobe Analytics en is het resultaat van het aantal klikdoorslagen gedeeld door het aantal indrukkingen.
 
@@ -91,4 +91,4 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
 * **[!UICONTROL Blocklisted]**
 
-   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen onderling wanneer tokens worden geteld als toegevoegd op lijst van gewenste personen. Android-tokens worden direct weergegeven in het aantal lijsten van afgewezen personen. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden weergegeven als toegevoegd op lijst van gewenste personen op volgende berichten.
+   Het aantal apparaattokens dat niet langer geldig is om naar APNS of FCM te worden verzonden. Dit betekent doorgaans dat de app van het apparaat is verwijderd of dat de gebruiker zijn of haar aanmeldingsinstellingen heeft gewijzigd om berichten te ontvangen. Android en iOS verschillen onderling wanneer tokens worden geteld als gevoegd op lijst van gewenste personen. Android-tokens worden direct weergegeven in het aantal lijsten van gewezen personen. iOS-tokens worden aanvankelijk weergegeven als gepubliceerde, maar op basis van feedback van APNS, worden weergegeven als gevoegd op lijst van gewenste personen op volgende berichten.
