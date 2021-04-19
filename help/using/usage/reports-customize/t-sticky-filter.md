@@ -1,32 +1,32 @@
 ---
 description: Creeer een filter dat verschillende rapporten overspant om te zien hoe een bepaald segment over alle mobiele rapporten presteert. Met een plakfilter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten.
-keywords: mobile
+keywords: mobiel
 seo-description: Creeer een filter dat verschillende rapporten overspant om te zien hoe een bepaald segment over alle mobiele rapporten presteert. Met een plakfilter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten.
 seo-title: Filter Notitie toevoegen
 solution: Experience Cloud,Analytics
 title: Filter Notitie toevoegen
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
+exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # Een kleverig filter toevoegen{#add-sticky-filter}
 
 Creeer een filter dat verschillende rapporten overspant om te zien hoe een bepaald segment over alle mobiele rapporten presteert. Met een plakfilter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten.
 
-In het volgende voorbeeld worden kleverige filters voor iOS- en Android-besturingssystemen aan het **[!UICONTROL Users & Sessions]** rapport toegevoegd, maar de instructies zijn van toepassing op rapporten of metrische gegevens.
+In het volgende voorbeeld worden kleverige filters voor iOS- en Android-besturingssystemen toegevoegd aan het **[!UICONTROL Users & Sessions]**-rapport, maar de instructies zijn van toepassing op elk rapport of elke meting.
 
-1. Klik op het **[!UICONTROL Filter]** pictogram boven aan een rapport in Adobe Mobile.
+1. Klik op het pictogram **[!UICONTROL Filter]** boven aan een rapport in Adobe Mobile.
 
    ![](assets/sticky-filters.png)
 
-1. Klik in het dialoogvenster Filter op Notitie, selecteer **[!UICONTROL Add Rule]** en selecteer **[!UICONTROL Operating Systems]** in de vervolgkeuzelijst de optie **[!UICONTROL iOS]**.
+1. Klik in het dialoogvenster Filter vast op **[!UICONTROL Add Rule]**, selecteer **[!UICONTROL Operating Systems]** en selecteer **[!UICONTROL iOS]** in de vervolgkeuzelijst.
 
    Herhaal deze stap om Android als filter toe te voegen.
 
@@ -38,4 +38,4 @@ In het volgende voorbeeld worden kleverige filters voor iOS- en Android-besturin
 
    ![](assets/sticky3.png)
 
-1. Klik **[!UICONTROL Update]** en **[!UICONTROL Run]**.
+1. Klik op **[!UICONTROL Update]** en **[!UICONTROL Run]**.
