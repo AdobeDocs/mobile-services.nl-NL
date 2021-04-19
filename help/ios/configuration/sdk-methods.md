@@ -4,16 +4,16 @@ seo-description: Hier volgt een lijst met methoden die worden geleverd door de i
 seo-title: Configuratiemethoden
 solution: Experience Cloud,Analytics
 title: Configuratiemethoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
+exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 21%
 
 ---
-
 
 # Configuratiemethoden {#configuration-methods}
 
@@ -31,7 +31,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
    >[!TIP]
    >
-   >Deze methode mag **alleen** worden gebruikt als uw app een extensie heeft of een zelfstandige extensie is. Zie *ADBMobileAppExtensionType* hieronder voor meer informatie.
+   >Deze methode moet **alleen** worden gebruikt als uw app een extensie heeft of een zelfstandige extensie is. Zie *ADBMobileAppExtensionType* hieronder voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -70,7 +70,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
    * `ADBMobilePrivacyStatusOptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatusOptOut` - treffers worden genegeerd.
    * `ADBMobilePrivacyStatusUnknown` - Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de status van de privacy verandert in aanmelden (vervolgens worden treffers verzonden) of Afmelden (vervolgens worden treffers verwijderd). Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden.
-De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
+De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -86,7 +86,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **setPrivacyStatus**
 
-   Hiermee stelt u de privacystatus voor de huidige gebruiker in `status`.
+   Stelt de privacystatus voor de huidige gebruiker in op `status`.
 
    Stel een van de volgende waarden in:
 
@@ -128,7 +128,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
    >[!TIP]
    >
-   >Als uw app van de Experience Cloud 3.x naar de 4.x-SDK upgradet, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Zie de `userIdentifier` rij hieronder voor meer informatie. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil` en het volgen herkenningsteken wordt gebruikt.
+   >Als uw app van de Experience Cloud 3.x naar de 4.x-SDK upgradet, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Zie de onderstaande rij `userIdentifier` voor meer informatie. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil` en het volgen herkenningsteken wordt gebruikt.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -144,7 +144,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **userIdentifier**
 
-   Als een aangepaste id is ingesteld, wordt de gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, wordt deze `nil` geretourneerd. De standaardwaarde is `nil`.
+   Als een aangepaste id is ingesteld, wordt de gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, wordt `nil` geretourneerd. De standaardwaarde is `nil`.
 
    >[!TIP]
    >
@@ -166,7 +166,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **setUserIdentifier**
 
-   Hiermee stelt u de gebruikers-id in op `identifier`.
+   Hiermee stelt u de gebruikersnaam in op `identifier`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -198,7 +198,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **setDebugLogging**
 
-   Hiermee stelt u de voorkeur voor foutopsporing in op `debug`.
+   Stelt de voorkeur voor foutopsporing in op `debug`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -234,11 +234,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **collectionLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusstatistieken](/help/ios/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
 
    >[!TIP]
    >
-   >De voorkeurslocatie voor het aanroepen van deze methode is in `application:didFinishLaunchingWithOptions:`.
+   >De voorkeurslocatie voor het aanroepen van deze methode is `application:didFinishLaunchingWithOptions:`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -256,11 +256,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
    Hiermee kunt u aanvullende gegevens doorgeven bij het verzamelen van levenscyclusmetriek.
 
-   Deze methode moet worden aangeroepen vanaf het ingangspunt van uw app. Indien van toepassing, kan dit één of allebei van de methodes `application:didFinishLaunchingWithOptions:` en/of `applicationWillEnterForeground:` in uw klasse AppDelegate omvatten.
+   Deze methode moet worden aangeroepen vanaf het ingangspunt van uw app. Indien van toepassing, kan dit één of beide methodes `application:didFinishLaunchingWithOptions:` en/of `applicationWillEnterForeground:` in uw klasse AppDelegate omvatten.
 
    >[!IMPORTANT]
    >
-   >Gegevens die via `collectLifecycleDataWithAdditionalData:` de SDK aan de SDK worden doorgegeven, blijven in de SDK behouden `NSUserDefaults`. De SDK verwijdert waarden in de `NSDictionary` parameter die niet van het type `NSString` of `NSNumber`zijn. U kunt alleen `collectLifecycleDataWithAdditionalData:`gebruiken met SDK- **versie 4.4** of hoger.
+   >Gegevens die via `collectLifecycleDataWithAdditionalData:` aan de SDK worden doorgegeven, blijven in `NSUserDefaults` behouden. De SDK verwijdert waarden in de parameter `NSDictionary` die niet van het type `NSString` of `NSNumber` zijn. Als u `collectLifecycleDataWithAdditionalData:` wilt gebruiken, moet u SDK **versie 4.4** of hoger hebben.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -276,11 +276,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
 * **pauseCollectingLifecycleData**
 
-   Gebruik deze API om de verzameling van levenscyclusgegevens te pauzeren. Zie [Levenscyclusstatistieken](/help/ios/metrics.md)voor meer informatie.
+   Gebruik deze API om de verzameling van levenscyclusgegevens te pauzeren. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
 
    >[!IMPORTANT]
    >
-   >In de `applicationDidEnterBackground` afgevaardigde methode, moet u de `pauseCollectingLifecycleData` methode eerst roepen.
+   >In de `applicationDidEnterBackground` afgevaardigde methode, moet u eerst `pauseCollectingLifecycleData` methode roepen.
    >
    >De API is bedoeld om het probleem op iPhone7/7s- of oudere apparaten met iOS 13 te verhelpen, waarbij de meting voor de sessielengte abnormaal werd. Dit was het gevolg van enkele onbekende wijzigingen die zijn opgetreden in iOS 13, waarbij iOS niet genoeg tijd verlaat om de achtergrondtaak te voltooien wanneer u de toepassing ondergronds maakt.
 
@@ -314,7 +314,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
    >[!IMPORTANT]
    >
-   >SDK-versie 4.2 of hoger is vereist `overrideConfigPath`om te kunnen gebruiken.
+   >Als u `overrideConfigPath` wilt gebruiken, hebt u SDK-versie 4.2 of hoger nodig.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -335,7 +335,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
    >[!IMPORTANT]
    >
-   >Deze methode mag alleen in de `application:didRegisterForRemoteNotificationsWithDeviceToken:` methode worden gebruikt.
+   >Deze methode mag alleen worden gebruikt in de methode `application:didRegisterForRemoteNotificationsWithDeviceToken:`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -357,11 +357,11 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
 
    >[!TIP]
    >
-   >Haal de IDFA **alleen** van Apple API&#39;s op als u een advertentieservice gebruikt. Als u IDFA ophaalt en deze niet correct gebruikt, wordt uw app mogelijk afgewezen.
+   >Haal de IDFA op van Apple API&#39;s **only** als u een advertentieservice gebruikt. Als u IDFA ophaalt en deze niet correct gebruikt, wordt uw app mogelijk afgewezen.
    >
-   >Als voor uw toepassing IDFA is vereist, controleert u de documentatie [van](https://developer.apple.com/documentation/adsupport) Apple om de gebruikersvoorkeuren voor Advertentie te raadplegen en de IDFA-waarde op te halen.
+   >Als uw toepassing IDFA vereist, controleert [Documentatie van Apple](https://developer.apple.com/documentation/adsupport) voor het vragen van de voorkeur van de gebruiker op het Ad Tracking en het terugwinnen van de waarde IDFA.
    >
-   >Voor iOS 14+ moet het nieuwe [app Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency) worden geïmplementeerd om de IDFA-waarde te kunnen ophalen.
+   >Voor iOS 14+ moet het nieuwe [Transparantieframework voor het bijhouden van toepassingen](https://developer.apple.com/documentation/apptrackingtransparency) worden geïmplementeerd om de IDFA-waarde te kunnen ophalen.
    * Hier volgt de syntaxis voor deze methode:
 
       ```objective-c
@@ -375,7 +375,7 @@ De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
-## ADBMobileAppExtensionType enum {#section_18DB491D0ABC4765BB5A467D8FEF4F1B}
+## ADBMobileAppExtensionType-opsomming {#section_18DB491D0ABC4765BB5A467D8FEF4F1B}
 
 ```objective-c
 /** 
@@ -388,4 +388,3 @@ typedef NS_ENUM(NSUInteger, ADBMobileAppExtensionType) {
     ADBMobileAppExtensionTypeStandAlone = 1 /*!< Enum value ADBMobileAppExtensionTypeStandAlone. */ 
 };
 ```
-
