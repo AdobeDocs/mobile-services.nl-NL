@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Android-handleiding voor mobiele services
 breadcrumb-title: Android Guide
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 6%
@@ -15,7 +14,7 @@ ht-degree: 6%
 # Android-handleiding voor mobiele services{#android}
 
 + [Android SDK 4.x voor Experience Cloud-oplossingen](overview.md)
-+ [Releaseopmerkingen](rel-notes.md)
++ [Aanvullende informatie](rel-notes.md)
 + Aan de slag{#getting-started-android}
    + [Aan de slag](getting-started/getting-started.md)
    + [Voordat u begint](getting-started/requirements.md)
@@ -36,7 +35,7 @@ ht-degree: 6%
    + [Toepassingscrashes bijhouden](analytics-main/crashes.md)
    + [Gedetailleerde acties](analytics-main/timed-actions.md)
    + [Levenswaarde bezoeker](analytics-main/lifetime-value.md)
-   + Variabele voor producten{#products-variable}
+   + Productvariabele{#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
    + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
@@ -50,14 +49,14 @@ ht-degree: 6%
    + [Overzicht van overname](acquisition-main/acquisition-main-android.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/acquisition-methods.md)
-   + Diepkoppelingen bijhouden{#tracking-deep-links}
+   + Diepe koppelingen bijhouden{#tracking-deep-links}
       + [Diepkoppelingen bijhouden](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Uitgestelde diepe koppelingen van derden bijhouden](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [Verwerving marketinglink testen](acquisition-main/t-testing-marketing-link-acquisition.md)
    + [V3-overname testen](acquisition-main/t-testing-version-3-acquisition.md)
    + [Verouderde overname testen](acquisition-main/t-testing-acquisition.md)
    + [Problemen met ophalen oplossen](acquisition-main/troubleshoot-acquisition-testing.md)
-+ Berichten{#messaging-android}
++ Overseinen{#messaging-android}
    + [Overzicht van berichten](messaging-main/messaging-main-android.md)
    + In-app messaging{#inapp-messaging}
       + [In-app berichten](messaging-main/messaging/messaging.md)
@@ -67,7 +66,7 @@ ht-degree: 6%
       + [Push messaging implementeren met deep linking](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
       + [Rich push-berichten ontvangen](messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
       + [Pushberichten oplossen](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Location{#location}
++ Locatie{#location}
    + [Overzicht van locatie](location/location.md)
    + [Geolocatie en aandachtspunten](location/geo-poi.md)
    + [Beacon bijhouden](location/beacon.md)
@@ -86,7 +85,7 @@ ht-degree: 6%
    + [Overzicht van Audience Manager](audience-manager/audience-manager.md)
    + [Configuratie van Audience Manager](audience-manager/audiencemgmt.md)
    + [Methoden van Audience Manager](audience-manager/c-audience-manager-methods.md)
-+ Woorden{#wearables-android}
++ Wearables{#wearables-android}
    + [Overzicht van Wearables](wearables/wearables.md)
    + [Android-oormerken: aan de slag](wearables/android-wearable.md)
    + [Android-oormerken: aanvullende opmerkingen](wearables/c-android-wearables--additional-notes.md)
