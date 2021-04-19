@@ -1,22 +1,22 @@
 ---
 description: Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
-keywords: mobile
+keywords: mobiel
 seo-description: Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 seo-title: Rapporttypen
 solution: Experience Cloud,Analytics
 title: Rapporttypen
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
-
-# Report Types {#report-types}
+# Rapporttypen {#report-types}
 
 Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 
@@ -32,9 +32,9 @@ Alvorens rapporten aan te passen, moet u het verschil tussen metrisch en een afm
 
 Hier zijn de soorten rapporten die u in Mobiele UI kunt produceren:
 
-## Overtijdrapport {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
+## Te zijner tijd rapporteren {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 
-In de tijdrapporten ziet u hoe metrische gegevens in een tijdbereik werken, zodat u snel spikes en trends kunt identificeren. De analyse begint vaak in een over-tijd rapport en gaat in trended en gerangschikte rapporten aangezien u naar beneden boor om de factoren te onderzoeken die tot een metrische piek of een trend zouden kunnen bijdragen.
+In tijdrapporten kunt u zien hoe metrische gegevens in een tijdsbereik werken, zodat u snel spikes en trends kunt identificeren. De analyse begint vaak in een over-tijd rapport en gaat in trended en gerangschikte rapporten aangezien u naar beneden boor om de factoren te onderzoeken die tot een metrische piek of een trend zouden kunnen bijdragen.
 
 Als u bijvoorbeeld een piek in de lanceringen ziet, kunt u een trended-rapport uitvoeren met de lanceringen van de top 5-besturingssystemen om te zien welke besturingssystemen het meest bijdragen aan de piek in de lanceringen:
 
@@ -42,7 +42,7 @@ Als u bijvoorbeeld een piek in de lanceringen ziet, kunt u een trended-rapport u
 
 Als u waarden van dimensies wilt weergeven met andere metriek in een rapport dat langer duurt, kunt u de metrische instanties gebruiken en een dimensiefilter definiëren.
 
-## Trend Report {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
+## Trend rapport {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
 
 Met trendrapporten kunt u zien hoe de populairste dimensies presteren ten opzichte van een metrische waarde. U kunt dit rapport gebruiken om te bepalen welke waarden het meest aan een verandering in metrisch bijdragen.
 
@@ -50,7 +50,7 @@ Met trendrapporten kunt u zien hoe de populairste dimensies presteren ten opzich
 
 Als u een trended-rapport voor een dimensie wilt weergeven, voegt u een kleverig filter (bijvoorbeeld Besturingssysteem = iOS 6.0.1) toe aan een overlooprapport om dezelfde gegevens weer te geven. Als bonus, kunt u vijf extra metriek aan het gefiltreerde over-tijd rapport toevoegen.
 
-## Gefilterd overtijdrapport {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
+## Gefilterd over-tijd rapport {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
 
 Als u een specifieke afmetingswaarde hebt die u wilt bekijken, kunt u een kleverige filter aan een rapport over tijd toevoegen. Het volgende rapport toont 30 dagen van lanceringen, verbeteringen, en neerstortingen voor een specifieke werkend systeemversie.
 
@@ -62,7 +62,7 @@ De gerangschikte rapporten tonen u hoe vaak de hoogste 50 afmeting aan metrisch 
 
 ![](assets/ranked.png)
 
-## Sunburst Report {#section_17A9842039174DE094A6B1E9837E35BB}
+## Rapport bij zonsondergang {#section_17A9842039174DE094A6B1E9837E35BB}
 
 Zonneburstrapporten bevatten bijvoorbeeld het basisrapport en de uitsplitsingen. De visualisatie gebruikt hoogte om metrisch en de prestatiesverschillen tussen de metriek te tonen. Elke concentrische cirkel vertegenwoordigt een publiekssegment in de categorie voor die cirkel. U kunt acties uitvoeren voor een publiek, zoals het toepassen van een Vaste Filter, het verbergen van metrisch en het bekijken van metriek.
 
@@ -70,14 +70,14 @@ U kunt het rapport bekijken een in-product leerprogramma dat beschrijft hoe te m
 
 De zelfstudie starten:
 
-1. Klik op **[!UICONTROL Usage]** Toepassingsinstellingen beheren.
+1. Klik op **[!UICONTROL Usage]** in Toepassingsinstellingen beheren.
 
 1. Klik op **[!UICONTROL Technology]** > **[!UICONTROL Technology Breakdown]**.
-1. Klik op de titelbalk van het rapport **[!UICONTROL Customize]** en klik op het informatiepictogram.
+1. Klik in de titelbalk van het rapport op **[!UICONTROL Customize]** en klik op het informatiepictogram.
 
 ![](assets/report_technology.png)
 
-### Plakrapport {#section_AD400106BC684B50B27CCCD3F4497114}
+### Tekenrapport {#section_AD400106BC684B50B27CCCD3F4497114}
 
 Een tekenrapport is gebaseerd op padanalyse en geeft een paddiagram weer dat paden vertegenwoordigt die van de ene status in de app naar de andere worden verplaatst.
 
