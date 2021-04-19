@@ -4,22 +4,22 @@ seo-description: Informatie die u helpt met Video Analytics.
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
+exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 15%
 
 ---
 
-
-# Video Analytics {#video-analytics}
+# Video-analyse {#video-analytics}
 
 Informatie die u helpt met Video Analytics.
 
-Videometingen worden gedetailleerd beschreven in de handleiding [Metingaudio en -video in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html/) . Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
+Videometing wordt gedetailleerd beschreven in de handleiding [Audio en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html/). Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
 In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
 
@@ -27,7 +27,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
    (Vereist) Verzamelt de naam van de video, zoals opgegeven in de implementatie, wanneer een bezoeker de video op een of andere manier bekijkt. U kunt classificaties toevoegen voor deze variabele.
 
-   (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
+   (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Bezoek
@@ -43,7 +43,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.segment**
 
-   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in de eVar van het `1:M:0-25` segment.
+   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video weergeeft, kan SiteCatalyst het volgende verzamelen in het segment `1:M:0-25`.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
@@ -93,17 +93,17 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * Type: Teller
 
 
-## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
+## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
 
-Configureer een `MediaSettings` object met de instellingen die u wilt gebruiken voor het bijhouden van video:
+Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
 ```js
 var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-Om het afspelen van video te meten, moeten de methoden `Play`, `Stop`en `Close` The op de juiste momenten worden aangeroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `Stop`. `Play` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
+Om videoplayback te meten, moeten `Play`, `Stop`, en `Close` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `Stop`. `Play` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
 ## Klassen {#section_16838332727348F990305C0C6B0D795C}
 
@@ -130,11 +130,11 @@ property double parentPodPosition;
 property bool isMediaAd;
 ```
 
-## Mediummeetklasse en methodeverwijzing {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Mediametingklasse en methodereferentie {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **SettingsWith (winJS: settingsWith)**
 
-   Retourneert een `MediaSetting` object met opgegeven parameters.
+   Retourneert een object `MediaSetting` met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -150,7 +150,7 @@ property bool isMediaAd;
 
 * **AdSettingsWith (winJS: adSettingsWith**
 
-   Retourneert een `MediaSettings` object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `MediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -182,7 +182,7 @@ property bool isMediaAd;
 
 * **Close (winJS: sluiten)**
 
-   Houdt een media dicht voor het media punt genoemd *naam* bij.
+   Volgt een media dicht voor media punt genoemd *name*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -198,7 +198,7 @@ property bool isMediaAd;
 
 * **Play (winJS: afspelen)**
 
-   Volgt een media spel voor het media punt genoemd *`name`* bij de bepaalde *compensatie* (in seconden).
+   Volgt een media spel voor media punt genoemd *`name`* bij gegeven *offset* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -214,7 +214,7 @@ property bool isMediaAd;
 
 * **Voltooid (winJS: complete)**
 
-   Markeer het media-item handmatig als voltooid bij de opgegeven *verschuiving* (in seconden).
+   Markeer het media-item handmatig als voltooid in de opgegeven *offset* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -230,7 +230,7 @@ property bool isMediaAd;
 
 * **Stop (winJS: stop)**
 
-   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *verschuiving*.
+   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *offset*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -275,4 +275,3 @@ property bool isMediaAd;
       ```js
       ADB.Media.track("mediaName", null);
       ```
-
