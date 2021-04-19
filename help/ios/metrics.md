@@ -4,32 +4,32 @@ seo-description: In de volgende tabellen worden de metriek en afmetingen weergeg
 seo-title: Levenscycluscijfers
 solution: Experience Cloud,Analytics
 title: Levenscycluscijfers
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
+exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
 
 ---
 
-
-# Levenscycluswaarden {#lifecycle-metrics}
+# Levenscyclusmetriek {#lifecycle-metrics}
 
 Hier volgen de meetwaarden en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga naar [Experience Platform Launch](https://launch.adobe.com/)om aan de slag te gaan.
+* Ga om aan de slag te gaan naar [Experience Platform Launch](https://launch.adobe.com/).
 * Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metriek en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Nadat de metriek van de levenscyclus worden gevormd, worden de metriek verzonden in de parameters van contextgegevens naar Analytics, parameters aan Doel met elke mbox vraag, en als signaal aan Audience Manager. Analytics en Target gebruiken dezelfde indeling, terwijl Audience Manager voor elke meting een ander voorvoegsel gebruikt.
 
@@ -92,7 +92,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 >[!IMPORTANT]
 >
-> De metriek voor *Daily Engaged Users* en *Maandelijkse Betrokken Gebruikers* wordt niet automatisch opgeslagen in Analytics metrisch. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metriek vast te leggen.
+> De *Daily Engaged Users* en *Maandelijkse Betrokken Gebruikers* metriek worden niet automatisch opgeslagen in Analytics metrisch. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metriek vast te leggen.
 
 #### Dimensies
 
@@ -105,7 +105,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Toepassings-id**
 
-   Hiermee slaat u de toepassingsnaam en -versie op in de `[AppName] [BundleVersion]` indeling. Bijvoorbeeld, `myapp 1.1`.
+   Hiermee worden de toepassingsnaam en -versie opgeslagen in de indeling `[AppName] [BundleVersion]`. Bijvoorbeeld, `myapp 1.1`.
 
    * Contextgegevens/doel analyse: `a.AppID`
    * Publiek beheer: `c_a_AppID`
@@ -188,14 +188,14 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    * Publiek beheer: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >De *Dagen sinds laatste verbetering*, *Lanceringen sinds laatste verbetering*, en de afmetingen van de Naam *van de* Drager worden niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om de waarden naar een variabele Analytics te kopiëren voor rapportage.
+   >De *Dagen sinds laatste verbetering*, *Lanceert sinds laatste verbetering*, en de *Naam van de Drager* afmetingen worden niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om de waarden naar een variabele Analytics te kopiëren voor rapportage.
 
 
 ## Extra mobiele meeteenheden en afmetingen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd in variabelen voor mobiele oplossingen.
 
-### Metrics
+### Metrisch
 
 * **Totale tijd van handeling**
 
@@ -223,7 +223,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 10 km)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -251,7 +251,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 1 m)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
