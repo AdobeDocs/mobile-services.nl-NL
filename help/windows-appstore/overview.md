@@ -4,18 +4,18 @@ seo-description: Met Windows 8.1 Universal App Store SDK 4.x voor Experience Clo
 seo-title: Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud-oplossingen
 solution: Experience Cloud,Analytics
 title: Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud-oplossingen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
+exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
 
 ---
 
-
-# Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud-oplossingen{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
+# Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
 Met Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Windows 8.1- en Windows Phone 8.1-toepassingen meten, gerichte inhoud in uw app leveren en gegevens over de doelgroep verzamelen via Audience Manager.
 
@@ -37,10 +37,10 @@ Visual Studio 2013 of later.
 
 Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Experience Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van de analysemogelijkheden van apps en van Adobe Analytics en Adobe Target.
 
-Meer informatie vindt u in de documentatie [van](/help/using/home.md)Adobe Mobile Services.
+Meer informatie vindt u in de [documentatie voor mobiele services van Adobe](/help/using/home.md).
 
 ## Bloedhond gebruiken
 
 >[!IMPORTANT]
 >
->Op 30 **april 2017** is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
+>Vanaf **30 april 2017** is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
