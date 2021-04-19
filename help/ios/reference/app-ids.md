@@ -4,16 +4,16 @@ seo-description: In de volgende tabel worden de verschillende toepassings-id's b
 seo-title: Toepassings-id's
 solution: Experience Cloud,Analytics
 title: Toepassings-id's
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
+exl-id: 82f0a097-b2eb-4313-8624-dd442e3da039
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
 
 ---
-
 
 # Toepassings-id&#39;s {#app-ids}
 
@@ -24,4 +24,3 @@ In de volgende tabel worden de verschillende toepassings-id&#39;s beschreven die
 | ID verzonden met levenscyclusmetriek | Dit is een combinatie van de toepassingsnaam en de bundelversie die naar de App Store wordt verzonden.  Deze waarde wordt gebruikt voor het Versierapport in Adobe Mobile-services en u kunt deze waarde gebruiken om de resultaten te filteren op een specifieke releaseversie van uw app. |
 | App Store-id | Deze id wordt toegewezen aan uw app door de App Store en wordt geleverd in Adobe Mobile-services wanneer u acquisitie-koppelingen maakt. |
 | AppID in ADBMobile JSON Config | Deze id is een unieke id die door Adobe Mobile-services aan de toepassingsinstantie wordt toegewezen voor alle bijbehorende metagegevens in uw systeem.  Deze id wordt gebruikt om de unieke URL&#39;s voor het bijhouden of bijhouden van acquisities te maken. Deze id wordt automatisch toegevoegd aan het JSON-configuratiebestand van ADBMobile wanneer deze wordt gedownload van de gebruikersinterface. U vindt deze id in Toepassingsinstellingen beheren onder de overnameinstellingen voor uw app. |
-
