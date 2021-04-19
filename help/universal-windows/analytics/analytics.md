@@ -3,17 +3,17 @@ description: 'null'
 seo-description: 'null'
 seo-title: Analytics
 solution: Experience Cloud,Analytics
-title: Analytics
-topic: Developer and implementation
+title: Analyse
+topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
+exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 2%
 
 ---
-
 
 # Analytics {#analytics}
 
@@ -21,7 +21,7 @@ Nadat u de bibliotheek aan uw project hebt toegevoegd, kunt u elke willekeurige 
 
 >[!TIP]
 >
->Zorg ervoor dat u `ADBMobile.h` naar de klasse importeert.
+>Zorg ervoor dat u `ADBMobile.h` in uw klasse invoert.
 
 ## Rapporten voor mobiele toepassingen inschakelen in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
@@ -35,17 +35,17 @@ Voordat u code toevoegt, moet uw Analysesysteembeheerder het volgende invullen o
 
 1. Klik op **[!UICONTROL Enable Latest App Reports]**.
 
-   U kunt ook klikken **[!UICONTROL Enable Mobile Location Tracking]** of **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
+   U kunt desgewenst ook op **[!UICONTROL Enable Mobile Location Tracking]** of **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]** klikken.
 
    ![](assets/enable-lifecycle.png)
 
-De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele Rapporten van de Toepassing verschijnen in het **[!UICONTROL Reports]** menu in de marketing rapportinterface.
+De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele Rapporten van de Toepassing verschijnen in **[!UICONTROL Reports]** menu in de marketing rapportinterface.
 
 ### Nieuwe versies
 
 Periodiek worden nieuwe versies van de rapportage van mobiele toepassingen uitgebracht. Nieuwe versies worden niet automatisch toegepast op uw rapportsuite. U moet deze stappen herhalen om de upgrade uit te voeren. Elke keer dat u nieuwe Experience Cloud-functionaliteit toevoegt aan uw app, raden we u aan deze stappen te herhalen om ervoor te zorgen dat u de meest recente configuratie hebt.
 
-## Levenscycluswaarden {#section_532702562A7A43809407C9A2CBA80E1E}
+## Levenscyclusmetriek {#section_532702562A7A43809407C9A2CBA80E1E}
 
 Als u gegevens over de levenscyclus in uw app wilt verzamelen, voegt u aanroepen toe wanneer de toepassing wordt geactiveerd, zoals in de volgende voorbeelden wordt getoond.
 
@@ -121,11 +121,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Als `CollectLifecycleData()` tweemaal in de zelfde zitting wordt geroepen, meldt uw toepassing een botsing op elke vraag na de eerste. De SDK stelt een markering in wanneer de toepassing wordt afgesloten die aangeeft dat de toepassing is afgesloten. Als deze markering niet is ingesteld, `CollectLifecyleData()` wordt een crash gemeld.
+Als `CollectLifecycleData()` tweemaal in de zelfde zitting wordt geroepen, meldt uw toepassing een botsing op elke vraag na eerste. De SDK stelt een markering in wanneer de toepassing wordt afgesloten die aangeeft dat de toepassing is afgesloten. Als deze vlag niet wordt geplaatst, `CollectLifecyleData()` meldt een neerstorting.
 
 ## Gebeurtenissen, profielen en eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Als u naar de methodes [van](/help/universal-windows/c-configuration/methods.md)SDK hebt gekeken, vraagt u zich waarschijnlijk af waar te om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
+Als u [SDK methodes](/help/universal-windows/c-configuration/methods.md) hebt bekeken, bent u waarschijnlijk benieuwend waar om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
 
 De verwerkingsregels bieden u verschillende voordelen:
 
@@ -139,13 +139,13 @@ Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan
 
 De verwerkingsregels worden gebruikt om de gegevens te kopiëren u in de variabelen van contextgegevens naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
 
-[Opleiding](https://tv.adobe.com/embed/1181/16506/) verwerkingsregels @ top 2013
+[Opleiding](https://tv.adobe.com/embed/1181/16506/) @ top 2013 over verwerkingsregels
 
 [Help bij verwerkingsregels](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 [Verwerkingsregels mogen gebruiken](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
-U wordt aangeraden de variabelen van de contextgegevens te groeperen met behulp van &#39;namespaces&#39;, omdat u hiermee de logische volgorde kunt behouden. Als u bijvoorbeeld informatie over een product wilt verzamelen, kunt u de volgende variabelen definiëren:
+U wordt aangeraden de variabelen van de contextgegevens te groeperen met &quot;naamruimten&quot;, omdat u hiermee de logische volgorde kunt behouden. Als u bijvoorbeeld informatie over een product wilt verzamelen, kunt u de volgende variabelen definiëren:
 
 ```javascript
 "product.type":"hat" 
@@ -161,7 +161,7 @@ We hebben ook gehoord dat sommigen van u contextgegevenssleutels benoemen met he
 "eVar1":"jimbo"
 ```
 
-Dit zou het *lichtjes* gemakkelijker kunnen maken wanneer u de eenmalige toewijzing in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en de toekomstige codeupdates kunnen moeilijker zijn. In plaats daarvan raden we u ten zeerste aan beschrijvende namen te gebruiken voor sleutels en waarden:
+Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de eenmalige toewijzing in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en de toekomstige codeupdates kunnen moeilijker zijn. In plaats daarvan raden we u ten zeerste aan beschrijvende namen te gebruiken voor sleutels en waarden:
 
 ```js
 "username":"jimbo"
@@ -183,19 +183,19 @@ Contextgegevensvariabelen die incrementele gebeurtenissen definiëren, kunnen de
 >
 >Adobe behoudt de naamruimte `a.`. Behalve deze beperking, moeten de variabelen van contextgegevens enkel in uw login bedrijf uniek zijn om botsingen te vermijden.
 
-## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Voor het instellen *`products`* in de mobiele SDK moet u een speciale syntaxis gebruiken. Voor meer informatie, zie de variabele [van](/help/universal-windows/analytics/products.md)Producten.
+Als u *`products`* wilt instellen in de mobiele SDK, moet u een speciale syntaxis gebruiken. Zie [Productvariabele](/help/universal-windows/analytics/products.md) voor meer informatie.
 
 ## (Optioneel) Offline bijhouden inschakelen {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Als u hits wilt opslaan wanneer het apparaat offline is, kunt u offline bijhouden inschakelen in het bestand met [SDK-methoden](/help/universal-windows/c-configuration/methods.md) . Let goed op de tijdstempelvereisten die worden beschreven in de verwijzing naar het configuratiebestand voordat u offline bijhouden inschakelt.
+Als u hits wilt opslaan wanneer het apparaat offline is, kunt u offline bijhouden inschakelen in het bestand [SDK-methoden](/help/universal-windows/c-configuration/methods.md). Let goed op de tijdstempelvereisten die worden beschreven in de verwijzing naar het configuratiebestand voordat u offline bijhouden inschakelt.
 
 ## Geolocatie en aandachtspunten {#section_BAD34A8DD013454DB355121316BD7FD4}
 
 Met Geo-location kunt u locatiegegevens (breedte/lengte) en vooraf gedefinieerde interessepunten meten. Elke `TrackLocation` vraag verzendt:
 
-* Latitude/Longitude en POI (indien binnen een POI die is gedefinieerd in het `ADBMobileConfig.json` configuratiebestand).
+* Latitude/Longitude en POI (indien binnen een POI die is gedefinieerd in het configuratiebestand `ADBMobileConfig.json`).
 
    Deze worden doorgegeven aan mobiele oplossingsvariabelen voor automatische rapportage.
 
@@ -218,11 +218,11 @@ Als de volgende POI in het `ADBMobileConfig.json` configuratiedossier wordt bepa
         ]
 ```
 
-Wanneer wordt bepaald dat de locatie van het apparaat zich binnen een straal van 7000 meter van het gedefinieerde punt bevindt, `a.loc.poi` wordt een variabele met `San Francisco` contextgegevens met de waarde verzonden bij de `TrackLocation` hit. Een `a.loc.dist` contextvariabele wordt verzonden met de afstand in meters van de gedefinieerde coördinaten.
+Wanneer wordt bepaald dat de locatie van het apparaat zich binnen een straal van 7000 meter van het gedefinieerde punt bevindt, wordt een variabele van de context `a.loc.poi` met de waarde `San Francisco` verzonden in combinatie met de `TrackLocation` hit. Een contextvariabele `a.loc.dist` wordt verzonden met de afstand in meters van de bepaalde coördinaten.
 
-## Lifetime-waarde {#section_D2C6971545BA4D639FBE07F13EF08895}
+## Levenstijdwaarde {#section_D2C6971545BA4D639FBE07F13EF08895}
 
-Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen. Telkens wanneer u een waarde met `TrackLifetimeValueIncrease`verzendt, wordt de waarde toegevoegd aan de bestaande waarde. De waarde van het leven wordt opgeslagen op apparaat en kan op elk ogenblik worden teruggewonnen door te roepen `GetLifetimeValue`. Dit kan worden gebruikt om levensduuraankopen, meningen, video voltooit, sociale aandelen, foto uploads, etc. op te slaan.
+Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen. Telkens wanneer u een waarde met `TrackLifetimeValueIncrease` verzendt, wordt de waarde toegevoegd aan de bestaande waarde. De waarde van het leven wordt opgeslagen op apparaat en kan op elk ogenblik worden teruggewonnen door `GetLifetimeValue` te roepen. Dit kan worden gebruikt om levensduuraankopen, meningen, video voltooit, sociale aandelen, foto uploads, etc. op te slaan.
 
 ```js
 // Lifetime Value Example 
@@ -235,7 +235,7 @@ cdata["PurchasePrice"] = purchasePrice;
 ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 ```
 
-## Gedetailleerde acties {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
+## Gedetailleerde handelingen {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
 Met getimede acties kunt u de tijd en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in de sessie en de totale tijd (cross-session) die nodig is om de handeling te voltooien. Dit kan worden gebruikt om segmenten te bepalen om op tijd aan aankoop te vergelijken, niveau over te gaan, controlestroom, etc.
 
