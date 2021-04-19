@@ -1,20 +1,20 @@
 ---
 description: Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
-keywords: mobile
+keywords: mobiel
 seo-description: Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
 seo-title: Aan de slag
 solution: Experience Cloud,Analytics
 title: Aan de slag
-topic: Metrics
+topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
+exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1374'
 ht-degree: 1%
 
 ---
-
 
 # Aan de slag{#getting-started}
 
@@ -29,7 +29,7 @@ Voor bedrijven die op zoek zijn naar de meest effectieve manier om de betrokkenh
 
 Het landschap van de mobiele app verschilt aanzienlijk van toen de smartphone voor het eerst werd gestart. Een mobiele app hebben om uw klanten met uw merk te verbinden is niet langer genoeg; vandaag, moet u een samenhangende, dwingende klantenervaring over kanalen drijven en uw mobiele app als strategisch aanraakpunt gebruiken om uw meest loyale, hoogwaardige klanten in dienst te nemen. Maar om deze gebruikers in staat te stellen met uw app te communiceren, hebt u dwingende inhoud, contextuele meldingen, intelligente personalisatie en geïntegreerde toepassingsanalyses nodig, enzovoort.
 
-## UI Adobe Mobile Services {#mobile-services-ui}
+## UI voor mobiele Adobe-services {#mobile-services-ui}
 
 De gebruikersinterface voor mobiele services wordt ondersteund door de volgende browsers:
 
@@ -42,7 +42,7 @@ Met Adobe Mobile Services kunt u de betrokkenheid bij mobiele apps op de volgend
 
 ### Ophalen
 
-In *Acquire* gebruikt u betaalde, bezeten en verdiende media om gebruikers aan te moedigen hun app te downloaden in de toonaangevende App-winkels. Met Adobe Mobile Services kunt u het aanschafproces voor gebruikers van de app versnellen.
+In *Ophalen* gebruikt u betaalde, bezeten en verdiende media om gebruikers aan te moedigen een app te downloaden in de toonaangevende App-winkels. Met Adobe Mobile Services kunt u het aanschafproces voor gebruikers van de app versnellen.
 
 Adobe Mobile Services biedt aanschafworkflows voor gebruikers, waaronder tracering van aankopen en diepe koppelingen, waarmee de effectiviteit van uw kanalen bij het aanschaffen van app-gebruikers wordt gemeten. Met marketingkoppelingen waarmee wordt bijgehouden van welke gebruikers het kanaal afkomstig is, kunt u zichtbaar maken in welke aankoopkanalen winstgevende en betrokken gebruikers het meest effectief kunnen maken.
 
@@ -55,17 +55,17 @@ De overname biedt de volgende sleutelfuncties:
 * Verbinding maken met apps dieper
 * Integratie achteraf met advertentienetwerken
 
-Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie over deze fase.
+Voor meer informatie over deze fase, zie [Overname](/help/using/acquisition-main/acquisition-main.md).
 
 ### Analyseren
 
-In *Analyze* kunt u begrijpen hoe consumenten de mobiele app gebruiken en wat hen ertoe brengt om te zetten of terug te komen.
+In *Analyze* kunt u begrijpen hoe consumenten de mobiele app gebruiken en wat hen ertoe aanzet om of terug te komen.
 
 Met Adobe Analytics kunt u belangrijke inzichten in de trechter opdoen van hoe gebruikers uw app downloaden, installeren en openen. U kunt ook de inhoud en interface van uw app meten en analyseren, cohortanalyse, plakken en opvulling uitvoeren. Met Adobe Analytics kunt u een centrale gegevensopslag gebruiken om uw marketingbeslissingen te informeren en de silo&#39;s met marketinggegevens in uw organisatie te reduceren.
 
 U kunt Adobe Audience Manager gebruiken om uw publiekssegmenten te verrijken met rijke gegevens voor meer contextuele en persoonlijke ervaringen.
 
-*Analyseren* biedt de volgende sleutelfuncties:
+** Analyzebiedt de volgende sleutelfuncties:
 
 * Toepassingsbetrokkenheidsanalyse
 * Pap- en trechter-analyse
@@ -73,13 +73,13 @@ U kunt Adobe Audience Manager gebruiken om uw publiekssegmenten te verrijken met
 * Locatieanalyse
 * Uitgebreide apparaat- en platformondersteuning
 
-Voor meer informatie over de rapporten kunt u uw klanten in werking stellen en analyseren, zie [Rapporten](/help/using/usage/usage.md).
+Zie [Rapporten](/help/using/usage/usage.md) voor meer informatie over de rapporten die u kunt uitvoeren en analyseren.
 
 ### Inschakelen
 
 In *Engage* kunt u relevante pushberichten en in-app berichten gebruiken om te communiceren met uw gebruikers. Met gerichte pushberichten en in-app berichten kunt u ervoor zorgen dat gebruikers blijven terugkeren naar uw app. Met steun voor segmenten van Analytics, kunt u uw dupberichten aan gebruikerssegmenten richten die zullen antwoorden en hun neiging verhogen om om te zetten.
 
-*Inschakelen* biedt de volgende sleutelfuncties:
+** Engagees biedt de volgende sleutelfuncties:
 
 * Pushmeldingen worden geactiveerd door analytische segmenten.
 * Berichten in de app worden geactiveerd door realtime analyses, waarschuwingen en nieuwe aanbiedingen/inhoud.
@@ -97,9 +97,9 @@ In Adobe Mobile, kunt u de volgende types van berichten vormen:
 * Maak, segmenteer en verzend berichten naar klanten die de app van een merk hebben gedownload en via aanmeldingsprocedure zijn geaccepteerd voor het ontvangen van pushberichten.
 * Deze worden door de App-winkels naar de server verzonden in plaats van vanuit de mobiele app.
 
-Zie Een pushbericht [maken voor meer informatie over het maken van pushberichten](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
+Zie [Een pushbericht maken](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md) voor meer informatie over het maken van pushberichten.
 
-**In-app meldingen** bieden de volgende functies:
+**In-app** meldingen bieden de volgende functies:
 
 * Gebruikers naar een specifieke handeling sturen terwijl ze zich in de app-sessie bevinden.
 * Extra indelingen (waarschuwing, volledig scherm) omdat berichten door de app worden geleverd in plaats van door een pushnetwerk.
@@ -108,13 +108,13 @@ Zie Een pushbericht [maken voor meer informatie over het maken van pushberichten
 * Moedig gebruikers aan om een waardering voor een App Store te behouden.
 * Berichten in real time en op locatie gebaseerd leveren
 
-Zie Een bericht [in de app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)maken voor meer informatie over het maken van berichten in de app.
+Zie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md) voor meer informatie over het maken van berichten in de app.
 
 ### Optimaliseren
 
 In *Optimize*, kunt u omzettingen (abonnementen, handel, en opbrengst, etc.) optimaliseren en klantenbehoud verbeteren. Door de gebruikerservaring in uw app te optimaliseren, kunt u uw inhoud aanpassen en maximale investeringsrendement en conversie verhogen.
 
-Ga naar [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html)voor meer informatie over testen en Adobe Target.
+Ga voor meer informatie over testen en Adobe Target naar [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html).
 
 ### Geo-targeting
 
@@ -161,4 +161,4 @@ De Adobe Mobile SDK biedt de volgende functies:
    * Minimaliseert de verwerkingsbelasting van apparaten voor het verzenden van gegevens naar Adobe-servers en systemen van derden.
    * Met een kleine voetafdruk minimaliseert u de grootte van het app-pakket dat naar de App Store wordt verzonden.
 
-Raadpleeg [Android SDK 4.x voor Experience Solutions](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html) en [iOS SDK 4.x voor Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html)voor meer informatie over demobiele SDK&#39;s van Adobe.
+Zie [Android SDK 4.x voor Experience Solutions](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html) en [iOS SDK 4.x voor Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html) voor meer informatie over de Adobe Mobile SDK&#39;s.
