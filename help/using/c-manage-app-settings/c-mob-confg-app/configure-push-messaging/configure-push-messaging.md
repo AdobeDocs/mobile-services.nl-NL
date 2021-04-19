@@ -1,26 +1,26 @@
 ---
 description: Met deze informatie kunt u de opties voor pushservices configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
-keywords: mobile
+keywords: mobiel
 seo-description: Met deze informatie kunt u de opties voor pushservices configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 seo-title: Push Messaging configureren
 solution: Experience Cloud,Analytics
 title: Push Messaging configureren
-topic: Metrics
+topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
+exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Pushberichten configureren{#configure-push-messaging}
 
 Met deze informatie kunt u de opties voor pushservices op de pagina Toepassingsinstellingen beheren configureren wanneer u een nieuwe app maakt of een bestaande app bewerkt.
 
-Alvorens u duw overseinen vormt, voltooi de eerste vereiste taken in [Eerste vereisten om het Overseinen](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)van de Duw toe te laten.
+Alvorens u duw overseinen vormt, voltooi de in eerste instantie vereiste taken in [Vereisten om het Overseinen van de Duw toe te laten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
 
 * **Overwegingen bij de rapportsuite**
 
@@ -30,26 +30,26 @@ Alvorens u duw overseinen vormt, voltooi de eerste vereiste taken in [Eerste ver
 >
 >Het verplaatsen van uw app naar een nieuwe rapportsuite wordt niet ondersteund. Als u naar een nieuwe rapportreeks migreert, kan uw dupconfiguratie breken, en de berichten zouden niet kunnen worden verzonden.
 
-1. Typ gegevens in de volgende velden onder **[!UICONTROL Push Services]**:
+1. Typ informatie in de volgende velden onder **[!UICONTROL Push Services]**:
 
    * Apple
 
       **[!UICONTROL Private Key]**
 
-      Blader naar en selecteer de geldige persoonlijke sleutel `.p12`, `.key`of `.pen`.
+      Blader naar en selecteer uw geldige persoonlijke sleutel `.p12`, `.key` of `.pen`.
 
       >[!IMPORTANT]
-      >Als het bestand dat u voor de **[!UICONTROL Private Key]** invoer selecteert, ook een certificaat bevat, hoeft u het certificaat niet op te geven.
+      >Als het bestand dat u selecteert voor de invoer **[!UICONTROL Private Key]** ook een certificaat bevat, hoeft u het certificaat niet op te geven.
 
    * **[!UICONTROL Certificate]**
 
-      Geef een geldig certificaat op. Deze optie is alleen vereist als de **[!UICONTROL Private Key]** invoer **geen** certificaat bevat. Zie App [configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)voor meer informatie over het verkrijgen van het SSL-certificaat en de persoonlijke sleutel.
+      Geef een geldig certificaat op. Deze optie is alleen vereist wanneer de **[!UICONTROL Private Key]**-invoer **geen** een certificaat bevat. Zie [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md) voor meer informatie over het verkrijgen van het SSL-certificaat en de persoonlijke sleutel.
 
    * Google
 
       **[!UICONTROL API Key]**
 
-      Geef een geldige API-sleutel op. Zie App [configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)voor meer informatie over het verkrijgen van de API-sleutel.
+      Geef een geldige API-sleutel op. Zie [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md) voor meer informatie over het verkrijgen van de API-sleutel.
 
       Raadpleeg de volgende onderwerpen voor meer informatie:
 
