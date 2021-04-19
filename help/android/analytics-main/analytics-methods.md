@@ -1,34 +1,34 @@
 ---
 description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 seo-title: Analysemethoden
 solution: Experience Cloud,Analytics
 title: Analysemethoden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
+exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '744'
 ht-degree: 28%
 
 ---
-
 
 # Analysemethoden {#analytics-methods}
 
 Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld op basis van de oplossing, waarbij de methoden Experience Cloud ID bijvoorbeeld vooraf zijn ingesteld `analytics`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld op basis van de oplossing. Experience Cloud ID-methoden worden bijvoorbeeld voorafgegaan door `analytics`.
 
 Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden:
 
 * **trackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart` enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
 
-   Als `state` het leeg is, wordt `app name app version (build)` getoond in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor dat u `state` in elke `trackState` vraag plaatst.
+   Als `state` leeg is, wordt `app name app version (build)` getoond in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor dat u `state` in elke `trackState` vraag plaatst.
 
    >[!TIP]
    >
@@ -46,9 +46,10 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
       Analytics.trackState("loginScreen", null);
       ```
 
-* **trackAction** volgt een handeling in uw app.
+* ****
+trackActionTracks een handeling in uw app.
 
-   Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions`en andere metriek, die in uw app voorkomen.
+   Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions` en andere metriek, die in uw app voorkomen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -62,7 +63,8 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
       Analytics.trackAction("heroBannerTouched", null);
       ```
 
-* **getTrackingIdentifier** retourneert de automatisch gegenereerde bezoeker-id voor Analytics.
+* ****
+getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor Analytics.
 
    Dit is een app-specifieke, unieke bezoekersidentiteitskaart die bij de aanvankelijke lancering wordt geproduceerd en van dat punt vooruit wordt opgeslagen en gebruikt. De id blijft behouden tussen upgrades van apps en wordt verwijderd wanneer de app wordt verwijderd.
 
@@ -80,7 +82,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackLocation**
 
-   Verzendt de huidige breedtegraad, lengtegraad en locatie naar een bepaald belangenpunt. Zie [Geo-locatie en aandachtspunten](/help/android/location/geo-poi.md)voor meer informatie.
+   Verzendt de huidige breedtegraad, lengtegraad en locatie naar een bepaald belangenpunt. Zie [Geo-locatie en interessepunten](/help/android/location/geo-poi.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -96,7 +98,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackLifetime &#x200B; ValueIncrease**
 
-   Hiermee voegt u `amount` de levensduurwaarde van de gebruiker toe.
+   Voegt `amount` aan de levenwaarde van de gebruiker toe.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -112,7 +114,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackTimed &#x200B; ActionStart**
 
-   Start een getimede actie met naam `action`.
+   Start een getimede actie met de naam `action`.
 
    Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
@@ -135,7 +137,7 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Geef door `contextData` om de contextgegevens bij te werken die aan de `action`koppeling zijn gekoppeld. De ingevoerde `data` code wordt toegevoegd aan de bestaande gegevens voor de actie. Als dezelfde sleutel al is gedefinieerd voor `action`, worden de gegevens overschreven.
+   Geef `contextData` door om de contextgegevens bij te werken die aan `action` worden geassocieerd. De `data` die wordt doorgegeven, wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, overschrijft de gegevens.
 
    >[!TIP]
    >
@@ -157,11 +159,11 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
 
 * **trackTimed &#x200B; ActionEnd**
 
-   Een getimede actie beëindigen. Als u `block`dat opgeeft, hebt u toegang tot de uiteindelijke tijdwaarden en kunt u dit manipuleren `data` voordat u de laatste hit verzendt.
+   Een getimede actie beëindigen. Als u `block` verstrekt, kunt u tot de definitieve tijdwaarden toegang hebben en `data` manipuleren alvorens de definitieve slag te verzenden.
 
    >[!TIP]
    >
-   >Als u `block`dat opgeeft, moet u terugkeren `true` om een hit te verzenden. Als u `null` `block` voor gaat, wordt de laatste treffer verzonden.
+   >Als u `block` verstrekt, moet u `true` terugkeren om een slag te verzenden. Als u `null` doorgeeft voor `block`, wordt de laatste hit verzonden.
 
    * Hier volgt de syntaxis voor deze methode:
 
