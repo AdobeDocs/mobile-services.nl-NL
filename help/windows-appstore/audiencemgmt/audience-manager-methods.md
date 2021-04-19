@@ -4,16 +4,16 @@ seo-description: Lijst met methoden voor Audience Managers die worden geleverd d
 seo-title: Methoden van Audience Manager
 solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 26%
 
 ---
-
 
 # Methoden van Audience Manager {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal met l
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` of nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `SharedPreferences` zodat u eenvoudig toegang hebt tot meerdere startpagina&#39;s van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere keren starten van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -115,4 +115,3 @@ Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal met l
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-
