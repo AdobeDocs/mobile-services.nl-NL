@@ -4,16 +4,16 @@ seo-description: Met deze informatie kunt u migreren van versie 3.x of 2.x van d
 seo-title: Migreren naar de 4.x iOS-bibliotheek
 solution: Experience Cloud,Analytics
 title: Migreren naar de 4.x iOS-bibliotheek
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
+exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
 translation-type: tm+mt
-source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '895'
+ht-degree: 2%
 
 ---
-
 
 # Migreren naar de 4.x iOS-bibliotheek{#migrating-to-the-x-ios-library}
 
