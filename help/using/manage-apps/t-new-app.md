@@ -1,22 +1,22 @@
 ---
 description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;de SDK-opties voor Adobe Analytics en Adobe Audience Manager configureren;aankoop- en id-serviceopties configureren;en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;de SDK-opties voor Adobe Analytics en Adobe Audience Manager configureren;aankoop- en id-serviceopties configureren;en het configuratiebestand, de SDK's en ontwikkelaars- en testergereedschappen downloaden.
 seo-title: Een nieuwe app toevoegen
 solution: Experience Cloud,Analytics
 title: Een nieuwe app toevoegen
-topic: Metrics
+topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
+exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
 
-
-# Een nieuwe app toevoegen{#add-a-new-app}
+# Nieuwe app toevoegen{#add-a-new-app}
 
 U kunt deze informatie gebruiken om een nieuwe app te maken en de belangrijkste maatstaven te configureren;u kunt de SDK-opties configureren voor Adobe Analytics en Adobe Audience Manager; aanschaf- en id-serviceopties configureren; en download het configuratiebestand, de SDK&#39;s en ontwikkelaars- en testergereedschappen.
 
@@ -27,9 +27,9 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 1. Meld u aan bij Adobe Mobile Services en voer een van de volgende taken uit:
 
    * Klik **[!UICONTROL Create New]** om een app te maken.
-   * Als u aanvullende toepassingen wilt toevoegen, klikt u op Toepassingen beheren in het navigatiemenu aan de linkerkant en klikt u **[!UICONTROL Add]** op Toepassingen beheren.
+   * Als u aanvullende toepassingen wilt toevoegen, klikt u op Apps beheren in het navigatiemenu aan de linkerkant en klikt u op **[!UICONTROL Add]**.
 
-      Zie [Aanmelden](/help/using/gs/gs-signin.md)voor meer informatie over aanmelden.
+      Zie [Aanmelden](/help/using/gs/gs-signin.md) voor meer informatie over aanmelden.
 
       >[!TIP]
       >
@@ -41,7 +41,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
    Geef de rapportsuite op waarin de rapportgegevens worden verzameld en opgeslagen in Adobe Analytics. Elke app is verbonden met één analytische rapportsuite. Als u toepassingsgegevens naar meerdere rapportenreeksen verzendt, voegt u een nieuwe app voor elke rapportsuite toe. Elke app is verbonden met één analytische rapportsuite. Als u toepassingsgegevens naar meerdere rapportenreeksen verzendt, voegt u een nieuwe app voor elke rapportsuite toe.
 
-   Als u beheerdersrechten voor Analytics hebt gekregen in Adobe Mobile, kunt u een nieuwe rapportsuite maken in Adobe Mobile. Als u een nieuwe rapportsuite wilt maken, selecteert **[!UICONTROL New Report Suite]** en typt u gegevens in de volgende velden:
+   Als u beheerdersrechten voor Analytics hebt gekregen in Adobe Mobile, kunt u een nieuwe rapportsuite maken in Adobe Mobile. Als u een nieuwe rapportsuite wilt maken, selecteert u **[!UICONTROL New Report Suite]** en typt u informatie in de volgende velden:
 
    * **[!UICONTROL Report Suite ID]**
 
@@ -49,7 +49,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
    * **[!UICONTROL Copy Settings From]**
 
-      De variabelen, de gebeurtenissen, de verwerkingsregels, en andere montages worden opstelling in de nieuwe rapportreeks precies zoals zij in deze rapportreeks zijn. Een rapportsuite die in Mobile Services is gemaakt, is alleen offline (of met tijdstempel) beschikbaar als de gebruikte **[!UICONTROL Copy Settings From]** rapportsuite de Mobile App-sjabloon was of als u een rapportsuite maakt die offline is ingeschakeld.
+      De variabelen, de gebeurtenissen, de verwerkingsregels, en andere montages worden opstelling in de nieuwe rapportreeks precies zoals zij in deze rapportreeks zijn. Een rapportsuite die in Mobile Services is gemaakt, is alleen offline (of met tijdstempel) beschikbaar als de rapportsuite **[!UICONTROL Copy Settings From]** wordt gebruikt de Mobile App-sjabloon is, of als u een rapportsuite maakt die offline is ingeschakeld.
 
    * **[!UICONTROL Timezone]**
 
@@ -60,7 +60,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
       Opbrengsten worden bijgehouden en gerapporteerd als dit type valuta.
    >[!TIP]
    >
-   >Zie [Virtuele rapportsets](/help/using/manage-apps/c-mob-vrs.md)voor informatie over het gebruik van een virtuele rapporteringssuite (VRS).
+   >Als u een virtuele rapportsuite (VRS) wilt gebruiken, raadpleegt u [Virtuele rapportsuite](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Icon]**
 
@@ -78,7 +78,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
       * **[!UICONTROL Standard]**
 
-         U kunt de **[!UICONTROL Standard]** optie voor de meeste apps geselecteerd laten.
+         U kunt de optie **[!UICONTROL Standard]** geselecteerd laten voor de meeste apps.
 
       * **[!UICONTROL Publication]**
 
@@ -86,7 +86,7 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
       * **[!UICONTROL Game]**
 
-         Deze optie lijkt op de **[!UICONTROL Standard]** **[!UICONTROL Game]** optie, behalve dat de terminologie die in de rapporten wordt gebruikt aan termijnen voor spelen wordt bijgewerkt. Gebruikers worden bijvoorbeeld gewijzigd in spelers. Gamespecifieke rapporten worden automatisch weergegeven voor game-apps.
+         Deze optie is vergelijkbaar met de optie **[!UICONTROL Standard]**, behalve dat **[!UICONTROL Game]** de terminologie in de rapporten bijwerkt naar termen voor games. Gebruikers worden bijvoorbeeld gewijzigd in spelers. Gamespecifieke rapporten worden automatisch weergegeven voor game-apps.
    * **[!UICONTROL Description]**
 
       (**Optioneel**) Typ een beschrijving voor de app.
@@ -95,4 +95,4 @@ Voordat u uw app kunt configureren, moet u deze toevoegen in de gebruikersinterf
 
 1. Klik **[!UICONTROL Save]** om de nieuwe app toe te voegen.
 
-   Nadat de app is toegevoegd, kunt u op de pagina App Information controleren of er aanvullende opties zijn geconfigureerd. Zie Toepassingsinstellingen [beheren voor meer informatie](/help/using/c-manage-app-settings/c-manage-app-settings.md).
+   Nadat de app is toegevoegd, kunt u op de pagina App Information controleren of er aanvullende opties zijn geconfigureerd. Zie [Toepassingsinstellingen beheren](/help/using/c-manage-app-settings/c-manage-app-settings.md) voor meer informatie.
