@@ -1,22 +1,22 @@
 ---
 description: U kunt een of meer verwervingskoppelingen verwijderen wanneer deze niet meer nodig zijn.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt een of meer verwervingskoppelingen verwijderen wanneer deze niet meer nodig zijn.
 seo-title: Koppelingen voor overname verwijderen
 solution: Experience Cloud,Analytics
 title: Koppelingen voor overname verwijderen
-topic: Metrics
+topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
+exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 1%
+source-wordcount: '99'
+ht-degree: 2%
 
 ---
 
-
-# Koppelingen voor overname verwijderen{#delete-acquisition-links}
+# Verwervingskoppelingen verwijderen{#delete-acquisition-links}
 
 Wanneer u geen verwervingskoppelingen meer nodig hebt, kunt u deze verwijderen.
 
@@ -26,9 +26,8 @@ Wanneer u geen verwervingskoppelingen meer nodig hebt, kunt u deze verwijderen.
    * Schakel het selectievakje naast een of meer verwervingskoppelingen in.
    * Schakel het selectievakje in de koptekst in om al uw verwervingskoppelingen te selecteren.
 
-1. Klik op de verwijdering **[!UICONTROL Delete Selected]** en bevestig deze.
+1. Klik **[!UICONTROL Delete Selected]** en bevestig de schrapping.
 
    >[!TIP]
    >
-   >De **[!UICONTROL Delete Selection]** optie wordt pas weergegeven wanneer u een of meer verwervingskoppelingen selecteert.
-
+   >De optie **[!UICONTROL Delete Selection]** wordt pas weergegeven wanneer u een of meer verwervingskoppelingen selecteert.
