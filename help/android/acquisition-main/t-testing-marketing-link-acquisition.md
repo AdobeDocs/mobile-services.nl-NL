@@ -1,33 +1,33 @@
 ---
 description: De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
 seo-title: Verwerving marketingkoppeling testen
 solution: Experience Cloud,Analytics
 title: Verwerving marketingkoppeling testen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
-
-# Verwerving marketinglink testen {#testing-marketing-link-acquisition}
+# Aanschaf van marketingkoppeling testen {#testing-marketing-link-acquisition}
 
 De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
 
 Als uw mobiele app nog niet in Google Play is, kunt u elke mobiele app als doel selecteren wanneer u de marketingkoppeling maakt. Dit is alleen van invloed op de app waarnaar de verwervingsserver u omleidt, nadat u op de verwervingskoppeling klikt en niet op de mogelijkheid om de verwervingskoppeling te testen. Parameters van de queryreeks worden doorgegeven aan de Google Play-winkel, die tijdens de installatie worden doorgegeven aan de app als onderdeel van een campagne-uitzending. Voor het testen van het aanschaffen van mobiele apps voor Roundtrip is de simulatie van dit type uitzending vereist.
 
-Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstalleerd of moeten gegevens worden gewist **[!UICONTROL Settings]**. Dit zorgt ervoor dat de aanvankelijke levenscyclusmetriek die met de de koordparameters van de campagnerequery wordt geassocieerd worden verzonden wanneer app voor het eerst wordt gelanceerd.
+Telkens wanneer een test wordt uitgevoerd, moet de app vers zijn geïnstalleerd of moeten gegevens worden gewist in **[!UICONTROL Settings]**. Dit zorgt ervoor dat de aanvankelijke levenscyclusmetriek die met de de koordparameters van de campagnerequery wordt geassocieerd worden verzonden wanneer app voor het eerst wordt gelanceerd.
 
-1. Voltooi de vereiste taken bij de aanschaf [van de](/help/android/acquisition-main/acquisition.md) mobiele app en zorg ervoor dat u de ontvanger voor de uitzending correct hebt geïmplementeerd `INSTALL_REFERRER`.
-1. Klik in de gebruikersinterface van Adobe Mobile Services op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** en genereer een URL voor een Acquisition Marketing Link die Google Play instelt als de bestemming voor Android-apparaten.
+1. Voltooi de vereiste taken in [Aanschaf van een mobiele toepassing](/help/android/acquisition-main/acquisition.md) en controleer of u de ontvanger voor uitzending correct hebt geïmplementeerd voor `INSTALL_REFERRER`.
+1. Klik in de gebruikersinterface van Adobe Mobile Services op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** en genereren een URL voor een Acquisition Marketing Link die Google Play instelt als de bestemming voor Android-apparaten.
 
-   Zie [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)voor meer informatie.
+   Voor meer informatie, zie [de Bouwer van Verbindingen van de Marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
    Bijvoorbeeld:
 
@@ -43,7 +43,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
 
    In het vorige voorbeeld is de id `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
-   Als u de unieke id niet kunt ophalen op het apparaat, voert u de volgende `CURL` opdracht uit op uw bureaublad om de unieke id op te halen uit de responstekenreeks.
+   Als u de unieke id niet kunt ophalen op het apparaat, voert u de volgende `CURL`-opdracht uit op uw bureaublad om de unieke id op te halen uit de responstekenreeks.
 
    `curl -A "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T815Y Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36" <Your Marketing Link>`
 
@@ -59,7 +59,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
 
 1. Open de koppeling in een browser.
 
-   U moet de reacties `contextData` van JSON zien:
+   De `contextData` moet worden weergegeven in het JSON-antwoord:
 
    ```
    {"fingerprint":"44b2f88a062df7e727c047f006deb9971304617b","endCallbacks":["***"],"timestamp":1464301282,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData": 
@@ -70,9 +70,9 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
 1. Herhaal stap 3 voor een nieuwe unieke id.
 1. Controleer of de volgende instellingen in het configuratiebestand correct zijn:
 
-   | Instelling | Waarde |
+   | Instelling | Value |
    |--- |--- |
-   | verwerving | De server moet gelijk zijn aan `c00.adobe.com`de *`appid`* `appid` verwervingskoppeling. |
+   | verwerving | De server moet `c00.adobe.com` zijn, en      *`appid`* zou `appid` in uw aanschafverbinding gelijk moeten zijn. |
    | analyse | Voor testdoeleinden stelt u de time-out van de referentie zo in dat er voldoende tijd (60 seconden of meer) is om de uitzending handmatig te verzenden. U kunt de oorspronkelijke time-outinstelling na de test herstellen. |
 
 1. Sluit het apparaat aan op een computer, verwijder en installeer de toepassing opnieuw.
@@ -88,7 +88,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
    am broadcast -a com.android.vending.INSTALL_REFERRER -n com.adobe.android/com.adobe.android.YourBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<unique id get on step 5>"
    ```
 
-1. Vervang `com.adobe.android` de pakketnaam van uw toepassing, werk de verwijzing naar de ontvanger bij met de verwijzing naar de locatie van de ontvanger voor het bijhouden van de campagne in uw app en vervang de waarden die aan de ontvanger zijn gekoppeld `utm_content`.
+1. Vervang `com.adobe.android` door de pakketnaam van uw toepassing, werk de ontvangerverwijzing bij met de verwijzing naar de locatie van de ontvanger voor het bijhouden van de campagne in uw app en vervang de waarden die aan `utm_content` zijn gekoppeld.
 
    Als de uitzending succesvol is, zou u een reactie als het volgende voorbeeld moeten verwachten:
 
@@ -118,19 +118,19 @@ Telkens wanneer een test wordt uitgevoerd, moet de app opnieuw zijn geïnstallee
    | Analytics - Unable to parse response (`a JSON Response`). | De JSON-tekenreeks is onjuist geformuleerd. |
    | Analytics - Unable to parse purchase service response (no `contextData` parameter in response). | Er zit geen `contextData` parameter in de reactie. |
    | Analytics - Acquisition reference data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` is niet opgenomen in contextData. |
-   | Analytics - Acquisition reference time out. | Kan de reactie niet ophalen in de tijd gedefinieerd door `referrerTimeout`. Verhoog de waarde en probeer het opnieuw.  Zorg er ook voor dat u de acquisitie-koppeling hebt geopend voordat u de app installeert. |
+   | Analytics - Acquisition reference time out. | Kan de reactie niet ophalen in de tijd die wordt gedefinieerd door `referrerTimeout`. Verhoog de waarde en probeer het opnieuw.  Zorg er ook voor dat u de acquisitie-koppeling hebt geopend voordat u de app installeert. |
 
 De volgende informatie onthouden:
 
 * De uren die van app worden verzonden kunnen worden gecontroleerd door de controlehulpmiddelen van HTTP te gebruiken om de verwervingsattributie te verifiëren.
-* Zie Meting van Google Play Campagne `INSTALL_REFERRER`testen in de handleiding Google Developers voor meer informatie over het uitzenden van [de camera](https://developers.google.com/analytics/solutions/testing-play-campaigns) .
-* U kunt het meegeleverde gereedschap `acquisitionTest.jar` Java gebruiken om u te helpen de unieke id op te halen en de installatiefunctie voor uitzendingen uit te zenden, waarmee u op uw beurt de informatie in de stappen 3 tot en met 10 kunt opvragen.
+* Zie [Meting van Google Play-campagne testen](https://developers.google.com/analytics/solutions/testing-play-campaigns) in de handleiding voor Google-ontwikkelaars voor meer informatie over het uitzenden van `INSTALL_REFERRER`.
+* U kunt het meegeleverde `acquisitionTest.jar` hulpmiddel van Java gebruiken om u te helpen de unieke identiteitskaart krijgen en uitzendingsverwijzing, die beurtelings, u helpt de informatie in stappen 3 tot 10 verkrijgen.
 
 **Het Java-gereedschap installeren**
 
 Java installeren:
 
-1. Download het [`acquistionTester.zip`](../assets/acquisitionTester.zip) bestand.
+1. Download het bestand [`acquistionTester.zip`](../assets/acquisitionTester.zip).
 1. Extraheer het .jar-bestand.
 
    U kunt het .jar dossier op de bevellijn in werking stellen.
