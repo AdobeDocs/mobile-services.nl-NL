@@ -4,16 +4,16 @@ seo-description: Hier volgt een lijst met Adobe Target-methoden die worden gelev
 seo-title: iOS-doelmethoden voor mobiele Adobe-services
 solution: Experience Cloud,Analytics
 title: Doelmethoden voor iOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
+exl-id: ba03f865-970c-4b48-af35-749f05b273d8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
-
 
 # Doelmethoden voor iOS {#target-methods}
 
@@ -23,7 +23,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 >[!TIP]
 >
->Levenscyclusstatistieken worden als parameters naar elke lading van de box verzonden. Zie [Levenscyclusstatistieken](/help/ios/metrics.md)voor meer informatie. Als u de verzoeken van het Doel binnen de `didFinishLaunching` afgevaardigde methode verzendt, voeg een `[ADBMobile trackAction:data:]` of een `[ADBMobile trackState:data:]` vraag vóór de de implementatiecode van het Doel toe. Op deze manier bevatten de doelaanvragen de volledige levenscyclusgegevens.
+>Levenscyclusstatistieken worden als parameters naar elke lading van de box verzonden. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie. Als u de verzoeken van het Doel binnen de `didFinishLaunching` afgevaardigde methode verzendt, voeg een `[ADBMobile trackAction:data:]` of `[ADBMobile trackState:data:]` vraag vóór de de implementatiecode van het Doel toe. Op deze manier bevatten de doelaanvragen de volledige levenscyclusgegevens.
 
 ## Klassenverwijzing: ADBTargetLocationRequest
 
@@ -55,17 +55,17 @@ NSString *const ADBTargetParameterMboxHost;
 
 >[!IMPORTANT]
 >
->* Als u SDKs **vóór** versie 4.14.0 gebruikt, zie de Parameters [van de](https://developers.adobetarget.com/api/#input-parameters) Input voor parameterbeperkingen.
+>* Als u SDK&#39;s **voor** versie 4.14.0 gebruikt, zie [Invoerparameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
    >
    >
-* Als u SDKs versie 4.14.0 **of na** gebruikt, zie de Parameters [van de](https://developers.adobetarget.com/api/#batch-input-parameters) Input van de Partij voor parameterbeperkingen.
+* Als u SDKs versie 4.14.0 **of na** gebruikt, zie [Parameters van de Invoerpartij](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
 
 
-### Methoden
+### Methods
 
 * **targetLoadRequest: &#x200B; callback**
 
-   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok wordt geproduceerd `callback`.
+   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok `callback` wordt geproduceerd.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -155,7 +155,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Zie [Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html)voor meer informatie over de onderliggende doel-API.
+      Zie [Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html) voor meer informatie over de onderliggende doel-API.
 
 
 
@@ -194,7 +194,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder &#x200B; ConfirmRequestWithName: &#x200B; orderId: &#x200B; orderTotal: &#x200B; productPurchasedId: &#x200B; parameters**
 
-   Maakt een `ADBTargetLocationRequest`.
+   Hiermee maakt u een `ADBTargetLocationRequest`.
 
    * Hier volgt de syntaxis voor deze methode:
 
