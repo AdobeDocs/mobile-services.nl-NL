@@ -4,16 +4,16 @@ seo-description: Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfst
 seo-title: Standalone extensie-implementatie
 solution: Experience Cloud,Analytics
 title: Standalone extensie-implementatie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
+exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstandige extensie-implementatie {#stand-alone-extension-implementation}
 
@@ -27,14 +27,14 @@ Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfstandige extensie w
 
 Uw zelfstandige extensie configureren:
 
-1. Zorg ervoor dat het `ADBMobileConfig.json` bestand lid is van het doel van de extensie.
+1. Zorg ervoor dat het `ADBMobileConfig.json`-bestand lid is van het doel van de extensie.
 1. Koppel de volgende bibliotheken en frameworks:
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.tbd`
    * `SystemConfiguration.framework`
 
-1. Stel in de hoofdweergavecontroller van de extensie het extensietype in de SDK in voordat u SDK-gerelateerde activiteiten voltooit. `ADBMobileAppExtensionTypeStandAlone`
+1. Stel in de hoofdweergavecontroller van de extensie het extensietype in de SDK in op `ADBMobileAppExtensionTypeStandAlone` voordat u activiteiten uitvoert die betrekking hebben op SDK.
 
    ```objective-c
    [ADBMobile setAppExtensionType:ADBMobileAppExtensionTypeStandAlone];
@@ -46,7 +46,7 @@ Uw zelfstandige extensie configureren:
 
 Hieronder vindt u aanvullende informatie:
 
-* Er `a.RunMode` is een extra waarde voor contextgegevens toegevoegd om aan te geven of de gegevens afkomstig zijn van de bevattende app of van uw extensie:
+* Er is een extra waarde voor contextgegevens toegevoegd, `a.RunMode` om aan te geven of de gegevens afkomstig zijn van de bevattende app of van uw extensie:
 
    * `a.RunMode = Application`
 
@@ -56,4 +56,3 @@ Hieronder vindt u aanvullende informatie:
       Deze waarde betekent dat de hit afkomstig is van de extensie.
 
 * Er wordt geen levenscyclusaanroep gestart voor iOS-extensie-apps.
-
