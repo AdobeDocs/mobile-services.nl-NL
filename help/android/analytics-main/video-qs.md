@@ -1,28 +1,28 @@
 ---
 description: Hier volgt informatie over het meten van video's op Android met de video-meetoplossing.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier volgt informatie over het meten van video's op Android met de video-meetoplossing.
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
+exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '885'
 ht-degree: 13%
 
 ---
 
-
-# Video Analytics {#video-analytics}
+# Video-analyse {#video-analytics}
 
 Hier volgt informatie over het meten van video&#39;s op Android met de video-meetoplossing.
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie over Video-meetoplossing voor Adobe.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Adobe en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) voor meer informatie over videomeetoplossing.
 
 Het algemene proces voor het meten van video is op alle platforms vergelijkbaar. Deze inhoud biedt een overzicht van de ontwikkelaarstaken met codevoorbeelden. In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. De regels van de verwerking worden gebruikt om de contextgegevens aan een variabele van de Analyse in kaart te brengen.
 
@@ -32,12 +32,12 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
    * Type variabele: eVar
       * Standaardvervaldatum: Bezoek
       * Custom Insight (s.prop, gebruikt voor videoverven)
-   * (**Vereist**) Wanneer een bezoeker de video op een of andere manier bekijkt, verzamelt deze contextgegevensvariabele de naam van de video, zoals opgegeven in de implementatie. U kunt classificaties toevoegen voor deze variabele.
-   * (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video&#39;s.
+   * (**Required**) Wanneer een bezoeker de video op één of andere manier bekijkt, verzamelt deze variabele van contextgegevens de naam van de video, zoals die in de implementatie wordt gespecificeerd. U kunt classificaties toevoegen voor deze variabele.
+   * (**Optioneel**) De variabele Custom Insight biedt informatie over het plakken van video.
 
 * **a.media.name**
    * Type variabele: Custom Insight (s.prop)
-   * (**Optioneel**) Bevat informatie over het plakken van video.
+   * (**Optioneel**) Biedt informatie over het plakken van video.
 
       >[!IMPORTANT]
       >
@@ -47,9 +47,9 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
 * **a.media.segment**
    * Type variabele: eVar
    * Standaardvervaldatum: Paginaweergave
-   * (**Vereist**) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt.
+   * (**Required**) verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt.
 
-      Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen bij het automatisch bijhouden van spelergebeurtenissen of door een aangepaste segmentnaam in te stellen bij het handmatig bijhouden van spelergebeurtenissen. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in de eVar Segmenten: `1:M:0-25`.
+      Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen bij het automatisch bijhouden van spelergebeurtenissen of door een aangepaste segmentnaam in te stellen bij het handmatig bijhouden van spelergebeurtenissen. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in de eVar Segmenten: `1:M:0-25`.
 
       De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
@@ -65,7 +65,7 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
    * Standaardvervaldatum: Paginaweergave
    * Verzamelt gegevens over het type inhoud dat door een bezoeker wordt bekeken.
 
-      Aan de door videometing verzonden opdrachten wordt een inhoudstype `video`toegewezen. Vanuit het oogpunt van videometing kunt u met **Inhoudstype** videobezoekers identificeren en de videoconversiesnelheden berekenen.
+      Aan de door videometing verzonden uren wordt het inhoudstype `video` toegewezen. Vanuit een videomeetperspectief kunt u met het type **Inhoud** videobezoekers identificeren en de videoconversiesnelheden berekenen.
 
 * **a.media.timePlayed**
    * Type variabele: Gebeurtenis
@@ -94,17 +94,17 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
       Standaard wordt de complete-gebeurtenis 1 seconde voor het einde van de video gemeten. Tijdens de implementatie kunt u opgeven hoeveel seconden vanaf het einde van de video u een weergave als voltooid wilt beschouwen. Voor live video en andere streams zonder een bepaald einde kunt u een aangepast punt opgeven om de voltooiing te meten (bijvoorbeeld na een bepaalde weergegeven tijd).
 
 
-## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
+## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
 
-Configureer een `MediaSettings` object met de instellingen die u wilt gebruiken voor het bijhouden van video:
+Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
 ```java
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-Als u het afspelen van video wilt meten, moeten de methoden `mediaPlay`, `mediaStop`en `mediaClose` methoden op de juiste momenten worden aangeroepen. Roep de speler bijvoorbeeld aan wanneer de speler is gepauzeerd `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
+Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop` en `mediaClose` op de juiste momenten worden aangeroepen. Roep `mediaStop` aan wanneer de speler bijvoorbeeld is gepauzeerd. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
 ## Klassen {#section_16838332727348F990305C0C6B0D795C}
 
@@ -159,7 +159,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 * **settingsWith**
 
-   Retourneert een `MediaSettings` object met opgegeven parameters.
+   Retourneert een object `MediaSettings` met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -175,7 +175,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 * **adSettingsWith**
 
-   Retourneert een `MediaSettings` object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `MediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -184,7 +184,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 * **open**
 
-   Hiermee opent u een `MediaSettings` object dat u wilt bijhouden.
+   Opent een `MediaSettings`-object voor tekstspatiëring.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -204,7 +204,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
    * **close**
 
-      Sluit het media-item genaamd *name*.
+      Sluit het media-item met de naam *name*.
 
       * Hier volgt de syntaxis voor deze methode:
 
@@ -220,7 +220,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 
 * **play**
-   * Hiermee wordt het media-item met de naam *name* in de opgegeven *verschuiving* in seconden afgespeeld.
+   * Speelt het media-item met de naam *name* af op de opgegeven *offset* in seconden.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -229,7 +229,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 * **complete**
 
-   Markeer het media-item handmatig als voltooid bij de *verschuiving* in seconden.
+   Markeer het media-item handmatig als voltooid in de *offset* opgegeven in seconden.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -245,7 +245,7 @@ Hier volgen de methoden in de Media Measurement-klasse:
 
 * **stoppen**
 
-   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *verschuiving*.
+   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *offset*.
 
    * Hier volgt de syntaxis voor deze methode:
 
