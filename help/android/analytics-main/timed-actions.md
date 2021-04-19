@@ -4,18 +4,18 @@ seo-description: Met getimede acties kunt u de tijd in de app en de totale tijd 
 seo-title: Gedetailleerde handelingen
 solution: Experience Cloud,Analytics
 title: Gedetailleerde handelingen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
+exl-id: d9851440-6e65-4d89-a6b3-81c8abd2bf06
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-
-# Gedetailleerde acties {#timed-actions}
+# Gedetailleerde handelingen {#timed-actions}
 
 Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 
@@ -34,14 +34,14 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levensduur](/help/android/getting-started/dev-qs.md) toe.
 1. De bibliotheek importeren:
 
    ```java
    import com.adobe.mobile.*;
    ```
 
-1. Vraag `trackTimedActionStart` en verstrek een getimede actienaam en facultatieve contextgegevens.
+1. Roep `trackTimedActionStart` aan en geef een naam voor een getimede actie en optionele contextgegevens op.
 
    ```java
    HashMap cdata = new HashMap<String, Object>(); 
@@ -49,7 +49,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
    Analytics.trackTimedActionStart("TimeUntilPurchase", cdata);
    ```
 
-1. (Optioneel) U kunt op elk gewenst moment een oproep doen `trackTimedActionUpdate` met de naam van de getimede actie om extra contextgegevens toe te voegen.
+1. (Optioneel) U kunt `trackTimedActionUpdate` op elk gewenst moment aanroepen met de naam van de getimede actie om extra contextgegevens toe te voegen.
 
    ```java
    HashMap cdata = new HashMap<String, Object>(); 
@@ -65,7 +65,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 
    Metrische gegevens voor getimede gebeurtenissen worden opgeslagen in mobiele oplossingvariabelen voor automatische rapportage.
 
-## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
 
 Naast de naam van de getimede actie kunt u ook aanvullende contextgegevens verzenden met de aanroepen voor het starten van de actie en het bijwerken van de actie:
 
@@ -104,4 +104,3 @@ Analytics.trackTimedActionEnd("TimeUntilPurchase", new Analytics.TimedActionBloc
  } 
 });
 ```
-
