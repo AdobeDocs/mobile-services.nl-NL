@@ -1,26 +1,26 @@
 ---
 description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten op de servervraag te plaatsen.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten op de servervraag te plaatsen.
 seo-title: Productvariabele
 solution: Experience Cloud,Analytics
 title: Productvariabele
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
+exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '189'
 ht-degree: 1%
 
 ---
 
-
-# Variabele voor producten {#products-variable}
+# Variabele {#products-variable}
 
 De productvariabele kan niet worden ingesteld door verwerkingsregels te gebruiken. In Mobiele SDK, moet u een speciale syntaxis in de parameter van contextgegevens gebruiken om producten op de servervraag te plaatsen.
 
-Als u de variabele *products* wilt instellen, stelt u een contextgegevenssleutel in `"&&products"`en stelt u de waarde in met de syntaxis die voor de variabele *products* is gedefinieerd:
+Als u de variabele *products* wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"` en stelt u de waarde in met de syntaxis die is gedefinieerd voor de variabele *products*:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -45,8 +45,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-De variabele *products* wordt ingesteld op de afbeeldingsaanvraag en de andere variabelen worden ingesteld als contextgegevens. Alle variabelen van contextgegevens moeten door verwerkingsregels worden in kaart gebracht:
+De *products* variabele wordt geplaatst op het beeldverzoek, en de andere variabelen worden geplaatst als contextgegevens. Alle variabelen van contextgegevens moeten door verwerkingsregels worden in kaart gebracht:
 
 ![](assets/map-products.png)
 
-U hoeft de variabele *products* niet aan de hand van verwerkingsregels toe te wijzen, omdat deze variabele rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
+U hoeft de *products* variabele niet in kaart te brengen door verwerkingsregels te gebruiken omdat deze variabele rechtstreeks op de afbeeldingsaanvraag door de SDK wordt ingesteld.
