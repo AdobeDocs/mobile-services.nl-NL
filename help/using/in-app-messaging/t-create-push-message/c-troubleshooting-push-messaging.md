@@ -1,20 +1,20 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Probleemoplossing voor pushberichten{#troubleshooting-push-messaging}
 
@@ -32,7 +32,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 
 * **Wachten op de pushservice**
 
-   De pushservice (APNS of GCM) verzendt het bericht mogelijk niet meteen. Hoewel dit soms voorkomt, zijn er gevallen van wachttijden tot 5-10 minuten. U kunt verifiëren dat het pushbericht naar de pushservice is verzonden door de **[!UICONTROL Report]** weergave van het pushbericht te bekijken, het bericht in de **[!UICONTROL Message History]** tabel te zoeken en de **[!UICONTROL Published]** telling te bekijken.
+   De pushservice (APNS of GCM) verzendt het bericht mogelijk niet meteen. Hoewel dit soms voorkomt, zijn er gevallen van wachttijden tot 5-10 minuten. U kunt controleren dat het pushbericht naar de pushservice is verzonden door de **[!UICONTROL Report]**-weergave van het pushbericht te bekijken, het bericht in de tabel **[!UICONTROL Message History]** te zoeken en naar het aantal **[!UICONTROL Published]** te kijken.
 
    >[!TIP]
    >
@@ -73,7 +73,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   U kunt de geldigheid van een registratietoken ook controleren door `"ABC"` het token te vervangen.
+   U kunt de geldigheid van een registratietoken ook controleren door `"ABC"` met het teken te vervangen.
 
 ## Waarom werkt mijn APNS cert niet?
 
@@ -81,7 +81,7 @@ Uw APNS-certificaat is mogelijk ongeldig vanwege de volgende redenen:
 
 * In plaats van het productiecertificaat gebruikt u mogelijk een sandboxcertificaat.
 * U gebruikt een nieuw productie-/sandboxcertificaat dat niet wordt ondersteund.
-* U gebruikt `.p8` een bestand in plaats van een `.p12` bestand.
+* U gebruikt `.p8` dossier in plaats van een `.p12` dossier.
 
 ## Fouten met pushberichten oplossen
 
@@ -100,10 +100,10 @@ De volgende klant heeft twee iOS-apps:
    * RSID: Photoshop_iOS_app_LA
    * VRSID-definitiesegment: `a.os contains “iOS”`
 
-Als een Photoshop-medewerker in dit voorbeeld een push verzendt naar de *Photoshop_iOS_app_SF* -app, ontvangen alle gebruikers van de *Photoshop_iOS_app_SF-app* het pushbericht zoals verwacht. Maar als de werknemer een bericht naar de app *Photoshop_iOS_app_LA* verzendt, omdat zijn Segment van de Definitie VRSID (in`iOS` plaats van `a.os contains "PhotoShop_iOS_app_LA"`) onjuist is, wordt het bericht verzonden naar **alle** iOS gebruikers in *AlleAdobe Photoshop_apps*. Hoewel het bericht nog steeds naar *Photoshop_iOS_app_LA* -gebruikers gaat, worden in het bericht ook de push-id&#39;s voor *Photoshop_iOS_app_SF* -gebruikers toegevoegd op lijst van gewenste personen, omdat de *Photoshop_iOS_app_SF* -app een ander certificaat heeft. Als het segment als `a.os contains “PhotoShop_iOS_app_LA”`gedefinieerd was, zou het pushbericht alleen naar *Photoshop_iOS_app_LA* -gebruikers zijn verzonden.
+Als een Photoshop-medewerker in dit voorbeeld een push verzendt naar de *Photoshop_iOS_app_SF*-app, ontvangen alle *Photoshop_iOS_app_SF-app*-gebruikers het pushbericht zoals verwacht. Maar als de werknemer een bericht naar de *Photoshop_iOS_app_LA*-app verzendt, omdat het VRSID Definition-segment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht verzonden naar **alle** iOS-gebruikers in *AllAdobe Photoshop_apps*. Hoewel het bericht nog steeds naar gebruikers van *Photoshop_iOS_app_LA* gaat, worden in het bericht ook de push-id&#39;s voor gebruikers van *Photoshop_iOS_app_SF* gevoegd op lijst van gewenste personen omdat de *Photoshop_iOS_app_SF*-app een ander certificaat heeft. Als het segment was gedefinieerd als `a.os contains “PhotoShop_iOS_app_LA”`, zou het pushbericht alleen zijn verzonden naar *Photoshop_iOS_app_LA* gebruikers.
 
-Als de id&#39;s met het *Photoshop_IOS_app_LA* -pushcertificaat worden doorgegeven, worden de push-id&#39;s voor de *Photoshop_iOS_app_SF* geretourneerd als `invalid`.
+Als deze waarde wordt doorgegeven met het *Photoshop_IOS_app_LA*-pushcertificaat, worden de push-id&#39;s voor het *Photoshop_iOS_app_SF* geretourneerd als `invalid`.
 
 >[!CAUTION]
 >
->Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** deze knop klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app een geldig certificaat **moet** hebben. Als elke app **geen** geldig certificaat heeft, kunnen uw publiekssegmenten voor onbepaalde tijd worden toegevoegd op lijst van gewenste personen en kunt u in de toekomst mogelijk geen pushberichten naar de betrokken gebruikers verzenden. Voor meer informatie over publiekssegmenten, zie [Publiek: publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)definiëren en configureren.
+>Nadat u een pushbericht hebt gemaakt voor een toepassing die een VRS gebruikt en op **[!UICONTROL Save & Send]** klikt, verschijnt er een waarschuwing die u eraan herinnert dat elke vermelde app **must** een geldig certificaat heeft. Als elke app **not** een geldig certificaat heeft, kunnen uw publiekssegmenten voor onbepaalde tijd worden gevoegd op lijst van gewenste personen, en u zou toekomstige dupberichten aan de beïnvloede gebruikers kunnen niet kunnen verzenden. Voor meer informatie over publiekssegmenten, zie [Publiek: definieer en configureer publieksopties voor pushberichten](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
