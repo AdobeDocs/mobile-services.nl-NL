@@ -1,28 +1,28 @@
 ---
 description: Hier worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten.
 seo-title: Levenscycluswaarden
 solution: Experience Cloud,Analytics
 title: Levenscycluswaarden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
+exl-id: a1e4eeca-8b8f-47ca-a489-acc338238c42
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 3%
 
 ---
 
-
-# Levenscycluswaarden{#lifecycle-metrics}
+# Levenscyclusmetriek{#lifecycle-metrics}
 
 Hier worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten.
 
-Zie [Problemen met levenscyclusgegevens](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)oplossen voor meer informatie.
+Zie [Problemen met levenscyclusgegevens oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html) voor meer informatie.
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metriek en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wanneer gevormd, worden de metriek van de levenscyclus verzonden in de parameters van contextgegevens naar Analytics, in parameters aan Doel met elke mbox vraag, en als signaal aan Audience Manager. Analytics en Target gebruiken dezelfde indeling en Audience Manager gebruikt voor elke meting een ander voorvoegsel.
 
@@ -98,7 +98,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Toepassings-id**
 
-   Hiermee slaat u de toepassingsnaam en -versie op in de `[AppName] [BundleVersion]` indeling. Een voorbeeld van deze indeling is `myapp 1.1`.
+   Hiermee worden de toepassingsnaam en -versie opgeslagen in de indeling `[AppName] [BundleVersion]`. Een voorbeeld van deze indeling is `myapp 1.1`.
 
    * Contextgegevens/doel voor analyse: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -197,25 +197,25 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele oplossing vastgelegd door de methodes die in de beschrijving worden vermeld.
 
-### Metrics
+### Metrisch
 
 * **Totale tijd van handeling**
 
-   Bevolkt met `trackTimedAction` methoden.
+   Wordt gevuld met methoden `trackTimedAction`.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.total`
    * Audience Manager: `c_a_action_time_total`
 
 * **Tijd van handeling in toepassing**
 
-   Bevolkt met `trackTimedAction` methoden.
+   Wordt gevuld met methoden `trackTimedAction`.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.inapp`
    * Audience Manager: `c_a_action_time_inapp`
 
 * **Lifetime-waarde (gebeurtenis)**
 
-   Bevolkt met `trackLifetimeValue` methoden.
+   Wordt gevuld met methoden `trackLifetimeValue`.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
@@ -224,7 +224,7 @@ De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele opl
 
 * **Locatie (tot 10 km)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -238,7 +238,7 @@ De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele opl
 
 * **Locatie (tot 100 m)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -252,7 +252,7 @@ De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele opl
 
 * **Locatie (tot 1 m)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -266,21 +266,21 @@ De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele opl
 
 * **Naam van belangenpunt**
 
-   Wordt gevuld door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse: `a.loc.poi`
    * Audience Manager: `c_a_loc_poi`
 
 * **Afstand tot belangencentrum**
 
-   Wordt gevuld door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse: `a.loc.dist`
    * Audience Manager: `c_a_loc_dist`
 
 * **Lifetime-waarde (conversievariabele)**
 
-   Bevolkt met `trackLifetimeValue` methoden.
+   Wordt gevuld met methoden `trackLifetimeValue`.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
