@@ -1,34 +1,34 @@
 ---
 description: U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct aan te schaffen door de URL-parameters handmatig te configureren.
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct aan te schaffen door de URL-parameters handmatig te configureren.
 seo-title: Koppelingen voor overname handmatig maken
 solution: Experience Cloud,Analytics
 title: Koppelingen voor overname handmatig maken
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-
-# Koppelingen voor overname handmatig maken {#create-acquisition-link-manually}
+# Handmatig verwervingskoppelingen maken {#create-acquisition-link-manually}
 
 U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct aan te schaffen door de URL-parameters handmatig te configureren.
 
 >[!IMPORTANT]
 >
->Voor deze functie is SDK-versie 4.6 of hoger vereist. Voor meer informatie, zie de eerste vereisten van de [Verwerving](/help/using/acquisition-main/c-acquisition-prerequisites.md).
+>Voor deze functie is SDK-versie 4.6 of hoger vereist. Zie [Verwervingsvoorwaarden](/help/using/acquisition-main/c-acquisition-prerequisites.md) voor meer informatie.
 
 Het volgende diagram illustreert de componenten van een manueel gebouwde het volgen verbinding en toont de verschillende parameters URL die u moet behoorlijk vormen wanneer manueel het creëren van verwervingsverbindingen.
 
 ![](assets/acquisition_url.png)
 
-Deze koppeling is geconfigureerd voor het uitvoeren van een platformspecifieke omleiding naar de Google Play-winkel of de Apple App Store voor een mobiele app. Als de bestemming niet kan worden bepaald, is de standaardwinkel ingesteld op de Apple App Store. Nadat de app is geïnstalleerd, wordt de `my.custom.key:test` aangepaste contextsleutel gekoppeld aan de Analytics Install Hit.
+Deze koppeling is geconfigureerd voor het uitvoeren van een platformspecifieke omleiding naar de Google Play-winkel of de Apple App Store voor een mobiele app. Als de bestemming niet kan worden bepaald, is de standaardwinkel ingesteld op de Apple App Store. Nadat de app is geïnstalleerd, wordt de aangepaste contextsleutel `my.custom.key:test` toegevoegd aan de installatiepunt voor analysemogelijkheden.
 
 Gebruik de volgende URL-indeling om handmatig koppelingen te maken:
 
@@ -40,14 +40,14 @@ Gebruik de volgende URL-indeling om handmatig koppelingen te maken:
 
 Voor iOS dient u het juiste protocol te gebruiken:
 
-* Gebruik **HTTP** als u de iOS SDK&#39;s vóór versie 4.7.0 gebruikt, of als u iOS SDK 4.7.0 of hoger gebruikt en als u deze **[!UICONTROL Use HTTPS]** niet **** hebt geselecteerd op de pagina App Settings.
-* Gebruik **HTTPS** als u iOS SDK 4.7.0 of hoger gebruikt en **[!UICONTROL Use HTTPS]** is **** geselecteerd op de pagina Toepassingsinstellingen beheren.
+* Gebruik **HTTP** als u de iOS SDK&#39;s vóór versie 4.7.0 gebruikt, of als u iOS SDK 4.7.0 of hoger gebruikt en als **[!UICONTROL Use HTTPS]** **not** is geselecteerd op de pagina App Settings.
+* Gebruik **HTTPS** als u iOS SDK 4.7.0 of later gebruikt en **[!UICONTROL Use HTTPS]** **is** geselecteerd op de pagina Toepassingsinstellingen beheren.
 
 Wanneer aan de volgende voorwaarden is voldaan:
 
-* `{mobile-services-app-hash}` komt overeen met de toepassings-id in het `acquisition:appid ` configuratiebestand.
+* `{mobile-services-app-hash}` komt overeen met de toepassings-id in het  `acquisition:appid ` configuratiebestand.
 
-   U kunt de pagina Toepassingsinstellingen beheren onder Opties van de SDK voor acquisitie vinden `{mobile-services-app-hash}` in het veld Id voor bijhouden.
+   U vindt `{mobile-services-app-hash}` op de pagina Toepassingsinstellingen beheren onder Opties voor ophalen van SDK in het veld Id bijhouden.
 
    ![](assets/tracking-id.png)
 
@@ -93,7 +93,7 @@ Hier volgt een lijst met parameters:
 
 * **`ctx*`**
 
-   Toetsen die vooraf zijn ingesteld, `ctx` bevinden zich in de contextgegevens van de resulterende hit bij starten.
+   Toetsen die met `ctx` zijn voorafgegaan, bevinden zich in de contextgegevens van de resulterende hit bij starten.
 
    * Samplewaarde: `ctxmy.custom.key=myValue`
 
@@ -143,7 +143,6 @@ Houd rekening met de volgende informatie wanneer u handmatig verwervingskoppelin
 * Alle parameters die niet overeenkomen met parameters in de tabel worden doorgegeven als onderdeel van de omleiding van de App Store.
 * Alle parameters zijn technisch facultatief, hoewel de verbinding niet functioneel zal zijn, als minstens één opslagidentiteitskaart wordt gespecificeerd.
 
-   Een voorbeeld van een winkel-id is `a_g_id`/ `a_i_id`.
+   Een voorbeeld van een opslag-id is `a_g_id`/ `a_i_id`.
 
 * Als de bestemmingsopslag niet automatisch kan worden bepaald, en geen gebrek wordt verstrekt, is een fout 404 teruggekeerd.
-
