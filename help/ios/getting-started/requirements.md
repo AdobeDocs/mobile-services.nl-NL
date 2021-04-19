@@ -4,18 +4,18 @@ seo-description: Voer de volgende stappen uit om een rapportsuite te configurere
 seo-title: Voordat u begint
 solution: Experience Cloud,Analytics
 title: Voordat u begint
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
 
 ---
 
-
-# Voordat u begint {#before-you-start}
+# Voordat u {#before-you-start} start
 
 Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
 
@@ -27,7 +27,7 @@ Analysebeheerders en toepassingsontwikkelaars moeten de volgende taken uitvoeren
 
 Een rapportsuite configureren en gegevens van mobiele apps verzamelen:
 
-1. Voltooi een van de secties in [Login aan de gebruikersinterface](/help/ios/getting-started/getting-started.md)van de Mobiele Diensten van de Adobe.
+1. Voltooi een van de secties in [Meld u aan bij de gebruikersinterface van Mobiele Adobe-services](/help/ios/getting-started/getting-started.md).
 1. Maak een analyseaccount voor elke ontwikkelaar van de app.
 
 App-ontwikkelaars hebben nu toegang tot de rapportsuite(s) die u hebt gemaakt.
@@ -38,10 +38,10 @@ App-ontwikkelaars hebben nu toegang tot de rapportsuite(s) die u hebt gemaakt.
 
 ### App-ontwikkelaars
 
-1. Controleer of de beheerder van de Analyse de stappen in de bovenstaande sectie *Analysebeheerders* heeft uitgevoerd.
+1. Controleer of de beheerder van de Analyse de stappen in de sectie *Analysebeheerders* hierboven heeft uitgevoerd.
 
-1. Controleer of de beheerder van de Analyse een van de secties in de *aanmelding bij de gebruikersinterface* voor mobiele Adobe-services hieronder heeft voltooid.
-1. Nadat de rapportsuite is geconfigureerd, voert u de volgende stappen uit in de sectie *Download de SDK* .
+1. Verifieer dat uw beheerder van Analytics één van de secties in *login aan de Mobiele Diensten UI van de Adobe heeft voltooid UI* hieronder.
+1. Nadat de rapportreeks is gevormd, voltooi stappen in *Download SDK* hieronder sectie.
 
 Voor meer informatie over rollen en toestemmingen, zie [Rollen en Toestemmingen](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -53,9 +53,9 @@ U kunt zich op een van de volgende manieren aanmelden bij de Adobe Mobile Servic
 
 * **Experience Cloud**
 
-   Meld u aan bij de [Experience Cloud](https://marketing.adobe.com) met uw Adobe ID.
+   Meld u aan bij [Experience Cloud](https://marketing.adobe.com) met uw Adobe ID.
 
-   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Zie Gebruikers en producten [van Experience Cloud](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html)beheren voor meer informatie over provisioning. Zie [Organisaties en accountkoppelingen](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)voor meer informatie over het koppelen van uw account.
+   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Zie [Gebruikers en producten van Experience Cloud beheren](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie over provisioning. Zie [Organisaties en account linking](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html) voor meer informatie over het koppelen van uw account.
 
    >[!TIP]
    >
@@ -63,7 +63,7 @@ U kunt zich op een van de volgende manieren aanmelden bij de Adobe Mobile Servic
 
 * **Adobe Analytics**
 
-   Klik en ga uw het bedrijfsnaam van Analytics, uw gebruikersbenaming, en uw wachtwoord in. **[!UICONTROL Sign in with Analytics]**
+   Klik **[!UICONTROL Sign in with Analytics]** en ga uw het bedrijfsnaam van Analytics, uw gebruikersbenaming, en uw wachtwoord in.
 
 ## Een rapportsuite maken {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
@@ -73,7 +73,7 @@ Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te defini
 
    Als deze knop niet wordt weergegeven, klikt u op **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
 
-1. In the **[!UICONTROL Report Suite]** drop-down, select **[!UICONTROL New Report Suite]**.
+1. Selecteer **[!UICONTROL New Report Suite]** in de vervolgkeuzelijst **[!UICONTROL Report Suite]**.
 
 1. Voer de naam van uw app in en selecteer een unieke rapportsuite-id.
 
@@ -82,23 +82,22 @@ Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te defini
 
    Met deze sjabloon kunnen tijdstempels offline gegevens verzamelen en worden de variabelen van de mobiele oplossing geactiveerd om levenscyclusmetriek vast te leggen.
 
-1. Selecteer uw **[!UICONTROL Timezone]**, uw **[!UICONTROL Currency]**, en klik **[!UICONTROL Save]**.
+1. Selecteer **[!UICONTROL Timezone]**, uw **[!UICONTROL Currency]**, en klik **[!UICONTROL Save]**.
 
-## De SDK downloaden {#section_044C17DF82BC4FD8A3E409C456CE9A46}
+## SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46} downloaden
 
 De mobiele SDK downloaden:
 
 1. Meld u aan bij Mobiele services en open uw app op een van de volgende manieren:
 
-   * Selecteer uw app in de **[!UICONTROL All Apps]** vervolgkeuzelijst.
+   * Selecteer uw toepassing in de vervolgkeuzelijst **[!UICONTROL All Apps]**.
    * Zoek in het rechterdeelvenster naar de toepassing en open deze.
 
 1. Klik op **[!UICONTROL Manage App Settings]**.
-1. Blader in de **[!UICONTROL App SDK Downloads]** sectie naar de **[!UICONTROL App SDK Downloads]** sectie.
+1. Blader in de sectie **[!UICONTROL App SDK Downloads]** naar de sectie **[!UICONTROL App SDK Downloads]**.
 
 1. Download de SDK en de voorbeeldapp voor uw platform.
 
 >[!TIP]
 >
 >Er wordt automatisch een configuratiebestand voor uw app opgenomen in de SDK-download, zodat u dat bestand niet afzonderlijk hoeft te downloaden. Als u de SDK echter al hebt gedownload en u wilt de bijgewerkte instellingen ophalen, downloadt u het configuratiebestand opnieuw.
-
