@@ -1,20 +1,20 @@
 ---
 description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bibliotheek naar versie 4.x.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bibliotheek naar versie 4.x.
 seo-title: Migreren naar de Android 4.x-bibliotheek
 solution: Experience Cloud,Analytics
 title: Migreren naar de Android 4.x-bibliotheek
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
+exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '884'
 ht-degree: 2%
 
 ---
-
 
 # Migreren naar de Android 4.x-bibliotheek {#migrating-to-the-android-x-library}
 
@@ -22,7 +22,7 @@ Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bib
 
 >[!IMPORTANT]
 >
->De SDK gebruikt `SharedPreferences` om gegevens op te slaan die nodig zijn voor het berekenen van unieke gebruikers, levenscyclusmetriek en andere gegevens met betrekking tot de belangrijkste SDK-functionaliteit.  Als u de waarden in de SDK wijzigt of verwijdert, kan onverwacht gedrag leiden tot inconsistenties in de gegevens. `SharedPreferences`
+>De SDK gebruikt `SharedPreferences` om gegevens op te slaan die nodig zijn voor het berekenen van unieke gebruikers, levenscyclusmetriek en andere gegevens met betrekking tot de kernfunctionaliteit van SDK.  Als u de waarden in `SharedPreferences` wijzigt of verwijdert die door SDK worden verwacht, kan onverwacht gedrag in de vorm van gegevensinconsistenties resulteren.
 
 In de bibliotheek van versie 4.x, worden de openbare methodes geconsolideerd in één kopbal. Bovendien is alle functionaliteit nu toegankelijk via methoden op klasseniveau. U hoeft dus geen aanwijzingen, instanties of singletons bij te houden.
 
@@ -40,11 +40,11 @@ De verwerkingsregels bieden de volgende voordelen:
 
 >[!TIP]
 >
->De waarden die u rechtstreeks aan variabelen toewees zouden aan HashMap moeten worden toegevoegd. `data`
+>Waarden die u rechtstreeks aan variabelen hebt toegewezen, moeten worden toegevoegd aan de `data` HashMap.
 
-## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+## Ongebruikte eigenschappen {#section_145222EAA20F4CC2977DD883FDDBBFC5} verwijderen
 
-Het nieuwe `ADBMobileConfig.json` bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json` bestand:
+Het nieuwe `ADBMobileConfig.json` dossier bevat toepassing-specifieke, globale montages, en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 {
@@ -83,9 +83,9 @@ De volgende lijsten maken een lijst van de configuratievariabelen die u naar het
 
 ### Migreren van versie 3.x
 
-Als u van versie 3.x naar 4 wilt migreren, verplaatst u de configuratievariabele/methodewaarde naar de `ADBMobileConfig.json` variabele.
+Om van versie 3.x aan 4 te migreren, verplaats de configuratievariabele/methodewaarde aan `ADBMobileConfig.json` variabele.
 
-| Configuratievariabele of -methode | Variabele in het `ADBMobileConfig.json` bestand |
+| Configuratievariabele of -methode | Variabele in het `ADBMobileConfig.json`-bestand |
 |--- |--- |
 | setOfflineTrackingEnabled | &quot;offlineEnabled&quot; |
 | setOfflineHitLimit | &quot;batchLimit&quot; |
@@ -101,12 +101,12 @@ Als u van versie 3.x naar 4 wilt migreren, verplaatst u de configuratievariabele
 
 Als u van versie 2.x naar versie 4 wilt migreren, verplaatst u de waarde van de eerste kolom naar de variabele in de tweede kolom.
 
-| Configuratievariabele | Variabele in het `ADBMobileConfig.json` bestand |
+| Configuratievariabele | Variabele in het `ADBMobileConfig.json`-bestand |
 | --- |--- |
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;sids&quot; |
-| trackingServer | &quot;server&quot;, verwijdert u het `"https://"` voorvoegsel. Het protocolvoorvoegsel wordt automatisch toegevoegd op basis van de instelling &quot;ssl&quot;. |
+| trackingServer | &quot;server&quot;, verwijdert u het voorvoegsel `"https://"`. Het protocolvoorvoegsel wordt automatisch toegevoegd op basis van de instelling &quot;ssl&quot;. |
 | trackingServerSecure | Verwijderen. Voor veilige verbindingen definieert u &quot;server&quot; en schakelt u &quot;ssl&quot; in. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
@@ -125,13 +125,13 @@ Als u van versie 2.x naar versie 4 wilt migreren, verplaatst u de waarde van de 
 
 In plaats van de web-focused `track` en `trackLink` vraag te gebruiken, gebruikt versie 4 SDK de volgende methodes:
 
-* `trackState`, dit zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`enzovoort.
+* `trackState`, dit zijn de weergaven die beschikbaar zijn in uw app, zoals  `home dashboard`,  `app settings`,  `cart`enzovoort.
 
-   Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan.
+   Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
 
-* `trackAction` acties, zoals `logons`, `banner taps`, `feed subscriptions`enzovoort, die in uw app voorkomen en die u wilt meten.
+* `trackAction` acties, zoals  `logons`,  `banner taps`,  `feed subscriptions`enzovoort, die in uw app voorkomen en die u wilt meten.
 
-De `contextData` parameter voor beide methoden is een `HashMap<String, Object>`naam, die de naam-waardeparen bevat die als contextgegevens worden verzonden.
+De parameter `contextData` voor beide methoden is een `HashMap<String, Object>`, die de naam-waardeparen bevat die als contextgegevens worden verzonden.
 
 ## Gebeurtenissen, profielen en eVars
 
@@ -143,13 +143,13 @@ De verwerkingsregels bieden de volgende voordelen:
 * U kunt betekenisvolle namen voor gegevens gebruiken in plaats van het plaatsen van variabelen die voor een rapportreeks specifiek zijn.
 * Het verzenden van extra gegevens heeft weinig effect.
 
-   Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen. Voor meer informatie, zie de Regels en de Gegevens [van de](/help/android/getting-started/proc-rules.md)Verwerking.
+   Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen. Zie [Regels en contextgegevens verwerken](/help/android/getting-started/proc-rules.md) voor meer informatie.
 
-Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan de `data` HashMap. Dit betekent dat aanroepen naar `setProp`, `setEvar`en toewijzingen aan permanente contextgegevens moeten worden verwijderd en dat de waarden aan de `data` parameter moeten worden toegevoegd.
+Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan de `data` HashMap. Dit betekent dat aanroepen naar `setProp`, `setEvar` en toewijzingen naar permanente contextgegevens moeten worden verwijderd en dat de waarden moeten worden toegevoegd aan de parameter `data`.
 
 ## AppSection/server, GeoZip, transactie-id, Campaign en andere standaardvariabelen
 
-De gegevens die u op het metingsvoorwerp, met inbegrip van de hierboven vermelde variabelen plaatste, zouden aan HashMap moeten worden toegevoegd. `data` De enige gegevens die met een `trackState` of een `trackAction` vraag worden verzonden zijn de lading in de `data` parameter.
+De gegevens die u op het metingsvoorwerp, met inbegrip van de hierboven vermelde variabelen plaatste, zouden aan `data` HashMap moeten worden toegevoegd. De enige gegevens die met een `trackState` of `trackAction` vraag worden verzonden is de lading in de `data` parameter.
 
 ### Trackingaanroepen vervangen
 
@@ -167,13 +167,13 @@ Vervang de volgende methoden door een aanroep van `trackState` of `trackAction`:
    * `track (trackState)`
    * `trackLink (trackAction)`
 
-## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
 
-Vervang de `visitorID` variabele door een vraag aan `setUserIdentifier`.
+Vervang de `visitorID` variabele met een vraag aan `setUserIdentifier`.
 
 ## Offline bijhouden {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json` bestand en alle andere offlineconfiguratie wordt automatisch uitgevoerd.
+Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json`-bestand en alle andere offlineconfiguratie wordt automatisch uitgevoerd.
 
 Verwijder vraag aan de volgende methodes:
 
@@ -187,7 +187,6 @@ Verwijder vraag aan de volgende methodes:
 * `forceOffline`
 * `forceOnline`
 
-## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Voor meer informatie over de productvariabele, zie de variabele [van](/help/android/analytics-main/products/products.md)Producten.
-
+Voor meer informatie over de productvariabele, zie [Variabele van Producten](/help/android/analytics-main/products/products.md).
