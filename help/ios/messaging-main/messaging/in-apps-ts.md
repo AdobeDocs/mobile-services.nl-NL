@@ -1,22 +1,22 @@
 ---
 description: Deze informatie helpt u in-app overseinen problemen op te lossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 seo-title: Problemen met In-app-berichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met In-app-berichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
+exl-id: ce009289-9d22-4d76-9997-31fc864e9d4d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
 
-
-# Problemen met in-app messaging oplossen{#troubleshooting-in-app-messaging}
+# Probleemoplossing in app messaging{#troubleshooting-in-app-messaging}
 
 Deze informatie helpt u in-app overseinen problemen op te lossen.
 
@@ -32,19 +32,19 @@ Hebt u het manifestbestand bijgewerkt om de volledige schermactiviteit te defini
 
 ## Mijn lokale meldingsbericht in Android werkt niet.
 
-Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Zie stap 2 in [In-app berichten](/help/android/messaging-main/messaging/messaging.md)inschakelen voor meer informatie.
+Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap 2 in [In-App Berichten toelaten](/help/android/messaging-main/messaging/messaging.md).
 
 ## Is het bericht live?
 
 Schakel de lijstweergave op de pagina Bericht in de app beheren in de kolom Status in en controleer of deze live is.
 
-## Kijk eens *tonen eens*, *tonen altijd*, *tonen off-line* montages op het lusje van de Publiek.
+## Bekijk *show eens*, *show altijd*, *show off-line* montages op het lusje van de Publiek.
 
-Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het **[!UICONTROL Audience]** tabblad de **[!UICONTROL Trigger]** opties waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
+Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het tabblad **[!UICONTROL Audience]** de opties **[!UICONTROL Trigger]**, waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
 ## Bij gebruik van de gebeurtenis launch als trigger...
 
-Hiermee wordt alleen een nieuwe sessie gestart. Zie de `lifecycleTimeout` rij in het bestand JSON Config voor meer informatie over het begin van een sessie. Zie [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)voor meer informatie.
+Hiermee wordt alleen een nieuwe sessie gestart. Voor meer informatie over wanneer een zitting begint, zie `lifecycleTimeout` rij in het dossier van JSON Config. Zie [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) voor meer informatie.
 
 ## Ik heb mijn bericht op afstand bijgewerkt, maar mijn app geeft nog steeds het oude bericht weer.
 
@@ -57,7 +57,7 @@ Voer een van de volgende taken uit:
 * De config zal slechts op een nieuwe lancering bijwerken.
 Als de app opnieuw is gestart tijdens de sessietime-out van de levenscyclus, is de nieuwe configuratie mogelijk niet gedownload.
 
-   Zie [Levenscyclusstatistieken](/help/ios/metrics.md)voor meer informatie.
+   Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
 
 ## Mijn afbeelding past niet precies in de ruimte die de sjabloon biedt.
 
@@ -83,7 +83,7 @@ Als u problemen hebt met de sjabloon Volledig scherm, kunt u de aangepaste HTML-
 
 In-app berichten weergeven in de modus Volledig scherm op een iPhone X:
 
-1. Voeg toe `viewport-fit=cover` in de metatag.
+1. Voeg `viewport-fit=cover` in de metatag toe.
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
