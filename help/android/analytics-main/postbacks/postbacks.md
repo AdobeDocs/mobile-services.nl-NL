@@ -1,20 +1,20 @@
 ---
 description: Met Postbacks kunt u gegevens die door de SDK zijn verzameld, naar een externe server verzenden. Door gebruik te maken van dezelfde triggers en kenmerken die u gebruikt om een bericht in de app weer te geven, kunt u de SDK zodanig configureren dat aangepaste gegevens naar een bestemming van een derde worden verzonden.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Met Postbacks kunt u gegevens die door de SDK zijn verzameld, naar een externe server verzenden. Door gebruik te maken van dezelfde triggers en kenmerken die u gebruikt om een bericht in de app weer te geven, kunt u de SDK zodanig configureren dat aangepaste gegevens naar een bestemming van een derde worden verzonden.
 seo-title: Postbacks
 solution: Experience Cloud,Analytics
 title: Overzicht van postbacks
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
+exl-id: 318f6eab-ff71-4bfe-8eb7-51a35380b992
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # Postbacks {#postbacks}
 
@@ -24,11 +24,11 @@ Met Postbacks kunt u gegevens die door de SDK zijn verzameld, naar een externe s
 >
 >Voor deze functionaliteit is SDK-versie 4.6.0 of hoger vereist.
 
-Postbackberichten worden in een wachtrij geplaatst en volgen alle bestaande online/offline regels die de gegevensverzameling van analysegegevens regelen. Wanneer een bericht aanpast (als getoond-berichten), annuleert de postbackberichten niet de rest van de berichten. Op deze manier kunnen meerdere postbacks optreden bij dezelfde hit voor analysemogelijkheden. Voor de definitie, zie de *postbacks* rij in [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md).
+Postbackberichten worden in een wachtrij geplaatst en volgen alle bestaande online/offline regels die de gegevensverzameling van analysegegevens regelen. Wanneer een bericht aanpast (als getoond-berichten), annuleert de postbackberichten niet de rest van de berichten. Op deze manier kunnen meerdere postbacks optreden bij dezelfde hit voor analysemogelijkheden. Voor de definitie, zie *postbacks* rij in [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md).
 
 ## Sjabloonuitbreidingen {#section_6758AD05A24C4E9E965F5253294C164A}
 
-Sjabloonuitbreidingen zijn beschikbaar in de `templateurl` eigenschappen en `templatebody` eigenschappen. Sjabloonitems hebben de vorm van `{key}``key` een contextgegevenssleutel of een traditionele gegevenssleutel. De waarden die voor malplaatjeuitbreiding beschikbaar zijn zijn beperkt tot de metriek [van de](/help/android/metrics.md)Levenscyclus, naast om het even welke douanegegevens die aan slag in bijlage zijn die het bericht teweegbrengt. Er zijn momenteel geen historische of op een segment gebaseerde gegevens beschikbaar.
+Sjabloonuitbreidingen zijn beschikbaar in de eigenschappen `templateurl` en `templatebody`. Sjabloonitems hebben de vorm van `{key}`, waarbij `key` een contextgegevenssleutel of een traditionele gegevenssleutel is. De waarden die voor malplaatjeuitbreiding beschikbaar zijn zijn beperkt tot [De metriek van de Levenscyclus](/help/android/metrics.md), naast om het even welke douanegegevens die aan slag in bijlage zijn die het bericht teweegbrengt. Er zijn momenteel geen historische of op een segment gebaseerde gegevens beschikbaar.
 
 Er zijn ook specifieke, gereserveerde sjablonen die de SDK automatisch vervangt door interne gegevens die bekend zijn bij de SDK.
 
@@ -38,7 +38,7 @@ Deze lijst bevat:
 |--- |--- |
 | {%sdkver%} | Retourneert de SDK-versie. |
 | {%cachebust%} | Hiermee wordt een willekeurig getal tussen 1 en 100000000 ingesteld. |
-| {%adid%} | Retourneert Advertiser-id voor Android. Dit werkt alleen als u dit hebt gebruikt `submitAdvertisingIdentifierTask`. |
-| {%pushID%} | Retourneert het token voor de push-id. Dit werkt alleen als u dit hebt gebruikt `setPushIdentifier`. |
+| {%adid%} | Retourneert Advertiser-id voor Android. Opmerking: dit werkt alleen als u `submitAdvertisingIdentifierTask` hebt gebruikt. |
+| {%pushID%} | Retourneert het token voor de push-id. Opmerking: dit werkt alleen als u `setPushIdentifier` hebt gebruikt. |
 | {%timestampu%} | Retourneert de huidige tijdstempel in tijdperk. |
 | {%timestampz%} | Hiermee wordt de huidige tijdstempel geretourneerd in de JavaScript-indeling (ISO 8601). |
