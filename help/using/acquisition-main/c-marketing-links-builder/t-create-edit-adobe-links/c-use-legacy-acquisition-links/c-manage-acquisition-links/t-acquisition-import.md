@@ -1,28 +1,27 @@
 ---
 description: Importeer of exporteer verwervingskoppelingen als u liever met de koppelingen werkt met een CSV-bestand in plaats van de gebruikersinterface van Adobe Mobile Services te gebruiken.
-keywords: mobile
+keywords: mobiel
 seo-description: Importeer of exporteer verwervingskoppelingen als u liever met de koppelingen werkt met een CSV-bestand in plaats van de gebruikersinterface van Adobe Mobile Services te gebruiken.
 seo-title: Aankoopkoppelingen importeren of exporteren
 solution: Experience Cloud,Analytics
 title: Aankoopkoppelingen importeren of exporteren
-topic: Metrics
+topic-fix: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
+exl-id: 9be2377e-7f46-44f7-9c5e-1c20c617276d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 0%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 
-
-# Verwervingskoppelingen importeren of exporteren{#import-or-export-acquisition-links}
+# Overnamekoppelingen importeren of exporteren{#import-or-export-acquisition-links}
 
 Als u liever met de koppelingen werkt door een .csv-bestand te gebruiken in plaats van de gebruikersinterface van Adobe Mobile Services, kunt u verwervingskoppelingen importeren of exporteren.
 
 1. Klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
-1. Klik op een van de volgende taken **[!UICONTROL Import]** en voer deze uit:
+1. Klik op **[!UICONTROL Import]** en voer een van de volgende taken uit:
 
    * Blader naar en selecteer het bestand dat u naar Mobiele services wilt uploaden.
-   * Klik op het bestand **[!UICONTROL Export]** en open het of sla het op.
-
+   * Klik op **[!UICONTROL Export]** en open of sla het bestand op.
