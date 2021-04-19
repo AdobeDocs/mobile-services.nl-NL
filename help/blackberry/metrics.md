@@ -1,28 +1,28 @@
 ---
 description: Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 seo-title: Levenscycluswaarden
 solution: Experience Cloud,Analytics
 title: Levenscycluswaarden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
+exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
 
-
-# Levenscycluswaarden {#lifecycle-metrics}
+# Levenscyclusmetriek {#lifecycle-metrics}
 
 Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 
-Ga voor meer informatie naar de Knowledge Base bij [Problemen met levenscyclusgegevens](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)oplossen.
+Ga voor meer informatie naar de Knowledge Base op [Problemen met levenscyclusgegevens oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metriek en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Wanneer gevormd, worden de metriek van de levenscyclus verzonden in de parameters van contextgegevens naar Analytics, in parameters aan Doel met elke mbox vraag, en als signaal aan publieksbeheer. Analytics en Target gebruiken dezelfde indeling, terwijl het publieksbeheer voor elke meting een ander voorvoegsel gebruikt.
 
@@ -201,7 +201,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 10 km)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -215,7 +215,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 100 m)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -229,7 +229,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 1 m)**
 
-   Bevolkt met `trackLocation` methoden.
+   Wordt gevuld met methoden `trackLocation`.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -243,7 +243,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Naam van belangenpunt**
 
-   Wordt gevuld door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -255,7 +255,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Afstand tot belangencentrum**
 
-   Wordt gevuld door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse:
 
