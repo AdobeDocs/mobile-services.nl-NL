@@ -4,28 +4,28 @@ seo-description: Deze informatie helpt u met een GDPR verzoek om gegevens te sch
 seo-title: De status Opt van de gebruiker instellen
 solution: Experience Cloud,Analytics
 title: De status Opt van de gebruiker instellen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
+exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
-# De status van de gebruiker instellen {#setting-the-user-s-opt-status}
+# De status {#setting-the-user-s-opt-status} van de gebruiker instellen
 
 Deze informatie helpt u met een GDPR verzoek om gegevens te schrappen.
 
 >[!IMPORTANT]
 >
->Vanaf Experience Cloud iOS SDKs 4.15, plaatsend de privacystatus om Audience Manager en Experience Cloud ID klapjes te `unknown` houden.
+>Vanaf Experience Cloud iOS SDKs 4.15, die de privacystatus aan `unknown` plaatst houdt Audience Manager en Experience Cloud identiteitskaart- klappen.
 
 U kunt met de volgende instellingen bepalen of de activiteit Analytics, Target en Audience Manager is toegestaan op een apparaat:
 
-* `privacyDefault` in [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` in  [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
    Met deze instelling bepaalt u de begininstelling die blijft bestaan totdat deze in de code wordt gewijzigd.
 
@@ -33,7 +33,7 @@ U kunt met de volgende instellingen bepalen of de activiteit Analytics, Target e
 
    Nadat de privacy-instelling met deze methode is gewijzigd, is de wijziging permanent totdat deze opnieuw wordt gewijzigd met deze methode, of wanneer u de app opnieuw verwijdert en installeert.
 
-   Voor meer informatie over de methodes, zie de Methoden [van de](/help/ios/configuration/json-config/json-config.md)Configuratie.
+   Voor meer informatie over de methodes, zie [de Methoden van de Configuratie](/help/ios/configuration/json-config/json-config.md).
 
 Hier volgt informatie over elke privacystatus:
 
@@ -55,9 +55,9 @@ Hier volgt informatie over elke privacystatus:
 
 * **Onbekend**
 
-   * Analyse: Als offline bijhouden **is** ingeschakeld, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (treffers worden verzonden) of Afmelden (treffers worden verwijderd).
+   * Analyse: Als offline bijhouden **is** ingeschakeld, worden treffers opgeslagen totdat de privacystatus verandert in opt-in (hits worden verzonden) of opt-out (hits worden genegeerd).
 
-      Als offline bijhouden **niet** is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden.
+      Als het offline volgen **niet** toegelaten is, worden de klappen verworpen tot de privacystatus in opt-in verandert.
 
    * Doel: Mbox-aanvragen worden verzonden.
    * Audience Manager: Signalen en id-syncs worden verzonden.
@@ -77,4 +77,3 @@ Hier volgt informatie over elke privacystatus:
  [ADBMobile setPrivacyStatus:ADBMobilePrivacyStatusUnknown]; 
 }
 ```
-
