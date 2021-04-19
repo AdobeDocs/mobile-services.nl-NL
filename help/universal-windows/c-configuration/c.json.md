@@ -4,16 +4,16 @@ seo-description: Informatie die u helpt bij het gebruik van het bestand ADBMobil
 seo-title: ADBMobileConfig.json config
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json config
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
 
 ---
-
 
 # ADBMobileConfig.json-configuratiebestand {#adbmobileconfig-json-config}
 
@@ -23,7 +23,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **Rsids**
 
-   (**Vereist door Analytics**) Een of meer rapportreeksen om analysegegevens te ontvangen. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
+   (**Vereist door Analytics**) Één of meerdere rapportreeksen om de gegevens van de Analyse te ontvangen. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -37,25 +37,25 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **server**
 
-   (**Vereist door Analytics and Audience Management**). Analytics or Audience Management Server, based on the parent node. Deze variabele zou met het serverdomein, zonder een `"https://"` of `"https://"` protocolprefix moeten worden bevolkt. Het protocolvoorvoegsel wordt automatisch behandeld door de bibliotheek die op de `ssl` variabele wordt gebaseerd.
+   (**Vereist door Analytics and Audience Management**). Analytics or Audience Management Server, based on the parent node. Deze variabele moet worden gevuld met het serverdomein, zonder het protocolvoorvoegsel `"https://"` of `"https://"`. Het protocolvoorvoegsel wordt automatisch behandeld door de bibliotheek die op `ssl` variabele wordt gebaseerd.
 
-   Als `ssl` `true`dit het geval is, wordt een veilige verbinding gemaakt met deze server. Als `ssl``false`dit het geval is, wordt een niet-veilige verbinding gemaakt met deze server.
+   Als `ssl` `true` is, wordt een veilige verbinding gemaakt met deze server. Als `ssl``false` is, wordt een onveilige verbinding gemaakt met deze server.
 
 * **charset**
 
-   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)voor meer informatie.
+   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html) voor meer informatie.
 
 * **ssl**
 
-   Schakelt het verzenden van meetgegevens via SSL (`true`) in of uit (`false`)`HTTPS`. De standaardwaarde is `false`.
+   Schakelt (`true`) in of schakelt (`false`) het verzenden van meetgegevens via SSL (`HTTPS`) uit. De standaardwaarde is `false`.
 
 * **offlineEnabled**
 
-   Wanneer deze optie is ingeschakeld (`true`), worden treffers in de wachtrij geplaatst terwijl het apparaat offline is en later wordt verzonden wanneer het apparaat online is. Uw rapportsuite moet zijn ingeschakeld voor tijdstempels om offline tracering te kunnen gebruiken.
+   Wanneer toegelaten (`true`), vallen een rij worden gevormd terwijl het apparaat off-line is en later wordt verzonden wanneer het apparaat online is. Uw rapportsuite moet zijn ingeschakeld voor tijdstempels om offline tracering te kunnen gebruiken.
 
-   Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit `true`. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit zijn `false`.
+   Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` configuratiebezit *must* is `true`. als uw rapportreeks niet timestamp toegelaten is, moet uw `offlineEnabled` configuratiebezit *must* `false` zijn.
 
-   Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de klantenservice als u niet zeker weet of een rapportenpakket is ingeschakeld. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die de `s.timestamp` variabele gebruiken.
+   Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de klantenservice als u niet zeker weet of een rapportenpakket is ingeschakeld. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers met de variabele `s.timestamp`.
 
    De standaardwaarde is `false`.
 
@@ -69,7 +69,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
    Tanden batchgewijs verzenden.
 
-   Bijvoorbeeld, als reeks aan, worden de klappen een rij gevormd tot 50 wordt opgeslagen, dan worden alle een rij gevormde klappen verzonden. `50` Vereist `offlineEnabled=true`, en de standaardwaarde is `0` (Geen partij).
+   Als u bijvoorbeeld instelt op `50`, worden treffers in de wachtrij geplaatst totdat 50 zijn opgeslagen, waarna alle treffers in de wachtrij worden verzonden. Vereist `offlineEnabled=true` en de standaardwaarde is `0` (Geen batchverwerking).
 
 * **privacyDefault**
 
@@ -85,7 +85,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **poi**
 
-   Elke POI-array bevat de POI-naam, breedte, lengte en straal (in meters) voor het gebied van het punt. De POI-naam kan elke tekenreeks zijn. Wanneer een `trackLocation` vraag wordt verzonden, als de huidige coördinaten binnen bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met de `trackLocation` vraag.
+   Elke POI-array bevat de POI-naam, breedte, lengte en straal (in meters) voor het gebied van het punt. De POI-naam kan elke tekenreeks zijn. Wanneer een `trackLocation` vraag wordt verzonden, als de huidige coördinaten binnen bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
 
    * Hier is het codevoorbeeld voor deze variabele:
 
@@ -98,13 +98,13 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **clientCode**
 
-   (**Vereist door Doel**) De toegewezen clientcode.
+   (**Vereist door Doel**) Uw toegewezen cliëntcode.
 
 * **timeout**
 
    Hiermee bepaalt u hoe lang het doel wacht op een reactie.
 
-Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
+Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 { 
