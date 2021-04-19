@@ -1,20 +1,20 @@
 ---
 description: U kunt gebruikers naar een bestemming leiden afhankelijk van het feit of ze de app hebben geïnstalleerd (een koppeling om de app te verkennen) of niet (naar een website of een App Store).
-keywords: mobile
+keywords: mobiel
 seo-description: U kunt gebruikers naar een bestemming leiden afhankelijk van het feit of ze de app hebben geïnstalleerd (een koppeling om de app te verkennen) of niet (naar een website of een App Store).
 seo-title: Verspreide advertenties
 solution: Experience Cloud,Analytics
 title: Verspreide advertenties
-topic: Metrics
+topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
+exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
-
 
 # Verspreide advertenties{#interstitials}
 
@@ -37,10 +37,10 @@ Om een interval te vormen wanneer het creëren van een Verbinding van de Marketi
       Hier volgen de vereisten voor de HTML-pagina:
 
       * Dit moet een HTML-bestand zijn.
-      * Moet de `%%DEST%%` plaatsaanduidingen en `%%FALLBACK%%` plaatsaanduidingen bevatten.
+      * Moet de plaatsaanduidingen `%%DEST%%` en `%%FALLBACK%%` bevatten.
       * De geüploade HTML wordt weergegeven in een `<iframe>`.
 
-         U moet ervoor zorgen dat uw koppelingsdoelstellingen naar een oudervenster richten. U kunt een doeleigenschap voor elke eigenschap afzonderlijk opnemen `<base target="_parent" />` in `<head>` `<a/>` of opgeven.
+         U moet ervoor zorgen dat uw koppelingsdoelstellingen naar een oudervenster richten. U kunt `<base target="_parent" />` in `<head>` of een doelbezit voor elk `<a/>` individueel specificeren.
 
          >[!TIP]
          >
