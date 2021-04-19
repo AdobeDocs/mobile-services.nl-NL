@@ -4,34 +4,34 @@ seo-description: 'null'
 seo-title: Snelle start voor ontwikkelaars
 solution: Experience Cloud,Analytics
 title: Snelle start voor ontwikkelaars
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
+exl-id: dd3262b1-e211-4758-9b4a-9dc7c4920c10
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
-
 # Snelle start voor ontwikkelaars {#developer-quick-start}
 
 U zult Visual Studio 2013 of recenter nodig hebben om SDK uit te voeren.
 
-## De SDK ophalen {#section_99FE1A17A36D4A2C943939023CF6265C}
+## SDK {#section_99FE1A17A36D4A2C943939023CF6265C} ophalen
 
-Nadat u het downloaden [van de](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)SDK hebt uitgerekt, beschikt u over een aparte map voor elke ondersteunde architectuur- en platformcombinatie. U hebt ook een `ADBMobileConfig.json` bestand dat later in deze handleiding wordt uitgelegd.
+Nadat u de [SDK-download](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) hebt uitgepakt, hebt u een aparte map voor elke ondersteunde architectuur- en platformcombinatie. U zult ook een `ADBMobileConfig.json` dossier hebben dat later in deze gids wordt verklaard.
 
 ## Selecteer de juiste versie {#section_E53C5AA7D5474824A89BB32C003865A1}
 
-Voor elk doelplatform (Windows 8.1, Windows Phone 8.1) en de ondersteunde architectuur (x86, x64, ARM) worden verschillende `.dll`/- `.winmd` bestanden geleverd. De bestanden worden als volgt in een mapstructuur gescheiden:
+Er worden verschillende `.dll`/ `.winmd` bestanden geleverd voor elk doelplatform (Windows 8.1, Windows Phone 8.1) en ondersteunde architectuur (x86, x64, ARM). De bestanden worden als volgt in een mapstructuur gescheiden:
 
 ![](assets/folder-structure.png)
 
 >[!IMPORTANT]
 >
->De versie van de bibliotheek weerspiegelt `ADBMobile.winmd` niet de versie van de bibliotheek. Het `.winmd` dossier bevat slechts meta-gegevens, en als dusdanig zal een versieaantal hebben `255.255.255.255` waarvan gedrag volgens Microsoft wordt goedgekeurd (zie [hoe ik assemblageinformatie voor een WinRT C++ / CX componentendll voeg toe?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)). Controleer de versie van het onderliggende `ADBMobile.dll` bestand om de versie van de bibliotheek te controleren die u gebruikt.
+>De versie van `ADBMobile.winmd` weerspiegelt niet de versie van de bibliotheek. Het `.winmd` dossier bevat slechts meta-gegevens, en als dusdanig zal een versieaantal `255.255.255.255` hebben dat volgens Microsoft (zie [hoe ik assemblageinformatie voor een WinRT C++/CX componentendll toevoegt wordt goedgekeurd.](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)). Om de versie van de bibliotheek te controleren u gebruikt, controleer de versie van het onderliggende `ADBMobile.dll` dossier.
 
 ## Syntaxisverschillen {#section_A02DE120B6D240F5AFFE7509755C4F14}
 
@@ -39,30 +39,30 @@ De Windows 8.1 Universal App Store-bibliotheek kan in verschillende programmeert
 
 Het belangrijkste verschil tussen de implementaties is de gegevensstructuur die wordt gebruikt voor contextgegevens.
 
-Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een leeg koord ( `""` of `''`) in plaats van `null` voor lege koordwaarden.
+Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een lege koord ( `""` of `''`) in plaats van `null` voor lege koordwaarden.
 
 ## Voeg de bibliotheek en config dossier aan uw project toe - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Start Visual Studio en open uw oplossing.
-1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop aan **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
+1. In **de Ontdekkingsreiziger van de Oplossing**, klik **[!UICONTROL References]** met de rechtermuisknop aan en selecteer **[!UICONTROL Add Reference]**.
 
-1. Selecteer de juiste versie van de bibliotheek en blader naar het bijbehorende `ADBMobile.winmd` bestand.
+1. Selecteer de juiste versie van de bibliotheek en blader naar het bijbehorende `ADBMobile.winmd`-bestand.
 
    Zie de sectie *Selecteer de juiste versie* hieronder voor meer informatie.
 
 1. Klik op **[!UICONTROL Add]**.
 
-1. Controleer of `ADBMobile.winmd` deze optie is geselecteerd in het **[!UICONTROL Reference Manager]** venster en klik op **[!UICONTROL OK]**.
+1. Controleer of `ADBMobile.winmd` is geselecteerd in het venster **[!UICONTROL Reference Manager]** en klik op **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Als u een verwijzing naar een Windows Phone-toepassing toevoegt en deze selecteert, wijzigt u het standaardbestandsfilter van `ADBMobile.winmd`naar **[!UICONTROL Component Files]** Alle bestanden ****.
+   >Wanneer u een verwijzing naar een Windows Phone-app toevoegt en `ADBMobile.winmd` selecteert, wijzigt u het standaardbestandsfilter van **[!UICONTROL Component Files]** in **Alle bestanden**.
 
-1. Klik in het **[!UICONTROL Solution Explorer]** dialoogvenster met de rechtermuisknop **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
+1. Klik in **[!UICONTROL Solution Explorer]** met de rechtermuisknop op **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
 
    Sla deze stap over als u ook een C++ project in uw oplossing hebt.
 
-1. Selecteer op het tabblad **Windows** aan de linkerkant de optie **[!UICONTROL Extensions]**, selecteer deze en voeg deze toe **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]**.
+1. Selecteer op het tabblad **Windows** aan de linkerkant **[!UICONTROL Extensions]**, selecteer **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]** en voeg  toe.
 
 1. Voeg de volgende regel toe aan de klasse:
 
@@ -72,28 +72,28 @@ Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een l
 
 1. Klik met de rechtermuisknop op uw project en selecteer **[!UICONTROL Add]** > **[!UICONTROL Existing Item]**.
 
-1. Blader naar het `ADBMobileConfig.json` bestand en klik op **[!UICONTROL Add]**.
+1. Blader naar het `ADBMobileConfig.json`-bestand en klik op **[!UICONTROL Add]**.
 
-1. Klik met de rechtermuisknop op het `ADBMobileConfig.json` bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
+1. Klik met de rechtermuisknop op het `ADBMobileConfig.json`-bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
 
-1. Wijzigen **[!UICONTROL Build Action]** in **[!UICONTROL Content]**.
+1. Wijzig **[!UICONTROL Build Action]** in **[!UICONTROL Content]**.
 
 ## Voeg de bibliotheek en config dossier aan uw project toe - C++ {#section_A95C1D18F6144F37ADC8F51590F3983E}
 
 1. Start Visual Studio en open uw oplossing.
-1. Klik in het **[!UICONTROL Solution Explorer]** deelvenster met de rechtermuisknop op uw project en selecteer **[!UICONTROL Add]** > **[!UICONTROL References]**.
+1. Klik in **[!UICONTROL Solution Explorer]** met de rechtermuisknop op uw project en selecteer **[!UICONTROL Add]** > **[!UICONTROL References]**.
 
-1. Selecteer de juiste versie van de bibliotheek en voeg vervolgens een verwijzing naar het bijbehorende `ADBMobile.winmd` bestand toe.
+1. Selecteer de correcte versie van de bibliotheek en voeg dan een verwijzing naar het bijbehorende `ADBMobile.winmd` dossier toe.
 
-   Zie de sectie *Selecteer de juiste versie* hieronder voor meer informatie.
+   Voor meer informatie, zie *Selecteer de Correcte sectie van Versie* hieronder.
 
 1. Klik op **[!UICONTROL Add]**.
 
-1. Controleer in het **[!UICONTROL Reference Manager]** venster of `ADBMobile.winmd` is geselecteerd en klik op **[!UICONTROL OK]**.
+1. Controleer in het venster **[!UICONTROL Reference Manager]** of `ADBMobile.winmd` is geselecteerd en klik op **[!UICONTROL OK]**.
 
    >[!TIP]
    >
-   >Als u een verwijzing naar een Windows Phone-toepassing toevoegt en deze selecteert, wijzigt u het standaardbestandsfilter van `ADBMobile.winmd`naar **[!UICONTROL Component Files]** Alle bestanden ****.
+   >Wanneer u een verwijzing naar een Windows Phone-app toevoegt en `ADBMobile.winmd` selecteert, wijzigt u het standaardbestandsfilter van **[!UICONTROL Component Files]** in **Alle bestanden**.
 
 1. Voeg de volgende regel toe aan de klasse:
 
@@ -103,50 +103,50 @@ Bovendien, wanneer het gebruiken van SDK in een project van WinJS, gebruik een l
 
 1. Klik met de rechtermuisknop op uw project en selecteer **[!UICONTROL Add]** > **[!UICONTROL Existing Item]**.
 
-1. Blader naar het `ADBMobileConfig.json` bestand en klik op **[!UICONTROL Add]**.
+1. Blader naar het `ADBMobileConfig.json`-bestand en klik op **[!UICONTROL Add]**.
 
-1. Klik met de rechtermuisknop op het `ADBMobileConfig.json` bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
+1. Klik met de rechtermuisknop op het `ADBMobileConfig.json`-bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
 
-1. Ga naar het **[!UICONTROL General]** tabblad en **[!UICONTROL Content]** klik op **[!UICONTROL Yes]****[!UICONTROL OK]**.
+1. Wijzig **[!UICONTROL Content]** in **[!UICONTROL Yes]** op het tabblad **[!UICONTROL General]** en klik op **[!UICONTROL OK]**.
 
 ## Voeg de bibliotheek en config dossier aan uw project toe - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
 
 1. Start Visual Studio en open uw oplossing.
-1. In de Ontdekkingsreiziger **van de** Oplossing, klik met de rechtermuisknop aan **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
+1. In **de Ontdekkingsreiziger van de Oplossing**, klik **[!UICONTROL References]** met de rechtermuisknop aan en selecteer **[!UICONTROL Add Reference]**.
 
-   Zie *Selecteer de sectie Correcte versie* hieronder voor meer informatie.
+   Zie *De sectie Correcte versie* hieronder voor meer informatie.
 
-1. Selecteer de juiste versie van de bibliotheek en blader naar het bijbehorende `ADBMobile.winmd` bestand.
+1. Selecteer de juiste versie van de bibliotheek en blader naar het bijbehorende `ADBMobile.winmd`-bestand.
 
 1. Klik op **[!UICONTROL Add]**.
 
-1. Controleer of `ADBMobile.winmd` is ingeschakeld in het **[!UICONTROL Reference Manager]** venster en klik op **[!UICONTROL OK]**.
+1. Controleer of `ADBMobile.winmd` is ingeschakeld in het venster **[!UICONTROL Reference Manager]** en klik op **[!UICONTROL OK]**.
 
    >[!TIP]
    >
-   >Als u een verwijzing naar een Windows Phone-toepassing toevoegt en deze selecteert, wijzigt u het standaardbestandsfilter van `ADBMobile.winmd`naar **[!UICONTROL Component Files]** Alle bestanden ****.
+   >Wanneer u een verwijzing naar een Windows Phone-app toevoegt en `ADBMobile.winmd` selecteert, wijzigt u het standaardbestandsfilter van **[!UICONTROL Component Files]** in **Alle bestanden**.
 
-1. Klik in het **[!UICONTROL Solution Explorer]** dialoogvenster met de rechtermuisknop **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
+1. Klik in **[!UICONTROL Solution Explorer]** met de rechtermuisknop op **[!UICONTROL References]** en selecteer **[!UICONTROL Add Reference]**.
 
    Sla deze stap over als u ook een C++ project in uw oplossing hebt.
 
-1. Selecteer op het **[!UICONTROL Windows]** tabblad links de optie **[!UICONTROL Extensions]** en selecteer deze **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]**.
+1. Selecteer op het tabblad **[!UICONTROL Windows]** aan de linkerkant **[!UICONTROL Extensions]** en selecteer en voeg **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]** toe.
 
 1. Klik met de rechtermuisknop op uw project en selecteer **[!UICONTROL Add]** > **[!UICONTROL Existing Item]**.
 
-1. Blader naar het `ADBMobileConfig.json` bestand en klik op **[!UICONTROL Add]**.
+1. Blader naar het `ADBMobileConfig.json`-bestand en klik op **[!UICONTROL Add]**.
 
-1. Klik met de rechtermuisknop op het `ADBMobileConfig.json]` bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
+1. Klik met de rechtermuisknop op het `ADBMobileConfig.json]`-bestand in de oplossing en selecteer **[!UICONTROL Properties]**.
 
-1. Zorg dat deze optie is **[!UICONTROL File Properties]** geselecteerd en **[!UICONTROL Package Action]** dat deze is ingesteld op **[!UICONTROL Content]**.
+1. Selecteer **[!UICONTROL File Properties]** en zorg ervoor dat **[!UICONTROL Package Action]** is ingesteld op **[!UICONTROL Content]**.
 
-   Voor JavaScript-projecten wordt het bestand standaard ingesteld op **[!UICONTROL Content]** .
+   Voor JavaScript-projecten wordt het bestand standaard ingesteld op **[!UICONTROL Content]**.
 
-## Het configuratiebestand ADBMobileConfig.json bijwerken {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
+## Het configuratiebestand ADBMobileConfig.json {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE} bijwerken
 
-Het `ADBMobileConfig.json` bestand bevat algemene SDK-instellingen en bevindt zich in de hoofdmap van het project nadat u de stappen in het bestand Bibliotheek en Configuratie *toevoegen aan de sectie Project* hebt uitgevoerd. Als uw `ADBMobileConfig.json` bestand niet vooraf is geconfigureerd door Adobe Mobile Services, moet u een aantal waarden bijwerken om aan de slag te gaan.
+Het `ADBMobileConfig.json` dossier bevat globale montages van SDK, en wordt gevestigd bij uw projectwortel nadat u de stappen in *voeg het Dossier van de Bibliotheek en Config aan uw Project* sectie voltooit. Als uw `ADBMobileConfig.json` dossier niet vooraf door de Mobiele Diensten van Adobe werd gevormd, moet u een paar waarden bijwerken om aan de slag te gaan.
 
-Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
+Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 { 
@@ -176,24 +176,24 @@ Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
 
 Werk minimaal de volgende waarden bij voor de oplossingen die u gebruikt:
 
-* **Analyse**: `rsids` en `server`
+* **Analyse**:  `rsids` en  `server`
 * **Target**: `clientCode`
-* **Publiek beheer**: `server`
+* **Publiek beheer**:  `server`
 
-Zie [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md)voor meer informatie.
+Zie [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md) voor meer informatie.
 
 ## Foutopsporing {#section_3A10376A60394A15BEE483323E0CD4AA}
 
-Wanneer u het zuiveren voor SDK wilt toelaten, moet u roepen `ADBMobile.Config.setDebugLogging(true);`.
+Wanneer u het zuiveren voor SDK wilt toelaten, moet u `ADBMobile.Config.setDebugLogging(true);` roepen.
 
 Voor C Sharp- en JS-toepassingen moet u foutopsporing van native code inschakelen door de volgende stappen uit te voeren (native foutopsporing van code is de standaardinstelling voor C++-toepassingen):
 
 ### C Sharp
 
-Klik met de rechtermuisknop op het project en selecteer **[!UICONTROL Properties]** > **[!UICONTROL Debug tab]**. Selecteer in de vervolgkeuzelijst met foutopsporing de optie **[!UICONTROL Native Only]**.
+Klik met de rechtermuisknop op het project en selecteer **[!UICONTROL Properties]** > **[!UICONTROL Debug tab]**. Selecteer **[!UICONTROL Native Only]** in de vervolgkeuzelijst met foutopsporing.
 
 ### JS
 
-Klik met de rechtermuisknop op het project en selecteer **[!UICONTROL Properties]** > **[!UICONTROL Configuration Properties]** > **[!UICONTROL Debug tab]**. Wijzig de vervolgkeuzelijst van het foutopsporingstype in Alleen **** native.
+Klik met de rechtermuisknop op het project en selecteer **[!UICONTROL Properties]** > **[!UICONTROL Configuration Properties]** > **[!UICONTROL Debug tab]**. Wijzig de vervolgkeuzelijst van het foutopsporingstype in **Alleen native**.
 
 Dat is het! U kunt nu Analytics, Target en Audience Management implementeren in uw Windows 8.1 Universal App Store-app.
