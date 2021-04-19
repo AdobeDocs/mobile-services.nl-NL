@@ -4,24 +4,24 @@ seo-description: Hier volgt informatie over het meten van video's op iOS met beh
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
+exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 14%
 
 ---
 
-
-# Video Analytics {#video-analytics}
+# Video-analyse {#video-analytics}
 
 Hier volgt informatie over het meten van video&#39;s op iOS met behulp van milestone-videometingen.
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie Audio en video [meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)voor meer informatie.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Audio en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) voor meer informatie.
 
 Het algemene proces voor het meten van video is op alle platforms zeer vergelijkbaar. Deze inhoud biedt een basisoverzicht van de ontwikkelaarstaken met codevoorbeelden.
 
@@ -48,7 +48,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.segment**
 
-   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in het `1:M:0-25` dialoogvenster Segmenten.
+   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in het evar `1:M:0-25` Segmenten.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
@@ -64,7 +64,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.contentType**
 
-   Verzamelt gegevens over het type inhoud dat door een bezoeker wordt bekeken. Aan de door videometing verzonden opdrachten wordt een inhoudstype `video`toegewezen. Deze variabele hoeft niet uitsluitend voor videotracering te worden gereserveerd. Als u andere inhoudrapporten van het inhoudstype gebruikt door deze variabele te gebruiken, kunt u de distributie van bezoekers over de verschillende typen inhoud analyseren. U kunt bijvoorbeeld andere inhoudstypen labelen met waarden zoals &quot;artikel&quot; of &quot;productpagina&quot; met deze variabele. Vanuit het oogpunt van videometing kunt u met Inhoudstype videobezoekers identificeren en de videoconversiesnelheden berekenen.
+   Verzamelt gegevens over het type inhoud dat door een bezoeker wordt bekeken. Aan de door videometing verzonden uren wordt het inhoudstype `video` toegewezen. Deze variabele hoeft niet uitsluitend voor videotracering te worden gereserveerd. Als u andere inhoudrapporten van het inhoudstype gebruikt door deze variabele te gebruiken, kunt u de distributie van bezoekers over de verschillende typen inhoud analyseren. U kunt bijvoorbeeld andere inhoudstypen labelen met waarden zoals &quot;artikel&quot; of &quot;productpagina&quot; met deze variabele. Vanuit het oogpunt van videometing kunt u met Inhoudstype videobezoekers identificeren en de videoconversiesnelheden berekenen.
 
    * Type variabele: eVar
    * Standaardvervaldatum: Paginaweergave
@@ -97,9 +97,9 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * Type variabele: Gebeurtenis
    * Type: Teller
 
-## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
+## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
 
-Configureer een `ADBMediaSettings` object met de instellingen die u wilt gebruiken voor het bijhouden van video:
+Configureer een `ADBMediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
 ```objective-c
 ADBMediaSettings *mediaSettings = [ADBMobile mediaCreateSettingsWithName:MEDIA_NAME  
@@ -124,9 +124,9 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`en `mediaClose` The op de juiste momenten worden aangeroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
+Om videoplayback te meten, moeten `mediaPlay`, `mediaStop`, en `mediaClose` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
 In het volgende voorbeeld ziet u hoe u meldingen configureert en de mediamethoden oproept om video te meten:
 
@@ -224,11 +224,11 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Mediummeetklasse en methodeverwijzing {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Mediametingklasse en methodereferentie {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings &#x200B; WithName: &#x200B; length: &#x200B; playerName: &#x200B; playerID:**
 
-   Retourneert een `ADBMediaSettings` object met opgegeven parameters.
+   Retourneert een `ADBMediaSettings`-object met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -250,7 +250,7 @@ NSUInteger eventType
 
 * **mediaAdCreateSettings &#x200B; WithName: &#x200B; length: &#x200B; playerName: &#x200B; parentName: &#x200B; parentPod: &#x200B; parentPodPosition: &#x200B; CPM:**
 
-   Retourneert een `ADBMediaSettings` object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `ADBMediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -278,7 +278,7 @@ NSUInteger eventType
 
 * **mediaOpenWithSettings: &#x200B; callback:**
 
-   Hiermee opent u een `ADBMediaSettings` object dat u wilt bijhouden.
+   Opent een `ADBMediaSettings`-object voor tekstspatiëring.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -296,7 +296,7 @@ NSUInteger eventType
 
 * **mediaClose:**
 
-   Sluit het media-item genaamd *name*.
+   Sluit het media-item met de naam *name*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -312,7 +312,7 @@ NSUInteger eventType
 
 * **mediaPlay: &#x200B; verschuiving:**
 
-   Hiermee wordt het media-item met de naam *name* afgespeeld bij de opgegeven *verschuiving* (in seconden).
+   Hiermee wordt het media-item met de naam *name* afgespeeld op de opgegeven *offset* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -328,7 +328,7 @@ NSUInteger eventType
 
 * **mediaComplete: &#x200B; verschuiving:**
 
-   Markeer het media-item handmatig als voltooid bij de opgegeven *verschuiving* (in seconden).
+   Markeer het media-item handmatig als voltooid in de opgegeven *offset* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -344,7 +344,7 @@ NSUInteger eventType
 
 * **mediaStop: &#x200B; verschuiving:**
 
-   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *verschuiving*.
+   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *offset*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -383,4 +383,3 @@ NSUInteger eventType
       ```objective-c
       + (void) mediaTrack:(NSString *)name withData:(NSDictionary *)data;
       ```
-
