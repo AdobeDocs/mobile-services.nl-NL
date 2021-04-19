@@ -5,16 +5,16 @@ seo-description: U kunt de opties voor SDK-analyse configureren op de pagina Toe
 seo-title: Opties voor SDK-analyse configureren
 solution: Experience Cloud,Analytics
 title: Opties voor SDK-analyse configureren
-topic: Metrics
+topic-fix: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
+exl-id: f2c35b65-1052-4bfc-af9d-8778e4ff0522
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Opties voor SDK-analyse configureren {#configure-sdk-analytics-options}
 
