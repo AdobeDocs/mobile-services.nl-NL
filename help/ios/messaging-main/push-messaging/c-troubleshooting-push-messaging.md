@@ -1,20 +1,20 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
-keywords: mobile
+keywords: mobiel
 seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
 seo-title: Problemen met pushberichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
-topic: Metrics
+topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
+exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Probleemoplossing voor pushberichten {#troubleshooting-push-messaging}
 
@@ -38,10 +38,10 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    >
    >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
    >
-   >* **APNS**: [Kwaliteit van de dienst](https://developer.apple.com/documentation/usernotifications)
+   >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/documentation/usernotifications)
       >
       >
-   * **GCM**: [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
+   * **GCM**:  [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Hoe kan ik mijn Apple Push Service Certificate vernieuwen?
@@ -49,7 +49,7 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 Voor het verzenden van pushberichten is een geldig Push Service Certificate vereist. Mobiele services stellen u op de hoogte wanneer uw certificaat bijna verlopen is of verlopen is. Als u deze melding ontvangt, voert u de volgende stappen uit om uw certificaat te vernieuwen:
 
 1. Klik op **[!UICONTROL Manage App Settings]**.
-2. Als u het huidige certificaat wilt verwijderen, schuift u naar **[!UICONTROL Push Services]** en klikt u **[!UICONTROL Delete]**.
+2. Als u het huidige certificaat wilt verwijderen, schuift u naar **[!UICONTROL Push Services]** en klikt u op **[!UICONTROL Delete]**.
 3. Configureer en test een nieuw certificaat.
 
    Voor meer informatie, zie [Vereisten om het Overseinen van de Duw toe te laten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
