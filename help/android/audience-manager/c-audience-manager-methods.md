@@ -1,32 +1,32 @@
 ---
 description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotheek;mobile;sdk
 seo-description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 seo-title: Methoden van Audience Manager
 solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
+exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 25%
 
 ---
 
-
-# Methoden van Audience Manager{#audience-manager-methods}
+# Methoden voor Audience Manager{#audience-manager-methods}
 
 Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Experience Cloud ID-methoden hebben bijvoorbeeld de voorvoegsel `audience manager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld voorafgegaan door `audience manager`.
 
 Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met levenscyclusmetriek verzonden bij een hit tijdens de levenscyclus.
 
 * **getVisitorProfile**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert, als er geen signaal is verzonden, `null`. Het bezoekersprofiel wordt opgeslagen in `SharedPreferences` zodat u eenvoudig toegang hebt tot meerdere startpagina&#39;s van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert `null` als er geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
