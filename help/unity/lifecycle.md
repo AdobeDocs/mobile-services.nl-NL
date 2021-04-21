@@ -1,23 +1,21 @@
 ---
-description: 'null'
-keywords: Unity
-seo-description: 'null'
-seo-title: Levenscyclus implementeren
+description: Metriek en afmetingen meten die automatisch door de mobiele bibliotheek kunnen worden gemeten
+keywords: Eenheid
 solution: Experience Cloud
 title: Levenscyclus implementeren
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
+exl-id: eca0cebb-6c69-4b0f-b003-c7fc422d0383
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 4%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
-
 # Levenscyclus implementeren{#implement-lifecycle}
 
-Zie [Levenscyclusstatistieken in Android](/help/android/metrics.md) of [Levenscyclus in iOS](/help/ios/metrics.md)voor meer informatie over de meetwaarden en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
+Zie [Levenscyclusmetriek in Android](/help/android/metrics.md) of [Levenscyclus in iOS](/help/ios/metrics.md) voor meer informatie over de metriek en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
 
 ## iOS
 
@@ -25,7 +23,7 @@ Metrische gegevens over de levenscyclus worden automatisch verzameld in iOS.
 
 ## Android
 
-In uw script Unity stelt u de toepassingscontext voor de Android-SDK in. Voeg de volgende code toe aan de `Awake()` functie van de EERSTE scène:
+In uw script Unity stelt u de toepassingscontext voor de Android-SDK in. Voeg de volgende code toe aan de functie `Awake()` van de EERSTE scène:
 
 ```java
 void Awake()
@@ -65,4 +63,3 @@ void OnEnable()
   ...
  }
 ```
-
