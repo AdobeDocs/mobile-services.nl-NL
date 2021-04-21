@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: iOS-handleiding voor mobiele services
 breadcrumb-title: iOS-handleiding
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
@@ -15,7 +14,7 @@ ht-degree: 3%
 # iOS-handleiding voor mobiele services {#ios}
 
 + [iOS SDK 4.x voor Experience Cloud-oplossingen](overview.md)
-+ [Releaseopmerkingen](rel-notes.md)
++ [Aanvullende informatie](rel-notes.md)
 + Aan de slag {#getting-started-ios}
    + [Aan de slag - overzicht](getting-started/getting-started.md)
    + [Voordat u begint](getting-started/requirements.md)
@@ -38,7 +37,7 @@ ht-degree: 3%
    + [Toepassingscrashes bijhouden](analytics-main/crashes.md)
    + [Gedetailleerde acties](analytics-main/timed-actions.md)
    + [Levenswaarde bezoeker](analytics-main/lifetime-value.md)
-   + Variabele voor producten {#products-variable}
+   + Variabele {#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
    + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
@@ -52,7 +51,7 @@ ht-degree: 3%
    + [Overzicht van overname](acquisition-main/acquisition-main.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/c-acquisition-methods.md)
-   + Diepkoppelingen bijhouden {#tracking-deep-links}
+   + Diepe koppelingen {#tracking-deep-links} bijhouden
       + [Diepkoppelingen bijhouden](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Uitgestelde diepe koppelingen van derden bijhouden](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [Verwerving marketinglink testen](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -61,7 +60,7 @@ ht-degree: 3%
    + [Apple-zoekadvertenties](acquisition-main/c-apple-search-ads.md)
 + Berichten {#messaging-ios}
    + [Overzicht van berichten](messaging-main/messaging-main.md)
-   + In-app messaging {#in-app-messaging}
+   + In-app berichten {#in-app-messaging}
       + [In-app berichten](messaging-main/messaging/messaging.md)
       + [Problemen met in-app messaging oplossen](messaging-main/messaging/in-apps-ts.md)
    + Push messaging {#push-messaging}
@@ -69,7 +68,7 @@ ht-degree: 3%
       + [Push messaging implementeren met deep linking](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [Rich push-berichten ontvangen](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
       + [Probleemoplossing voor pushberichten](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Location {#location-ios}
++ Locatie {#location-ios}
    + [Overzicht van locatie](location/location.md)
    + [Geolocatie en aandachtspunten](location/geo-poi.md)
    + [Beacon tracking](location/ibeacon.md)
@@ -88,11 +87,11 @@ ht-degree: 3%
    + [Apple TV-implementatie met tvOS](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
    + [Adobe Target voor TVML/TVJS](apple-tv-implementation-tvos/target-for-tvml-tvjs.md)
    + [TVJS-methoden](apple-tv-implementation-tvos/tvjs-methods.md)
-+ iOS-extensie-implementatie {#ios-ext}
++ Implementatie van iOS-extensie {#ios-ext}
    + [iOS-extensie-implementatie](ios-ext/ios-ext.md)
    + [Zelfstandige extensie-implementatie](ios-ext/c-stand-alone-extension-implementation.md)
 + [Apple Watch-implementatie met WatchOS 2](apple-watch-implementation-watchkit.md)
-+ Referentie voor iOS SDK {#sdk-reference-ios}
++ iOS SDK-referentie {#sdk-reference-ios}
    + [Referentie voor iOS SDK](reference/reference.md)
    + [Toepassings-id&#39;s](reference/app-ids.md)
    + [Bezoekerspatiëring tussen een app en een mobiel web](reference/hybrid-app.md)
