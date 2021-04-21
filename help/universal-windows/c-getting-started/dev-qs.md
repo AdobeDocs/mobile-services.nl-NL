@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Snelle start voor ontwikkelaars
+description: Informatie over hoe te om de Universele bibliotheek van het Platform van Vensters uit te voeren.
 solution: Experience Cloud,Analytics
 title: Snelle start voor ontwikkelaars
 topic-fix: Developer and implementation
 uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
 exl-id: 28fc2a96-907e-41fc-a798-3e8d43fc7616
 translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
