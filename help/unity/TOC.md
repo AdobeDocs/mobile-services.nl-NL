@@ -1,18 +1,17 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: De Gids van de Plug-in van de Eenheid van de Mobiele Diensten
 breadcrumb-title: Insteekmodule voor eenheid
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '35'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# De Gids van de Plug-in van de Eenheid van de Mobiele Diensten {#unity}
+# Gids {#unity} voor de eenheid van mobiele services
 
 + [Insteekmodule Unity voor de SDK&#39;s van iOS en Android 4.x](get-started.md)
 + [Uw project maken](project.md)
