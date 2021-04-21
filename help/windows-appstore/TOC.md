@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Windows 8.1 Universal App Store SDK
 breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 13%
@@ -15,7 +14,7 @@ ht-degree: 13%
 # Mobile Services Windows 8.1 Universal App Store SDK {#windows-universal-appstore}
 
 + [Windows 8.1 Universal App Store SDK 4.x voor Experience Cloud-oplossingen](overview.md)
-+ [Releaseopmerkingen](release-notes.md)
++ [Aanvullende informatie](release-notes.md)
 + Aan de slag {#getting-started-win-appstore}
    + [Aan de slag](c-getting-started/c-getting-started.md)
    + [Snelle start voor ontwikkelaars](c-getting-started/dev-qs.md)
@@ -25,7 +24,7 @@ ht-degree: 13%
    + [Methoden van SDK](c-configuration/methods.md)
 + Analytics {#analytics-win-appstore}
    + [Analytics](analytics/analytics.md)
-   + Variabele voor producten {#products-variable}
+   + Variabele {#products-variable}
       + [Variabele voor producten](analytics/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics/products/products-variable-evars-events.md)
    + [Gebeurtenisserialisatie](analytics/event-serialization.md)
