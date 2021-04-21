@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Handleiding voor Universal Windows Platform voor mobiele services
 breadcrumb-title: Universal Windows Platform Guide
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 13%
@@ -12,13 +11,13 @@ ht-degree: 13%
 ---
 
 
-# Handleiding voor Universal Windows Platform voor mobiele services {#universal-windows}
+# Handleiding voor Universal Windows-Platform voor mobiele services {#universal-windows}
 
 + [Universal Windows Platform SDK 4.x voor Experience Cloud Solutions](overview.md)
 + Aan de slag {#get-started-univ-win-plat}
    + [Aan de slag](c-getting-started/c-getting-started.md)
    + [Snelle start voor ontwikkelaars](c-getting-started/dev-qs.md)
-+ [Releaseopmerkingen](release-notes.md)
++ [Aanvullende informatie](release-notes.md)
 + Configuratie {#config-univ-win-plat}
    + [Overzicht van configuratie](c-configuration/c-configuration.md)
    + [ADBMobileConfig.json config](c-configuration/c.json.md)
