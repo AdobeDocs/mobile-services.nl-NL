@@ -8,10 +8,9 @@ title: Overzicht van de PhoneGap-plug-in
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -38,7 +37,7 @@ Voer de volgende opdracht uit:
 cordova plugin add adobe-mobile-services
 ```
 
-## De insteekmodule {#section_EA1FD59C484D44878AB509954DEE6037} handmatig installeren
+## De plug-in handmatig installeren {#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## De plug-in opnemen
 
@@ -71,7 +70,7 @@ cordova plugin add adobe-mobile-services
 
    Klik op **[!UICONTROL OK]** om dit bestand te verplaatsen.
 
-1. Klik met de rechtermuisknop op het bestand ` adobeMobileLibrary.jar en selecteer **[!UICONTROL Add as Library]**.
+1. Klik met de rechtermuisknop op het `adobeMobileLibrary.jar`-bestand en selecteer **[!UICONTROL Add as Library]**.
 1. Gebaseerd op de vereisten van uw project, ga de naam, het niveau, en de plaats voor de bibliotheek in.
 1. Sleep het `ADBMobileConfig.json` dossier aan uw `assets` omslag in de toepassingswortel.
 1. Bevestig dat u de hoofdtoepassing en **not** een toepassing in een toepassing hebt geselecteerd.
@@ -119,7 +118,7 @@ android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
 
-## Aangepaste reeksspatiëring implementeren {#section_FD102B3CDAA4492FB04E56BF17E28663}
+## Aangepaste tracering implementeren {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
 Voeg in `html` bestanden het volgende toe aan de `<head>`-tag waarin u reeksspatiëring wilt gebruiken:
 
