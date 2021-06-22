@@ -5,16 +5,15 @@ seo-title: V3-overname testen
 solution: Experience Cloud,Analytics
 title: V3-overname testen
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 3cf66802-1f2c-428f-86ef-a9afc57e3470
+source-git-commit: 8db8f51a42acbbc0bbc4545b7d97cb214b490ab3
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
-
-# V3-overname testen{#testing-v-acquisition}
+# V3-acquisitie testen{#testing-v-acquisition}
 
 Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
 
@@ -25,7 +24,7 @@ Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoere
 Als de mobiele app zich nog niet in de App Store bevindt, selecteert u bij het maken van de koppeling naar de campagne een willekeurige mobiele app als bestemming. Dit is alleen van invloed op de app waarnaar de verwervingsserver u omleidt nadat u op de verwervingskoppeling hebt geklikt, maar heeft geen invloed op de mogelijkheid om de koppeling te testen.
 
 1. Voltooi de vereiste taken in [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
-1. Navigeer naar de **[!UICONTROL Acquisition Builder]** in de gebruikersinterface van de Mobiele Diensten van de Adobe en produceer een aanschafcampagne URL.
+1. Navigeer naar **[!UICONTROL Acquisition Builder]** in de UI van de Diensten van de Mobiele Adobe en produceer een aanschafcampagne URL.
 
    Bijvoorbeeld:
 
@@ -34,28 +33,28 @@ Als de mobiele app zich nog niet in de App Store bevindt, selecteert u bij het m
    ```
 
 
-   Als u zowel iOS- als Android-apps gebruikt in de aankoopkoppeling, gebruikt u de Apple Store als de standaardwinkel.
+   Als u zowel iOS- als Android-apps in de aankoopkoppeling gebruikt, gebruikt u de Apple Store als de standaardwinkel.
 1. Open de gegenereerde koppeling in een desktopbrowser en ga naar `https://c00.adobe.com/v3/<appid>/end`.
 
-   U moet de antwoorden `contextData` in het JSON-antwoord zien:
+   De `contextData` moet worden weergegeven in het JSON-antwoord:
 
    ```js
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   Als u niet ziet `contextData`of een gedeelte ervan ontbreekt, controleert u of de aankoop-URL de indeling volgt die u hebt opgegeven in [Koppeling voor overnames handmatig](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)maken.
+   Als u `contextData` niet ziet, of een deel ervan ontbreekt, zorg ervoor dat de aanschaf-URL de indeling volgt die is opgegeven in [Handmatig overnamekoppeling maken](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
 1. Controleer of de volgende instellingen in het configuratiebestand correct zijn:
 
    | Instelling | Waarde |
    |--- |--- |
-   | verwerving | De server moet `c00.adobe.com`zijn. *`appid`* moet gelijk zijn aan de *`appid`* in uw acquisitie-koppeling. |
+   | verwerving | De server moet `c00.adobe.com` zijn. *`appid`* moet gelijk zijn aan de  *`appid`* in uw acquisitie-koppeling. |
    | analyse | `referrerTimeout` moet een waarde groter dan 0 hebben. |
 
 
-1. (Voorwaardelijk) Als de `ssl` instelling in het configuratiebestand van uw app waar is, werkt u uw acquisitie-koppeling bij om het HTTPS-protocol te gebruiken.
+1. (Voorwaardelijk) Als de `ssl`-instelling in het configuratiebestand van uw app waar is, werkt u uw acquisitie-koppeling bij om het HTTPS-protocol te gebruiken.
 1. Klik op de gegenereerde koppeling van het mobiele apparaat waarop u de toepassing wilt installeren.
 
-   Adobe () opslag en omleiding naar de App Store. `c00.adobe.com` De app hoeft niet te worden gedownload om te testen.
+   Adobe ( `c00.adobe.com`) slaan vingerafdruk op en leiden deze om naar de App Store. De app hoeft niet te worden gedownload om te testen.
 1. Start de toepassing voor de eerste keer vanaf hetzelfde mobiele apparaat als dat u in stap 6 hebt gebruikt.
 
    U kunt de toepassing indien nodig verwijderen en opnieuw installeren.
@@ -79,11 +78,11 @@ Er is een netwerkfout opgetreden.
 
    * `Analytics - Unable to parse acquisition service response (no contextData parameter in response)`
 
-      De reactie bevat geen `contextData` parameter.
+      De reactie bevat geen parameter `contextData`.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` is niet opgenomen in `contextData`.
+      `a.referrer.campaign.name` is niet opgenomen in  `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -95,9 +94,9 @@ Er is een netwerkfout opgetreden.
 
          U moet zich op hetzelfde netwerk bevinden wanneer u op de URL klikt en de app opent.
 
-      * Met de HTTP-controlegereedschappen kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
+      * Met de HTTP-controleprogramma&#39;s kunt u controles uitvoeren op resultaten die vanuit de app worden verzonden om de acquisitie-toewijzing te controleren.
 
-         Er wordt één `/v3/<appid>/start` verzoek en één `/v3/<appid>/end` verzoek naar de verwervingsserver verzonden. De variaties in verzonden user-agent zouden attributie kunnen veroorzaken om te ontbreken.
+         Er wordt een `/v3/<appid>/start`-verzoek weergegeven en een `/v3/<appid>/end`-verzoek dat naar de overnameserver is verzonden. De variaties in verzonden user-agent zouden attributie kunnen veroorzaken om te ontbreken.
 
          >[!TIP]
          >
