@@ -8,8 +8,7 @@ title: Testversie 3-overname
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 1%
@@ -69,7 +68,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app vers zijn geïnstalleerd 
 1. Herhaal stap 3 voor een nieuwe unieke id.
 1. Controleer of de volgende instellingen in het configuratiebestand correct zijn:
 
-   | Instelling | Value |
+   | Instelling | Waarde |
    |--- |--- |
    | verwerving | De server moet `c00.adobe.com` zijn.   *`appid`*  moet gelijk zijn aan de  `appid`  in uw acquisitie-koppeling. |
    | analyse | Voor testdoeleinden stelt u de time-out van de referentie zo in dat er voldoende tijd (60 seconden of meer) is om de uitzending handmatig te verzenden. U kunt de oorspronkelijke time-outinstelling na de test herstellen. |
@@ -87,9 +86,11 @@ Telkens wanneer een test wordt uitgevoerd, moet de app vers zijn geïnstalleerd 
 
    Als de uitzending slaagt, kunt u een reactie verwachten gelijkend op het volgende voorbeeld:
 
-   `Broadcasting: Intent
-{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
-Broadcast completed: result=0`
+   ```
+   Broadcasting: Intent
+   { act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
+   Broadcast completed: result=0
+   ```
 
 1. (Optioneel) U kunt foutopsporingslogboekregistratie van de SDK inschakelen voor aanvullende informatie.
 
