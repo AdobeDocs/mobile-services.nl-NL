@@ -8,10 +8,9 @@ title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Ber
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -20,13 +19,13 @@ ht-degree: 0%
 
 U kunt publieksopties voor pushberichten definiëren en configureren, waaronder opties voor datumbereik, Analysesegmenten en aangepaste segmenten.
 
-## Doelsegmenten {#section_7C4D2393CF7441959FE2381A02867CAC} definiëren
+## Doelsegmenten definiëren {#section_7C4D2393CF7441959FE2381A02867CAC}
 
 Wanneer een publiekssegment voor pushberichten wordt gecreeerd, zou het segment gebruikers van één of meerdere apps kunnen impliceren omdat de rapportreeksen of virtuele rapportreeksen gegevens van één of meerdere apps zouden kunnen bevatten. Voor meer informatie over virtuele rapportreeksen, zie [Virtuele rapportsuites](/help/using/manage-apps/c-mob-vrs.md).
 
 In Adobe Mobile Services kunnen marketers slechts op één app per platform drukken. Als marketers vanuit meerdere apps naar segmenten proberen te gaan die gebruikers bevatten, wordt een waarschuwing weergegeven met de mededeling dat dit kan leiden tot ernstige pushfouten en dat gebruikers mogelijk gevoegd op lijst van gewenste personen kunnen worden. Zie *Pushfouten oplossen* in [Problemen met pushberichten oplossen](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md) als er een pushfout optreedt.
 
-Om de gegevens van de Audience Manager in uw segmentdefinitie te gebruiken, zie [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Om de gegevens van de Audience Manager in uw segmentdefinitie te gebruiken, zie [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
@@ -69,7 +68,7 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
 **Niet**: Marketers bieden pushcertificaten voor iOS- en Android-versies van één app, bijvoorbeeld voor Adobe Photoshop. Als de markeerteken een segment van *alle actieve gebruikers in de laatste 30 dagen maakt en naar dit segment duwt*, ontvangen alleen de gebruikers van de Adobe Photoshop iOS- en Android-app de push en worden alle gebruikers van de Adobe Illustrator iOS- en Android-app gevoegd op lijst van gewenste personen. Zie *Pushberichten oplossen* in [Problemen met pushberichten oplossen](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md) voor meer informatie.
 
-## publiekssegmenten {#section_A92C60885A30421B8150820EC1CCBF13} configureren
+## publiekssegmenten configureren {#section_A92C60885A30421B8150820EC1CCBF13}
 
 1. Ga naar de pagina Publiek voor een nieuw duwbericht.
 
