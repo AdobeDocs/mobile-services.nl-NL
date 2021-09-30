@@ -3,11 +3,10 @@ audience: end-user
 user-guide-title: Handleiding voor mobiele services
 breadcrumb-title: Handleiding voor mobiele services
 user-guide-description: Mobiele services is een complete oplossing waarmee u gebruikers van mobiele apps kunt aantrekken en betrekken en hun ervaringen kunt optimaliseren.
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 9%
 # Handleiding voor mobiele services {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [Aanvullende informatie](whatsnew.md)
++ [Aankondiging einde levensduur](eol.md)
 + Aan de slag {#get-started-ug}
    + [Aan de slag](gs/gs.md)
    + [Rollen en machtigingen](gs/c-mob-roles-and-permissions.md)
