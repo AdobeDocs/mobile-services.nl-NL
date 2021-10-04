@@ -1,17 +1,14 @@
 ---
 description: Android-widgets kunnen worden bijgehouden met dezelfde methoden als uw app. Widgets delen de toepassingscontext met uw app, zodat de raakvolgorde en de bezoekersidentificatie behouden blijven.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Android-widgets kunnen worden bijgehouden met dezelfde methoden als uw app. Widgets delen de toepassingscontext met uw app, zodat de raakvolgorde en de bezoekersidentificatie behouden blijven.
-seo-title: Android-widgets
 solution: Experience Cloud,Analytics
 title: Android-widgets
 topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---

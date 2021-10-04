@@ -1,17 +1,14 @@
 ---
 description: U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 keywords: mobiel
-seo-description: U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
-seo-title: Opties voor SDK-overname configureren
 solution: Experience Cloud,Analytics
 title: Opties voor SDK-overname configureren
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---

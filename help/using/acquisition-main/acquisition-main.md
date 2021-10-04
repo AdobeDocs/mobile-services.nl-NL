@@ -1,17 +1,14 @@
 ---
 description: Marketers kunnen koppelingen voor bijhouden maken om hun apps te promoten en het verkeer naar hun apps te sturen. Met deze koppelingen kunnen gebruikers naar App-winkels, diepgaande koppelingen naar apps en interstitials gaan werken. Deze koppelingen kunnen worden gecorreleerd aan het gedrag in de app. Een markeerteken kan één koppeling maken om gebruikers naar iOS, Android of andere platforms te leiden, al naar gelang wat van toepassing is.
 keywords: mobiel
-seo-description: Marketers kunnen koppelingen voor bijhouden maken om hun apps te promoten en het verkeer naar hun apps te sturen. Met deze koppelingen kunnen gebruikers naar App-winkels, diepgaande koppelingen naar apps en interstitials gaan werken. Deze koppelingen kunnen worden gecorreleerd aan het gedrag in de app. Een markeerteken kan één koppeling maken om gebruikers naar iOS, Android of andere platforms te leiden, al naar gelang wat van toepassing is.
-seo-title: Acquisitie
 solution: Experience Cloud,Analytics
 title: Acquisitie
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---

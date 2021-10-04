@@ -1,22 +1,19 @@
 ---
 description: Met deze informatie kunt u de Android-SDK met Adobe Analytics gebruiken.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Met deze informatie kunt u de Android-SDK met Adobe Analytics gebruiken.
-seo-title: Overzicht van analysemogelijkheden
 solution: Experience Cloud,Analytics
 title: Overzicht van analysemogelijkheden
 topic-fix: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 exl-id: ed9f55e6-f3ab-4c1e-9a2f-1ee67a7b4c03
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# Analyseoverzicht {#analytics}
+# Overzicht van analysemogelijkheden {#analytics}
 
 De informatie in deze sectie helpt u de Android-SDK met Adobe Analytics te gebruiken.
 
@@ -43,4 +40,4 @@ In SDKs, worden de herkenningstekens gebruikt om gebruikers te volgen, en hier i
 
 De HULP, die ook wel de tracking-id wordt genoemd, wordt gegenereerd door de SDK wanneer de toepassing niet is geconfigureerd voor het gebruik van een MID. De waarde blijft bestaan tussen het starten en het upgraden van de app in `SharedPreferences`. Als de gebruiker de toepassing van hun apparaat schrapt en dan app opnieuw installeert, of als de toepassingsontwikkelaar SharedPreferences ontruimt, wordt een nieuw herkenningsteken geproduceerd door SDK. Dit proces resulteert in een nieuwe gebruiker in Analytics rapportering.
 
-Voor gebruikers in een app die Identity Service Support (MID) introduceert, worden bestaande HULP-waarden verzonden met Analytics-resultaten en bevat de treffer voor Analytics een HULP en een MID. Voor nieuwe gebruikers in een toepassing met identiteitsservice-ondersteuning bevatten de analyseverzoeken alleen een id. Zie [Bezoekers identificeren](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html) voor meer informatie over het identificeren van bezoekers.
+Voor gebruikers in een app die Identity Service Support (MID) introduceert, worden bestaande HULP-waarden verzonden met Analytics-resultaten en bevat de treffer voor Analytics een HULP en een MID. Voor nieuwe gebruikers in een toepassing met identiteitsservice-ondersteuning bevatten de analyseverzoeken alleen een id. Zie [Unieke bezoekers](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) in de documentatie van Adobe Analytics voor meer informatie over het identificeren van bezoekers.

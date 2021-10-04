@@ -1,17 +1,14 @@
 ---
 description: Met deze informatie kunt u lokaal opgeslagen SDK-identiteiten ophalen uit uw Android-app en met aanvragen voor toegang tot GDPR-gegevens.
-seo-description: Met deze informatie kunt u lokaal opgeslagen SDK-identiteiten ophalen uit uw Android-app en met aanvragen voor toegang tot GDPR-gegevens.
-seo-title: Opgeslagen id's ophalen
 title: Opgeslagen id's ophalen
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+exl-id: 86c990d8-334b-4003-b0ac-d5404cb598e4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
-
 
 # Opgeslagen id&#39;s ophalen{#retrieving-stored-identifiers}
 
@@ -19,7 +16,7 @@ Met deze informatie kunt u lokaal opgeslagen SDK-identiteiten ophalen uit uw And
 
 >[!IMPORTANT]
 >
->De `getAllIdentifiersAsync` methode wint identiteiten terug die in SDK worden opgeslagen. U moet deze methode aanroepen **voordat** de gebruiker de functie uitschakelt.
+>Met de methode `getAllIdentifiersAsync` worden identiteiten opgehaald die in de SDK zijn opgeslagen. U moet deze methode **before** de gebruiker uit opteert.
 
 SDK-identiteiten (indien van toepassing) worden lokaal opgeslagen en geretourneerd in een JSON-tekenreeks, die het volgende kan bevatten:
 
@@ -32,7 +29,7 @@ SDK-identiteiten (indien van toepassing) worden lokaal opgeslagen en geretournee
 * Verouderde doel-id&#39;s (TNTID, TNT3rdpartyID)
 * Audience Manager-id (UUID)
 
-Hier volgt een voorbeeld van de `ADBMobile getAllIdentifiersAsync` methode in Android:
+Hier volgt een voorbeeld van de methode `ADBMobile getAllIdentifiersAsync` in Android:
 
 ```java
 Config.getAllIdentifiersAsync(new ConfigCallback<String>() { 

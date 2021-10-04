@@ -1,21 +1,18 @@
 ---
 description: In de volgende tabellen worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
-seo-description: In de volgende tabellen worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
-seo-title: Levenscycluscijfers
 solution: Experience Cloud,Analytics
 title: Levenscycluscijfers
 topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1085'
 ht-degree: 1%
 
 ---
 
-# Levenscyclusmetriek {#lifecycle-metrics}
+# Levenscycluswaarden {#lifecycle-metrics}
 
 Hier volgen de meetwaarden en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
 
@@ -29,7 +26,7 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 * Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
-## Metriek en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Nadat de metriek van de levenscyclus worden gevormd, worden de metriek verzonden in de parameters van contextgegevens naar Analytics, parameters aan Doel met elke mbox vraag, en als signaal aan Audience Manager. Analytics en Target gebruiken dezelfde indeling, terwijl Audience Manager voor elke meting een ander voorvoegsel gebruikt.
 

@@ -1,21 +1,18 @@
 ---
 description: Informatie die u helpt bij het gebruik van het bestand ADBMobile JSON Config.
-seo-description: Informatie die u helpt bij het gebruik van het bestand ADBMobile JSON Config.
-seo-title: ADBMobileConfig.json-configuratiebestand
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json-configuratiebestand
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-# `ADBMobileConfig.json` configuratiebestand  {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` configuratiebestand {#adbmobileconfig-json-config}
 
 Informatie om u te helpen het `ADBMobile.json` configuratiedossier gebruiken.
 
@@ -43,7 +40,7 @@ De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oploss
 
 * **charset**
 
-   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html) voor meer informatie.
+   Definieert de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie de variabele [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html) in de documentatie van Adobe Analytics voor meer informatie.
 
 * **ssl**
 

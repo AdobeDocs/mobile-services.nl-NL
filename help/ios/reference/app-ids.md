@@ -1,17 +1,14 @@
 ---
 description: In de volgende tabel worden de verschillende toepassings-id's beschreven die door de iOS SDK- en Adobe Mobile-services worden gebruikt.
-seo-description: In de volgende tabel worden de verschillende toepassings-id's beschreven die door de iOS SDK- en Adobe Mobile-services worden gebruikt.
-seo-title: Toepassings-id's
 solution: Experience Cloud,Analytics
 title: Toepassings-id's
 topic-fix: Developer and implementation
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 exl-id: 82f0a097-b2eb-4313-8624-dd442e3da039
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 1%
 
 ---
 

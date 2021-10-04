@@ -1,16 +1,13 @@
 ---
 description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een vorige Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
-seo-description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een vorige Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
-seo-title: Migreren naar 4.x
 solution: Experience Cloud,Analytics
 title: Migreren naar 4.x
 topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -23,7 +20,7 @@ Met de overgang naar versie 4.x is alle functionaliteit nu toegankelijk via stat
 
 In de volgende secties vindt u een migratie van versie 3.x naar versie 4.x.
 
-## Ongebruikte eigenschappen {#section_145222EAA20F4CC2977DD883FDDBBFC5} verwijderen
+## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
 U hebt waarschijnlijk een nieuw `ADBMobileConfig.json`-bestand opgemerkt dat bij uw download is opgenomen. Dit bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt.
 
@@ -127,7 +124,7 @@ Door uw code, verwijder vraag aan de volgende methodes:
 * SetOnline
 * SetOffline
 
-## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products` te plaatsen:
 

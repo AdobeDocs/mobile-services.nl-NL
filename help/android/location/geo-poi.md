@@ -1,16 +1,13 @@
 ---
 description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
-seo-description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
-seo-title: Geo-Locatie en belangenpunten
 solution: Experience Cloud,Analytics
 title: Geo-Locatie en belangenpunten
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -34,7 +31,7 @@ Elke `trackLocation` vraag verzendt de volgende informatie:
 Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de gebruikersinterface van Adobe Mobile en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is een `analytics.poi`-instelling vereist in [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md):
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Als dit niet wordt gevormd, moet u een bijgewerkte versie van het `ADBMobile.json` dossier downloaden en het toevoegen aan uw app. Zie [SDK downloaden en tools testen](/help/android/getting-started/requirements.md) voor meer informatie.
@@ -66,7 +63,7 @@ Als dit niet wordt gevormd, moet u een bijgewerkte versie van het `ADBMobile.jso
 
 Als bovendien wordt bepaald dat de locatie zich in een gedefinieerde POI-straal bevindt, wordt een `a.loc.poi`-contextgegevensvariabele verzonden in combinatie met de `trackLocation`-hit en wordt deze als een POI gerapporteerd in de **[!UICONTROL Location Breakdown]**-rapporten. Een contextvariabele `a.loc.dist` wordt ook verzonden met de afstand in meters van de gedefinieerde coördinaten.
 
-## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de locatiegegevens kunt u aanvullende contextgegevens verzenden bij elke aanroep van de tracklocatie:
 

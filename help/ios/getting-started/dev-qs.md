@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
-seo-description: Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
-seo-title: Core-implementatie en levenscyclus
 solution: Experience Cloud,Analytics
 title: Core-implementatie en levenscyclus
 topic-fix: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 exl-id: 5fb2d534-c2e8-480a-aaee-0e71dd55feb6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -19,13 +16,13 @@ ht-degree: 1%
 
 Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
 
-## SDK {#section_99FE1A17A36D4A2C943939023CF6265C} downloaden
+## De SDK downloaden {#section_99FE1A17A36D4A2C943939023CF6265C}
 
 >[!IMPORTANT]
 >
 >Voor de SDK is iOS 8 of hoger vereist.
 
-**Vereiste**
+**Voorwaarde**
 
 Voordat u de SDK downloadt, voert u de stappen in *Een rapportsuite maken* in [Core-implementatie en levenscyclus](/help/ios/getting-started/requirements.md) uit om een ontwikkelrapportsuite in te stellen en een vooraf ingevulde versie van het configuratiebestand te downloaden.
 
@@ -85,7 +82,7 @@ De SDK downloaden:
 >
 >Als u de SDK buiten de gebruikersinterface van de mobiele services van Adobe downloadt, moet het `ADBMobileConfig.json`-bestand handmatig worden geconfigureerd. Als u aan Analytics en Mobiele SDK nieuw bent, zie [Voor u ](/help/ios/getting-started/requirements.md) aan opstelling een reeks van het ontwikkelingsrapport en download een pre-bevolkte versie van het configuratiedossier begint.
 
-## Voeg SDK en config dossier aan uw project {#section_93C25D893B4A4CD3B996CF3C5590C8DC} toe
+## SDK en configuratiebestand toevoegen aan uw project {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Start de Xcode-IDE en open uw app.
 1. In de Navigator van het Project, sleep de `AdobeMobileLibrary` omslag en laat vallen het onder uw project.
@@ -180,7 +177,7 @@ De extra waarden van contextgegevens die met `collectLifecycleDataWithAdditional
 
 Andere levenscyclusmetriek worden automatisch verzameld. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
 
-## Volgende {#section_A24DC703359D4B5C8F493D6421306FD3}
+## Volgende handelingen {#section_A24DC703359D4B5C8F493D6421306FD3}
 
 Voer de volgende taken uit:
 

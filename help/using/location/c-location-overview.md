@@ -1,17 +1,14 @@
 ---
 description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
 keywords: mobiel
-seo-description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
-seo-title: Overzicht (locatie)
 solution: Experience Cloud,Analytics
 title: Overzicht (locatie)
 topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -56,7 +53,7 @@ U kunt secundaire metrisch op de rechterkant klikken om het aan visualisatie toe
 
 ![](assets/location_secondary.png)
 
-## Uitsplitsingen en cijfers toevoegen {#section_15833511E82648869E7B1EFC24EF7B82}
+## Uitsplitsingen en metriek toevoegen {#section_15833511E82648869E7B1EFC24EF7B82}
 
 U kunt onderverdelingen en secundaire metriek toevoegen, die de hoogte van elk publiek met betrekking tot het andere publiek in de grafiek veranderen.
 
@@ -70,7 +67,7 @@ Als u uitsplitsingen en secundaire metriek wilt toevoegen, klikt u op **[!UICONT
 
 Wanneer u **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]** klikt, toont een nieuw punt met de zelfde naam zoals het vorige punt in de respectieve lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
 
-## Een kleverig filter maken {#section_365999D49FC744ECBF9273132497E06C}
+## Een plakfilter maken {#section_365999D49FC744ECBF9273132497E06C}
 
 Klik op een segment in de ring om het publiek te selecteren waarvoor u een plakfilter wilt maken en klik op **[!UICONTROL Sticky Filter]**. Met dit plakfilter kunt u de huidige filters toepassen en een nieuw rapport uitvoeren op basis van de filters.
 

@@ -1,17 +1,14 @@
 ---
 description: Een lijst met uw in-app- en pushberichten weergeven met informatie over wanneer elk bericht voor het laatst is bijgewerkt en of de berichten live of gedeactiveerd zijn.
 keywords: mobiel
-seo-description: Een lijst met uw in-app- en pushberichten weergeven met informatie over wanneer elk bericht voor het laatst is bijgewerkt en of de berichten live of gedeactiveerd zijn.
-seo-title: Berichten beheren
 solution: Experience Cloud,Analytics
 title: Berichten beheren
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---

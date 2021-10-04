@@ -1,18 +1,15 @@
 ---
 description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Verwervingskoppelingen met unieke volgcodes kunnen worden gegenereerd in Adobe Mobile-services. Wanneer een gebruiker een app downloadt en uitvoert vanuit de App Store nadat hij op de gegenereerde koppeling heeft geklikt, verzamelt de SDK automatisch de overnamegegevens en stuurt deze naar Adobe Mobile-services.
-seo-title: Mobiele app-acquisitie
 solution: Experience Cloud,Analytics
 title: Mobiele app-acquisitie
 topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
@@ -156,7 +153,7 @@ Als u de Verbindingsverbindingen gebruikt die op de Mobiele Diensten van Adobe w
 
 Met de updates in deze sectie kan de SDK acquisitiegegevens verzenden via een acquisitie-koppeling.
 
-## Mobiele acquisitie bijhouden {#section_CEA30C652AC8470784B8054E299B80FA}
+## Mobiele acquisitie volgen {#section_CEA30C652AC8470784B8054E299B80FA}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 

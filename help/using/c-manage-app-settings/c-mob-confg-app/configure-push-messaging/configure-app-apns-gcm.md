@@ -1,22 +1,19 @@
 ---
 description: U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
 keywords: mobiel
-seo-description: U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
-seo-title: App configureren voor gebruik van APNS of FCM
 solution: Experience Cloud,Analytics
 title: App configureren voor gebruik van APNS of FCM
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '565'
 ht-degree: 12%
 
 ---
 
-# Uw app configureren voor het gebruik van APNS of FCM{#configure-app-to-use-apns-or-fcm}
+# Uw app configureren voor gebruik van APNS of FCM{#configure-app-to-use-apns-or-fcm}
 
 U kunt uw app zo configureren dat deze Apple Push Notification Service (APNS) of Firebase Cloud Messaging (FCM) gebruikt.
 
@@ -82,7 +79,7 @@ Uw Android-app configureren voor gebruik van FCM in dit scenario:
 
 
 
-## iOS-toepassingen {#section_2031DAB485FC4D2B9027E42AD90B294D}
+## iOS-apps {#section_2031DAB485FC4D2B9027E42AD90B294D}
 
 Uw iOS-app configureren voor het gebruik van APNS:
 

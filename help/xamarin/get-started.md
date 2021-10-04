@@ -1,19 +1,16 @@
 ---
 description: In dit onderwerp wordt beschreven hoe u aan de slag kunt met de Xamarin-componenten voor mobiele oplossingen 4.x SDK.
-keywords: Xamarin
-seo-description: In dit onderwerp wordt beschreven hoe u aan de slag kunt met de Xamarin-componenten voor mobiele oplossingen 4.x SDK.
-seo-title: Xamarin-componenten voor Experience Cloud Solutions 4.x SDK
+keywords: Xamarine
 solution: Experience Cloud
 title: Xamarin-componenten voor Experience Cloud Solutions 4.x SDK
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 39628548-5787-4022-8792-86b78214a1c0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 3%
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
-
 
 # Xamarin-componenten voor Experience Cloud Solutions 4.x SDK {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 
@@ -25,16 +22,16 @@ Laatst bijgewerkt: **10 januari 2019**
 
 >[!IMPORTANT]
 >
->Adobe Mobile SDK is niet meer beschikbaar in de Xamarin Components Store of in de NuGet Gallery. Ga naar [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services)om de Xamarin-componenten te downloaden.
+>Adobe Mobile SDK is niet meer beschikbaar in de Xamarin Components Store of in de NuGet Gallery. Om de componenten te downloaden Xamarin, ga naar [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services).
 
 ## Android {#section_9CAE1BFD359242568D8288C12A4B7A7D}
 
 Importeer de component ADBMobile naar het project Xamarin.Android:
 
 1. Uw Xamarin-project openen
-1. Open **[!UICONTROL References]** het dialoogvenster en klik op het **[!UICONTROL .Net Assembly]** tabblad.
-1. Selecteer `ADBMobile.XamarinAndroidBinding.dll` in de **[!UICONTROL lib/Android]** map.
-1. Voeg uw `ADBMobileConfig.json` **[!UICONTROL Assets]** dossier aan de omslag van uw project toe.
+1. Open **[!UICONTROL References]** en klik **[!UICONTROL .Net Assembly]** tabel.
+1. Selecteer `ADBMobile.XamarinAndroidBinding.dll` in de map **[!UICONTROL lib/Android]**.
+1. Voeg uw `ADBMobileConfig.json` dossier aan **[!UICONTROL Assets]** omslag van uw project toe.
 1. Machtigingen toevoegen voor:
 
    * `INTERNET`
@@ -69,6 +66,6 @@ Importeer de component ADBMobile naar het project Xamarin.Android:
 Importeer de ADBMobile-component naar het Xamarin.iOS-project:
 
 1. Open uw Xamarin-project.
-1. Open **[!UICONTROL References]** het dialoogvenster en klik op het **[!UICONTROL .Net Assembly]** tabblad.
-1. Selecteer `ADBMobile.XamarinIOSBinding.dll` in de **[!UICONTROL lib/ios-unified]** map.
+1. Open **[!UICONTROL References]** en klik **[!UICONTROL .Net Assembly]** tabel.
+1. Selecteer `ADBMobile.XamarinIOSBinding.dll` in de map **[!UICONTROL lib/ios-unified]**.
 1. Voeg uw `ADBMobileConfig.json` dossier aan het project toe.

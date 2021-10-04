@@ -1,22 +1,19 @@
 ---
 description: De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
-seo-title: Verwerving marketinglink testen
 solution: Experience Cloud,Analytics
 title: Verwerving marketinglink testen
 topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
-# Aanschaf van marketingkoppeling testen {#testing-marketing-link-acquisition}
+# Verwerving marketinglink testen {#testing-marketing-link-acquisition}
 
 De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
 
@@ -44,7 +41,7 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
 
 1. Controleer of de volgende instellingen in het configuratiebestand correct zijn:
 
-   | Instelling | Value |
+   | Instelling | Waarde |
    |--- |--- |
    | verwerving | De server moet `c00.adobe.com` zijn. `appid` moet gelijk zijn aan de   *`appid`* in uw acquisitie-koppeling. |
    | analyse | `referrerTimeout` moet een waarde groter dan 0 hebben. |

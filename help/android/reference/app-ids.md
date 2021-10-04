@@ -1,15 +1,13 @@
 ---
 description: In de volgende tabel worden de verschillende toepassings-id's beschreven die door de services van de SDK van Android en Adobe Mobile worden gebruikt.
-seo-description: In de volgende tabel worden de verschillende toepassings-id's beschreven die door de services van de SDK van Android en Adobe Mobile worden gebruikt.
-seo-title: Toepassings-id's
 solution: Experience Cloud,Analytics
 title: Toepassings-id's
 topic-fix: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
 exl-id: 28358dd6-50dd-4ba9-9fb0-5271eae69d28
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---

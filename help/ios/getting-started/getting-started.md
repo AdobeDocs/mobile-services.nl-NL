@@ -1,16 +1,13 @@
 ---
 description: 'De volgende informatie helpt u aan de slag te gaan met de iOS SDK voor Experience Cloud Solutions '
-seo-description: 'De volgende informatie helpt u aan de slag te gaan met de iOS SDK voor Experience Cloud Solutions '
-seo-title: Aan de slag - overzicht
 solution: Experience Cloud,Analytics
 title: Aan de slag - overzicht
 topic-fix: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 exl-id: bf1c059d-3ca7-4d77-8acb-597350c03433
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '165'
 ht-degree: 1%
 
 ---

@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
-seo-description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
-seo-title: ADBMobile JSON Config
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON Config
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 4%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 4%
 
 Deze informatie helpt u de variabelen in het ADBMobile.json config- dossier begrijpen.
 
-## `ADBMobileConfig.json` configuratiebestandsverwijzing  {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` configuratiebestandsverwijzing {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worden gebruikt:
 
@@ -155,8 +152,8 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is de instelling `analytics.poi` vereist:
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       Als deze instelling niet is geconfigureerd, moet het `ADBMobile.json`-bestand worden bijgewerkt om deze regel op te nemen. Om een bijgewerkt configuratiedossier te downloaden, zie [Voor u ](/help/android/getting-started/requirements.md) begint.
@@ -242,7 +239,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
    * Hiermee bepaalt u hoe lang Doel wacht op een reactie.
 
 
-## Voorbeeld `ADBMobileConfig.json` bestand {#section_4655EF79744649E5A5AE19E3224C472C}
+## Voorbeeld `ADBMobileConfig.json`-bestand {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
@@ -311,7 +308,7 @@ Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 }
 ```
 
-## Beschrijving van berichten {#section_B97D654BA92149CE91F525268D7AD71F}
+## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
 
 Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 

@@ -1,16 +1,13 @@
 ---
 description: Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u gegevens kunt verzamelen van uw Android Wearable-app.
-seo-description: Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u gegevens kunt verzamelen van uw Android Wearable-app.
-seo-title: Aan de slag met Android-kabels
 solution: Experience Cloud,Analytics
 title: Aan de slag met Android-kabels
 topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -120,7 +117,7 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    Permalink Edit
    ```
 
-## De SDK configureren voor een draagbare app (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## De SDK voor een draagbare app configureren (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. Voer een van de volgende taken uit:
 

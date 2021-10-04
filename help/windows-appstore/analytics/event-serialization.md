@@ -1,17 +1,14 @@
 ---
 description: Serienummering van gebeurtenissen wordt niet ondersteund door verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om gebeurtenissen met serienummering rechtstreeks in te stellen op de serveraanroep.
-seo-description: Serienummering van gebeurtenissen wordt niet ondersteund door verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om gebeurtenissen met serienummering rechtstreeks in te stellen op de serveraanroep.
-seo-title: Gebeurtenisserialisatie
 solution: Experience Cloud,Analytics
 title: Gebeurtenisserialisatie
 topic-fix: Developer and implementation
 uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 exl-id: 42ea5e0f-a69e-44ab-aa4e-bbec27815cc8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 7%
+source-wordcount: '70'
+ht-degree: 8%
 
 ---
 

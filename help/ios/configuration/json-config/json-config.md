@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
-seo-description: Met deze informatie kunt u het configuratiebestand ADBMobile.json gebruiken.
-seo-title: ADBMobile JSON config
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON config
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1708'
 ht-degree: 8%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 8%
 
 Deze informatie helpt u het `ADBMobile.json` configuratiedossier gebruiken.
 
-## Referentie ADBMobileConfig.json-configuratiebestand {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Referentie van ADBMobileConfig.json-configuratiebestand {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worden gebruikt:
 
@@ -73,7 +70,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
 * **charset**
 
-   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html) voor meer informatie.
+   Hiermee definieert u de tekenset die u gebruikt voor de gegevens die naar Analytics worden verzonden. De charset wordt gebruikt om binnenkomende gegevens om te zetten in UTF-8 voor opslag en rapportage. Zie de variabele [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html) in de documentatie van Adobe Analytics voor meer informatie.
 
    * Minimale SDK-versie: 4.0
 
@@ -162,7 +159,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
    >Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is de instelling `analytics.poi` vereist:
 
    ```js
-   “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
+   "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
    Als deze instelling niet is geconfigureerd, moet het `ADBMobile.json`-bestand worden bijgewerkt om deze regel op te nemen. Als u een bijgewerkt configuratiebestand wilt downloaden, raadpleegt u [Voordat u ](/help/ios/getting-started/requirements.md) start.
@@ -275,8 +272,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    * Minimale SDK-versie: 4.0
 
-
-## Voorbeeld `ADBMobileConfig.json` bestand {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Voorbeeld `ADBMobileConfig.json`-bestand {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
@@ -345,7 +341,7 @@ Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 }
 ```
 
-## Beschrijving van berichten {#section_B97D654BA92149CE91F525268D7AD71F}
+## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
 
 Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 

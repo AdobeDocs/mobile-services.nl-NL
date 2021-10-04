@@ -1,22 +1,19 @@
 ---
 description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 keywords: mobiel
-seo-description: U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
-seo-title: Uw app beheren
 solution: Experience Cloud,Analytics
 title: Uw app beheren
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
-# Uw app {#managing-your-app} beheren
+# Uw app beheren {#managing-your-app}
 
 U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 
@@ -39,7 +36,7 @@ U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een versc
 
 Klik op **[!UICONTROL Manage App Settings]** > **[!UICONTROL Manage Variables & Metrics]** > **[!UICONTROL Custom Variables]**.
 
-Deze toewijzingen roepen zelfde API die in [Verwerkingsregels](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) wordt gebruikt.
+Deze toewijzingen roepen zelfde API die [Regels van de Verwerking](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in Adobe Analytics gebruiken.
 
 ![Contextgegevenstoewijzing](assets/custom_data_content.png)
 
@@ -49,8 +46,8 @@ Hier is een lijst van de douanevariabelen die u kunt vormen:
 
    Wanneer een waarde voor een bezit in een volgende vraag (of een klap) wordt geplaatst, is het slechts op die vraag van toepassing.
 
-* De **[!UICONTROL Custom Variables]** (of evars) beantwoorden ook de vraag &quot;welke?&quot; Een vage waarde kan echter niet alleen van toepassing zijn op de treffer die wordt verzonden, maar ook op variabelen en metriek die in volgende treffers worden verzonden tot de waarde verloopt of een nieuwe waarde wordt geplaatst.
-* De **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** gedraagt zich het zelfde als variabelen behalve zij staan u toe om veelvoudige waarden op één slag te vangen. Zie [Variabelen weergeven](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html) voor meer informatie.
+* De **[!UICONTROL Custom Variables]** (of eVars) beantwoorden ook de vraag &quot;welke?&quot; Een eVar-waarde kan echter niet alleen van toepassing zijn op de treffer die wordt verzonden, maar ook op variabelen en metriek die in volgende treffers worden verzonden tot de waarde vervalt of een nieuwe waarde wordt ingesteld.
+* De **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** gedraagt zich het zelfde als variabelen behalve zij staan u toe om veelvoudige waarden op één slag te vangen. Zie [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) variabelen in de documentatie van Adobe Analytics voor meer informatie.
 
 De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele services.
 
@@ -113,14 +110,14 @@ Selecteer een ongebruikt variabelenummer en typ een naam. U kunt optioneel de va
    * **[!UICONTROL Decimal number]**
    * **[!UICONTROL Currency]**
 
-## Punten {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6} beheren
+## Belangenpunten beheren {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6}
 
 Met interessepunten kunt u geografische locaties definiëren die u kunt gebruiken voor correlatiedoeleinden, als doel instellen voor berichten in de app, enzovoort. Wanneer een treffer wordt verzonden in een belangenpunt, wordt het aandachtspunt verbonden aan de treffer. Zie [Punten van interesse beheren](/help/using/location/t-manage-points.md) voor meer informatie over aandachtspunten.
 
-## Koppelingsbestemmingen beheren {#section_F722A387E22A430187B063D358A87711}
+## Koppelingsdoelen beheren {#section_F722A387E22A430187B063D358A87711}
 
 U kunt koppelingsdoelen maken, bewerken, archiveren/ongedaan maken en verwijderen. Deze doelen kunnen vervolgens inline worden genoemd bij het samenstellen van marketingkoppelingen, pushberichten of in-app-berichten. Voor meer informatie over verbindingsbestemmingen, zie [De Doelen van de Verbinding](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md) beheren.
 
-## Terugbetalingen beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
+## Postbacks beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
 Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Configure Postbacks](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).

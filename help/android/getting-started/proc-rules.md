@@ -1,23 +1,20 @@
 ---
-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
-seo-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
-seo-title: Verwerkingsregels en contextgegevens
+description: De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 solution: Experience Cloud,Analytics
 title: Verwerkingsregels en contextgegevens
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 3%
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
-# Regels en contextgegevens verwerken {#processing-rules-and-context-data}
+# Verwerkingsregels en contextgegevens {#processing-rules-and-context-data}
 
-De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt. Zie [Verwerkingsregels](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) voor meer informatie.
+De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt. Zie [Verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) voor meer informatie.
 
 Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
@@ -31,7 +28,7 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
 * Contextgegevensvariabelen worden alfabetisch gesorteerd in de interface met verwerkingsregels, zodat u snel kunt zien welke variabelen zich in dezelfde naamruimte bevinden.
 
-   Gebruik het evar- of prop-nummer om contextgegevenssleutels niet een naam te geven:
+   Gebruik het eVar- of propnummer om contextgegevenssleutels niet een naam te geven:
 
    ```js
    "eVar1":"jimbo"

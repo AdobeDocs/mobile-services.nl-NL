@@ -1,18 +1,15 @@
 ---
 description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: U kunt deze informatie gebruiken om diepe en uitgestelde diepe koppelingen in uw mobiele apps te volgen met de Adobe Mobile Android SDK.
-seo-title: Diepe koppelingen bijhouden in mobiele Adobe-services
 solution: Experience Cloud,Analytics
 title: Diepe koppelingen bijhouden
 topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
@@ -55,13 +52,13 @@ Daarnaast kunt u een of meer van de volgende gereserveerde toetsen (met door de 
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytics. Voor meer informatie over afbeelding en verwerkingsregels, zie [Regels en Context Data](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) verwerken.
+Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytics. Voor meer informatie over afbeelding en verwerkingsregels, zie [Regels en Context Data](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) verwerken.
 
 ## Uitgestelde diepe koppelingen bijhouden (voor gebruik met marketingkoppelingen)
 
 Met een uitgestelde diepe koppeling opent de Adobe SDK een nieuwe intentie met de diepe koppeling als de intentgegevens. Dit proces wordt behandeld als externe diepe verbinding gebruikend de bovenstaande code.
 
-## Openbare informatie {#section_1815396353614DA8A63D8D92112217E7} dieper koppelen
+## Openbare informatie dieper koppelen {#section_1815396353614DA8A63D8D92112217E7}
 
 ### Constanten
 

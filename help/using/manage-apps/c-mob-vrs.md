@@ -1,26 +1,23 @@
 ---
 description: Een virtuele rapportreeks (VRS) is een rapportreeks die door één of meerdere segmentdefinitie op een rapportreeks wordt gecreeerd toe te passen. Dit staat gebruikers toe om hun gegevens in één rapportreeks te handhaven maar de gegevens te beheren alsof het in afzonderlijke rapportseries was.
-seo-description: Een virtuele rapportreeks (VRS) is een rapportreeks die door één of meerdere segmentdefinitie op een rapportreeks wordt gecreeerd toe te passen. Dit staat gebruikers toe om hun gegevens in één rapportreeks te handhaven maar de gegevens te beheren alsof het in afzonderlijke rapportseries was.
-seo-title: Virtuele rapportsuites
 title: Virtuele rapportsuites
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1000'
 ht-degree: 4%
 
 ---
 
-
-# Virtual report suites {#virtual-report-suites}
+# Virtuele rapportsuites {#virtual-report-suites}
 
 Een virtuele rapportreeks (VRS) is een rapportreeks die door één of meerdere segmentdefinitie op een rapportreeks wordt gecreeerd toe te passen. Dit staat gebruikers toe om hun gegevens in één rapportreeks te handhaven, maar beheert de gegevens alsof het in afzonderlijke rapportseries was.
 
 Toepassingen die VRS&#39;s gebruiken, doen hetzelfde als apps die een reguliere rapportsuite gebruiken, behalve voor het beheer van de volgende functies:
 
 * Verwerkingsregels
-* gebeurtenissen/props/listeners/gebeurtenissen
+* eVars/props/listvars/events
 * Met tijdstempel ingeschakeld, optie
 * Dimension vlaggen (levenscyclus, locatie, enzovoort)
 * Classificaties
@@ -54,9 +51,9 @@ Een VRS kan u helpen de volgende taken uitvoeren:
 
 >[!IMPORTANT]
 >
->Alleen Adobe Analytics-beheerders kunnen virtuele-rapportsuites maken en wijzigen in Adobe Analytics. Zie Virtuele [rapportsuites](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html)maken als u een virtuele-rapportsuite wilt maken.
+>Alleen Adobe Analytics-beheerders kunnen virtuele-rapportsuites maken en wijzigen in Adobe Analytics. Zie [Virtuele rapportsuites maken](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) in de documentatie van Adobe Analytics om een virtuele rapportsuite te maken.
 
-Elk VRS heeft een unieke id. Als u de id van de bovenliggende rapportsuite wilt weergeven in de gebruikersinterface van Adobe Mobile Services, klikt u in de **[!UICONTROL App Information]** sectie op de pagina Toepassingsinstellingen beheren op **[!UICONTROL More Details]**.
+Elk VRS heeft een unieke id. Als u de id van de bovenliggende rapportsuite wilt weergeven in de gebruikersinterface van Adobe Mobile Services, klikt u in de sectie **[!UICONTROL App Information]** op **[!UICONTROL More Details]** op de pagina Toepassingsinstellingen beheren.
 
 In de UI van de Diensten van de Mobiele Adobe, kunt u VRS gebruiken om een app en segmentgegevens aan een specifieke groep in uw organisatie tot stand te brengen. Op die manier kan een zakelijke gebruiker in Spanje bijvoorbeeld de gegevens die relevant zijn voor een zakelijke gebruiker in Japan niet zien.
 
@@ -82,11 +79,11 @@ De eigenschap tijdzone op de pagina Toepassingsinstellingen beheren is anders da
 
 ## Selecteer een virtuele rapportsuite in de gebruikersinterface voor mobiele services {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
-Als u een VRS wilt gebruiken wanneer u een app maakt, selecteert u de VRS in de **[!UICONTROL Report Suite]** vervolgkeuzelijst op de pagina App Information. Deze lijst bevat bovenliggende en virtuele rapporteringssuites.
+Als u een VRS wilt gebruiken wanneer u een app maakt, selecteert u de VRS in de vervolgkeuzelijst **[!UICONTROL Report Suite]** op de pagina App Information. Deze lijst bevat bovenliggende en virtuele rapporteringssuites.
 
 >[!IMPORTANT]
 >
->Als u een VRS in de lijst wilt selecteren, zoekt u een optie met de blauwe stip en de `vrs_`*`<company_name>`* `_` *`<unique name>`* naamgevingsconventie.
+>Als u een VRS in de lijst wilt selecteren, zoekt u een optie met de blauwe stip en de naamgevingsconventie `vrs_` *`<company_name>`* `_` *`<unique name>`*.
 
 ## Eigenschappen van Virtual Report Suite {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
@@ -118,9 +115,9 @@ Hier volgen de eigenschappen voor VRS&#39;s:
 | `analytics.referrerTimeout` | Nee | Ja |  |
 | `analytics.backdateSessionInfo` | Ja | Ja |  |
 
-## Additional Information {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
+## Aanvullende informatie {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
 
 Hier is wat extra informatie over virtuele rapportseries:
 
-* Voor meer informatie over VRSs, zie [Virtuele Reeksen](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-about.html)van het Rapport.
-* Voor meer informatie over de planning van een implementatie van VRS, zie het [Virtuele werkschema](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html)van de rapportreeks.
+* Voor meer informatie over VRSs, zie [Virtueel overzicht van rapportreeksen](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Voor meer informatie over de planning van een implementatie VRS, zie [Virtueel werkschema van de rapportreeks](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

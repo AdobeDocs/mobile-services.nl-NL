@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
-seo-description: Met deze informatie kunt u in-app berichten gebruiken in uw iOS-apps.
-seo-title: In-app berichten
 solution: Experience Cloud,Analytics
 title: In-app berichten
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -30,7 +27,7 @@ Enkele informatie die u moet onthouden:
    >
    >U kunt deze stappen zelfs voltooien als u geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en zonder update van de App Store weergegeven.
 
-## In-app berichten {#section_79F984271C3B4366B7B04F864F4FF8C2} inschakelen
+## In-app-berichten inschakelen {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -46,25 +43,25 @@ Enkele informatie die u moet onthouden:
 1. Voor berichten in de app die dynamisch moeten worden bijgewerkt bij het starten, moet het `remotes`-object aanwezig zijn en correct zijn geconfigureerd:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 
@@ -74,7 +71,7 @@ Enkele informatie die u moet onthouden:
 
    Als deze voorwerpen niet worden gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Zie [Core Implementation and Lifecycle](/help/ios/getting-started/requirements.md) voor meer informatie.
 
-## In-app berichten {#section_B85CDF6929564AAEA79338B55E5CB1E8} bijhouden
+## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 De SDK&#39;s van iOS Mobile Services volgen de volgende meetgegevens voor uw in-app-berichten:
 

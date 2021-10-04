@@ -1,23 +1,20 @@
 ---
 description: Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze sectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
-seo-description: Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze sectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
-seo-title: Video Analytics
 title: Video Analytics
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: 90da1a9e-2faa-429c-969e-869ebedf08cc
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '835'
 ht-degree: 14%
 
 ---
-
 
 # Video Analytics {#video-analytics}
 
 Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze sectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
-Raadpleeg de handleiding [Metingaudio en video in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) voor meer informatie over Videometing.  In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens in de kolom Contextgegevensvariabele toe te wijzen aan een variabele Analytics, zoals wordt beschreven in de kolom Type variabele.
+Zie de handleiding [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) voor meer informatie over Videometingen.  In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens in de kolom Contextgegevensvariabele toe te wijzen aan een variabele Analytics, zoals wordt beschreven in de kolom Type variabele.
 
 ## Gebeurtenissen van speler toewijzen aan variabelen van Analyse
 
@@ -33,16 +30,16 @@ Raadpleeg de handleiding [Metingaudio en video in Adobe Analytics](https://docs.
 
 * **a.media.name**
 
-   (**Optioneel**) Bevat informatie over het plakken van video. Het plakken moet voor deze variabele door ClientCare worden toegelaten.
+   (**Optioneel**) Biedt informatie over het plakken van video. Voor deze variabele moet het plakken door de klantenservice worden ingeschakeld.
 
    * Type gebeurtenis: Custom Insight (s.prop)
    * Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (**Vereist**) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de `segmentByMilestones` variabele in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden.
+   (**Required**) verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden.
 
-   Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, kan SiteCatalyst zich verzamelen `1:M:0-25` in het eVar Segmenten. De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de videostart- (afspelen), segmentbegin- en videoeindpunten (stoppen).
+   Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst `1:M:0-25` in de eVar Segmenten. De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de videostart- (afspelen), segmentbegin- en videoeindpunten (stoppen).
 
    Analytics telt de eerste segmentmening bij het begin van het segment, wanneer de bezoeker begint te letten. Volgende segmentweergaven als het segment begint.
 
@@ -86,7 +83,7 @@ Raadpleeg de handleiding [Metingaudio en video in Adobe Analytics](https://docs.
 
 ## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`en `mediaClose` The op de juiste momenten worden aangeroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
+Om videoplayback te meten, moeten `mediaPlay`, `mediaStop`, en `mediaClose` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
 ## Mediummeetklasse en methodeverwijzing {#section_50DF9359A7B14DF092634C8E913C77FE}
 
@@ -108,7 +105,7 @@ Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`e
 
 * **openAd**
 
-   Hiermee opent u een `MediaSettings` object dat u wilt bijhouden.
+   Opent een `MediaSettings`-object voor tekstspatiëring.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -124,7 +121,7 @@ Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`e
 
 * **close**
 
-   Sluit het media-item genaamd *`name`*.
+   Sluit het media-item met de naam *`name`*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -140,7 +137,7 @@ Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`e
 
 * **play**
 
-   Hiermee wordt het media-item met de naam *`name`* op het opgegeven *`offset`* (in seconden) afgespeeld.
+   Hiermee wordt het media-item met de naam *`name`* afgespeeld op de opgegeven *`offset`* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -156,7 +153,7 @@ Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`e
 
 * **complete**
 
-   Markeer het media-item handmatig als voltooid op de *`offset`* opgegeven waarde (in seconden).
+   Markeer het media-item handmatig als voltooid op de opgegeven *`offset`* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -172,7 +169,7 @@ Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop`e
 
 * **stoppen**
 
-   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *verschuiving*.
+   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *offset*.
 
    * Hier volgt de syntaxis voor deze methode:
 

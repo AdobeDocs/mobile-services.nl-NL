@@ -1,16 +1,13 @@
 ---
 description: Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan het nieuwsvoer navigeert, zou een vraag van de spoorstaat moeten worden verzonden. In iOS wordt een status doorgaans bijgehouden in de methode viewDoLoad van elke weergave.
-seo-description: Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan het nieuwsvoer navigeert, zou een vraag van de spoorstaat moeten worden verzonden. In iOS wordt een status doorgaans bijgehouden in de methode viewDoLoad van elke weergave.
-seo-title: App-statussen bijhouden
 solution: Experience Cloud,Analytics
 title: App-statussen bijhouden
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '318'
 ht-degree: 2%
 
 ---
@@ -23,7 +20,7 @@ Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wan
 >
 >Om staten te volgen, doe een vraag aan `trackState`. Frames worden niet automatisch bijgehouden.
 
-## Frames {#section_380DF56C4EE4432A823940E4AE4C9E91} bijhouden
+## Frames bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -43,7 +40,7 @@ Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wan
 
 In de Mobiele diensten van Adobe, wordt **[!UICONTROL State Name]** gerapporteerd in *`View State`* variabele, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces wordt **[!UICONTROL View State]** gerapporteerd als **[!UICONTROL Page Name]** en worden de statusweergaven gerapporteerd als paginaweergaven.
 
-## Extra gegevens {#section_CFDB4F944496401786A145C209AB387C} verzenden
+## Extra gegevens verzenden {#section_CFDB4F944496401786A145C209AB387C}
 
 Naast **[!UICONTROL State Name]**, kunt u extra contextgegevens met elke vraag van de spooractie verzenden:
 

@@ -1,18 +1,15 @@
 ---
 description: Met de Android SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Android-toepassingen meten, gerichte inhoud in uw app leveren en publieksgegevens verzamelen en benutten via publieksbeheer.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Met de Android SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Android-toepassingen meten, gerichte inhoud in uw app leveren en publieksgegevens verzamelen en benutten via publieksbeheer.
-seo-title: Android SDK 4.x voor Experience Cloud-oplossingen
 solution: Experience Cloud,Analytics
 title: Android SDK 4.x voor Experience Cloud-oplossingen
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 4%
+source-wordcount: '397'
+ht-degree: 1%
 
 ---
 
@@ -50,13 +47,13 @@ Enkele informatie die u moet onthouden:
 
 * Als u een upgrade uitvoert vanaf een vorige versie, raadpleegt u de [4.x-migratiehandleiding](/help/android/getting-started/migration-v3.md).
 
-## Adobe Mobiele gebruikersdocumentatie {#section_7583FD5FDED143619048E9744A3F2D21}
+## Adobe Mobile-gebruikersdocumentatie {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile-services bieden een gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Experience Cloud worden samengebracht. Zie [Mobiele services Adobe](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) voor meer informatie over de gebruikersinterface en de gebruikersdocumentatie.
+Adobe Mobile-services bieden een gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Experience Cloud worden samengebracht. Zie [Mobiele services Adobe](/help/using/home.md) voor meer informatie over de gebruikersinterface en de gebruikersdocumentatie.
 
 ## Aanvullende informatie {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Voor de recentste informatie over de versies van Experience Cloud, zie [de Nota&#39;s van de Versie van de Experience Cloud](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
+Voor de recentste informatie over de versies van Experience Cloud, zie [de Nota&#39;s van de Versie van de Experience Cloud](/help/using/home.md).
 
 ## Bloedhond gebruiken
 

@@ -1,16 +1,13 @@
 ---
 description: Frames zijn de verschillende schermen of weergaven in uw toepassing.
-seo-description: Frames zijn de verschillende schermen of weergaven in uw toepassing.
-seo-title: App-statussen bijhouden
 solution: Experience Cloud,Analytics
 title: App-statussen bijhouden
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
@@ -21,7 +18,7 @@ Frames zijn de verschillende schermen of weergaven in uw toepassing.
 
 Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan de nieuwsvoer navigeert, wordt een `trackState` vraag verzonden. In Android wordt `trackState` doorgaans aangeroepen wanneer een nieuwe activiteit wordt geladen.
 
-## Frames {#section_380DF56C4EE4432A823940E4AE4C9E91} bijhouden
+## Frames bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -48,7 +45,7 @@ Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, w
 
 `"State Name"` wordt vermeld in `View State` variabele in de Mobiele diensten van Adobe, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces wordt `View State` gerapporteerd als `Page Name` en `state views` als `page views`.
 
-## Aanvullende gegevens verzenden {#section_CFDB4F944496401786A145C209AB387C}
+## Extra gegevens verzenden {#section_CFDB4F944496401786A145C209AB387C}
 
 Naast `"State Name"`, kunt u extra contextgegevens met elke vraag van de spooractie verzenden:
 

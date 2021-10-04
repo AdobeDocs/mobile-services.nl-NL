@@ -1,35 +1,32 @@
 ---
 description: Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de adb_deplink-toets.
-seo-description: Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de adb_deplink-toets.
-seo-title: Implementeer Push Messaging met Deep Linking
 title: Implementeer Push Messaging met Deep Linking
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+exl-id: c9ca955c-506f-45fe-82d6-fad2f9a80130
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '160'
 ht-degree: 1%
 
 ---
 
-
 # Push messaging implementeren met deep linking {#implement-push-messaging-with-deep-linking}
 
-Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de `adb_deeplink` toets.
+Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de `adb_deeplink`-toets.
 
 1. In AppDelegate, kunt u diepe verbinding URL terug krijgen en het behandelen op uw eigen plaats in de volgende plaatsen:
 
    * In `application:didFinishLaunchingWithOptions`:
 
-      Als de app niet wordt uitgevoerd wanneer er een push-klik plaatsvindt, kunt u de pushlading ophalen van `launchOptions`en krijgt u de diepe link-URL door de `adb_deeplink` toets in het payload-woordenboek.
+      Als de app niet wordt uitgevoerd wanneer er een push-klik plaatsvindt, kunt u de pushlading ophalen vanuit `launchOptions` en de deep link URL in het payload-woordenboek wordt geplaatst door de `adb_deeplink`-toets.
 
    * De afgevaardigde methodes voor Verre Bericht
 
-      In de `didReceiveRemoteNotification:` toepassing of in de `didReceiveRemoteNotification:fetchCompletionHandler:` toepassing, kunt u URL krijgen door tot het `userInfo` woordenboek met de `adb_deeplink` sleutel toegang te hebben.
+      In de `didReceiveRemoteNotification:` toepassing of in `didReceiveRemoteNotification:fetchCompletionHandler:` toepassing, kunt u URL krijgen door tot het `userInfo` woordenboek met `adb_deeplink` sleutel toegang te hebben.
 
-   * De afgevaardigde methodes voor `UNUserNotificationCenter`
+   * De gedelegeerde methoden voor `UNUserNotificationCenter`
 
-      In de `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` methode kunt u de pushlading ophalen vanuit het `userInfo` woordenboek, in de `adb_deeplink` toets.
+      In de `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` methode, kunt u duw lading van `userInfo` woordenboek, in `adb_deeplink` sleutel krijgen.
 
 Bijvoorbeeld:
 
@@ -73,4 +70,3 @@ Bijvoorbeeld:
     ... 
 }
 ```
-

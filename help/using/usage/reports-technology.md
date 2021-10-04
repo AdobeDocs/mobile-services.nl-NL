@@ -1,22 +1,19 @@
 ---
 description: Met het rapport Technologie kunt u de verschillende apparaattypen, besturingssystemen, versies van besturingssystemen en mobiele providers bekijken waarop uw app wordt gebruikt.
 keywords: mobiel
-seo-description: Met het rapport Technologie kunt u de verschillende apparaattypen, besturingssystemen, versies van besturingssystemen en mobiele providers bekijken waarop uw app wordt gebruikt.
-seo-title: Technologieverslag
 solution: Experience Cloud,Analytics
 title: Technologieverslag
 topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# Technologierapport {#technology}
+# Technologieverslag {#technology}
 
 Met het **[!UICONTROL Technology]**-rapport kunt u de verschillende apparaattypen, besturingssystemen, versies van besturingssystemen en mobiele dragers bekijken waarop uw app wordt gebruikt.
 
@@ -57,7 +54,7 @@ De volgende lijst beschrijft de standaardrapporten en hoe zij in de Mobiele Dien
 >In het **[!UICONTROL Carriers]**-rapport worden Wi-Fi-gebruikers gerapporteerd als `none`.
 
 
-## Uitsplitsingen en statistieken {#section_15833511E82648869E7B1EFC24EF7B82} toevoegen
+## Onderverdelingen en statistieken toevoegen {#section_15833511E82648869E7B1EFC24EF7B82}
 
 U kunt onderverdelingen en secundaire metriek toevoegen, die de hoogte van elk publiek met betrekking tot het andere publiek in de grafiek veranderen.
 
@@ -69,7 +66,7 @@ Om onderverdelingen en secundaire metriek toe te voegen, klik **[!UICONTROL Tech
 
 Wanneer u **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]** klikt, toont een nieuw punt met de zelfde naam zoals het vorige punt in de lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
 
-## Filter Wijzigen {#section_B4E355CD1FE34E4C8ADC38139ED67FC8}
+## Filter Notitie maken {#section_B4E355CD1FE34E4C8ADC38139ED67FC8}
 
 Klik op een segment in de ring om het publiek te selecteren waarvoor u een plakfilter wilt maken en klik op **[!UICONTROL Sticky Filter]**. Met dit filter kunt u de huidige filters toepassen en een nieuw rapport uitvoeren op basis van de filters.
 

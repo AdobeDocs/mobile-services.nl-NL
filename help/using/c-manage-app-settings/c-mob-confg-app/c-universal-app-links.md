@@ -1,16 +1,13 @@
 ---
 description: Het is belangrijk dat u koppelingen maakt in apps en websites om de gebruikerservaring te behouden. Leer hoe Universal en App Link werken en hoe verschillend ze zijn.
-seo-description: Met Universal Links (iOS) en App Links (Android) kunt u verbinding maken met diepe koppelingen in uw iOS- of Android-apps.
-seo-title: Koppelingen naar Apple Universal Links en Android App
 solution: Experience Cloud,Analytics
 title: Handleiding voor Universal Links en App Links
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Met Universal Links kunt u verbinding maken met diepe koppelingen in uw iOS-app.
 
 Met App-koppelingen kunt u verbinding maken met diepe koppelingen in uw Android-app. Deze koppelingen worden ondersteund in Android 6.0 of hoger. Wanneer een App-koppeling wordt geopend, stuurt Android de koppeling rechtstreeks naar de koppeling in uw app. Als uw app niet is geïnstalleerd, wordt in plaats daarvan een URL voor uw website in een browser geopend. Zie [Android App-koppelingen afhandelen](https://developer.android.com/training/app-links/index.html) voor meer informatie over App-koppelingen.
 
-## Creeer een Verbinding van de Marketing door een Universele of Verbinding {#section_609ADEFFB9B441C4A8C45E936D0DC859} te gebruiken App
+## Creeer een Verbinding van de Marketing door een Universele of Verbinding van de App te gebruiken {#section_609ADEFFB9B441C4A8C45E936D0DC859}
 
 U kunt een Marketing Link tot stand brengen die een Universele Verbinding of een Verbinding van de App gebruikt.
 

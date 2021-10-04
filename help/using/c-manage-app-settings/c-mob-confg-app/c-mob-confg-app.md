@@ -1,17 +1,14 @@
 ---
 description: 'Op de pagina Toepassingsinstellingen beheren kunt u de volgende typen wijzigingen aanbrengen '
-seo-description: 'Op de pagina Toepassingsinstellingen beheren kunt u de volgende typen wijzigingen aanbrengen '
-seo-title: Uw app configureren
 title: Uw app configureren
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # Uw app configureren {#configuring-your-app}
 
@@ -31,7 +28,7 @@ Op de pagina Toepassingsinstellingen beheren kunt u de volgende typen wijziginge
 
       * **Acquisitie**
 
-         URL&#39;s met verwijzingen bijhouden voor campagnes voor het downloaden van apps. Zie [Overname](/help/using/acquisition-main/acquisition-main.md)voor meer informatie.
+         URL&#39;s met verwijzingen bijhouden voor campagnes voor het downloaden van apps. Zie [Acquisitie](/help/using/acquisition-main/acquisition-main.md) voor meer informatie.
 
       * **Levenscyclus**
 
@@ -62,7 +59,7 @@ Op de pagina Toepassingsinstellingen beheren kunt u de volgende typen wijziginge
 
    >[!IMPORTANT]
    >
-   >Voordat u de SDK&#39;s en hulpprogramma&#39;s downloadt, moet u de opties voor SDK-analyse configureren. Voor meer informatie, zie de Opties [van de Analytics van SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)vormen.
+   >Voordat u de SDK&#39;s en hulpprogramma&#39;s downloadt, moet u de opties voor SDK-analyse configureren. Voor meer informatie, zie [vorm de Opties van de Analytics van SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    Als u klaar bent om te upgraden naar de 4.x SDK&#39;s of als u aan een nieuwe app werkt, downloadt u de nieuwste SDK&#39;s en ontwikkelingsprogramma&#39;s onder aan de pagina Toepassingsinstellingen beheren.
 

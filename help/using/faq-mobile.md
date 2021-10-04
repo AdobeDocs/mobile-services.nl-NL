@@ -1,18 +1,15 @@
 ---
 description: Veelgestelde vragen en antwoorden voor Adobe Mobile Services en een algemene beschrijving van functies.
 keywords: mobiel
-seo-description: Veelgestelde vragen en antwoorden voor Adobe Mobile Services en een algemene beschrijving van functies.
-seo-title: Veelgestelde vragen
 solution: Experience Cloud,Analytics
 title: Veelgestelde vragen
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1028'
+ht-degree: 1%
 
 ---
 
@@ -22,13 +19,9 @@ De volgende lijst bevat een lijst van vaak gestelde vragen voor de Mobiele Diens
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
-### Wilt u regelmatig updates uitvoeren met de SDK?
-
-Ja, wij maken constant updates in inspanning om u de meest eigenschap rijke, norm-volgzame, en veilige SDKs te krijgen. We geven doorgaans elke maand een nieuwe versie vrij. Deze SDK-updates zijn drop-in vervangingen (voor versie 4x) om de implementatie te vergemakkelijken. Voor meer informatie over onze updates, zie onze [Nota&#39;s van de Versie](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
-
 ### Welke SDK-versie moet ik hebben?
 
-Onze huidige SDK&#39;s zijn versie 4.11. Voor meer informatie, zie onze [Nota&#39;s van de Versie](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Onze huidige SDK&#39;s zijn versie 4.11. Voor meer informatie, zie [Nota&#39;s van de Versie](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
 ### Waar kan ik SDKs downloaden?
 
@@ -44,7 +37,6 @@ De Adobe Mobile-SDK&#39;s maken gebruik van de standaard iOS- en Android-netwerk
 
 *Als u een cliënt-kant app gebruikend high-level voorzien van een netwerkAPIs zoals NSURLSessie en het kader van het Netwerk CFNetwork schrijft en u verbindt door naam, zou u niets voor uw app moeten veranderen om met IPv6 adressen te werken.* Voor meer informatie zie,  [ondersteunend IPv6 DNS64/NAT64 Netwerken](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
-
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Wat zijn levenscyclusstatistieken?
@@ -53,7 +45,7 @@ Levenscyclusstatistieken zijn &#39;out-of-the-box&#39;-meetgegevens die automati
 
 ### Hoe kan ik verwerkingsregels problemen oplossen?
 
-Voor meer informatie, zie [de Tips en de Tricks van Regels van de Verwerking](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Zie [Verwerkingsregels - Tips en trucs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) in de documentatie van Adobe Analytics.
 
 ### Kan ik mijn analysegegevens naar meerdere rapportensuites sturen?
 

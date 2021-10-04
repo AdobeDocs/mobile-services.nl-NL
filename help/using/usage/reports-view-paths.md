@@ -1,17 +1,14 @@
 ---
 description: In het rapport Paden weergeven, dat is gebaseerd op padanalyse, wordt een paddiagram weergegeven dat de paden vertegenwoordigt die tussen frames in de app zijn gemaakt.
 keywords: mobiel
-seo-description: In het rapport Paden weergeven, dat is gebaseerd op padanalyse, wordt een paddiagram weergegeven dat de paden vertegenwoordigt die tussen frames in de app zijn gemaakt.
-seo-title: Rapport Paden weergeven
 solution: Experience Cloud,Analytics
 title: Rapport Paden weergeven
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---

@@ -1,23 +1,20 @@
 ---
 description: Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de adb_deplink-toets.
-seo-description: Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de adb_deplink-toets.
-seo-title: Implementeer Push Messaging met Deep Linking
 title: Implementeer Push Messaging met Deep Linking
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
-source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+exl-id: ab97db32-d9d2-41ec-aae8-a951c7745df8
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Push messaging implementeren met deep linking {#implement-push-messaging-with-deep-linking}
 
 Nadat u de deep linking-URL hebt geconfigureerd in de gebruikersinterface van Adobe Mobile Services, bevindt deze URL zich in de pushlading met de adb_deplink-toets.
 
-U kunt URL krijgen door `remoteMessage.getData().get("adb_deeplink")` in te roepen `FirebaseMessagingService`.
+U kunt URL krijgen door `remoteMessage.getData().get("adb_deeplink")` in `FirebaseMessagingService` te roepen.
 
 >[!TIP]
 >
@@ -25,11 +22,11 @@ U kunt URL krijgen door `remoteMessage.getData().get("adb_deeplink")` in te roep
 
 1. Voer een van de volgende taken uit:
 
-   * Als de deep linking-URL **zich** in de pushlading bevindt, maakt u een `ACTION_VIEW` intentie met de URL.
+   * Als de deep linking-URL **is** in de pushlading, maakt u een `ACTION_VIEW`-intentie met de URL.
 
       Wanneer de gebruiker op het pushbericht klikt, wordt een diepe koppeling geactiveerd.
 
-   * Als de deep linking-URL zich niet **in de pushlading** bevindt, maakt u een intentie die een van uw activiteiten opent.
+   * Als de deep linking-URL **niet** is in de pushlading, maakt u een intent die een van uw activiteiten opent.
 
 ## Voorbeeld
 

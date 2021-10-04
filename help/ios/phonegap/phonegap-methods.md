@@ -1,17 +1,14 @@
 ---
 description: Met de iOS PhoneGap-plug-inmethoden kunt u een groot aantal taken uitvoeren.
 keywords: fonegap
-seo-description: Met de iOS PhoneGap-plug-inmethoden kunt u een groot aantal taken uitvoeren.
-seo-title: Methoden van PhoneGap-plug-in
 solution: Experience Cloud,Analytics
 title: Methoden van PhoneGap-plug-in
 topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
 exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1715'
 ht-degree: 33%
 
 ---
@@ -229,7 +226,7 @@ Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de 
       ADB.collectPII({'k1':'v1','k2':'v2','k3':'v3'}, function (value) { alert('success'); },function (value) { alert('fail'); });
       ```
 
-## Methoden {#section_7946BB753A4446FE8A3ED728AEF97D04} bijhouden
+## Traceringsmethoden {#section_7946BB753A4446FE8A3ED728AEF97D04}
 
 * **trackAdobeDeepLink**
 
@@ -610,7 +607,7 @@ Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de 
       ```
 
 
-## Reclame-id {#section_194607D101B047A19C51B19E176E1500}
+## Reclameaanduiding {#section_194607D101B047A19C51B19E176E1500}
 
 In `AppDelegate` die door Cordova wordt geproduceerd, roep `[ADBMobile setAdvertisingIdentifier:]` in `application:didFinishLaunchingWithOptions:` afgevaardigde methode. Zie [Configuratiemethoden](/help/ios/configuration/sdk-methods.md) voor meer informatie.
 

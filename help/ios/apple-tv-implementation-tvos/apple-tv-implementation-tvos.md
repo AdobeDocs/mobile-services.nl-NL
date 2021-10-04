@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u Apple TV implementeren met tvOS.
-seo-description: Met deze informatie kunt u Apple TV implementeren met tvOS.
-seo-title: Apple TV-implementatie met tvOS
 solution: Experience Cloud,Analytics
 title: Apple TV-implementatie met tvOS
 topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
@@ -69,7 +66,7 @@ Raadpleeg de documentatie bij iOS op [iOS](https://developer.apple.com/ios/resou
 1. Importeer de SDK in het implementatiebestand van de klasse `TVApplicationControllerDelegate`.
 
    ```objective-c
-   #import “ADBMobile.h"
+   #import "ADBMobile.h"
    ```
 
 1. Geef in de `application:didFinishLaunchWithOptions:`-methode van uw `TVApplicationControllerDelegate`-klasse uw `TVApplicationController`-object door aan de SDK met de methode `installTVMLHooks:`.

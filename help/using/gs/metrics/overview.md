@@ -1,22 +1,19 @@
 ---
 description: U kunt de belangrijkste prestatiewaarden weergeven van de apps die u het laatst hebt bekeken. Standaard kunt u maximaal twaalf apps weergeven. U kunt het datumbereik wijzigen en filters maken om de gegevens te segmenteren en elke app op de overzichtspagina te bewerken.
 keywords: mobiel
-seo-description: U kunt de belangrijkste prestatiewaarden weergeven van de apps die u het laatst hebt bekeken. Standaard kunt u maximaal twaalf apps weergeven. U kunt het datumbereik wijzigen en filters maken om de gegevens te segmenteren en elke app op de overzichtspagina te bewerken.
-seo-title: Mobiele gegevens weergeven
 solution: Experience Cloud,Analytics
 title: Mobiele gegevens weergeven
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
 
-# Mobiele metriek {#display-mobile-metrics} weergeven
+# Mobiele meetgegevens weergeven {#display-mobile-metrics}
 
 U kunt de belangrijkste prestatiewaarden weergeven van de apps die u het laatst hebt bekeken. Standaard kunt u maximaal twaalf apps weergeven. U kunt het datumbereik wijzigen en filters maken om de gegevens te segmenteren en elke app op de overzichtspagina te bewerken.
 
@@ -58,7 +55,7 @@ U kunt de volgende taken op de pagina van het Overzicht uitvoeren:
 
    Klik op de naam van de app om details weer te geven over de belangrijkste prestatie-indicatoren. De lijnen in het diagram hebben een kleurcode en u kunt met de muis over het gegevenspunt bewegen om de statistieken voor bepaalde datums weer te geven. Klik op het pictogram naast **[!UICONTROL Key Performance Indicators]** om omlaag te gaan. De lijnen in het diagram hebben een kleurcode en u kunt met de muis over een willekeurig gegevenspunt bewegen om statistische gegevens voor bepaalde datums weer te geven. Klik op een kolomkop in de tabel om de gegevens in oplopende of aflopende volgorde te sorteren.
 
-## De instellingen van een app {#section_C1CF227A2E534A798F0073E43AD6A2D1} bewerken
+## De instellingen van een toepassing bewerken {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. Klik op het tandwielpictogram in de tegel van een app om de pagina App Information te openen.
 1. Bewerk de instellingen van de app.

@@ -1,19 +1,16 @@
 ---
 description: iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
-keywords: Xamarin
-seo-description: iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
-seo-title: iOS-methoden
+keywords: Xamarine
 solution: Experience Cloud
 title: iOS-methoden
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 39%
+source-wordcount: '1737'
+ht-degree: 40%
 
 ---
-
 
 # iOS-methoden{#ios-methods}
 
@@ -23,7 +20,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **CollectLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusstatistieken](/help/ios/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -155,7 +152,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
    * Hier volgt het codevoorbeeld voor deze methode:
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -214,7 +211,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TrackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen zijn vergelijkbaar met die van pagina&#39;s op een website en `TrackState` roepen increment paginaweergaven aan. Als de status leeg is, wordt deze weergegeven als &#39;app name app version (build)&#39; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen zijn vergelijkbaar met pagina&#39;s op een website en `TrackState` roept increment paginaweergaven aan. Als de status leeg is, wordt deze weergegeven als &quot;app name version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
 
    >[!TIP]
    >
@@ -240,7 +237,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
    >[!TIP]
    >
-   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld het ophalen van achtergrondgegevens), gebruikt u `trackActionFromBackground` deze.
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -276,7 +273,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TrackLocation**
 
-   Verzendt de huidige breedte- en lengtecoördinaten. Gebruikt ook aandachtspunten die in het `ADBMobileConfig.json` bestand zijn gedefinieerd om te bepalen of de locatie die als parameter wordt opgegeven zich binnen een van uw POI-taken bevindt. Als de huidige coördinaten zich binnen bepaalde POI bevinden, wordt een variabele van contextgegevens bevolkt en verzonden met de `TrackLocation` vraag.
+   Verzendt de huidige breedte- en lengtecoördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `TrackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -523,7 +520,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TargetCreateRequest**
 
-   Een gebruiksvriendelijke constructor om een `ADBTargetLocationRequest` object met de opgegeven parameters te maken.
+   De aannemer van de gemak om een `ADBTargetLocationRequest` voorwerp met de bepaalde parameters tot stand te brengen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -540,7 +537,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TargetCreateOrderConfirmRequest**
 
-   Maakt een `ADBTargetLocationRequest`.
+   Hiermee maakt u een `ADBTargetLocationRequest`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -574,7 +571,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **AudienceVisitorProfile**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `NSUserDefaults` zodat u eenvoudig toegang hebt tot meerdere startpagina&#39;s van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere keren starten van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -673,11 +670,11 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Zie [Video Analytics](/help/ios/getting-started/dev-qs.md)voor meer informatie.
+Zie [Video Analytics](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 
 * **MediaCreateSettings**
 
-   Retourneert een `ADBMediaSettings` object met opgegeven parameters.
+   Retourneert een `ADBMediaSettings`-object met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -693,7 +690,7 @@ Zie [Video Analytics](/help/ios/getting-started/dev-qs.md)voor meer informatie.
 
 * **MediaAdCreateSettings**
 
-   Retourneert een `ADBMediaSettings` object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `ADBMediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -709,7 +706,7 @@ Zie [Video Analytics](/help/ios/getting-started/dev-qs.md)voor meer informatie.
 
 * **MediaOpenWithSettings**
 
-   Hiermee opent u een `ADBMediaSettings` object dat u wilt bijhouden.
+   Opent een `ADBMediaSettings`-object voor tekstspatiëring.
 
    * Hier volgt de syntaxis voor deze methode:
 

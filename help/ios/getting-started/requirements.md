@@ -1,21 +1,18 @@
 ---
 description: Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
-seo-description: Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
-seo-title: Voordat u begint
 solution: Experience Cloud,Analytics
 title: Voordat u begint
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 4%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
-# Voordat u {#before-you-start} start
+# Voordat u begint {#before-you-start}
 
 Voer de volgende stappen uit om een rapportsuite te configureren voor het verzamelen van iOS-toepassingsgegevens.
 
@@ -53,9 +50,9 @@ U kunt zich op een van de volgende manieren aanmelden bij de Adobe Mobile Servic
 
 * **Experience Cloud**
 
-   Meld u aan bij [Experience Cloud](https://marketing.adobe.com) met uw Adobe ID.
+   Meld u aan bij [Experience Cloud](https://experience.adobe.com) met uw Adobe ID.
 
-   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Zie [Gebruikers en producten van Experience Cloud beheren](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie over provisioning. Zie [Organisaties en account linking](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html) voor meer informatie over het koppelen van uw account.
+   Bij deze methode wordt ervan uitgegaan dat uw bedrijf is ingericht en dat u een koppeling hebt gemaakt tussen uw account voor Analytics. Voor meer informatie over levering, zie [Experience Cloud gebruikers en producten ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) in de gids van de Componenten van de Interface van de Experience Cloud Central. Zie [Organisaties in de Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) voor meer informatie over het koppelen van uw account.
 
    >[!TIP]
    >
@@ -84,7 +81,7 @@ Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te defini
 
 1. Selecteer **[!UICONTROL Timezone]**, uw **[!UICONTROL Currency]**, en klik **[!UICONTROL Save]**.
 
-## SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46} downloaden
+## De SDK downloaden {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 De mobiele SDK downloaden:
 

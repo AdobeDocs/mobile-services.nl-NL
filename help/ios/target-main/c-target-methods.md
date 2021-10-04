@@ -1,17 +1,14 @@
 ---
 description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
-seo-description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
-seo-title: iOS-doelmethoden voor mobiele Adobe-services
 solution: Experience Cloud,Analytics
 title: Doelmethoden voor iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 22%
+source-wordcount: '629'
+ht-degree: 23%
 
 ---
 
@@ -56,12 +53,11 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* Als u SDK&#39;s **voor** versie 4.14.0 gebruikt, zie [Invoerparameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
-   >
-   >
-* Als u SDKs versie 4.14.0 **of na** gebruikt, zie [Parameters van de Invoerpartij](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
+>
+>* Als u SDKs versie 4.14.0 **of na** gebruikt, zie [Parameters van de Invoerpartij](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
 
 
-### Methods
+### Methoden
 
 * **targetLoadRequest: &#x200B; callback**
 
@@ -83,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameProfileParametersmboxParameterscallback:**
 
    Verzendt een verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blokcallback wordt geproduceerd.
 
@@ -155,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Zie [Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html) voor meer informatie over de onderliggende doel-API.
+      Voor meer informatie over het onderliggende Doel API, zie [doel API verwijzing](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -163,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameProfileParametersmboxParameters:callback**
 
    Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blokcallback wordt geproduceerd.
 

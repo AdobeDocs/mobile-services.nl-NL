@@ -1,30 +1,27 @@
 ---
-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
-seo-description: De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
-seo-title: Verwerkingsregels en contextgegevens
+description: De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 solution: Experience Cloud,Analytics
 title: Verwerkingsregels en contextgegevens
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
 # Verwerkingsregels en contextgegevens{#processing-rules-and-context-data}
 
-De verwerkingsregels worden gebruikt om de gegevens te kopiëren die u in contextgegevensvariabelen naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
+De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 
 Zie de volgende inhoud voor meer informatie:
 
 * [Opleiding](https://tv.adobe.com/embed/1181/16506/) @ top 2013 over verwerkingsregels
 * Word gemachtigd om verwerkingsregels te gebruiken
 
-   Voor meer informatie over verwerkingsregels, zie [Overzicht van de Regels van de Verwerking](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   Voor meer informatie over verwerkingsregels, zie [Overzicht van de Regels van de Verwerking](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in de documentatie van Adobe Analytics.
 
 Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
@@ -40,7 +37,7 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
 * Contextgegevensvariabelen worden alfabetisch gesorteerd in de interface met verwerkingsregels, zodat u snel kunt zien welke variabelen zich in dezelfde naamruimte bevinden.
 
-   Gebruik het evar- of prop-nummer om contextgegevenssleutels niet een naam te geven:
+   Gebruik het eVar- of propnummer om contextgegevenssleutels niet een naam te geven:
 
    ```js
    "eVar1":"jimbo"

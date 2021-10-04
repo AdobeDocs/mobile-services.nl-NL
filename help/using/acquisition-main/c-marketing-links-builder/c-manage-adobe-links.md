@@ -1,17 +1,14 @@
 ---
 description: U kunt de pagina Marketing Links gebruiken om marketingkoppelingen te maken, te gebruiken en te archiveren.
 keywords: mobiel
-seo-description: U kunt de pagina Marketing Links gebruiken om marketingkoppelingen te maken, te gebruiken en te archiveren.
-seo-title: Marketing-koppelingen beheren
 solution: Experience Cloud,Analytics
 title: Marketing-koppelingen beheren
 topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
 exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

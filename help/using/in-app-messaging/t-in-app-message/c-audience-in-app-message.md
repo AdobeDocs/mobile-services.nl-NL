@@ -1,22 +1,19 @@
 ---
 description: U kunt publieksopties configureren voor berichten in de app, zoals opties voor weergave, trigger en gedrag.
 keywords: mobiel
-seo-description: U kunt publieksopties configureren voor berichten in de app, zoals opties voor weergave, trigger en gedrag.
-seo-title: Bericht 'Publiek in toepassing'
 solution: Experience Cloud,Analytics
 title: Bericht 'Publiek in toepassing'
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-# Publiek: in-app-bericht {#audience-in-app-message}
+# Publiek: bericht in de app {#audience-in-app-message}
 
 U kunt publieksopties configureren voor berichten in de app, zoals opties voor weergave, trigger en gedrag.
 
@@ -48,7 +45,6 @@ U kunt publieksopties configureren voor berichten in de app, zoals opties voor w
 
    * **[!UICONTROL Traits]**
 U kunt bepalen wie het bericht in de app moet zien wanneer het wordt geactiveerd en het publiek filteren (segmenteren) op treffers die opgegeven gegevens hebben. U kunt bijvoorbeeld een regel definiëren waarin punten van interesse Denver bevatten. Met dit filter kunt u het bericht weergeven aan klanten die zich in een van uw interessepunten met Denver in de naam bevinden, tijdens de trigger.
-
 
 
 ## Aanvullende informatie over eigenschappen en triggers {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

@@ -1,18 +1,15 @@
 ---
 description: U moet deze taken voltooien alvorens het Push Overseinen in toepassingen te vormen.
 keywords: mobiel
-seo-description: U moet deze taken voltooien alvorens het Push Overseinen in toepassingen te vormen.
-seo-title: Vereisten voor het inschakelen van pushberichten
 solution: Experience Cloud,Analytics
 title: Vereisten voor het inschakelen van pushberichten
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 1%
+source-wordcount: '619'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +55,7 @@ Voer de volgende stappen uit als gebruikers geen Adobe-id hebben:
 
 Elke gebruiker moet de de oplossingsrekening van Analytics van de organisatie van Experience Cloud verbinden.
 
-1. Als u zich met een Adobe ID wilt aanmelden bij de Experience Cloud, typt u [https://marketing.adobe.com](https://marketing.adobe.com) in een browser.
+1. Meld u aan bij [Adobe Experience Cloud](https://experience.adobe.com) met een Adobe ID.
 
 1. Selecteer in de rechterbovenhoek de bedrijfsnaam Analytics.
 
@@ -68,7 +65,7 @@ Elke gebruiker moet de de oplossingsrekening van Analytics van de organisatie va
 
    De Adobe ID is nu gekoppeld aan uw aanmeldingsgegevens voor uw account, bedrijf en account voor Analytics.
 
-Voor meer informatie, zie [De Rekening van het Oplossen van problemen Linking](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html).
+Voor meer informatie, zie [Organisaties in de Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) in de gids van de Componenten van de Interface van de Experience Cloud Central.
 
 ## Pushservices en de SDK ID-service configureren in de mobiele gebruikersinterface
 

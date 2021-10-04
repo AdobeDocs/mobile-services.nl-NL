@@ -1,16 +1,13 @@
 ---
 description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw iOS-apps.
-seo-description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw iOS-apps.
-seo-title: Geo-Locatie en belangenpunten
 solution: Experience Cloud,Analytics
 title: Geo-Locatie en belangenpunten
 topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 exl-id: 732c3863-2010-4d04-a17b-a656e857f567
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -34,14 +31,14 @@ Elke `trackLocation` vraag verzendt het volgende:
 Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de Adobe Mobile-interface en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is een `analytics.poi`-instelling in het `ADBMobile.json`-bestand vereist:
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Zie [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) voor meer informatie.
 
 Als dit niet wordt gevormd, moet een bijgewerkte versie van het `ADBMobile.json` dossier worden gedownload en aan uw app worden toegevoegd. Zie *Download de SDK en de testtools* in [Voor u start](/help/ios/getting-started/requirements.md) voor meer informatie en instructies.
 
-## Go-locaties en POI&#39;s bijhouden {#section_B1616E400A7548F9A672F97FEC75AE27}
+## Go-locaties en POI&#39;s volgen {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -67,7 +64,7 @@ Als dit niet wordt gevormd, moet een bijgewerkte versie van het `ADBMobile.json`
 
 Als bovendien wordt bepaald dat de locatie zich in een gedefinieerde POI-straal bevindt, wordt een contextgegevensvariabele `a.loc.poi` verzonden met de hit `trackLocation` en wordt deze als een POI gerapporteerd in Locatierapporten. Een contextvariabele `a.loc.dist` wordt ook verzonden met de afstand in meters van de gedefinieerde coördinaten.
 
-## Aanvullende gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de locatiegegevens kunt u aanvullende contextgegevens verzenden bij elke aanroep van de tracklocatie:
 
@@ -96,7 +93,7 @@ De coördinaten lat = 40,93231, lon = -111,93152 vertegenwoordigen bijvoorbeeld 
 
 Sommige precisieniveaus worden weergegeven als &quot;00&quot;, afhankelijk van de nauwkeurigheid van de huidige locatie. Als de locatie bijvoorbeeld momenteel nauwkeurig is tot 100 m, worden `a.loc.lat.c` en `a.loc.lon.c` gevuld met &quot;00&quot;.
 
-## Extra informatie {#section_931AC1E0D88147E29FE1B6E3CC1E9550}
+## Aanvullende informatie {#section_931AC1E0D88147E29FE1B6E3CC1E9550}
 
 De volgende informatie onthouden:
 

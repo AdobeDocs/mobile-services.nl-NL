@@ -1,27 +1,24 @@
 ---
 description: Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
-seo-description: Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
-seo-title: App-acties bijhouden
 solution: Experience Cloud,Analytics
 title: App-acties bijhouden
 topic-fix: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 exl-id: ff317eff-1b8e-46e1-a305-a404979447cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
 
-# Toepassingshandelingen bijhouden {#track-app-actions}
+# Toepassingsacties bijhouden {#track-app-actions}
 
 Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten. Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. U kunt bijvoorbeeld een nieuw abonnement bijhouden wanneer een artikel wordt weergegeven of telkens wanneer een niveau wordt voltooid. De overeenkomstige metriek voor deze gebeurtenissen worden gevormd als abonnementen, gelezen artikelen, en voltooide niveaus.
 
 Handelingen worden niet automatisch bijgehouden, dus als u een gebeurtenis wilt bijhouden, moet u `trackAction` aanroepen.
 
-## Handelingen {#section_380DF56C4EE4432A823940E4AE4C9E91} bijhouden
+## Handelingen bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -55,7 +52,7 @@ U kunt ook een eigenschap instellen om alle actiewaarden in te houden door een a
 
 ![](assets/map-custom-prop.png)
 
-## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de naam van de handeling kunt u aanvullende contextgegevens verzenden bij elke aanroep van een trackactie:
 
@@ -73,7 +70,7 @@ Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen:
 
 Als u een actie in code volgt die zou kunnen lopen wanneer app op de achtergrond is, roep `trackActionFromBackground` in plaats van `trackAction`. Hoewel `trackActionFromBackground` wat extra logica bevat om levenscyclusvraag te verhinderen te vuren wanneer zij zouden moeten niet, zijn de parameters het zelfde.
 
-## Melding van handelingen {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Actierapport {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 | Interface | Rapport |
 |--- |--- |

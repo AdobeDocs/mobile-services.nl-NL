@@ -1,17 +1,14 @@
 ---
 description: 'Met de volgende informatie kunt u de iOS SDK configureren, inclusief JSON-configuratie, batchverwerking en SDK-methoden '
-seo-description: 'Met de volgende informatie kunt u de iOS SDK configureren, inclusief JSON-configuratie, batchverwerking en SDK-methoden '
-seo-title: Configuratie
 solution: Experience Cloud,Analytics
 title: Configuratie
 topic-fix: Developer and implementation
 uuid: 63261b61-e70a-42be-a56f-5943173c041e
 exl-id: ff1f7fcd-1dc9-49b4-aead-46134600f3ab
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 4%
+source-wordcount: '126'
+ht-degree: 3%
 
 ---
 

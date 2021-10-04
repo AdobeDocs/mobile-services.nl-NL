@@ -1,23 +1,20 @@
 ---
 description: Met Voorvertoning van doel kunt u gemakkelijk end-to-end QA voor doelactiviteiten uitvoeren en deze activiteiten op uw apparaat voorvertonen.
-seo-description: Met Voorvertoning van doel kunt u gemakkelijk end-to-end QA voor doelactiviteiten uitvoeren en deze activiteiten op uw apparaat voorvertonen.
-seo-title: Voorvertoning doel op iOS
 title: Voorvertoning doel op iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: d5695156-59cd-42c5-b9a3-d8e0ebbb89d0
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 10%
+source-wordcount: '121'
+ht-degree: 12%
 
 ---
-
 
 # Voorvertoning doel op iOS{#target-preview-on-ios}
 
 Met Voorvertoning van doel kunt u gemakkelijk end-to-end QA voor doelactiviteiten uitvoeren en deze activiteiten op uw apparaat voorvertonen.
 
-Zie [Doel mobiele voorvertoning](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/target-mobile-preview.html)voor meer informatie over het instellen en gebruiken van Voorvertoning doel.
+Zie [Mobiele voorvertoning van doel](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) in de documentatie van Adobe Target voor meer informatie over het instellen en gebruiken van Voorvertoning van doel.
 
 >[!IMPORTANT]
 >
@@ -38,5 +35,5 @@ Zie [Doel mobiele voorvertoning](https://docs.adobe.com/content/help/en/target/u
    * Hier volgt het codevoorbeeld voor deze methode:
 
       ```objective-c
-      [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
+      [ADBMobile targetPreviewRestartDeepLink:@"myapp://myhost"]; 
       ```

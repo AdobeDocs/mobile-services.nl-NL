@@ -1,18 +1,15 @@
 ---
 description: Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
 keywords: mobiel
-seo-description: Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
-seo-title: Aan de slag
 solution: Experience Cloud,Analytics
 title: Aan de slag
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 1%
+source-wordcount: '1344'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +26,7 @@ Voor bedrijven die op zoek zijn naar de meest effectieve manier om de betrokkenh
 
 Het landschap van de mobiele app verschilt aanzienlijk van toen de smartphone voor het eerst werd gestart. Een mobiele app hebben om uw klanten met uw merk te verbinden is niet langer genoeg; vandaag, moet u een samenhangende, dwingende klantenervaring over kanalen drijven en uw mobiele app als strategisch aanraakpunt gebruiken om uw meest loyale, hoogwaardige klanten in dienst te nemen. Maar om deze gebruikers in staat te stellen met uw app te communiceren, hebt u dwingende inhoud, contextuele meldingen, intelligente personalisatie en geïntegreerde toepassingsanalyses nodig, enzovoort.
 
-## UI voor mobiele Adobe-services {#mobile-services-ui}
+## UI Adobe Mobile Services {#mobile-services-ui}
 
 De gebruikersinterface voor mobiele services wordt ondersteund door de volgende browsers:
 
@@ -114,7 +111,7 @@ Zie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/
 
 In *Optimize*, kunt u omzettingen (abonnementen, handel, en opbrengst, etc.) optimaliseren en klantenbehoud verbeteren. Door de gebruikerservaring in uw app te optimaliseren, kunt u uw inhoud aanpassen en maximale investeringsrendement en conversie verhogen.
 
-Ga voor meer informatie over testen en Adobe Target naar [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html).
+Raadpleeg de documentatie [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) voor meer informatie over testen en Adobe Target.
 
 ### Geo-targeting
 
@@ -161,4 +158,4 @@ De Adobe Mobile SDK biedt de volgende functies:
    * Minimaliseert de verwerkingsbelasting van apparaten voor het verzenden van gegevens naar Adobe-servers en systemen van derden.
    * Met een kleine voetafdruk minimaliseert u de grootte van het app-pakket dat naar de App Store wordt verzonden.
 
-Zie [Android SDK 4.x voor Experience Solutions](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html) en [iOS SDK 4.x voor Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html) voor meer informatie over de Adobe Mobile SDK&#39;s.
+Zie [Android SDK 4.x voor Experience Solutions](/help/android/overview.md) en [iOS SDK 4.x voor Experience Cloud Solutions](/help/ios/overview.md) voor meer informatie over de Adobe Mobile SDK&#39;s.

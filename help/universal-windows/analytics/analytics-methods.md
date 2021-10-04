@@ -1,17 +1,14 @@
 ---
 description: Informatie om u te helpen de Universal Windows Platform SDK met Adobe Analytics gebruiken.
-seo-description: Informatie om u te helpen de Universal Windows Platform SDK met Adobe Analytics gebruiken.
-seo-title: Analysemethoden
 solution: Experience Cloud,Analytics
 title: Analysemethoden
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 28%
+source-wordcount: '617'
+ht-degree: 29%
 
 ---
 
@@ -87,7 +84,7 @@ Als `state` leeg is, wordt deze weergegeven als &quot;app name app version (buil
 
 * **TrackLocation (winJS: trackLocation)**
 
-   Verzendt de huidige x y-coördinaten. Gebruikt ook aandachtspunten die in het `ADBMobileConfig.json` dossier worden bepaald of de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
+   Verzendt de huidige x y-coördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 

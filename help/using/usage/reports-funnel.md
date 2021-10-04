@@ -1,22 +1,19 @@
 ---
 description: Het rapport van de Groep identificeert waar de klanten een marketing campagne verlieten of van een bepaald omzettingsweg terwijl het in wisselwerking staan met uw mobiele app afgeleid. U kunt het rapport van het Kanaal ook gebruiken om de acties van verschillende segmenten te vergelijken.
 keywords: mobiel
-seo-description: Het rapport van de Groep identificeert waar de klanten een marketing campagne verlieten of van een bepaald omzettingsweg terwijl het in wisselwerking staan met uw mobiele app afgeleid. U kunt het rapport van het Kanaal ook gebruiken om de acties van verschillende segmenten te vergelijken.
-seo-title: Taalverslag
 solution: Experience Cloud,Analytics
 title: Taalverslag
 topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# Trechter-rapport{#funnel}
+# Taalverslag{#funnel}
 
 In het **[!UICONTROL Funnel]**-rapport wordt aangegeven waar klanten een marketingcampagne hebben verlaten of van een gedefinieerd conversiepad zijn afgeweken tijdens de interactie met uw mobiele app. U kunt het **[!UICONTROL Funnel]** rapport ook gebruiken om de acties van verschillende segmenten te vergelijken.
 

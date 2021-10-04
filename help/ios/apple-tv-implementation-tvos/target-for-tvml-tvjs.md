@@ -1,17 +1,14 @@
 ---
 description: U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
-seo-description: U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechtstreeks te vervangen. Wijs gebieden van uw pagina aan die door de inhoud van het Doel moeten worden vervangen door het douaneADBTtarget element van XML te gebruiken.
-seo-title: Adobe Target voor TVML/TVJS
 title: Adobe Target voor TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 9348d49c-2a5a-4ea0-b90d-99d446bd336a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Target voor TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
@@ -19,17 +16,17 @@ U kunt Adobe Target in uw TVML/TVJS-apps gebruiken door uw .xml-bestanden rechts
 
 >[!IMPORTANT]
 >
->Voordat u het `ADBTarget` element in uw TVML-pagina&#39;s kunt gebruiken, moet u de TVML/TVJS-app configureren voor gebruik van de tvOS SDK. Zie [Apple TV-implementatie met tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)voor meer informatie.
+>Voordat u het element `ADBTarget` in uw TVML-pagina&#39;s gebruikt, moet u de TVML/TVJS-app configureren voor gebruik van de tvOS SDK. Zie [Apple TV-implementatie met tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md) voor meer informatie.
 
 ## Aan de slag {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
 1. Identificeer het `.xml` dossier waarin u uw plaats van het Doel wilt gebruiken.
-1. Voeg een `ADBTarget` element aan het dossier als kind van het `<document>` element toe.
+1. Voeg een `ADBTarget` element aan het dossier als kind van `<document>` element toe.
 1. Als het Doel er niet in slaagt om uw plaats te vinden Mbox, of het tijden uit, wordt de waarde tussen uw `<ADBTarget>` en `</ADBTarget>` markeringen gebruikt als standaardinhoud.
 
 ## Uw mbox in Doel configureren {#section_F2DA140C34B0421D976046F825B23123}
 
-De geretourneerde inhoud van Target vervangt alle inhoud tussen `<ADBTarget>` en `</ADBTarget>`, inclusief beide `ADBTarget` -tags.
+De geretourneerde inhoud van Target vervangt alle inhoud tussen `<ADBTarget>` en `</ADBTarget>`, inclusief beide `ADBTarget`-tags.
 
 >[!TIP]
 >
@@ -39,7 +36,7 @@ Het gebruik van hoofdletters en kleine letters kan eenvoudig zijn, zoals het ver
 
 ## Uw ADBTarget-element configureren {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
-In het `ADBTarget` element, moet u de naam Mbox in het `mbox` bezit verstrekken. U kunt desgewenst aangepaste eigenschappen aan uw verzoek toevoegen in de `customParameterName="customParameterValue"` indeling.
+In het `ADBTarget` element, moet u de naam Mbox in het `mbox` bezit verstrekken. U kunt naar keuze douaneeigenschappen aan uw verzoek in het `customParameterName="customParameterValue"` formaat toevoegen.
 
 * **`mbox`**
 
@@ -78,7 +75,7 @@ In het `ADBTarget` element, moet u de naam Mbox in het `mbox` bezit verstrekken.
 
 * **`mboxParameters`**
 
-   Een lijst met sleutelwaardeparen voor `mboxParameters`. Elk item in deze tekenreeks wordt gescheiden door een puntkomma en de sleutelwaarden worden gescheiden door een dubbele punt.
+   Een lijst met sleutel-waardeparen voor `mboxParameters`. Elk item in deze tekenreeks wordt gescheiden door een puntkomma en sleutelwaarden worden gescheiden door een dubbele punt.
 
    * Hier volgt het codevoorbeeld voor deze eigenschap:
 
@@ -101,11 +98,11 @@ In het `ADBTarget` element, moet u de naam Mbox in het `mbox` bezit verstrekken.
 
 ### Voorbeeld 1
 
-In het volgende voorbeeld wordt een `ADBTarget` element op de `LandingPage.xml.js` pagina gebruikt om de inhoud van een waarschuwing te vervangen:
+In het volgende voorbeeld wordt een `ADBTarget`-element op de pagina `LandingPage.xml.js` gebruikt om de inhoud van een waarschuwing te vervangen:
 
 #### Doel configureren
 
-Veronderstel dat u een genoemde plaats Mbox hebt `landingPage` en de aanbiedingsinhoud wordt geplaatst om het volgende te zijn:
+Veronderstel dat u een plaats Mbox genoemd `landingPage` hebt en de aanbiedingsinhoud wordt geplaatst om het volgende te zijn:
 
 ```objective-c
 <title>My cool landing page</title> 
@@ -145,7 +142,7 @@ Veronderstel dat u een genoemde plaats Mbox hebt `landingPage` en de aanbiedings
 
 ### Voorbeeld 2
 
-In het volgende voorbeeld ziet u hoe u aangepaste gegevens aan uw `ADBTarget` element kunt toevoegen. Met deze methode kunt u voorwaardelijke ervaringen maken en inhoud aanbieden voor deze Mbox-locatie in Doel:
+In het volgende voorbeeld wordt getoond hoe u aangepaste gegevens aan uw `ADBTarget`-element kunt toevoegen. Met deze methode kunt u voorwaardelijke ervaringen maken en inhoud aanbieden voor deze Mbox-locatie in Doel:
 
 ```objective-c
 <alertTemplate> 

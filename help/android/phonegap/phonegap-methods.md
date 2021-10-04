@@ -1,22 +1,19 @@
 ---
 description: U kunt de iOS PhoneGap-plug-inmethoden gebruiken om een groot aantal taken uit te voeren.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: U kunt de iOS PhoneGap-plug-inmethoden gebruiken om een groot aantal taken uit te voeren.
-seo-title: Methoden van PhoneGap-plug-in
 solution: Experience Cloud,Analytics
 title: Methoden van PhoneGap-plug-in
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1557'
 ht-degree: 34%
 
 ---
 
-# Methoden van de insteekmodule PhoneGap{#phonegap-plug-in-methods}
+# Methoden van PhoneGap-plug-in{#phonegap-plug-in-methods}
 
 U kunt de plug-inmethoden van Android PhoneGap gebruiken om een groot aantal taken uit te voeren.
 
@@ -217,7 +214,7 @@ Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de 
       ```
 
 
-## Methoden {#section_7946BB753A4446FE8A3ED728AEF97D04} bijhouden
+## Traceringsmethoden {#section_7946BB753A4446FE8A3ED728AEF97D04}
 
 * **trackAdobeDeepLink**
 
@@ -283,7 +280,7 @@ Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de 
 
 * **trackLocation**
 
-   Verzendt de huidige x y-coördinaten. Gebruikt ook aandachtspunten die in het `ADBMobileConfig.json` dossier worden bepaald of de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
+   Verzendt de huidige x y-coördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -579,14 +576,14 @@ Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de 
    * Hier volgen de codevoorbeelden voor deze methode:
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’}, function() {…}, function() {…}));
       ```
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’});  
       ```
 
-## Reclame-id {#section_194607D101B047A19C51B19E176E1500}
+## Reclameaanduiding {#section_194607D101B047A19C51B19E176E1500}
 
 In de hoofdactiviteit die door Cordova wordt geproduceerd, roep `Config.submitAdvertisingIdentifierTask()` in `onResume()` methode. Zie [Configuratiemethoden](/help/android/configuration/methods.md) voor meer informatie.
 

@@ -1,22 +1,19 @@
 ---
 description: In het rapport Top 10 van artikelen wordt een zonneexplosieve visualisatie voor uw gegevens weergegeven. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suites (DPS).
 keywords: mobiel
-seo-description: In het rapport Top 10 van artikelen wordt een zonneexplosieve visualisatie voor uw gegevens weergegeven. Dit rapport is alleen beschikbaar voor klanten van Digital Publishing Suites (DPS).
-seo-title: Meest 10 artikelen
 solution: Experience Cloud,Analytics
 title: Meest 10 artikelen
 topic-fix: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
 exl-id: 93b3d0aa-83a3-4ee8-bc7f-fa30736a7749
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
-# Top 10 van Artikelen rapport{#top-articles}
+# Top 10 van artikelen{#top-articles}
 
 Het **[!UICONTROL Top 10 Articles]** rapport toont een zonnebarstvisualisatie voor uw gegevens. Dit rapport is alleen beschikbaar voor DPS-klanten.
 

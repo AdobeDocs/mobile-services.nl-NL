@@ -1,17 +1,14 @@
 ---
 description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bibliotheek naar versie 4.x.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Met deze informatie kunt u migreren van de 3.x- of 2.x-versie van de Android-bibliotheek naar versie 4.x.
-seo-title: Migreren naar de Android 4.x-bibliotheek
 solution: Experience Cloud,Analytics
 title: Migreren naar de Android 4.x-bibliotheek
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '860'
 ht-degree: 2%
 
 ---
@@ -42,7 +39,7 @@ De verwerkingsregels bieden de volgende voordelen:
 >
 >Waarden die u rechtstreeks aan variabelen hebt toegewezen, moeten worden toegevoegd aan de `data` HashMap.
 
-## Ongebruikte eigenschappen {#section_145222EAA20F4CC2977DD883FDDBBFC5} verwijderen
+## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
 Het nieuwe `ADBMobileConfig.json` dossier bevat toepassing-specifieke, globale montages, en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
@@ -187,6 +184,6 @@ Verwijder vraag aan de volgende methodes:
 * `forceOffline`
 * `forceOnline`
 
-## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Voor meer informatie over de productvariabele, zie [Variabele van Producten](/help/android/analytics-main/products/products.md).

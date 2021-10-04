@@ -1,17 +1,14 @@
 ---
 description: Bij het bijhouden van baken kunt u microlocaties meten en als doel instellen met behulp van iBeacon en Bluetooth Low Energy.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Bij het bijhouden van baken kunt u microlocaties meten en als doel instellen met behulp van iBeacon en Bluetooth Low Energy.
-seo-title: Beacon bijhouden
 solution: Experience Cloud,Analytics
 title: Beacon bijhouden
 topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -36,7 +33,7 @@ Dit zijn wat deze waarden betekenen:
 
 Deze baken-gegevens worden vastgelegd in variabelen voor mobiele oplossingen.
 
-## Acties bijhouden {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Ballonen bijhouden {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -70,7 +67,7 @@ Deze baken-gegevens worden vastgelegd in variabelen voor mobiele oplossingen.
    Analytics.clearBeacon();
    ```
 
-## Aanvullende gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de bakengegevens, kunt u extra contextgegevens met elke `trackBeacon` vraag verzenden:
 

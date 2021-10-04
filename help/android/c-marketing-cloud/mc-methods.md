@@ -1,18 +1,15 @@
 ---
 description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
-seo-title: Methoden van Adobe Experience Platform Identity Service
 solution: Experience Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 23%
+source-wordcount: '435'
+ht-degree: 24%
 
 ---
 
@@ -26,7 +23,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
 * **public static String appendToURL(final String URL)**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie [Helperfunctie voor bezoeker-id toevoegen](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html) voor meer informatie.
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service voor meer informatie.
 
    >[!IMPORTANT]
    >

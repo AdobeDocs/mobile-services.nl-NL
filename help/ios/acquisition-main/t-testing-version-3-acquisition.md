@@ -1,19 +1,17 @@
 ---
 description: Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
-seo-description: Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
-seo-title: V3-overname testen
 solution: Experience Cloud,Analytics
 title: V3-overname testen
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 exl-id: 3cf66802-1f2c-428f-86ef-a9afc57e3470
-source-git-commit: 8db8f51a42acbbc0bbc4545b7d97cb214b490ab3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
-# V3-acquisitie testen{#testing-v-acquisition}
+# V3-overname testen{#testing-v-acquisition}
 
 Met deze informatie kunt u een koppeling naar een V3-acquisitiecampagne uitvoeren op basis van een vingerafdruk van een apparaat.
 

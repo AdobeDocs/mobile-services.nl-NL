@@ -1,21 +1,18 @@
 ---
 description: Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
-seo-description: Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
-seo-title: Methoden van Audience Manager
 solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 27%
+source-wordcount: '261'
+ht-degree: 28%
 
 ---
 
-# Methoden voor Audience Manager{#audience-manager-methods}
+# Methoden van Audience Manager{#audience-manager-methods}
 
 Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
 

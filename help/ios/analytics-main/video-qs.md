@@ -1,27 +1,24 @@
 ---
 description: Hier volgt informatie over het meten van video's op iOS met behulp van milestone-videometingen.
-seo-description: Hier volgt informatie over het meten van video's op iOS met behulp van milestone-videometingen.
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 14%
+source-wordcount: '933'
+ht-degree: 13%
 
 ---
 
-# Video-analyse {#video-analytics}
+# Video Analytics {#video-analytics}
 
 Hier volgt informatie over het meten van video&#39;s op iOS met behulp van milestone-videometingen.
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Audio en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) voor meer informatie.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) voor meer informatie.
 
 Het algemene proces voor het meten van video is op alle platforms zeer vergelijkbaar. Deze inhoud biedt een basisoverzicht van de ontwikkelaarstaken met codevoorbeelden.
 
@@ -48,7 +45,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.segment**
 
-   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in het evar `1:M:0-25` Segmenten.
+   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video weergeeft, kan SiteCatalyst het volgende verzamelen in de eVar `1:M:0-25` Segmenten.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
@@ -97,7 +94,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * Type variabele: Gebeurtenis
    * Type: Teller
 
-## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
+## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Configureer een `ADBMediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
@@ -124,7 +121,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
 Om videoplayback te meten, moeten `mediaPlay`, `mediaStop`, en `mediaClose` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `mediaStop`. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
@@ -224,7 +221,7 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Mediametingklasse en methodereferentie {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Mediummeetklasse en methodeverwijzing {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings &#x200B; WithName: &#x200B; length: &#x200B; playerName: &#x200B; playerID:**
 

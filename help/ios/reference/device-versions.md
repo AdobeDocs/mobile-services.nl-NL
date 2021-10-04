@@ -1,17 +1,14 @@
 ---
 description: De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten wordt verzonden.
-seo-description: De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten wordt verzonden.
-seo-title: iOS-apparaatversies
 solution: Experience Cloud,Analytics
 title: iOS-apparaatversies
 topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 18%
+source-wordcount: '343'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +28,7 @@ Ga voor meer informatie over iOS-apparaten naar sites zoals [De iPhone Wiki](htt
 | 3G | iPhone1,2 |
 | 3GS | iPhone2,1 |
 | 4 (GSM) (geleverd met firmware 4.0) | iPhone3,1 |
-| 4 (GSM) (geleverd met firmware 6.0) | iPhone3,3 |
+| 4 (GSM) (geleverd met firmware 6.0) | iPhone3,2 |
 | 4 (CDMA) | iPhone3,3 |
 | 4S | iPhone4,1 |
 | 5 (GSM) | iPhone5,1 |

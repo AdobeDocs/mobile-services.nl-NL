@@ -1,21 +1,18 @@
 ---
 description: Met de iOS SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Apple iPhone- en iPad-toepassingen meten, gerichte inhoud binnen uw apps leveren en gegevens voor het publiek verzamelen en benutten via de Audience Manager.
-seo-description: Met de iOS SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Apple iPhone- en iPad-toepassingen meten, gerichte inhoud binnen uw apps leveren en gegevens voor het publiek verzamelen en benutten via de Audience Manager.
-seo-title: iOS SDK 4.x voor Experience Cloud-oplossingen
 solution: Experience Cloud,Analytics
 title: iOS SDK 4.x voor Experience Cloud-oplossingen
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
-# iOS SDK 4.x voor Experience Cloud Solutions{#ios-sdk-x-for-experience-cloud-solutions}
+# iOS SDK 4.x voor Experience Cloud-oplossingen{#ios-sdk-x-for-experience-cloud-solutions}
 
 Met de iOS SDK 4.x voor Experience Cloud Solutions kunt u systeemeigen Apple iPhone- en iPad-toepassingen meten, gerichte inhoud binnen uw apps leveren en gegevens voor het publiek verzamelen en benutten via de Audience Manager.
 
@@ -61,7 +58,7 @@ Enkele informatie die u moet onthouden:
 
 * Als u een upgrade uitvoert vanaf een vorige versie (2.x of 3.x), raadpleegt u de [4.x-migratiehandleiding](/help/ios/getting-started/migration-v3.md).
 
-## Adobe mobiele gebruikersdocumentatie {#section_7583FD5FDED143619048E9744A3F2D21}
+## Adobe Mobile-gebruikersdocumentatie {#section_7583FD5FDED143619048E9744A3F2D21}
 
 Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Experience Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit van de Adobe Analytics-, Adobe Audience Manager- en Adobe Target-oplossingen en Adobe Experience Platform Identity Service.
 

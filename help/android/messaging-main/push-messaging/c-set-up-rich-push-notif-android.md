@@ -1,17 +1,14 @@
 ---
 description: U kunt afbeeldingsbestanden koppelen aan uw Android-meldingen. Door visuele componenten toe te voegen kan de betrokkenheid van de gebruiker bij pushberichten aanzienlijk toenemen.
-seo-description: U kunt afbeeldingsbestanden koppelen aan uw Android-meldingen. Door visuele componenten toe te voegen kan de betrokkenheid van de gebruiker bij pushberichten aanzienlijk toenemen.
-seo-title: Rich Push-berichten ontvangen
 title: Rich Push-berichten ontvangen
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
-source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+exl-id: 5776411c-aa0e-4e67-83aa-e78f5d1ed4f7
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # Rich push-berichten ontvangen {#receive-rich-push-notifications}
 
@@ -19,7 +16,7 @@ U kunt afbeeldingsbestanden koppelen aan uw Android-meldingen. Door visuele comp
 
 ## Het binnenkomende uitgebreide pushbericht (FCM) verwerken {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
-Als de app op de voorgrond staat, wordt het pushbericht verwerkt door de app die de `FirebaseMessagingService` klasse uitbreidt en wordt deze als volgt in het manifestbestand gedeclareerd:
+Als de app op de voorgrond staat, wordt het pushbericht afgehandeld door de toepassing die de klasse `FirebaseMessagingService` uitbreidt en wordt deze als volgt gedeclareerd in het manifestbestand:
 
 ```java
 <service
@@ -33,9 +30,9 @@ Als de app op de voorgrond staat, wordt het pushbericht verwerkt door de app die
 
 >[!IMPORTANT]
 >
->De klasse die de `onMessageReceived()` implementatie bevat behandelt de gegevens die worden ontvangen.
+>De klasse die `onMessageReceived()` implementatie bevat behandelt de gegevens die worden ontvangen.
 
-Als het pushbericht een Media-URL bevat, is de URL beschikbaar in de `RemoteMessage` parameter die aan de `onMessageReceived()` functie wordt doorgegeven. De te gebruiken sleutel is `attachment-url` zoals aangetoond in het volgende codevoorbeeld:
+Als het pushbericht een Media-URL bevat, is de URL beschikbaar in de parameter `RemoteMessage` die wordt doorgegeven aan de functie `onMessageReceived()`. De te gebruiken sleutel is `attachment-url` zoals aangetoond in het volgende codevoorbeeld:
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -93,7 +90,7 @@ private void sendNotification(RemoteMessage message) {
 
 >[!IMPORTANT]
 >
->Wanneer u deze optie instelt, worden grote afbeeldingen mogelijk niet weergegeven. `NotificationCompat.BigPictureStyle` Stel de native optie in om ervoor te zorgen dat grote afbeeldingen altijd worden weergegeven `Notification.BigPictureStyle`.
+>Wanneer u `NotificationCompat.BigPictureStyle` plaatst, zouden de grote beelden niet kunnen worden getoond. Stel de native `Notification.BigPictureStyle` in om ervoor te zorgen dat grote afbeeldingen altijd worden weergegeven.
 
 ## Voorbeeld van uitgebreide pushmelding {#section_6819316BEDDE45108413B541CA2BB2DC}
 
@@ -101,4 +98,4 @@ Hier volgt een voorbeeld van een uitgebreide pushmelding met een afbeelding:
 
 ![](assets/rich-push-notification_example.png)
 
-Zie [Inschakelen met RTF-berichten](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html)voor meer informatie over uitgebreide pushmeldingen met Android.
+Zie [Inschakelen met RTF-berichten](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html) voor meer informatie over uitgebreide pushberichten met Android.

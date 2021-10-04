@@ -1,17 +1,14 @@
 ---
 description: Hier volgt een lijst met methoden die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Hier volgt een lijst met methoden die worden geleverd door de Android-bibliotheek.
-seo-title: Configuratiemethoden
 solution: Experience Cloud,Analytics
 title: Configuratiemethoden
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 22%
+source-wordcount: '974'
+ht-degree: 23%
 
 ---
 
@@ -36,7 +33,7 @@ Hier volgt het codevoorbeeld voor deze methode:
     }
    ```
 
-## SDK-instellingen (configuratieklasse) {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK-instellingen (klasse Config) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 

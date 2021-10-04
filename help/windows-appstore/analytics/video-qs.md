@@ -1,25 +1,22 @@
 ---
 description: Informatie die u helpt met Video Analytics.
-seo-description: Informatie die u helpt met Video Analytics.
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '887'
 ht-degree: 15%
 
 ---
 
-# Video-analyse {#video-analytics}
+# Video Analytics {#video-analytics}
 
 Informatie die u helpt met Video Analytics.
 
-Videometing wordt gedetailleerd beschreven in de handleiding [Audio en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html/). Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
+Videometing wordt gedetailleerd beschreven in de handleiding [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html). Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
 In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
 
@@ -35,7 +32,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.name**
 
-   (Optioneel) Bevat informatie over het plakken van video. Het plakken moet voor deze variabele door ClientCare worden toegelaten.
+   (Optioneel) Bevat informatie over het plakken van video. Voor deze variabele moet het plakken door de klantenservice worden ingeschakeld.
 
    Type gebeurtenis: Custom Insight (s.prop)
 
@@ -92,8 +89,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
    * Type variabele: Gebeurtenis
    * Type: Teller
 
-
-## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
+## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
@@ -101,7 +97,7 @@ Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken 
 var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
 Om videoplayback te meten, moeten `Play`, `Stop`, en `Close` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `Stop`. `Play` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
@@ -130,7 +126,7 @@ property double parentPodPosition;
 property bool isMediaAd;
 ```
 
-## Mediametingklasse en methodereferentie {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Mediummeetklasse en methodeverwijzing {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **SettingsWith (winJS: settingsWith)**
 

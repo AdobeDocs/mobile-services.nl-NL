@@ -1,17 +1,14 @@
 ---
 description: Vanaf WatchOS 2 worden de WatchKit Extensions uitgevoerd op een Apple Watch-apparaat. Toepassingen die in deze omgeving worden uitgevoerd, vereisen het WatchConnectivity-framework om gegevens te delen met de bijbehorende iOS-app.
-seo-description: Vanaf WatchOS 2 worden de WatchKit Extensions uitgevoerd op een Apple Watch-apparaat. Toepassingen die in deze omgeving worden uitgevoerd, vereisen het WatchConnectivity-framework om gegevens te delen met de bijbehorende iOS-app.
-seo-title: Apple Watch-implementatie met WatchOS 2
 solution: Experience Cloud,Analytics
 title: Apple Watch-implementatie met WatchOS 2
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 1%
 
 ---
 
@@ -45,10 +42,9 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 >
 
 
-
 Zie [De architectuur van de app controleren](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1) voor meer informatie over het ontwikkelen van WatchKit-apps.
 
-## De bevattende app {#section_0A2A3995575B4E2ABD12E426BA06AEFF} configureren
+## De bevattende app configureren {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 Voer de volgende stappen uit in uw Xcode-project:
 
@@ -70,7 +66,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 1. Importeer `AdobeMobileLibrary` in het implementatiebestand van de gedelegeerde klasse voor de app.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Voordat u een oproep doet naar de `ADBMobile`-bibliotheek, moet u `WCSession` in `application:didFinishLaunchingWithOptions:` van uw gedelegeerde app configureren.
@@ -103,7 +99,7 @@ Voer de volgende stappen uit in uw Xcode-project:
    } 
    ```
 
-## De WatchKit-extensie {#section_5ADE31741E514330A381F2E3CFD4A814} configureren
+## De extensie WatchKit configureren {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Zorg ervoor dat het `ADBMobileConfig.json`-bestand lid is van het doel van de extensie WatchKit.
 1. Vouw op het tabblad **[!UICONTROL Build Phases]** van het doel van de extensie WatchKit de sectie **[!UICONTROL Link Binary with Libraries]** uit en voeg de volgende bibliotheken toe:
@@ -121,7 +117,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 1. In het implementatiedossier van uw klasse van de uitbreidingsafgevaardigde, voer `AdobeMobileLibrary` in.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. In `applicationDidFinishLaunching` van uw uitbreidingsafgevaardigde, vorm uw `WCSession` alvorens om het even welke vraag aan `ADBMobile` bibliotheek te maken.

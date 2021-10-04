@@ -1,28 +1,25 @@
 ---
 description: Hier volgt informatie over het meten van video's op Android met de video-meetoplossing.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Hier volgt informatie over het meten van video's op Android met de video-meetoplossing.
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 13%
+source-wordcount: '866'
+ht-degree: 12%
 
 ---
 
-# Video-analyse {#video-analytics}
+# Video Analytics {#video-analytics}
 
 Hier volgt informatie over het meten van video&#39;s op Android met de video-meetoplossing.
 
 >[!TIP]
 >
->Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Adobe en video meten in Adobe Analytics](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) voor meer informatie over videomeetoplossing.
+>Tijdens het afspelen van video worden vaak &#39;hartslagaanroepen&#39; naar deze service verzonden om de tijd te meten die wordt afgespeeld. Deze hartslagvraag wordt verzonden om de 10 seconden, wat in korrelige videobetrokkenheidsmetriek en nauwkeurigere video neerslagrapporten resulteert. Zie [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) voor meer informatie over Adobe Video-meetoplossing.
 
 Het algemene proces voor het meten van video is op alle platforms vergelijkbaar. Deze inhoud biedt een overzicht van de ontwikkelaarstaken met codevoorbeelden. In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. De regels van de verwerking worden gebruikt om de contextgegevens aan een variabele van de Analyse in kaart te brengen.
 
@@ -94,7 +91,7 @@ Het algemene proces voor het meten van video is op alle platforms vergelijkbaar.
       Standaard wordt de complete-gebeurtenis 1 seconde voor het einde van de video gemeten. Tijdens de implementatie kunt u opgeven hoeveel seconden vanaf het einde van de video u een weergave als voltooid wilt beschouwen. Voor live video en andere streams zonder een bepaald einde kunt u een aangepast punt opgeven om de voltooiing te meten (bijvoorbeeld na een bepaalde weergegeven tijd).
 
 
-## Media-instellingen {#section_929945D4183C428AAF3B983EFD3E2500} configureren
+## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
@@ -102,7 +99,7 @@ Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken 
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Gebeurtenissen bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
 Om het afspelen van video te meten, moeten de methoden `mediaPlay`, `mediaStop` en `mediaClose` op de juiste momenten worden aangeroepen. Roep `mediaStop` aan wanneer de speler bijvoorbeeld is gepauzeerd. `mediaPlay` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 

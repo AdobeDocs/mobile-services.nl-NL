@@ -1,22 +1,19 @@
 ---
 description: De verkopers kunnen verbindingsbestemmingen, zoals Web, diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 keywords: mobiel
-seo-description: De verkopers kunnen verbindingsbestemmingen, zoals Web, diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
-seo-title: Doelen
 solution: Experience Cloud,Analytics
 title: Doelen
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 2%
+source-wordcount: '164'
+ht-degree: 1%
 
 ---
 
-# Doelen {#destinations}
+# Doelen{#destinations}
 
 De verkopers kunnen verbindingsbestemmingen, zoals Web, Diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 

@@ -1,21 +1,18 @@
 ---
 description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
-seo-description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
-seo-title: Bezoeker die tussen een app en een mobiel web volgt
 solution: Experience Cloud,Analytics
 title: Bezoeker die tussen een app en een mobiel web volgt
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# Bezoekerspatiëring tussen een toepassing en een mobiel web {#visitor-tracking-between-an-app-and-mobile-web}
+# Bezoekerspatiëring tussen een app en een mobiel web  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze tussen het systeemeigen en mobiele web bewegen.
 
@@ -33,7 +30,7 @@ Voor mobiele webimplementaties worden doorgaans dezelfde standaard Analytics `s_
 
 U kunt als volgt dezelfde bezoeker-id gebruiken in de app en het mobiele web en de id van de bezoeker van de app doorgeven aan het mobiele web in de URL:
 
-## Controleren van bezoekers implementeren tussen een app en een mobiel web {#section_EDC91D6C67AD43999227707C2769C65D}
+## Controleren van bezoekers tussen een app en mobiele websites implementeren {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -41,7 +38,7 @@ U kunt als volgt dezelfde bezoeker-id gebruiken in de app en het mobiele web en 
 1. Als u bezoekersinformatie wilt toevoegen aan de URL waarmee de webweergave wordt geopend, roept u `visitorAppendToURL`:
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

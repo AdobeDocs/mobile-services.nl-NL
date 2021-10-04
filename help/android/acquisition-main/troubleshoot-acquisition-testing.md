@@ -1,16 +1,13 @@
 ---
 description: Dit onderwerp verstrekt informatie over hoe te om kwesties problemen op te lossen u tijdens het testen van de Opname zou kunnen worden geconfronteerd.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Dit onderwerp verstrekt informatie over hoe te om kwesties problemen op te lossen u tijdens het testen van de Opname zou kunnen worden geconfronteerd.
-seo-title: Problemen met ophalen oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met ophalen oplossen
 topic-fix: Developer and implementation
 exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -25,7 +22,7 @@ Dit onderwerp verstrekt informatie over hoe te om kwesties problemen op te losse
 
 * Zorg ervoor dat `Config.setContext(this.getApplicationContext())` van uw hoofdactiviteit wordt geroepen.
 
-   Zie [Configuratiemethoden](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html) voor meer informatie.
+   Zie [Configuratiemethoden](../configuration/methods.md) voor meer informatie.
 
 * Controleer of de vereiste machtigingen voor de mobiele SDK aanwezig zijn in het `AndroidManifest.xml`-bestand:
 
@@ -41,7 +38,7 @@ Dit onderwerp verstrekt informatie over hoe te om kwesties problemen op te losse
 
    Voor handmatige tests raden we u aan de `referrerTimeout` te verhogen naar 10-15 seconden, zodat u voldoende tijd hebt om de informatie van de referentie te verzenden voordat de hit bij de installatie wordt verwerkt.
 
-* Voer alle stappen in [Het Testen van de Aankoop van de Verbinding van de Marketing](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) in en zorg ervoor dat u `adb shell` bevel eerst en dan het volgende uitvoert:
+* Voer alle stappen in [Het Testen van de Aankoop van de Verbinding van de Marketing](t-testing-marketing-link-acquisition.md) in en zorg ervoor dat u `adb shell` bevel eerst en dan het volgende uitvoert:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"

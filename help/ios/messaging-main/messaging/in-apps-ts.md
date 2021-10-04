@@ -1,22 +1,19 @@
 ---
 description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 keywords: mobiel
-seo-description: Deze informatie helpt u in-app overseinen problemen op te lossen.
-seo-title: Problemen met In-app-berichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met In-app-berichten oplossen
 topic-fix: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 exl-id: ce009289-9d22-4d76-9997-31fc864e9d4d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
-# Probleemoplossing in app messaging{#troubleshooting-in-app-messaging}
+# Problemen met in-app messaging oplossen{#troubleshooting-in-app-messaging}
 
 Deze informatie helpt u in-app overseinen problemen op te lossen.
 

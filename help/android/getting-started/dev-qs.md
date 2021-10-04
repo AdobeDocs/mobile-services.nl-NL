@@ -1,17 +1,14 @@
 ---
 description: Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers, enzovoort.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers, enzovoort.
-seo-title: Core-implementatie en levenscyclus
 solution: Experience Cloud,Analytics
 title: Core-implementatie en levenscyclus
 topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -20,7 +17,7 @@ ht-degree: 2%
 
 Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers, enzovoort.
 
-## SDK {#section_99FE1A17A36D4A2C943939023CF6265C} downloaden
+## De SDK downloaden {#section_99FE1A17A36D4A2C943939023CF6265C}
 
 >[!IMPORTANT]
 >
@@ -40,7 +37,7 @@ Met deze informatie kunt u de Android-bibliotheek implementeren en levenscyclusm
    >
    >Als u de SDK buiten de gebruikersinterface van de mobiele services van Adobe downloadt, moet het `ADBMobileConfig.json`-bestand handmatig worden geconfigureerd. Als u aan Analytics en Mobiele SDK nieuw bent, en u een reeks van het ontwikkelingsrapport wilt opstelling en een pre-bevolkte versie van het configuratiedossier downloaden, zie [Voor u ](/help/android/getting-started/requirements.md) begint.
 
-## Voeg SDK en config dossier aan uw IDEA of Eclipse project {#section_B89510FBB4C646AEA73A185B966E54D3} toe IntelliJ
+## Voeg SDK en config dossier aan uw IDEA of project van de Clipse IntelliJ toe {#section_B89510FBB4C646AEA73A185B966E54D3}
 
 **IntelliJ IDEA-project**
 
@@ -68,7 +65,7 @@ Om SDK en config dossier aan uw project toe te voegen:
 1. Klik nogmaals met de rechtermuisknop op het project en selecteer **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
 1. Controleer op het tabblad **[!UICONTROL Order and Export]** of **`adobeMobileLibrary.jar`** is geselecteerd.
 
-## Toepassingsmachtigingen {#section_2EAF73ABF6424647B219A63B33B02CD5} toevoegen
+## Toepassingsmachtigingen toevoegen {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
 De bibliotheek AppMeturement vereist de volgende toestemmingen om gegevens te verzenden en offline het volgen vraag op te nemen:
 
@@ -149,7 +146,7 @@ De extra waarden van contextgegevens die met `collectLifecycleData` worden verzo
 
 Andere levenscyclusmetriek worden automatisch verzameld. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
 
-## Volgende {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
+## Volgende handelingen {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
 
 Voer de volgende taken uit:
 

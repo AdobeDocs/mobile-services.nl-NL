@@ -1,22 +1,19 @@
 ---
 description: Hier is de referentieinformatie voor de standaard mobiele metriek en afmetingen.
 keywords: mobiel
-seo-description: Hier is de referentieinformatie voor de standaard mobiele metriek en afmetingen.
-seo-title: Referentie voor mobiele Dimension
 solution: Experience Cloud,Analytics
 title: Referentie voor mobiele Dimension
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
 
-# Referentie voor mobiele metriek en dimensies {#mobile-metrics-and-dimensions-reference}
+# Verwijzing naar mobiele meeteenheden en afmetingen {#mobile-metrics-and-dimensions-reference}
 
 Deze informatie helpt u meer over de standaard mobiele metriek en afmetingen te begrijpen.
 

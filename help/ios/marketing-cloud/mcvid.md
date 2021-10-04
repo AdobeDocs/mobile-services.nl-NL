@@ -1,17 +1,14 @@
 ---
 description: De Adobe Experience Platform Identity Service biedt een universele bezoekersidentiteitskaart voor alle Experience Cloud-oplossingen. De dienst van identiteitskaart wordt vereist door Analytics voor Doel, videohartslag, en toekomstige integratie van Experience Cloud.
-seo-description: De Adobe Experience Platform Identity Service biedt een universele bezoekersidentiteitskaart voor alle Experience Cloud-oplossingen. De dienst van identiteitskaart wordt vereist door Analytics voor Doel, videohartslag, en toekomstige integratie van Experience Cloud.
-seo-title: Experience Cloud-id
 solution: Experience Cloud,Analytics
 title: Experience Cloud-id
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +18,11 @@ De Adobe Experience Platform Identity Service biedt een universele bezoekersiden
 
 >[!TIP]
 >
->U hoeft de Experience Cloud-id alleen in te vullen met de Adobe Experience Platform Identity Service. Zie [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/nl-NL/id-service/using/home.html) voor meer informatie.
+>U hoeft de Experience Cloud-id alleen in te vullen met de Adobe Experience Platform Identity Service. Raadpleeg de documentatie [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) voor meer informatie.
 
-**Vereist SDK versie 4.3 of hoger**
+## Experience Cloud-id inschakelen {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
-## Experience Cloud-id {#section_79F984271C3B4366B7B04F864F4FF8C2} inschakelen
+Voor deze stappen is SDK-versie 4.3 of hoger vereist.
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 

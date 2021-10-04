@@ -1,22 +1,19 @@
 ---
 description: U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van de week, en tijd van de dagopties vormen.
 keywords: mobiel
-seo-description: U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van de week, en tijd van de dagopties vormen.
-seo-title: Bericht in de app plannen
 solution: Experience Cloud,Analytics
 title: Bericht in de app plannen
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '166'
 ht-degree: 1%
 
 ---
 
-# Planning: in-app-bericht {#schedule-in-app-message}
+# Planning: bericht in de app {#schedule-in-app-message}
 
 U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van de week, en tijd van de dagopties vormen.
 

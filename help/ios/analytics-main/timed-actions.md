@@ -1,21 +1,18 @@
 ---
 description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd die de sessie in beslag neemt om de handeling te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
-seo-description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd die de sessie in beslag neemt om de handeling te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
-seo-title: Gedetailleerde acties
 solution: Experience Cloud,Analytics
 title: Gedetailleerde acties
 topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 exl-id: 3499766b-55f6-4861-8291-2269d56ba983
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# Gedetailleerde handelingen {#timed-actions}
+# Gedetailleerde acties {#timed-actions}
 
 Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd die de sessie in beslag neemt om de handeling te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 
@@ -30,7 +27,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 * Voeg contextgegevens toe voordat u de tijdsduur doorgeeft.
 * Druk op Annuleren en duur nog niet verzonden.
 
-## Handelingen met tijdslimiet {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1} bijhouden
+## Acties met tijdslimiet bijhouden {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -64,7 +61,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
                             logic:nil];
    ```
 
-## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de naam van de getimede actie kunt u aanvullende contextgegevens verzenden met de aanroepen van het begin en de update van de actie:
 

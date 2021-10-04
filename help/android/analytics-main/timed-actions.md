@@ -1,21 +1,18 @@
 ---
 description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
-seo-description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
-seo-title: Gedetailleerde handelingen
 solution: Experience Cloud,Analytics
 title: Gedetailleerde handelingen
 topic-fix: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 exl-id: d9851440-6e65-4d89-a6b3-81c8abd2bf06
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-# Gedetailleerde handelingen {#timed-actions}
+# Gedetailleerde acties {#timed-actions}
 
 Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd in alle sessies die nodig zijn om de actie te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
 
@@ -65,7 +62,7 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 
    Metrische gegevens voor getimede gebeurtenissen worden opgeslagen in mobiele oplossingvariabelen voor automatische rapportage.
 
-## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de naam van de getimede actie kunt u ook aanvullende contextgegevens verzenden met de aanroepen voor het starten van de actie en het bijwerken van de actie:
 

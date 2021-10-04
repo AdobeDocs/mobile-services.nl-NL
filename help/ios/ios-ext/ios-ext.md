@@ -1,21 +1,18 @@
 ---
 description: Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
-seo-description: Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
-seo-title: iOS-extensie-implementatie
 solution: Experience Cloud,Analytics
 title: iOS-extensie-implementatie
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
 
-# Implementatie van iOS-extensie {#ios-extension-implementation}
+# iOS-extensie-implementatie {#ios-extension-implementation}
 
 Met de iOS-extensie kunt u gebruiksgegevens verzamelen van uw Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets en andere iOS-extensies.
 
@@ -28,7 +25,7 @@ Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. 
 * Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
 * Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Recommendations voor het gebruik van de iOS SDK in plaats van uw omslag {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## Recommendations voor het gebruik van de iOS SDK in plaats van uw wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
@@ -52,10 +49,9 @@ Zelfs als deze drie traceringsmethoden aan uw vereisten voldoen, gebruikt u de i
 >
 
 
-
 Als u aan een toepassing WatchKit werkt, moet u een derde doel hebben. Zie [Ontwikkelen voor Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1) voor meer informatie over het ontwikkelen voor Apple Watch.
 
-## De bevattende app {#section_0BAB0842E4C04A62B5E03DFC4BA77851} configureren
+## De bevattende app configureren {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Voer de volgende stappen uit in uw Xcode-project:
 
@@ -78,7 +74,7 @@ Voer de volgende stappen uit in uw Xcode-project:
 
 1. Bevestig dat uw app zonder onverwachte fouten wordt gemaakt.
 
-## De extensie {#section_28C994B7892340AC8D1F07AF26FF3946} configureren
+## De extensie configureren {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Zorg ervoor dat het `ADBMobileConfig.json`-bestand lid is van het doel van de extensie.
 1. Vouw op het tabblad **[!UICONTROL Build Phases]** van het doel van de extensie de sectie **[!UICONTROL Link Binary with Libraries]** uit en voeg de volgende bibliotheken toe:

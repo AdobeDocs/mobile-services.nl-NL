@@ -1,17 +1,14 @@
 ---
 description: Lijst met methoden voor Audience Managers die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
-seo-description: Lijst met methoden voor Audience Managers die worden geleverd door de Windows 8.1 Universal App Store-bibliotheek.
-seo-title: Methoden van Audience Manager
 solution: Experience Cloud,Analytics
 title: Methoden van Audience Manager
 topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 26%
+source-wordcount: '264'
+ht-degree: 28%
 
 ---
 

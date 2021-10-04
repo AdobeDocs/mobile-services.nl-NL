@@ -1,16 +1,14 @@
 ---
 description: U kunt publieksopties voor pushberichten definiëren en configureren, waaronder opties voor datumbereik, Analysesegmenten en aangepaste segmenten.
 keywords: mobiel
-seo-description: U kunt publieksopties voor pushberichten definiëren en configureren, waaronder opties voor datumbereik, Analysesegmenten en aangepaste segmenten.
-seo-title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Berichten
 solution: Experience Cloud,Analytics
 title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Berichten
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -90,11 +88,10 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
    * Voor meer informatie over het oplossen van problemen duw overseinen, zie het volgende:
 
-      * [Push messaging in iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Push messaging in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Pushberichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Pushberichten in Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. Typ gegevens in de volgende velden:
+2. Typ gegevens in de volgende velden:
 
    * **[!UICONTROL During The]**
 
@@ -110,7 +107,7 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
 
    * **[!UICONTROL Analytics Segments]**
 
-      Selecteer een bestaand Adobe Analytics-segment in de vervolgkeuzelijst. Zie [Segmenten maken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) voor meer informatie.
+      Selecteer een bestaand Adobe Analytics-segment in de vervolgkeuzelijst. Zie de [Segment builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) in de documentatie van Adobe Analytics voor meer informatie.
 
    * **[!UICONTROL Custom Segments]**
 

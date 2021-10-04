@@ -1,16 +1,13 @@
 ---
 description: Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek naar versie 4.x.
-seo-description: Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek naar versie 4.x.
-seo-title: Migreren naar de 4.x iOS-bibliotheek
 solution: Experience Cloud,Analytics
 title: Migreren naar de 4.x iOS-bibliotheek
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 2%
 
 ---
@@ -41,7 +38,7 @@ De verwerkingsregels bieden de volgende voordelen:
 >
 >Waarden die u rechtstreeks toewijst aan variabelen, moeten nu worden toegevoegd aan het NSDictionary `data`.
 
-## Ongebruikte eigenschappen {#section_145222EAA20F4CC2977DD883FDDBBFC5} verwijderen
+## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
 Het nieuwe `ADBMobileConfig.json` dossier bevat toepassing-specifieke, globale montages, en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
@@ -192,7 +189,7 @@ In uw code, verwijder vraag aan de volgende methodes:
 * `forceOffline`
 * `forceOnline`
 
-## Variabele {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products` te plaatsen:
 

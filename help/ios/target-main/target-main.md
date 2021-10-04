@@ -1,21 +1,18 @@
 ---
 description: Met deze informatie kunt u gerichte inhoud leveren in iOS-toepassingen.
-seo-description: Met deze informatie kunt u gerichte inhoud leveren in iOS-toepassingen.
-seo-title: Target
 solution: Experience Cloud,Analytics
-title: Doel
+title: Target
 topic-fix: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 exl-id: 1494bf8e-a9e5-4594-a09d-903c141fdd68
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 4%
 
 ---
 
-# Target{#target}
+# Doel{#target}
 
 Met de informatie in deze sectie kunt u gerichte inhoud leveren in iOS-toepassingen.
 

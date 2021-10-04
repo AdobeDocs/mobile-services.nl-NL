@@ -1,17 +1,14 @@
 ---
 description: Experience Cloud Mobile SDK's bieden API's die geschikt zijn voor algemene gegevensbeschermingsregels (GDPR) voor controllers waarmee gebruikers lokaal opgeslagen identiteiten kunnen ophalen en statusvlaggen voor gegevensverzameling en -overdracht kunnen instellen.
-seo-description: Experience Cloud Mobile SDK's bieden API's die geschikt zijn voor algemene gegevensbeschermingsregels (GDPR) voor controllers waarmee gebruikers lokaal opgeslagen identiteiten kunnen ophalen en statusvlaggen voor gegevensverzameling en -overdracht kunnen instellen.
-seo-title: Overzicht van de privacy- en algemene gegevensbeschermingsverordening
 title: Overzicht van de privacy- en algemene gegevensbeschermingsverordening
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+exl-id: 57696f2e-87f4-4f72-bec2-80c7192576f9
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '322'
 ht-degree: 1%
 
 ---
-
 
 # Overzicht van de privacy- en algemene gegevensbeschermingsverordening {#privacy-and-general-data-protection-regulation}
 
@@ -19,7 +16,7 @@ Experience Cloud Mobile SDK&#39;s bieden API&#39;s die geschikt zijn voor algeme
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
@@ -38,12 +35,12 @@ Als gegevenscontroller kunt u SDK&#39;s van Adobe Mobile Services gebruiken voor
 
 Voor de Adobe Mobile SDK-delen van uw mobiele apps kunt u de volgende instellingen en methoden gebruiken:
 
-* Om gegevens van SDKs terug te winnen, en deze gegevens naar uw servers te verzenden, gebruik de `getAllIdentifiersAsync` methode.
+* Gebruik de methode `getAllIdentifiersAsync` om gegevens van de SDK&#39;s op te halen en deze gegevens naar uw servers te verzenden.
 
-   Zie Opgeslagen id&#39;s [ophalen voor meer informatie](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md).
+   Zie [Opgeslagen id&#39;s ophalen](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md) voor meer informatie.
 
 * Gebruik de volgende instellingen om de status van uw keuze in te stellen en u te helpen met een aanvraag voor het verwijderen van GDPR-gegevens:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Zie [Opt-status](/help/android/c-mob-privacy-gdpr-android/privacy.md)van gebruiker instellen voor meer informatie.
+   Voor meer informatie, zie [Plaatsend de Status van de Gebruiker van de Opt](/help/android/c-mob-privacy-gdpr-android/privacy.md).

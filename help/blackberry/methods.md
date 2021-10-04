@@ -1,17 +1,14 @@
 ---
 description: Klassen en methoden die worden geleverd door de BlackBerry-bibliotheek.
-seo-description: Klassen en methoden die worden geleverd door de BlackBerry-bibliotheek.
-seo-title: Adobe Mobile-klasse en methodereferentie
 title: Adobe Mobile-klasse en methodereferentie
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: ad73ec1d-d082-4237-b7cb-b8ec2f7595a3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '974'
 ht-degree: 15%
 
 ---
-
 
 # Adobe Mobile-klasse en methodereferentie {#adobe-mobile-class-and-method-reference}
 
@@ -29,7 +26,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
    * ADBMobilePrivacyStatusOptOut - hits worden genegeerd.
    * ADBMobilePrivacyStatusUnknown - Als uw rapportenreeks timestamp-toegelaten is, worden de klappen bewaard tot de privacystatus in opt-in verandert (dan worden de klappen verzonden) of opt-out (dan worden de klappen verworpen). Als uw rapportsuite niet is ingeschakeld voor tijdstempels, worden treffers genegeerd totdat de privacystatus verandert en u zich aanmeldt.
 
-      De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json` bestand.
+      De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -45,7 +42,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
 
 * **setPrivacyStatus**
 
-   Hiermee stelt u de privacystatus voor de huidige gebruiker in `status`. Stel een van de volgende waarden in:
+   Stelt de privacystatus voor de huidige gebruiker in op `status`. Stel een van de volgende waarden in:
 
    * `ADBMobilePrivacyStatusOptIn` - treffers worden onmiddellijk verzonden.
    * `ADBMobilePrivacyStatusOptOut` - treffers worden genegeerd.
@@ -65,7 +62,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
 
 * **getUserIdentifier**
 
-   Retourneert de gebruikers-id als er een aangepaste id is ingesteld. Retourneert `null` of er geen aangepaste id is ingesteld. De standaardwaarde is `null`.
+   Retourneert de gebruikers-id als er een aangepaste id is ingesteld. Retourneert `null` als er geen aangepaste id is ingesteld. De standaardwaarde is `null`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -81,7 +78,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
 
 * **setUserIdentifier**
 
-   Hiermee stelt u de gebruikers-id in op `identifier`.
+   Hiermee stelt u de gebruikersnaam in op `identifier`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -113,7 +110,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
 
 * **setDebugLogging**
 
-   Hiermee stelt u de voorkeur voor foutopsporing in op `debugLogging`.
+   Stelt de voorkeur voor foutopsporing in op `debugLogging`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -129,7 +126,7 @@ De SDK biedt momenteel ondersteuning voor Adobe Analytics en de methoden bevinde
 
 * **collectionLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusstatistieken](/help/blackberry/metrics.md)voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/blackberry/metrics.md) voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -152,7 +149,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **trackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roepen paginaweergaven met meer pagina&#39;s aan.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
 
    >[!TIP]
    >
@@ -204,11 +201,11 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 ## `ADBMobileConfig.json` configuratiebestandsverwijzing {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
+Het `ADBMobileConfig.json`-bestand moet in de map *assets* worden geplaatst.
 
 * **Rsids**
 
-   (Vereist) Een of meer rapportensuites voor het ontvangen van analysegegevens. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
+   (Vereist) Een of meer rapportensuites om analysegegevens te ontvangen. Meerdere rapportsuite-id&#39;s moeten worden gescheiden door komma&#39;s zonder tussenruimte.
 
    Hier volgt het codevoorbeeld voor deze variabele:
 
@@ -222,7 +219,7 @@ Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
 
 * **server**
 
-   (Vereist). Analyseserver. Deze variabele zou met het serverdomein, zonder een `https://` of `https://` protocolprefix moeten worden bevolkt. Het protocolvoorvoegsel wordt automatisch behandeld door de bibliotheek die op de `ssl` variabele wordt gebaseerd. Als `ssl` `true`dit het geval is, wordt een veilige verbinding gemaakt met deze server. Als `ssl` `false`dit het geval is, wordt een niet-veilige verbinding gemaakt met deze server.
+   (Vereist). Analyseserver. Deze variabele moet worden gevuld met het serverdomein, zonder het protocolvoorvoegsel `https://` of `https://`. Het protocolvoorvoegsel wordt automatisch behandeld door de bibliotheek die op `ssl` variabele wordt gebaseerd. Als `ssl` `true` is, wordt een veilige verbinding gemaakt met deze server. Als `ssl` `false` is, wordt een onveilige verbinding gemaakt met deze server.
 
 * **charset**
 
@@ -230,17 +227,17 @@ Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
 
 * **ssl**
 
-   Schakelt het verzenden van meetgegevens via SSL (HTTPS) in (`true`) of uit (`false`). De standaardwaarde is `false`.
+   Schakelt het verzenden van meetgegevens via SSL (HTTPS) in of uit (`true`). `false` De standaardwaarde is `false`.
 
 * **offlineEnabled**
 
-   Wanneer deze optie is ingeschakeld (`true`), worden treffers in de wachtrij geplaatst terwijl het apparaat offline is en later wordt verzonden wanneer het apparaat online is. Uw rapportsuite moet zijn ingeschakeld voor tijdstempels om offline tracering te kunnen gebruiken.
+   Wanneer toegelaten (`true`), vallen een rij worden gevormd terwijl het apparaat off-line is en later wordt verzonden wanneer het apparaat online is. Uw rapportsuite moet zijn ingeschakeld voor tijdstempels om offline tracering te kunnen gebruiken.
 
    >[!TIP]
    >
-   >Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` moet *uw* configuratiebezit `true`. als uw rapportreeks niet timestamp toegelaten is, `offlineEnabled` moet *uw* configuratiebezit vals zijn. Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met de [Enterprise Support](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html)als u niet zeker weet of een rapportensuite met tijdstempel is ingeschakeld.
+   >Als tijdstempels op uw rapportreeks worden toegelaten, `offlineEnabled` configuratiebezit *must* is `true`. als uw rapportreeks niet timestamp toegelaten is, moet uw `offlineEnabled` configuratiebezit *must* vals zijn. Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Neem contact op met [Enterprise Support](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) als u niet zeker weet of een rapportsuite met tijdstempel is ingeschakeld.
 
-   Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die de `s.timestamp` variabele gebruiken.
+   Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-resultaten met de variabele `s.timestamp`.
 
    De standaardwaarde is `false`.
 
@@ -265,7 +262,7 @@ Het `ADBMobileConfig.json` bestand moet in de map *assets* worden geplaatst.
 
    De standaardwaarde is `optedin`.
 
-Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json` bestand:
+Hieronder ziet u een voorbeeld van een `ADBMobileConfig.json`-bestand:
 
 ```js
 { 

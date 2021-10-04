@@ -1,17 +1,14 @@
 ---
 description: In verbruiksrapporten worden de gemiddelde sessielengte, de dagelijkse en maandelijkse betrokkenheid van gebruikers, upgrades en andere inzichten weergegeven die u helpen te begrijpen hoe en hoe vaak uw app wordt gebruikt. In retentierapporten worden de niveaus voor het bewaren van de gebruiker snel 1 dag, 7 dagen en 28 dagen na de eerste keer starten weergegeven.
 keywords: mobiel
-seo-description: In verbruiksrapporten worden de gemiddelde sessielengte, de dagelijkse en maandelijkse betrokkenheid van gebruikers, upgrades en andere inzichten weergegeven die u helpen te begrijpen hoe en hoe vaak uw app wordt gebruikt. In retentierapporten worden de niveaus voor het bewaren van de gebruiker snel 1 dag, 7 dagen en 28 dagen na de eerste keer starten weergegeven.
-seo-title: Rapporten
 solution: Experience Cloud,Analytics
 title: Rapporten
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '130'
 ht-degree: 4%
 
 ---

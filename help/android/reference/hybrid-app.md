@@ -1,21 +1,18 @@
 ---
 description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze van het ene naar het andere mobiele web gaan.
-seo-description: Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze van het ene naar het andere mobiele web gaan.
-seo-title: Bezoeker bijhouden tussen een app en een mobiel web
 solution: Experience Cloud,Analytics
 title: Bezoeker bijhouden tussen een app en een mobiel web
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# Bezoekerspatiëring tussen een toepassing en het mobiele web {#visitor-tracking-between-an-app-and-mobile-web}
+# Bezoekerspatiëring tussen een app en het mobiele web {#visitor-tracking-between-an-app-and-mobile-web}
 
 Als uw app mobiele webinhoud opent, moet u ervoor zorgen dat bezoekers niet afzonderlijk worden geïdentificeerd wanneer ze van het ene naar het andere mobiele web gaan.
 
@@ -31,7 +28,7 @@ De Android-SDK genereert een unieke bezoeker-id wanneer een toepassing wordt ge�
 
 Voor mobiele webimplementaties worden doorgaans dezelfde standaard Analytics `s_code.js` of `AppMeasurement.js` gebruikt als voor desktopsites. De JavaScript-bibliotheken beschikken over eigen methoden voor het genereren van unieke bezoeker-id&#39;s, waardoor een andere bezoeker-id wordt gegenereerd wanneer u mobiele webinhoud opent vanuit uw app.
 
-## Het volgen van bezoekers tussen een toepassing en het mobiele Web {#section_1755BCCFD42D456EB2319141030FDDFF} uitvoeren
+## Controleren van bezoekers tussen een app en het mobiele web implementeren {#section_1755BCCFD42D456EB2319141030FDDFF}
 
 Dezelfde bezoekers-id gebruiken in de app en op het mobiele web:
 
@@ -66,7 +63,7 @@ De de dienstcode van identiteitskaart op het bestemmingsdomein haalt MID uit URL
 
 Bij hits van de mobiele webinhoud controleert u of de parameter `mid` bij elke treffer aanwezig is en of deze waarde overeenkomt met de parameter `mid` die door de toepassingscode wordt verzonden.
 
-## Bezig met opsporen van problemen bij bezoekers {#section_9B641F8569E34A089C52AA28EA4C891D}
+## Problemen met het bijhouden van bezoekers oplossen {#section_9B641F8569E34A089C52AA28EA4C891D}
 
 ### Ik zie `Visitor.appendToURL` niet.
 

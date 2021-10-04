@@ -1,22 +1,19 @@
 ---
 description: Importeer of exporteer verwervingskoppelingen als u liever met de koppelingen werkt met een CSV-bestand in plaats van de gebruikersinterface van Adobe Mobile Services te gebruiken.
 keywords: mobiel
-seo-description: Importeer of exporteer verwervingskoppelingen als u liever met de koppelingen werkt met een CSV-bestand in plaats van de gebruikersinterface van Adobe Mobile Services te gebruiken.
-seo-title: Aankoopkoppelingen importeren of exporteren
 solution: Experience Cloud,Analytics
 title: Aankoopkoppelingen importeren of exporteren
 topic-fix: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
 exl-id: 9be2377e-7f46-44f7-9c5e-1c20c617276d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
-# Overnamekoppelingen importeren of exporteren{#import-or-export-acquisition-links}
+# Verwervingskoppelingen importeren of exporteren{#import-or-export-acquisition-links}
 
 Als u liever met de koppelingen werkt door een .csv-bestand te gebruiken in plaats van de gebruikersinterface van Adobe Mobile Services, kunt u verwervingskoppelingen importeren of exporteren.
 

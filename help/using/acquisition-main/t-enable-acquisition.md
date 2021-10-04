@@ -1,22 +1,19 @@
 ---
 description: Het volgen van de verwerving moet in de configuratie van SDK worden toegelaten alvorens u op de Koppelingen van de Marketing kunt volgen en rapporteren.
 keywords: mobiel
-seo-description: Het volgen van de verwerving moet in de configuratie van SDK worden toegelaten alvorens u op de Koppelingen van de Marketing kunt volgen en rapporteren.
-seo-title: Verwerving configureren
 solution: Experience Cloud,Analytics
 title: Verwerving configureren
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
 
-# Verwerving {#configure-acquisition} configureren
+# Verwerving configureren {#configure-acquisition}
 
 Het volgen van de verwerving moet in de configuratie van SDK worden toegelaten alvorens u op de Koppelingen van de Marketing kunt volgen en rapporteren.
 

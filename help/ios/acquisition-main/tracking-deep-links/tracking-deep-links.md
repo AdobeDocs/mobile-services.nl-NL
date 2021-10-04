@@ -1,18 +1,15 @@
 ---
 description: Met deze informatie kunt u diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden met de Adobe Mobile iOS SDK.
-seo-description: Met deze informatie kunt u diepe en uitgestelde diepe koppelingen in uw mobiele apps bijhouden met de Adobe Mobile iOS SDK.
-seo-title: Diepkoppelingen bijhouden
 solution: Experience Cloud,Analytics
 title: Diepkoppelingen bijhouden
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: a8b20233-d800-4318-ad4f-39229d8b3a5e
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Diepkoppelingen bijhouden{#tracking-deep-links}
 
@@ -24,10 +21,10 @@ Voor meer informatie over hoe de marketers diep het verbinden in hun toepassinge
 
 1. Voeg de SDK toe aan uw project en implementeer levenscyclusmetriek.
 
-   Zie SDK en configuratiebestand *toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md)voor meer informatie.
+   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 1. Registreer de toepassing voor het afhandelen van inter-App-communicatie of voor het ondersteunen van Universal Links.
 
-   Voor meer informatie, zie [Communicatie](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) inter-App of de Universele Verbindingen van de [Steun](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
+   Zie [Communicatie tussen toepassingen](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) of [Universele koppelingen ondersteunen](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html) voor meer informatie
 
 1. Diepe koppeling bijhouden in openURL.
 
@@ -51,7 +48,7 @@ Voor meer informatie over hoe de marketers diep het verbinden in hun toepassinge
    }
    ```
 
-De mobiele SDK van Adobe kan sleutel en waardeparen gegevens ontleden die aan om het even welke diepe of Universele Verbinding worden toegevoegd, op voorwaarde dat de verbinding een sleutel met een `a.deeplink.id` etiket en een overeenkomstige niet-krachteloze en gebruiker geproduceerde waarde bevat. Alle sleutel- en waardeparen gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een levenscyclushit en verzonden naar Adobe Analytics, op voorwaarde dat de koppeling de `a.deeplink.id` sleutel en waarde bevat.
+De Adobe Mobile SDK kan sleutel- en waardeparen gegevens parseren die aan een diepe of Universal Link zijn toegevoegd, op voorwaarde dat de koppeling een sleutel bevat met een `a.deeplink.id`-label en een corresponderende, niet-null en door de gebruiker gegenereerde waarde. Alle sleutel- en waardeparen gegevens die aan de koppeling worden toegevoegd, worden geparseerd, gekoppeld aan een levenscyclushit en verzonden naar Adobe Analytics, op voorwaarde dat de koppeling de sleutel en waarde `a.deeplink.id` bevat.
 
 U zou ook kunnen verkiezen om één of meerdere van de volgende gereserveerde sleutels (met user-generated waarden) aan de diepe of Universele Verbinding toe te voegen:
 
@@ -61,7 +58,7 @@ U zou ook kunnen verkiezen om één of meerdere van de volgende gereserveerde sl
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytics. Voor meer informatie over afbeelding en verwerkingsregels, zie de Regels van de [Verwerking en de Gegevens](/help/ios/getting-started/proc-rules.md)van de Context.
+Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytics. Voor meer informatie over afbeelding en verwerkingsregels, zie [Regels en Context Data](/help/ios/getting-started/proc-rules.md) verwerken.
 
 ### Uitgestelde diepe koppelingen bijhouden
 
@@ -72,7 +69,7 @@ Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytic
    }];
    ```
 
-1. Handgreep `ADBMobileDataEventDeepLink` binnen `AdobeDataCallback`.
+1. Verwerk `ADBMobileDataEventDeepLink` binnen `AdobeDataCallback`.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
@@ -104,4 +101,3 @@ Deze toetsen zijn vooraf toegewezen variabelen voor rapportage in Adobe Analytic
  */ 
 FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
 ```
-

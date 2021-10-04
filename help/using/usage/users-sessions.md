@@ -1,17 +1,14 @@
 ---
 description: In het rapport Gebruikers en sessies worden metriek voor unieke bezoekers tijdens het geselecteerde tijdkader weergegeven.
 keywords: mobiel
-seo-description: In het rapport Gebruikers en sessies worden metriek voor unieke bezoekers tijdens het geselecteerde tijdkader weergegeven.
-seo-title: Rapport Gebruikers en sessies
 solution: Experience Cloud,Analytics
 title: Rapport Gebruikers en sessies
 topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---

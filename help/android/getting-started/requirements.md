@@ -1,21 +1,18 @@
 ---
 description: 'Voordat u een rapportsuite configureert en Android-toepassingsgegevens verzamelt, moet u de volgende vereiste taken uitvoeren '
-seo-description: 'Voordat u een rapportsuite configureert en Android-toepassingsgegevens verzamelt, moet u de volgende vereiste taken uitvoeren '
-seo-title: Voordat u begint
 solution: Experience Cloud,Analytics
 title: Voordat u begint
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 3%
+source-wordcount: '692'
+ht-degree: 1%
 
 ---
 
-# Voordat u {#before-you-start} start
+# Voordat u begint {#before-you-start}
 
 Voordat u een rapportsuite configureert en gegevens van de Android-app verzamelt, moet u de volgende vereiste taken uitvoeren:
 
@@ -52,7 +49,7 @@ U kunt zich op een van de volgende manieren aanmelden bij de gebruikersinterface
 
 ### Experience Cloud
 
-Meld u aan bij [Experience Cloud](https://experiencecloud.adobe.com) met uw Adobe ID. Deze methode veronderstelt dat uw bedrijf provisioned in de Experience Cloud is, en u hebt uw rekening Analytics verbonden. Zie [Gebruikers en producten van Experience Cloud beheren](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie.
+Meld u aan bij [Experience Cloud](https://experiencecloud.adobe.com) met uw Adobe ID. Deze methode veronderstelt dat uw bedrijf provisioned in de Experience Cloud is, en u hebt uw rekening Analytics verbonden. Zie [Experience Cloud-gebruikers en -producten beheren](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) in de handleiding Experience Cloud Central Interface Components.
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Klik **[!UICONTROL Sign in with Analytics]** en ga uw het bedrijfsnaam van Analy
 
 Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te definiëren:
 
-1. Meld u aan bij de gebruikersinterface voor mobiele services door [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in een browser te typen.
+1. Meld u aan bij [Mobiele services Adobe](https://mobilemarketing.adobe.com).
 1. Klik op **[!UICONTROL Create an App]**.
 
    Als deze knop niet wordt weergegeven, klikt u op **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
@@ -83,7 +80,7 @@ Een rapportsuite maken om toepassingsgegevens te verzamelen en een app te defini
 
 1. Selecteer uw tijdzone, uw valuta, en klik **[!UICONTROL Save]**.
 
-## SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46} downloaden
+## De SDK downloaden {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 De mobiele SDK downloaden:
 
@@ -93,7 +90,7 @@ U kunt uw toepassing ook selecteren in het rechterdeelvenster.
 
    >[!IMPORTANT]
    >
-   >Als u de app in het rechterdeelvenster wilt weergeven, moet u eerst een app maken. Zie [Nieuwe app toevoegen voor informatie over het maken van een app.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Als u de app in het rechterdeelvenster wilt weergeven, moet u eerst een app maken. Zie [Nieuwe app toevoegen](/help/using/manage-apps/t-new-app.md) voor informatie over het maken van een app.
 
 1. Klik in het linkerdeelvenster van uw app op **[!UICONTROL Manage App Settings]**.
 

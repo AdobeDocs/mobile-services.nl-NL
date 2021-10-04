@@ -1,17 +1,14 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobiel
-seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
-seo-title: Problemen met pushberichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -39,9 +36,8 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
    >
    >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**:  [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**:  [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Hoe kan ik mijn Apple Push Service Certificate vernieuwen?

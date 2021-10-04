@@ -1,22 +1,19 @@
 ---
 description: Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit uw PhoneGap-project verzenden.
 keywords: fonegap
-seo-description: Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit uw PhoneGap-project verzenden.
-seo-title: PhoneGap-plug-in
 solution: Experience Cloud,Analytics
 title: PhoneGap-plug-in
 topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '283'
 ht-degree: 2%
 
 ---
 
-# PhoneGap plug-in{#phonegap-plug-in}
+# PhoneGap-plug-in{#phonegap-plug-in}
 
 Met deze insteekmodule kunt u iOS AppMeasurement-aanroepen vanuit uw PhoneGap-project verzenden.
 
@@ -42,7 +39,7 @@ Zie [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phone
    cordova plugin add adobe-mobile-services
    ```
 
-## De insteekmodule {#section_D53BA60D488C4DB8AD2BDF90439C180A} handmatig installeren
+## De plug-in handmatig installeren {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### De bibliotheek AppMeturement opnemen
 
@@ -83,7 +80,7 @@ De AppMeturement-bibliotheek vereist het volgende:
 
 1. Bevestig dat uw app zonder onverwachte fouten wordt gemaakt.
 
-## Aangepaste reeksspatiëring implementeren {#section_FD102B3CDAA4492FB04E56BF17E28663}
+## Aangepaste tracering implementeren {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
 Voeg in `html` bestanden waar u tracking wilt gebruiken het volgende toe aan de tag `<head>`:
 

@@ -1,21 +1,18 @@
 ---
 description: Definitie en voorbeelden van broncode voor de functie Postbacks.
-seo-description: Definitie en voorbeelden van broncode voor de functie Postbacks.
-seo-title: Voorbeeld van terugzending
 solution: Experience Cloud,Analytics
 title: Voorbeeld van terugzending
 topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
 exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-# Voorbeeld van uitstel {#postback-example}
+# Voorbeeld van terugzending {#postback-example}
 
 Definitie en voorbeelden van broncode voor de functie Postbacks.
 
@@ -61,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Omdat zijn staat `“MainMenu”` is, brengt deze het volgen vraag het bovengenoemde postbackbericht teweeg. De URL vervangt alle sjabloonvariabelen door waarden uit de hit. Ervan uitgaande dat de vorige sessie van de gebruiker 132 seconden lang was en dat de gebruiker zich in iOS SDK versie 4.6.0 bevindt, ziet u hier een voorbeeld van de resulterende URL:
+Omdat zijn staat `"MainMenu"` is, brengt deze het volgen vraag het bovengenoemde postbackbericht teweeg. De URL vervangt alle sjabloonvariabelen door waarden uit de hit. Ervan uitgaande dat de vorige sessie van de gebruiker 132 seconden lang was en dat de gebruiker zich in iOS SDK versie 4.6.0 bevindt, ziet u hier een voorbeeld van de resulterende URL:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`

@@ -1,17 +1,14 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobiel
-seo-description: Met deze informatie kunt u problemen met pushberichten oplossen.
-seo-title: Problemen met pushberichten oplossen
 solution: Experience Cloud,Analytics
 title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -94,13 +91,13 @@ De volgende klant heeft twee iOS-apps:
 * Toepassingsnaam: Photoshop_app_iOS
    * Bovenliggende RSID: AllAdobe Photoshop_apps
    * VRSID: Photoshop_iOS_app_SF
-   * VRSID-definitiesegment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID-definitiesegment: `a.appid contains "PhotoShop_iOS_app_SF"`
 * Toepassingsnaam: Photoshop_app_iOS
    * Bovenliggende RSID: AllAdobe Photoshop_apps
    * RSID: Photoshop_iOS_app_LA
-   * VRSID-definitiesegment: `a.os contains “iOS”`
+   * VRSID-definitiesegment: `a.os contains "iOS"`
 
-Als een Photoshop-medewerker in dit voorbeeld een push verzendt naar de *Photoshop_iOS_app_SF*-app, ontvangen alle *Photoshop_iOS_app_SF-app*-gebruikers het pushbericht zoals verwacht. Maar als de werknemer een bericht naar de *Photoshop_iOS_app_LA*-app verzendt, omdat het VRSID Definition-segment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht verzonden naar **alle** iOS-gebruikers in *AllAdobe Photoshop_apps*. Hoewel het bericht nog steeds naar gebruikers van *Photoshop_iOS_app_LA* gaat, worden in het bericht ook de push-id&#39;s voor gebruikers van *Photoshop_iOS_app_SF* gevoegd op lijst van gewenste personen omdat de *Photoshop_iOS_app_SF*-app een ander certificaat heeft. Als het segment was gedefinieerd als `a.os contains “PhotoShop_iOS_app_LA”`, zou het pushbericht alleen zijn verzonden naar *Photoshop_iOS_app_LA* gebruikers.
+Als een Photoshop-medewerker in dit voorbeeld een push verzendt naar de *Photoshop_iOS_app_SF*-app, ontvangen alle *Photoshop_iOS_app_SF-app*-gebruikers het pushbericht zoals verwacht. Maar als de werknemer een bericht naar de *Photoshop_iOS_app_LA*-app verzendt, omdat het VRSID Definition-segment onjuist is (`iOS` in plaats van `a.os contains "PhotoShop_iOS_app_LA"`), wordt het bericht verzonden naar **alle** iOS-gebruikers in *AllAdobe Photoshop_apps*. Hoewel het bericht nog steeds naar gebruikers van *Photoshop_iOS_app_LA* gaat, worden in het bericht ook de push-id&#39;s voor gebruikers van *Photoshop_iOS_app_SF* gevoegd op lijst van gewenste personen omdat de *Photoshop_iOS_app_SF*-app een ander certificaat heeft. Als het segment was gedefinieerd als `a.os contains "PhotoShop_iOS_app_LA"`, zou het pushbericht alleen zijn verzonden naar *Photoshop_iOS_app_LA* gebruikers.
 
 Als deze waarde wordt doorgegeven met het *Photoshop_IOS_app_LA*-pushcertificaat, worden de push-id&#39;s voor het *Photoshop_iOS_app_SF* geretourneerd als `invalid`.
 

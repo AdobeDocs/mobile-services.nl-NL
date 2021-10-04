@@ -1,22 +1,19 @@
 ---
 description: U kunt een app toevoegen vanuit de Apple App Store of Google Play.
 keywords: mobiel
-seo-description: U kunt een app toevoegen vanuit de Apple App Store of Google Play.
-seo-title: Een app toevoegen vanuit een App Store
 solution: Experience Cloud,Analytics
 title: Een app toevoegen vanuit een App Store
 topic-fix: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 exl-id: 874a132b-42d3-4074-8f14-22310fa60ec0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '123'
 ht-degree: 2%
 
 ---
 
-# Een app toevoegen vanuit een app-winkel {#add-an-app-from-an-app-store}
+# Een app toevoegen vanuit een App Store {#add-an-app-from-an-app-store}
 
 U kunt een app toevoegen vanuit de Apple App Store of Google Play.
 

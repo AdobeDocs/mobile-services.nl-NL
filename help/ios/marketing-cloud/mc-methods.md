@@ -1,17 +1,14 @@
 ---
 description: Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
-seo-description: Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
-seo-title: Methoden van Adobe Experience Platform Identity Service
 solution: Experience Cloud,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 21%
+source-wordcount: '439'
+ht-degree: 22%
 
 ---
 
@@ -25,7 +22,7 @@ Methoden worden vooraf bepaald volgens de oplossing en de methoden Experience Cl
 
 * **`+`(nullable NSURL  `*`)bezoekerAppendToURL:(nullable NSURL  `*`)url;**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie [Helperfunctie voor bezoeker-id toevoegen](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html) voor meer informatie.
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service voor meer informatie.
 
    >[!IMPORTANT]
    >
@@ -100,7 +97,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
       ```
 
-* **bezoekerSyncIdentifierWithType:identifier:authenticationState:**
+* **:identifier:bezoekerSyncIdentifierWithTypeauthenticationState:**
 
    Hiermee synchroniseert u het opgegeven id-type en de opgegeven waarde met de id-service. Geef een van de volgende waarden door in de `authState`:
 

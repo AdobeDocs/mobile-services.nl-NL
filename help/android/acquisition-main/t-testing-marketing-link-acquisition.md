@@ -1,22 +1,19 @@
 ---
 description: De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
 keywords: android;bibliotheek;mobile;sdk
-seo-description: De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
-seo-title: Verwerving marketingkoppeling testen
 solution: Experience Cloud,Analytics
 title: Verwerving marketingkoppeling testen
 topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '741'
 ht-degree: 1%
 
 ---
 
-# Aanschaf van marketingkoppeling testen {#testing-marketing-link-acquisition}
+# Verwerving marketinglink testen {#testing-marketing-link-acquisition}
 
 De volgende instructies helpen u een acquisitiecampagne met een Marketing Link op een Android-apparaat te roundtrip.
 
@@ -70,7 +67,7 @@ Telkens wanneer een test wordt uitgevoerd, moet de app vers zijn geïnstalleerd 
 1. Herhaal stap 3 voor een nieuwe unieke id.
 1. Controleer of de volgende instellingen in het configuratiebestand correct zijn:
 
-   | Instelling | Value |
+   | Instelling | Waarde |
    |--- |--- |
    | verwerving | De server moet `c00.adobe.com` zijn, en      *`appid`* zou `appid` in uw aanschafverbinding gelijk moeten zijn. |
    | analyse | Voor testdoeleinden stelt u de time-out van de referentie zo in dat er voldoende tijd (60 seconden of meer) is om de uitzending handmatig te verzenden. U kunt de oorspronkelijke time-outinstelling na de test herstellen. |

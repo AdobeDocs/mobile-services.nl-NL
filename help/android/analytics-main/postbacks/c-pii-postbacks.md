@@ -1,17 +1,14 @@
 ---
 description: U kunt SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
-seo-description: U kunt SDK van Adobe gebruiken om persoonlijk identificeerbare informatie (PII) te verzamelen en het naar een derdeeindpunt te verzenden.
-seo-title: PII-postbacks
 title: PII-postbacks
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+exl-id: 9f0b9d7b-e51d-477b-ae04-72ab09fbc6fd
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # PII-postbacks {#pii-postbacks}
 
@@ -27,7 +24,7 @@ Wanneer u Adobe SDK wilt gebruiken om PII te verzamelen, zou u een spoorPII vraa
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het Dossier SDK en Config aan uw IDEA IntelliJ of Project* Eclipse in de implementatie en de levenscyclus [van de](/help/android/getting-started/dev-qs.md)Kern toe.
+   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
 
 1. De bibliotheek importeren:
 
@@ -35,11 +32,10 @@ Wanneer u Adobe SDK wilt gebruiken om PII te verzamelen, zou u een spoorPII vraa
    #import "ADBMobile.h"
    ```
 
-1. Wanneer u klaar bent om PII vast te leggen, roep dan `trackPII` om een hit voor deze actie, gebeurtenis of weergave te verzenden:
+1. Wanneer u klaar bent om PII te vangen, vraag `trackPII` om een klap voor deze actie, gebeurtenis, of mening te verzenden:
 
    ```java
    Config.collectPII(new HashMap<String, Object>(){{
      put("key","value");
    }});
    ```
-

@@ -1,16 +1,13 @@
 ---
 description: U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
-seo-description: U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
-seo-title: In-app berichten
 solution: Experience Cloud,Analytics
 title: In-app berichten
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '767'
 ht-degree: 3%
 
 ---
@@ -40,7 +37,7 @@ Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience P
 
 U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen die bepalen wanneer de berichten worden getoond. Zie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md) voor meer informatie. Als u in-app berichten wilt weergeven, moet de SDK worden bijgewerkt. U kunt deze stappen zelfs voltooien als u nog geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en weergegeven zonder dat de App Store wordt bijgewerkt.
 
-## In-app berichten {#section_380DF56C4EE4432A823940E4AE4C9E91} inschakelen
+## In-app berichten inschakelen {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -95,31 +92,31 @@ U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen
    Voor berichten in de app die bij het starten dynamisch moeten worden bijgewerkt, moet het `remotes`-object aanwezig zijn en correct zijn geconfigureerd:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 
    Als dit voorwerp niet wordt gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Voor meer informatie, zie [Voor u ](/help/android/getting-started/requirements.md) begint.
 
-## In-app berichten {#section_B85CDF6929564AAEA79338B55E5CB1E8} bijhouden
+## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 De SDK&#39;s van Android Mobile volgen de volgende metingen voor uw berichten in de app:
 
@@ -146,7 +143,7 @@ Wanneer u een bericht op volledig scherm maakt, kunt u desgewenst een fallback-a
 >
 >De naam van het fallback afbeeldingselement wordt opgegeven wanneer u het bericht configureert in de services van Adobe Mobile en u moet ervoor zorgen dat de opgegeven bron beschikbaar is.
 
-## Meldingspictogrammen {#section_DDA28BDBCBB748BCBECF3AB50A177D48} configureren
+## Meldingspictogrammen configureren {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 Met de volgende methoden kunt u de kleine en grote pictogrammen configureren die in het systeemvak worden weergegeven, en het grote pictogram dat wordt weergegeven wanneer meldingen in de meldingslade worden weergegeven.
 

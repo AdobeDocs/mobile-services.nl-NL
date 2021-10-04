@@ -1,22 +1,19 @@
 ---
 description: Het rapport Overzicht App Store bevat een momentopname van de maatstaven van uw App Store, waaronder het aantal downloads, aankopen in de app, de gemiddelde waardering van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
 keywords: mobiel
-seo-description: Het rapport Overzicht App Store bevat een momentopname van de maatstaven van uw App Store, waaronder het aantal downloads, aankopen in de app, de gemiddelde waardering van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
-seo-title: Overzicht App Store-rapport
 solution: Experience Cloud,Analytics
 title: Overzicht App Store-rapport
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# Rapport Overzicht App Store{#app-store-overview-report}
+# Overzicht App Store-rapport{#app-store-overview-report}
 
 Het **[!UICONTROL App Store Overview]**-rapport geeft u een momentopname van de maatstaven van uw app-winkel, waaronder het aantal downloads, aankopen in de app, de gemiddelde score van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
 
@@ -38,7 +35,7 @@ U kunt op elke metrische waarde klikken om de bijbehorende lijn te verbergen of 
 >
 >Naast het veranderen van de de datumwaaier van het rapport door het kalenderpictogram in het hoogste recht te klikken, kunt u sommige boor-benedenrapporten aanpassen, filters en reeksen (metriek) toevoegen, plakfilters toevoegen, en het rapport in formaat downloaden PDF of CSV. Zie [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md) voor meer informatie.
 
-## Gemiddelde waardering App Store {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
+## Gemiddelde beoordeling App Store {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
 In dit rapport wordt de gemiddelde score weergegeven die gebruikers uw app hebben gegeven met de functionaliteit van de app-store.
 
@@ -48,7 +45,7 @@ U kunt overal op **[!UICONTROL App Store Average Rating]** widget klikken om een
 
 ![](assets/app_store_downloads_detail.png)
 
-## Download-inkomsten {#section_34F05998E8444544A1B507C1B852C4EE}
+## Downloadinkomsten {#section_34F05998E8444544A1B507C1B852C4EE}
 
 In dit rapport wordt de hoeveelheid inkomsten weergegeven die wordt gegenereerd door het downloaden van uw app.
 

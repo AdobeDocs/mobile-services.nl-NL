@@ -1,27 +1,24 @@
 ---
 description: Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
-seo-description: Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
-seo-title: Toepassingsacties bijhouden
 solution: Experience Cloud,Analytics
 title: Toepassingsacties bijhouden
 topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
 
-# Toepassingshandelingen bijhouden {#track-app-actions}
+# Toepassingsacties bijhouden {#track-app-actions}
 
 Acties zijn de gebeurtenissen die in uw Android-app optreden en die u wilt meten.
 
 Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. Bijvoorbeeld, zou u een `trackAction` vraag voor elk nieuw abonnement kunnen verzenden, telkens als een artikel wordt bekeken, of telkens als een niveau wordt voltooid. Handelingen worden niet automatisch bijgehouden, dus u moet `trackAction` aanroepen wanneer een gebeurtenis plaatsvindt die u wilt bijhouden en de handeling toewijzen aan een aangepaste gebeurtenis.
 
-## Handelingen {#section_380DF56C4EE4432A823940E4AE4C9E91} bijhouden
+## Handelingen bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
@@ -50,7 +47,7 @@ U kunt ook een eigenschap instellen om alle actiewaarden in te houden door een a
 
 ![](assets/map-custom-prop.png)
 
-## Extra gegevens {#section_3EBE813E54A24F6FB669B2478B5661F9} verzenden
+## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Naast de naam van de handeling kunt u aanvullende contextgegevens verzenden bij elke aanroep van een trackactie:
 
@@ -64,7 +61,7 @@ De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele dienste
 
 ![](assets/map-variable-context-action.png)
 
-## Melding van handelingen {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Actierapport {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 | Interface | Rapport |
 |--- |--- |
