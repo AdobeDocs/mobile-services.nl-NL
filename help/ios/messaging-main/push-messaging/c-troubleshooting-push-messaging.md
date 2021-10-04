@@ -6,9 +6,9 @@ title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,8 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    >
    >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
    >
-   >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**:  [Levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options)
+   >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**:  [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Hoe kan ik mijn Apple Push Service Certificate vernieuwen?

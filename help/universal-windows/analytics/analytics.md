@@ -5,9 +5,9 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -134,9 +134,7 @@ Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan
 
 ## Verwerkingsregels {#section_66EE762EEA5E4728864166201617DEBF}
 
-De verwerkingsregels worden gebruikt om de gegevens te kopiëren u in de variabelen van contextgegevens naar gebeurtenissen, steunen, en andere variabelen voor het melden verzendt.
-
-[Opleiding](https://tv.adobe.com/embed/1181/16506/) @ top 2013 over verwerkingsregels
+De verwerkingsregels worden gebruikt om de gegevens te kopiëren u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 
 [Help bij verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 

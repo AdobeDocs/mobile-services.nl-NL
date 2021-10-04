@@ -6,9 +6,9 @@ title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,11 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 
    >[!TIP]
    >
-   >Dit aantal is het aantal geslaagde verzendingen naar de pushservice(s). De pushservices garanderen niet dat er een bericht wordt verzonden.
+   >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
+   >
+   >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**:  [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Voor meer informatie over de betrouwbaarheid van de dienst, zie:
-
-   * [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [De levensduur van een bericht](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Waarom is mijn Android GCM API-sleutel ongeldig?
 
@@ -52,8 +51,6 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
 * **De geldigheid van de API-sleutel bepalen**
 
    Voer de volgende opdracht uit om de geldigheid van de API-sleutel te bepalen:
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Uw APNS-certificaat is mogelijk ongeldig vanwege de volgende redenen:
 * U gebruikt `.p8` dossier in plaats van een `.p12` dossier.
 
 ## Fouten met pushberichten oplossen
-
-**Een voorbeeld**
 
 In het volgende voorbeeld ziet u hoe u een pushfout kunt verhelpen bij het gebruik van een VRS.
 

@@ -5,9 +5,9 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### C# in App.xaml.cs
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### C/CX in App.xaml.cpp
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan
 
 De verwerkingsregels worden gebruikt om de gegevens te kopiëren u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 
-[Opleiding](https://tv.adobe.com/embed/1181/16506/) @ top 2013 over verwerkingsregels
-
 [Overzicht van verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-U wordt aangeraden de variabelen van de contextgegevens te groeperen met &quot;naamruimten&quot;, omdat u hiermee de logische volgorde kunt behouden. Als u bijvoorbeeld informatie over een product wilt verzamelen, kunt u de volgende variabelen definiëren:
+Adobe raadt aan de variabelen van uw contextgegevens te groeperen met behulp van &#39;namespaces&#39;, omdat u zo de logische volgorde kunt behouden. Als u bijvoorbeeld informatie over een product wilt verzamelen, kunt u de volgende variabelen definiëren:
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Contextgegevensvariabelen worden alfabetisch gesorteerd in de interface met verwerkingsregels, zodat u met naamruimten snel variabelen kunt zien die zich in dezelfde naamruimte bevinden.
@@ -153,25 +151,25 @@ Contextgegevensvariabelen worden alfabetisch gesorteerd in de interface met verw
 We hebben ook gehoord dat sommigen van u contextgegevenssleutels benoemen met behulp van het eVar- of prop-nummer:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de eenmalige toewijzing in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en de toekomstige codeupdates kunnen moeilijker zijn. In plaats daarvan raden we u ten zeerste aan beschrijvende namen te gebruiken voor sleutels en waarden:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Stel contextvariabelen die tegengebeurtenissen definiëren in op de waarde &quot;1&quot;:
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Contextgegevensvariabelen die incrementele gebeurtenissen definiëren, kunnen de waarde hebben om te verhogen:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]
