@@ -3,9 +3,9 @@ description: In Adobe Analytics kunt u rollen beheren op de startpagina van Admi
 title: Rollen en machtigingen
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '590'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ De volgende rollen beheren toestemmingen in Mobiele Diensten UI:
 
 ### Analysebeheer
 
-Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Experience Cloud gebruikers en producten ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) in de gids van de Componenten van de Interface van Experience Cloud Central.
+Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Gebruikers en producten van Experience Cloud beheren](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) in de handleiding Experience Cloud Central Interface Components.
 
 >[!TIP]
 >
@@ -28,8 +28,8 @@ Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één
 
 Raadpleeg de volgende inhoud in de documentatie van Adobe Analytics voor meer informatie over deze rol:
 
-* [Overzicht van User Management](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [Wijzigingen in gebruikers- en groepstoestemmmingen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Overzicht van User Management](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Wijzigingen in gebruikers- en groepstoestemmmingen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobiele toepassingsbeheerder
 
@@ -37,7 +37,7 @@ Deze rol is Admin voor de Mobiele UI van de Diensten.
 
 >[!IMPORTANT]
 >
->Voor sommige functies, zoals pushberichten, moet Analysebeheer het selectievakje **[!UICONTROL Segment Creation]** in Gebruikersbeheer inschakelen.
+>Voor bepaalde functies, zoals pushberichten, moet de Analysebeheerder de optie **[!UICONTROL Segment Creation]** in Gebruikersbeheer.
 
 ## Toegang beheren {#section_E6939C2695AA4A0DBF432D50B2670920}
 
@@ -79,7 +79,7 @@ Hier zijn de rollen in Mobiele Diensten UI, met hun relevante toestemmingen:
 
    * Opties voor Mobile SDK van app configureren
    * UI-instellingen van app configureren
-   * Gekoppelde App Store-apps configureren
+   * Gekoppelde App Store-toepassingen configureren
    * Opties voor Universal Link van app configureren
    * Push Services-certificaten en API-sleutels configureren
    * Maken/bijwerken/activeren/deactiveren/Dupliceren/archiveren/Postbacks verwijderen
@@ -93,8 +93,8 @@ Hier zijn de rollen in Mobiele Diensten UI, met hun relevante toestemmingen:
 
 Raadpleeg de volgende inhoud in de documentatie van Adobe Analytics voor meer informatie over groepen en gebruikers:
 
-* [Instellingen gebruikersgroep (verouderd)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [Een gebruiker aan een groep toevoegen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Instellingen gebruikersgroep (verouderd)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Een gebruiker aan een groep toevoegen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Gebruiker van mobiele services
 
