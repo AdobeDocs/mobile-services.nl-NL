@@ -1,123 +1,118 @@
 ---
-description: In Adobe Analytics kunt u rollen beheren op de startpagina van Admin Tools.
-title: Rollen en machtigingen
+description: In Adobe Analytics, you can manage roles on the Admin Tools Home page.
+title: Roles and Permissions
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
+source-git-commit: 7b26c852dd9dba67a8b5e3228c1fecadfb465dca
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
-# Rollen en machtigingen{#roles-and-permissions}
+# Roles and permissions{#roles-and-permissions}
 
-In Adobe Analytics kunt u rollen beheren op de startpagina van Admin Tools.
+In Adobe Analytics, you can manage roles on the Admin Tools Home page.
 
 ## Overzicht {#section_91B8192891E14E5285718C8118912500}
 
-De volgende rollen beheren toestemmingen in Mobiele Diensten UI:
+The following roles manage permissions in the Mobile Services UI:
 
-### Analysebeheer
+### Analytics Admin
 
-Een Analysebeheerder beheert gebruikersgroepen en wijst toestemmingen toe, één waarvan Mobiele App Admin is. De Experience Cloud Admin verbindt uw Adobe ID met uw rekening van Adobe Analytics, die u toestaat om aan te melden bij de Mobiele UI van de Diensten door uw Adobe ID te gebruiken. Voor meer informatie over de Beheerder van de Experience Cloud, zie [Gebruikers en producten van Experience Cloud beheren](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) in de handleiding Experience Cloud Central Interface Components.
+An Analytics Admin manages user groups and assigns permissions, one of which is the Mobile App Admin. The Experience Cloud Admin links your Adobe ID to your Adobe Analytics account, which allows you to log in to the Mobile Services UI by using your Adobe ID. [](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)
 
 >[!TIP]
 >
->Een bestaande analytische beheerder kan de rol Analytics Admin aan om het even welke gebruiker toewijzen.
+>An existing Analytics Admin has the ability to assign the Analytics Admin role to any user.
 
-Raadpleeg de volgende inhoud in de documentatie van Adobe Analytics voor meer informatie over deze rol:
+### Mobile App Admin
 
-* [Overzicht van User Management](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
-* [Wijzigingen in gebruikers- en groepstoestemmmingen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
-
-### Mobiele toepassingsbeheerder
-
-Deze rol is Admin voor de Mobiele UI van de Diensten.
+This role is the Admin for the Mobile Services UI.
 
 >[!IMPORTANT]
 >
->Voor bepaalde functies, zoals pushberichten, moet de Analysebeheerder de optie **[!UICONTROL Segment Creation]** in Gebruikersbeheer.
+>**[!UICONTROL Segment Creation]**
 
-## Toegang beheren {#section_E6939C2695AA4A0DBF432D50B2670920}
+## Managing access {#section_E6939C2695AA4A0DBF432D50B2670920}
 
-Hier is wat extra informatie over de toegang tot van opties in de Mobiele UI van de Diensten:
+Here is some additional information about accessing options in the Mobile Services UI:
 
-### Apps en rapportsuites
+### Apps and report suites
 
-Alle mobiele service-apps zijn gekoppeld aan rapportageopets. Als gebruikers geen toegang hebben tot een rapportsuite, hebben ze geen toegang tot de bijbehorende app van die rapportsuite.
+All Mobile Service apps are tied to report suites. If users do not have access to a report suite, they will not have access to that report suite&#39;s associated app.
 
-### Mobiele services en analysefuncties
+### Mobile Services and Analytics features
 
-Als uw bedrijf geen contract van Analytics heeft om tot een eigenschap in UI, zoals het Push Overseinen toegang te hebben, zal geen gebruiker in uw bedrijf toegang tot die eigenschap, ongeacht toestemmingsniveau hebben.
+If your company does not have an Analytics contract to access a feature in the UI, such as Push Messaging, no user in your company will have access to that feature, regardless of permission level.
 
-## Rollen en machtigingen {#section_20AA029D5B8C413C8659777E79B11620}
+## Roles and permissions {#section_20AA029D5B8C413C8659777E79B11620}
 
-Hier zijn de rollen in Mobiele Diensten UI, met hun relevante toestemmingen:
+Here are the roles in the Mobile Services UI, with their relevant permissions:
 
-### Machtigingen Analysebeheer
+### Analytics Admin permissions
 
-* Alle gebruikers- en mobiele toepassingsbeheermachtigingen
-* App maken met nieuwe rapportsuite
-* App van mobiele services verwijderen
+* All User and Mobile App Admin Permissions
+* Create App with new report suite
+* Delete App from Mobile Services
 
    >[!IMPORTANT]
    >
-   >Hoewel de app is verwijderd uit de gebruikersinterface voor mobiele services, bestaat de rapportsuite nog steeds in Analytics.
+   >Although the app has been deleted in the Mobile Services UI, the report suite still exists in Analytics.
 
-* Toepassingsinstellingen beheren
+* Manage App Settings
 
-   * Levenscyclusrapportage inschakelen
-   * Locatierapportage inschakelen
-   * Variabelen en statistieken maken/bijwerken/verwijderen
+   * Enable Lifecycle Reporting
+   * Enable Location Reporting
+   * Create/Update/Delete Variables and Metrics
 
-### Machtigingen voor beheer van mobiele apps
+### Mobile App Admin permissions
 
-* Alle gebruikersmachtigingen
-* App maken met bestaande rapportsuite
-* Toepassingsinstellingen beheren
+* All User Permissions
+* Create App with existing report suite
+* Manage App Settings
 
-   * Opties voor Mobile SDK van app configureren
-   * UI-instellingen van app configureren
-   * Gekoppelde App Store-toepassingen configureren
-   * Opties voor Universal Link van app configureren
-   * Push Services-certificaten en API-sleutels configureren
-   * Maken/bijwerken/activeren/deactiveren/Dupliceren/archiveren/Postbacks verwijderen
-   * Koppelingsbestemmingen maken/bijwerken/archiveren/verwijderen
+   * Configure App&#39;s Mobile SDK options
+   * Configure App&#39;s UI settings
+   * Configure linked App Store apps
+   * Configure App&#39;s Universal Link options
+   * Configure Push Services certs and API keys
+   * Create/Update/Activate/Deactivate/Duplicate/Archive/Delete Postbacks
+   * Create/Update/Archive/Delete Link Destinations
 
-* Marketing-koppelingen maken/bijwerken/archiveren
-* Koppelingen voor verouderde overname maken/importeren/bijwerken/verwijderen
-* Configuratie van Plaatsen maken/importeren/bijwerken/verwijderen (interessepunten)
-* Pushberichten maken/bijwerken/verzenden/plannen/annuleren/dupliceren/archiveren/verwijderen
-* In-app-berichten maken/bijwerken/activeren/deactiveren/dupliceren/archiveren/verwijderen
+* Create/Update/Archive Marketing Links
+* Create/Import/Update/Delete Legacy Acquisition Links
+* Create/Import/Update/Delete Places (Points of Interest) configuration
+* Create/Update/Send/Schedule/Cancel/Duplicate/Archive/Delete Push Messages
+* Create/Update/Activate/Deactivate/Duplicate/Archive/Delete In-App Messages
 
-Raadpleeg de volgende inhoud in de documentatie van Adobe Analytics voor meer informatie over groepen en gebruikers:
+For more information about groups and users, see the following content in the Adobe Analytics documentation:
 
-* [Instellingen gebruikersgroep (verouderd)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 * [Een gebruiker aan een groep toevoegen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
-### Gebruiker van mobiele services
+### Mobile Services user
 
-Deze rol heeft mening-slechts toestemmingen en kan terugkoppelen in de Mobiele UI van de Diensten verstrekken.
+This role has view-only permissions and can provide feedback in the Mobile Services UI.
 
-* Feedback geven op gebruikersinterface voor mobiele services
-* Apps weergeven
+* Provide Feedback on Mobile Services UI
+* View Apps
 
    >[!IMPORTANT]
    >
-   >Gebruikers kunnen alleen de rapportsuites zien waartoe zij in Adobe Analytics toegang hebben.
+   >Users can only see the report suites for which they have access in Adobe Analytics.
 
-* App-instellingen weergeven
+* View App Settings
 
-   * App SDK-configuratie downloaden
-   * Alle instellingen voor gebruikersinterface en SDK weergeven
-   * De configuratie Variabelen en Metriek weergeven
-   * Postbacks weergeven
-   * Koppelingsdoelen weergeven
+   * Download App SDK configuration
+   * View all UI and SDK settings
+   * View Variables and Metrics configuration
+   * View Postbacks
+   * View Link Destinations
 
-* Rapporten weergeven en uitvoeren
-* Marketingkoppelingen weergeven
-* Koppelingen voor verouderde overname weergeven en exporteren
-* Configuratie van Plaatsen weergeven en exporteren (interessepunten)
-* Push-berichten weergeven
-* In-app berichten weergeven
+* View and Run Reports
+* View Marketing Links
+* View and Export Legacy Acquisition Links
+* View and Export Places (Points of Interest) configuration
+* View Push Messages
+* View In-App Messages
