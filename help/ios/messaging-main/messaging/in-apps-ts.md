@@ -1,12 +1,12 @@
 ---
 description: Deze informatie helpt u in-app overseinen problemen op te lossen.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Problemen met In-app-berichten oplossen
 topic-fix: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 exl-id: ce009289-9d22-4d76-9997-31fc864e9d4d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Als u alle vereisten voor Berichten in de app voltooide, maar de berichten tonen
 
 ## Zet u de nieuwe configuratie en de nieuwe SDK in de app?
 
-Controleer of de SDK versie 4.2 of hoger is en correct is geconfigureerd. Zorg ervoor dat u een `Messages` sectie in uw configuratie (gedownload JSON dossier) hebt, of een ver eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
+Controleer of de SDK versie 4.2 of hoger is en correct is geconfigureerd. Zorg ervoor dat u een `Messages` in uw configuratie (gedownload JSON-bestand) of een extern eindpunt van Berichten, zodat het kan worden opgehaald uit dynamisch tagbeheer.
 
 ## Mijn volledige-schermbericht in Android wordt niet weergegeven. Ik gebruik correcte SDK, configuratie, en mijn trekkers worden ontmoet.
 
@@ -29,19 +29,19 @@ Hebt u het manifestbestand bijgewerkt om de volledige schermactiviteit te defini
 
 ## Mijn lokale meldingsbericht in Android werkt niet.
 
-Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap 2 in [In-App Berichten toelaten](/help/android/messaging-main/messaging/messaging.md).
+Zorg ervoor dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Zie stap 2 voor meer informatie [In-app-berichten inschakelen](/help/android/messaging-main/messaging/messaging.md).
 
 ## Is het bericht live?
 
 Schakel de lijstweergave op de pagina Bericht in de app beheren in de kolom Status in en controleer of deze live is.
 
-## Bekijk *show eens*, *show altijd*, *show off-line* montages op het lusje van de Publiek.
+## Kijk naar *eenmaal tonen*, *altijd tonen*, *offline tonen* instellingen op het tabblad Publiek.
 
-Controleer of deze instellingen op de gewenste manier zijn ingesteld. Controleer op het tabblad **[!UICONTROL Audience]** de opties **[!UICONTROL Trigger]**, waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
+Controleer of deze instellingen op de gewenste manier zijn ingesteld. Op de **[!UICONTROL Audience]** tabblad, bekijk uw **[!UICONTROL Trigger]** opties, waarmee u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
 ## Bij gebruik van de gebeurtenis launch als trigger...
 
-Hiermee wordt alleen een nieuwe sessie gestart. Voor meer informatie over wanneer een zitting begint, zie `lifecycleTimeout` rij in het dossier van JSON Config. Zie [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) voor meer informatie.
+Hiermee wordt alleen een nieuwe sessie gestart. Voor meer informatie over wanneer een zitting begint, zie `lifecycleTimeout` rij in het JSON Config-bestand. Zie voor meer informatie  [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
 ## Ik heb mijn bericht op afstand bijgewerkt, maar mijn app geeft nog steeds het oude bericht weer.
 
@@ -54,7 +54,7 @@ Voer een van de volgende taken uit:
 * De config zal slechts op een nieuwe lancering bijwerken.
 Als de app opnieuw is gestart tijdens de sessietime-out van de levenscyclus, is de nieuwe configuratie mogelijk niet gedownload.
 
-   Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
+   Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md).
 
 ## Mijn afbeelding past niet precies in de ruimte die de sjabloon biedt.
 
@@ -74,13 +74,13 @@ Hier volgen de exacte plaatsings- en grootteregels voor elke richting:
    * De afbeelding wordt geschaald naar 100% van de hoogte van het apparaat.
    * De breedte is 75% van het apparaat, met een uitfade aan het recht.
 
-Als u problemen hebt met de sjabloon Volledig scherm, kunt u de aangepaste HTML-sjabloon downloaden en gebruiken. Deze sjabloon biedt meer flexibiliteit voor afbeeldingen en biedt volledige controle over de sjabloon.
+Als u problemen hebt met de sjabloon Volledig scherm, kunt u de sjabloon Aangepast HTML downloaden en gebruiken. Deze sjabloon biedt meer flexibiliteit voor afbeeldingen en biedt volledige controle over de sjabloon.
 
 ## In-app berichten op een iPhone X worden niet in de modus Volledig scherm weergegeven.
 
 In-app berichten weergeven in de modus Volledig scherm op een iPhone X:
 
-1. Voeg `viewport-fit=cover` in de metatag toe.
+1. Toevoegen `viewport-fit=cover` in de meta-tag.
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">

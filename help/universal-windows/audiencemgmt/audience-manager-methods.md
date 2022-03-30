@@ -1,11 +1,11 @@
 ---
 description: Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Methoden van Audience Manager
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 28%
@@ -16,17 +16,17 @@ ht-degree: 28%
 
 Lijst met methoden voor Audience Managers die worden geleverd door de Universal Windows Platform-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Managers worden voorafgegaan door `AudienceManager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Audience Manager worden vooraf ingesteld op `AudienceManager`.
 
 >[!TIP]
 >
->Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
+>Wanneer u `winmd` methoden van winJS (JavaScript), wordt de eerste letter van alle methoden automatisch verlaagd.
 
 Als publieksbeheer is geconfigureerd in uw JSON-bestand, wordt een signaal dat levenscyclusmetriek bevat verzonden met uw hit tijdens de levenscyclus.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere keren starten van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert `null` als er nog geen signaal is verzonden. Bezoekersprofiel is opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 

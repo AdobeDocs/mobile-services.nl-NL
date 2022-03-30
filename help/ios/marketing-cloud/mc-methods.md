@@ -1,11 +1,11 @@
 ---
-description: Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
-solution: Experience Cloud,Analytics
+description: Hier volgen de methoden van Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
+solution: Experience Cloud Services,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 22%
@@ -14,15 +14,15 @@ ht-degree: 22%
 
 # Methoden van Adobe Experience Platform Identity Service {#experience-cloud-id-service-methods}
 
-Hier volgen de methoden van de Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
+Hier volgen de methoden van Adobe Experience Platform Identity Service die worden geleverd door de iOS-bibliotheek.
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en de Experience Cloud Visitor ID-service.
 
-Methoden worden vooraf bepaald volgens de oplossing en de methoden Experience Cloud ID worden voorafgegaan door `visitor`. Zie [De Experience Cloud-id inschakelen](/help/ios/marketing-cloud/mcvid.md) voor meer informatie.
+Methoden worden vooraf bepaald op basis van de oplossing en de Experience Cloud ID-methoden worden vooraf bepaald `visitor`. Zie voor meer informatie [De Experience Cloud-id inschakelen](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL  `*`)bezoekerAppendToURL:(nullable NSURL  `*`)url;**
+* **`+`(nullable NSURL `*`.bezoekorAppendToURL:(nullable NSURL `*`url;**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service voor meer informatie.
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. Als u deze methode wilt gebruiken, moet u Mobile SDK versie 4.12 of hoger hebben. Zie voor meer informatie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service.
 
    >[!IMPORTANT]
    >
@@ -59,7 +59,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
       >[!IMPORTANT]
       >
-      >Deze methode kan een blokkerende netwerkvraag veroorzaken en zou **not** van een draad moeten worden geroepen UI.
+      >Deze methode kan een blokkerende netwerkvraag veroorzaken en zou moeten **niet** worden aangeroepen vanuit een UI-thread.
 
 * **bezoekerSyncIdentifiers:**
 
@@ -79,7 +79,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekerSyncIdentifiers:authenticationState:**
 
-   Synchroniseert de verstrekte herkenningstekens aan de dienst van identiteitskaart Geef `authState` door als een van de volgende waarden:
+   Synchroniseert de verstrekte herkenningstekens aan de dienst van identiteitskaart Geef in `authState` als een van de volgende waarden:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -97,9 +97,9 @@ Tekenreeks met bezoekersinfo toegevoegd.
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
       ```
 
-* **:identifier:bezoekerSyncIdentifierWithTypeauthenticationState:**
+* **bezoekerSyncIdentifierWithType:identifier:authenticationState:**
 
-   Hiermee synchroniseert u het opgegeven id-type en de opgegeven waarde met de id-service. Geef een van de volgende waarden door in de `authState`:
+   Hiermee synchroniseert u het opgegeven id-type en de opgegeven waarde met de id-service. Geef in `authState` een van de volgende waarden:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -122,7 +122,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekerGetIDs**
 
-   Hiermee wordt een array van alleen-lezen `ADBVisitorID`-objecten opgehaald.
+   Hiermee wordt een array met alleen-lezen opgehaald `ADBVisitorID` objecten.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -138,7 +138,7 @@ Tekenreeks met bezoekersinfo toegevoegd.
 
 * **bezoekorgetUrlVariablesAsync**
 
-   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Voor meer informatie over hoe deze methode wordt gebruikt, zie [Methoden van de Dienst van de Identiteit van Adobe Experience Platform](/help/ios/reference/hybrid-app.md).
+   Deze methode is geïntroduceerd in versie 4.16.0 en retourneert een correct gevormde tekenreeks die de URL-variabelen van de Bezoeker-id-service bevat. Voor meer informatie over hoe deze methode wordt gebruikt, zie [Methoden van Adobe Experience Platform Identity Service](/help/ios/reference/hybrid-app.md).
 
    * Hier volgt de syntaxis voor deze methode:
 

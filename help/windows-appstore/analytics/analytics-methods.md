@@ -1,11 +1,11 @@
 ---
 description: Informatie die u helpt bij het gebruik van de Windows 8.1 Universal App Store SDK met Adobe Analytics.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysemethoden
 topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 26%
@@ -22,11 +22,11 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 >[!TIP]
 >
->Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
+>Wanneer u `winmd` methoden van winJS (JavaScript), wordt de eerste letter van alle methoden automatisch verlaagd.
 
 * **TrackState (winJS: trackState)**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `TrackState` roept de weergave van de verhogende pagina op. Als `state` leeg is, wordt deze weergegeven als &quot;app name app version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u `state` in elke `TrackState` vraag plaatst.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `TrackState` roept stijgende paginameningen. Indien `state` is leeg, wordt deze in rapporten weergegeven als &quot;app name app version (build)&quot;. Als u deze waarde in rapporten ziet, zorg ervoor u plaatst `state` in elke `TrackState` vraag.
 
    >[!TIP]
    >
@@ -83,7 +83,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **TrackLocation (winJS: trackLocation)**
 
-   Verzendt de huidige x y-coördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `trackLocation` vraag.
+   Verzendt de huidige x y-coördinaten. Hiermee worden ook de in de `ADBMobileConfig.json` bestand om te bepalen of de locatie die als parameter wordt opgegeven zich binnen een van uw POI bevindt. Als de huidige coördinaten zich binnen een bepaalde POI bevinden, wordt een contextgegevensvariabele gevuld en verzonden met de `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -100,7 +100,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **TrackLifetime &#x200B; ValueIncrease (winJS: trackLifetime &#x200B; ValueIncrease)**
 
-   Voegt `amount` aan de levenwaarde van de gebruiker toe.
+   Toevoegingen `amount` naar de levensduurwaarde van de gebruiker.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -117,7 +117,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **TrackTimed &#x200B; ActionStart (winJS: trackTimed &#x200B; ActionStart)**
 
-   Start een getimede actie met de naam `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
+   Een getimede actie met naam starten `action`. Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
    >[!TIP]
    >
@@ -138,7 +138,7 @@ Elk van deze methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapport
 
 * **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Geef `contextData` door om de contextgegevens bij te werken die aan gegeven `action` worden geassocieerd. De `data` gegeven wordt toegevoegd aan de bestaande gegevens voor de bepaalde actie, en beschrijft de gegevens als de zelfde sleutel reeds voor `action` wordt bepaald.
+   Doorgeven in `contextData` om de contextgegevens bij te werken die bij het gegeven horen `action`. De `data` wordt doorgegeven toegevoegd aan de bestaande gegevens voor de opgegeven handeling en overschrijft de gegevens als dezelfde sleutel al is gedefinieerd voor `action`.
 
    >[!TIP]
    >

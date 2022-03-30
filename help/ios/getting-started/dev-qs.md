@@ -1,11 +1,11 @@
 ---
 description: Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetriek verzamelen, zoals opstarten, upgrades, sessies, betrokken gebruikers enzovoort.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Core-implementatie en levenscyclus
 topic-fix: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 exl-id: 5fb2d534-c2e8-480a-aaee-0e71dd55feb6
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Met deze informatie kunt u de iOS-bibliotheek implementeren en levenscyclusmetri
 
 **Voorwaarde**
 
-Voordat u de SDK downloadt, voert u de stappen in *Een rapportsuite maken* in [Core-implementatie en levenscyclus](/help/ios/getting-started/requirements.md) uit om een ontwikkelrapportsuite in te stellen en een vooraf ingevulde versie van het configuratiebestand te downloaden.
+Voordat u de SDK downloadt, voert u de stappen uit in *Een rapportsuite maken* in [Kernimplementatie en levenscyclus](/help/ios/getting-started/requirements.md) een ontwikkelrapport instellen en een vooraf ingevulde versie van het configuratiebestand downloaden.
 
 De SDK downloaden:
 
@@ -34,17 +34,17 @@ De SDK downloaden:
 >
 >Versie 4.21.0 van de SDK vereist Xcode 12.0 of hoger en, indien van toepassing, Cocoapods 1.10.0 of hoger.
 
-1. Download, decomprimeer het `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`-bestand en controleer of de volgende softwarecomponenten in de map `AdobeMobileLibrary` staan:
+1. Downloaden, decomprimeer de `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` en controleert u of de volgende softwarecomponenten in de `AdobeMobileLibrary` map:
 
    * `ADBMobile.h` - het objectc-headerbestand dat wordt gebruikt voor iOS SDK.
    * `ADBMobileConfig.json` - het SDK-configuratiebestand dat voor uw app is aangepast.
-   * `AdobeMobile.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
+   * `AdobeMobile.xcframework` - bevat twee vetbinaire getallen, elk voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
 
-      Dit XCF-framework moet worden gekoppeld wanneer u zich richt op een iOS-app.
+      Dit XCF-kader moet worden gekoppeld wanneer u een iOS-app als doel instelt.
 
-   * `AdobeMobileExtension.xcframework` - bevat twee vetbinaire getallen, één voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
+   * `AdobeMobileExtension.xcframework` - bevat twee vetbinaire getallen, elk voor iOS-apparaten (armv7, armv7, arm64) en simulatoren (i386, x86_64, arm64).
 
-      Dit XCFFramework moet worden gekoppeld wanneer u een iOS-extensie als doel instelt.
+      Dit XCFFramework moet worden gekoppeld wanneer een iOS-extensie als doel wordt ingesteld.
 
    * `AdobeMobileWatch.xcframework` - bevat twee vetbinaire getallen, elk voor watchOS-apparaten (arm64_32, armv7k) en simulatoren (i386, x86_64, arm64).
 
@@ -58,21 +58,21 @@ De SDK downloaden:
 >
 >In versies ouder dan 4.21.0, wordt SDK verdeeld via binaire getallen. Voer de onderstaande stappen uit als u een versie ouder dan 4.21.0 gebruikt.
 
-1. Download, decomprimeer het `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`-bestand en controleer of u de volgende softwarecomponenten hebt:
+1. Downloaden, decomprimeer de `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` en controleer of u over de volgende softwareonderdelen beschikt:
 
    * `ADBMobile.h`, het objectc-headerbestand dat wordt gebruikt voor iOS AppMeasurement.
    * `ADBMobileConfig.json`, dit is het SDK-configuratiebestand dat voor uw app is aangepast.
    * `AdobeMobileLibrary.a`, een binaire bitcode met vet die de bibliotheekbuilds voor iOS-apparaten bevat (armv7, armv7s, arm64) en simulatoren (i386, x86_64).
 
-      Dit binaire bestand met vet moet worden gekoppeld wanneer het doel is bedoeld voor een iOS-app.
+      Dit binaire getal met vet moet worden gekoppeld wanneer het doel is bedoeld voor een iOS-app.
 
    * `AdobeMobileLibrary_Extension.a`, een binaire bitcode met vet die de bibliotheekbuilds bevat voor iOS-apparaten (armv7, armv7s, arm64) en simulatoren (i386, x86_64).
 
-      Dit binaire vet moet worden gekoppeld wanneer het doel is bedoeld voor een iOS-extensie.
+      Dit binaire vetweefsel moet worden gekoppeld wanneer het doel is bedoeld voor een iOS-extensie.
 
-   * `AdobeMobileLibrary_Watch.a`, een binaire bitcode met vet die de bibliotheekbuilds bevat voor Apple Watch devices (armv7k) en simulators (i386, x86_64).
+   * `AdobeMobileLibrary_Watch.a`, een binaire bitcode met vet die de bibliotheekbuilds voor Apple Watch devices (armv7k) en simulators bevat (i386, x86_64).
 
-      Dit binaire bestand met vet moet worden gekoppeld wanneer het doel is bedoeld voor een Apple Watch-extensie-app (watchOS 2).
+      Dit binaire bestand met vet moet worden gekoppeld wanneer het doel is bedoeld voor een Apple Watch-app (watchOS 2).
 
    * `AdobeMobileLibrary_TV.a`, een binaire bitcode met vet die de bibliotheek bevat voor nieuwe Apple TV-apparaten (arm64) en simulator (x86_64).
 
@@ -80,46 +80,46 @@ De SDK downloaden:
 
 >[!IMPORTANT]
 >
->Als u de SDK buiten de gebruikersinterface van de mobiele services van Adobe downloadt, moet het `ADBMobileConfig.json`-bestand handmatig worden geconfigureerd. Als u aan Analytics en Mobiele SDK nieuw bent, zie [Voor u ](/help/ios/getting-started/requirements.md) aan opstelling een reeks van het ontwikkelingsrapport en download een pre-bevolkte versie van het configuratiedossier begint.
+>Als u de SDK buiten de gebruikersinterface van de Adobe Mobile-services downloadt, wordt `ADBMobileConfig.json` bestand moet handmatig worden geconfigureerd. Als u nog niet eerder met Analytics en de Mobile SDK hebt gewerkt, raadpleegt u [Voordat u begint](/help/ios/getting-started/requirements.md) een ontwikkelrapport instellen en een vooraf ingevulde versie van het configuratiebestand downloaden.
 
 ## SDK en configuratiebestand toevoegen aan uw project {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Start de Xcode-IDE en open uw app.
-1. In de Navigator van het Project, sleep de `AdobeMobileLibrary` omslag en laat vallen het onder uw project.
+1. In de Navigator van het Project, sleep `AdobeMobileLibrary` en zet deze onder uw project neer.
 1. Controleer het volgende:
 
-   * Het selectievakje **[!UICONTROL Copy Items if needed]** is ingeschakeld.
+   * De **[!UICONTROL Copy Items if needed]** selectievakje is ingeschakeld.
    * **[!UICONTROL Create groups]** is geselecteerd.
-   * Geen enkel selectievakje in de sectie **[!UICONTROL Add to targets]** is geselecteerd.
+   * Geen enkel selectievakje in het dialoogvenster **[!UICONTROL Add to targets]** is geselecteerd.
 
    ![](assets/step_3.png)
 
 1. Klik op **[!UICONTROL Finish]**.
 1. In **[!UICONTROL Project Navigator]** selecteert u **`ADBMobileConfig.json`**.
-1. Voeg in **[!UICONTROL File Inspector]** het JSON-bestand toe aan eventuele doelen in uw project die de Adobe SDK gebruiken.
+1. In **[!UICONTROL File Inspector]** voegt u het JSON-bestand toe aan de doelen in uw project die de Adobe SDK gebruiken.
 
    ![](assets/step_4.png)
 
-1. Voer in **[!UICONTROL Project Navigator]** de volgende stappen uit:
+1. In **[!UICONTROL Project Navigator]** Voer de volgende stappen uit:
 
    1. Klik op uw app.
-   1. Selecteer op het tabblad **[!UICONTROL General]** uw doelen en koppel de vereiste frameworks en bibliotheken in de secties **[!UICONTROL Linked Frameworks]** en **[!UICONTROL Libraries]**.
+   1. Op de **[!UICONTROL General]** selecteert u de gewenste doelen en koppelt u de vereiste frameworks en bibliotheken in het dialoogvenster **[!UICONTROL Linked Frameworks]** en **[!UICONTROL Libraries]** secties.
    * **iOS App-doelen**
       * `SystemConfiguration.framework`
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
       * `CoreLocation.framework` (optioneel, maar vereist voor geo-tracking-mogelijkheden)
-   * **Doel iOS-extensie**
+   * **iOS Extension Target**
 
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_Extension.a`
-   * **Apple Watch (watchOS 2)-doel**
+   * **Apple Watch (watchOS 2) Target**
 
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_Watch.a`
-   * **Apple TV (tvOS)-doel**
+   * **Doel Apple TV (tvOS)**
 
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
@@ -127,7 +127,7 @@ De SDK downloaden:
 
    >[!CAUTION]
    >
-   > Als u meerdere `AdobeMobileLibrary*.a`-bestanden in hetzelfde doel koppelt, treedt onverwacht gedrag of de mogelijkheid om te bouwen op.
+   > Meer dan één koppeling `AdobeMobileLibrary*.a` bestand in hetzelfde doel heeft onverwacht gedrag of kan niet worden gemaakt.
 
    >[!IMPORTANT]
    >
@@ -141,11 +141,11 @@ De SDK downloaden:
 
 >[!IMPORTANT]
 >
->iOS verzendt levenscyclusinformatie met of zonder `collectlifecycledata` aan te roepen, en `collectlifecycledata` is slechts een manier om levenscyclus vroeger in de lanceringsopeenvolging van de toepassing in werking te stellen.
+>iOS stuurt levenscyclusinformatie met of zonder dat er contact met `collectlifecycledata`, en `collectlifecycledata` is slechts een manier om eerder in de opstartreeks van de toepassing levenscyclus in werking te stellen.
 
-Nadat u de levenscyclus hebt ingeschakeld, wordt elke keer dat uw app wordt gestart, een hit verzonden om het starten, upgrades, sessies, betrokken gebruikers en andere [Levenscyclusmetriek](/help/ios/metrics.md) te meten.
+Nadat u de levenscyclus hebt ingeschakeld, wordt elke keer dat uw app wordt gestart, een hit verzonden om het starten, upgrades, sessies, betrokken gebruikers en andere gebruikers te meten [Levenscycluscijfers](/help/ios/metrics.md).
 
-Voeg een `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` vraag in `application:didFinishLaunchingWithOptions` toe:
+Voeg een `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` oproepen binnen `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -160,7 +160,7 @@ Om extra gegevens met metrische vraag van de levenscyclus te omvatten, gebruik `
 
 >[!IMPORTANT]
 >
->Alle gegevens die via `collectLifecycleDataWithAdditionalData:` aan de SDK worden doorgegeven, blijven in `NSUserDefaults` van de SDK bestaan. De SDK verwijdert de waarden in de parameter `NSDictionary` die niet tot de typen `NSString` of `NSNumber` behoren.
+>Alle gegevens die via `collectLifecycleDataWithAdditionalData:` blijft bestaan in `NSUserDefaults` door de SDK. De SDK slaat de waarden in de `NSDictionary` parameter die niet tot de `NSString` of `NSNumber` typen.
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -171,11 +171,11 @@ Om extra gegevens met metrische vraag van de levenscyclus te omvatten, gebruik `
 }
 ```
 
-De extra waarden van contextgegevens die met `collectLifecycleDataWithAdditionalData` worden verzonden moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
+Aanvullende contextgegevenswaarden die worden verzonden met `collectLifecycleDataWithAdditionalData` moet worden toegewezen aan aangepaste variabelen in Adobe Mobile-services:
 
 ![](assets/map-variable-lifecycle.png)
 
-Andere levenscyclusmetriek worden automatisch verzameld. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
+Andere levenscyclusmetriek worden automatisch verzameld. Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md).
 
 ## Volgende handelingen {#section_A24DC703359D4B5C8F493D6421306FD3}
 

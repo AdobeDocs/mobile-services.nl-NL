@@ -1,11 +1,11 @@
 ---
 description: Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Geo-Locatie en belangenpunten
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
@@ -16,31 +16,31 @@ ht-degree: 1%
 
 Geo-location helpt u locatiegegevens te meten door breedte- en lengtegegevens en vooraf gedefinieerde interessepunten te gebruiken in uw Android-apps.
 
-Elke `trackLocation` vraag verzendt de volgende informatie:
+Elk `trackLocation` de vraag verzendt de volgende informatie:
 
-* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in de gebruikersinterface van Mobiele services Adobe.
+* Breedtegraad, lengtegraad en locatie in een interessant punt (POI) dat is gedefinieerd in de gebruikersinterface van Adobe Mobile Services.
 
    Deze informatie wordt doorgegeven aan mobiele oplossingvariabelen voor automatische rapportage.
 
 * Afstand van middelpunt en nauwkeurigheid die als contextgegevens worden doorgegeven.
 
-   Deze variabelen worden niet automatisch vastgelegd. U moet deze variabelen van contextgegevens in kaart brengen door de instructies in *Verzendend Extra Gegevens* hieronder te gebruiken.
+   Deze variabelen worden niet automatisch vastgelegd. U moet deze variabelen van contextgegevens in kaart brengen door de instructies in te gebruiken *Aanvullende gegevens verzenden* hieronder.
 
 ## Dynamische POI-updates {#section_3747B310DD5147E2AAE915E762997712}
 
-Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de gebruikersinterface van Adobe Mobile en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is een `analytics.poi`-instelling vereist in [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md):
+Vanaf versie 4.2 worden POI&#39;s gedefinieerd in de gebruikersinterface van Adobe Mobile en dynamisch gesynchroniseerd met het configuratiebestand van de app. Voor deze synchronisatie is een `analytics.poi` in het dialoogvenster [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md):
 
 ```js
 "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
-Als dit niet wordt gevormd, moet u een bijgewerkte versie van het `ADBMobile.json` dossier downloaden en het toevoegen aan uw app. Zie [SDK downloaden en tools testen](/help/android/getting-started/requirements.md) voor meer informatie.
+Als dit niet wordt gevormd, moet u een bijgewerkte versie van downloaden `ADBMobile.json` en deze aan uw app toevoegen. Zie voor meer informatie [SDK en testgereedschappen downloaden](/help/android/getting-started/requirements.md).
 
 ## Geo-locatie en POI&#39;s bijhouden {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
+   Zie voor meer informatie *Voeg de SDK en het Dossier Config aan uw IDEA van IntelliJ of Project toe Eclipse* in [Kernimplementatie en levenscyclus](/help/android/getting-started/dev-qs.md).
 
 1. De bibliotheek importeren:
 
@@ -48,7 +48,7 @@ Als dit niet wordt gevormd, moet u een bijgewerkte versie van het `ADBMobile.jso
    import com.adobe.mobile.*;
    ```
 
-1. Roep `trackLocation` aan om de huidige locatie bij te houden:
+1. Bellen `trackLocation` om de huidige locatie bij te houden:
 
    ```java
    Location currentLocation = new Location("my location here"); 
@@ -57,11 +57,11 @@ Als dit niet wordt gevormd, moet u een bijgewerkte versie van het `ADBMobile.jso
 
    >[!TIP]
    >
-   >U kunt `trackLocation` op elk ogenblik roepen.
+   >U kunt bellen `trackLocation` op elk moment.
 
-   U kunt plaatsstrategieën gebruiken om de plaats te bepalen die tot `trackLocation` vraag wordt overgegaan. Zie [Locatiestrategieën voor Android](https://developer.android.com/guide/topics/location/strategies.html) voor meer informatie.
+   U kunt locatiestrategieën gebruiken om de plaats te bepalen die tot wordt overgegaan `trackLocation` vraag. Zie voor meer informatie [Locatiestrategieën voor Android](https://developer.android.com/guide/topics/location/strategies.html).
 
-Als bovendien wordt bepaald dat de locatie zich in een gedefinieerde POI-straal bevindt, wordt een `a.loc.poi`-contextgegevensvariabele verzonden in combinatie met de `trackLocation`-hit en wordt deze als een POI gerapporteerd in de **[!UICONTROL Location Breakdown]**-rapporten. Een contextvariabele `a.loc.dist` wordt ook verzonden met de afstand in meters van de gedefinieerde coördinaten.
+Als bovendien wordt vastgesteld dat de locatie zich in een gedefinieerde POI-straal bevindt, `a.loc.poi` de contextgegevensvariabele wordt verzonden binnen met `trackLocation` raakgebied en wordt gerapporteerd als een POI op de **[!UICONTROL Location Breakdown]** rapporten. An `a.loc.dist` de contextvariabele wordt ook verzonden met de afstand in meters van de gedefinieerde coördinaten.
 
 ## Extra gegevens verzenden {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
@@ -75,7 +75,7 @@ Location currentLocation = new Location("my location here");
 Analytics.trackLocation(currentLocation, locationContextData);
 ```
 
-De waarden van contextgegevens moeten aan douanevariabelen in de UI van de Diensten van de Mobiele Adobe worden in kaart gebracht:
+De waarden van contextgegevens moeten aan douanevariabelen in de UI van de Diensten van Adobe Mobile in kaart worden gebracht:
 
 ![](assets/map-location-context-data.png)
 
@@ -97,22 +97,22 @@ De coördinaten lat = 40,93231, long = -111,93152 vertegenwoordigen bijvoorbeeld
 
 `a.loc.lon.c` = 52
 
-Afhankelijk van de nauwkeurigheid van de huidige locatie kunnen sommige precisieniveaus `00` worden weergegeven. Als de locatie bijvoorbeeld momenteel nauwkeurig is tot 100 m, worden `a.loc.lat.c` en `a.loc.lon.c` gevuld met `00`.
+Sommige precisieniveaus kunnen er zo uitzien `00` afhankelijk van de nauwkeurigheid van de huidige locatie. Als de locatie momenteel bijvoorbeeld nauwkeurig is tot 100 m, `a.loc.lat.c` en `a.loc.lon.c` wordt gevuld met `00`.
 
 De volgende informatie onthouden:
 
-* Een `trackLocation` verzoek verzendt in het equivalent van een `trackAction` vraag.
+* A `trackLocation` verzoek wordt ingediend, gelijkwaardig aan een `trackAction` vraag.
 
-* POIs wordt niet overgegaan als deel van typische `trackAction` en `trackState` vraag, zodat moet u een `trackLocation` vraag gebruiken om POIs te volgen.
+* POI&#39;s worden niet doorgegeven als onderdeel van standaard `trackAction` en `trackState` vraag, zodat moet u een `trackLocation` oproep om POI&#39;s bij te houden.
 
 * `trackLocation` zo vaak als nodig moet worden opgeroepen om de locatie en de lokalen te volgen.
 
-   We raden u aan `trackLocation` aan te roepen wanneer de app start en vervolgens naar wens, afhankelijk van de vereisten van de app.
+   We raden aan `trackLocation` wanneer de app wordt gestart en zo nodig, afhankelijk van de vereisten van de app.
 
 * POI&#39;s worden alleen gevuld nadat ze zijn gedefinieerd in het configuratiebestand van de app.
 
-   POIs wordt niet toegepast op historische `trackLocation` vraag die eerder werden verzonden.
-* `trackLocation` vraag steun verzendend extra contextgegevens gelijkend op  `trackAction` vraag.
+   De POI&#39;s worden niet toegepast op historische `trackLocation` vraag die eerder werd verzonden.
+* `trackLocation` vraag steun die extra contextgegevens gelijkend op verzenden `trackAction` oproepen.
 
 * Wanneer twee POIs overlappende diameters hebben, wordt eerste POI die de huidige plaats bevat gebruikt.
 

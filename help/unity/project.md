@@ -1,12 +1,11 @@
 ---
 description: iOS-projecten maken
 keywords: Eenheid
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Uw project maken
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 exl-id: 9da99392-b34e-4e36-b255-f3787e26015c
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 3%
@@ -17,13 +16,13 @@ ht-degree: 3%
 
 ## iOS
 
-Wanneer u voor iOS bouwt, wordt een Project van Xcode gecreeerd. Standaard bevinden de `ADBMobileWrapper.mm`- en `AdobeMobileLibrary.a`-bestanden zich in de groep Bibliotheken van uw nieuwe project. Voer de volgende handmatige stappen uit die u nodig hebt om uw app te maken:
+Wanneer u voor iOS bouwt, wordt een Project van Xcode gecreeerd. Standaard worden de `ADBMobileWrapper.mm` en  `AdobeMobileLibrary.a` De bestanden worden opgenomen in de groep Bibliotheken van uw nieuwe project. Voer de volgende handmatige stappen uit die u nodig hebt om uw app te maken:
 
-1. Voeg uw `ADBMobileConfig.json` dossier aan het project toe.
+1. Voeg uw `ADBMobileConfig.json` aan het project.
 
    Ervoor zorgen dat het lid is van de bouw van eventueel noodzakelijke doelen.
 
-1. Voeg op het tabblad **[!UICONTROL Build Phases]** van uw project een koppeling toe naar de volgende bibliotheken:
+1. In de **[!UICONTROL Build Phases]** voegt u een koppeling toe aan de volgende bibliotheken:
 
    * `SystemConfiguration.framework`
 (Deze bibliotheek is mogelijk al gekoppeld.)
@@ -32,11 +31,11 @@ Wanneer u voor iOS bouwt, wordt een Project van Xcode gecreeerd. Standaard bevin
 
 >[!TIP]
 >
->Als u lokale berichten voor meldingen in de app van de SDK wilt gebruiken, moet u `ADBMobile.EnableLocalNotifications();` vanuit de methode Start in de eerste Unity-scène aanroepen.
+>Als u Lokale berichten van de SDK voor meldingen in de app wilt gebruiken, moet u `ADBMobile.EnableLocalNotifications();` van de methode van het Begin in uw eerste Scène van de Eenheid.
 
 ## Android
 
-Wanneer u voor Android bouwt, omvat het `apk` dossier reeds `ADBMobileConfig.json` dossier in de correcte plaats. Standaard wordt ook het `AndroidManifest.xml`-bestand in de map `/Plugins/Android` gebruikt.
+Wanneer u voor Android ontwikkelt, worden de `apk` het bestand bevat al het `ADBMobileConfig.json` bestand op de juiste locatie. Standaard worden de `AndroidManifest.xml` in uw `/Plugins/Android` wordt ook gebruikt.
 
 Als u uw eigen douane manifestdossier moet gebruiken, zouden de volgende veranderingen moeten worden toegevoegd.
 

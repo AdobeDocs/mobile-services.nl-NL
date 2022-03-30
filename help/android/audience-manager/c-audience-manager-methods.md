@@ -1,12 +1,12 @@
 ---
 description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Methoden van Audience Manager
 topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 27%
@@ -17,13 +17,13 @@ ht-degree: 27%
 
 Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld voorafgegaan door `audience manager`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Experience Cloud ID worden bijvoorbeeld voorafgegaan door `audience manager`.
 
 Als Audience Manager is geconfigureerd in uw JSON-bestand, wordt een signaal met levenscyclusmetriek verzonden bij een hit tijdens de levenscyclus.
 
 * **getVisitorProfile**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert `null` als er geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert, als er geen signaal is verzonden `null`. Het bezoekersprofiel is opgeslagen in `SharedPreferences` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 

@@ -1,12 +1,12 @@
 ---
-description: U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden vanuit de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
+description: U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden van de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Een verwervingskoppeling maken
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 # Een verwervingskoppeling maken{#create-an-acquisition-link}
 
-U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden vanuit de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
+U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden van de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
 
 1. Klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
-1. Typ de volgende informatie in de sectie **[!UICONTROL Link Information]**:
+1. Typ de volgende informatie in het dialoogvenster **[!UICONTROL Link Information]** sectie:
 
-   * (**Required**) **[!UICONTROL Name]**
+   * (**Vereist**) **[!UICONTROL Name]**
 Geef een beschrijvende naam op voor de koppeling App.
    * **[!UICONTROL Tracking Code]**
-Geef de gewenste trackingcode op of klik  **[!UICONTROL Generate]** om een nieuwe trackingcode te maken.
-   * (**Required**) **[!UICONTROL Source]**
+Geef de gewenste trackingcode op of klik op **[!UICONTROL Generate]** om een nieuwe trackingcode te maken.
+   * (**Vereist**) **[!UICONTROL Source]**
 Geef de oorspronkelijke referentie op, bijvoorbeeld &quot;nieuwsbrief&quot; of &quot;homepage&quot;.
    * **[!UICONTROL Medium]**
 Geef het marketingmedium op, bijvoorbeeld &#39;&#39;banner&#39;&#39; of &#39;&#39;email&#39;&#39;.
@@ -36,7 +36,7 @@ Geef betaalde voorwaarden of andere zoektermen op voor de advertentie.
    >
    >De waarden in de bovenstaande velden kunnen niet worden gewijzigd nadat de verwervingskoppeling is gemaakt.
 
-1. Typ informatie in de velden in de sectie **[!UICONTROL Add App Store Link]**.
+1. Typ informatie in de velden in het dialoogvenster **[!UICONTROL Add App Store Link]** sectie.
 
    * **[!UICONTROL App Store]**
 
@@ -50,21 +50,21 @@ Geef betaalde voorwaarden of andere zoektermen op voor de advertentie.
 
       Geef een specifieke regionale App Store voor desktopbrowsers op.
 
-      Met deze instelling kunt u de regiospecifieke app-store definiëren waarnaar u een acquisitie-koppeling rechtstreeks wilt laten verwijzen wanneer een gebruiker op de koppeling klikt vanuit een desktopbrowser. Mobiele apparaten worden automatisch omgeleid op basis van apparaatinstellingen.
+      Met deze instelling kunt u de regiospecifieke app-store definiëren waarnaar u een acquisitie-koppeling rechtstreeks wilt laten verwijzen wanneer een gebruiker op de koppeling klikt vanuit een desktopbrowser. Mobile-apparaten worden automatisch omgeleid op basis van apparaatinstellingen.
 
    * **[!UICONTROL Browser Language (Google Language (Google Play Only))]**
 
       Selecteer een taal in de vervolgkeuzelijst.
 
-      Met deze instelling kunt u een specifieke taal definiëren die in de Google Play Store voor desktopbrowsers moet worden weergegeven. Mobiele apparaten tonen de taal op basis van apparaatinstellingen.
+      Met deze instelling kunt u een specifieke taal definiëren die in de Google Play Store voor desktopbrowsers moet worden weergegeven. Mobile-apparaten tonen de taal op basis van apparaatinstellingen.
 
    * **[!UICONTROL Search by Name ]**
 
       * Als u de toepassings-id van de Apple App Store niet kent, kunt u naar de app zoeken op naam.
 
-         U kunt uw zoekopdracht beperken door een optioneel gebied te selecteren in de vervolgkeuzelijst **[!UICONTROL In Region]**.
+         U kunt uw zoekopdracht beperken door een optioneel gebied te selecteren in het menu **[!UICONTROL In Region]** vervolgkeuzelijst.
 
-      * Als u Google Play gebruikt en de pakketnaam niet kent, kunt u naar de naam van de toepassing zoeken.
+      * Als u Google Play niet op de hoogte bent van de pakketnaam, kunt u naar de naam van de toepassing zoeken.
    * **[!UICONTROL App ID (Apple App Store only)]**
 
       Als u naar de app hebt gezocht, wordt dit veld automatisch ingevuld. U kunt de waarde voor de toepassings-id rechtstreeks typen in plaats van naar de app te zoeken.
@@ -75,12 +75,12 @@ Geef betaalde voorwaarden of andere zoektermen op voor de advertentie.
 
 
 
-1. Om uw configuratie te bewaren en de verbinding te produceren, klik **[!UICONTROL Add]** > **[!UICONTROL Save]**.
+1. Als u uw configuratie wilt opslaan en de koppeling wilt genereren, klikt u op **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
-   De nieuwe verbinding toont in **[!UICONTROL App Store Links]** sectie.
+   De nieuwe koppeling wordt weergegeven in het dialoogvenster **[!UICONTROL App Store Links]** sectie.
 
    ![archiefkoppeling](assets/apps_store_links.png)
 
-1. Klik op ![klembordpictogram](assets/icon_clipboard.png) om de bijgehouden koppeling naar het klembord te kopiëren.
+1. Klikken ![klembordpictogram](assets/icon_clipboard.png) om de bijgehouden koppeling naar het klembord te kopiëren.
 
 1. Plak de koppeling in uw berichten, advertenties, e-mailberichten enzovoort op de sociale media.

@@ -1,12 +1,12 @@
 ---
 description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Doelmethoden voor Android
 topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 24%
@@ -17,11 +17,11 @@ ht-degree: 24%
 
 Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld voorafgegaan door `target`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Methoden van Experience Cloud ID worden bijvoorbeeld voorafgegaan door `target`.
 
 >[!TIP]
 >
->[Levenscyclusmetriek ](/help/android/metrics.md) wordt als parameters naar elke mbox-lading verzonden.
+>[Levenscycluscijfers](/help/android/metrics.md) worden verzonden als parameters naar elke mbox lading.
 
 ## Klassenverwijzing: TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
@@ -53,9 +53,9 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 >[!IMPORTANT]
 >
->* Als u SDK&#39;s **before** versie 4.14.0 gebruikt, raadpleegt u [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
+>* Als u SDK&#39;s gebruikt **voor** versie 4.14.0, zie [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
 >
->* Als u SDKs versie 4.14.0 **of later** gebruikt, zie [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
+>* Als u SDK&#39;s versie 4.14.0 gebruikt **of hoger**, zie [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
 
 
 * **loadRequest**
@@ -121,37 +121,37 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
          Naam van de doos/de plaats van het Doel die u wilt terugwinnen.
 
-         * **type:** String
+         * **Type:** String
       * **defaultContent**
 
          Waarde die in callback is teruggekeerd als de server van het Doel onbereikbaar is, of de gebruiker kwalificeert niet voor de campagne.
 
-         * **type:** String
+         * **Type:** String
       * **profileParameters**
 
          Waarden in dit woordenboek worden opgenomen in het object &quot;profileParameters&quot; in de aanvraag aan Doel.
 
-         * **tekst:** toewijzen  `<String, Object>`
+         * **Type:** Kaart `<String, Object>`
       * **orderParameters**
 
          Waarden in dit woordenboek worden opgenomen in het object &quot;order&quot; in de aanvraag aan Target.
 
-         * **tekst:** toewijzen  `<String, Object>`
+         * **Type:** Kaart `<String, Object>`
       * **mboxParameters**
 
          Waarden in dit woordenboek worden opgenomen in de aanvraag aan Target.
 
-         * **tekst:** toewijzen  `<String, Object>`
+         * **Type:** Kaart `<String, Object>`
       * **requestLocationParameters**
 
          Waarden in dit woordenboek worden opgenomen in het object &quot;requestLocation&quot; in de aanvraag aan Target.
 
-         * **tekst:** toewijzen  `<String, Object>`
+         * **Type:** Kaart `<String, Object>`
       * **callback**
 
          Deze methode wordt aangeroepen met de inhoud van de aanbieding van de doelserver. Als de server van het Doel onbereikbaar is of de gebruiker niet voor de campagne kwalificeert, defaultContent zal zijn teruggekeerd.
 
-         * **Type:** TargetCallback  `<String>`
+         * **Type:** TargetCallback `<String>`
    * Hier volgt een voorbeeldcode voor deze methode:
 
       ```java
@@ -168,7 +168,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       });
       ```
 
-      Zie [Doelverzoeken laden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests) in de doel-API-naslaggids voor meer informatie over de onderliggende doel-API.
+      Zie voor meer informatie over de onderliggende doel-API [Doelverzoeken laden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests) in de API-naslaggids voor Doel.
 
 
 

@@ -1,11 +1,11 @@
 ---
 description: Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfstandige extensie wordt genoemd en die u kunt distribueren zonder een omvattende app. Met deze extensie hebt u geen app-groep nodig, omdat er geen app is waarin gegevens kunnen worden gedeeld.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Standalone extensie-implementatie
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -18,20 +18,20 @@ Vanaf iOS 10 kunt u met Apple een extensie maken die een zelfstandige extensie w
 
 >[!IMPORTANT]
 >
->Als u zelfstandige extensies wilt gebruiken, moet u beschikken over Mobile SDK versie 4.13.0 of hoger.
+>Als u zelfstandige extensies wilt gebruiken, hebt u Mobile SDK versie 4.13.0 of hoger nodig.
 
 ## Vorm uw stand-alone uitbreiding voor gebruik met SDK {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
 Uw zelfstandige extensie configureren:
 
-1. Zorg ervoor dat het `ADBMobileConfig.json`-bestand lid is van het doel van de extensie.
+1. Zorg ervoor dat de `ADBMobileConfig.json` is een lid van het doel van uw extensie.
 1. Koppel de volgende bibliotheken en frameworks:
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.tbd`
    * `SystemConfiguration.framework`
 
-1. Stel in de hoofdweergavecontroller van de extensie het extensietype in de SDK in op `ADBMobileAppExtensionTypeStandAlone` voordat u activiteiten uitvoert die betrekking hebben op SDK.
+1. Stel in de hoofdweergavecontroller van de extensie het extensietype in op `ADBMobileAppExtensionTypeStandAlone` in de SDK voordat enige aan SDK gerelateerde activiteiten worden voltooid.
 
    ```objective-c
    [ADBMobile setAppExtensionType:ADBMobileAppExtensionTypeStandAlone];
@@ -43,7 +43,7 @@ Uw zelfstandige extensie configureren:
 
 Hieronder vindt u aanvullende informatie:
 
-* Er is een extra waarde voor contextgegevens toegevoegd, `a.RunMode` om aan te geven of de gegevens afkomstig zijn van de bevattende app of van uw extensie:
+* Een extra waarde voor contextgegevens. `a.RunMode` is toegevoegd om aan te geven of de gegevens afkomstig zijn van uw bevattende app of uw extensie:
 
    * `a.RunMode = Application`
 

@@ -1,12 +1,12 @@
 ---
 description: De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Verwerving marketinglink testen
 topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 De volgende instructies helpen u een aanschafcampagne met een Verbinding van de Marketing uitvoeren die op een apparatenvingerafdruk gebaseerd is.
 
 1. Voltooi de vereiste taken in [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
-1. Klik in de gebruikersinterface van Mobiele services Adobe op **[!UICONTROL Marketing Links Builder]** en genereer een URL voor een inkoopmarketingkoppeling waarmee de App Store wordt ingesteld als de bestemming voor iOS-apparaten.
+1. Klik in de gebruikersinterface van Adobe Mobile Services op **[!UICONTROL Marketing Links Builder]** en genereer een verwervingsmarketinglink-URL waarmee de App Store wordt ingesteld als de bestemming voor iOS-apparaten.
 
    Bijvoorbeeld:
 
@@ -26,7 +26,7 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
    https://c00.adobe.com/v3/da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d/start?a_dl=57477650072932ec6d3a470f
    ```
 
-   Voor meer informatie, zie [de Bouwer van Verbindingen van de Marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
+   Zie voor meer informatie [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
 
 1. Open de gegenereerde koppeling op het iOS-apparaat en open `https://c00.adobe.com/v3/<appid>/end`.
@@ -43,13 +43,13 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
 
    | Instelling | Waarde |
    |--- |--- |
-   | verwerving | De server moet `c00.adobe.com` zijn. `appid` moet gelijk zijn aan de   *`appid`* in uw acquisitie-koppeling. |
+   | verwerving | De server moet  `c00.adobe.com`. `appid` moet gelijk zijn aan  *`appid`* in uw acquisitie link. |
    | analyse | `referrerTimeout` moet een waarde groter dan 0 hebben. |
 
-1. (Voorwaardelijk) Als de SSL-instelling in het configuratiebestand van uw app `false` is, werkt u de acquisitie-koppeling bij om het HTTP-protocol in plaats van HTTPS te gebruiken.
+1. (Voorwaardelijk) Als de SSL-instelling in het configuratiebestand van uw app is `false`werkt u de verwervingskoppeling bij zodat u het HTTP-protocol in plaats van HTTPS kunt gebruiken.
 1. Klik op de gegenereerde koppeling van het mobiele apparaat waarop u de toepassing wilt installeren.
 
-   Adobe (`c00.adobe.com`) bewaren vingerafdruk en omleiden naar de App Store. De app hoeft niet te worden gedownload om te testen.
+   Adobe`c00.adobe.com`) de vingerafdruk op te slaan en naar de App Store om te leiden. De app hoeft niet te worden gedownload om te testen.
 1. Start de toepassing voor de eerste keer vanaf hetzelfde mobiele apparaat als dat u in stap 6 hebt gebruikt.
 
    U kunt de toepassing indien nodig verwijderen en opnieuw installeren.
@@ -74,15 +74,15 @@ De volgende instructies helpen u een aanschafcampagne met een Verbinding van de 
 
    * `Analytics - Unable to parse acquisition service response (no contextData parameter in response)`
 
-      De reactie bevat geen parameter `contextData`.
+      Er is geen `contextData` in de reactie.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` is niet opgenomen in  `contextData`.
+      `a.referrer.campaign.name` is niet opgenomen in `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Kan de reactie niet ophalen in de tijd die wordt gedefinieerd door `referrerTimeout`. Verhoog de waarde en probeer het opnieuw. Zorg er ook voor dat u de acquisitie-koppeling hebt geopend voordat u de app installeert en dat u hetzelfde netwerk gebruikt wanneer u op de URL klikt en de app opent.
+      Kan de reactie niet ophalen in de tijd die is gedefinieerd door `referrerTimeout`. Verhoog de waarde en probeer het opnieuw. Zorg er ook voor dat u de acquisitie-koppeling hebt geopend voordat u de app installeert en dat u hetzelfde netwerk gebruikt wanneer u op de URL klikt en de app opent.
 
 De volgende informatie onthouden:
 
@@ -92,11 +92,11 @@ De volgende informatie onthouden:
 
 * Met de HTTP-controleprogramma&#39;s kunt u hits die vanuit de app worden verzonden controleren om de acquisitie-toewijzing te controleren.
 
-   Er wordt een `/v3/<appid>/start`-aanvraag en een `/v3/<appid>/end`-aanvraag weergegeven die naar de verwervingsserver worden verzonden.
+   U moet er een zien `/v3/<appid>/start` verzoek en één `/v3/<appid>/end` verzoek dat naar de verwervingsserver wordt verzonden.
 
 * De variaties in verzonden user-agent zouden attributie kunnen veroorzaken om te ontbreken.
 
-   Zorg ervoor dat `https://c00.adobe.com/v3/<appid>/start` en `https://c00.adobe.com/v3/<appid>/end` dezelfde gebruiker-agent waarden hebben.
+   Zorg ervoor dat `https://c00.adobe.com/v3/<appid>/start` en `https://c00.adobe.com/v3/<appid>/end` hebben de zelfde gebruiker-agent waarden.
 
 * De acquisitie-koppeling en de hit van de SDK moeten hetzelfde HTTP/HTTPS-protocol gebruiken.
 

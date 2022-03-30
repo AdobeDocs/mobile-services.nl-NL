@@ -1,26 +1,26 @@
 ---
-description: iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
+description: iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
 keywords: Xamarine
-solution: Experience Cloud
-title: iOS-methoden
+solution: Experience Cloud Services
+title: Methoden van iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 40%
 
 ---
 
-# iOS-methoden{#ios-methods}
+# Methoden van iOS{#ios-methods}
 
-iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
+iOS-methoden voor Xamarin-componenten voor Experience Cloud-oplossingen 4.x SDK.
 
 ## Configuratiemethoden {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **CollectLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -89,7 +89,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
    * `ADBMobilePrivacyStatus.OptOut` - treffers worden genegeerd.
    * ADBMobilePrivacyStatus.Unknown - Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de status van de privacy verandert in opt-in (dan worden treffers verzonden) of opt-out (dan worden treffers genegeerd). Als offline bijhouden is uitgeschakeld, worden treffers verwijderd totdat de privacystatus verandert in aanmelden.
 
-   De standaardwaarde wordt ingesteld in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   De standaardwaarde wordt ingesteld in het dialoogvenster [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -211,7 +211,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TrackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen zijn vergelijkbaar met pagina&#39;s op een website en `TrackState` roept increment paginaweergaven aan. Als de status leeg is, wordt deze weergegeven als &quot;app name version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `TrackState` roept paginaweergaven met meer items op. Als de status leeg is, wordt deze weergegeven als &quot;app name app version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elk plaatst `TrackState` vraag.
 
    >[!TIP]
    >
@@ -237,7 +237,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
    >[!TIP]
    >
-   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground`.
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground` in plaats daarvan.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -273,7 +273,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TrackLocation**
 
-   Verzendt de huidige breedte- en lengtecoördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen een bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met `TrackLocation` vraag.
+   Verzendt de huidige breedte- en lengtecoördinaten. Hiermee worden ook de in de `ADBMobileConfig.json` bestand om te bepalen of de locatie die als parameter wordt opgegeven zich binnen een van uw POI bevindt. Als de huidige coördinaten zich binnen een bepaalde POI bevinden, wordt een contextgegevensvariabele gevuld en verzonden met de `TrackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -500,7 +500,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TargetLoadRequest**
 
-   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een `Action<NSDictionary>` callback wordt geproduceerd.
+   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in wordt geproduceerd `Action<NSDictionary>` callback.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -520,7 +520,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **TargetCreateRequest**
 
-   De aannemer van de gemak om een `ADBTargetLocationRequest` voorwerp met de bepaalde parameters tot stand te brengen.
+   Handige constructor om een `ADBTargetLocationRequest` met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -571,7 +571,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **AudienceVisitorProfile**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere keren starten van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Bezoekersprofiel is opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -635,7 +635,7 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 * **AudienceSignalWithData**
 
-   Verzendt publieksbeheer een signaal met eigenschappen en krijgt de passende segmenten die in een `Action<NSDictionary>` callback zijn teruggekeerd.
+   Verzendt publieksbeheer een signaal met eigenschappen en krijgt de passende segmenten teruggegeven in een `Action<NSDictionary>`  callback.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -670,11 +670,11 @@ iOS-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Zie [Video Analytics](/help/ios/getting-started/dev-qs.md) voor meer informatie.
+Zie voor meer informatie [Video Analytics](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 
-   Retourneert een `ADBMediaSettings`-object met opgegeven parameters.
+   Retourneert een `ADBMediaSettings` object met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -690,7 +690,7 @@ Zie [Video Analytics](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 
 * **MediaAdCreateSettings**
 
-   Retourneert een `ADBMediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `ADBMediaSettings` -object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -706,7 +706,7 @@ Zie [Video Analytics](/help/ios/getting-started/dev-qs.md) voor meer informatie.
 
 * **MediaOpenWithSettings**
 
-   Opent een `ADBMediaSettings`-object voor tekstspatiëring.
+   Hiermee opent u een `ADBMediaSettings` object voor bijhouden.
 
    * Hier volgt de syntaxis voor deze methode:
 

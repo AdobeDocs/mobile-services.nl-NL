@@ -1,12 +1,12 @@
 ---
 description: Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Levenscycluswaarden
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 
-Ga voor meer informatie naar de Knowledge Base op [Problemen met levenscyclusgegevens oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Ga voor meer informatie naar de Knowledge Base op [Levenscyclusgegevens oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -72,7 +72,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Crashes**
 
-   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart. Bij het rapporteren van Adobe Mobile-crashes wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
+   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart. Bij het rapporteren van crash door Adobe Mobile wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
 
    * Contextgegevens/doelparameter voor analyse: `a.CrashEvent`
    * Audience Manager signaal: `c_a_CrashEvent`
@@ -126,7 +126,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Uur van dag**
 
-   Hiermee wordt het uur gemeten waarop de app is gestart. Deze metrische waarde gebruikt het 24-uurs numerieke formaat en voor tijd het ontleden gebruikt om piekgebruikstijden te bepalen.
+   Hiermee wordt het uur gemeten waarop de app is gestart. Deze metrische waarde gebruikt het 24-uurs numerieke formaat en wordt gebruikt voor tijd het ontleden om piekgebruikstijden te bepalen.
 
    * Contextgegevens/doelparameter voor analyse: `a.HourOfDay`
    * Audience Manager signaal: `c_a_HourOfDay`
@@ -198,7 +198,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 10 km)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -212,7 +212,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 100 m)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -226,7 +226,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 1 m)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -240,7 +240,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Naam van belangenpunt**
 
-   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Bevolkt door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -252,7 +252,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Afstand tot belangencentrum**
 
-   Wordt gevuld door `trackLocation`-methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
+   Bevolkt door `trackLocation` methoden wanneer het apparaat zich binnen een gedefinieerde POI bevindt.
 
    * Contextgegevens/doelparameter voor analyse:
 

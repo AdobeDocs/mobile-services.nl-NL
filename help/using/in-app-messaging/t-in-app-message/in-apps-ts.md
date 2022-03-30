@@ -1,12 +1,12 @@
 ---
 description: Deze informatie kan u helpen uw in-app overseinenkwesties oplossen.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Problemen met In-app-berichten oplossen
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Als u alle vereisten voor Overseinen in-App voltooide, maar de berichten verschi
 
 * Controleer of de SDK versie 4.2 of hoger is en correct is geconfigureerd.
 
-* Zorg ervoor dat u [Messaging](/help/using/in-app-messaging/in-app-messaging.md) sectie in uw configuratie (het gedownloade JSON dossier) hebt of een verre eindpunt van Berichten hebt, zodat het van dynamisch markeringsbeheer kan worden teruggewonnen.
+* Zorg ervoor dat u een [Berichten](/help/using/in-app-messaging/in-app-messaging.md) in uw configuratie (het gedownloade JSON-bestand) of hebt een extern eindpunt van Berichten, zodat dit kan worden opgehaald uit dynamisch tagbeheer.
 
 ## Mijn volledige-schermbericht in Android wordt niet weergegeven. Ik gebruik correcte SDK, configuratie, en mijn trekkers worden ontmoet.
 
@@ -31,19 +31,19 @@ Hebt u het manifestbestand bijgewerkt om de volledige schermactiviteit te defini
 
 ## Mijn lokale meldingsbericht in Android werkt niet.
 
-Verifieer dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Voor meer informatie, zie stap #1 in [In-app overseinen](/help/android/messaging-main/messaging/messaging.md).
+Verifieer dat de lokale ontvanger van de berichtuitzending in uw manifest wordt verklaard. Zie stap #1 in voor meer informatie [In-app berichten](/help/android/messaging-main/messaging/messaging.md).
 
 ## Is het bericht live?
 
-Controleer de lijstmening in de **[!UICONTROL Status]** kolom op de Manage in-app pagina van het Bericht en verifieer of het bericht levend is.
+Controleer de lijstweergave in het dialoogvenster **[!UICONTROL Status]** op de pagina Bericht in de app beheren en controleren of het bericht live is.
 
-## Bekijk *show eens*, *show altijd*, *show off-line* montages op de pagina van het Publiek.
+## Kijk naar *eenmaal tonen*, *altijd tonen*, *offline tonen* instellingen op de pagina Publiek.
 
-Controleer of deze instellingen correct zijn. Controleer op de pagina Publiek de opties op het tabblad **[!UICONTROL Trigger]**, waar u kunt opgeven hoe vaak het bericht wordt weergegeven.
+Controleer of deze instellingen correct zijn. Controleer op de pagina Publiek de opties op het tabblad **[!UICONTROL Trigger]** , waarin u kunt opgeven hoe vaak het bericht wordt weergegeven.
 
 ## Bij gebruik van de gebeurtenis launch als trigger...
 
-Hiermee wordt alleen een nieuwe sessie gestart. Voor informatie over wanneer een zitting begint, zie `lifecycleTimeout` in [ADBMobile JSON config](/help/ios/configuration/json-config/json-config.md) dossier.
+Hiermee wordt alleen een nieuwe sessie gestart. Voor informatie over wanneer een sessie begint, raadpleegt u `lifecycleTimeout` in de [ADBMobile JSON config](/help/ios/configuration/json-config/json-config.md) bestand.
 
 ## Ik heb mijn bericht op afstand bijgewerkt, maar mijn app geeft nog steeds het oude bericht weer.
 
@@ -65,11 +65,11 @@ Vanwege apparaatschermen met veel verschillende afmetingen past de afbeelding wa
 
 Hier volgen de exacte plaatsings- en grootteregels voor elke richting:
 
-* **Staand**, waarbij de afbeelding wordt geschaald naar een hoogte van 195 px voor telefoons, 529 px voor tablets, gecentreerd als de afbeeldingsbreedte kleiner is dan de apparaatbreedte, en bijgesneden als de afbeeldingsbreedte groter is dan de apparaatbreedte.
+* **Staand**, waarbij de afbeelding wordt geschaald naar een hoogte van 195 px voor telefoon, 529 px voor tablet, gecentreerd als de breedte van de afbeelding kleiner is dan de apparaatbreedte en uitgesneden als de breedte van de afbeelding groter is dan de apparaatbreedte.
 
 * **Liggend**, waarbij de afbeelding wordt geschaald naar 100% van de hoogte van het apparaat, is de breedte 75% van het apparaat en met een uitfade aan de rechterkant.
 
-   Als u problemen hebt met de sjabloon Volledig scherm, kunt u de aangepaste HTML-sjabloon downloaden en gebruiken. De sjabloon Aangepaste HTML biedt meer flexibiliteit voor afbeeldingen en biedt volledige controle over de sjabloon.
+   Als u problemen hebt met de sjabloon Volledig scherm, kunt u de sjabloon Aangepast HTML downloaden en gebruiken. Het malplaatje van de HTML van de Douane verstrekt grotere flexibiliteit voor beelden en staat volledige controle van het malplaatje toe.
 
 ## Mijn berichten weerspiegelen geen veranderingen/updates die ik in UI heb gemaakt.
 
@@ -79,5 +79,5 @@ Voer de volgende stappen uit:
 
 1. Koop de URL van uw berichten in uw configuratiebestand om te controleren of het externe bericht is bijgewerkt (bijvoorbeeld `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
 1. Sluit de toepassing.
-1. Wacht op een tijdspanne die langer is dan `lifecycleTimeout` in het config dossier.
+1. Wacht een tijdsperiode die langer is dan de `lifecycleTimeout` in het configuratiebestand.
 1. Open de app, navigeer naar de locatie waar het bericht moet worden weergegeven en controleer of deze is bijgewerkt.

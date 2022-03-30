@@ -1,37 +1,37 @@
 ---
-description: U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
+description: U kunt verschillende meetgegevens meten door Adobe Mobile te gebruiken en de meetgegevens te verzamelen die u voor uw app wilt bijhouden.
 keywords: mobiel
-solution: Experience Cloud,Analytics
-title: Mobiele metriek
+solution: Experience Cloud Services,Analytics
+title: Mobile Metrics
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Mobiele meetgegevens{#mobile-metrics}
+# Mobile-meetgegevens{#mobile-metrics}
 
-U kunt verschillende meetgegevens meten met Adobe Mobile en de meetgegevens verzamelen die u voor uw app wilt bijhouden.
+U kunt verschillende meetgegevens meten door Adobe Mobile te gebruiken en de meetgegevens te verzamelen die u voor uw app wilt bijhouden.
 
 De volgende typen metingen worden gemeten:
 
 * **Toepassingen worden gestart, bijgewerkt en vastgelopen**
 
-   Deze cijfers geven een overzicht van de algemene gezondheid en het gebruik van uw app. U kunt het aantal keren starten, het aantal gebruikers in elke versie van uw app, vastlopen enzovoort bijhouden. Deze meetwaarden vormen samen met de totale omzet (als u een betaalde app aanbiedt) doorgaans het beginpunt voor het meten van mobiele apps.
+   Deze cijfers geven een overzicht van de algemene gezondheid en het gebruik van uw app. U kunt het aantal keren starten bijhouden, het aantal gebruikers in elke versie van uw app, vastlopen enzovoort. Deze meetgegevens vormen samen met de totale omzet (als u een betaalde app aanbiedt) doorgaans het beginpunt voor het meten van mobiele apps.
 
 * **Gebruik en behoud**
 
    Met de maatstaven van het gebruik kunt u de gemiddelde sessieduur, dagelijkse en maandelijkse betrokken gebruikers, upgrades en andere inzichten begrijpen die u laten weten hoe en hoe vaak uw app wordt gebruikt. In Retentierapporten worden snel de niveaus van gebruikersterughouding weergegeven op de dag na de eerste keer starten, na 7 dagen en na 28 dagen.
 
-   Op Android-apparaten kunt u de Google Play-naslaggids gebruiken om te meten hoe gebruikers naar de App Store gaan voordat ze uw app downloaden.
+   Op Android-apparaten kunt u Google Play-referentietracering gebruiken om te meten hoe gebruikers naar de App Store gaan voordat ze uw app downloaden.
 
 * **Omzet**
 
-   U kunt de opbrengsten die door App-winkels zijn geïnd, weergeven en de opbrengsten direct meten met aankoopgebeurtenissen in de app. Andere maateenheden voor winkelwagentjes zijn beschikbaar door [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md).
+   U kunt de opbrengsten die door App-winkels zijn geïnd, weergeven en de opbrengsten direct meten met aankoopgebeurtenissen in de app. Andere maatstaven voor winkelwagentjes zijn beschikbaar door [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md).
 
 * **App-gebeurtenissen**
 

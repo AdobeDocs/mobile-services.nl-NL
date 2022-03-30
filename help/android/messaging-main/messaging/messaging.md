@@ -1,11 +1,11 @@
 ---
 description: U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of gebeurtenissen. Na de implementatie worden berichten dynamisch aan de app geleverd en is geen code-update vereist.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: In-app berichten
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 3%
@@ -18,32 +18,32 @@ U kunt in-app berichten leveren die worden geactiveerd vanuit analysegegevens of
 
 ## Nieuwe Adobe Experience Cloud SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de SDK van Adobe Experience Platform Mobile? Klikken [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
 >[!IMPORTANT]
 >
 >Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Ga om aan de slag te gaan naar [Launch](https://launch.adobe.com/).
-* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga om aan de slag te gaan naar [Starten](https://launch.adobe.com/).
+* Ga naar [Github: Adobe Experience Platform SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Als u Adobe Experience Platform Mobile SDKs met de Lancering van de Adobe gebruikt, **must** ook installeert de uitbreiding van de Mobiele Diensten van Adobe Analytics om de eigenschappen van de Mobiele Diensten van de Adobe te gebruiken zoals in-app overseinen en dupberichten. Zie [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services) voor meer informatie. Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met de Experience Cloud SDKs, zie [Pushoverseinen van de opstelling](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [Opstelling in-app overseinen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Als u de Adobe Experience Platform Mobile SDK&#39;s gebruikt met Adobe Launch, kunt u **moet** Installeer ook de Adobe Analytics Mobile Services-extensie voor het gebruik van Adobe Mobile Services-functies, zoals in-app berichten en pushberichten. Zie voor meer informatie [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Voor meer informatie over het gebruiken van duw overseinen en in-app overseinen met de Experience Cloud SDKs, zie [Pushberichten instellen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) en [In-app berichten instellen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
->Om in-app overseinen te gebruiken, **must** heeft SDK versie 4.2 of later.
+>Als u in-app berichten wilt gebruiken, kunt u **moet** hebben SDK versie 4.2 of hoger.
 
-U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen die bepalen wanneer de berichten worden getoond. Zie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md) voor meer informatie. Als u in-app berichten wilt weergeven, moet de SDK worden bijgewerkt. U kunt deze stappen zelfs voltooien als u nog geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en weergegeven zonder dat de App Store wordt bijgewerkt.
+U kunt berichten en de regels in de diensten van Adobe Mobile tot stand brengen die bepalen wanneer de berichten worden getoond. Zie voor meer informatie [Een bericht in de app maken](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Als u in-app berichten wilt weergeven, moet de SDK worden bijgewerkt. U kunt deze stappen zelfs voltooien als u nog geen berichten hebt bepaald. Nadat u berichten hebt gedefinieerd, worden deze dynamisch aan uw app geleverd en weergegeven zonder dat de App Store wordt bijgewerkt.
 
 ## In-app berichten inschakelen {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
+   Zie voor meer informatie *Voeg de SDK en het Dossier Config aan uw IDEA van IntelliJ of Project toe Eclipse* in [Kernimplementatie en levenscyclus](/help/android/getting-started/dev-qs.md).
 
-1. Werk het `AndroidManifest.xml` dossier bij om de volledige het schermactiviteit te verklaren en de Handler van het Bericht toe te laten:
+1. Werk de `AndroidManifest.xml` dossier om de volledige het schermactiviteit te verklaren en de Handler van het Bericht toe te laten:
 
    ```java
    <activity  
@@ -74,7 +74,7 @@ U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen
    import com.adobe.mobile.*;
    ```
 
-1. In elke `collectLifecycleData` vraag, ga `this` over om een verwijzing naar uw huidige activiteit te verstrekken:
+1. In elke `collectLifecycleData` aanroepen, doorgeven `this` om een verwijzing naar uw huidige activiteit te verstrekken:
 
    ```java
    @Override 
@@ -83,13 +83,13 @@ U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen
    }
    ```
 
-1. Controleer of het `ADBMobileConfig.json`-bestand de vereiste instellingen bevat voor berichten in de app.
+1. Controleer of de `ADBMobileConfig.json` bevat de vereiste instellingen voor in-app berichten.
 
    >[!IMPORTANT]
    >
-   >`messages` of  `remotes` is vereist.
+   >`messages` of `remotes` is vereist.
 
-   Voor berichten in de app die bij het starten dynamisch moeten worden bijgewerkt, moet het `remotes`-object aanwezig zijn en correct zijn geconfigureerd:
+   Voor berichten in de app die tijdens het starten dynamisch moeten worden bijgewerkt, gaat u naar `remotes` -object moet aanwezig zijn en correct zijn geconfigureerd:
 
    ```js
    "messages": [ 
@@ -114,24 +114,24 @@ U kunt berichten en de regels in de Mobiele diensten van Adobe tot stand brengen
    }
    ```
 
-   Als dit voorwerp niet wordt gevormd, download een bijgewerkt `ADBMobileConfig.json` dossier van de Mobiele diensten van Adobe. Voor meer informatie, zie [Voor u ](/help/android/getting-started/requirements.md) begint.
+   Als dit object niet is geconfigureerd, downloadt u een bijgewerkte versie `ADBMobileConfig.json` bestand van Adobe Mobile-services. Zie voor meer informatie [Voordat u begint](/help/android/getting-started/requirements.md).
 
 ## In-app berichten bijhouden {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-De SDK&#39;s van Android Mobile volgen de volgende metingen voor uw berichten in de app:
+De SDK&#39;s van Android Mobile volgen de volgende maatstaven voor uw in-app berichten:
 
 * Voor volledig scherm en waakzame stijl binnen-app berichten:
 
-   * **Afbeeldingen**: wanneer de gebruiker een bericht in de app activeert.
-   * **Klik op doorhalingen**: wanneer de gebruiker op  **[!UICONTROL Click through]**.
-   * **Annuleren**: wanneer de gebruiker op  **[!UICONTROL Cancel]**.
+   * **Impressies**: wanneer de gebruiker een bericht in de app activeert.
+   * **Doorhalingen klikken**: wanneer de gebruiker op **[!UICONTROL Click through]**.
+   * **Annuleren**: wanneer de gebruiker op **[!UICONTROL Cancel]**.
 
-* Voor aangepaste, volledig scherm in-app berichten moet de HTML-inhoud in het bericht de juiste code bevatten om de SDK een melding te geven van de volgende knoppen:
+* Voor aangepaste, volledig scherm in-app-berichten moet de HTML-inhoud in het bericht de juiste code bevatten om de SDK de volgende knoppen te laten volgen:
 
-   * **Voorbeeld van doorklikken**  (omleiden) bijhouden:
+   * **Doorklikken** (omleiden) voorbeeld bijhouden:
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Bijhouden van voorbeeld annuleren**  (sluiten):
+   * **Annuleren** (close) voorbeeld tracking:
 
       `adbinapp://cancel`
 
@@ -141,7 +141,7 @@ Wanneer u een bericht op volledig scherm maakt, kunt u desgewenst een fallback-a
 
 >[!IMPORTANT]
 >
->De naam van het fallback afbeeldingselement wordt opgegeven wanneer u het bericht configureert in de services van Adobe Mobile en u moet ervoor zorgen dat de opgegeven bron beschikbaar is.
+>De naam van het fallback-afbeeldingselement wordt opgegeven wanneer u het bericht configureert in Adobe Mobile-services en u moet ervoor zorgen dat de opgegeven bron beschikbaar is.
 
 ## Meldingspictogrammen configureren {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 

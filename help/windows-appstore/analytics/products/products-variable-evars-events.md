@@ -1,11 +1,11 @@
 ---
 description: Een voorbeeld van de productvariabele met Merchandising Vars en productspecifieke gebeurtenissen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Productvariabele met handelsstromen en productspecifieke gebeurtenissen
 topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -37,4 +37,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Als u een product-specifieke gebeurtenis gebruikend de *`&&products`* variabele teweegbrengt, moet u die gebeurtenis in *`&&events`* variabele ook plaatsen, anders wordt de gebeurtenis gefilterd uit tijdens verwerking.
+>Als u een productspecifieke gebeurtenis activeert met de *`&&products`* variabele, moet u die gebeurtenis ook instellen in het dialoogvenster *`&&events`* anders wordt de gebeurtenis tijdens de verwerking uitgefilterd.

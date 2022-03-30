@@ -1,11 +1,11 @@
 ---
 description: Met getimede acties kunt u de tijd in de app en de totale tijd tussen het begin en het einde van een actie meten. De SDK berekent de hoeveelheid tijd in elke sessie en de totale tijd die de sessie in beslag neemt om de handeling te voltooien. U kunt acties met tijdslimiet gebruiken om segmenten te definiëren en tijd te vergelijken met aanschaf, niveau doorgeven, doorloop uitchecken, enzovoort.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Gedetailleerde acties
 topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 exl-id: 3499766b-55f6-4861-8291-2269d56ba983
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -31,28 +31,28 @@ Een facultatieve callback staat u toe om extra actie te voeren wanneer de getime
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/dev-qs.md) voor meer informatie.
+   Zie voor meer informatie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md).
 1. De bibliotheek importeren:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Roep `trackTimedActionStart` aan en geef een naam voor een getimede actie en optionele contextgegevens op.
+1. Bellen `trackTimedActionStart` en geef een naam voor een getimede actie en optionele contextgegevens op.
 
    ```objective-c
    [ADBMobile trackTimedActionStart:@"TimeUntilPurchase"  
                                data:@{@"ExperienceName" : experience}];
    ```
 
-1. (Optioneel) Als u aanvullende contextgegevens wilt toevoegen, kunt u `trackTimedActionUpdate` met de naam van de getimede actie aanroepen.
+1. (Optioneel) Als u op elk gewenst moment aanvullende contextgegevens wilt toevoegen, kunt u `trackTimedActionUpdate` met de naam van de getimede actie.
 
    ```objective-c
    [ADBMobile trackTimedActionUpdate:@"TimeUntilPurchase"  
                                 data:@{@"myapp.ImageLiked" : imageName}];
    ```
 
-1. Wanneer de gebeurtenis voltooit, vraag `trackTimedActionEnd` en ga de getimede actienaam en `TimedActionBlock` (callback) over, die alle gegevens omhoog zullen kijken en duur berekenen.
+1. Wanneer de gebeurtenis is voltooid, roept u `trackTimedActionEnd` en geeft de naam van de getimede actie door en `TimedActionBlock` (callback), die alle gegevens opzoekt en de duur berekent.
 
    Metrische gegevens voor getimede gebeurtenissen worden opgeslagen in mobiele oplossingvariabelen voor automatische rapportage.
 

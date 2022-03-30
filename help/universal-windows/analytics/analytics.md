@@ -1,11 +1,11 @@
 ---
 description: Nadat u de bibliotheek aan uw project hebt toegevoegd, kunt u elke willekeurige aanroep van de methode Analytics overal in uw app uitvoeren.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -18,25 +18,25 @@ Nadat u de bibliotheek aan uw project hebt toegevoegd, kunt u elke willekeurige 
 
 >[!TIP]
 >
->Zorg ervoor dat u `ADBMobile.h` in uw klasse invoert.
+>Zorg ervoor dat u importeert `ADBMobile.h` naar uw klas.
 
 ## Rapporten voor mobiele toepassingen inschakelen in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Voordat u code toevoegt, moet uw Analysesysteembeheerder het volgende invullen om het bijhouden van de levensduur van de mobiele toepassing in te schakelen. Dit zorgt ervoor dat uw rapportreeks klaar is om metriek te vangen aangezien u met ontwikkeling begint.
+Voordat u code toevoegt, moet uw Analysesysteembeheerder het volgende invullen om het bijhouden van de Mobile App Lifecycle in te schakelen. Dit zorgt ervoor dat uw rapportreeks klaar is om metriek te vangen aangezien u met ontwikkeling begint.
 
-1. Open **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** en selecteer uw mobiele rapportsuite(s).
+1. Openen **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** en selecteer uw mobiele rapportsuite(s).
 
 1. Klik op **[!UICONTROL Edit Settings]** > **[!UICONTROL Mobile Management]** > **[!UICONTROL Mobile Application Reporting]**.
 
-   ![Mobiele instellingen](assets/mobile-settings.png)
+   ![Mobile-instellingen](assets/mobile-settings.png)
 
 1. Klik op **[!UICONTROL Enable Latest App Reports]**.
 
-   U kunt desgewenst ook op **[!UICONTROL Enable Mobile Location Tracking]** of **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]** klikken.
+   U kunt ook **[!UICONTROL Enable Mobile Location Tracking]** of **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
 
    ![Levenscyclus inschakelen](assets/enable-lifecycle.png)
 
-De metriek van de levenscyclus zijn nu klaar om worden gevangen, en de Mobiele Rapporten van de Toepassing verschijnen in **[!UICONTROL Reports]** menu in de marketing rapportinterface.
+Metrische gegevens over de levenscyclus kunnen nu worden vastgelegd en Mobile-toepassingsrapporten worden weergegeven in de **[!UICONTROL Reports]** in de marketing rapportinterface.
 
 ### Nieuwe versies
 
@@ -118,11 +118,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Als `CollectLifecycleData()` tweemaal in de zelfde zitting wordt geroepen, meldt uw toepassing een botsing op elke vraag na eerste. De SDK stelt een markering in wanneer de toepassing wordt afgesloten die aangeeft dat de toepassing is afgesloten. Als deze vlag niet wordt geplaatst, `CollectLifecyleData()` meldt een neerstorting.
+Indien `CollectLifecycleData()` wordt tweemaal in de zelfde zitting geroepen, meldt uw toepassing een neerstorting op elke vraag na de eerste. De SDK stelt een markering in wanneer de toepassing wordt afgesloten die aangeeft dat de toepassing is afgesloten. Als deze markering niet is ingesteld, `CollectLifecyleData()` meldt dat het programma vastloopt .
 
 ## Gebeurtenissen, profielen en eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Als u [SDK methodes](/help/universal-windows/c-configuration/methods.md) hebt bekeken, bent u waarschijnlijk benieuwend waar om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
+Als je hebt gekeken naar [Methoden van SDK](/help/universal-windows/c-configuration/methods.md)U vraagt zich waarschijnlijk af waar u gebeurtenissen, eVars, profielen, erfgenamen en lijsten wilt instellen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
 
 De verwerkingsregels bieden u verschillende voordelen:
 
@@ -154,7 +154,7 @@ We hebben ook gehoord dat sommigen van u contextgegevenssleutels benoemen met be
 "eVar1":"jimbo";
 ```
 
-Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de eenmalige toewijzing in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en de toekomstige codeupdates kunnen moeilijker zijn. In plaats daarvan raden we u ten zeerste aan beschrijvende namen te gebruiken voor sleutels en waarden:
+Dit zou het kunnen maken *lichtelijk* Wanneer u de eenmalige toewijzing uitvoert in verwerkingsregels, verliest u de leesbaarheid tijdens foutopsporing en toekomstige code-updates kan dit moeilijker zijn. In plaats daarvan raden we u ten zeerste aan beschrijvende namen te gebruiken voor sleutels en waarden:
 
 ```js
 "username":"jimbo";
@@ -178,17 +178,17 @@ Contextgegevensvariabelen die incrementele gebeurtenissen definiëren, kunnen de
 
 ## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Als u *`products`* wilt instellen in de mobiele SDK, moet u een speciale syntaxis gebruiken. Zie [Productvariabele](/help/universal-windows/analytics/products.md) voor meer informatie.
+In te stellen *`products`* in de mobiele SDK moet u een speciale syntaxis gebruiken. Zie voor meer informatie [Variabele voor producten](/help/universal-windows/analytics/products.md).
 
 ## (Optioneel) Offline bijhouden inschakelen {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Als u hits wilt opslaan wanneer het apparaat offline is, kunt u offline bijhouden inschakelen in het bestand [SDK-methoden](/help/universal-windows/c-configuration/methods.md). Let goed op de tijdstempelvereisten die worden beschreven in de verwijzing naar het configuratiebestand voordat u offline bijhouden inschakelt.
+Als u treffers wilt opslaan wanneer het apparaat offline is, kunt u offline bijhouden inschakelen in het dialoogvenster [Methoden van SDK](/help/universal-windows/c-configuration/methods.md) bestand. Let goed op de tijdstempelvereisten die worden beschreven in de verwijzing naar het configuratiebestand voordat u offline bijhouden inschakelt.
 
 ## Geolocatie en aandachtspunten {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-Met Geo-location kunt u locatiegegevens (breedte/lengte) en vooraf gedefinieerde interessepunten meten. Elke `TrackLocation` vraag verzendt:
+Met Geo-location kunt u locatiegegevens (breedte/lengte) en vooraf gedefinieerde interessepunten meten. Elk `TrackLocation` de vraag verzendt:
 
-* Latitude/Longitude en POI (indien binnen een POI die is gedefinieerd in het configuratiebestand `ADBMobileConfig.json`).
+* Breedtegraad/lengtegraad en POI (indien binnen een POI gedefinieerd in de `ADBMobileConfig.json` configuratiebestand).
 
    Deze worden doorgegeven aan mobiele oplossingsvariabelen voor automatische rapportage.
 
@@ -203,7 +203,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Als de volgende POI in het `ADBMobileConfig.json` configuratiedossier wordt bepaald:
+Als de volgende POI wordt gedefinieerd in de `ADBMobileConfig.json` configuratiebestand:
 
 ```js
 "poi" : [ 
@@ -211,11 +211,11 @@ Als de volgende POI in het `ADBMobileConfig.json` configuratiedossier wordt bepa
         ]
 ```
 
-Wanneer wordt bepaald dat de locatie van het apparaat zich binnen een straal van 7000 meter van het gedefinieerde punt bevindt, wordt een variabele van de context `a.loc.poi` met de waarde `San Francisco` verzonden in combinatie met de `TrackLocation` hit. Een contextvariabele `a.loc.dist` wordt verzonden met de afstand in meters van de bepaalde coördinaten.
+Wanneer wordt vastgesteld dat de plaats van het apparaat zich binnen een straal van 7000 meter van het gedefinieerde punt bevindt, `a.loc.poi` de variabele van contextgegevens met de waarde `San Francisco` wordt verzonden binnen met `TrackLocation` hit. An `a.loc.dist` De contextvariabele wordt verzonden met de afstand in meters van de gedefinieerde coördinaten.
 
 ## Lifetime-waarde {#section_D2C6971545BA4D639FBE07F13EF08895}
 
-Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen. Telkens wanneer u een waarde met `TrackLifetimeValueIncrease` verzendt, wordt de waarde toegevoegd aan de bestaande waarde. De waarde van het leven wordt opgeslagen op apparaat en kan op elk ogenblik worden teruggewonnen door `GetLifetimeValue` te roepen. Dit kan worden gebruikt om levensduuraankopen, meningen, video voltooit, sociale aandelen, foto uploads, etc. op te slaan.
+Met de waarde Lifetime kunt u een levensduurwaarde voor elke gebruiker meten en als doel instellen. Elke keer dat u een waarde verzendt met `TrackLifetimeValueIncrease`, wordt de waarde toegevoegd aan de bestaande waarde. De waarde van het leven wordt opgeslagen op apparaat en kan op elk ogenblik worden teruggewonnen door te roepen `GetLifetimeValue`. Dit kan worden gebruikt om levensduuraankopen, meningen, video voltooit, sociale aandelen, foto uploads, etc. op te slaan.
 
 ```js
 // Lifetime Value Example 

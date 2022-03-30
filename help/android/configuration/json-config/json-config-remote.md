@@ -1,11 +1,11 @@
 ---
 description: U kunt een ander JSON-configuratiebestand voor ADBMobile laden wanneer de toepassing wordt gestart.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Het pad ADBMobile JSON Config overschrijven
 topic-fix: Developer and implementation
 uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
 exl-id: 6ca8e264-af79-4734-aeb9-824582980953
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 U kunt een ander JSON-configuratiebestand voor ADBMobile laden wanneer de toepassing wordt gestart.
 
-Met de methode `Config.overrideConfigStream(configInput)` kunt u het pad naar een ander `ADBMobile.json`-configuratiebestand opgeven wanneer de toepassing wordt gestart. Deze methode moet worden aangeroepen vóór elke andere aanroep van Experience Cloud-SDK (vóór `Config.collectLifecycleData()`), doorgaans in de methode `onCreate` van uw eerste geladen activiteit.
+De `Config.overrideConfigStream(configInput)` kunt u een ander pad opgeven `ADBMobile.json` configuratiebestand gebruiken wanneer de toepassing wordt gestart. Deze methode moet worden aangeroepen vóór elke andere aanroep van Experience Cloud SDK (vóór `Config.collectLifecycleData()` ), doorgaans in de `onCreate` methode van uw eerste geladen activiteit.
 
 Als deze methode wordt aangeroepen met een ander pad, wordt het configuratiebestand eenmalig overschreven totdat de toepassing wordt gesloten.
 

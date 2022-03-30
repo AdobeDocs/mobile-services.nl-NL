@@ -1,11 +1,11 @@
 ---
 description: Informatie die u helpt met Video Analytics.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Informatie die u helpt met Video Analytics.
 
-Videometing wordt gedetailleerd beschreven in de handleiding [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html). Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
+De videometing wordt in het gedeelte [Streaming media meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) hulplijn. Het algemene proces voor het meten van video lijkt op dat voor alle AppMeasurement-platforms. Deze snelle beginsectie verstrekt een basisoverzicht van de ontwikkelaarstaken samen met codesteekproeven.
 
 In de volgende tabel worden de mediagegevens weergegeven die naar Analytics worden verzonden. Gebruik verwerkingsregels om de contextgegevens toe te wijzen aan een variabele Analytics.
 
@@ -40,7 +40,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 * **a.media.segment**
 
-   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door de variabele `segmentByMilestones` in te schakelen wanneer spelergebeurtenissen automatisch worden bijgehouden, of door een aangepaste segmentnaam in te stellen wanneer spelergebeurtenissen handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video weergeeft, kan SiteCatalyst het volgende verzamelen in het segment `1:M:0-25`.
+   (Vereist) Verzamelt videosegmentgegevens, met inbegrip van de segmentnaam en de orde waarin het segment in de video voorkomt. Deze variabele wordt gevuld door het toelaten van `segmentByMilestones` Deze variabele kan automatisch worden gebruikt om spelergebeurtenissen te volgen, of door een aangepaste segmentnaam in te stellen wanneer de gebeurtenissen van de speler handmatig worden bijgehouden. Wanneer een bezoeker bijvoorbeeld het eerste segment in een video bekijkt, verzamelt SiteCatalyst het volgende in het dialoogvenster `1:M:0-25` segment eVar.
 
    De standaardmethode voor het verzamelen van videogegevens verzamelt gegevens op de volgende punten:
 
@@ -91,7 +91,7 @@ In de volgende tabel worden de mediagegevens weergegeven die naar Analytics word
 
 ## Media-instellingen configureren {#section_929945D4183C428AAF3B983EFD3E2500}
 
-Configureer een `MediaSettings`-object met de instellingen die u wilt gebruiken voor het bijhouden van video:
+Een `MediaSettings` -object met de instellingen die u wilt gebruiken voor het bijhouden van video:
 
 ```js
 var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
@@ -99,7 +99,7 @@ var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
 
 ## Gebeurtenissen van speler bijhouden {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-Om videoplayback te meten, moeten `Play`, `Stop`, en `Close` methodes op de aangewezen tijden worden geroepen. Wanneer de speler bijvoorbeeld wordt gepauzeerd, `Stop`. `Play` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
+Om het afspelen van video te meten, `Play`, `Stop`, en `Close` de methoden moeten op de juiste tijdstippen worden opgeroepen . Wanneer de speler bijvoorbeeld wordt gepauzeerd, `Stop`. `Play` wordt aangeroepen wanneer het afspelen begint of wordt hervat.
 
 ## Klassen {#section_16838332727348F990305C0C6B0D795C}
 
@@ -130,7 +130,7 @@ property bool isMediaAd;
 
 * **SettingsWith (winJS: settingsWith)**
 
-   Retourneert een object `MediaSetting` met opgegeven parameters.
+   Retourneert een `MediaSetting` object met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -146,7 +146,7 @@ property bool isMediaAd;
 
 * **AdSettingsWith (winJS: adSettingsWith**
 
-   Retourneert een `MediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `MediaSettings` -object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -178,7 +178,7 @@ property bool isMediaAd;
 
 * **Close (winJS: sluiten)**
 
-   Volgt een media dicht voor media punt genoemd *name*.
+   Hiermee wordt een media-sluiten gevolgd voor het media-item met de naam *name*.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -194,7 +194,7 @@ property bool isMediaAd;
 
 * **Play (winJS: afspelen)**
 
-   Volgt een media spel voor media punt genoemd *`name`* bij gegeven *offset* (in seconden).
+   Hiermee wordt het afspelen van media voor het benoemde media-item gevolgd *`name`* op *offset* (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -210,7 +210,7 @@ property bool isMediaAd;
 
 * **Voltooid (winJS: complete)**
 
-   Markeer het media-item handmatig als voltooid in de opgegeven *offset* (in seconden).
+   Markeer het media-item handmatig als voltooid op het tabblad *offset* opgegeven (in seconden).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -226,7 +226,7 @@ property bool isMediaAd;
 
 * **Stop (winJS: stop)**
 
-   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd bij de opgegeven *offset*.
+   Meldt aan de mediamodule dat de video is gestopt of gepauzeerd op het opgegeven moment *offset*.
 
    * Hier volgt de syntaxis voor deze methode:
 

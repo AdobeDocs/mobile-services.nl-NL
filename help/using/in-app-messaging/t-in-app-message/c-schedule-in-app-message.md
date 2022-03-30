@@ -1,12 +1,12 @@
 ---
 description: U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van de week, en tijd van de dagopties vormen.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Bericht in de app plannen
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 1%
@@ -23,7 +23,7 @@ U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van d
 
 1. Klik in uw app op **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Klik op **[!UICONTROL Schedule]**.
-1. Vul de volgende velden in de sectie **[!UICONTROL Duration]** in:
+1. Vul de volgende velden in het dialoogvenster **[!UICONTROL Duration]** sectie:
 
    * **[!UICONTROL Every Day]**
 
@@ -31,9 +31,9 @@ U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van d
 
    * **[!UICONTROL Start and End]**
 
-      Gebruik de pictogrammen **[!UICONTROL Calendar]** om een begin- en einddatum voor uw bericht te selecteren.
+      Gebruik de **[!UICONTROL Calendar]** pictogrammen om een begin- en einddatum voor uw bericht te selecteren.
 
-1. Vul de volgende velden in de sectie **[!UICONTROL Days of the Week]** in:
+1. Vul de volgende velden in het dialoogvenster **[!UICONTROL Days of the Week]** sectie:
 
    * **[!UICONTROL Every Day]**
 
@@ -43,7 +43,7 @@ U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van d
 
       Klik op de dagen van de week om de dagen te selecteren waarop je bericht wilt weergeven.
 
-1. Vul de volgende velden in de sectie **[!UICONTROL Time of Day]** in:
+1. Vul de volgende velden in het dialoogvenster **[!UICONTROL Time of Day]** sectie:
 
    * **[!UICONTROL All Day ]**
 
@@ -53,4 +53,4 @@ U kunt planningsopties voor in-app berichten, met inbegrip van duur, dagen van d
 
       Pas de schuifregelaar aan om de uren van de dag op te geven waarop het bericht wordt weergegeven.
 
-1. Klik op **[!UICONTROL Save]** of **[!UICONTROL Save & Activate]**.
+1. Klikken **[!UICONTROL Save]** of **[!UICONTROL Save & Activate]**.

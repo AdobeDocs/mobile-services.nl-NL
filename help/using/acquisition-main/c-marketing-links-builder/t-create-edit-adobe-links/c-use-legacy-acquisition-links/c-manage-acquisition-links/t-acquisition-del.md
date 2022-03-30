@@ -1,12 +1,12 @@
 ---
 description: U kunt een of meer verwervingskoppelingen verwijderen wanneer deze niet meer nodig zijn.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Koppelingen voor overname verwijderen
 topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
 exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 2%
@@ -23,8 +23,8 @@ Wanneer u geen verwervingskoppelingen meer nodig hebt, kunt u deze verwijderen.
    * Schakel het selectievakje naast een of meer verwervingskoppelingen in.
    * Schakel het selectievakje in de koptekst in om al uw verwervingskoppelingen te selecteren.
 
-1. Klik **[!UICONTROL Delete Selected]** en bevestig de schrapping.
+1. Klikken **[!UICONTROL Delete Selected]** en de schrapping bevestigen.
 
    >[!TIP]
    >
-   >De optie **[!UICONTROL Delete Selection]** wordt pas weergegeven wanneer u een of meer verwervingskoppelingen selecteert.
+   >De **[!UICONTROL Delete Selection]** wordt pas weergegeven als u een of meer verwervingskoppelingen selecteert.

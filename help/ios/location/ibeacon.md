@@ -1,11 +1,11 @@
 ---
 description: Met behulp van iBeacon tracking kunt u microlocaties meten en als doel instellen met iBeacon en Low Energy Bluetooth.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Beacon tracking
 topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Met behulp van iBeacon tracking kunt u microlocaties meten en als doel instellen met iBeacon en Low Energy Bluetooth.
 
-De volgende bakengegevens worden verzonden naar Analytics en Target wanneer `trackBeacon` wordt geroepen:
+De volgende bakengegevens worden verzonden naar Analytics en Target wanneer `trackBeacon` wordt aangeroepen:
 
 * `a.beacon.uuid` - ProximityUID van het baken
 * `a.beacon.major` - Groot aantal van het baken, zoals archiefaantal
@@ -32,7 +32,7 @@ De volgende bakengegevens worden verzonden naar Analytics en Target wanneer `tra
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Zie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en LiveCycle](/help/ios/getting-started/dev-qs.md) voor meer informatie.
+   Zie voor meer informatie *SDK en configuratiebestand toevoegen aan uw project* in [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md).
 1. De bibliotheek importeren:
 
    ```objective-c

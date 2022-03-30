@@ -1,11 +1,11 @@
 ---
 description: De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Verwerkingsregels en contextgegevens
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
 
-Voor meer informatie over verwerkingsregels, zie [Overzicht van de Regels van de Verwerking](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in de documentatie van Adobe Analytics.
+Voor meer informatie over verwerkingsregels raadpleegt u [Overzicht van verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in de documentatie van Adobe Analytics.
 
 Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
@@ -38,7 +38,7 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
    "eVar1":"jimbo";
    ```
 
-   Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de éénmalige afbeelding in verwerkingsregels uitvoert, maar u verliest leesbaarheid tijdens het zuiveren en toekomstige codeupdates, die moeilijker kunnen zijn. Gebruik in plaats daarvan beschrijvende namen voor sleutels en waarden:
+   Dit zou het kunnen maken *lichtelijk* eenvoudiger wanneer u de eenmalige toewijzing uitvoert in verwerkingsregels, maar u verliest de leesbaarheid tijdens foutopsporing en toekomstige code-updates, wat moeilijker kan zijn. Gebruik in plaats daarvan beschrijvende namen voor sleutels en waarden:
 
    ```js
    "username":"jimbo";

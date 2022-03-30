@@ -1,12 +1,12 @@
 ---
 description: U kunt gebruikers naar een bestemming leiden afhankelijk van het feit of ze de app hebben geïnstalleerd (een koppeling om de app te verkennen) of niet (naar een website of een App Store).
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Verspreide advertenties
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 1%
@@ -27,17 +27,17 @@ Om een interval te vormen wanneer het creëren van een Verbinding van de Marketi
 
    * **[!UICONTROL Custom HTML]**
 
-      Selecteer uw aangepaste interstitiële HTML-pagina.
+      Selecteer uw aangepaste interstitiële HTML pagina.
 
-      Door aangepaste interstitiële opvoerpagina&#39;s te gebruiken, kunnen marketers interstitiële opvoerpagina&#39;s aanpassen met aangepaste HTML/CSS/JS, waarmee u uw pagina&#39;s kunt markeren.
+      Door aangepaste interstitiële landingspagina&#39;s te gebruiken, kunnen marketers interstitiële landingspagina&#39;s aanpassen met aangepaste HTML/CSS/JS, waarmee u uw pagina&#39;s kunt markeren.
 
-      Hier volgen de vereisten voor de HTML-pagina:
+      Hier volgen de vereisten voor de pagina HTML:
 
       * Dit moet een HTML-bestand zijn.
-      * Moet de plaatsaanduidingen `%%DEST%%` en `%%FALLBACK%%` bevatten.
-      * De geüploade HTML wordt weergegeven in een `<iframe>`.
+      * Moet de `%%DEST%%` en `%%FALLBACK%%` plaatsaanduidingen.
+      * De geüploade HTML wordt aangeboden in een `<iframe>`.
 
-         U moet ervoor zorgen dat uw koppelingsdoelstellingen naar een oudervenster richten. U kunt `<base target="_parent" />` in `<head>` of een doelbezit voor elk `<a/>` individueel specificeren.
+         U moet ervoor zorgen dat uw koppelingsdoelstellingen naar een oudervenster richten. U kunt `<base target="_parent" />` in `<head>` of specificeer een doelbezit voor elk `<a/>` afzonderlijk.
 
          >[!TIP]
          >

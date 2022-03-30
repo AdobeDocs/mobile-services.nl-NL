@@ -1,9 +1,9 @@
 ---
 description: Met de volgende informatie kunt u problemen met het testen van overnames oplossen.
 keywords: android;Acquisitie;testen
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Problemen met ophalen testen
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Hier volgen enkele problemen die u kunt tegenkomen bij het testen van overname e
 
 * De naam is hoofdlettergevoelig, dus geef geen naam op in kleine letters.
 
-   U moet ervoor zorgen dat `Config.setContext(this.getApplicationContext())` van de belangrijkste activiteit wordt geroepen. Zie [Configuratiemethoden](../configuration/methods.md) voor meer informatie.
+   U moet ervoor zorgen dat `Config.setContext(this.getApplicationContext())` wordt aangeroepen vanuit de hoofdactiviteit. Zie voor meer informatie [Configuratiemethoden](../configuration/methods.md).
 
 * Er ontbreken enkele gebruikersmachtigingen in het opgegeven bestand AndroidManifest.xml. Deze machtigingen zijn vereist voor het verzenden van gegevens en het vastleggen van offline opvolgende aanroepen:
 
@@ -31,11 +31,11 @@ Hier volgen enkele problemen die u kunt tegenkomen bij het testen van overname e
    </manifest>
    ```
 
-* Als in uw configuratie de time-out voor de referentie is ingesteld op `referrerTimeout: 5`, betekent dit dat u de installatieintentie na de installatie en de eerste keer moet verzenden om de informatie voor de referentie bij de installatietaak te zien.
+* Als de time-out van de verwijzer in uw configuratie is ingesteld op `referrerTimeout: 5`Dit betekent dat u de installatieintentie na de installatie en de eerste keer moet verzenden binnen een periode van 5 seconden om te zien hoe de informatie over de referentie bij de installatietaak wordt gevoegd.
 
-   Verhoog voor handmatige tests de `referrerTimeout` tot 10-15 seconden, zodat er voldoende tijd is om de informatie van de referentie te verzenden voordat de installatietaak wordt verwerkt.
+   Verhoog voor handmatige tests de `referrerTimeout` tot 10-15 seconden, zodat er genoeg tijd is om de verwijzende informatie te verzenden alvorens de installatierondst wordt verwerkt.
 
-* Het is belangrijk om alle stappen in [Testing Marketing Link acquisitie](t-t-testing-marketing-link-acquisition.md) in werking te stellen en ervoor te zorgen u `adb` shell en dan het volgende uitvoert:
+* Het is belangrijk alle stappen uit te voeren in [Verwerving marketinglink testen](t-t-testing-marketing-link-acquisition.md) in volgorde en zorg ervoor dat u uitvoert `adb` shell en dan het volgende:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 
@@ -45,4 +45,4 @@ Hier volgen enkele problemen die u kunt tegenkomen bij het testen van overname e
 
 >[!IMPORTANT]
 >
->U moet deze twee opdrachten afzonderlijk uitvoeren om de verwijzende intent correct te verwerken.  Anders, `adb` dubbel ontsnapt aan de verwijzingsinformatie, en de gegevens die door de uitzendingsontvanger worden ontvangen zullen onvolledig zijn.
+>U moet deze twee opdrachten afzonderlijk uitvoeren om de verwijzende intent correct te verwerken.  Anders, `adb` dubbel ontsnapt aan de verwijzende informatie, en de gegevens die door de uitzendingsontvanger worden ontvangen zullen onvolledig zijn.

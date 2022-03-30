@@ -1,11 +1,11 @@
 ---
 description: Lijst met doelmethoden die worden geleverd door de Universal Windows Platform-bibliotheek.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Doelmethoden
 topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 36%
@@ -18,11 +18,11 @@ Lijst met doelmethoden die worden geleverd door de Universal Windows Platform-bi
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target en Audience Manager.
 
-[Levenscyclusmetriek ](/help/universal-windows/metrics.md) wordt als parameters naar elke mbox-lading verzonden.
+[Levenscycluswaarden](/help/universal-windows/metrics.md) worden verzonden als parameters naar elke mbox lading.
 
 >[!TIP]
 >
->Wanneer u `winmd` methodes van winJS (JavaScript) gebruikt, hebben alle methodes automatisch hun eerste brief verminderd.
+>Wanneer u `winmd` methoden van winJS (JavaScript), wordt de eerste letter van alle methoden automatisch verlaagd.
 
 ## Klassenverwijzing: TargetLocationRequest
 
@@ -70,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Verzendt `request` naar uw geconfigureerde doelserver en retourneert de tekenreekswaarde van de aanbieding die in een blok `callback` is gegenereerd.
+   Verzenden `request` aan uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok wordt geproduceerd `callback`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -89,7 +89,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest()**
 
-   Maakt een `TargetLocationRequest`-object met de opgegeven parameters.
+   Hiermee maakt u een `TargetLocationRequest` met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -106,7 +106,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Maakt een `TargetLocationRequest`-object met de opgegeven parameters.
+   Hiermee maakt u een `TargetLocationRequest` met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 

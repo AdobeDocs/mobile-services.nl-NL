@@ -1,12 +1,12 @@
 ---
 description: U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct aan te schaffen door de URL-parameters handmatig te configureren.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Koppelingen voor overname handmatig maken
 topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -19,13 +19,13 @@ U kunt marketingkoppelingen maken om nieuwe gebruikers van mobiele apps direct a
 
 >[!IMPORTANT]
 >
->Voor deze functie is SDK-versie 4.6 of hoger vereist. Zie [Verwervingsvoorwaarden](/help/using/acquisition-main/c-acquisition-prerequisites.md) voor meer informatie.
+>Voor deze functie is SDK-versie 4.6 of hoger vereist. Zie voor meer informatie [Verwervingsvoorwaarden](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
 Het volgende diagram illustreert de componenten van een manueel gebouwde het volgen verbinding en toont de verschillende parameters URL die u moet behoorlijk vormen wanneer manueel het creëren van verwervingsverbindingen.
 
 ![](assets/acquisition_url.png)
 
-Deze koppeling is geconfigureerd voor het uitvoeren van een platformspecifieke omleiding naar de Google Play-winkel of de Apple App Store voor een mobiele app. Als de bestemming niet kan worden bepaald, is de standaardwinkel ingesteld op de Apple App Store. Nadat de app is geïnstalleerd, wordt de aangepaste contextsleutel `my.custom.key:test` toegevoegd aan de installatiepunt voor analysemogelijkheden.
+Deze koppeling is geconfigureerd om een platformspecifieke omleiding uit te voeren naar de Google Play Store of de Apple App Store voor een mobiele app. Als het doel niet kan worden bepaald, is de standaardopslag geplaatst aan Apple App Store. Nadat de app is geïnstalleerd, wordt de `my.custom.key:test` De aangepaste contextsleutel is gekoppeld aan de Analytics Install Hit.
 
 Gebruik de volgende URL-indeling om handmatig koppelingen te maken:
 
@@ -35,16 +35,16 @@ Gebruik de volgende URL-indeling om handmatig koppelingen te maken:
 >
 >De versie van de Android-SDK die u gebruikt, heeft geen invloed op dit proces.
 
-Voor iOS dient u het juiste protocol te gebruiken:
+Voor iOS moet u het juiste protocol gebruiken:
 
-* Gebruik **HTTP** als u de iOS SDK&#39;s vóór versie 4.7.0 gebruikt, of als u iOS SDK 4.7.0 of hoger gebruikt en als **[!UICONTROL Use HTTPS]** **not** is geselecteerd op de pagina App Settings.
-* Gebruik **HTTPS** als u iOS SDK 4.7.0 of later gebruikt en **[!UICONTROL Use HTTPS]** **is** geselecteerd op de pagina Toepassingsinstellingen beheren.
+* Gebruiken **HTTP** als u de SDK&#39;s van iOS vóór versie 4.7.0 gebruikt, of als u SDK 4.7.0 of hoger van iOS gebruikt, en als **[!UICONTROL Use HTTPS]** is **niet** geselecteerd op de pagina Toepassingsinstellingen beheren.
+* Gebruiken **HTTPS** als u iOS SDK 4.7.0 of hoger gebruikt en **[!UICONTROL Use HTTPS]** **is** geselecteerd op de pagina Toepassingsinstellingen beheren.
 
 Wanneer aan de volgende voorwaarden is voldaan:
 
-* `{mobile-services-app-hash}` komt overeen met de toepassings-id in het  `acquisition:appid ` configuratiebestand.
+* `{mobile-services-app-hash}` komt overeen met de toepassings-id in de configuratie `acquisition:appid ` bestand.
 
-   U vindt `{mobile-services-app-hash}` op de pagina Toepassingsinstellingen beheren onder Opties voor ophalen van SDK in het veld Id bijhouden.
+   U kunt zoeken `{mobile-services-app-hash}` op de pagina App Settings beheren onder Acquisition SDK Options in het veld Tracking ID.
 
    ![](assets/tracking-id.png)
 
@@ -60,7 +60,7 @@ Hier volgt een lijst met parameters:
 
 * **`a_g_lo`**
 
-   Lokale overschrijving in Google Play Store.
+   Landinstelling Google Play Store overschrijven.
 
    * Samplewaarde: `ko`
 
@@ -84,13 +84,13 @@ Hier volgt een lijst met parameters:
 
 * **`a_cid`**
 
-   Aangepaste id overschrijven (meestal IDFA voor iOS of ADID voor Android).
+   Aangepaste id overschrijven (doorgaans IDFA voor iOS of ADID voor Android).
 
    * Samplewaarde: `Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
-   Toetsen die met `ctx` zijn voorafgegaan, bevinden zich in de contextgegevens van de resulterende hit bij starten.
+   Toetsen vooraf ingesteld met `ctx` zal in de contextgegevens van de resulterende lanceringshit zijn.
 
    * Samplewaarde: `ctxmy.custom.key=myValue`
 
@@ -140,6 +140,6 @@ Houd rekening met de volgende informatie wanneer u handmatig verwervingskoppelin
 * Alle parameters die niet overeenkomen met parameters in de tabel worden doorgegeven als onderdeel van de omleiding van de App Store.
 * Alle parameters zijn technisch facultatief, hoewel de verbinding niet functioneel zal zijn, als minstens één opslagidentiteitskaart wordt gespecificeerd.
 
-   Een voorbeeld van een opslag-id is `a_g_id`/ `a_i_id`.
+   Een voorbeeld van een winkel-id is `a_g_id`/ `a_i_id`.
 
 * Als de bestemmingsopslag niet automatisch kan worden bepaald, en geen gebrek wordt verstrekt, is een fout 404 teruggekeerd.

@@ -1,12 +1,12 @@
 ---
 description: In het rapport Locatieoverzicht kunt u de verschillende landen, regio's en belangenpunten zien waarin uw app wordt gebruikt.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Overzicht (locatie)
 topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Overzicht (locatie){#overview-location}
 
-Met het **[!UICONTROL Location Overview]**-rapport kunt u de verschillende landen, regio&#39;s en belangengroepen (POI) zien waarin uw app wordt gebruikt.
+De **[!UICONTROL Location Overview]** Met dit rapport kunt u de verschillende landen, regio&#39;s en belangengebieden (POI) zien waarin uw app wordt gebruikt.
 
 Dit rapport biedt een zonneexplosieve visualisatie voor uw bestaande gegevens en u kunt het rapport gebruiken om publiekssegmenten (verzamelingen bezoekers) voor doelgroepen te zoeken. Het maken en beheren van soorten publiek lijkt op het maken en gebruiken van segmenten, behalve dat u het publiek beschikbaar kunt maken in de Experience Cloud.
 
@@ -27,21 +27,21 @@ Deze visualisatie verstrekt, bijvoorbeeld, het basisrapport met onderverdelingen
 
 >[!TIP]
 >
->Naast deze informatie, kunt u een in-product leerprogramma bekijken dat beschrijft hoe te met de zonneburstgrafiek in wisselwerking te staan. Als u de zelfstudie wilt starten, klikt u op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klikt u op het pictogram **[!UICONTROL i]**.
+>Naast deze informatie, kunt u een in-product leerprogramma bekijken dat beschrijft hoe te met de zonneburstgrafiek in wisselwerking te staan. Als u de zelfstudie wilt starten, klikt u op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klik op de knop **[!UICONTROL i]** pictogram.
 
 ![](assets/location.png)
 
-Deze zonneburstgrafiek is interactief. U kunt de tijdsperiode wijzigen door in de rechterbovenhoek op het pictogram **[!UICONTROL Calendar]** te klikken. Plaats de muis boven een willekeurig deel van het diagram om meer informatie weer te geven. In de volgende afbeelding ziet u bijvoorbeeld het totale aantal en het percentage gebruikers dat uw app in de Verenigde Staten gebruikt.
+Deze zonneburstgrafiek is interactief. U kunt de tijdsperiode wijzigen door op de knop **[!UICONTROL Calendar]** in de rechterbovenhoek. Plaats de muis boven een willekeurig deel van het diagram om meer informatie weer te geven. In de volgende afbeelding ziet u bijvoorbeeld het totale aantal en het percentage gebruikers dat uw app in de Verenigde Staten gebruikt.
 
 ![](assets/location_mouse.png)
 
-In deze afbeelding kunt u met de **[!UICONTROL Categories]**-knoppen in de rechterbovenhoek schakelen tussen het weergeven van informatie over de tien bovenste landen, gebieden en de drie bovenste landen **[!UICONTROL Points of Interest]**.
+In deze afbeelding worden de **[!UICONTROL Categories]** met de knoppen in de rechterbovenhoek kunt u schakelen tussen het weergeven van informatie over de bovenste tien landen, gebieden en de bovenste drie **[!UICONTROL Points of Interest]**.
 
-Hier is de visualisatie wanneer u **[!UICONTROL Country]** selecteert:
+Hier is de visualisatie wanneer u selecteert **[!UICONTROL Country]**:
 
 ![](assets/location_countries.png)
 
-Hier is de visualisatie wanneer u **[!UICONTROL Points of Interest]** selecteert:
+Hier is de visualisatie wanneer u selecteert **[!UICONTROL Points of Interest]**:
 
 ![](assets/location_poi.png)
 
@@ -61,11 +61,11 @@ U kunt onderverdelingen en secundaire metriek toevoegen, die de hoogte van elk p
 >
 >Hoe meer ringen u toevoegt aan de zonneexplosie, des te langer duurt het om te verwerken.
 
-Als u uitsplitsingen en secundaire metriek wilt toevoegen, klikt u op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klikt u op **[!UICONTROL Customize]** om het rechterspoor te openen.
+Klik op **[!UICONTROL Location Breakdown]** in de titelbalk van het rapport en klik op **[!UICONTROL Customize]** om de juiste spoorlijn te openen.
 
 ![](assets/location_rail.png)
 
-Wanneer u **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]** klikt, toont een nieuw punt met de zelfde naam zoals het vorige punt in de respectieve lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
+Wanneer u op **[!UICONTROL Add Breakdown]** of **[!UICONTROL Add Metric]**, wordt een nieuw item weergegeven met dezelfde naam als het vorige item in de respectievelijke lijst. Klik op de nieuw gemaakte metrische uitsplitsing of op de nieuwe metrische waarde om een vervolgkeuzelijst te openen waarin u een nieuw item kunt selecteren.
 
 ## Een plakfilter maken {#section_365999D49FC744ECBF9273132497E06C}
 

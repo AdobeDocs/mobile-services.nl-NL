@@ -1,12 +1,12 @@
 ---
 description: Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Rapporttypen
 topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Alvorens rapporten aan te passen, moet u het verschil tussen metrisch en een afm
 
    Een dimensie wordt gebruikt om uw gegevens te beschrijven. Dimension worden vertegenwoordigd door een koord, of een aantal te gebruiken dat als een koord (zoals een postcode handelt, en gebruikt om uw gegevens te organiseren en te segmenteren. Voorbeelden van veelvoorkomende afmetingen zijn onder andere de versie van het besturingssysteem, de naam van de campagne, de productnaam en de mobiele provider. Elke dimensie heeft een aantal specifieke waarden die met die dimensie worden geassocieerd. De versiedimensie van het besturingssysteem heeft bijvoorbeeld waarden zoals _iOS 7_ en _Android 4.1.2_.
 
-Hier zijn de soorten rapporten die u in Mobiele UI kunt produceren:
+Hier volgen de typen rapporten die u kunt genereren in de gebruikersinterface van Mobile:
 
 ## Overtijdrapport {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 
@@ -45,7 +45,7 @@ Met trendrapporten kunt u zien hoe de populairste dimensies presteren ten opzich
 
 ![](assets/trended.png)
 
-Als u een trended-rapport voor een dimensie wilt weergeven, voegt u een kleverig filter (bijvoorbeeld Besturingssysteem = iOS 6.0.1) toe aan een overlooprapport om dezelfde gegevens weer te geven. Als bonus, kunt u vijf extra metriek aan het gefiltreerde over-tijd rapport toevoegen.
+Om een trended rapport voor een afmeting te bekijken, voeg een kleverige filter (bijvoorbeeld, Werkende Systeem = iOS 6.0.1) aan een overdadig rapport toe om de zelfde gegevens te bekijken. Als bonus, kunt u vijf extra metriek aan het gefiltreerde over-tijd rapport toevoegen.
 
 ## Gefilterd overtijdrapport {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
 
@@ -67,10 +67,10 @@ U kunt het rapport bekijken een in-product leerprogramma dat beschrijft hoe te m
 
 De zelfstudie starten:
 
-1. Klik op **[!UICONTROL Usage]** in Toepassingsinstellingen beheren.
+1. Klik in Toepassingsinstellingen beheren op **[!UICONTROL Usage]**.
 
 1. Klik op **[!UICONTROL Technology]** > **[!UICONTROL Technology Breakdown]**.
-1. Klik in de titelbalk van het rapport op **[!UICONTROL Customize]** en klik op het informatiepictogram.
+1. Klik op de titelbalk van het rapport op **[!UICONTROL Customize]** en klik op het informatiepictogram.
 
 ![](assets/report_technology.png)
 

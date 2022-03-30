@@ -1,11 +1,11 @@
 ---
 description: De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten wordt verzonden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: iOS-apparaatversies
 topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 19%
@@ -20,7 +20,7 @@ De volgende tabel bevat de iOS-versietekenreeks die door veel iOS-apparaten word
 >
 >Deze lijst is gebaseerd op interne tests en online-informatie en kan onnauwkeurigheden of onvolledige informatie bevatten.
 
-Ga voor meer informatie over iOS-apparaten naar sites zoals [De iPhone Wiki](https://theiphonewiki.com/wiki/Models).
+Ga voor meer informatie over iOS-apparaten naar sites zoals [iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
 | **iPhone** | **Versie** |
 |---|---|
@@ -70,7 +70,7 @@ Ga voor meer informatie over iOS-apparaten naar sites zoals [De iPhone Wiki](htt
 | iPad 3 (GSM) | iPad3,3 |
 | iPad 4 (WiFi) | iPad3,4 |
 | iPad 4 (GSM) | iPad3,5 |
-| iPad 4, algemene versie (dezelfde versie als de 4e gen iPad van GSM, maar inclusief een extra cellulaire radio: CDMA EV-DO Rev. A en Rev. B (3.5G) | iPad3,6 |
+| iPad 4, Global version (dezelfde versie als de vierde generatie van de GSM-iPad, maar bevat een extra cellulaire radio: CDMA EV-DO Rev. A en Rev. B (3.5G) | iPad3,6 |
 | iPad Air (WiFi) | iPad4,1 |
 | iPad Air (LTE) | iPad4,2 |
 | iPad Air (CDMA) | iPad4,3 |

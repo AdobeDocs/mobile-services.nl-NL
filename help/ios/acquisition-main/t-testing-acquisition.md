@@ -1,10 +1,10 @@
 ---
 description: Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne die is gebaseerd op een vingerafdruk van een apparaat, routeren.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Verouderde overname testen
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
 exl-id: 431dc400-952a-4515-9d14-ba2efef4b2c4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Met de volgende informatie kunt u een koppeling naar een verouderde acquisitiecampagne die is gebaseerd op een vingerafdruk van een apparaat, routeren.
 
-Als de mobiele app nog niet in Google Play is, kunt u elke mobiele app als doel selecteren wanneer u de koppeling voor de campagne maakt. Dit heeft alleen invloed op welke app de acquisitieserver u omleidt, nadat u op de acquisitie-koppeling hebt geklikt, en niet op de mogelijkheid om de acquisitie-koppeling te testen.
+Als de mobiele app zich nog niet in Google Play bevindt, kunt u elke mobiele app als doel selecteren wanneer u de koppeling voor de campagne maakt. Dit heeft alleen invloed op welke app de acquisitieserver u omleidt, nadat u op de acquisitie-koppeling hebt geklikt, en niet op de mogelijkheid om de acquisitie-koppeling te testen.
 
-1. Navigeer naar **[!UICONTROL Use Legacy Acquisition Links]** in Adobe Mobile Services en genereren een aankoopcampagne-URL.
+1. Navigeren naar **[!UICONTROL Use Legacy Acquisition Links]** in Adobe Mobile Services en genereren een aankoopcampagne-URL.
 
-   Zie [Koppelingen voor verouderde overname gebruiken](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md) voor meer informatie.
+   Zie voor meer informatie [Koppelingen voor verouderde overname gebruiken](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md).
 
 1. Klik op de gegenereerde koppeling van het mobiele apparaat waarop u de toepassing wilt installeren.
 
-   Adobe (`c00.adobe.com`) bewaren de vingerafdruk en leiden deze om naar de App Store. De app hoeft niet te worden gedownload om te testen.
+   Adobe`c00.adobe.com`) de vingerafdruk op te slaan en vervolgens om te leiden naar de App Store. De app hoeft niet te worden gedownload om te testen.
 
 1. Start de toepassing voor het eerst op hetzelfde mobiele apparaat als dat u in stap 2 hebt gebruikt.
 

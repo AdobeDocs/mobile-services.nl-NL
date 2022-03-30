@@ -1,11 +1,11 @@
 ---
 description: Met Actief batchverwerking kunnen toepassingen waarvoor offline reeksspatiëring is ingeschakeld, hits bevatten die niet worden verzonden totdat het aantal controles in de wachtrij een configureerbare limiet heeft bereikt.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Batch
 topic-fix: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 exl-id: af21f435-13cb-4353-9fbb-c99274bce411
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Met Actief batchverwerking kunnen toepassingen waarvoor offline reeksspatiëring
 >
 >Voor batchverwerking is SDK versie 4.1 of hoger vereist.
 
-Als u batchverwerking bij raakbewegingen wilt inschakelen, werkt u het `ADBMobileConfig.json`-bestand bij en geeft u een waarde op voor `batchLimit`:
+Als u batchverwerking voor treffers wilt inschakelen, werkt u uw `ADBMobileConfig.json` en geef een waarde op voor `batchLimit`:
 
 ```js
 "analytics": {
@@ -29,11 +29,11 @@ Als u batchverwerking bij raakbewegingen wilt inschakelen, werkt u het `ADBMobil
 }
 ```
 
-Wanneer ingesteld op een getal hoger dan 0, plaatst de SDK het aantal hits gelijk aan *`batchLimit`* in de wachtrij. Nadat deze drempel is bereikt, worden alle treffers in de wachtrij verzonden.
+Wanneer ingesteld op een getal hoger dan 0, plaatst de SDK het aantal treffers gelijk aan *`batchLimit`*. Nadat deze drempel is bereikt, worden alle treffers in de wachtrij verzonden.
 
 De volgende methoden worden gebruikt voor batchverwerking:
 
-* `trackingGetQueueSize()` retourneert een  `NSUInteger` met het aantal treffers dat momenteel in de wachtrij met batchgegevens voorkomt.
+* `trackingGetQueueSize()` retourneert een `NSUInteger` met het aantal treffers dat momenteel in de rij van de raakpartij is.
 * `trackingSendQueuedHits()` Hiermee dwingt u de bibliotheek alle resultaten in de wachtrij te verzenden, ongeacht het aantal dat momenteel in de wachtrij staat.
 * `trackingClearQueue()` Hiermee wist u alle resultaten van de wachtrij zonder deze te verzenden.
 

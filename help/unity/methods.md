@@ -1,25 +1,24 @@
 ---
 description: Methoden van de ADBMobile.cs-configuratie
 keywords: Eenheid
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Methoden van ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 34%
 
 ---
 
-# Methoden ADBMobile.cs {#adbmobile-cs-methods}
+# Methoden van ADBMobile.cs {#adbmobile-cs-methods}
 
 ## Configuratiemethoden
 
 * **CollectLifecycleData**
 
-   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie.
+   Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -88,7 +87,7 @@ ht-degree: 34%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits worden weggegooid.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de privacystatus verandert in een aanmeldingsnaam (dan worden treffers verzonden) of een uitschakelfunctie (dan worden treffers genegeerd).
 
-      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde wordt ingesteld in het bestand [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde wordt ingesteld in het dialoogvenster [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -156,7 +155,7 @@ ht-degree: 34%
 
 * **PauseCollectingLifecycleData (alleen Android)**
 
-   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -258,9 +257,9 @@ ht-degree: 34%
 
 * **TrackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `TrackState` roept de weergave van de verhogende pagina op.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `TrackState` roept stijgende paginameningen.
 
-   Als de status leeg is, wordt deze weergegeven als *`app name app version (build)`* in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
+   Als de status leeg is, wordt deze weergegeven als *`app name app version (build)`* in verslagen. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elk plaatst `TrackState` vraag.
 
    >[!TIP]
    >
@@ -286,7 +285,7 @@ ht-degree: 34%
 
    >[!TIP]
    >
-   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground`.
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground` in plaats daarvan.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -322,7 +321,7 @@ ht-degree: 34%
 
 * **TrackLocation**
 
-   Verzendt de huidige breedte- en lengtecoördinaten. Gebruikt ook punten van belang die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen als de plaats die als parameter wordt verstrekt binnen om het even welk van uw POI is. Als de huidige coördinaten binnen bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met de vraag TrackLocation.
+   Verzendt de huidige breedte- en lengtecoördinaten. Hiermee worden ook de in de `ADBMobileConfig.json` bestand om te bepalen of de locatie die als parameter wordt opgegeven zich binnen een van uw POI bevindt. Als de huidige coördinaten binnen bepaalde POI zijn, wordt een variabele van contextgegevens bevolkt en verzonden met de vraag TrackLocation.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -540,7 +539,7 @@ ht-degree: 34%
 
 * **ProcessGooglePlayInstallReferrerUrl** *(alleen Android)*
 
-   Geef de URL van de referentie die door een aanroep van de Google Play-installatieverwijzing naar deze methode is geretourneerd, door.
+   Geef de URL van de referentie die door een aanroep van de Google Play Install Referrer-API is geretourneerd, door aan deze methode.
 
    * Hier volgt de syntaxis voor deze methode:
 

@@ -1,12 +1,12 @@
 ---
 description: Met deze informatie kunt u de opties voor pushservices configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Push Messaging configureren
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Met deze informatie kunt u de opties voor pushservices op de pagina Toepassingsinstellingen beheren configureren wanneer u een nieuwe app maakt of een bestaande app bewerkt.
 
-Alvorens u duw overseinen vormt, voltooi de in eerste instantie vereiste taken in [Vereisten om het Overseinen van de Duw toe te laten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
+Voordat u pushberichten configureert, moet u de vereiste taken uitvoeren in [Vereisten voor het inschakelen van pushberichten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
 
 * **Overwegingen bij de rapportsuite**
 
-   U kunt in elke rapportsuite één app store-app configureren voor Apple en één voor Google. Als u aanvullende apps nodig hebt, bijvoorbeeld één voor een productieomgeving en één voor een ontwikkelomgeving, stelt u een nieuwe app store-app en een nieuwe rapportsuite in voor elke omgeving.
+   U kunt één app store-app voor Apple en één voor Google configureren in elke rapportsuite. Als u aanvullende apps nodig hebt, bijvoorbeeld één voor een productieomgeving en één voor een ontwikkelomgeving, stelt u een nieuwe app store-app en een nieuwe rapportsuite in voor elke omgeving.
 
 >[!IMPORTANT]
 >
@@ -33,20 +33,20 @@ Alvorens u duw overseinen vormt, voltooi de in eerste instantie vereiste taken i
 
       **[!UICONTROL Private Key]**
 
-      Blader naar en selecteer uw geldige persoonlijke sleutel `.p12`, `.key` of `.pen`.
+      Bladeren naar en een geldige persoonlijke sleutel selecteren `.p12`, `.key`, of `.pen`.
 
       >[!IMPORTANT]
-      >Als het bestand dat u selecteert voor de invoer **[!UICONTROL Private Key]** ook een certificaat bevat, hoeft u het certificaat niet op te geven.
+      >Als het bestand dat u selecteert voor de **[!UICONTROL Private Key]** invoer bevat ook een certificaat, u hoeft het certificaat niet op te geven.
 
    * **[!UICONTROL Certificate]**
 
-      Geef een geldig certificaat op. Deze optie is alleen vereist wanneer de **[!UICONTROL Private Key]**-invoer **geen** een certificaat bevat. Zie [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md) voor meer informatie over het verkrijgen van het SSL-certificaat en de persoonlijke sleutel.
+      Geef een geldig certificaat op. Deze optie is alleen vereist als de optie **[!UICONTROL Private Key]** invoer doet dit **niet** bevatten een certificaat. Ga voor meer informatie over het verkrijgen van het SSL-certificaat en de persoonlijke sleutel naar [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
    * Google
 
       **[!UICONTROL API Key]**
 
-      Geef een geldige API-sleutel op. Zie [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md) voor meer informatie over het verkrijgen van de API-sleutel.
+      Geef een geldige API-sleutel op. Ga voor meer informatie over het verkrijgen van de API-sleutel naar [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
       Raadpleeg de volgende onderwerpen voor meer informatie:
 

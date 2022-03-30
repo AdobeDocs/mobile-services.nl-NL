@@ -1,12 +1,12 @@
 ---
 description: U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Opties voor SDK-overname configureren
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -21,7 +21,7 @@ U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstelli
 
    * **[!UICONTROL Enable]**
 
-      Maak koppelingen in de App Store waarmee u toepassingen rechtstreeks kunt downloaden van de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads. Zie [Acquisitie](/help/using/acquisition-main/acquisition-main.md) voor meer informatie.
+      Maak koppelingen in de App Store waarmee u toepassingen rechtstreeks van de Apple App Store en Google Play kunt downloaden. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads. Zie voor meer informatie [Verwerving](/help/using/acquisition-main/acquisition-main.md).
 
    * **[!UICONTROL Referrer Timeout (Seconds)]**
 
@@ -31,4 +31,4 @@ U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstelli
 
    * **[!UICONTROL More Details]**
 
-      Klik op de koppeling **[!UICONTROL More Details]** om de tracking-id van de app weer te geven.
+      Klik op de knop **[!UICONTROL More Details]** koppeling gebruiken om de tracking-id van de app weer te geven.

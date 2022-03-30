@@ -1,11 +1,11 @@
 ---
 description: De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Variabele voor producten
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 De productvariabele kan niet worden ingesteld met verwerkingsregels. In de mobiele SDK moet u een speciale syntaxis gebruiken binnen de parameter van de contextgegevens om producten rechtstreeks in te stellen op de serveraanroep.
 
-Als u de variabele *`products`* wilt instellen, stelt u een contextgegevenssleutel in op `"&&products"` en stelt u de waarde in met de syntaxis die is gedefinieerd voor *`products`*:
+Als u de *`products`* variabele, een sneltoets voor contextgegevens instellen op `"&&products"`en stelt de waarde in met de syntaxis die voor de *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-U hoeft de *`products`*-variabele niet aan de hand van verwerkingsregels toe te wijzen, aangezien deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.
+U hoeft de *`products`* variabele die verwerkingsregels gebruikt, omdat deze rechtstreeks is ingesteld op de afbeeldingsaanvraag van de SDK.

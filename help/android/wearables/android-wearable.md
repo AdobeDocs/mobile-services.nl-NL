@@ -1,11 +1,11 @@
 ---
 description: Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u gegevens kunt verzamelen van uw Android Wearable-app.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Aan de slag met Android-kabels
 topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -18,16 +18,16 @@ Vanaf Android SDK versie 4.5 is een nieuwe Android-extensie toegevoegd waarmee u
 
 ## De SDK voor een handheld-app configureren (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementatie van de Kern en Levenscyclus](/help/android/getting-started/dev-qs.md).
+Voor meer informatie over het invoeren van SDK in uw project, zie [Core-implementatie en levenscyclus](/help/android/getting-started/dev-qs.md).
 
-1. Voeg het `ADBMobileConfig.json` dossier aan de activa omslag van uw project toe.
-1. Voeg het `adobeMobileLibrary-*.jar` dossier aan de libs omslag toe of zorg ervoor dit dossier door het project van verwijzingen wordt voorzien.
+1. Voeg de `ADBMobileConfig.json` bestand naar de map assets van uw project.
+1. Voeg de `adobeMobileLibrary-*.jar` bestand naar de map libs of zorg ervoor dat naar dit bestand wordt verwezen door het project.
 
    >[!TIP]
    >
-   >Mogelijk moet u het onbewerkte project synchroniseren nadat u het bestand `.jar` hebt toegevoegd.
+   >Mogelijk moet u het verloopproject synchroniseren nadat u het `.jar` bestand.
 
-1. In de `onCreate` methode, sta SDK toegang tot uw toepassingscontext toe door `Config.setContext` te gebruiken:
+1. In de `onCreate` de SDK-toegang tot uw toepassingscontext toestaan door `Config.setContext`:
 
    ```java
    @Override 
@@ -40,7 +40,7 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    }
    ```
 
-1. Voeg de volgende code aan het `AndroidManifest.xml` dossier toe:
+1. Voeg de volgende code toe aan de `AndroidManifest.xml` bestand:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -54,8 +54,8 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    </application>
    ```
 
-1. Zorg ervoor dat uw project de Google Play-services-bibliotheek bevat.
-1. `WearableListenerService` implementeren of de corresponderende code toevoegen aan uw `WearableListenerService`:
+1. Zorg ervoor dat uw project de Google-bibliotheek voor afspeelservices bevat.
+1. Implementeren `WearableListenerService` of voeg de corresponderende code toe aan uw `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    }
    ```
 
-1. `WearListenerService` toevoegen aan het `AndroidManifest.xml`-bestand:
+1. Toevoegen `WearListenerService` aan de `AndroidManifest.xml` bestand:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -121,8 +121,8 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
 
 1. Voer een van de volgende taken uit:
 
-   * Voeg hetzelfde `ADBMobileConfig.json`-bestand toe aan de map assets van het te exporteren project.
-   * Wijzig de configuratie van de greep om de `ADBMobileConfig.json` in de map assets van de handheld-app te gebruiken:
+   * Hetzelfde toevoegen `ADBMobileConfig.json` bestand naar de map assets van uw draagbare project.
+   * Wijzig de configuratie van de grijswaarden om de  `ADBMobileConfig.json` in de map assets van de handheld app:
 
       ```java
       android { 
@@ -135,11 +135,11 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
       }
       ```
 
-1. Voeg het `adobeMobileLibrary-*.jar` dossier aan de libs omslag toe of zorg ervoor het door het project van verwijzingen wordt voorzien.
+1. Voeg de `adobeMobileLibrary-*.jar` bestand naar de map libs of zorg ervoor dat er naar deze map wordt verwezen door het project.
 
    Mogelijk moet u het verloopproject synchroniseren nadat u het jar-bestand hebt toegevoegd.
 
-1. In de `onCreate` methode, sta SDK toegang tot uw toepassingscontext toe gebruikend `Config.setContext`:
+1. In de `onCreate` de SDK-toegang tot uw toepassingscontext toestaan met `Config.setContext`:
 
    ```java
    @Override 
@@ -151,7 +151,7 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    }
    ```
 
-1. Voeg de volgende code toe aan `AndroidManifest.xml`:
+1. De volgende code toevoegen aan `AndroidManifest.xml`:
 
    ```java
    <application> 
@@ -161,8 +161,8 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    </application>
    ```
 
-1. Zorg ervoor dat uw project de Google Play-services-bibliotheek bevat.
-1. `WearableListenerService` implementeren of de corresponderende code toevoegen aan uw `WearableListenerService`:
+1. Zorg ervoor dat uw project de Google-bibliotheek voor afspeelservices bevat.
+1. Implementeren `WearableListenerService` of voeg de corresponderende code toe aan uw `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ Voor meer informatie over het invoeren van SDK in uw project, zie [de Implementa
    }
    ```
 
-1. `WearListenerService` toevoegen aan het `AndroidManifest.xml`-bestand:
+1. Toevoegen `WearListenerService` aan de `AndroidManifest.xml` bestand:
 
    ```java
    If you are using Google Play Services  < 8.2 

@@ -1,12 +1,12 @@
 ---
 description: Met deze informatie kunt u problemen met pushberichten oplossen.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Met deze informatie kunt u problemen met pushberichten oplossen.
 
 ## Waarom zijn er soms vertragingen bij het verzenden van pushberichten?
 
-De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Diensten worden geassocieerd:
+De volgende typen vertragingen kunnen worden geassocieerd met pushberichten voor Mobile Services:
 
 * **Wachten op analysepits**
 
    Elke rapportsuite bevat een instelling om te bepalen wanneer binnenkomende analyseresultaten moeten worden verwerkt. De standaardwaarde is 1 uur op het uur. De daadwerkelijke verwerking van Analytics-hits kan tot 30 minuten duren, maar duurt doorgaans 15 tot 20 minuten.
 
-   Een rapportsuite werkt bijvoorbeeld elk uur. Als u de verwerkingstijd maximaal 30 minuten meet, kan het 90 minuten duren voordat een binnenkomende hit beschikbaar is voor een pushbericht. Als een gebruiker de app om 9:01 uur heeft gestart, wordt de hit weergegeven in de gebruikersinterface voor mobiele services als een nieuwe unieke gebruiker tussen 10:15 en 10:30 uur.
+   Een rapportsuite werkt bijvoorbeeld elk uur. Als u de verwerkingstijd maximaal 30 minuten meet, kan het 90 minuten duren voordat een binnenkomende hit beschikbaar is voor een pushbericht. Als een gebruiker de app om 9:01 uur heeft gestart, wordt de hit weergegeven in de gebruikersinterface van Mobile Services als een nieuwe unieke gebruiker tussen 10:15 en 10:30.
 
 * **Wachten op pushservice**
 
@@ -35,19 +35,19 @@ De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Dienste
    >
    >De pushservices garanderen niet dat er een bericht wordt verzonden. Raadpleeg de desbetreffende documentatie voor meer informatie over de betrouwbaarheid van services:
    >
-   >* **APNS**:  [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   >* **FCM**:  [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   >* **APNS**: [Kwaliteit van de dienst](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [Levensduur van een bericht](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Hoe kan ik mijn Apple Push Service Certificate vernieuwen?
 
-Voor het verzenden van pushberichten is een geldig Push Service Certificate vereist. Mobiele services stellen u op de hoogte wanneer uw certificaat bijna verlopen is of verlopen is. Als u deze melding ontvangt, voert u de volgende stappen uit om uw certificaat te vernieuwen:
+Voor het verzenden van pushberichten is een geldig Push Service Certificate vereist. Mobile Services waarschuwt u wanneer uw certificaat bijna verlopen is of verlopen is. Als u deze melding ontvangt, voert u de volgende stappen uit om uw certificaat te vernieuwen:
 
 1. Klik op **[!UICONTROL Manage App Settings]**.
-2. Als u het huidige certificaat wilt verwijderen, schuift u naar **[!UICONTROL Push Services]** en klikt u op **[!UICONTROL Delete]**.
+2. Als u het huidige certificaat wilt verwijderen, schuift u naar **[!UICONTROL Push Services]** en klik op **[!UICONTROL Delete]**.
 3. Configureer en test een nieuw certificaat.
 
-   Voor meer informatie, zie [Vereisten om het Overseinen van de Duw toe te laten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
+   Zie voor meer informatie [Vereisten voor het inschakelen van pushberichten](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
 
 4. Klik op **[!UICONTROL Save]**.
 

@@ -1,27 +1,27 @@
 ---
-description: Het rapport Overzicht App Store bevat een momentopname van de maatstaven van uw App Store, waaronder het aantal downloads, aankopen in de app, de gemiddelde waardering van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
+description: Het App Store-overzichtsrapport geeft u een momentopname van de maatstaven van uw app-winkel, waaronder het aantal downloads, aankopen in de app, de gemiddelde score van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
 keywords: mobiel
-solution: Experience Cloud,Analytics
-title: Overzicht App Store-rapport
+solution: Experience Cloud Services,Analytics
+title: App Store - Overzichtsrapport
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# Overzicht App Store-rapport{#app-store-overview-report}
+# App Store - Overzichtsrapport{#app-store-overview-report}
 
-Het **[!UICONTROL App Store Overview]**-rapport geeft u een momentopname van de maatstaven van uw app-winkel, waaronder het aantal downloads, aankopen in de app, de gemiddelde score van de App Store, downloadopbrengsten, in-app-inkomsten, downloads per land, downloads per App Store en aankopen in de app op naam.
+De **[!UICONTROL App Store Overview]** geeft u een momentopname van de maatstaven van uw App Store, met inbegrip van het aantal downloads, in-app aankopen, de gemiddelde classificatie van de App store, downloadopbrengst, in-app opbrengst, downloads door land, downloads door App store, en in-app aankopen door naam.
 
 >[!TIP]
 >
->In Mobiele Diensten UI, **[!UICONTROL App Store]** menupunt en **[!UICONTROL Overview]** het rapport verschijnen in het linkernavigatiemenu nadat u de integratie vormt.
+>In de gebruikersinterface van Mobile Services **[!UICONTROL App Store]** menu-item en **[!UICONTROL Overview]** het rapport verschijnt in het linkernavigatiemenu nadat u de integratie vormt.
 
-Het **[!UICONTROL Overview]**-rapport bevat een overtijdse grafiek met informatie over het aantal downloads van App Store, aankopen in de app die met uw app zijn gedaan en de gemiddelde classificatie van uw app.
+De **[!UICONTROL Overview]** bevat een overtijdse grafiek met informatie over het aantal downloads van App Store, aankopen in de app die met uw app zijn gedaan en de gemiddelde score van uw app.
 
 ![](assets/app_store_metrics.png)
 
@@ -29,19 +29,19 @@ U kunt op elke metrische waarde klikken om de bijbehorende lijn te verbergen of 
 
 >[!IMPORTANT]
 >
->De gegevens van de App store, zoals downloads, rang, opbrengst, classificatie, etc. in Adobe Analytics vereisen een integratie van de Verbinding van Gegevens met een aangewezen verkoper. `appFigures` biedt momenteel een integratie, waarvoor u het juiste product en/of de juiste service moet aanschaffen  `appFigures` **** voordat u de integratie kunt inschakelen. Voor meer informatie over de integratie van de Verbinding van Gegevens, zie [Adobe Uitwisseling](https://www.adobeexchange.com/experiencecloud.html).
+>De gegevens van de App store, zoals downloads, rang, opbrengst, classificatie, etc. in Adobe Analytics vereisen een integratie van de Verbinding van Gegevens met een aangewezen verkoper. `appFigures` biedt momenteel een integratie die vereist dat het juiste product en/of de geschikte service wordt aangeschaft van `appFigures` **voor** u kunt de integratie inschakelen. Voor meer informatie over de integratie van de Verbinding van Gegevens, zie [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Naast het veranderen van de de datumwaaier van het rapport door het kalenderpictogram in het hoogste recht te klikken, kunt u sommige boor-benedenrapporten aanpassen, filters en reeksen (metriek) toevoegen, plakfilters toevoegen, en het rapport in formaat downloaden PDF of CSV. Zie [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md) voor meer informatie.
+>Naast het veranderen van de de datumwaaier van het rapport door het kalenderpictogram in het hoogste recht te klikken, kunt u sommige boor-benedenrapporten aanpassen, filters en reeksen (metriek) toevoegen, plakfilters toevoegen, en het rapport in PDF of formaat downloaden CSV. Zie voor meer informatie [Rapporten aanpassen](/help/using/usage/reports-customize/reports-customize.md).
 
-## Gemiddelde beoordeling App Store {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
+## App Store Gemiddelde beoordeling {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
 In dit rapport wordt de gemiddelde score weergegeven die gebruikers uw app hebben gegeven met de functionaliteit van de app-store.
 
 ![](assets/app_store_rating.png)
 
-U kunt overal op **[!UICONTROL App Store Average Rating]** widget klikken om een grafiek en grafiek te tonen die de gemiddelde classificatie door datum toont. Als u de gegevens voor een dag wilt bekijken, houdt u de muis boven die dag.
+U kunt overal op **[!UICONTROL App Store Average Rating]** widget om een grafiek en grafiek te tonen die de gemiddelde classificatie door datum tonen. Als u de gegevens voor een dag wilt bekijken, houdt u de muis boven die dag.
 
 ![](assets/app_store_downloads_detail.png)
 
@@ -63,7 +63,7 @@ Als u een grafiek en een grafiek wilt weergeven waarin het aantal downloads per 
 
 ![](assets/downloads_by_country.png)
 
-## Downloads via App Store {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Downloads door App Store {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Dit rapport geeft het aantal downloads voor uw app weer, gegroepeerd per App Store.
 

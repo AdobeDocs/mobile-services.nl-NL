@@ -1,12 +1,12 @@
 ---
 description: Hier is een voorbeeld van de productvariabele met Merchandising en product-specifieke gebeurtenissen.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Productvariabele met handelsstromen en productspecifieke gebeurtenissen
 topic-fix: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
 exl-id: 2ede6341-3068-4423-a509-c0ec3a2db5e8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -37,4 +37,4 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Als u een product-specifieke gebeurtenis door *`&&products`* variabele teweegbrengt te gebruiken, moet u die gebeurtenis in *`&&events`* variabele ook plaatsen. Als u die gebeurtenis niet instelt, wordt deze tijdens de verwerking uitgefilterd.
+>Als u een productspecifieke gebeurtenis activeert met de opdracht *`&&products`* variabele, moet u die gebeurtenis ook instellen in het dialoogvenster *`&&events`* variabele. Als u die gebeurtenis niet instelt, wordt deze tijdens de verwerking uitgefilterd.

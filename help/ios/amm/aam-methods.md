@@ -1,11 +1,11 @@
 ---
-description: Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de iOS-bibliotheek.
-solution: Experience Cloud,Analytics
+description: Hier volgt een lijst met de methoden van de Audience Manager die worden geleverd door de iOS-bibliotheek.
+solution: Experience Cloud Services,Analytics
 title: Methoden van Audience Manager
 topic-fix: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 exl-id: b843a52f-2b83-4e19-9f43-895bd582d4ef
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 24%
@@ -14,15 +14,15 @@ ht-degree: 24%
 
 # Methoden van Audience Manager {#audience-manager-methods}
 
-Hier volgt een lijst met de methoden voor Audience Managers die worden geleverd door de iOS-bibliotheek.
+Hier volgt een lijst met de methoden van de Audience Manager die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing, en de methodes van de Audience Manager worden geprefixeerd met &quot; `audience`.&quot;
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. De methoden worden vooraf bepaald volgens de oplossing en de Audience Manager wordt voorafgegaan door &quot; `audience`.&quot;
 
 Als Audience Manager in uw JSON-bestand is geconfigureerd, wordt een signaal met levenscyclusmetriek verzonden met `application:didFinishLaunchingWithOptions:`.
 
 * **publiekVisitorProfile**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert `null` als er geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen en retourneert, als er geen signaal is verzonden `null`. Het bezoekersprofiel is opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -72,8 +72,8 @@ Als Audience Manager in uw JSON-bestand is geconfigureerd, wordt een signaal met
 
    Hiermee stelt u de DPID en DPUUID in. Wanneer reeks, allebei zal aan elk signaal worden toegevoegd.
 
-   * **De identiteitskaart van de Leverancier van Gegevens (DPID)** is identiteitskaart van de gegevenspartner die door Audience Manager wordt toegewezen.
-   * De **Unieke gebruikersnaam van de Data Provider (DPUUID)** is de unieke id van de gegevensaanbieder voor de gebruiker.
+   * De **Data Provider ID (DPID)** is identiteitskaart van de gegevenspartner die door Audience Manager wordt toegewezen.
+   * De **Unieke gebruikersnaam gegevensaanbieder (DPUUID)** is de unieke id van de gegevensaanbieder voor de gebruiker.
 
       >[!IMPORTANT]
       >

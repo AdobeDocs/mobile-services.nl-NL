@@ -1,11 +1,11 @@
 ---
 description: Opmerkingen bij de release en bekende problemen met iOS SDK's 4.x voor Experience Cloud Solutions.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Aanvullende informatie
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aanvullende informatie {#release-notes}
 
-Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
+Hier volgen de opmerkingen bij de release, bekende problemen en hotfix-informatie voor iOS SDK&#39;s 4.x voor Experience Cloud Solutions:
 
 ## 13 april 2021: Versie 4.21.2
 
@@ -60,8 +60,8 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * In App Messaging:
 
-   * Op apparaten met iOS 10 of hoger wordt het `UserNotifications`-framework nu gebruikt om lokale meldingen te plannen voor toepassingen die zijn gekoppeld aan `UserNotifications.framework`.
-   * Berichten op volledig scherm gebruiken nu WKWebViews van `WebKit.framework`, die in uw project van Xcode moeten worden verbonden.
+   * Op apparaten met iOS 10 of hoger wordt de `UserNotifications` framework wordt nu gebruikt om lokale meldingen te plannen voor toepassingen die zijn gekoppeld aan de `UserNotifications.framework`.
+   * Berichten op volledig scherm gebruiken nu WKWebViews van `WebKit.framework`, die moet worden gekoppeld in uw Xcode-project.
    * Probleem verholpen waarbij de aankliklading met één druk niet kon worden gebruikt als kenmerken voor In-App Overseinen.
    * Probleem met vastlopen verholpen.
 
@@ -69,15 +69,15 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 ## 2 augustus 2019: Versie 4.18.7
 
-* Een wijziging die werd geïntroduceerd in versie 4.18.6, die in sommige omgevingen tot een crash leidde op apparaten met een iOS-versie ouder dan 11.0.
+* Een wijziging die werd geïntroduceerd in versie 4.18.6, die in sommige omgevingen een crash veroorzaakte op apparaten met een iOS-versie ouder dan 11.0.
 
-* Adobe Target: De eigenschap `requestLocationParameters` is toegevoegd in `ADBTargetRequestObject`, waardoor de impositieId kan worden verzonden met Target-aanvragen.
+* Adobe Target: De `requestLocationParameters` eigenschap in `ADBTargetRequestObject`, die de indrukId om met de verzoeken van het Doel toelaat worden verzonden.
 
 ## 18 juli 2019: Versie 4.18.6
 
-* Adobe Target: Alle verzoeken omvatten nu de cliënt en `sessionId` in de URL vraagparameters.
+* Adobe Target: Alle aanvragen bevatten nu de client en de `sessionId` in de URL-queryparameters.
 * Adobe Target: Een geheugenlek verholpen.
-* Bezoeker-id-service: De API&#39;s `visitorAppendToURL` en `visitorGetUrlVariablesAsync` coderen hun retourwaarden niet meer.
+* Bezoeker-id-service: De `visitorAppendToURL` en `visitorGetUrlVariablesAsync` API&#39;s coderen hun retourwaarden niet meer.
 
    Door de dubbele codering werden de geretourneerde waarden van deze API&#39;s gemarkeerd door bepaalde beveiligingsrevisies.
 
@@ -90,6 +90,6 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 * Bezoekersidentiteitskaart de Dienst - verhoogde de terugkeeronderbreking voor
    `visitorGetUrlVariablesAsync` API tot 30 seconden.
 
-* De Dienst van identiteitskaart van de bezoeker - de `setPushIdentifier` API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
+* Bezoeker-id-service - De `setPushIdentifier` De API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
 
-Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Nota&#39;s van de Versie van Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Opmerkingen bij de release van Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

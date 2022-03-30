@@ -1,25 +1,25 @@
 ---
 description: Hier is de referentieinformatie voor de standaard mobiele metriek en afmetingen.
 keywords: mobiel
-solution: Experience Cloud,Analytics
-title: Referentie voor mobiele Dimension
+solution: Experience Cloud Services,Analytics
+title: Mobile Metrics and Dimension Reference
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 1%
 
 ---
 
-# Verwijzing naar mobiele meeteenheden en afmetingen {#mobile-metrics-and-dimensions-reference}
+# Mobile metriek and afmetingen reference {#mobile-metrics-and-dimensions-reference}
 
 Deze informatie helpt u meer over de standaard mobiele metriek en afmetingen te begrijpen.
 
 >[!TIP]
 >
->De afmetingen en metrische toestemmingen die in Adobe Analytics worden geplaatst zijn op de Mobiele Diensten van toepassing. Wanneer u probeert om een rapport zonder de juiste toestemmingen in werking te stellen, komt een fout voor.
+>De afmetingen en metrische toestemmingen die in Adobe Analytics worden geplaatst zijn op de Diensten van Mobile van toepassing. Wanneer u probeert om een rapport zonder de juiste toestemmingen in werking te stellen, komt een fout voor.
 
 ## Metrics {#section_6704C815147D44AF96151D626BEB813C}
 
@@ -50,10 +50,10 @@ Hier volgt een lijst met standaard mobiele meetgegevens:
 
 * **Lanceringen**
 
-   Teweeggebracht op een looppas die geen installatie of een verbetering is. Dit wordt ook geactiveerd wanneer de toepassing de achtergrond verlaat. Standaard wordt een nieuwe opstart gestart wanneer de toepassing gedurende vijf of meer minuten op de achtergrond wordt uitgevoerd. De hoeveelheid achtergrondtijd voordat een nieuwe start wordt gestart, kan worden geconfigureerd in **[!UICONTROL SDK Analytics Options]** op de pagina Toepassingsinstellingen beheren. Zie de rij *Time-out sessie (seconden)* in [Opties voor SDK-analyse configureren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md) voor meer informatie.
+   Teweeggebracht op een looppas die geen installatie of een verbetering is. Dit wordt ook geactiveerd wanneer de toepassing de achtergrond verlaat. Standaard wordt een nieuwe opstart gestart wanneer de toepassing gedurende vijf of meer minuten op de achtergrond wordt uitgevoerd. De hoeveelheid achtergrondtijd voordat een nieuwe start wordt gestart, kan worden geconfigureerd in **[!UICONTROL SDK Analytics Options]** op de pagina Toepassingsinstellingen beheren. Zie voor meer informatie de *Time-out sessie (seconden)* rij in [Opties voor SDK-analyse configureren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    >[!IMPORTANT]
-   >Omdat de manier waarop bezoeken in [!UICONTROL Adobe Analytics] en de mobiele app start in [!UICONTROL Adobe Mobile Services] worden berekend, kan het zijn dat er verschillende resultaten worden weergegeven in de rapportage. Voor meer informatie, zie [Vergelijk Bezoeken en Mobiele Lanceringen van de Toepassing ](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
+   >Omdat bezoeken aan [!UICONTROL Adobe Analytics] en mobiele app wordt gestart in [!UICONTROL Adobe Mobile Services] worden berekend, ziet u mogelijk verschillende resultaten in de rapportage. Zie voor meer informatie [Bezoeken en Mobile App Launches vergelijken](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
 
 * **Crashes**
 
@@ -72,7 +72,7 @@ Hier volgt een lijst met standaard mobiele afmetingen:
 
 * **Installatiedatum**
 
-   Datum van de eerste start na de installatie. De datum is in de notatie *MM/DD/YYYY*.
+   Datum van de eerste start na de installatie. De datum staat in de *MM/DD/YYYY* gebruiken.
 
 * **Toepassings-id**
 
@@ -124,7 +124,7 @@ Hier volgt een lijst met standaard mobiele afmetingen:
 
 * **Apparaatnaam**
 
-   Hiermee slaat u de apparaatnaam op. In iOS identificeert een door komma&#39;s gescheiden tekenreeks van twee cijfers het iOS-apparaat. Het eerste getal vertegenwoordigt het genereren van het apparaat en de tweede getalversies van verschillende leden van de apparaatfamilie. Zie [iOS-apparaatversies](/help/ios/reference/device-versions.md) voor een volledige lijst met veelgebruikte apparaatnamen.
+   Hiermee slaat u de apparaatnaam op. In iOS identificeert een door komma&#39;s gescheiden tekenreeks van twee cijfers het iOS-apparaat. Het eerste getal vertegenwoordigt het genereren van het apparaat en de tweede getalversies van verschillende leden van de apparaatfamilie. Voor een volledige lijst met veelvoorkomende apparaatnamen raadpleegt u [iOS-apparaatversies](/help/ios/reference/device-versions.md).
 
 * **Naam vervoerder**
 

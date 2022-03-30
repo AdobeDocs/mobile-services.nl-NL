@@ -1,11 +1,11 @@
 ---
 description: Frames zijn de verschillende schermen of weergaven in uw toepassing.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: App-statussen bijhouden
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -16,13 +16,13 @@ ht-degree: 3%
 
 Frames zijn de verschillende schermen of weergaven in uw toepassing.
 
-Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, wanneer een gebruiker van de homepage aan de nieuwsvoer navigeert, wordt een `trackState` vraag verzonden. In Android wordt `trackState` doorgaans aangeroepen wanneer een nieuwe activiteit wordt geladen.
+Elke keer dat een nieuwe status in uw toepassing wordt weergegeven, bijvoorbeeld wanneer een gebruiker van de startpagina naar de nieuwsfeed navigeert, wordt een `trackState` de vraag wordt verzonden. In Android: `trackState` wordt doorgaans aangeroepen wanneer een nieuwe activiteit wordt geladen.
 
 ## Frames bijhouden {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Voeg de bibliotheek aan uw project toe en implementeer levenscyclus.
 
-   Voor meer informatie, zie *Voeg het dossier SDK en Config aan uw Project IntelliJ IDEA of Eclipse* in [de implementatie van de Kern en levenscyclus](/help/android/getting-started/dev-qs.md) toe.
+   Zie voor meer informatie *Voeg de SDK en het Dossier Config aan uw IDEA van IntelliJ of Project toe Eclipse* in [Kernimplementatie en levenscyclus](/help/android/getting-started/dev-qs.md).
 
 1. De bibliotheek importeren:
 
@@ -30,7 +30,7 @@ Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, w
    import com.adobe.mobile.*;
    ```
 
-1. In de functie `onCreate`, roep `trackState` om een klap voor deze staatsmening te verzenden:
+1. In de `onCreate` functie, aanroepen `trackState` om een hit voor deze statusweergave te verzenden:
 
    ```java
    @Override 
@@ -43,11 +43,11 @@ Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, bijvoorbeeld, w
    }
    ```
 
-`"State Name"` wordt vermeld in `View State` variabele in de Mobiele diensten van Adobe, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces wordt `View State` gerapporteerd als `Page Name` en `state views` als `page views`.
+De `"State Name"` wordt gerapporteerd in de `View State` variabele in de diensten van Adobe Mobile, en een mening wordt geregistreerd voor elk `trackState` vraag. In andere analytische interfaces, `View State` wordt gerapporteerd zoals `Page Name`, en `state views` wordt gerapporteerd zoals `page views`.
 
 ## Extra gegevens verzenden {#section_CFDB4F944496401786A145C209AB387C}
 
-Naast `"State Name"`, kunt u extra contextgegevens met elke vraag van de spooractie verzenden:
+Naast de `"State Name"`, kunt u extra contextgegevens verzenden met elke vraag van de spooractie:
 
 ```java
 @Override 
@@ -62,7 +62,7 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht:
+De waarden van contextgegevens moeten aan douanevariabelen in de diensten van Adobe Mobile worden in kaart gebracht:
 
 ![](assets/map-variable-context-state.png)
 
@@ -72,6 +72,6 @@ Frames worden meestal weergegeven met behulp van een tekenrapport, waarmee u kun
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Het **[!UICONTROL View States]** rapport. Dit rapport is gebaseerd op de wegen die de gebruikers door uw toepassing hebben genomen. Een voorbeeldpad is **[!UICONTROL Home]** > **[!UICONTROL Settings]** > **[!UICONTROL Feed]**. |
-| Adobe Analytics | Frames kunnen overal worden weergegeven waar pagina&#39;s kunnen worden weergegeven, zoals het **[!UICONTROL Pages]**-rapport, het **[!UICONTROL Page Views]**-rapport en het **[!UICONTROL Path]**-rapport. |
-| Ad-hocanalyse | Staten kunnen overal worden bekeken Pagina&#39;s kunnen worden bekeken door de **[!UICONTROL Page]** dimensie, **[!UICONTROL Page Views]** metrisch, **[!UICONTROL Path]** rapporten te gebruiken. |
+| Adobe Mobile Services | De **[!UICONTROL View States]** verslag. Dit rapport is gebaseerd op de wegen die de gebruikers door uw toepassing hebben genomen. Een voorbeeldpad is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Analytics | Frames kunnen overal worden weergegeven waar pagina&#39;s kunnen worden weergegeven, zoals de **[!UICONTROL Pages]** het **[!UICONTROL Page Views]** en de **[!UICONTROL Path]** verslag. |
+| Ad-hocanalyse | Frames kunnen overal worden weergegeven Pagina&#39;s kunnen worden weergegeven met de opdracht **[!UICONTROL Page]** dimensie, **[!UICONTROL Page Views]** metrisch, **[!UICONTROL Path]** rapporten. |

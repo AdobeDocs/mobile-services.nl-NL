@@ -1,11 +1,11 @@
 ---
 description: Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aangeboden.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: TVJS-methoden
 topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1997'
 ht-degree: 27%
@@ -46,7 +46,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
    * `ADBMobilePrivacyStatusOptOut`: Hits worden weggegooid.
    * `ADBMobilePrivacyStatusUnknown`: Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de privacystatus wordt gewijzigd in opt-in (hits worden verzonden) of opt-out (treffers worden verwijderd).
 
-      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
+      Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden. De standaardwaarde van TH wordt ingesteld in het dialoogvenster `ADBMobileConfig.json` bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -154,7 +154,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    >[!IMPORTANT]
    >
-   >Haal de IDFA alleen op van Apple API&#39;s als u een advertentieservice gebruikt. Als u IDFA ophaalt en deze niet correct gebruikt, wordt uw app mogelijk afgewezen.
+   >Haal de IDFA alleen op van de Apple API&#39;s als u een advertentieservice gebruikt. Als u IDFA ophaalt en deze niet correct gebruikt, wordt uw app mogelijk afgewezen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -171,7 +171,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
    * Retourneert: N.v.t.
    * Parameter: `idfa`
       * Type: `String`
-      * IDFA opgehaald van Apple API.
+      * IDFA is opgehaald uit de Apple API.
 
 * **setDebugLogging**
 
@@ -258,7 +258,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Verzendt de huidige breedte- en lengtecoördinaten.
 
-   Gebruikt ook punten van belang (POI) die in het `ADBMobileConfig.json` dossier worden bepaald om te bepalen of de plaats die u als parameter inging in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en verzonden met de `trackLocation` vraag.
+   Gebruikt ook punten van belang (POI) die in `ADBMobileConfig.json` om te bepalen of de plaats die u als parameter inging in om het even welk van uw POIs is. Als de huidige coördinaten zich in een gedefinieerde POI bevinden, wordt een contextgegevensvariabele gevuld en verzonden met de `trackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -383,9 +383,9 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
          * Naam van de getimede actie die wordt gebeëindigd
       * Parameter: `callback`
          * Type: `function(inAppDuration, totalDuration, data)`
-         * Callback-methode met `inAppDuration` (getal), `totalDuration` (getal) en `data` (contextgegevensobject) in de parameters.
+         * Callbackmethode die zal hebben `inAppDuration` (nummer), `totalDuration` (nummer), en `data` (context data object) in de parameters.
 
-            U kunt de definitieve slag van wordt verzonden door SDK onderdrukken door `false` in uw callback functie terug te keren.
+            U kunt voorkomen dat de eindhit wordt verzonden door de SDK door terug te keren `false` in uw callback functie.
       * Hier volgt het codevoorbeeld voor deze methode:
 
          ```objective-c
@@ -424,11 +424,11 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Retourneert de automatisch gegenereerde bezoeker-id.
 
-   Dit is een unieke bezoekersidentiteitskaart app-specifiek die door de servers van Adobe wordt geproduceerd. Als Adobe niet kunnen worden bereikt op het moment dat ze worden gegenereerd, wordt de id gegenereerd met de CFUID van Apple. De waarde wordt gegenereerd bij de eerste keer starten en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd wanneer de app wordt verwijderd.
+   Dit is een unieke bezoekersidentiteitskaart app-specifiek die door de servers van Adobe wordt geproduceerd. Als Adobe niet kunnen worden bereikt op het moment dat ze worden gegenereerd, wordt de id gegenereerd door Apple CFUID te gebruiken. De waarde wordt gegenereerd bij de eerste keer starten en wordt vanaf dat punt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps, wordt opgeslagen en hersteld tijdens het back-upproces van de standaardtoepassing en wordt verwijderd wanneer de app wordt verwijderd.
 
    >[!TIP]
    >
-   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties op 4.x SDK, is het gebruikersherkenningsteken `nil`, en het volgen herkenningsteken wordt gebruikt. Zie de rij userIdentifier hieronder voor meer informatie.
+   >Als uw app upgradet van de SDK van Experience Cloud 3.x naar 4.x, wordt de vorige aangepaste of automatisch gegenereerde bezoeker-id opgehaald en opgeslagen als de aangepaste gebruikers-id. Op deze manier blijven bezoekersgegevens behouden tussen SDK-upgrades. Voor nieuwe installaties in de 4.x SDK is de gebruikers-id `nil`en wordt de identificatiecode voor reeksspatiëring gebruikt. Zie de rij userIdentifier hieronder voor meer informatie.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -509,7 +509,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
 
    Retourneert het bezoekersprofiel dat het laatst is verkregen.
 
-   Retourneert null als er nog geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
+   Retourneert null als er nog geen signaal is verzonden. Het bezoekersprofiel is opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -723,8 +723,7 @@ Hier volgt een lijst met TVJS-methoden die door de tvOS-bibliotheek worden aange
          * Type: `String`
          * Waarde van de id die u synchroniseert.
       * Parameter: `authState`
-         * Type: ADBMobileVisitorAuthenticationState
-Verificatiestatus van de gebruiker. Mogelijke waarden zijn:
+         * Type: ADBMobileVisitorAuthenticationState-verificatiestatus van de gebruiker. Mogelijke waarden zijn:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`

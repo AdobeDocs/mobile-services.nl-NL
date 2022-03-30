@@ -1,12 +1,12 @@
 ---
 description: Hier volgen de afmetingen en metriek die automatisch door de mobiele bibliotheek kunnen worden gemeten, nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Levenscycluswaarden
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 2%
@@ -15,16 +15,16 @@ ht-degree: 2%
 
 # Levenscycluswaarden{#lifecycle-metrics}
 
-Deze sectie bevat informatie over de metriek en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen. Voor meer informatie over het oplossen van problemen, ga naar [Problemen met de gegevens van de Levenscyclus oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Deze sectie bevat informatie over de metriek en afmetingen die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd, en een koppeling om de gegevens van de levenscyclus problemen op te lossen. Ga voor meer informatie over het oplossen van problemen naar [Levenscyclusgegevens oplossen](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de SDK van Adobe Experience Platform Mobile? Klikken [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
-* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github: Adobe Experience Platform SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -83,7 +83,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Crashes**
 
-   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart.  Bij het rapporteren van Adobe Mobile-crashes wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
+   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na de crash wordt gestart.  Bij het rapporteren van crash door Adobe Mobile wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
 
    * Contextgegevens/doelparameter voor analyse: `a.CrashEvent`
    * Audience Manager signaal: `c_a_CrashEvent`
@@ -107,7 +107,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Toepassings-id**
 
-   Hiermee worden de toepassingsnaam en -versie opgeslagen in de indeling `[AppName] [BundleVersion]`. Een voorbeeld van deze indeling is `myapp 1.1`.
+   Hiermee worden de toepassingsnaam en -versie opgeslagen in het dialoogvenster `[AppName] [BundleVersion]` gebruiken. Een voorbeeld van deze indeling is `myapp 1.1`.
 
    * Contextgegevens/doelparameter voor analyse: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -135,7 +135,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Uur van dag**
 
-   Hiermee wordt het uur gemeten waarop de app is gestart.  Deze metrische waarde gebruikt het 24-uurs numerieke formaat en voor tijd het ontleden gebruikt om piekgebruikstijden te bepalen.
+   Hiermee wordt het uur gemeten waarop de app is gestart.  Deze metrische waarde gebruikt het 24-uurs numerieke formaat en wordt gebruikt voor tijd het ontleden om piekgebruikstijden te bepalen.
 
    * Contextgegevens/doelparameter voor analyse: `a.HourOfDay`
    * Audience Manager: `c_a_HourOfDay`
@@ -185,7 +185,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Naam vervoerder**
 
-   Hiermee wordt de naam van de mobiele serviceprovider opgeslagen, zoals opgegeven door het apparaat.  Belangrijk:  Deze metrische waarde wordt niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om deze waarde te kopiëren naar een variabele Analytics voor rapportage.
+   Hiermee wordt de naam van de mobiele serviceprovider opgeslagen, zoals opgegeven door het apparaat.  Belangrijk: Deze metrische waarde wordt niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om deze waarde te kopiëren naar een variabele Analytics voor rapportage.
 
    >[!IMPORTANT]
    >
@@ -203,27 +203,27 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 ## Extra mobiele meeteenheden en afmetingen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-De volgende meetwaarden en afmetingen worden vastgelegd in variabelen voor mobiele oplossingen met de methode die wordt vermeld in de kolom **Beschrijving**.
+De volgende meetwaarden en afmetingen worden in de variabelen van de mobiele oplossing vastgelegd volgens de methode die in **Beschrijving** kolom.
 
 ### Metrisch
 
 * **Totale tijd van handeling**
 
-   Wordt gevuld met methoden `trackTimedAction`.
+   Bevolkt door `trackTimedAction` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.total`
    * Audience Manager: `c_a_action_time_total`
 
 * **Tijd van handeling in toepassing**
 
-   Wordt gevuld met methoden `trackTimedAction`.
+   Bevolkt door `trackTimedAction` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.action.time.inapp`
    * Audience Manager: `c_a_action_time_inapp`
 
 * **Lifetime-waarde (gebeurtenis)**
 
-   Wordt gevuld met methoden `trackLifetimeValue`.
+   Bevolkt door `trackLifetimeValue` methoden.
 
    * Contextgegevens/doelparameter voor analyse: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
@@ -232,7 +232,7 @@ De volgende meetwaarden en afmetingen worden vastgelegd in variabelen voor mobie
 
 * **Locatie (tot 10 km)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameters voor analyse:
 

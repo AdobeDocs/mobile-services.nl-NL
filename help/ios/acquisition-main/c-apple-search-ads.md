@@ -1,20 +1,20 @@
 ---
-description: De Adobe SDK gebruikt de API's voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen app-downloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en aan te duiden.
-solution: Experience Cloud,Analytics
-title: Apple-zoekadvertenties
+description: De Adobe SDK maakt gebruik van API's voor zoekopdrachten in advertenties van Apple om ontwikkelaars en marketers in staat te stellen toepassingsdownloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en te kenmerken.
+solution: Experience Cloud Services,Analytics
+title: Zoeken in Apple-advertenties
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# Apple-zoekadvertenties {#apple-search-ads}
+# Zoeken in Apple-advertenties {#apple-search-ads}
 
-De Adobe SDK gebruikt de API&#39;s voor zoekadvertenties van Apple om ontwikkelaars en marketers in staat te stellen app-downloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en aan te duiden. Zie [Apple Search Ads](https://searchads.apple.com) voor meer informatie over campagnes voor zoekopdrachten.
+De Adobe SDK maakt gebruik van API&#39;s voor zoekopdrachten in advertenties van Apple om ontwikkelaars en marketers in staat te stellen toepassingsdownloads die afkomstig zijn van campagnes voor zoekopdrachten in de Apple App Store, te volgen en te kenmerken. Ga voor meer informatie over campagnes in advertentie zoeken naar [Zoeken in Apple-advertenties](https://searchads.apple.com).
 
 ## Voordelen {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -27,26 +27,26 @@ Hier volgen enkele voordelen van het gebruik van Apple-advertenties:
 
 >[!TIP]
 >
->Als u Apple Ads wilt implementeren, hebt u iOS SDK versie 4.13.2 of hoger nodig.
+>Als u Apple Ads wilt implementeren, moet u iOS SDK versie 4.13.2 of hoger hebben.
 
 Uw app inschakelen voor kenmerk Zoeken en toevoegen:
 
 1. Voer versie 4.13.2 of hoger van Adobe SDK uit.
 
-   Zie [Core-implementatie en levenscyclus](/help/ios/getting-started/dev-qs.md) voor meer informatie.
+   Zie voor meer informatie [Kernimplementatie en levenscyclus](/help/ios/getting-started/dev-qs.md).
 
 1. Voeg het Advertentieframework toe aan het Xcode-projectbestand voor uw app.
 
 ## Rapportage over kenmerken van zoekopdrachten {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
-1. De toewijzingsgegevens van Apple Search Ads worden opgegeven in de naam van de verwerving, de bron en de term waarden.
+1. De toewijzingsgegevens van Apple Search Ads worden opgegeven in de naam van de acquisitie, de bron en de term waarden.
 
-   Als attributie = `true`, zullen alle `iad-*` gebieden in de levenscyclushit worden omvat.
+   Indien attributie = `true`, alle `iad-*` velden worden opgenomen in de hit tijdens de levenscyclus.
 
-   Daarnaast worden de volgende waarden vanuit het woordenboek `"iad"` toegewezen aan de gegevensvelden van onze standaardverzamelingscontext:
+   Daarnaast worden de volgende waarden toegewezen op basis van de `"iad"` woordenboek voor onze typische gegevensvelden van de verwervingscontext:
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
-   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —> `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —> `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —> `"a.referrer.campaign.term"`
    Deze toewijzing zorgt ervoor dat de waarden in onze standaardrapportering beschikbaar zijn.

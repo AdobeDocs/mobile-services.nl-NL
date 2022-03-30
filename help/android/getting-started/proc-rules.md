@@ -1,11 +1,11 @@
 ---
 description: De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Verwerkingsregels en contextgegevens
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verwerkingsregels en contextgegevens {#processing-rules-and-context-data}
 
-De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt. Zie [Verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) voor meer informatie.
+De regels van de verwerking worden gebruikt om de gegevens te kopiëren die u in de variabelen van contextgegevens naar eVars, steunen, en andere variabelen voor het melden verzendt. Zie voor meer informatie [Verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
 
@@ -34,7 +34,7 @@ Houd rekening met de volgende informatie wanneer u werkt met verwerkingsregels:
    "eVar1":"jimbo"
    ```
 
-   Dit zou het *slightly* gemakkelijker kunnen maken wanneer u de éénmalige afbeelding in verwerkingsregels voltooit, maar u verliest leesbaarheid tijdens het zuiveren en toekomstige codeupdates, wat moeilijker kan zijn. In plaats daarvan raden we u sterk aan beschrijvende namen te gebruiken voor sleutels en waarden:
+   Dit zou het kunnen maken *lichtelijk* eenvoudiger wanneer u de eenmalige toewijzing in verwerkingsregels uitvoert, maar de leesbaarheid tijdens foutopsporing en toekomstige code-updates afneemt, wat moeilijker kan zijn. In plaats daarvan raden we u sterk aan beschrijvende namen te gebruiken voor sleutels en waarden:
 
    ```js
    "username":"jimbo"

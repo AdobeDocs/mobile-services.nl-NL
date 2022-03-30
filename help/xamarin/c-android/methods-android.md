@@ -1,11 +1,11 @@
 ---
 description: Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x SDK.
 keywords: Xamarine
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Methoden van Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 40%
@@ -58,7 +58,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
    * `ADBMobilePrivacyStatus.OptOut` - treffers worden genegeerd.
    * `ADBMobilePrivacyStatus.Unknown` - Als offline bijhouden is ingeschakeld, worden treffers opgeslagen totdat de status van de privacy verandert in aanmelden (vervolgens worden treffers verzonden) of Afmelden (vervolgens worden treffers verwijderd). Als offline bijhouden niet is ingeschakeld, worden treffers genegeerd totdat de privacystatus verandert in aanmelden.
 
-   De standaardwaarde wordt ingesteld in het bestand [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md).
+   De standaardwaarde wordt ingesteld in het dialoogvenster [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) bestand.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -109,7 +109,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **PauseCollectingLifecycleData**
 
-   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bij pauzeren wordt bijvoorbeeld een tijdstempel verzameld om de duur van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus correct weet dat de app niet vastloopt. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -125,7 +125,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **CollectLifecycleData (Activiteit)**
 
-   (4.2 of hoger) Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   (4.2 of hoger) Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -141,7 +141,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **CollectLifecycleData (Activiteit)**
 
-   (4.2 of hoger) Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   (4.2 of hoger) Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -160,7 +160,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **OverrideConfigStream**
 
-   (4.2 of later) Hiermee kunt u een ander `ADBMobile JSON` configuratiebestand laden wanneer de toepassing wordt gestart. De verschillende configuratie wordt gebruikt tot de toepassing wordt gesloten.
+   (4.2 of hoger) Hiermee kunt u een andere `ADBMobile JSON` .config-bestand wanneer de toepassing start. De verschillende configuratie wordt gebruikt tot de toepassing wordt gesloten.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -211,7 +211,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **TrackingIdentifier**
 
-   Retourneert de automatisch gegenereerde id voor Analytics. Dit is een unieke id die specifiek is voor de toepassing en die wordt gegenereerd bij de eerste keer dat de toepassing wordt gestart en die vanaf dat moment wordt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps en wordt verwijderd bij het verwijderen.
+   Retourneert de automatisch gegenereerde id voor Analytics. Dit is een unieke id die specifiek is voor de app en die wordt gegenereerd bij de eerste keer starten en vanaf dat moment wordt opgeslagen en gebruikt. Deze id blijft behouden tussen upgrades van apps en wordt verwijderd bij het verwijderen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -227,7 +227,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **TrackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. `States` Dit zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `TrackState` roept de weergave van de verhogende pagina op. Als de status leeg is, wordt deze weergegeven als &quot;app name app version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elke `TrackState` vraag plaatst.
+   Traceert een toepassingsstatus met optionele contextgegevens. `States` Dit zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;titelscherm&#39;, &#39;niveau 1&#39;, &#39;onderbreken&#39; enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `TrackState` roept stijgende paginameningen. Als de status leeg is, wordt deze weergegeven als &quot;app name app version (build)&quot; in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor u staat in elk plaatst `TrackState` vraag.
 
    >[!TIP]
    >
@@ -255,7 +255,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
    >[!TIP]
    >
    >
-   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground`.
+   >Als u code hebt die kan worden uitgevoerd terwijl de toepassing zich op de achtergrond bevindt (bijvoorbeeld een ophaalbewerking voor achtergrondgegevens), gebruikt u `trackActionFromBackground` in plaats daarvan.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -274,7 +274,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **TrackLocation**
 
-   Verzendt de huidige breedte- en lengtecoördinaten. Gebruikt ook aandachtspunten die in het `ADBMobileConfig.json` dossier worden bepaald of de plaats die als parameter werd verstrekt in om het even welk van uw POIs is. Als de huidige coördinaten zich in een bepaalde POI bevinden, wordt een variabele van contextgegevens gevuld en verzonden met de `TrackLocation` vraag.
+   Verzendt de huidige breedte- en lengtecoördinaten. Hiermee worden ook de in de `ADBMobileConfig.json` om te bepalen of de plaats die als parameter werd verstrekt in om het even welk van uw POIs is. Als de huidige coördinaten zich in een gedefinieerde POI bevinden, wordt een contextgegevensvariabele gevuld en verzonden met de `TrackLocation` vraag.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -511,7 +511,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **LoadRequest**
 
-   Verzendt een verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in `Action<NSDictionary>` callback wordt geproduceerd.
+   Verzendt een verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in wordt geproduceerd `Action<NSDictionary>` callback.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -534,7 +534,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **CreateRequest**
 
-   De aannemer van de gemak om een `ADBTargetLocationRequest` voorwerp met de bepaalde parameters tot stand te brengen.
+   Handige constructor om een `ADBTargetLocationRequest` met de opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -586,7 +586,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **Bezoekerprofiel**
 
-   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Het bezoekersprofiel wordt opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startende toepassingen van uw app.
+   Retourneert het bezoekersprofiel dat het laatst is verkregen. Retourneert nul als er nog geen signaal is verzonden. Het bezoekersprofiel is opgeslagen in `NSUserDefaults` voor eenvoudige toegang bij meerdere startpagina&#39;s van uw app.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -602,7 +602,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **Dpid**
 
-   Retourneert de huidige `DPID`.
+   Hiermee wordt de huidige waarde geretourneerd `DPID`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -618,7 +618,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **Dpuuid**
 
-   Retourneert de huidige `DPUUID`.
+   Hiermee wordt de huidige waarde geretourneerd `DPUUID`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -634,7 +634,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **AudienceSetDpidAndDpuuid**
 
-   Stelt de `dpid` en `dpuuid` in. Als `dpid` en `dpuuid` worden geplaatst, worden zij verzonden met elk signaal.
+   Hiermee stelt u de `dpid` en `dpuuid`. Indien `dpid` en `dpuuid` worden geplaatst, worden zij verzonden met elk signaal.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -650,7 +650,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **SignalWithData**
 
-   Verzendt publieksbeheer een signaal met eigenschappen en krijgt de passende segmenten die in een `Action<NSDictionary>` callback zijn teruggekeerd.
+   Verzendt publieksbeheer een signaal met eigenschappen en krijgt de passende segmenten teruggegeven in een `Action<NSDictionary>` callback.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -676,7 +676,7 @@ Android-methoden voor Xamarin-componenten voor Experience Cloud oplossingen 4.x 
 
 * **Herstellen**
 
-   Hiermee stelt u publieksbeheer `UUID` opnieuw in en verwijdert u het huidige bezoekersprofiel.
+   Hiermee stelt u de publieksmanager opnieuw in `UUID` en leegt het huidige bezoekersprofiel.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -696,7 +696,7 @@ Voor meer informatie over Video Analytics, zie [Video Analytics](/help/android/a
 
 * **MediaSettings**
 
-   Retourneert een `MediaSettings`-object met opgegeven parameters.
+   Retourneert een `MediaSettings` object met opgegeven parameters.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -712,7 +712,7 @@ Voor meer informatie over Video Analytics, zie [Video Analytics](/help/android/a
 
 * **AdSettingsWith**
 
-   Retourneert een `MediaSettings`-object voor gebruik bij het bijhouden van een advertentievideo.
+   Retourneert een `MediaSettings` -object voor gebruik bij het bijhouden van een advertentievideo.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -730,7 +730,7 @@ Voor meer informatie over Video Analytics, zie [Video Analytics](/help/android/a
 
 * **Open**
 
-   Opent een `ADBMediaSettings`-object voor tekstspatiëring.
+   Hiermee opent u een `ADBMediaSettings` object voor bijhouden.
 
    * Hier volgt de syntaxis voor deze methode:
 

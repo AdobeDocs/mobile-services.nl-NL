@@ -1,11 +1,11 @@
 ---
 description: Deze Uitbreidingen verstrekken u een veel gemakkelijkere manier om de verwijzing van de Vensters SDK van de Oplossingen 4.x van Experience Cloud in uw project toe te voegen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Windows Visual Studio-extensies voor Experience Cloud Solutions 4.x SDK
 topic-fix: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 exl-id: 8ed91dc1-8f30-4788-8471-21bb54256b0b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -18,10 +18,10 @@ Deze uitbreiding verstrekt een veel gemakkelijkere manier om de verwijzing van d
 
 ## De bibliotheek van GitHub installeren {#section_F55DB6241EF1475286C05FEAEBF996A3}
 
-1. Download de universele SDK van Vensters van [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
+1. Download de Windows Universal SDK van [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Pak het gedownloade bestand lokaal uit.
-1. Dubbelklik op het bestand **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** om het installatieprogramma te openen.
-1. Selecteer **[!UICONTROL Global Location]** en installeer de bibliotheek.
+1. Dubbelklik op de knop **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** bestand om het installatieprogramma te openen.
+1. Selecteren **[!UICONTROL Global Location]** en installeer de bibliotheek.
 
 ## Referenties toevoegen aan uw project {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
 
@@ -30,9 +30,9 @@ Deze uitbreiding verstrekt een veel gemakkelijkere manier om de verwijzing van d
 
    ![](assets/ref_manager.png)
 
-1. Zoek en selecteer **[!UICONTROL Adobe Mobile SDK]** op het tabblad **[!UICONTROL Extensions]**.
-1. Klik **[!UICONTROL OK]** om het te bewaren.
+1. Op de **[!UICONTROL Extensions]** tab, zoek en selecteer **[!UICONTROL Adobe Mobile SDK]**.
+1. Klikken **[!UICONTROL OK]** om het op te slaan.
 
-   De Adobe Mobile SDK wordt toegevoegd aan uw project. Als het **[!UICONTROL Microsoft Visual C++ Runtime]**-pakket nog niet is toegevoegd, wordt dit pakket ook toegevoegd aan uw project.
+   De Adobe Mobile SDK wordt toegevoegd aan uw project. Als de **[!UICONTROL Microsoft Visual C++ Runtime]** -pakket nog niet is toegevoegd, wordt dit pakket ook toegevoegd aan uw project.
 
 1. Selecteer in Configuratiebeheer een platformtype en begin met het testen van de app.

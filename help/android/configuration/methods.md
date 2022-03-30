@@ -1,17 +1,17 @@
 ---
 description: Hier volgt een lijst met methoden die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Configuratiemethoden
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+exl-id: f35b9d32-f967-42e9-bd00-ad85f3bd6bc4
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 23%
 
 ---
-
 
 # Configuratiemethoden{#configuration-methods}
 
@@ -19,7 +19,7 @@ Hier volgt een lijst met methoden die worden geleverd door de Android-bibliothee
 
 ## Initiële configuratie {#section_9169243ECC4744A899A8271F92090ECD}
 
-De volgende methode moet één keer worden aangeroepen in de methode `onCreate` van uw hoofdactiviteit:
+De volgende methode moet eenmaal worden aangeroepen in het dialoogvenster `onCreate` methode van uw hoofdactiviteit:
 
 * `setContext`
 Hier volgt het codevoorbeeld voor deze methode:
@@ -37,7 +37,7 @@ Hier volgt het codevoorbeeld voor deze methode:
 
 * **registerAdobeDataCallback**
 
-   * Registreert een voorwerp dat de `AdobeDataCallback` interface uitvoert. De overschreven methode &#39;call&#39; wordt aangeroepen met een waarde `Config.MobileDataEvent` en de bijbehorende gegevens in een `Map<String, Object>` voor de activerende gebeurtenis. Voor meer details over welke gebeurtenissen deze callback zullen teweegbrengen, zie *MobileDataEventEnum* bij de bodem van dit onderwerp.
+   * Hiermee wordt een object geregistreerd dat het `AdobeDataCallback` interface. De overschreven methode &quot;call&quot; wordt aangeroepen met een `Config.MobileDataEvent` en de bijbehorende gegevens in een `Map<String, Object>` voor de activeringsgebeurtenis. Voor meer informatie over welke gebeurtenissen deze callback zullen teweegbrengen, zie *MobileDataEventEnum* onder aan dit onderwerp.
 
       >[!TIP]
       >
@@ -89,7 +89,7 @@ Hier volgt het codevoorbeeld voor deze methode:
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`, waar het wordt weggegooid.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`Als tijdstempel is ingeschakeld in uw rapportsuite, worden treffers opgeslagen totdat de privacystatus verandert in aanmelden (hits worden verzonden) of Afmelden (hits worden genegeerd).
 
-         Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers verwijderd totdat de privacystatus verandert en u zich aanmeldt. De standaardwaarde wordt ingesteld in het `ADBMobileConfig.json`-bestand.
+         Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers verwijderd totdat de privacystatus verandert en u zich aanmeldt. De standaardwaarde wordt ingesteld in het dialoogvenster `ADBMobileConfig.json` bestand.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -105,7 +105,7 @@ Hier volgt het codevoorbeeld voor deze methode:
 
 * **setPrivacyStatus**
 
-   * Stelt de privacystatus voor de huidige gebruiker in op `status`.
+   * Hiermee wordt de privacystatus voor de huidige gebruiker ingesteld op `status`.
 
       U kunt de privacystatus instellen op een van de volgende waarden:
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, waar de treffers onmiddellijk worden verzonden. Deze treffers worden onmiddellijk verzonden.
@@ -143,7 +143,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **getUserIdentifier**
 
-   * Als een aangepaste id is ingesteld, wordt de aangepaste gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, wordt `null` geretourneerd. De standaardwaarde is `null`.
+   * Als een aangepaste id is ingesteld, wordt de aangepaste gebruikers-id geretourneerd. Als er geen aangepaste id is ingesteld, wordt deze geretourneerd `null`. De standaardwaarde is `null`.
 
       >[!TIP]
       >
@@ -163,7 +163,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **setUserIdentifier**
 
-   * Hiermee stelt u de gebruikersnaam in op `identifier`.
+   * Hiermee wordt de gebruikersnaam ingesteld op `identifier`.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -192,7 +192,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
       ```
 
 * **setDebugLogging**
-   * Stelt de voorkeur voor foutopsporing in op `debugLogging`.
+   * Hiermee wordt de voorkeur voor foutopsporing ingesteld op `debugLogging`.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -206,7 +206,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
       ```
 
 * **collectionLifecycleData**
-   * Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie [Levenscyclusmetriek](/help/android/configuration/methods.md) voor meer informatie.
+   * Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/android/configuration/methods.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -235,7 +235,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **collectLifecycleData (activity)**
 
-   * (**Versie 4.2 of later**) wijst aan SDK erop dat de levenscyclusgegevens voor gebruik over alle oplossingen in SDK moeten worden verzameld. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   * (**Versie 4.2 of hoger**) Geeft aan de SDK aan dat levenscyclusgegevens moeten worden verzameld voor gebruik in alle oplossingen in de SDK. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -253,7 +253,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **pauseCollecting &#x200B; LifecycleData**
 
-   * Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. `onPause` verzamelt bijvoorbeeld een tijdstempel om de lengte van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus weet dat de app niet vastloopt. Zie [Levenscyclusmetriek](/help/android/metrics.md) voor meer informatie.
+   * Geeft aan de SDK aan dat de app is gepauzeerd, zodat de levenscycluswaarden correct worden berekend. Bijvoorbeeld: `onPause` Hiermee wordt een tijdstempel verzameld om de lengte van de vorige sessie te bepalen. Hierdoor wordt ook een vlag ingesteld zodat de levenscyclus weet dat de app niet vastloopt. Zie voor meer informatie [Levenscycluscijfers](/help/android/metrics.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -273,7 +273,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Versie 4.2 of later**) plaatst het kleine pictogram dat voor berichten zal worden gebruikt die door SDK werden gecreeerd. Dit pictogram wordt weergegeven op de statusbalk en is de secundaire afbeelding die wordt weergegeven wanneer de gebruiker het volledige bericht ziet in het meldingscentrum.
+   * (**Versie 4.2 of hoger**) Hiermee stelt u het kleine pictogram in dat wordt gebruikt voor meldingen die door de SDK zijn gemaakt. Dit pictogram wordt weergegeven op de statusbalk en is de secundaire afbeelding die wordt weergegeven wanneer de gebruiker het volledige bericht ziet in het meldingscentrum.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -288,7 +288,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Versie 4.2 of later**) plaatst het grote pictogram dat voor berichten zal worden gebruikt die door SDK werden gecreeerd. Dit pictogram is de primaire afbeelding die wordt weergegeven wanneer de gebruiker de volledige melding in het meldingscentrum ziet.
+   * (**Versie 4.2 of hoger**) Hiermee stelt u het grote pictogram in dat wordt gebruikt voor meldingen die door de SDK zijn gemaakt. Dit pictogram is de primaire afbeelding die wordt weergegeven wanneer de gebruiker de volledige melding in het meldingscentrum ziet.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -303,7 +303,7 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Versie 4.2 of later**) staat u toe om een verschillend dossier van de config van ADBMobile JSON te laden wanneer de toepassing begint. De verschillende configuratie wordt gebruikt tot de toepassing wordt gesloten.
+   * (**Versie 4.2 of hoger**) Hiermee kunt u een ander JSON-configuratiebestand voor ADBMobile laden wanneer de toepassing wordt gestart. De verschillende configuratie wordt gebruikt tot de toepassing wordt gesloten.
    * Hier volgt de syntaxis voor deze methode:
 
       ```java
@@ -340,11 +340,11 @@ Als de tijdstempel van uw rapportsuite niet is ingeschakeld, worden treffers ver
 
 * **submitAdvertisingIdentifierTask**
 
-   * Biedt een Oproepbaar aan de SDK die de tekenreeks retourneert van de advertentie-id die door Google Play Services is geretourneerd. SDK stelt deze taak op een achtergronddraad in werking en plaatst een interne variabele voor het Advertising Identifier die op de waarde gebaseerd is die van Callable is teruggekeerd.
+   * Verstrekt Oproepbaar aan SDK die het koord van Advertising Identifier terugkeert dat van de Diensten van Google Play is teruggekeerd. SDK stelt deze taak op een achtergronddraad in werking en plaatst een interne variabele voor het Advertising Identifier die op de waarde gebaseerd is die van Callable is teruggekeerd.
 
       >[!IMPORTANT]
       > 
-      >Als u de advertentie-id wilt gebruiken in Acquisition of LiveCycle, roept u deze aan voordat u `Config.collectLifecycleData` aanroept.
+      >Als u de advertentie-id wilt gebruiken in Acquisition of LiveCycle, roept u deze aan voordat u de `Config.collectLifecycleData`.
 
       * Hier volgt de syntaxis voor deze methode:
 

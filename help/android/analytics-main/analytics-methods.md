@@ -1,12 +1,12 @@
 ---
 description: Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysemethoden
 topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 29%
@@ -17,15 +17,15 @@ ht-degree: 29%
 
 Hier volgt een lijst met Adobe Analytics-methoden die worden geleverd door de Android-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld op basis van de oplossing. Experience Cloud ID-methoden worden bijvoorbeeld voorafgegaan door `analytics`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf ingesteld volgens de oplossing, bijvoorbeeld Experience Cloud ID-methoden worden voorafgegaan door `analytics`.
 
 Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-rapportenpakket te verzenden:
 
 * **trackState**
 
-   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart` enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
+   Traceert een toepassingsstatus met optionele contextgegevens. Frames zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`, enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `trackState` roept stijgende paginameningen.
 
-   Als `state` leeg is, wordt `app name app version (build)` getoond in rapporten. Als u deze waarde in rapporten ziet, zorg ervoor dat u `state` in elke `trackState` vraag plaatst.
+   Indien `state` leeg is, `app name app version (build)` wordt weergegeven in rapporten. Als deze waarde in rapporten wordt weergegeven, controleert u of u `state` in elke `trackState` vraag.
 
    >[!TIP]
    >
@@ -43,10 +43,10 @@ Elk van de volgende methoden wordt gebruikt om gegevens naar uw Adobe Analytics-
       Analytics.trackState("loginScreen", null);
       ```
 
-* ****
-trackActionTracks een handeling in uw app.
+* **trackAction**
+Tracks an action in your app.
 
-   Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions` en andere metriek, die in uw app voorkomen.
+   Handelingen die u wilt meten, zoals `logons`, `banner taps`, `feed subscriptions`en andere meetgegevens die in uw app voorkomen.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -60,8 +60,8 @@ trackActionTracks een handeling in uw app.
       Analytics.trackAction("heroBannerTouched", null);
       ```
 
-* ****
-getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor Analytics.
+* **getTrackingIdentifier**
+Retourneert de automatisch gegenereerde bezoeker-id voor Analytics.
 
    Dit is een app-specifieke, unieke bezoekersidentiteitskaart die bij de aanvankelijke lancering wordt geproduceerd en van dat punt vooruit wordt opgeslagen en gebruikt. De id blijft behouden tussen upgrades van apps en wordt verwijderd wanneer de app wordt verwijderd.
 
@@ -79,7 +79,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **trackLocation**
 
-   Verzendt de huidige breedtegraad, lengtegraad en locatie naar een bepaald belangenpunt. Zie [Geo-locatie en interessepunten](/help/android/location/geo-poi.md) voor meer informatie.
+   Verzendt de huidige breedtegraad, lengtegraad en locatie naar een bepaald belangenpunt. Zie voor meer informatie [Geolocatie en aandachtspunten](/help/android/location/geo-poi.md).
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -95,7 +95,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **trackLifetime &#x200B; ValueIncrease**
 
-   Voegt `amount` aan de levenwaarde van de gebruiker toe.
+   Toevoegingen `amount` naar de levensduurwaarde van de gebruiker.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -111,7 +111,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **trackTimed &#x200B; ActionStart**
 
-   Start een getimede actie met de naam `action`.
+   Een getimede actie met naam starten `action`.
 
    Als u deze methode aanroept voor een actie die al is gestart, wordt de vorige getimede actie overschreven.
 
@@ -134,7 +134,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Geef `contextData` door om de contextgegevens bij te werken die aan `action` worden geassocieerd. De `data` die wordt doorgegeven, wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, overschrijft de gegevens.
+   Doorgeven in `contextData` om de contextgegevens bij te werken die aan `action`. De `data` die wordt doorgegeven, wordt toegevoegd aan de bestaande gegevens voor de actie en als dezelfde sleutel al is gedefinieerd voor `action`, overschrijft de gegevens.
 
    >[!TIP]
    >
@@ -156,11 +156,11 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **trackTimed &#x200B; ActionEnd**
 
-   Een getimede actie beëindigen. Als u `block` verstrekt, kunt u tot de definitieve tijdwaarden toegang hebben en `data` manipuleren alvorens de definitieve slag te verzenden.
+   Een getimede actie beëindigen. Als u `block`, hebt u toegang tot de uiteindelijke tijdwaarden en kunt u `data` voordat de laatste treffer wordt verzonden.
 
    >[!TIP]
    >
-   >Als u `block` verstrekt, moet u `true` terugkeren om een slag te verzenden. Als u `null` doorgeeft voor `block`, wordt de laatste hit verzonden.
+   >Als u `block`, u moet terugkeren `true` om een hit te verzenden. Passend `null` for `block` verzendt de laatste hit.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -237,7 +237,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
 
 * **processReferrer**
 
-   Verwerkt campagnegegevens van de referentie van de Google Play Store voor later gebruik.
+   Verwerkt campagnecamegegevens van de Google Play Store voor later gebruik.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -257,7 +257,7 @@ getTrackingIdentifierRetourneert de automatisch gegenereerde bezoeker-id voor An
    >
    > Deze API is beschikbaar vanaf SDK versie 4.18.0
 
-   Hiermee worden acquisitiegegevens opgehaald via de opgegeven URL van de Google Play-installatieverwijzing.
+   Haalt verwervingsgegevens op via de opgegeven URL van de Google Play-installatieverwijzing.
 
    De gegevens die via deze API worden verzameld, worden verzonden bij installatieaanvragen die naar Analytics worden verzonden en zijn beschikbaar in de Adobe Data Callback.
 

@@ -1,12 +1,12 @@
 ---
 description: Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de Android-bibliotheek.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Methoden van Adobe Experience Platform Identity Service
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 24%
@@ -19,11 +19,11 @@ Hier volgen de methoden van de Experience Cloud-id die worden geleverd door de A
 
 De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service.
 
-Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Cloud ID worden bijvoorbeeld voorafgegaan door `visitor`. Voor meer informatie, zie [Experience Cloud ID Configuratie](/help/android/c-marketing-cloud/mcvid.md).
+Methoden worden vooraf bepaald volgens de oplossing. Methoden van Experience Cloud ID worden bijvoorbeeld voorafgegaan door `visitor`. Zie voor meer informatie [Configuratie van Experience Cloud-id](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te gebruiken. Zie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service voor meer informatie.
+   Hiermee voegt u Adobe-bezoekersgegevens toe aan een URL-tekenreeks voor gebruik met de Adobe JavaScript-bibliotheek. U moet Mobile SDK 4.12+ hebben om deze methode te kunnen gebruiken. Zie voor meer informatie [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) in de documentatie van de Adobe Experience Cloud Identity Service.
 
    >[!IMPORTANT]
    >
@@ -66,7 +66,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
       >[!IMPORTANT]
       >
-      >Deze methode kan een blokkerende netwerkvraag veroorzaken en zou **not** van een draad moeten worden geroepen UI.
+      >Deze methode kan een blokkerende netwerkvraag veroorzaken en zou moeten **niet** worden aangeroepen vanuit een UI-thread.
 
 * **syncIdentifiers**
 
@@ -90,7 +90,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
    Hiermee synchroniseert u het opgegeven id-type en de opgegeven waarde met de service Bezoeker-id.
 
-   Geef `authenticationState` door als een van de volgende waarden:
+   Geef in `authenticationState` als een van de volgende waarden:
 
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
@@ -112,7 +112,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
    Synchroniseert de verstrekte herkenningstekens aan de dienst van identiteitskaart
 
-   Geef `authenticationState` door als een van de volgende waarden:
+   Geef in `authenticationState` als een van de volgende waarden:
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
@@ -133,7 +133,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
 * **getIdentifiers**
 
-   Hiermee wordt een lijst met alleen-lezen `ADBVisitorID`-objecten opgehaald.
+   Hiermee wordt een lijst met alleen-lezen opgehaald `ADBVisitorID` objecten.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -149,7 +149,7 @@ Methoden worden vooraf bepaald volgens de oplossing. De methoden Experience Clou
 
 * **getUrlVariablesAsync**
 
-   Deze methode, die is geïntroduceerd in versie 4.16.0, retourneert een correct gevormde tekenreeks die URL-variabelen van de Bezoeker-id-service bevat. Voor meer informatie over hoe deze methode wordt gebruikt, zie [Methoden van de Dienst van de Identiteit van Adobe Experience Platform](/help/android/reference/hybrid-app.md).
+   Deze methode is geïntroduceerd in versie 4.16.0 en retourneert een correct gevormde tekenreeks die de URL-variabelen van de Bezoeker-id-service bevat. Voor meer informatie over hoe deze methode wordt gebruikt, zie [Methoden van Adobe Experience Platform Identity Service](/help/android/reference/hybrid-app.md).
 
    * Hier volgt de syntaxis voor deze methode:
 

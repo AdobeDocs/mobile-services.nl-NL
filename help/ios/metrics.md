@@ -1,11 +1,11 @@
 ---
 description: In de volgende tabellen worden de metriek en afmetingen weergegeven die automatisch door de mobiele bibliotheek kunnen worden gemeten nadat de levenscyclus is geïmplementeerd.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Levenscycluscijfers
 topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 1%
@@ -18,12 +18,12 @@ Hier volgen de meetwaarden en afmetingen die automatisch door de mobiele bibliot
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de SDK van Adobe Experience Platform Mobile? Klikken [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga om aan de slag te gaan naar [Experience Platform Launch](https://launch.adobe.com/).
-* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github: Adobe Experience Platform SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## Metrische gegevens en afmetingen van de levenscyclus {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -75,7 +75,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Crashes**
 
-   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na het vastlopen opnieuw wordt gestart.  Bij het rapporteren van Adobe Mobile-crashes wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
+   Wordt geactiveerd wanneer de toepassing geen achtergrond heeft voordat deze wordt gesloten. De gebeurtenis wordt verzonden wanneer de toepassing na het vastlopen opnieuw wordt gestart.  Bij het rapporteren van crash door Adobe Mobile wordt geen globale handler voor niet-afgevangen uitzonderingen geïmplementeerd.
 
    * Contextgegevens/doelparameter voor analyse: `a.CrashEvent`
    * Audience Manager signaal: `c_a_CrashEvent`
@@ -89,7 +89,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 >[!IMPORTANT]
 >
-> De *Daily Engaged Users* en *Maandelijkse Betrokken Gebruikers* metriek worden niet automatisch opgeslagen in Analytics metrisch. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metriek vast te leggen.
+> De *Dagelijkse deelnemers* en *Maandelijkse deelnemers* metriek worden niet automatisch opgeslagen in metrisch Analytics. U moet een verwerkingsregel maken die een aangepaste gebeurtenis instelt om deze metriek vast te leggen.
 
 #### Dimensies
 
@@ -102,7 +102,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Toepassings-id**
 
-   Hiermee worden de toepassingsnaam en -versie opgeslagen in de indeling `[AppName] [BundleVersion]`. Bijvoorbeeld, `myapp 1.1`.
+   Hiermee worden de toepassingsnaam en -versie opgeslagen in het dialoogvenster `[AppName] [BundleVersion]` gebruiken. Bijvoorbeeld, `myapp 1.1`.
 
    * Contextgegevens/doel analyse: `a.AppID`
    * Publiek beheer: `c_a_AppID`
@@ -165,7 +165,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
 
 * **Apparaatnaam**
 
-   Hiermee slaat u de apparaatnaam op.  Een door komma&#39;s gescheiden tekenreeks van twee cijfers die het iOS-apparaat identificeert. Het eerste aantal vertegenwoordigt typisch de apparatengeneratie, en het tweede aantal versies verschillende leden van de apparatenfamilie. Zie iOS-apparaatversies voor een lijst met veelgebruikte apparaatnamen.
+   Hiermee slaat u de apparaatnaam op.  Een door komma&#39;s gescheiden tekenreeks van twee cijfers die het iOS-apparaat identificeert. Het eerste aantal vertegenwoordigt typisch de apparatengeneratie, en het tweede aantal versies verschillende leden van de apparatenfamilie. Zie iOS Device Versions voor een lijst met veelgebruikte apparaatnamen.
 
    * Contextgegevens/doel analyse: `a.DeviceName`
    * Publiek beheer: `c_a_DeviceName`
@@ -185,7 +185,7 @@ Voor Analytics, worden de contextgegevens die met elke levenscyclusvolgende vraa
    * Publiek beheer: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >De *Dagen sinds laatste verbetering*, *Lanceert sinds laatste verbetering*, en de *Naam van de Drager* afmetingen worden niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om de waarden naar een variabele Analytics te kopiëren voor rapportage.
+   >De *Dagen sinds laatste upgrade*, *Starten sinds laatste upgrade* en de *Naam vervoerder* De afmetingen worden niet automatisch opgeslagen in een variabele Analytics. U moet een verwerkingsregel maken om de waarden naar een variabele Analytics te kopiëren voor rapportage.
 
 
 ## Extra mobiele meeteenheden en afmetingen {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -220,7 +220,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 10 km)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameter voor analyse:
 
@@ -248,7 +248,7 @@ De volgende meetwaarden en afmetingen worden door de vermelde methode vastgelegd
 
 * **Locatie (tot 1 m)**
 
-   Wordt gevuld met methoden `trackLocation`.
+   Bevolkt door `trackLocation` methoden.
 
    * Contextgegevens/doelparameter voor analyse:
 

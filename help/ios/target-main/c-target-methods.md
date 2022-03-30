@@ -1,11 +1,11 @@
 ---
 description: Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Doelmethoden voor iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 23%
@@ -16,11 +16,11 @@ ht-degree: 23%
 
 Hier volgt een lijst met Adobe Target-methoden die worden geleverd door de iOS-bibliotheek.
 
-De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Doelmethoden hebben bijvoorbeeld de voorvoegsel `target`.
+De SDK biedt momenteel ondersteuning voor meerdere Adobe Experience Cloud-oplossingen, waaronder Analytics, Target, Audience Manager en Adobe Experience Platform Identity Service. Methoden worden vooraf bepaald volgens de oplossing. Doelmethoden hebben bijvoorbeeld de voorkeur `target`.
 
 >[!TIP]
 >
->Levenscyclusstatistieken worden als parameters naar elke lading van de box verzonden. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie. Als u de verzoeken van het Doel binnen de `didFinishLaunching` afgevaardigde methode verzendt, voeg een `[ADBMobile trackAction:data:]` of `[ADBMobile trackState:data:]` vraag vóór de de implementatiecode van het Doel toe. Op deze manier bevatten de doelaanvragen de volledige levenscyclusgegevens.
+>Levenscyclusstatistieken worden als parameters naar elke lading van de box verzonden. Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md). Als u aanvragen van het Doel verzendt binnen `didFinishLaunching` gedelegeerde methode toevoegen `[ADBMobile trackAction:data:]` of `[ADBMobile trackState:data:]` roep vóór de de implementatiecode van het Doel. Op deze manier bevatten de doelaanvragen de volledige levenscyclusgegevens.
 
 ## Klassenverwijzing: ADBTargetLocationRequest
 
@@ -52,16 +52,16 @@ NSString *const ADBTargetParameterMboxHost;
 
 >[!IMPORTANT]
 >
->* Als u SDK&#39;s **voor** versie 4.14.0 gebruikt, zie [Invoerparameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
+>* Als u SDK&#39;s gebruikt **voor** versie 4.14.0, zie [Invoerparameters](https://developers.adobetarget.com/api/#input-parameters) voor parameterbeperkingen.
 >
->* Als u SDKs versie 4.14.0 **of na** gebruikt, zie [Parameters van de Invoerpartij](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
+>* Als u SDK&#39;s versie 4.14.0 gebruikt **of na**, zie [Invoerparameters batch](https://developers.adobetarget.com/api/#batch-input-parameters) voor parameterbeperkingen.
 
 
 ### Methoden
 
 * **targetLoadRequest: &#x200B; callback**
 
-   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok `callback` wordt geproduceerd.
+   Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blok wordt geproduceerd `callback`.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -79,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameProfileParametersmboxParameterscallback:**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
 
    Verzendt een verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blokcallback wordt geproduceerd.
 
@@ -151,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Voor meer informatie over het onderliggende Doel API, zie [doel API verwijzing](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
+      Zie voor meer informatie over de onderliggende doel-API de [Referentie voor doel-API](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -159,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **:defaultContent::orderParameters:targetLoadRequestWithNameProfileParametersmboxParameters:callback**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
 
    Verzendt verzoek naar uw gevormde server van het Doel en keert de koordwaarde van de aanbieding terug die in een blokcallback wordt geproduceerd.
 

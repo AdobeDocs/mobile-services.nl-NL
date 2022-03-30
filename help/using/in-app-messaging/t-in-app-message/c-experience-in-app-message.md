@@ -1,12 +1,12 @@
 ---
 description: Configureer ervaringsopties voor in-app berichten, zoals tekst (volledig scherm, waarschuwing of melding) en weergave-, tekst- en knopopties.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Bericht over ervaring in de app
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Configureer ervaringsopties voor in-app berichten, zoals tekst (volledig scherm,
 
 1. Klik in uw app op **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Typ op de pagina Experience een naam voor het bericht.
-1. Vul de velden in de sectie **[!UICONTROL Type]** in:
+1. Vul de velden in het dialoogvenster **[!UICONTROL Type]** sectie:
 
    * **[!UICONTROL Type]**
 Selecteer het berichttype voor uw in-app berichtcampagne:
@@ -33,22 +33,22 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
 
       >[!TIP]
       >
-      >Deze optie wordt alleen weergegeven wanneer u het berichttype **[!UICONTROL Full Screen]** selecteert.
+      >Deze optie wordt alleen weergegeven wanneer u **[!UICONTROL Full Screen]** berichttype.
 
    * **[!UICONTROL Custom]**
 
       Laad uw aangepaste HTML-inhoud (alleen volledig scherm). U moet een doorklikkoppeling en een annuleringskoppeling opgeven.
 
-      1. Klik op **[!UICONTROL Browse]** en download een HTML-bestand of sleep een HTML-document naar het venster.
-      1. Klik **[!UICONTROL Download Example]** om voorbeeld van aangepaste HTML-inhoud weer te geven.
+      1. Klikken **[!UICONTROL Browse]** en download een HTML-bestand of sleep een HTML-document naar het venster.
+      1. Klikken **[!UICONTROL Download Example]** als u aangepaste HTML-inhoud wilt weergeven.
 
       >[!TIP]
       >
-      >Deze optie wordt alleen weergegeven wanneer u het berichttype **[!FVolledig scherm]** selecteert.
+      >Deze optie wordt alleen weergegeven wanneer u **[!FVolledig scherm]** berichttype.
 
 
 
-1. Vul de velden in de sectie **[!UICONTROL Display]** in:
+1. Vul de velden in het dialoogvenster **[!UICONTROL Display]** sectie:
 
    * **[!UICONTROL Theme]**
 
@@ -60,14 +60,14 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
 
    * **[!UICONTROL Image URL]**
 
-      De URL voor een afbeelding. Zie *Mijn afbeelding past niet exact in de ruimte die wordt geboden door de sjabloon* in [Problemen met het in-app-messaging oplossen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md) als er zich bij het gebruik van de sjabloon voor een groter formaat problemen voordoen.
+      De URL voor een afbeelding. Als u formaatproblemen hebt bij het gebruik van de sjabloon Volledig scherm, raadpleegt u *Mijn afbeelding past niet precies in de ruimte die wordt geboden door de sjabloon* in [Problemen met in-app messaging oplossen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
    * **[!UICONTROL Bundled Image]**
 
-      Pad naar een afbeelding in de codebundel van de app. Deze optie wordt gebruikt als er geen afbeelding is. of de afbeelding niet beschikbaar is. Stel dat het apparaat niet beschikbaar is als het bijvoorbeeld offline is. Zie *Mijn afbeelding past niet exact in de ruimte die wordt geboden door de sjabloon* in [Problemen met het in-app-messaging oplossen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md) als er zich bij het gebruik van de sjabloon voor een groter formaat problemen voordoen.
+      Pad naar een afbeelding in de codebundel van de app. Deze optie wordt gebruikt als er geen afbeelding is. of de afbeelding niet beschikbaar is. Stel dat het apparaat niet beschikbaar is als het bijvoorbeeld offline is. Als u formaatproblemen hebt bij het gebruik van de sjabloon Volledig scherm, raadpleegt u *Mijn afbeelding past niet precies in de ruimte die wordt geboden door de sjabloon* in [Problemen met in-app messaging oplossen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
-1. Vul de velden in de sectie **[!UICONTROL Text]** in:
+1. Vul de velden in het dialoogvenster **[!UICONTROL Text]** sectie:
 
    * **[!UICONTROL Header]**
 
@@ -77,11 +77,11 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
 
       Typ de tekst voor de inhoud van het bericht.
 
-1. Vul de velden in de sectie **[!UICONTROL Buttons]** in:
+1. Vul de velden in het dialoogvenster **[!UICONTROL Buttons]** sectie:
 
    * **[!UICONTROL Click-Through Button]**
 
-      Label voor de knop **[!UICONTROL Click-Through]**. Tikken op deze knop telt als een geslaagde doorklikken. De gebruiker wordt opnieuw gericht aan de bestemming.
+      Label voor de **[!UICONTROL Click-Through]** knop. Tikken op deze knop telt als een geslaagde doorklikken. De gebruiker wordt opnieuw gericht aan de bestemming.
 
    * **[!UICONTROL Destination]**
 
@@ -90,41 +90,41 @@ Selecteer het berichttype voor uw in-app berichtcampagne:
       Deze URL kan de volgende informatie bevatten:
 
       * `{userId}`, die wordt vervangen door de gebruikers-id of leeg is wanneer de gebruikers-id niet is ingesteld.
-      * `{trackingId}`, die wordt vervangen door de steun (correleert met  *s_* vicookie).
+      * `{trackingId}`, die door de steun wordt vervangen (correleert met *s_vi* cookie).
       * `{messageId}`, die wordt vervangen door de unieke id voor het bericht in de app.
       * `{lifetimeValue}`, die door de levenwaarde of 0 wordt vervangen als geen levenwaarde bestaat.
 
       Hier volgt een voorbeeld van het bijhouden van de gebruikersnaam: `https://www.mysite.com?uid={userId}`.
 
-      Als de doorklikkings-URL `https://` of `https://` gebruikt, opent URL in apparatenbrowser buiten app. Anders ondersteunt elk platform schema&#39;s waarmee u uw app kunt openen of ernaar kunt verwijzen als de app is ontwikkeld ter ondersteuning van het aangepaste schema.
+      Als de doorklikkings-URL wordt gebruikt `https://` of `https://`, wordt de URL geopend in de apparaatbrowser buiten de app. Anders ondersteunt elk platform schema&#39;s waarmee u uw app kunt openen of ernaar kunt verwijzen als de app is ontwikkeld ter ondersteuning van het aangepaste schema.
 
       >[!TIP]
       >
-      >Wanneer u **[!UICONTROL Web Link]** of **[!UICONTROL Custom Link]** bestemmingstypes gebruikt, wordt het bestemmingstype niet gevolgd. Alleen **[!UICONTROL Deep Links]** worden bijgehouden. Zie [Doelen](/help/using/acquisition-main/c-create-destinations.md) voor meer informatie.
+      >Wanneer u de **[!UICONTROL Web Link]** of **[!UICONTROL Custom Link]** doeltypen, wordt het doeltype niet bijgehouden. Alleen **[!UICONTROL Deep Links]** worden bijgehouden. Zie voor meer informatie [Doelen](/help/using/acquisition-main/c-create-destinations.md).
 
 
 1. (Optioneel) Klik op de volgende pictogrammen om een voorvertoning van de lay-out van het bericht weer te geven:
 
    * **[!UICONTROL Summary]** Hiermee verbergt u het voorvertoningsvenster.
 
-      Klik ![voorproef](assets/icon_preview.png) om de voorproefruit opnieuw te tonen.
+      Klikken ![voorvertoning](assets/icon_preview.png) om het voorvertoningsvenster opnieuw weer te geven.
 
    * **[!UICONTROL Change the orientation]**
 
-      Als u de richting van de voorvertoning wilt wijzigen van Staand in Liggend, klikt u op ![orientation](assets/icon_orientation.png). Voor stalen verandert de oriëntatie van een rond in een vierkant horlogevlak.
+      Als u de richting van de voorvertoning wilt wijzigen van Staand in Liggend, klikt u op ![oriëntatie](assets/icon_orientation.png). Voor stalen verandert de oriëntatie van een rond in een vierkant horlogevlak.
 
    * **[!UICONTROL Preview on a user's watch]**
 
-      Klik op ![watch icon](assets/icon_watch.png) om een voorvertoning van uw bericht weer te geven zoals het wordt weergegeven in de gaten van de gebruiker.
+      Klik op ![horlogepictogram](assets/icon_watch.png).
 
    * **[!UICONTROL Preview on a user's mobile phone]**
 
-      Klik ![telefoonpictogram](assets/icon_phone.png) om een voorvertoning van uw bericht weer te geven zoals het op de mobiele telefoon van een gebruiker wordt weergegeven.
+      Klik op ![telefoonpictogram](assets/icon_phone.png).
 
    * **[!UICONTROL Preview on a user's tablet]**
 
-      Klik op ![tabletpictogram](assets/icon_tablet.png) om een voorvertoning van uw bericht weer te geven op het tablet van de gebruiker.
+      Als u een voorvertoning van uw bericht wilt weergeven op de tablet van de gebruiker, klikt u op ![tabletpictogram](assets/icon_tablet.png).
 
       Onder aan het voorvertoningsvenster kunt u een beschrijving weergeven van het publiek dat u in de vorige stap hebt geselecteerd. U kunt ook een beschrijving bekijken van het publiek dat u in de vorige stap onder aan het voorvertoningsvenster hebt geselecteerd.
 
-1. Configureer [Planningsopties](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md).
+1. Configureren [Planningsopties](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md).

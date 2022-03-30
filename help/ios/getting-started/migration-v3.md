@@ -1,11 +1,11 @@
 ---
 description: Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek naar versie 4.x.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Migreren naar de 4.x iOS-bibliotheek
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 2%
@@ -18,9 +18,9 @@ Met deze informatie kunt u migreren van versie 3.x of 2.x van de iOS-bibliotheek
 
 >[!IMPORTANT]
 >
->De SDK gebruikt `NSUserDefaults` om gegevens op te slaan die nodig zijn voor het berekenen van unieke gebruikers, levenscyclusmetriek en andere gegevens met betrekking tot de kernfunctionaliteit van SDK.  Als u de waarden in `NSUserDefaults` wijzigt of verwijdert die door SDK worden verwacht, kan onverwacht gedrag in de vorm van gegevensinconsistenties resulteren.
+>De SDK gebruikt `NSUserDefaults` om gegevens op te slaan die nodig zijn voor het berekenen van unieke gebruikers, levenscyclusmetriek en andere gegevens met betrekking tot de belangrijkste SDK-functionaliteit.  Als u de waarden in `NSUserDefaults` die door de SDK worden verwacht, kan onverwacht gedrag leiden tot inconsistenties in de gegevens.
 
-In versie 4.x van de iOS SDK-bibliotheek worden de methoden public geconsolideerd in één header. De functionaliteit is nu ook toegankelijk via methoden op klasseniveau, zodat u geen aanwijzingen, instanties of singletons hoeft bij te houden.
+In versie 4.x van de SDK-bibliotheek van iOS worden de methoden public geconsolideerd in één header. De functionaliteit is nu ook toegankelijk via methoden op klasseniveau, zodat u geen aanwijzingen, instanties of singletons hoeft bij te houden.
 
 ## Gebeurtenissen, profielen en eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
@@ -36,11 +36,11 @@ De verwerkingsregels bieden de volgende voordelen:
 
 >[!TIP]
 >
->Waarden die u rechtstreeks toewijst aan variabelen, moeten nu worden toegevoegd aan het NSDictionary `data`.
+>Waarden die u rechtstreeks toewijst aan variabelen, moeten nu worden toegevoegd aan de `data` NSDictionary.
 
 ## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Het nieuwe `ADBMobileConfig.json` dossier bevat toepassing-specifieke, globale montages, en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
+De nieuwe `ADBMobileConfig.json` Het bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt. Hier is een voorbeeld van een `ADBMobileConfig.json` bestand:
 
 ```js
 { 
@@ -84,7 +84,7 @@ De volgende lijsten maken een lijst van de configuratievariabelen die u naar het
 
 Verplaats de waarde van de eerste kolom naar de variabele in de tweede kolom.
 
-| Configuratievariabele | Variabele in het `ADBMobileConfig.json`-bestand |
+| Configuratievariabele | Variabele in het dialoogvenster `ADBMobileConfig.json` file |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | offlineHitLimit | &quot;batchLimit&quot; |
@@ -101,12 +101,12 @@ Verplaats de waarde van de eerste kolom naar de variabele in de tweede kolom.
 
 Verplaats de waarde van de eerste kolom naar de variabele in de tweede kolom.
 
-| Configuratievariabele | Variabele in het `ADBMobileConfig.json`-bestand |
+| Configuratievariabele | Variabele in het dialoogvenster `ADBMobileConfig.json` file |
 |--- |--- |
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;sids&quot; |
-| trackingServer | &quot;server&quot;, verwijdert u het voorvoegsel `"https://"`. Het protocolvoorvoegsel wordt automatisch toegevoegd op basis van de instelling &quot;ssl&quot;. |
+| trackingServer | &quot;server&quot;, verwijdert u de `"https://"` voorvoegsel. Het protocolvoorvoegsel wordt automatisch toegevoegd op basis van de instelling &quot;ssl&quot;. |
 | trackingServerSecure | Verwijderen. Voor veilige verbindingen definieert u &quot;server&quot; en schakelt u &quot;ssl&quot; in. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
@@ -119,20 +119,20 @@ Verplaats de waarde van de eerste kolom naar de variabele in de tweede kolom.
 | dynamicVariablePrefix | Verwijderen, niet meer gebruikt. |
 | visitorNamespace | Verwijderen, niet meer gebruikt. |
 | usePlugins | Verwijderen, niet meer gebruikt. |
-| useBestPractices alle aanroepen naar churn measurement ( getChurnInstance ) | Verwijderen, vervangen door levenscyclusmetriek. Zie [Levenscyclusmetriek](/help/ios/metrics.md) voor meer informatie. |
+| useBestPractices alle aanroepen naar churn measurement ( getChurnInstance ) | Verwijderen, vervangen door levenscyclusmetriek. Zie voor meer informatie [Levenscycluscijfers](/help/ios/metrics.md). |
 
 
 ## Trackaanroepen en trackingvariabelen bijwerken {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-In plaats van de web-focused `track` en `trackLink` vraag te gebruiken, gebruikt versie 4 SDK de volgende methodes:
+In plaats van de webfocus te gebruiken `track` en `trackLink` vraag, gebruikt versie 4 SDK de volgende methodes:
 
-* `trackState:data:` frames zijn de weergaven die beschikbaar zijn in uw app, zoals  `home dashboard`,  `app settings`,  `cart`enzovoort.
+* `trackState:data:` statussen zijn de weergaven die beschikbaar zijn in uw app, zoals `home dashboard`, `app settings`, `cart`, enzovoort.
 
-   Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
+   Deze statussen lijken op pagina&#39;s op een website, en `trackState` roept stijgende paginameningen.
 
-* `trackAction:data:` handelingen, zoals  `logons`,  `banner taps`,  `feed subscriptions`en andere metingen die in uw app voorkomen en die u wilt meten.
+* `trackAction:data:` acties, zoals `logons`, `banner taps`, `feed subscriptions`en andere meetgegevens die in uw app voorkomen en die u wilt meten.
 
-De parameter `data` voor beide methoden is een `NSDictionary` die naam-waardeparen bevat die als contextgegevens worden verzonden.
+De `data` parameter voor beide methoden is een `NSDictionary` die naam-waardeparen bevat die als contextgegevens worden verzonden.
 
 ### Gebeurtenissen, profielen, variabelen
 
@@ -144,13 +144,13 @@ De verwerkingsregels bieden de volgende voordelen:
 * U kunt betekenisvolle namen voor gegevens gebruiken in plaats van het plaatsen van variabelen die voor een rapportreeks specifiek zijn.
 * Het verzenden van extra gegevens heeft weinig effect.
 
-   Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen. Zie [Regels en contextgegevens verwerken](/help/ios/getting-started/proc-rules.md) voor meer informatie.
+   Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen. Zie voor meer informatie [Verwerkingsregels en contextgegevens](/help/ios/getting-started/proc-rules.md).
 
-Waarden die u rechtstreeks aan variabelen hebt toegewezen, moeten in plaats daarvan worden toegevoegd aan `data` `NSDictionary`. Dit betekent dat aanroepen naar `setProp`, `setEvar` en toewijzingen naar permanente contextgegevens allemaal moeten worden verwijderd en dat de waarden moeten worden toegevoegd aan de parameter `data`.
+Waarden die u rechtstreeks aan variabelen hebt toegewezen, moeten worden toegevoegd aan de `data` `NSDictionary` in plaats daarvan. Dit betekent dat `setProp`, `setEvar`en de toewijzingen aan permanente contextgegevens moeten allemaal worden verwijderd en de waarden moeten worden toegevoegd aan de `data` parameter.
 
 ### AppSection/Server, GeoZip, transactie-id, Campaign en andere standaardvariabelen
 
-De gegevens die u op het metingsvoorwerp, met inbegrip van de hierboven vermelde variabelen instelde, zouden aan `data` `NSDictionary` in plaats daarvan moeten worden toegevoegd. De enige gegevens die met een `trackState` of `trackAction` vraag worden verzonden is de lading in de `data` parameter.
+De gegevens die u op het meetobject instelde, inclusief de hierboven vermelde variabelen, moeten worden toegevoegd aan de `data` `NSDictionary` in plaats daarvan. De enige gegevens die met een `trackState` of `trackAction` de vraag is de lading in `data` parameter.
 
 ### Trackingaanroepen vervangen
 
@@ -171,11 +171,11 @@ Vervang in uw code de volgende methoden door een aanroep van `trackState` of `tr
 
 ## Aangepaste bezoeker-id {#section_2CF930C13BA64F04959846E578B608F3}
 
-Vervang de `visitorID` variabele met een vraag aan `setUserIdentifier:`.
+Vervang de `visitorID` variabele met een aanroep van `setUserIdentifier:`.
 
 ## Offline bijhouden {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json`-bestand en alle andere offlineconfiguratie wordt automatisch uitgevoerd.
+Offline bijhouden is ingeschakeld in het dialoogvenster `ADBMobileConfig.json` en alle andere offlineconfiguratie wordt automatisch uitgevoerd.
 
 In uw code, verwijder vraag aan de volgende methodes:
 
@@ -191,7 +191,7 @@ In uw code, verwijder vraag aan de volgende methodes:
 
 ## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products` te plaatsen:
+Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products`:
 
 ```objective-c
 //create a processing rule to set the corresponding product event. 

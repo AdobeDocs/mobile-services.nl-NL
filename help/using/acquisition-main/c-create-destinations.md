@@ -1,12 +1,12 @@
 ---
 description: De verkopers kunnen verbindingsbestemmingen, zoals Web, diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 keywords: mobiel
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Doelen
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 De verkopers kunnen verbindingsbestemmingen, zoals Web, Diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 
-Om verschillende types van verbindingsbestemmingen tot stand te brengen, zie [verbindingsbestemmingen tot stand brengen en beheren](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md).
+Om verschillende soorten verbindingsbestemmingen tot stand te brengen, zie [Verbindingsdoelen maken en beheren](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md).
 
 U kunt de volgende typen koppelingsdoelen maken:
 
@@ -31,10 +31,10 @@ U kunt de volgende typen koppelingsdoelen maken:
 
    >[!IMPORTANT]
    >
-   >Webkoppelingsdoelen worden **niet** bijgehouden.
+   >Webkoppelingsdoelen zijn **niet** bijgehouden.
 
 * **[!UICONTROL Hybrid Link]**
 
    Hybride koppelingen ondersteunen iOS Universal Links of Android App Links.
 
-Voor meer informatie over hoe te om elk type van verbinding tot stand te brengen, zie [nieuwe verbindingsbestemming](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md) creëren.
+Voor meer informatie over hoe te om elk type van verbinding tot stand te brengen, zie [Nieuwe koppelingsbestemming maken](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).

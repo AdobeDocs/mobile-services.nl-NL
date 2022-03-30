@@ -1,11 +1,11 @@
 ---
 description: In deze sectie wordt beschreven hoe u van de 3.x-versie van een vorige Windows Mobile SDK naar de Universal Windows Platform 4.x SDK voor Experience Cloud Solutions kunt migreren.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Migreren naar 4.x
 topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 0%
@@ -22,9 +22,9 @@ In de volgende secties vindt u een migratie van versie 3.x naar versie 4.x.
 
 ## Ongebruikte eigenschappen verwijderen {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-U hebt waarschijnlijk een nieuw `ADBMobileConfig.json`-bestand opgemerkt dat bij uw download is opgenomen. Dit bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt.
+U hebt waarschijnlijk een nieuwe `ADBMobileConfig.json` bestand bij uw download. Dit bestand bevat toepassingsspecifieke, algemene instellingen en vervangt de meeste configuratievariabelen die in vorige versies werden gebruikt.
 
-Hier volgt een voorbeeld van een `ADBMobileConfig.json`-bestand:
+Hier is een voorbeeld van een `ADBMobileConfig.json` bestand:
 
 ```js
 { 
@@ -58,7 +58,7 @@ De volgende lijsten maken een lijst van de configuratievariabelen die u naar het
 
 De volgende tabel bevat een lijst met variabelen in de 3.x SDK&#39;s en de nieuwe naam in de 4.x SDK&#39;s:
 
-| Configuratievariabele/Methode | Variabele in het `ADBMobileConfig.json`-bestand. |
+| Configuratievariabele/Methode | Variabele in het dialoogvenster `ADBMobileConfig.json` bestand. |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;sids&quot; |
@@ -72,17 +72,17 @@ De volgende tabel bevat een lijst met variabelen in de 3.x SDK&#39;s en de nieuw
 
 ## Trackaanroepen en trackingvariabelen bijwerken {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-In plaats van de webgerichte `Track`- en `TrackLink`-aanroepen te gebruiken, gebruikt de versie 4-SDK twee methoden die in de mobiele wereld wat meer zin hebben:
+In plaats van de webfocus te gebruiken `Track` en `TrackLink` De vraag, versie 4 SDK gebruikt twee methodes die een beetje zinzamer in de mobiele wereld maken:
 
-* `TrackState` Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze staten zijn vergelijkbaar met pagina&#39;s op een website en `trackState` roept de weergave van de verhogende pagina op.
+* `TrackState` Frames zijn de weergaven die beschikbaar zijn in uw app, zoals &#39;thuisdashboard&#39;, &#39;app-instellingen&#39;, &#39;winkelwagentje&#39; enzovoort. Deze statussen lijken op pagina&#39;s op een website, en `trackState` roept stijgende paginameningen.
 
 * `TrackAction` Handelingen zijn de dingen die in uw app gebeuren en die u wilt meten, zoals &#39;logons&#39;, &#39;bannertiketten&#39;, &#39;feed-abonnementen&#39; en andere meetwaarden. Deze vraag verhoogt geen paginameningen.
 
-De parameter `contextData` voor beide methoden bevat naam-waardeparen die als contextgegevens worden verzonden.
+De `contextData` parameter voor beide methoden bevat naam-waardeparen die als contextgegevens worden verzonden.
 
 ### Gebeurtenissen, profielen, variabelen
 
-Als u [SDK methodes](/help/universal-windows/c-configuration/methods.md) hebt bekeken, bent u waarschijnlijk benieuwd waar te om gebeurtenissen, steunen, steunen, erfgenamen, en lijsten te plaatsen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
+Als je naar de [Methoden van SDK](/help/universal-windows/c-configuration/methods.md)U vraagt zich waarschijnlijk af waar u gebeurtenissen, eVars, profielen, erfgenamen en lijsten wilt instellen. In versie 4 kunt u deze typen variabelen niet meer rechtstreeks in uw app toewijzen. In plaats daarvan gebruikt de SDK contextgegevens en verwerkingsregels om uw toepassingsgegevens toe te wijzen aan analytische variabelen voor rapportage.
 
 De verwerkingsregels bieden de volgende voordelen:
 
@@ -90,13 +90,13 @@ De verwerkingsregels bieden de volgende voordelen:
 * U kunt betekenisvolle namen voor gegevens gebruiken in plaats van het plaatsen van variabelen die voor een rapportreeks specifiek zijn.
 * Het verzenden van extra gegevens heeft weinig effect. Deze waarden worden pas in rapporten weergegeven als ze met verwerkingsregels zijn toegewezen.
 
-Zie de sectie *Verwerkingsregels* in [Analyseoverzicht](/help/universal-windows/analytics/analytics.md) voor meer informatie.
+Zie voor meer informatie de *Verwerkingsregels* sectie in [Overzicht van analysemogelijkheden](/help/universal-windows/analytics/analytics.md).
 
-Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan contextgegevens. Dit betekent dat aanroepen naar `SetProp`, `SetEvar` en toewijzingen naar permanente contextgegevens allemaal moeten worden verwijderd en de waarden moeten worden toegevoegd aan contextgegevens.
+Waarden die u rechtstreeks toewijst aan variabelen, moeten worden toegevoegd aan contextgegevens. Dit betekent dat `SetProp`, `SetEvar`en toewijzingen aan permanente contextgegevens moeten allemaal worden verwijderd en de waarden moeten aan contextgegevens worden toegevoegd.
 
 ### AppSection/Server, GeoZip, transactie-id, Campaign en andere standaardvariabelen
 
-Alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, moeten in plaats daarvan worden toegevoegd aan contextgegevens. Dat wil zeggen dat de enige gegevens die worden verzonden met een `TrackState`- of `TrackAction`-aanroep de payload in de parameter `data` zijn.
+In plaats daarvan moeten alle andere gegevens die u instelde voor het meetobject, inclusief de hierboven vermelde variabelen, worden toegevoegd aan de contextgegevens. De enige gegevens die worden verzonden met een `TrackState` of `TrackAction` de vraag is de lading in `data` parameter.
 
 **Trackingaanroepen vervangen**
 
@@ -111,11 +111,11 @@ Door uw code, vervang de volgende methodes met een vraag aan `trackState` of `tr
 
 ## Aangepaste id-service {#section_2CF930C13BA64F04959846E578B608F3}
 
-Vervang de `visitorID` variabele met een vraag aan `setUserIdentifier`.
+Vervang de `visitorID` variabele met een aanroep van `setUserIdentifier`.
 
 ## Offline bijhouden {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline bijhouden is ingeschakeld in het `ADBMobileConfig.json`-bestand. Alle andere off-line configuratie wordt gedaan automatisch.
+Offline bijhouden is ingeschakeld in het dialoogvenster `ADBMobileConfig.json` bestand. Alle andere off-line configuratie wordt gedaan automatisch.
 
 Door uw code, verwijder vraag aan de volgende methodes:
 
@@ -126,7 +126,7 @@ Door uw code, verwijder vraag aan de volgende methodes:
 
 ## Variabele voor producten {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products` te plaatsen:
+Aangezien de productvariabele niet beschikbaar is in verwerkingsregels, kunt u de volgende syntaxis gebruiken om `products`:
 
 ```js
 // create a processing rule to set the corresponding product event. 
@@ -138,4 +138,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-De waarde van `"&&products"` (in dit voorbeeld is de waarde `";Cool Shoe`&quot;) moet de producttekenreekssyntaxis volgen voor het type gebeurtenis dat u bijhoudt.
+De waarde van `"&&products"` (in dit voorbeeld is de waarde `";Cool Shoe`&quot;) moet de syntaxis van de producttekenreeks volgen voor het type gebeurtenis dat u bijhoudt.

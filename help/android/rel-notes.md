@@ -1,11 +1,11 @@
 ---
 description: Opmerkingen bij de release en bekende problemen met Android SDK 4.x voor Experience Cloud Solutions.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Aanvullende informatie
 topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 1%
@@ -18,17 +18,17 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 ## 3 april 2020: 4.18.2.
 
-* In het Overseinen van de App - voor veiligheidsredenen, WebViews die door SDK worden gecreeerd nu bezit `setAllowFileAccess` aan `false` plaatsen.
+* In het Overseinen van de App - voor veiligheidsredenen, WebViews die door SDK nu wordt gecreeerd plaatste bezit `setAllowFileAccess` tot `false`.
 
 ## 12 maart 2020: 4.18.1.
 
-* Doel - Doel - Doel-id van sessie wordt nu toegevoegd als een parameter voor contextgegevens `a.target.sessionId` in de interne hit Analytics-for-Target die naar Adobe Analytics wordt verzonden.
+* Doel - Doel-sessie-id wordt nu toegevoegd als een parameter voor contextgegevens `a.target.sessionId` in de interne hit Analytics-for-Target die naar Adobe Analytics is verzonden.
 
 ## 16 januari 2020: 4.18.0.
 
-* Verwerving - Er is een nieuwe API toegevoegd, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, ter ondersteuning van de Google Play-API&#39;s van de installatieverwijzing.
+* Acquisitie - Een nieuwe API toegevoegd. `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, om Google Play Install Referrer APIs te steunen.
 
-   Zie [Nog steeds InstallBroadcast gebruiken voor meer informatie over de Install Referrer-API&#39;s? Schakel tegen 1 maart 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) over naar de API van de Play Referrer.
+   Zie voor meer informatie over de installatieverwijzing-API&#39;s [Wilt u InstallBroadcast nog steeds gebruiken? Schakel tegen 1 maart 2020 over naar de Play Reference API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html).
 
 ## 20 september 2019: Versie 4.17.10
 
@@ -38,7 +38,7 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 * Adobe Target: Alle verzoeken omvatten nu de cliënt en sessionId in de URL vraagparameters.
 * Berichten in de app: Probleem verholpen waarbij Android-apps vastliepen toen een bericht werd getriggerd met een lege klikthrough-URL.
-* Bezoeker-id-service: De API&#39;s `Visitor.appendToURL` en `Visitor.getUrlVariablesAsync` coderen hun retourwaarden niet meer.
+* Bezoeker-id-service: De `Visitor.appendToURL` en `Visitor.getUrlVariablesAsync` API&#39;s coderen hun retourwaarden niet meer.
 
    Door de dubbele codering werden de geretourneerde waarden van deze API&#39;s gemarkeerd door bepaalde beveiligingsrevisies.
 
@@ -49,7 +49,7 @@ Hier volgt een overzicht van de opmerkingen bij de release, bekende problemen en
 
 ## 24 mei 2019: Versie 4.17.6
 
-* Service bezoekersidentiteitskaart - De `setPushIdentifier` API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
+* Bezoekersidentiteitsservice - De `setPushIdentifier` De API vraag verzendt nu een synchronisatievraag naar de Dienst van identiteitskaart van de Bezoeker telkens als het wordt geroepen.
 * De Dienst van identiteitskaart van de bezoeker - verhoogde verbind en las onderbrekingen van 2 seconden aan 5 seconden.
 
-Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Nota&#39;s van de Versie van Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Voor meer informatie over de huidige en vroegere versienota&#39;s voor alle oplossingen, zie [Opmerkingen bij de release van Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

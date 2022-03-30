@@ -1,11 +1,11 @@
 ---
 description: Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar uw gebruikers. Met de SDK kunt u ook eenvoudig gebruikers rapporteren die uw app hebben geopend doordat ze via een pushbericht hebben geklikt.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Push messaging
 topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -18,9 +18,9 @@ Met Adobe Mobile en de SDK van Adobe Mobile kunt u pushberichten verzenden naar 
 
 >[!IMPORTANT]
 >
->De informatie in dit onderwerp is een suggestie voor een mogelijke implementatie. We raden u ten zeerste aan de iOS-documentatie van Apple te controleren om de beste implementatie voor uw app te bepalen. Uw implementatie moet worden bepaald door de frameworks die u gebruikt en de versies van iOS waarop uw app zich richt.
+>De informatie in dit onderwerp is een suggestie voor een mogelijke implementatie. We raden u ten zeerste aan de Apple iOS-documentatie te bekijken om de beste implementatie voor uw app te bepalen. Uw implementatie moet worden bepaald door de frameworks die u gebruikt en de versies van iOS waarop uw app zich richt.
 
-Als u pushberichten wilt gebruiken, hebt u **must** SDK versie 4.6 of hoger.
+Als u pushberichten wilt gebruiken, **moet** hebben SDK versie 4.6 of hoger.
 
 >[!IMPORTANT]
 >
@@ -30,11 +30,11 @@ Als u pushberichten wilt gebruiken, hebt u **must** SDK versie 4.6 of hoger.
 
 * Voeg de bibliotheek aan uw project toe en implementeer levenscyclusmetriek.
 
-   Zie [Metriek van levenscyclus](/help/ios/metrics.md) voor meer informatie.
+   Zie voor meer informatie [Levenscycluswaarden](/help/ios/metrics.md).
 
 
 * SDK moet voor de Dienst van identiteitskaart worden toegelaten.
-Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
+Zie voor meer informatie [Opties voor SDK-id-service configureren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
 >[!IMPORTANT]
 >
@@ -42,9 +42,9 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
 
 ## Pushberichten inschakelen {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
-1. Controleer of het `ADBMobileConfig.json`-bestand de vereiste instellingen voor pushberichten bevat.
+1. Controleer of de `ADBMobileConfig.json` bevat de vereiste instellingen voor pushberichten.
 
-   Voor het `"marketingCloud"`-object moet de `"org"`-eigenschap zijn geconfigureerd voor pushberichten.
+   De `"marketingCloud"` object moet `"org"` eigenschap geconfigureerd voor pushberichten.
 
    ```objective-c
    "marketingCloud": { 
@@ -52,13 +52,13 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
    }
    ```
 
-1. Importeer de bibliotheek in uw `AppDelegate`.
+1. De bibliotheek importeren in uw `AppDelegate`.
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Om de montages te bepalen waarvoor uw app om toestemming moet vragen, herzie [het Vormen van Verre Steun van het Bericht](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1).
+1. Om de instellingen te bepalen waarvoor uw app om toestemming moet vragen, raadpleegt u [Ondersteuning voor externe meldingen configureren](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1).
 
    Hier is een voorbeeld van een mogelijke implementatie die om toestemming vraagt om Alarm, Badges, Geluiden, en Verre bericht te gebruiken:
 
@@ -94,7 +94,7 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
    }
    ```
 
-1. Het pushtoken moet worden doorgegeven aan de SDK met behulp van de methode `setPushIdentifier:` in de klasse ADBMobile.
+1. Het pushtoken moet worden doorgegeven aan de SDK met behulp van de `setPushIdentifier:` methode in de klasse ADBMobile.
 
    ```objective-c
    - (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
@@ -104,9 +104,9 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
    }
    ```
 
-1. Om de correcte implementatie voor uw milieu te bepalen, ga [UserNotifications](https://developer.apple.com/documentation/usernotifications).
+1. Ga naar [Gebruikersmeldingen](https://developer.apple.com/documentation/usernotifications).
 
-   Met deze stap kunt u pushrapportage inschakelen door het woordenboek `userInfo` aan de SDK door te geven wanneer de gebruiker de app opent door op een pushbericht te klikken.
+   Deze stap helpt u pushrapporten in te schakelen door het `userInfo` aan de SDK wanneer de gebruiker de app opent door op een pushbericht te klikken.
 
    Het volgende codevoorbeeld is een voorbeeld van een mogelijke implementatie:
 
@@ -138,7 +138,7 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
    }
    ```
 
-1. Als u uw geschatte aantal gebruikers nauwkeurig wilt houden, geeft u de SDK een melding wanneer een gebruiker het pushbericht voor uw app handmatig uitschakelt door `[ADBMobile setPushIdentifier: nil]` in de `applicationDidBecomeActive:`-methode in uw `AppDelegate` aan te roepen.
+1. Als u uw geschatte pushpubliek nauwkeurig wilt houden, geeft u de SDK een melding wanneer een gebruiker het pushbericht voor uw app handmatig uitschakelt door `[ADBMobile setPushIdentifier: nil]` in de `applicationDidBecomeActive:` in uw `AppDelegate`.
 
    ```objective-c
    // device running < iOS 7 
@@ -170,7 +170,7 @@ Voor meer informatie, zie [Vorm SDK ID Service Options](/help/using/c-manage-app
 
 ## Voorbeeld {#section_20BEA0D64F7C4D45A5EBEF21066E62AD}
 
-Het volgende is een voorbeeld van hoe een `AppDelegate.m` implementatie zou kunnen kijken als:
+Hieronder ziet u een voorbeeld van een `AppDelegate.m` de implementatie zou er als volgt kunnen uitzien :
 
 ```objective-c
 #import "AppDelegate.h" 

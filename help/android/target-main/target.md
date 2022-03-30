@@ -1,12 +1,12 @@
 ---
 description: U kunt gerichte inhoud leveren in Android-toepassingen.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Doelconfiguratie
 topic-fix: Developer and implementation
 uuid: 09fe2c9c-7b60-49c3-bb9d-36a30ce7c350
 exl-id: dbcc3114-e76b-4b18-a418-ac46a21a593e
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 3%
@@ -19,7 +19,7 @@ U kunt gerichte inhoud leveren in Android-toepassingen.
 
 ## De toepassingscontext instellen {#section_37CAE496FF894FCA821F7760605574CA}
 
-**(Vereist)** De  `setContext()` methode moet eenmaal worden aangeroepen in de  `onCreate()` methode van uw hoofdactiviteit.
+**(Vereist)** De `setContext()` Deze methode moet in het dialoogvenster `onCreate()` methode van uw hoofdactiviteit.
 
 Bijvoorbeeld:
 

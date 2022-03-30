@@ -1,12 +1,12 @@
 ---
 description: Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verzenden vanuit uw PhoneGap-project.
 keywords: android;bibliotheek;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Overzicht van de PhoneGap-plug-in
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 1%
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 # Overzicht van de PhoneGap-plug-in {#phonegap-plug-in}
 
-Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verzenden vanuit uw PhoneGap-project. Zie [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html) om een PhoneGap-project te maken.
+Met deze insteekmodule kunt u Android AppMeasurement-aanroepen verzenden vanuit uw PhoneGap-project. Als u een PhoneGap-project wilt maken, raadpleegt u [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 
 ## Nieuwe Adobe Experience Platform Mobile SDK-release
 
-Op zoek naar informatie en documentatie met betrekking tot de Adobe Experience Platform Mobile SDK? Klik [hier](https://aep-sdks.gitbook.io/docs/) voor onze recentste documentatie.
+Op zoek naar informatie en documentatie met betrekking tot de SDK van Adobe Experience Platform Mobile? Klikken [hier](https://aep-sdks.gitbook.io/docs/) voor onze meest recente documentatie.
 
 Vanaf september 2018 hebben we een nieuwe, grote versie van de SDK uitgebracht. Deze nieuwe Adobe Experience Platform Mobile SDK&#39;s kunnen worden geconfigureerd via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Ga naar Adobe Experience Platform Launch om aan de slag te gaan.
-* Ga naar [Github om te zien wat er in de SDK-opslagruimten van het Experience Platform staat: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Ga naar [Github: Adobe Experience Platform SDK&#39;s](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## De insteekmodule installeren met npm {#section_43229E57C16944C0B51531CB92089189}
@@ -39,15 +39,15 @@ cordova plugin add adobe-mobile-services
 
 ## De plug-in opnemen
 
-1. Sleep het `ADBMobile_PhoneGap.java` dossier aan uw `src` omslag.
+1. Sleep de `ADBMobile_PhoneGap.java` bestand naar uw `src` map.
 
-   Klik op **[!UICONTROL OK]** om dit bestand te verplaatsen.
+   Als u dit bestand wilt verplaatsen, klikt u op **[!UICONTROL OK]**.
 
-1. Sleep het `ADB_Helper.js`-bestand naar de map die het `index.html`-bestand bevat
+1. Sleep de `ADB_Helper.js` in de map met de `index.html` file
 
-   Klik op **[!UICONTROL OK]** om dit bestand te verplaatsen.
+   Als u dit bestand wilt verplaatsen, klikt u op **[!UICONTROL OK]**.
 
-1. Open in de map `res/xml` het bestand `config.xml` en registreer een nieuwe plug-in door het volgende toe te voegen:
+1. In de `res/xml` map, opent u de `config.xml` een nieuwe plug-in te registreren en te registreren door het volgende toe te voegen:
 
    ```xml
    <feature name="ADBMobile_PhoneGap"> 
@@ -55,7 +55,7 @@ cordova plugin add adobe-mobile-services
    </feature>
    ```
 
-   Als uw pakket bijvoorbeeld de naam `com.example.phonegaptest` heeft, is de waarde `android-package` als volgt:
+   Als uw pakket bijvoorbeeld een naam heeft `com.example.phonegaptest`, uw `android-package` de waarde zou als volgt zijn:
 
    ```xml
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
@@ -63,17 +63,17 @@ cordova plugin add adobe-mobile-services
 
 ## De bibliotheek AppMeturement opnemen
 
-1. Zie [SDK](/help/android/getting-started/dev-qs.md) ophalen om de AppMeturement-bibliotheek te downloaden.
-1. Sleep het `adobeMobileLibrary.jar` dossier aan uw `src` omslag.
+1. Zie voor informatie over het downloaden van de AppMeasurement-bibliotheek [De SDK ophalen](/help/android/getting-started/dev-qs.md).
+1. Sleep de `adobeMobileLibrary.jar` bestand naar uw `src` map.
 
-   Klik op **[!UICONTROL OK]** om dit bestand te verplaatsen.
+   Als u dit bestand wilt verplaatsen, klikt u op **[!UICONTROL OK]**.
 
-1. Klik met de rechtermuisknop op het `adobeMobileLibrary.jar`-bestand en selecteer **[!UICONTROL Add as Library]**.
+1. Klik met de rechtermuisknop op de knop `adobeMobileLibrary.jar` bestand en selecteer **[!UICONTROL Add as Library]**.
 1. Gebaseerd op de vereisten van uw project, ga de naam, het niveau, en de plaats voor de bibliotheek in.
-1. Sleep het `ADBMobileConfig.json` dossier aan uw `assets` omslag in de toepassingswortel.
-1. Bevestig dat u de hoofdtoepassing en **not** een toepassing in een toepassing hebt geselecteerd.
+1. Sleep de `ADBMobileConfig.json` bestand naar uw `assets` in de hoofdmap van de toepassing.
+1. Bevestig dat u de hoofdtoepassing hebt geselecteerd en **niet** een toepassing in een toepassing.
 
-   Klik op **[!UICONTROL OK]** om dit bestand te verplaatsen.
+   Als u dit bestand wilt verplaatsen, klikt u op **[!UICONTROL OK]**.
 
 ## Toepassingsmachtigingen toevoegen
 
@@ -82,7 +82,7 @@ De bibliotheek AppMeturement vereist de volgende toestemmingen om gegevens te ve
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
 
-Om deze toestemmingen toe te voegen, voeg de volgende lijnen aan uw `AndroidManifest.xml` dossier toe, dat in de folder van het toepassingsproject is:
+Voeg de volgende regels toe aan uw `AndroidManifest.xml` bestand, dat zich in de projectmap van de toepassing bevindt:
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" /> 
@@ -118,7 +118,7 @@ android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 
 ## Aangepaste tracering implementeren {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-Voeg in `html` bestanden het volgende toe aan de `<head>`-tag waarin u reeksspatiëring wilt gebruiken:
+In `html` bestanden, voeg het volgende toe aan de `<head>` -tag waar u reeksspatiëring wilt gebruiken:
 
 ```
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
