@@ -1,32 +1,28 @@
 ---
-description: De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK's om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
-title: Prefetch-aanbiedingsinhoud in iOS
+description: De Adobe Target-prefetch-functie gebruikt de SDK's van iOS Mobile om inhoud aan te bieden zo weinig mogelijk door de serverreacties in cache te plaatsen.
+title: Inhoud van voorkeursaanbieding in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 5%
 
 ---
 
-# Prefetch-aanbiedingsinhoud in iOS {#prefetch-offer-content-in-ios}
+# Inhoud van voorkeursaanbieding in iOS {#prefetch-offer-content-in-ios}
 
-De Adobe Target-prefetch-functie gebruikt de iOS Mobile SDK&#39;s om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
-
->[!IMPORTANT]
->
->De functie Prefetch in de mobiele SDK&#39;s voor iOS wordt niet ondersteund voor de activatietypen Auto Target, Auto Allocate en Automated Personalization in Adobe Target.
+De Adobe Target-prefetch-functie gebruikt de SDK&#39;s van iOS Mobile om inhoud aan te bieden zo weinig mogelijk door de serverreacties in cache te plaatsen.
 
 Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van welke box de gebruiker van de mobiele app heeft bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
 
-Prefetch-inhoud blijft niet behouden bij alle opstarters. De prefetch-inhoud wordt in de cache geplaatst zolang de toepassing leeft of totdat de methode `clearPrefetchCache()` wordt aangeroepen.
+Prefetch-inhoud blijft niet behouden bij alle opstarters. De prefetch-inhoud wordt in de cache geplaatst zolang de toepassing actief is of totdat de `clearPrefetchCache()` wordt aangeroepen.
 
 >[!IMPORTANT]
 >
->API&#39;s voor doelprefetch zijn beschikbaar sinds SDK versie 4.14.0. Zie [Batch-invoerparameters](https://developers.adobetarget.com/api/#batch-input-parameters) voor meer informatie over parameterbeperkingen.
+>API&#39;s voor doelprefetch zijn beschikbaar sinds SDK versie 4.14.0. Zie voor meer informatie over parameterbeperkingen [Invoerparameters batch](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-In SDK versie 4.14 of hoger, indien opgegeven, wordt `environmentId` gekozen uit het `ADBMobileConfig.json`-bestand wanneer een TnT-aanroep van batchmap v2 wordt gestart. Als er in dit bestand geen `environmentId` is opgegeven, wordt er geen omgevingsparameter verzonden in de aanroep van de TNT-batch mbox en wordt de aanbieding geleverd voor de standaardomgeving.
+In SDK versie 4.14 of hoger, indien opgegeven, wordt de `environmentId` wordt gekozen uit het `ADBMobileConfig.json` bestand bij het starten van een TnT-aanroep van een batchmap v2. Indien niet `environmentId` wordt gespecificeerd in dit dossier, wordt geen milieuparameter verzonden in TNT partijvraag, en de aanbieding wordt geleverd voor het standaardmilieu.
 
 Bijvoorbeeld:
 
@@ -59,7 +55,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
       * **`targetPrefetchArray`**
 
-         Array van `TargetPrefetchObjects` die de naam en mboxParameters bevat voor elke doellocatie die moet worden voorafgegaan.
+         Array van `TargetPrefetchObjects` die de naam en mboxParameters voor elke plaats van het Doel aan prefetch bevat.
 
       * **`profileParameters`**
 
@@ -67,7 +63,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
       * **`callback`**
 
-         Wordt aangeroepen wanneer de prefetch is voltooid. Retourneert `true` als de prefetch is gelukt en `false` als de prefetch is mislukt.
+         Wordt aangeroepen wanneer de prefetch is voltooid. Retourneert `true` als de prefetch is gelukt en `false` als de prefetch niet succesvol was.
 
 * **targetLoadRequests**
 
@@ -88,7 +84,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
       * **`requests`**
 
-         Array van `TargetRequestObjects` die de naam, standaardinhoud, parameters en callback-functie per locatie bevat die moet worden opgehaald.
+         Array van `TargetRequestObjects` die de naam, de standaardinhoud, de parameters, en callback functie per plaats bevat om terug te winnen.
 
       * **`profileParameters`**
 
@@ -108,7 +104,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
 * **targetRequestObjectWithName**
 
-   Maakt en retourneert een instantie van `TargetRequestObject` met de verschafte gegevens.
+   Maakt en retourneert een instantie van `TargetRequestObject` met de verstrekte gegevens.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -123,7 +119,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
 * **createTargetPrefetchObject**
 
-   Maakt en retourneert een instantie van `TargetPrefetchObject` met de verschafte gegevens.
+   Maakt en retourneert een instantie van `TargetPrefetchObject` met de verstrekte gegevens.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -134,7 +130,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in iOS:
 
 ## Openbare klassen {#section_A273E53F069E4327BBC8CE4910B37888}
 
-Hier volgen de openbare klassen die pre-fetch in iOS ondersteunen:
+Hier zijn de openbare klassen die pre-fetch in iOS steunen:
 
 ### Referentie klasse: TargetPreFetchObject
 
@@ -194,7 +190,7 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
 
 ## Codevoorbeeld {#section_BF7F49763D254371B4656E17953D520C}
 
-Hier volgt een voorbeeld van hoe u inhoud vooraf kunt instellen met behulp van de iOS SDK&#39;s:
+Hier volgt een voorbeeld van hoe u inhoud vooraf kunt instellen met de SDK&#39;s van iOS:
 
 ```objective-c
 /** 
@@ -238,7 +234,7 @@ Hier volgt een voorbeeld van hoe u inhoud vooraf kunt instellen met behulp van d
     }];
 ```
 
-Hier volgt een voorbeeld van de batch `loadRequest` met behulp van de iOS SDK&#39;s:
+Hier is een voorbeeld van de batch `loadRequest` met de SDK&#39;s van iOS:
 
 ```objective-c
 /** 

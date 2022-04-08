@@ -1,32 +1,28 @@
 ---
-description: De Adobe Target-prefetch-functie gebruikt de SDK's van Android Mobile om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
+description: De Adobe Target-prefetch-functie gebruikt de Android Mobile SDK's om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
 title: Inhoud van Prefetch-aanbieding in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '738'
 ht-degree: 5%
 
 ---
 
 # Inhoud van Prefetch-aanbieding in Android {#prefetch-offer-content-in-android}
 
-De Adobe Target-prefetch-functie gebruikt de SDK&#39;s van Android Mobile om inhoud van de aanbieding zo weinig mogelijk op te halen door de serverreacties in cache te plaatsen.
-
->[!IMPORTANT]
->
->De functie Prefetch in de mobiele SDK&#39;s voor Android wordt niet ondersteund voor de activatietypen Auto Target, Auto Allocate en Automated Personalization in Adobe Target.
+De Adobe Target-prefetch-functie gebruikt de Android Mobile SDK&#39;s om inhoud aan te bieden die zo weinig mogelijk is door de serverreacties in de cache op te halen.
 
 Dit proces verkort de laadtijd, voorkomt meerdere netwerkaanroepen en stelt Adobe Target in staat op de hoogte te worden gebracht van welke box de gebruiker van de mobiele app heeft bezocht. Alle inhoud zal tijdens de prefetch vraag worden teruggewonnen en in het voorgeheugen ondergebracht, en deze inhoud zal van het geheime voorgeheugen voor alle toekomstige vraag worden teruggewonnen die caching inhoud voor de gespecificeerde mbox naam bevat.
 
-Prefetch-inhoud blijft niet behouden bij alle opstarters. De prefetch-inhoud wordt in de cache geplaatst zolang de toepassing leeft of totdat de methode `clearPrefetchCache()` wordt aangeroepen.
+Prefetch-inhoud blijft niet behouden bij alle opstarters. De prefetch-inhoud wordt in de cache geplaatst zolang de toepassing actief is of totdat de `clearPrefetchCache()` wordt aangeroepen.
 
 >[!IMPORTANT]
 >
->API&#39;s voor doelprefetch zijn beschikbaar sinds SDK versie 4.14.0. Zie [Batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) voor meer informatie over parameterbeperkingen.
+>API&#39;s voor doelprefetch zijn beschikbaar sinds SDK versie 4.14.0. Zie voor meer informatie over parameterbeperkingen [Batchinvoerparameters](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-In SDK versie 4.14 of hoger, indien opgegeven, wordt `environmentId` gekozen uit het `ADBMobileConfig.json`-bestand wanneer een TnT-aanroep van batchmap v2 wordt gestart. Als er in dit bestand geen `environmentId` is opgegeven, wordt er geen omgevingsparameter verzonden in de aanroep van de TNT-batch mbox en wordt de aanbieding geleverd voor de standaardomgeving.
+In SDK versie 4.14 of hoger, indien opgegeven, wordt de `environmentId` wordt gekozen uit het `ADBMobileConfig.json` bestand bij het starten van een TnT-aanroep van een batchmap v2. Indien niet `environmentId` wordt gespecificeerd in dit dossier, wordt geen milieuparameter verzonden in TNT partijvraag, en de aanbieding wordt geleverd voor het standaardmilieu.
 
 Bijvoorbeeld:
 
@@ -60,7 +56,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in Android:
 
       * **targetPrefetchArray**
 
-         Array van `TargetPrefetchObjects` die de naam en mboxParameters bevat voor elke doellocatie die moet worden voorafgegaan.
+         Array van `TargetPrefetchObjects` die de naam en mboxParameters voor elke plaats van het Doel aan prefetch bevat.
 
       * **profileParameters**
 
@@ -68,7 +64,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in Android:
 
       * **callback**
 
-         Wordt aangeroepen wanneer de prefetch is voltooid. Retourneert `true` als de prefetch is gelukt en `false` als de prefetch is mislukt.
+         Wordt aangeroepen wanneer de prefetch is voltooid. Retourneert `true` als de prefetch is gelukt en `false` als de prefetch niet succesvol was.
 
 * **loadRequests**
 
@@ -88,7 +84,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in Android:
 
       * **requestArray**
 
-         Array van `TargetRequestObjects` die de naam, standaardinhoud, parameters en callback-functie per locatie bevat die moet worden opgehaald.
+         Array van `TargetRequestObjects` die de naam, de standaardinhoud, de parameters, en callback functie per plaats bevat om terug te winnen.
 
       * **profileParameters**
 
@@ -108,7 +104,7 @@ Hier volgen de methoden die u kunt gebruiken voor prefetch in Android:
 
 * **createTargetRequestObject**
 
-   Maakt en retourneert een instantie van `TargetRequestObject` met de verschafte gegevens.
+   Maakt en retourneert een instantie van `TargetRequestObject` met de verstrekte gegevens.
 
    * Hier volgt de syntaxis voor deze methode:
 
@@ -151,19 +147,19 @@ Hiermee worden de naam van de box en de parameters ingekapseld die worden gebrui
 
 * `mboxParameters`
 
-   Verzameling van sleutel-waardeparen die als `mboxParameters` voor dit `TargetPrefetchObject` verzoek in bijlage zullen zijn.
+   Verzameling sleutelwaardeparen die als in bijlage zullen worden opgenomen `mboxParameters` voor  `TargetPrefetchObject`&#39;s request.
    * **Type**: Kaart`<String, Object>`
 
 * **`orderParameters`**
 
    Verzameling van sleutel-waardeparen die aan huidige mbox onder de ordeknooppunt in bijlage zullen zijn.
-   * **Type**: Kaart  `<String, Object>`
+   * **Type**: Kaart `<String, Object>`
 
 * **`productParameters`**
 
    Verzameling sleutelwaardeparen die aan huidige mbox onder de productknoop zullen worden vastgemaakt.
 
-   * **Type**: Kaart  `<String, Object>`
+   * **Type**: Kaart `<String, Object>`
 
 
 ### Referentie klasse: TargetRequestObject
@@ -178,7 +174,7 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
 
 * **`mboxParameters`**
 
-   Verzameling van sleutel-waardeparen die als `mboxParameters` voor dit `TargetRequestObject` in bijlage zullen zijn.
+   Verzameling sleutelwaardeparen die als in bijlage zullen worden opgenomen `mboxParameters` voor  `TargetRequestObject`.
 
    * **Type: Kaart`<String, Object>`**
 
@@ -186,13 +182,13 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
 
    Verzameling van sleutel-waardeparen die aan huidige mbox onder de ordeknooppunt in bijlage zullen zijn.
 
-   * **Type**: Kaart  `<String, Object>`
+   * **Type**: Kaart `<String, Object>`
 
 * **`productParameters`**
 
    Verzameling sleutelwaardeparen die aan huidige mbox onder de productknoop zullen worden vastgemaakt.
 
-   * **Type**: Kaart  `<String, Object>`
+   * **Type**: Kaart `<String, Object>`
 
 * **`defaultContent`**
 
@@ -202,7 +198,7 @@ Deze klasse kapselt de mbox naam, standaardinhoud, mbox parameters en de terugke
 
 * **`callback`**
 
-   Functieaanwijzer die wordt aangeroepen wanneer inhoud voor de opgegeven `TargetRequestObject` beschikbaar is.
+   Functieaanwijzer die wordt aangeroepen wanneer de inhoud voor de opgegeven functie `TargetRequestObject` is beschikbaar.
 
    * **Type**: Target.TargetCallback`<String>`
 
