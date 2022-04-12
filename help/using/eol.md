@@ -1,45 +1,46 @@
 ---
-title: Adobe Mobile Services end-of-life FAQ
-description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
-source-git-commit: a0f834247c328b40d0f47fdf515c239cf66b7566
+title: Adobe Mobile Services - Veelgestelde vragen aan het einde van de levensduur
+description: Krijg antwoorden op algemeen gestelde vragen rond de eindedagaankondiging voor Adobe Mobile Services.
+exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
+source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# Adobe Mobile Services end-of-life FAQ
+# Adobe Mobile Services - Veelgestelde vragen aan het einde van de levensduur
 
-****
+De einddatum van de Adobe Mobile-service is **31 december 2022**.
 
-## What is happening?
+## Wat gebeurt er?
 
-Mobile Services reaches end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date.
+Mobiele services lopen ten einde op 31 december 2022. Mobiele services, die ondersteuning bieden voor een op mobiele apparaten gerichte gebruikersinterface, het aanschaffen, diep koppelen, in-app messaging, pushmelding en geo-locatie, worden na deze datum niet meer ondersteund.
 
-## What is included, and what is not included?
+## Wat is er inbegrepen en wat is er niet in opgenomen?
 
-[](https://mobilemarketing.adobe.com) The Mobile version 4 SDKs that rely on this interface were sunset on August 31, 2021.
+Dit einde van de levensduur omvat alleen Adobe Mobile Services, het zelfstandige platform op [mobiemarketing.adobe.com](https://mobilemarketing.adobe.com). De mobiele versie 4 SDKs die zich op deze interface baseert was zonsondergang op 31 augustus 2021.
 
-This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. These features, which include in-app behavior, lifecycle analysis, messaging interaction tracking, and audience profiles, continue to receive support from Adobe.
+Dit einde van de levensduur omvat NIET Adobe Analytics for mobile apps, onderdeel van de Adobe Experience Platform Mobile SDK&#39;s. Deze functies, zoals gedrag in de app, levenscyclusanalyse, het volgen van de communicatie, en publieksprofielen, blijven steun van Adobe ontvangen.
 
-## Why is the capability being retired?
+## Waarom wordt de capaciteit gepensioneerd?
 
-As Adobe continues to expand its mobile marketing capabilities, features previously available in Mobile Services will be released in Adobe Experience Cloud solutions or offered through Adobe Exchange Premier Partners. This transition provides you with more powerful and flexible mobile marketing capabilities.
+Aangezien Adobe zijn mobiele marketing mogelijkheden blijft uitbreiden, zullen de eigenschappen eerder beschikbaar in de Mobiele Diensten in de oplossingen van Adobe Experience Cloud worden vrijgegeven of door de Premier Partners van de Uitwisseling van de Adobe worden aangeboden. Deze overgang biedt u krachtigere en flexibele mobiele marketingmogelijkheden.
 
-## What happens to existing processing rules created in Mobile Services?
+## Wat gebeurt er met bestaande verwerkingsregels die zijn gemaakt in Mobiele services?
 
-[](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
+[Verwerkingsregels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) gemaakt of gegenereerd in de gebruikersinterface voor mobiele services wordt automatisch gemigreerd naar Adobe Analytics vóór de einddatum van de mobiele services. Gegigreerde verwerkingsregels gedragen zich op dezelfde manier als andere verwerkingsregels in Adobe Analytics, waar u ze vrij kunt weergeven of bewerken. Voor deze migratie is geen actie van de gebruiker vereist.
 
-[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)
+Nadat de Mobiele Diensten zonsondergang is, zullen alle logica van verwerkingsregels uitsluitend binnen Adobe Analytics, typisch met inbegrip van het gebruik van [Contextgegevensvariabelen](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html).
 
-## What transition options are available?
+## Welke overgangsopties zijn beschikbaar?
 
-Adobe offers three transition paths depending on your organization&#39;s use case.
+Adobe biedt drie overgangspaden, afhankelijk van het gebruiksscenario van uw organisatie.
 
-1. **** This product helps organizations optimize and personalize experiences across the entire customer journey, including mobile messaging.
-1. **** These partners include Adjust, AppsFlyer, and Branch, who offer extensive acquisition capabilities. Adobe&#39;s partnership team can make appropriate introductions to ensure that you find the solution that best fits your needs.
-1. **** [](https://experienceleague.adobe.com/docs/places/using/home.html)
+1. **In-app berichten en pushmeldingen**: Adobe kan uw berichtenworkflows overbrengen naar Adobe Journey Optimizer. Dit product helpt organisaties ervaringen over de volledige klantenreis, met inbegrip van mobiel overseinen optimaliseren en personaliseren.
+1. **Verwerving en diepe koppeling**: De verwerving en de diepe verbinding worden aangeboden door het programma van de Partners van de Premier van de Uitwisseling van de Adobe. Deze partners omvatten Adjust, AppsFlyer, en Tak, die uitgebreide verwervingsmogelijkheden aanbieden. Het team van Adobe kan de juiste introducties maken om ervoor te zorgen dat u de oplossing vindt die het beste bij uw behoeften past.
+1. **Plaatsingsservice**: De Dienst van Plaatsen verstrekt complementaire geolocatiemogelijkheden. Zie de [Plaatst de Documentatie van de Dienst](https://experienceleague.adobe.com/docs/places/using/home.html).
 
-## Where can I go if I have questions?
+## Waar kan ik heen als ik vragen heb?
 
-[](https://spark.adobe.com/page/C6D30y09zaRpD/) Contact your Adobe representative with any additional questions.
+Zie de [Adobe Mobile Services Spark-pagina aan einde van levensduur](https://spark.adobe.com/page/C6D30y09zaRpD/) voor meer informatie . Neem contact op met uw Adobe-vertegenwoordiger voor aanvullende vragen.
