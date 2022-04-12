@@ -6,7 +6,7 @@ title: Verwerving marketingkoppeling testen
 topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 5562c974eb921538209516c0e295612de1865af6
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Als uw mobiele app zich nog niet in Google Play bevindt, kunt u bij het maken va
 
 De app moet nieuw zijn geïnstalleerd of gegevens moeten zijn gewist **[!UICONTROL Settings]**, elke keer dat een test wordt uitgevoerd. Dit zorgt ervoor dat de aanvankelijke levenscyclusmetriek die met de de koordparameters van de campagnerequery wordt geassocieerd worden verzonden wanneer app voor het eerst wordt gelanceerd.
 
-1. Voltooi de vereiste taken in [Aanschaf Mobile-app](/help/android/acquisition-main/acquisition.md) en zorg ervoor dat u de broadcastontvanger correct hebt geïmplementeerd voor `INSTALL_REFERRER`.
+1. Voltooi de vereiste taken in [Aanschaf van mobiele apps](/help/android/acquisition-main/acquisition.md) en zorg ervoor dat u de broadcastontvanger correct hebt geïmplementeerd voor `INSTALL_REFERRER`.
 1. Klik in de gebruikersinterface van Adobe Mobile Services op  **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** en genereer een Acquisition Marketing Link URL die Google Play instelt als het doel voor Android-apparaten.
 
    Zie voor meer informatie [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -127,14 +127,14 @@ De volgende informatie onthouden:
 
 Java installeren:
 
-1. Download de [`acquistionTester.zip`](../assets/acquisitionTester.zip) bestand.
+1. Download de [`acquisitionTester.zip`](../assets/acquisitionTester.zip) bestand.
 1. Extraheer het .jar-bestand.
 
    U kunt het .jar dossier op de bevellijn in werking stellen.
 
 Bijvoorbeeld:
 
-```
+```sh
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
