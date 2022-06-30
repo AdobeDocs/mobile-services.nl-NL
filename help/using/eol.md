@@ -1,15 +1,15 @@
 ---
-title: Adobe Mobile Services - Veelgestelde vragen aan het einde van de levensduur
-description: Krijg antwoorden op algemeen gestelde vragen rond de eindedagaankondiging voor Adobe Mobile Services.
+title: Veelgestelde vragen over Adobe Mobile Services
+description: Krijg antwoorden op algemeen gestelde vragen rond de eindedagaankondiging voor de Mobiele Diensten van Adobe.
 exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
+source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Adobe Mobile Services - Veelgestelde vragen aan het einde van de levensduur
+# Veelgestelde vragen over Adobe Mobile Services
 
 De einddatum van de Adobe Mobile-service is **31 december 2022**.
 
@@ -38,7 +38,7 @@ Nadat de Mobiele Diensten zonsondergang is, zullen alle logica van verwerkingsre
 Adobe biedt drie overgangspaden, afhankelijk van het gebruiksscenario van uw organisatie.
 
 1. **In-app berichten en pushmeldingen**: Adobe kan uw berichtenworkflows overbrengen naar Adobe Journey Optimizer. Dit product helpt organisaties ervaringen over de volledige klantenreis, met inbegrip van mobiel overseinen optimaliseren en personaliseren.
-1. **Verwerving en diepe koppeling**: De verwerving en de diepe verbinding worden aangeboden door het programma van de Partners van de Premier van de Uitwisseling van de Adobe. Deze partners omvatten Adjust, AppsFlyer, en Tak, die uitgebreide verwervingsmogelijkheden aanbieden. Het team van Adobe kan de juiste introducties maken om ervoor te zorgen dat u de oplossing vindt die het beste bij uw behoeften past.
+1. **Verwerving en diepe koppeling**: De verwerving en de diepe verbinding worden aangeboden door het programma van de Partners van de Premier van de Uitwisseling van de Adobe. Het team van Adobe kan de juiste introducties maken om ervoor te zorgen dat u de oplossing vindt die het beste bij uw behoeften past.
 1. **Plaatsingsservice**: De Dienst van Plaatsen verstrekt complementaire geolocatiemogelijkheden. Zie de [Plaatst de Documentatie van de Dienst](https://experienceleague.adobe.com/docs/places/using/home.html).
 
 ## Waar kan ik heen als ik vragen heb?
