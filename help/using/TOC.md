@@ -5,8 +5,8 @@ breadcrumb-title: Handleiding voor mobiele services
 user-guide-description: Mobiele services is een complete oplossing waarmee u gebruikers van mobiele apps kunt aantrekken en betrekken en hun ervaringen kunt optimaliseren.
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 8%
    + [Rollen en machtigingen](gs/c-mob-roles-and-permissions.md)
    + [Aanmelden](gs/gs-signin.md)
    + [Rapporttypen](gs/reports-types.md)
-   + Mobiele metriek {#mobile-metrics}
+   + Mobiele meetgegevens {#mobile-metrics}
       + [Mobiele meetgegevens](gs/metrics/metrics.md)
       + [Mobiele meetgegevens weergeven](gs/metrics/overview.md)
       + [Verwijzing naar mobiele Dimension](gs/metrics/metrics-reference.md)
@@ -28,13 +28,13 @@ ht-degree: 8%
    + [Het overzicht Toepassingen beheren](manage-apps/manage-apps.md)
    + [Een nieuwe app toevoegen](manage-apps/t-new-app.md)
    + [Virtuele rapportsuites](manage-apps/c-mob-vrs.md)
-   + App store {#app-store}
+   + App-store {#app-store}
       + [Overzicht van App Store](manage-apps/c-app-store/c-app-store.md)
       + [Een app toevoegen vanuit een App Store](manage-apps/c-app-store/t-app-store-app.md)
       + [Een app verwijderen](manage-apps/t-delete-apps.md)
 + Toepassingsinstellingen beheren {#manage-app-settings-ug}
    + [Toepassingsinstellingen beheren](c-manage-app-settings/c-manage-app-settings.md)
-   + Uw app {#configuring-app} configureren
+   + Uw app configureren {#configuring-app}
       + [Uw app configureren](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Opties voor SDK-analyse configureren](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
       + [Mobiele SDK&#39;s en gereedschappen downloaden](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
@@ -58,7 +58,7 @@ ht-degree: 8%
    + [Versierapport](usage/c-reports-versions.md)
    + [Technologieverslag](usage/reports-technology.md)
    + [Crashes-rapport](usage/c-crashes.md)
-   + [Overzicht App Store-rapport](usage/c-app-store-store-performance.md)
+   + [App Store - Overzichtsrapport](usage/c-app-store-store-performance.md)
 + Werken met rapporten {#work-with-reports-ug}
    + [Rapporten aanpassen](usage/reports-customize/reports-customize.md)
    + [Filters toevoegen aan rapporten](usage/reports-customize/t-reports-customize.md)
@@ -83,7 +83,7 @@ ht-degree: 8%
          + [Opbouwfunctie voor marketingkoppelingen](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [Marketing-koppelingen maken of bewerken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [Verspreide advertenties](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
-      + Verouderde overnamekoppelingen {#legacy-acquisition-links}
+      + Legacy Acquisition links {#legacy-acquisition-links}
          + [Koppelingen voor verouderde overname gebruiken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
          + [Een verwervingskoppeling maken](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/t-acquisition-link.md)
          + [Aankoopkoppelingen beheren](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/c-manage-acquisition-links.md)
