@@ -5,9 +5,9 @@ title: ADBMobile JSON config
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1591'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    Hiermee schakelt u aanschaf van mobiele apps in.
 
-   Als deze sectie ontbreekt, laat de aanschaf van de Mobile App toe en download opnieuw het configuratiedossier van SDK. Zie voor meer informatie *referenceTimeout* hieronder.
+   Als deze sectie ontbreekt, schakelt u de aanschaf van een mobiele toepassing in en downloadt u het configuratiebestand van de SDK opnieuw. Zie voor meer informatie *referenceTimeout* hieronder.
 
    * `server` - Verwervingsserver die bij de eerste introductie wordt gecontroleerd op een overnameverwijzing.
    * `appid` - Gegenereerde id die deze toepassing op de acquisitieserver op unieke wijze identificeert.
@@ -84,24 +84,6 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
 
    * Minimale SDK-versie: 4.0
 
-* **coopUnsafe**
-
-   Voor leden van Coop van het Apparaat die deze waarde vereisen wordt geplaatst aan `true`, moet u met het Co-op team werken om een markering van de lijst van gewezen personen op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
-
-   De volgende informatie onthouden:
-
-   * Wanneer `coopUnsafe` is ingesteld op `true`, `coop_unsafe=1` wordt altijd toegevoegd aan Audience Manager- en bezoekersidentiteitscontroles.
-   * Als u het door:sturen van de server-kant van de Analyse aan Audience Manager toelaat, zult u ook zien `coop_unsafe=1` op Analytische resultaten.
-
-   Hieronder vindt u aanvullende informatie:
-
-   * Minimale SDK-versie: 4.16.1
-   * De Booleaanse eigenschap van de `marketingCloud` object dat, wanneer ingesteld op `true`, zorgt ervoor dat het apparaat wordt uitgeschakeld als het apparaat wordt aangesloten op het Experience Cloud.
-   * De standaardwaarde is `false`.
-   * Deze instelling wordt gebruikt **alleen** voor klanten met Device Co-op-provisioning.
-
-
-
 * **environmentId**
 
    De id van de omgeving die u wilt gebruiken. U kunt een geldige id opgeven (`environmentId=8`), en als `environmentId` niet is opgenomen, wordt de standaardproductieomgeving gebruikt.
@@ -131,7 +113,7 @@ Hetzelfde configuratiebestand kan op meerdere platforms voor uw toepassing worde
    * Als tijdstempels zijn ingeschakeld in uw rapportsuite, kunt u `offlineEnabled` configuration, eigenschap *moet* waar zijn.
    * Als er geen tijdstempel is ingeschakeld in uw rapportsuite, `offlineEnabled` configuration, eigenschap *moet* onwaar zijn.
 
-      Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportenreeks timestamp toegelaten is, contacteer de Zorg van de Klant of download het configuratiedossier van de diensten van Adobe Mobile. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die gebruikmaken van de `s.timestamp` variabele.
+      Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportsuite met tijdstempel is ingeschakeld, neemt u contact op met de klantenservice of downloadt u het configuratiebestand van de Adobe Mobile-services. Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die gebruikmaken van de `s.timestamp` variabele.
 
    * Minimale SDK-versie: 4.0
 
@@ -343,7 +325,7 @@ Hier volgt een voorbeeld `ADBMobileConfig.json` bestand:
 
 ## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Het knooppunt Berichten wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
+Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 
 * &quot;messageId&quot;
 

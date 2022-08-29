@@ -1,11 +1,10 @@
 ---
 audience: end-user
 user-guide-title: iOS-handleiding voor mobiele services
-breadcrumb-title: iOS-handleiding
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+breadcrumb-title: iOS Guide
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -13,7 +12,7 @@ ht-degree: 3%
 
 # iOS-handleiding voor mobiele services {#ios}
 
-+ [iOS SDK 4.x voor Experience Cloud-oplossingen](overview.md)
++ [iOS SDK 4.x voor Experience Cloud Solutions](overview.md)
 + [Aanvullende informatie](rel-notes.md)
 + Aan de slag {#getting-started-ios}
    + [Aan de slag - overzicht](getting-started/getting-started.md)
@@ -37,7 +36,7 @@ ht-degree: 3%
    + [Toepassingscrashes bijhouden](analytics-main/crashes.md)
    + [Gedetailleerde acties](analytics-main/timed-actions.md)
    + [Levenswaarde bezoeker](analytics-main/lifetime-value.md)
-   + Variabele {#products-variable}
+   + Variabele voor producten {#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
    + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
@@ -51,13 +50,13 @@ ht-degree: 3%
    + [Overzicht van overname](acquisition-main/acquisition-main.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/c-acquisition-methods.md)
-   + Diepe koppelingen {#tracking-deep-links} bijhouden
+   + Diepkoppelingen bijhouden {#tracking-deep-links}
       + [Diepkoppelingen bijhouden](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Uitgestelde diepe koppelingen van derden bijhouden](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [Verwerving marketinglink testen](acquisition-main/t-testing-marketing-link-acquisition.md)
    + [V3-overname testen](acquisition-main/t-testing-version-3-acquisition.md)
    + [Verouderde overname testen](acquisition-main/t-testing-acquisition.md)
-   + [Apple-zoekadvertenties](acquisition-main/c-apple-search-ads.md)
+   + [Zoeken in Apple-advertenties](acquisition-main/c-apple-search-ads.md)
 + Berichten {#messaging-ios}
    + [Overzicht van berichten](messaging-main/messaging-main.md)
    + In-app berichten {#in-app-messaging}
@@ -75,24 +74,23 @@ ht-degree: 3%
 + Target {#target-ios}
    + [Doeloverzicht](target-main/target-main.md)
    + [Doelmethoden](target-main/c-target-methods.md)
-   + [Prefetch-aanbiedingsinhoud in iOS](target-main/c-mob-target-prefetch-ios.md)
-   + [Voorvertoning doel op iOS](target-main/c-mob-target-preview-ios.md)
+   + [Inhoud van voorkeursaanbieding in iOS](target-main/c-mob-target-prefetch-ios.md)
+   + [Voorvertoning doel in iOS](target-main/c-mob-target-preview-ios.md)
 + Experience Cloud {#exp-cloud-ios}
    + [Overzicht van Experience Cloud](marketing-cloud/marketing-cloud.md)
    + [Experience Cloud-id](marketing-cloud/mcvid.md)
    + [Methoden van Adobe Experience Platform Identity Service](marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
 + [Methoden van Audience Manager](amm/aam-methods.md)
 + Apple TV-implementatie met tvOS {#apple-tv-implementation-tvos-ios}
    + [Apple TV-implementatie met tvOS](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
    + [Adobe Target voor TVML/TVJS](apple-tv-implementation-tvos/target-for-tvml-tvjs.md)
    + [TVJS-methoden](apple-tv-implementation-tvos/tvjs-methods.md)
-+ Implementatie van iOS-extensie {#ios-ext}
++ iOS-extensie-implementatie {#ios-ext}
    + [iOS-extensie-implementatie](ios-ext/ios-ext.md)
    + [Zelfstandige extensie-implementatie](ios-ext/c-stand-alone-extension-implementation.md)
 + [Apple Watch-implementatie met WatchOS 2](apple-watch-implementation-watchkit.md)
 + iOS SDK-referentie {#sdk-reference-ios}
-   + [Referentie voor iOS SDK](reference/reference.md)
+   + [iOS SDK-referentie](reference/reference.md)
    + [Toepassings-id&#39;s](reference/app-ids.md)
    + [Bezoekerspatiëring tussen een app en een mobiel web](reference/hybrid-app.md)
    + [iOS-apparaatversies](reference/device-versions.md)

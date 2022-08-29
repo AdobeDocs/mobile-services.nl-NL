@@ -5,9 +5,9 @@ title: ADBMobile JSON Config
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1556'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       * `server`Dit is de overnameserver die bij de eerste introductie voor een overnameverwijzing wordt gecontroleerd.
       * `appid`, dit is de gegenereerde id die deze toepassing op de overnameserver op unieke wijze identificeert.
 
-   Als deze sectie ontbreekt, laat de aanschaf van de Mobile App toe en download opnieuw het configuratiedossier van SDK. Zie voor meer informatie *referenceTimeout* in deze lijst van variabelen.
+   Als deze sectie ontbreekt, schakelt u de aanschaf van een mobiele toepassing in en downloadt u het configuratiebestand van de SDK opnieuw. Zie voor meer informatie *referenceTimeout* in deze lijst van variabelen.
 
 * **analyticsForwardingEnabled**
    * De minimale SDK-versie is 4.8.0.
@@ -81,20 +81,6 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       >
       >Deze variabele wordt vereist door Doel.
 
-* **coopUnsafe**
-   * Minimale SDK-versie: 4.16.1
-   * De Booleaanse eigenschap van de `marketingCloud` object dat, wanneer ingesteld op `true`, zorgt ervoor dat het apparaat wordt uitgeschakeld als het apparaat wordt aangesloten op het Experience Cloud.
-   * De standaardwaarde is `false`.
-   * Deze instelling wordt gebruikt **alleen** voor klanten met Device Co-op-provisioning.
-
-   Voor leden van Coop van het Apparaat die deze waarde vereisen die wordt geplaatst aan `true`, moet u met het Co-op team werken om een markering van de lijst van gewezen personen op uw Co-op rekening van het Apparaat te verzoeken. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
-
-   De volgende informatie onthouden:
-
-   * Wanneer `coopUnsafe` is ingesteld op `true`, `coop_unsafe=1` wordt altijd toegevoegd aan Audience Manager- en bezoekersidentiteitscontroles.
-   * Als u het door:sturen van de server-kant van de Analyse aan Audience Manager toelaat, zult u ook zien `coop_unsafe=1` Analytische resultaten.
-
-
 * **environmentId**
    * Minimale SDK-versie: 4.14
    * De id van de omgeving die u wilt gebruiken.
@@ -127,7 +113,7 @@ Hier volgt een lijst met de variabelen in het JSON-bestand en de minimale SDK-ve
       >
       >Als tijdstempels zijn ingeschakeld in uw rapportsuite, kunt u `offlineEnabled` configuration, eigenschap **moet** waar zijn. als de rapportsuite geen tijdstempel heeft, `offlineEnabled` configuration, eigenschap **moet** onwaar zijn.
       >
-      >Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportenreeks timestamp toegelaten is, contacteer de Zorg van de Klant of download het configuratiedossier van de diensten van Adobe Mobile.
+      >Als dit niet correct wordt gevormd, zullen de gegevens worden verloren. Als u niet zeker weet of een rapportenreeks timestamp toegelaten is, contacteer de Zorg van de Klant of download het configuratiedossier van de Mobiele diensten van Adobe.
 
       Als u momenteel AppMeasurement-gegevens rapporteert aan een rapportsuite die ook gegevens uit JavaScript verzamelt, moet u mogelijk een aparte rapportsuite voor mobiele gegevens instellen of een aangepaste tijdstempel opnemen voor alle JavaScript-treffers die gebruikmaken van de `s.timestamp` variabele.
 
@@ -310,7 +296,7 @@ Hier volgt een voorbeeld `ADBMobileConfig.json` bestand:
 
 ## Berichtenbeschrijving {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Het knooppunt Berichten wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
+Het berichtenknooppunt wordt automatisch gegenereerd door Adobe Mobile-services en hoeft gewoonlijk niet handmatig te worden gewijzigd. De volgende beschrijving wordt gegeven voor het oplossen van problemendoeleinden:
 
 * &quot;messageId&quot;
 * Gegenereerde id, vereist

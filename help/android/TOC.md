@@ -2,10 +2,9 @@
 audience: end-user
 user-guide-title: Android-handleiding voor mobiele services
 breadcrumb-title: Android Guide
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 6%
 
 ---
@@ -35,7 +34,7 @@ ht-degree: 6%
    + [Toepassingscrashes bijhouden](analytics-main/crashes.md)
    + [Gedetailleerde acties](analytics-main/timed-actions.md)
    + [Levenswaarde bezoeker](analytics-main/lifetime-value.md)
-   + Productvariabele{#products-variable}
+   + Variabele voor producten{#products-variable}
       + [Variabele voor producten](analytics-main/products/products.md)
       + [Variabele voor producten met verkoopbare variabelen en productspecifieke gebeurtenissen](analytics-main/products/products-variable-evars-events.md)
    + [Gebeurtenisserialisatie](analytics-main/event-serialization.md)
@@ -49,16 +48,16 @@ ht-degree: 6%
    + [Overzicht van overname](acquisition-main/acquisition-main-android.md)
    + [Aanschaf van mobiele apps](acquisition-main/acquisition.md)
    + [Verwervingsmethoden](acquisition-main/acquisition-methods.md)
-   + Diepe koppelingen bijhouden{#tracking-deep-links}
+   + Diepkoppelingen bijhouden{#tracking-deep-links}
       + [Diepkoppelingen bijhouden](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Uitgestelde diepe koppelingen van derden bijhouden](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [Verwerving marketinglink testen](acquisition-main/t-testing-marketing-link-acquisition.md)
    + [V3-overname testen](acquisition-main/t-testing-version-3-acquisition.md)
    + [Verouderde overname testen](acquisition-main/t-testing-acquisition.md)
    + [Problemen met ophalen oplossen](acquisition-main/troubleshoot-acquisition-testing.md)
-+ Overseinen{#messaging-android}
++ Berichten{#messaging-android}
    + [Overzicht van berichten](messaging-main/messaging-main-android.md)
-   + In-app messaging{#inapp-messaging}
+   + In-app berichten{#inapp-messaging}
       + [In-app berichten](messaging-main/messaging/messaging.md)
       + [In-app-berichten oplossen](messaging-main/messaging/in-apps-ts.md)
    + Push messaging{#push-messaging}
@@ -80,12 +79,11 @@ ht-degree: 6%
    + [Overzicht van Experience Cloud](c-marketing-cloud/c-marketing-cloud.md)
    + [Experience Cloud ID-configuratie](c-marketing-cloud/mcvid.md)
    + [Methoden van Adobe Experience Platform Identity Service](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager{#audience-manager-android}
    + [Overzicht van Audience Manager](audience-manager/audience-manager.md)
    + [Configuratie van Audience Manager](audience-manager/audiencemgmt.md)
    + [Methoden van Audience Manager](audience-manager/c-audience-manager-methods.md)
-+ Wearables{#wearables-android}
++ Woorden{#wearables-android}
    + [Overzicht van Wearables](wearables/wearables.md)
    + [Android-oormerken: aan de slag](wearables/android-wearable.md)
    + [Android-oormerken: aanvullende opmerkingen](wearables/c-android-wearables--additional-notes.md)
