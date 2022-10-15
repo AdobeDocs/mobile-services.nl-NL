@@ -1,21 +1,21 @@
 ---
-description: Deze informatie helpt u bij het downloaden van SDK's en hulpprogramma's voor Mobile Services om u te helpen met de implementatie van Mobile Services.
+description: Deze informatie helpt u bij het downloaden van SDK's en tools voor mobiele services om u te helpen met de implementatie van uw mobiele services.
 keywords: mobile;android;ios;sdk
 solution: Experience Cloud Services,Analytics
-title: SDK's en tools van Mobile downloaden
+title: Mobiele SDK's en tools downloaden
 topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # Mobiele SDK&#39;s en gereedschappen downloaden{#download-mobile-sdks-and-tools}
 
-Met deze informatie kunt u de SDK&#39;s en tools van Mobile Services downloaden.
+Met deze informatie kunt u de SDK&#39;s en gereedschappen voor mobiele services downloaden.
 
 ## App SDK-downloads {#section_F647A95C96B0439BA276781E0C97C689}
 
@@ -27,9 +27,4 @@ U kunt een `ADBMobileConfig.json` bestand dat is aangepast met de geselecteerde 
 
 ## Native bibliotheken {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-Configureer uw app in Adobe Mobile-services zodat u een aangepast pakket kunt downloaden dat een vooraf ingevulde versie van het configuratiebestand bevat:
-
-* [iOS-instructies](/help/ios/getting-started/requirements.md)
-* [Android-instructies](/help/android/getting-started/requirements.md)
-
-Raadpleeg de documentatie voor native bibliotheken, waaronder Windows Phone 8, Blackberry, Xamarin en andere *SDK-documentatie* sectie in [Adobe mobiele services](/help/using/home.md).
+Configureer uw app in Adobe Mobile-services zodat u een aangepast pakket kunt downloaden dat een vooraf ingevulde versie van het configuratiebestand bevat.

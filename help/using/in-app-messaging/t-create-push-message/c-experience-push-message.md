@@ -6,9 +6,9 @@ title: Experience Push Message
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,7 @@ Hier volgen de vereisten voor het verzenden van uitgebreide pushberichten:
       >[!IMPORTANT]
       >
       >De volgende informatie onthouden:
+      >
       >* Rijke pushberichten die naar eerdere versies worden verzonden, worden wel verzonden, maar alleen de tekst wordt weergegeven.
       >* Op dit moment is er geen ondersteuning voor toezicht.
 
@@ -75,12 +76,7 @@ Hier volgen de vereisten voor het verzenden van uitgebreide pushberichten:
    * Alleen HTTPS
 
 * **Grootte**
-   * Afbeeldingen moeten een 2:1-indeling hebben, anders worden ze bijgesneden.
-
-Zie de volgende inhoud voor meer informatie over het configureren van pushberichten met de extensie Rich Push Meldingen:
-
-* [Pushmeldingen ontvangen in Android](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Ontvang rijke pushmeldingen in iOS](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+   * Afbeeldingen moeten een 2:1-indeling hebben of moeten worden bijgesneden.
 
 Een pushbericht configureren op de pagina Experience:
 
@@ -102,7 +98,7 @@ Een pushbericht configureren op de pagina Experience:
 
       Selecteer deze optie zodat iOS uw app op de achtergrond activeert wanneer het bericht verschijnt en de app code kan uitvoeren op basis van het berichtlading. Zie voor meer informatie [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) in de *iOS Developer Library*.
 
-1. (Optioneel) Klik op de volgende pictogrammen om een voorvertoning van de lay-out van het bericht weer te geven:
+2. (Optioneel) Klik op de volgende pictogrammen om een voorvertoning van de lay-out van het bericht weer te geven:
 
    * **[!UICONTROL x Summary]**
 
@@ -125,11 +121,11 @@ Een pushbericht configureren op de pagina Experience:
       Als u een voorvertoning van uw bericht wilt weergeven op de tablet van de gebruiker, klikt u op ![tabletpictogram](assets/icon_tablet.png).
    Onder aan het voorvertoningsvenster kunt u een beschrijving weergeven van het publiek dat u in de vorige stap hebt geselecteerd.
 
-1. (**Optioneel**) Klik **[!UICONTROL Test]** om uw bericht voor testdoeleinden naar opgegeven apparaten te verzenden.
-1. Selecteer de service en typ de pushtokens voor ten minste één apparaat waarop u het bericht wilt duwen.
+3. (**Optioneel**) Klik **[!UICONTROL Test]** om uw bericht voor testdoeleinden naar opgegeven apparaten te verzenden.
+4. Selecteer de service en typ de pushtokens voor ten minste één apparaat waarop u het bericht wilt duwen.
 
    Geef de tokens op in een lijst met komma&#39;s als scheidingsteken om het bericht naar meerdere apparaten te sturen.
 
-1. Vorm de het plannen opties voor het bericht.
+5. Vorm de het plannen opties voor het bericht.
 
    Zie voor meer informatie [Planning: pushbericht](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).

@@ -6,9 +6,9 @@ title: Het publiek bepaalt en vormt de Segmenten van het Publiek voor de Duw Ber
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Als u een publiekssegment selecteert dat gebruikers over veelvoudige apps bevat,
 
 ![meerdere toepassingsnamen](assets/multiple_appname.png)
 
-De naam van de app is gebaseerd op de geparafeerde versie van de appId, die automatisch naar Adobe Analytics wordt verzonden door de SDK van Mobile Services in het dialoogvenster `<app name> <version number> (<bundle id>)` gebruiken.
+De toepassingsnaam is gebaseerd op de geparafeerde versie van de appId, die automatisch naar Adobe Analytics wordt verzonden door de SDK van Mobile Services in het dialoogvenster `<app name> <version number> (<bundle id>)` gebruiken.
 
 >[!TIP]
 >
@@ -85,11 +85,6 @@ Hier volgen enkele voorbeelden om u te helpen begrijpen hoe u segmenten correct 
       Dit betekent dat de SDK de waarde van `True` voor Push Message Opt-In evar.
 
    * Hoewel het apparaat een geldig apparaattoken heeft, tenzij Adobe Analytics de markering Opted-In heeft ingesteld, wordt het bericht niet naar het apparaat geduwd.
-
-   * Voor meer informatie over het oplossen van problemen duw overseinen, zie het volgende:
-
-      * [Push messaging in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Pushberichten in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. Typ gegevens in de volgende velden:
 

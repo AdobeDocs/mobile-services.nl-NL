@@ -6,9 +6,9 @@ title: Vereisten voor het inschakelen van pushberichten
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -21,25 +21,21 @@ U moet deze taken voltooien alvorens pushberichten in uw toepassingen te vormen.
 
 Uw Adobe Analytics Company moet Experience Cloud toegelaten zijn. U kunt de status verifiëren van uw Adobe-accountmanager.
 
-## De SDK van Mobile installeren en configureren
+## De mobiele SDK installeren en configureren
 
-* **De SDK van Mobile installeren**
+* **De mobiele SDK installeren**
 
    Als u pushberichten wilt configureren, moet u ten minste versie 4.6 of hoger van de Mobile SDK downloaden en installeren. Zie voor meer informatie [SDK&#39;s downloaden](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
 
 * **Pushservices configureren**
 
-   U moet de pushservices configureren in de SDK van Mobile.
-Zie de volgende inhoud voor meer informatie:
-
-   * [Push Messaging in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-   * [Push Messaging in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+   U moet de pushservices configureren in de Mobile SDK.
 
 ## Meld u aan bij de Mobile Core Service met uw Adobe ID
 
 >[!IMPORTANT]
 >
->Gebruikers die de functie Push Services willen gebruiken, moeten zich aanmelden bij de Mobile Core Service door hun Adobe ID te gebruiken en hun account Analytics moet zijn gekoppeld aan hun Adobe-id&#39;s. De functie Push Services is niet beschikbaar als gebruikers zich aanmelden met hun bestaande Adobe Analytics-accounts.
+>Om de functionaliteit van de Diensten van de Duw te gebruiken moeten de gebruikers zich bij de Mobiele Dienst van de Kern aanmelden door hun Adobe ID te gebruiken en hun account van de Analytics moet met hun Adobe IDs worden verbonden. De functie Push Services is niet beschikbaar als gebruikers zich aanmelden met hun bestaande Adobe Analytics-accounts.
 
 Voer de volgende stappen uit als gebruikers geen Adobe-id hebben:
 
@@ -67,7 +63,7 @@ Elke gebruiker moet de de oplossingsrekening van Analytics van de organisatie va
 
 Zie voor meer informatie [Organisaties in de Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl) in de handleiding Experience Cloud Central Interface Components.
 
-## Pushservices en de SDK ID-service configureren in de Mobile-gebruikersinterface
+## Pushservices en de SDK ID-service configureren in de mobiele gebruikersinterface
 
 Voordat u de id-service voor uw app inschakelt, moet u **[!UICONTROL Push Services]** is uitgeschakeld. Maar nadat u de dienst van identiteitskaart toelaat, wordt de sectie van de Diensten van de Duw toegelaten. Voor meer informatie over het inschakelen van pushservices raadpleegt u [Opties voor SDK-id-services configureren](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
@@ -89,7 +85,7 @@ Voordat u de id-service voor uw app inschakelt, moet u **[!UICONTROL Push Servic
 
 * Voor **Google**, geeft u de API-sleutel voor de app op.
 
-   Klikken **[!UICONTROL Test]** om te controleren of de app en Mobile Services correct zijn geconfigureerd. Deze optie is nuttig voor het zuiveren en het oplossen van problemen.
+   Klikken **[!UICONTROL Test]** om te controleren of de app en de mobiele services correct zijn geconfigureerd. Deze optie is nuttig voor het zuiveren en het oplossen van problemen.
 
    Typ de pushtokens van het apparaat die u het bericht wilt verzenden. U kunt het bericht naar meerdere apparaten verzenden door tokens op te geven in een lijst met komma&#39;s als scheidingsteken.
 

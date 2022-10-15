@@ -1,47 +1,47 @@
 ---
-description: Deze informatie helpt u begrijpen en gebruiken met Adobe Mobile Services.
+description: Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
 keywords: mobiel
 solution: Experience Cloud Services,Analytics
 title: Aan de slag
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
 # Aan de slag{#getting-started}
 
-Deze informatie helpt u begrijpen en gebruiken met Adobe Mobile Services.
+Deze informatie helpt u begrijpen en gebruiken met de Mobiele Diensten van Adobe.
 
 Adobe Mobile Services bestaat uit de volgende onderdelen:
 
-* Gebruikersinterface Adobe Mobile Services
+* UI Adobe Mobile Services
 * Adobe Mobile SDK
 
 Voor bedrijven die op zoek zijn naar de meest effectieve manier om de betrokkenheid van gebruikers te vergroten en het rendement op investeringen voor hun investering in mobiele apps te bewijzen, biedt Adobe een end-to-end oplossing, Adobe Mobile Services, om gebruikers van apps te verkrijgen en erbij te betrekken en hun ervaringen te analyseren en te optimaliseren.
 
 Het landschap van de mobiele app verschilt aanzienlijk van toen de smartphone voor het eerst werd gestart. Een mobiele app hebben om uw klanten met uw merk te verbinden is niet langer genoeg; vandaag, moet u een samenhangende, dwingende klantenervaring over kanalen drijven en uw mobiele app als strategisch aanraakpunt gebruiken om uw meest loyale, hoogwaardige klanten in dienst te nemen. Maar om deze gebruikers in staat te stellen met uw app te communiceren, hebt u dwingende inhoud, contextuele meldingen, intelligente personalisatie en geïntegreerde toepassingsanalyses nodig, enzovoort.
 
-## Gebruikersinterface Adobe Mobile Services {#mobile-services-ui}
+## UI Adobe Mobile Services {#mobile-services-ui}
 
-De gebruikersinterface van Mobile Services wordt ondersteund door de volgende browsers:
+De gebruikersinterface voor mobiele services wordt ondersteund door de volgende browsers:
 
 * Google Chrome (de nieuwste twee versies)
 * Mozilla Firefox (de nieuwste twee versies)
 * Apple Safari (de laatste twee versies)
 * Microsoft Edge (de nieuwste twee versies)
 
-Met Adobe Mobile Services kunt u de betrokkenheid bij mobiele apps op de volgende manier sturen:
+Met Adobe Mobile Services kunt u de betrokkenheid bij mobiele apps op de volgende manier stimuleren:
 
 ### Ophalen
 
 In *Ophalen* Bovendien gebruikt u betaalde, bezeten en verdiende media om gebruikers aan te moedigen apps te downloaden in de toonaangevende App-winkels. Met Adobe Mobile Services kunt u het aanschafproces voor gebruikers van de app versnellen.
 
-Adobe Mobile Services biedt workflows voor het aanschaffen van gebruikers, waaronder tracering van aankopen en diepe koppelingen, waarmee de effectiviteit van uw kanalen bij het aanschaffen van app-gebruikers wordt gemeten. Met marketingkoppelingen waarmee wordt bijgehouden van welke gebruikers het kanaal afkomstig is, kunt u zichtbaar maken in welke aankoopkanalen winstgevende en betrokken gebruikers het meest effectief kunnen maken.
+Adobe Mobile Services biedt aanschafworkflows voor gebruikers, waaronder tracering van aankopen en diepe koppelingen, waarmee de effectiviteit van uw kanalen bij het aanschaffen van app-gebruikers wordt gemeten. Met marketingkoppelingen waarmee wordt bijgehouden van welke gebruikers het kanaal afkomstig is, kunt u zichtbaar maken in welke aankoopkanalen winstgevende en betrokken gebruikers het meest effectief kunnen maken.
 
 Bovendien kunt u met een diepe koppeling gebruikers rechtstreeks naar de inhoud van de app sturen die u ze wilt laten zien en hen aanmoedigen om uw app indien nodig te installeren.
 
@@ -82,11 +82,11 @@ In *Inschakelen* kunt u relevante pushmeldingen en in-app berichten gebruiken om
 * Berichten in de app worden geactiveerd door realtime analyses, waarschuwingen en nieuwe aanbiedingen/inhoud.
 * Weergaven begrijpen, doorkliksnelheden en gedrag in een lagere laag
 
-### Adobe Mobile messaging
+### Adobe Mobile-berichten
 
 U kunt pushmeldingen en meldingen in de app gebruiken om te communiceren met uw gebruikers. Push-berichten worden via het besturingssysteem op het apparaat verzonden, terwijl in-app-berichten in de app worden verzonden wanneer een gebruiker actief met de app communiceert. In-app-berichten kunnen doorgaans diverse aanvullende indelingen bevatten, zoals pop-ups en interstitials.
 
-In Adobe Mobile kunt u de volgende berichttypen configureren:
+In Adobe Mobile, kunt u de volgende types van berichten vormen:
 
 **Pushmeldingen**, die buiten uw app worden weergegeven, biedt de volgende functies:
 
@@ -119,11 +119,7 @@ Met een mobiel apparaat kunt u van nature weten waar een consument werkt terwijl
 
 Adobe Target for Mobile-apps profiteren nu ten volle van de verbeterde segmentatie en rapportage die beschikbaar zijn via Adobe Analytics. Dit betekent dat Adobe Target alle belangrijke gegevens van apps in Analytics kan benutten door deze te gebruiken om te richten en zich aan te passen. het zorgt ook voor een betere rapportage over het succes van de test, zodat marketers beter kunnen begrijpen wat ‘wat als’ -vragen zijn, de antwoorden die de toepassingsmarkator onder druk kunnen zetten om een rendement op app-investeringen te laten zien. De integratie van Analytics/Target for apps maakt een gecombineerde aanbieding, die de meest robuuste oplossing voor toepassingsbetrokkenheid vertegenwoordigt die op de markt beschikbaar is.
 
-Zie de volgende inhoud voor meer informatie over de locatie:
-
-* [Locatie in de gebruikershandleiding voor Mobile Services](/help/using/location/c-location-overview.md)
-* [Locatie in de handleiding voor de Android-SDK](/help/android/location/location.md)
-* [Locatie in de handleiding voor de iOS SDK](/help/ios/location/location.md)
+Zie voor meer informatie over de locatie [Locatie](/help/using/location/c-location-overview.md).
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
@@ -133,7 +129,7 @@ De Adobe Mobile SDK biedt de volgende functies:
 
 * Complete mobiele service
 
-   U kunt toepassingen op verschillende platformen meten en optimaliseren met één, lichte en geïntegreerde Adobe Mobile SDK.
+   U kunt toepassingen op verschillende platforms meten en optimaliseren met één, lichte en geïntegreerde Adobe Mobile SDK.
 * Nieuwe klanten ophalen en aantrekkelijke micromomenten leveren
 
    * Breng gebruikers opnieuw en opnieuw naar uw app via gerichte pushmeldingen, waaronder ondersteuning voor rich media en in-app messaging.
@@ -157,5 +153,3 @@ De Adobe Mobile SDK biedt de volgende functies:
 
    * Minimaliseert de verwerkingsbelasting van apparaten voor het verzenden van gegevens naar Adobe-servers en systemen van derden.
    * Met een kleine voetafdruk minimaliseert u de grootte van het app-pakket dat naar de App Store wordt verzonden.
-
-Voor meer informatie over de Adobe Mobile SDKs, zie [Android SDK 4.x voor Experience Solutions](/help/android/overview.md) en [iOS SDK 4.x voor Experience Cloud Solutions](/help/ios/overview.md).

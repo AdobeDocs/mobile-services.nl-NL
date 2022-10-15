@@ -6,22 +6,22 @@ title: Veelgestelde vragen
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
 
 # Veelgestelde vragen {#frequently-asked-questions}
 
-De volgende tabel bevat een lijst met veelgestelde vragen over Adobe Mobile Services:
+De volgende lijst bevat een lijst van vaak gestelde vragen voor de Mobiele Diensten van Adobe:
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
 ### Welke SDK-versie moet ik hebben?
 
-Onze huidige SDK&#39;s zijn versie 4.11. Zie voor meer informatie de [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Onze huidige SDK&#39;s zijn versie 4.11. Zie voor meer informatie de [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl).
 
 ### Waar kan ik SDKs downloaden?
 
@@ -41,7 +41,7 @@ De Adobe Mobile SDK&#39;s gebruiken de standaard iOS- en Android-netwerkstapels.
 
 ### Wat zijn levenscyclusstatistieken?
 
-Levenscyclusstatistieken zijn &#39;out-of-the-box&#39;-meetgegevens die automatisch worden verzameld wanneer de SDK voor het eerst wordt geïmplementeerd in uw app. Zie voor meer informatie [Levenscyclusstatistieken (Android)](/help/android/metrics.md) en [Levenscyclusstatistieken (iOS)](/help/ios/metrics.md).
+Levenscyclusstatistieken zijn &#39;out-of-the-box&#39;-meetgegevens die automatisch worden verzameld wanneer de SDK voor het eerst wordt geïmplementeerd in uw app.
 
 ### Hoe kan ik verwerkingsregels problemen oplossen?
 
@@ -49,9 +49,9 @@ Zie [Tips en trucs voor verwerkingsregels](https://experienceleague.adobe.com/do
 
 ### Kan ik mijn analysegegevens naar meerdere rapportensuites sturen?
 
-Ja. De SDK&#39;s bieden de mogelijkheid om gegevens naar meerdere Adobe Analytics-rapportreeksen te verzenden. Om gegevens in veelvoudige rapportreeksen te vangen door een beeldverzoek te gebruiken, plaats de veelvoudige toepassings IDs van de rapportreeks in **[!UICONTROL rsids]** veld onder **[!UICONTROL analytics]** in de `ADBMobileConfig.json` bestand, gescheiden door komma&#39;s en geen spaties. Zie voor meer informatie [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+Ja. De SDK&#39;s bieden de mogelijkheid om gegevens naar meerdere Adobe Analytics-rapportreeksen te verzenden. Om gegevens in veelvoudige rapportreeksen te vangen door een beeldverzoek te gebruiken, plaats de veelvoudige toepassings IDs van de rapportreeks in **[!UICONTROL rsids]** veld onder **[!UICONTROL analytics]** in de `ADBMobileConfig.json` bestand, gescheiden door komma&#39;s en geen spaties.
 
-### Hoe verschillen Mobile-bezoeken van lanceringen?
+### Hoe verschillen mobiele bezoeken van lanceringen?
 
 Een introductie wordt gemeten door de SDK wanneer een gebruiker de app voor de eerste keer opent of naar de app terugkeert nadat hij de app langer heeft verlaten dan de opgegeven time-outwaarde. De gemiddelde time-out is 5 minuten (300 seconden) in **[!UICONTROL lifecycleTimeout]** in het veld `ADBMobileConfig.json` bestand. Een bezoek is een serverberekening door Adobe Analytics en is gebaseerd op de eerste en laatste gegevenstreffers die door de SDK worden verzonden zonder een bezoekonderbreking te overschrijden. Doorgaans worden sessietime-outs ingesteld op 30 minuten voor een rapportsuite. Hoewel bezoeken afkomstig zijn van traditionele webanalyses, bieden deze resultaten nog steeds waardevolle inzichten in de manier waarop gebruikers uw app kunnen betreden en verlaten.
 
@@ -67,7 +67,7 @@ Ja, we zorgen voor een aangepaste pushlading die in JSON kan worden gecodeerd. A
 
 ### Zijn er groottebeperkingen voor in-app berichten?
 
-Gepubliceerde en actieve in-app berichten die zijn gemaakt in Adobe Mobile Services, worden gehost op een server met een formaatbeperking van 15 MB per rapportsuite voor de app. Hoewel deze beperking van toepassing is op berichtinhoud en bronnen die worden gehost met Adobe, gelden er geen beperkingen voor de bronnen waarnaar het bericht in de app kan verwijzen op andere hosts of op de bronnen in de app.
+Gepubliceerde en actieve in-app berichten die zijn gemaakt in Adobe Mobile Services worden gehost op een server met een 15 MB-groottebeperking per rapportsuite voor de app. Hoewel deze beperking van toepassing is op berichtinhoud en bronnen die worden gehost met Adobe, gelden er geen beperkingen voor de bronnen waarnaar het bericht in de app kan verwijzen op andere hosts of op de bronnen in de app.
 
 ### Kan ik mijn eigen HTML gebruiken voor in-app berichten?
 

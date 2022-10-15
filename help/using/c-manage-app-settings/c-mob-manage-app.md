@@ -6,9 +6,9 @@ title: Uw app beheren
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,6 @@ U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een versc
 * **Standaardvariabelen en -cijfers**
 
    Elke app bevat variabelen en maatstaven voor het bijhouden van winkelwagentjes en aankoopactiviteiten. Sommige aankoopgegevens kunnen niet worden verwerkt met verwerkingsregels, zodat de SDK de speciale `"&&products"` contextgegevens. U kunt bijvoorbeeld variabelen als winkelwagentjes, winkelwagentjes, uitchecken, bestellingen enzovoort hebben. De contextgegevens moeten worden toegewezen aan gegevens in Adobe Analytics. Als deze variabele wordt gevuld met een eenvoudige toewijzing van contextgegevens, is dit de sleutel die aan het in kaart brengt. Laat deze leeg als de variabele wordt gevuld met complexere regels in Analytics Admin Tools.
-
-   Raadpleeg de volgende secties voor meer informatie over deze variabelen en metriek:
-
-   * [Productvariabelen in Android](/help/android/analytics-main/products/products.md)
-   * [Productvariabelen in iOS](/help/ios/analytics-main/products/products.md)
 
 * **Aangepaste variabelen**
 
@@ -49,7 +44,7 @@ Hier is een lijst van de douanevariabelen die u kunt vormen:
 * De **[!UICONTROL Custom Variables]** (of eVars) beantwoorden ook de vraag &quot;welke?&quot; Een eVar-waarde kan echter niet alleen van toepassing zijn op de treffer die wordt verzonden, maar ook op variabelen en metriek die in volgende treffers worden verzonden tot de waarde vervalt of een nieuwe waarde wordt ingesteld.
 * De **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** gedraagt zich het zelfde als variabelen behalve zij staan u toe om veelvoudige waarden op één slag te vangen. Zie voor meer informatie [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) variabelen in de documentatie van Adobe Analytics.
 
-De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobile Services.
+De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobiele services.
 
 * **[!UICONTROL Name]**
 
@@ -80,7 +75,7 @@ De volgende afbeeldingen worden in Analytics weergegeven als gemaakt in Mobile S
       De waarde van de eVar blijft voor alle verdere het volgen vraag voortbestaan.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics heeft een geavanceerdere interface voor het instellen van persistentie voor eVars. Als een persistentiewaarde wordt ingesteld voor de eVar die niet wordt ondersteund in Mobile Services, wordt deze waarde weergegeven in de gebruikersinterface van Mobile Services.
+      Adobe Analytics heeft een geavanceerdere interface voor het instellen van persistentie voor eVars. Als een persistentiewaarde voor de eVar wordt geplaatst die niet in de Mobiele Diensten wordt gesteund, wordt deze waarde getoond in Mobiele Diensten UI.
 
       Klik op **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
@@ -120,4 +115,4 @@ U kunt koppelingsdoelen maken, bewerken, archiveren/ongedaan maken en verwijdere
 
 ## Postbacks beheren {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
-Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een andere externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobile zodanig configureren dat aangepaste gegevens naar een bestemming van een derde worden verzonden. Voor meer informatie over postbacks, zie [Postbacks configureren](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
+Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Als u dezelfde triggers en kenmerken gebruikt om een bericht in de app weer te geven, kunt u Mobiel configureren om aangepaste gegevens naar een bestemming van een derde te verzenden. Voor meer informatie over postbacks, zie [Postbacks configureren](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).

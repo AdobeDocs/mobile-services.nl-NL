@@ -6,9 +6,9 @@ title: Push Messaging configureren
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,4 @@ Voordat u pushberichten configureert, moet u de vereiste taken uitvoeren in [Ver
 
       Geef een geldige API-sleutel op. Ga voor meer informatie over het verkrijgen van de API-sleutel naar [App configureren voor gebruik van APNS of FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
-      Raadpleeg de volgende onderwerpen voor meer informatie:
-
-      * [Push Messaging in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [Push Messaging in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-1. Klik op **[!UICONTROL Save]**.
+2. Klik op **[!UICONTROL Save]**.
