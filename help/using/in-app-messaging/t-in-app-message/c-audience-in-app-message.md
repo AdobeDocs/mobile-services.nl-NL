@@ -6,7 +6,7 @@ title: Bericht 'Publiek in toepassing'
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Publiek: bericht in de app {#audience-in-app-message}
+
+{#eol}
 
 U kunt publieksopties configureren voor berichten in de app, zoals opties voor weergave, trigger en gedrag.
 
@@ -53,7 +55,7 @@ U kunt bepalen wie het bericht in de app moet zien wanneer het wordt geactiveerd
 >
 >Triggers en traits gebruiken gegevens die vanuit uw app worden doorgegeven aan Analytics. Deze waarden worden doorgegeven als contextgegevens, toegewezen variabelen en metriek. Een variabele is een op tekst gebaseerde waarde en een metrische waarde is een numerieke waarde.
 
-Als u de toewijzing van deze sleutelwaardeparen wilt zien in de gebruikersinterface van Mobile Services en de waarde voor uw trigger wilt valideren, klikt u op **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables & Metrics]** >, waarmee de volgende tabbladen worden weergegeven:
+Om de afbeelding van deze zeer belangrijke waardeparen in Mobiele Diensten UI te zien en de waarde voor uw trekker te bevestigen, klik **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables & Metrics]** >, waarmee de volgende tabbladen worden weergegeven:
 
 * **[!UICONTROL Standard Variables & Metrics]**
 * **[!UICONTROL Custom Variables]**

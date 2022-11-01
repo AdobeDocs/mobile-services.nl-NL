@@ -6,7 +6,7 @@ title: Koppelingsdoelen beheren
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Koppelingsdoelen beheren{#manage-link-destinations}
 
+{#eol}
+
 U kunt de pagina Doelen van de Verbinding gebruiken om, bestaande bestemming uit te geven, te archiveren, unarchive, of te schrappen.
 
 Om de Manage pagina van de Doelen van de Verbinding te tonen:
 
-1. Klik in de gebruikersinterface van Mobile Services op **[!UICONTROL Manage Apps]**.
+1. Klik in de gebruikersinterface voor mobiele services op **[!UICONTROL Manage Apps]**.
 1. Klik op de pagina App Information van uw app op **[!UICONTROL Manage Link Destinations]**.
 
    ![Doelen koppelen](assets/link_destinations_list.png)

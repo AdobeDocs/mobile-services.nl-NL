@@ -6,7 +6,7 @@ title: Filters toevoegen aan rapporten
 topic-fix: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 exl-id: eb0589e9-668e-42d7-8f7a-00d7f0a2e3ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Filters toevoegen aan rapporten{#add-filters-to-reports}
 
+{#eol}
+
 Deze informatie helpt u de ingebouwde rapporten aan te passen door extra filters (segmenten) toe te voegen.
 
 >[!IMPORTANT]
 >
->Metriek voor Mobile-apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een uitsplitsing of rapporttype niet beschikbaar is in Adobe Mobile, kan het worden geproduceerd door een verschillende rapporteringsinterface te gebruiken.
+>Metrische gegevens voor mobiele apps zijn ook beschikbaar in marketingrapporten en -analyses, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
 
 In dit voorbeeld worden de opties **[!UICONTROL Users & Sessions]** , maar de instructies gelden voor elk rapport.
 
@@ -68,4 +70,4 @@ In dit voorbeeld worden de opties **[!UICONTROL Users & Sessions]** , maar de in
 
    ![](assets/customize7.png)
 
-   Neem wat tijd om de verschillende opties in het menu van de rapportaanpassing te testen, en ervoor te zorgen dat u referentie uw favorieten. URL&#39;s rapporteren in Adobe Mobile is functioneel en kan worden gemaild of toegevoegd aan uw favorieten.
+   Neem wat tijd om de verschillende opties in het menu van de rapportaanpassing te testen, en ervoor te zorgen dat u referentie uw favorieten. De rapport-URL&#39;s in Adobe Mobile zijn functioneel en kunnen worden gemaild of toegevoegd aan uw favorieten.

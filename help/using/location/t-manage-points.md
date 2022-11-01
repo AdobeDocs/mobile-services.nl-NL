@@ -6,7 +6,7 @@ title: Belangenpunten beheren
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Belangenpunten beheren {#manage-points-of-interest}
 
+{#eol}
+
 U kunt POI&#39;s maken en beheren, waarmee u geografische locaties kunt definiëren die u kunt gebruiken voor correlatiedoeleinden, als doel kunt instellen voor berichten in de app, enzovoort. Wanneer een hit wordt verzonden in een POI, wordt de POI aan de hit gekoppeld.
 
 Controleer voordat u Locatie kunt gebruiken de volgende vereisten:
 
-* U moet beschikken over Analytics - Mobile Apps of Analytics Premium.
+* U moet beschikken over Analytics: Mobile Apps of Analytics Premium.
 * U moet **[!UICONTROL Location Reports]** voor de app.
 * Als u een versie van de SDK van iOS of Android gebruikt die ouder is dan versie 4.2, voegt u na het toevoegen van nieuwe **[!UICONTROL Points of Interest]**, moet u een nieuw configuratiebestand downloaden en dit aan de ontwikkelaars van uw app geven.
 
@@ -66,4 +68,4 @@ Voer de volgende taken uit om Locatie te gebruiken:
 
 Als u een of meer POI&#39;s wilt verwijderen, schakelt u de toepasselijke selectievakjes in en klikt u op **[!UICONTROL Remove Selected]**.
 
-Klikken **[!UICONTROL Import]** of **[!UICONTROL Export]** om met de gegevens te werken door `.csv` in plaats van de Adobe Mobile-gebruikersinterface te gebruiken.
+Klikken **[!UICONTROL Import]** of **[!UICONTROL Export]** om met de gegevens te werken door `.csv` in plaats van de gebruikersinterface van Adobe Mobile te gebruiken.

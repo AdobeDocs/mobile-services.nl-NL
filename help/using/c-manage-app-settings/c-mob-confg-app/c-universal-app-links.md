@@ -5,7 +5,7 @@ title: Handleiding voor Universal Links en App Links
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Universele koppelingen vs. App-koppelingen: Hoe werken ze? {#universal-links-and-app-links}
+
+{#eol}
 
 Met Universal Links (iOS) en App Links (Android) kunt u verbinding maken met diepe koppelingen in uw iOS- of Android-apps.
 
@@ -36,9 +38,9 @@ U kunt een Marketing Link tot stand brengen die een Universele Verbinding of een
 
 1. Ga naar [Universele koppelingen in Apple afhandelen](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links).
 
-2. Stel in Adobe Mobile Services de site-associatiedocumenten in:
+2. In de Mobiele Diensten van Adobe, opstelling de plaats-vereniging documenten:
 
-   a. Selecteer op de homepage van Mobile Services de app waarvoor u Universal Links wilt instellen.
+   a. Selecteer op de startpagina voor mobiele services de app waarvoor u Universal Links wilt instellen.
 
    b. Klikken **[!UICONTROL Manage App Settings]**.
 
@@ -60,9 +62,9 @@ U kunt een Marketing Link tot stand brengen die een Universele Verbinding of een
 
 ### Een Universal Link gebruiken
 
-1. In de Diensten van Adobe Mobile, creeer een Verbinding van de Marketing die Universele Verbindingen gebruikt:
+1. In de Mobiele Diensten van Adobe, creeer een Verbinding van de Marketing die Universele Verbindingen gebruikt:
 
-   a. Selecteer de app op de homepage van Mobile Services en klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Selecteer de app op de startpagina van Mobile Services en klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klikken **[!UICONTROL Create New]**.
 
@@ -91,9 +93,9 @@ U kunt een Marketing Link tot stand brengen die een Universele Verbinding of een
 
 1. Ga naar om App-koppelingen in te stellen in uw Android-app naar [Android-toepassingskoppelingen toevoegen](https://developer.android.com/studio/write/app-link-indexing).
 
-1. Stel in Adobe Mobile Services de site-associatiedocumenten in:
+1. In de Mobiele Diensten van Adobe, opstelling de plaats-vereniging documenten:
 
-   a. Selecteer op de startpagina van Mobile Services de app waarvoor u App Links wilt instellen.
+   a. Selecteer op de startpagina voor mobiele services de app waarvoor u App Links wilt instellen.
 
    b. Klikken **[!UICONTROL Manage App Settings]**.
 
@@ -119,9 +121,9 @@ U kunt een Marketing Link tot stand brengen die een Universele Verbinding of een
 
 ### App-koppeling gebruiken
 
-1. In de Diensten van Adobe Mobile, creeer een Verbinding van de Marketing die de Verbindingen van de Toepassing gebruikt:
+1. In de Mobiele Diensten van Adobe, creeer een Verbinding van de Marketing die de Verbindingen van de Toepassing gebruikt:
 
-   a. Selecteer de app op de homepage van Mobile Services en klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Selecteer de app op de startpagina van Mobile Services en klik op **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klikken **[!UICONTROL Create New]**.
 

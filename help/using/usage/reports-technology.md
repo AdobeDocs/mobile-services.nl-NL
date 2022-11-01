@@ -6,7 +6,7 @@ title: Technologieverslag
 topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Technologieverslag {#technology}
+
+{#eol}
 
 De **[!UICONTROL Technology]** kunt u de verschillende apparaattypen, besturingssystemen, versies van het besturingssysteem en mobiele dragers bekijken waarop uw app wordt gebruikt.
 
@@ -40,7 +42,7 @@ Het zonneburstdiagram is interactief en u kunt de volgende taken uitvoeren:
 
    U kunt de secundaire metrische waarde weergeven met behulp van kleur, hoogte of beide.
 
-In de volgende tabel worden de standaardrapporten beschreven en wordt aangegeven hoe deze worden ingevuld in Mobile Services:
+De volgende lijst beschrijft de standaardrapporten en hoe zij in de Mobiele Diensten bevolkt zijn:
 
 | Rapport | Populatiemethode | Beschrijving |
 |--- |--- |--- |

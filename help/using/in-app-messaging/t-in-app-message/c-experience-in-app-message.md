@@ -6,7 +6,7 @@ title: Bericht over ervaring in de app
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Ervaring: bericht in de app {#experience-in-app-message}
+
+{#eol}
 
 Configureer ervaringsopties voor in-app berichten, zoals tekst (volledig scherm, waarschuwing of melding) en weergave-, tekst- en knopopties.
 

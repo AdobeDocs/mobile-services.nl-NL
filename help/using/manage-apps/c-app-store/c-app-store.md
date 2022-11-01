@@ -6,7 +6,7 @@ title: App Store
 topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # App-store{#app-store}
 
+{#eol}
+
 De `appFigures` Dankzij de integratie van gegevensconnectors wordt de kracht van de geïntegreerde analytische functie van de AppFigures-winkel voor mobiele apparaten gecombineerd met het rechtstreeks volgen van Adobe Analytics voor het maken van krachtige analysemogelijkheden en optimaliseringsmogelijkheden voor uw organisatie.
 
 >[!TIP]
 >
->Nadat u de integratie hebt geconfigureerd, kunt u in de gebruikersinterface van Mobile Services **[!UICONTROL App Store]** menupunt en bijbehorende rapporten tonen in de linkernavigatieruit.
+>In Mobiele Diensten UI, nadat u de integratie vormt, **[!UICONTROL App Store]** menupunt en bijbehorende rapporten tonen in de linkernavigatieruit.
 
 appFigures Data Connector voor Adobe Analytics bevat de volgende informatie:
 

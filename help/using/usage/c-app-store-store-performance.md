@@ -6,7 +6,7 @@ title: App Store - Overzichtsrapport
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # App Store - Overzichtsrapport{#app-store-overview-report}
 
+{#eol}
+
 De **[!UICONTROL App Store Overview]** geeft u een momentopname van de maatstaven van uw App Store, met inbegrip van het aantal downloads, in-app aankopen, de gemiddelde classificatie van de App store, downloadopbrengst, in-app opbrengst, downloads door land, downloads door App store, en in-app aankopen door naam.
 
 >[!TIP]
 >
->In de gebruikersinterface van Mobile Services **[!UICONTROL App Store]** menu-item en **[!UICONTROL Overview]** het rapport verschijnt in het linkernavigatiemenu nadat u de integratie vormt.
+>In de gebruikersinterface voor mobiele services **[!UICONTROL App Store]** menu-item en **[!UICONTROL Overview]** het rapport verschijnt in het linkernavigatiemenu nadat u de integratie vormt.
 
 De **[!UICONTROL Overview]** bevat een overtijdse grafiek met informatie over het aantal downloads van App Store, aankopen in de app die met uw app zijn gedaan en de gemiddelde score van uw app.
 

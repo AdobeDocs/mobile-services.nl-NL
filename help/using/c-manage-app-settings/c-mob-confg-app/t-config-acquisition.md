@@ -6,7 +6,7 @@ title: Opties voor SDK-overname configureren
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Opties voor SDK-overname configureren{#configure-sdk-acquisition-options}
+
+{#eol}
 
 U kunt de opties voor SDK-overname configureren op de pagina Toepassingsinstellingen beheren terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 

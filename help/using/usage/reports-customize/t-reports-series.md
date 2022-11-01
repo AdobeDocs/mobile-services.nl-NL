@@ -6,7 +6,7 @@ title: Reeks (metriek) toevoegen aan rapporten
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # Serie (metriek) toevoegen aan rapporten{#add-series-metrics-to-reports}
 
+{#eol}
+
 Deze informatie helpt u de ingebouwde rapporten aan te passen door extra reeksen (metriek) of apps in verschillende rapportreeksen toe te voegen om gegevens te vergelijken.
 
 >[!IMPORTANT]
 >
->Metriek voor Mobile-apps zijn ook beschikbaar in marketing reports and analytics, ad-hocanalyses, gegevensopslagruimten en andere analytische rapportageinterfaces. Als een uitsplitsing of rapporttype niet beschikbaar is in Adobe Mobile, kan het worden geproduceerd door een verschillende rapporteringsinterface te gebruiken.
+>De mobiele toepassingsmetriek zijn ook beschikbaar in marketing reports and analytics, ad hoc analyse, gegevenspakhuis, en andere Analytics rapporteringsinterfaces. Als een afbraak of rapporttype niet beschikbaar in Adobe Mobile is, kan het door een verschillende rapporteringsinterface worden geproduceerd te gebruiken.
 
 In dit voorbeeld worden de opties **[!UICONTROL Users & Sessions]** , maar de instructies kunnen op om het even welk rapport van toepassing zijn.
 

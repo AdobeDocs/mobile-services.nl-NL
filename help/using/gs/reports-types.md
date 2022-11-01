@@ -6,7 +6,7 @@ title: Rapporttypen
 topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Rapporttypen {#report-types}
+
+{#eol}
 
 Wanneer het aanpassen van rapporten, zou de brede flexibiliteit sommige vragen over het type van rapport kunnen tot stand brengen dat het meest geschikt is om de gegevens te krijgen die u nodig hebt.
 
@@ -27,7 +29,7 @@ Alvorens rapporten aan te passen, moet u het verschil tussen metrisch en een afm
 
    Een dimensie wordt gebruikt om uw gegevens te beschrijven. Dimension worden vertegenwoordigd door een koord, of een aantal te gebruiken dat als een koord (zoals een postcode handelt, en gebruikt om uw gegevens te organiseren en te segmenteren. Voorbeelden van veelvoorkomende afmetingen zijn onder andere de versie van het besturingssysteem, de naam van de campagne, de productnaam en de mobiele provider. Elke dimensie heeft een aantal specifieke waarden die met die dimensie worden geassocieerd. De versiedimensie van het besturingssysteem heeft bijvoorbeeld waarden zoals _iOS 7_ en _Android 4.1.2_.
 
-Hier volgen de typen rapporten die u kunt genereren in de gebruikersinterface van Mobile:
+Hier zijn de soorten rapporten die u in Mobiele UI kunt produceren:
 
 ## Overtijdrapport {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 

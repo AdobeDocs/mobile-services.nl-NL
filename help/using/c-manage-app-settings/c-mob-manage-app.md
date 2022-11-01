@@ -6,7 +6,7 @@ title: Uw app beheren
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Uw app beheren {#managing-your-app}
+
+{#eol}
 
 U kunt de gegevens bijhouden en beheren die u ontvangt van de app door een verscheidenheid aan variabelen en metriek te configureren.
 

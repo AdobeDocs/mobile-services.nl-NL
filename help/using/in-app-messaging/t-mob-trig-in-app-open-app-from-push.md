@@ -3,7 +3,7 @@ description: U kunt instellen dat de berichttrigger in de app de pushbericht-id 
 title: Een bericht in de app activeren wanneer de app vanuit een pushbericht wordt geopend
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een bericht in de app activeren wanneer de app wordt geopend vanuit een pushbericht{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+
+{#eol}
 
 U kunt instellen dat de berichttrigger in de app de pushbericht-id is die wordt verzonden wanneer een gebruiker de app opent vanuit het pushbericht.
 
@@ -30,7 +32,7 @@ U kunt instellen dat de berichttrigger in de app de pushbericht-id is die wordt 
    >
    >De pushbericht-id is de id die u in stap 1 hebt geplaatst.
 
-   Deze trigger moet handmatig worden toegevoegd omdat deze niet beschikbaar is in de vervolgkeuzelijst **[!UICONTROL Trigger]**.
+   Deze trigger moet handmatig worden toegevoegd omdat deze niet beschikbaar is in het dialoogvenster **[!UICONTROL Trigger]** vervolgkeuzelijst.
 
    ![](assets/brandon_task2.png)
 
@@ -40,5 +42,5 @@ U kunt instellen dat de berichttrigger in de app de pushbericht-id is die wordt 
    Denk aan de volgende informatie terwijl u test:
 
    * Nadat u het bericht in de app hebt opgeslagen, duurt het ongeveer 45 seconden voordat het gehoste configuratiebestand wordt bijgewerkt met het nieuwe bericht.
-   * De app zoekt naar updates van configuratiebestanden (het nieuwe bericht in de app) wanneer er een **new** wordt gestart. U moet dus controleren of de app een nieuwe start start uitvoert wanneer op het pushbericht wordt geklikt.
+   * De app zoekt naar updates van configuratiebestanden (het nieuwe in-app-bericht) wanneer er een **new** starten, zodat u zeker weet dat de app een nieuwe start start wanneer op het pushbericht wordt geklikt.
    Dit betekent doorgaans dat u ervoor moet zorgen dat de sessietime-out is opgetreden. De standaardtime-out is 5 minuten.

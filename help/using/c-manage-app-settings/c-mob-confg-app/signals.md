@@ -3,7 +3,7 @@ description: Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld,
 title: Postbacks configureren
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Postbacks configureren {#configure-postbacks}
+
+{#eol}
 
 Met Postbacks kunt u gegevens die door Adobe Mobile zijn verzameld, naar een aparte externe server verzenden. Door de zelfde trekkers en de eigenschappen te gebruiken die u gebruikt om een in-app bericht te tonen, kunt u de Mobiele Diensten vormen om aangepaste gegevens naar een derdebestemming te verzenden.
 

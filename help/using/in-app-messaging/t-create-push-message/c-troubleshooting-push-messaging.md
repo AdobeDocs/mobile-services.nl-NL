@@ -6,7 +6,7 @@ title: Problemen met pushberichten oplossen
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -15,17 +15,19 @@ ht-degree: 0%
 
 # Probleemoplossing voor pushberichten{#troubleshooting-push-messaging}
 
+{#eol}
+
 Met deze informatie kunt u problemen met pushberichten oplossen.
 
 ## Waarom zijn er soms vertragingen bij het verzenden van pushberichten?
 
-De volgende typen vertragingen kunnen worden geassocieerd met pushberichten voor Mobile Services:
+De volgende soorten vertragingen kunnen aan dupberichten voor de Mobiele Diensten worden geassocieerd:
 
 * **Wachten op analyseresultaten**
 
    Elke rapportsuite bevat een instelling om te bepalen wanneer binnenkomende analyseresultaten moeten worden verwerkt. De standaardwaarde is om de 1 uur.
 
-   De daadwerkelijke verwerking van Analytics-hits kan tot 30 minuten duren, maar duurt doorgaans 15 tot 20 minuten. Een rapportsuite werkt bijvoorbeeld elk uur. Wanneer u de vereiste verwerkingstijd van maximaal 30 minuten meet, kan het tot 90 minuten duren voordat een binnenkomende hit beschikbaar is voor een pushbericht. Als een gebruiker de app om 9:01 uur heeft gestart, wordt de hit weergegeven in de gebruikersinterface van Mobile Services als een nieuwe unieke gebruiker tussen 10:15 en 10:30 uur.
+   De daadwerkelijke verwerking van Analytics-hits kan tot 30 minuten duren, maar duurt doorgaans 15 tot 20 minuten. Een rapportsuite werkt bijvoorbeeld elk uur. Wanneer u de vereiste verwerkingstijd van maximaal 30 minuten meet, kan het tot 90 minuten duren voordat een binnenkomende hit beschikbaar is voor een pushbericht. Als een gebruiker de app om 9:01 uur heeft gestart, wordt de hit weergegeven in de gebruikersinterface voor mobiele services als een nieuwe unieke gebruiker tussen 10:15 en 10:30 uur.
 
 * **Wachten op de pushservice**
 

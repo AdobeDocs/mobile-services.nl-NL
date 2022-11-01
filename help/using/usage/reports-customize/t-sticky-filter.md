@@ -6,7 +6,7 @@ title: Filter Notitie toevoegen
 topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Een kleverig filter toevoegen{#add-sticky-filter}
+
+{#eol}
 
 Creeer een filter dat verschillende rapporten overspant om te zien hoe een bepaald segment over alle mobiele rapporten presteert. Met een plakfilter kunt u een filter definiëren dat wordt toegepast op alle rapporten die geen tekenen bevatten.
 

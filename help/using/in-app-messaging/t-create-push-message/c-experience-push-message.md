@@ -6,7 +6,7 @@ title: Experience Push Message
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Ervaring: pushbericht {#experience-push-message}
+
+{#eol}
 
 U kunt ervaringsopties configureren voor pushberichten en uitgebreide pushberichten, zoals naam, berichttekst en bestemmingsopties. U kunt ook geavanceerde opties configureren, zoals opties voor het laden van objecten en aangepaste opties voor iOS-apparaten.
 

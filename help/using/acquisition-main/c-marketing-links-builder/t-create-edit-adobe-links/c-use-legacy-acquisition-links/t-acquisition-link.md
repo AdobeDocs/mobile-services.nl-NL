@@ -6,7 +6,7 @@ title: Een verwervingskoppeling maken
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Een verwervingskoppeling maken{#create-an-acquisition-link}
+
+{#eol}
 
 U kunt koppelingen naar App Store maken waarmee u toepassingen rechtstreeks kunt downloaden van de Apple App Store en Google Play. Met de koppelingen die u maakt, kunt u succesgebeurtenissen toewijzen aan de downloads.
 
@@ -50,13 +52,13 @@ Geef betaalde voorwaarden of andere zoektermen op voor de advertentie.
 
       Geef een specifieke regionale App Store voor desktopbrowsers op.
 
-      Met deze instelling kunt u de regiospecifieke app-store definiëren waarnaar u een acquisitie-koppeling rechtstreeks wilt laten verwijzen wanneer een gebruiker op de koppeling klikt vanuit een desktopbrowser. Mobile-apparaten worden automatisch omgeleid op basis van apparaatinstellingen.
+      Met deze instelling kunt u de regiospecifieke app-store definiëren waarnaar u een acquisitie-koppeling rechtstreeks wilt laten verwijzen wanneer een gebruiker op de koppeling klikt vanuit een desktopbrowser. Mobiele apparaten worden automatisch omgeleid op basis van apparaatinstellingen.
 
    * **[!UICONTROL Browser Language (Google Language (Google Play Only))]**
 
       Selecteer een taal in de vervolgkeuzelijst.
 
-      Met deze instelling kunt u een specifieke taal definiëren die in de Google Play Store voor desktopbrowsers moet worden weergegeven. Mobile-apparaten tonen de taal op basis van apparaatinstellingen.
+      Met deze instelling kunt u een specifieke taal definiëren die in de Google Play Store voor desktopbrowsers moet worden weergegeven. Mobiele apparaten tonen de taal op basis van apparaatinstellingen.
 
    * **[!UICONTROL Search by Name ]**
 

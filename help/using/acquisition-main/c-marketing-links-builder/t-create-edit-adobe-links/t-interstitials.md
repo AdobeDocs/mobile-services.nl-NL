@@ -6,7 +6,7 @@ title: Verspreide advertenties
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Verspreide advertenties{#interstitials}
+
+{#eol}
 
 U kunt gebruikers naar een bestemming leiden afhankelijk van het feit of ze de app hebben geïnstalleerd (een koppeling om de app te verkennen) of niet (naar een website of een App Store). De keus van het verpletteren wordt het best verlaten aan gebruikers. De verkopers kunnen gebruikerskeuzen verstrekken door een interstitiële pagina te vormen die gebruikers de beschikbare landingsbestemmingen toont.
 

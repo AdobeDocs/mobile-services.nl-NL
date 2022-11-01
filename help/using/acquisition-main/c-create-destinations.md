@@ -6,7 +6,7 @@ title: Doelen
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Doelen{#destinations}
+
+{#eol}
 
 De verkopers kunnen verbindingsbestemmingen, zoals Web, Diep, of andere verbindingen tot stand brengen, bewaren en uitgeven, die kunnen worden gebruikt terwijl het bouwen van trackable de Verbindingen van de Marketing.
 
@@ -23,7 +25,7 @@ U kunt de volgende typen koppelingsdoelen maken:
 
 * **[!UICONTROL App Deep Link]**
 
-   Diepe-koppelingsdoelen van de app zijn diepgaande koppelingen in het URI-schema waarmee gebruikers naar een Diepe koppeling in uw app worden geleid. U kunt gebruikers bijvoorbeeld naar een productreeks in de mobiele app van een online detailhandelaar leiden.
+   Diepe-koppelingsdoelen van de app zijn diepgaande koppelingen in het URI-schema waarmee gebruikers naar een Diepe koppeling in uw app worden geleid. U kunt gebruikers bijvoorbeeld naar een productlijn in de mobiele app van een online detailhandelaar leiden.
 
 * **[!UICONTROL Web Link]**
 

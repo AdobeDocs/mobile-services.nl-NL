@@ -1,12 +1,12 @@
 ---
-description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct wordt bezorgd, dat later wordt bezorgd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
+description: In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct moet worden bezorgd, dat later moet worden geleverd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
 keywords: mobiel
 solution: Experience Cloud Services,Analytics
 title: Push-bericht plannen
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Planning: pushberichten{#schedule-push-message}
 
-In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct wordt bezorgd, dat later wordt bezorgd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
+{#eol}
+
+In de gebruikersinterface van Adobe Mobile Services kunt u een pushbericht plannen dat direct moet worden bezorgd, dat later moet worden geleverd, en als een terugkerende gebeurtenis. Deze gebeurtenissen kunnen dagelijks, wekelijks, of maandelijks worden gepland.
 
 >[!TIP]
 >

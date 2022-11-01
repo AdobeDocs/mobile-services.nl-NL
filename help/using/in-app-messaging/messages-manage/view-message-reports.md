@@ -6,7 +6,7 @@ title: Berichtenrapporten weergeven
 topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Berichtenrapporten weergeven{#view-message-reports}
+
+{#eol}
 
 U kunt berichtrapporten weergeven voor in-app- en pushberichten.
 
@@ -58,7 +60,7 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
 * **[!UICONTROL Time]**
 
-   De tijd dat het bericht aan apparaten van de Diensten van Mobile werd geduwd.
+   De tijd het bericht aan apparaten van de Mobiele Diensten werd geduwd.
 
 * **[!UICONTROL Status]**
 
@@ -81,7 +83,7 @@ Hier volgt een lijst met de meetgegevens die beschikbaar zijn voor pushberichten
 
    * Het push-platform (APNS, FCM enzovoort) dat is opgegeven om naar te gaan, bestaat niet voor de toepassing van de taak. Het platform verzamelt bijvoorbeeld iOS-pushtokens, maar de APNS-service is niet geconfigureerd.
 
-   * Het bericht kan zijn mislukt omdat de pushservice niet correct is geconfigureerd of omdat het Mobile Services-systeem is uitgeschakeld.
+   * Het bericht zou kunnen ontbroken hebben omdat de dupdienst niet correct werd gevormd of het Mobiele systeem van de Diensten neer is.
    >[!IMPORTANT]
    >
    >Als u een ongebruikelijk groot aantal mislukkingen hebt, controleer uw configuratie van de duwdiensten. Neem contact op met de klantenservice van Adobe als de pushservices correct zijn geconfigureerd.

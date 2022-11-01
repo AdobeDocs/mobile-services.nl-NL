@@ -6,7 +6,7 @@ title: Opties voor SDK-id-service configureren
 topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
 exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 17%
@@ -14,6 +14,8 @@ ht-degree: 17%
 ---
 
 # Opties voor SDK-id-service configureren {#configure-sdk-id-service-options}
+
+{#eol}
 
 U kunt de Adobe Experience Cloud Identity Service-opties configureren op de pagina Manage App Settings terwijl u een nieuwe app maakt of een bestaande app bewerkt.
 
