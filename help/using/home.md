@@ -11,7 +11,7 @@ ht-degree: 10%
 
 ---
 
-# Adobe mobiele services {#adobe-mobile-services}
+# Adobe Mobile Services {#adobe-mobile-services}
 
 In deze handleiding worden technische documentatie en zelfhulp voor Adobe Mobile Services beschreven, waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de hele Adobe Experience Cloud worden samengebracht, zodat u de betrokkenheid van gebruikers met mobiele toepassingen kunt begrijpen en verbeteren.
 
