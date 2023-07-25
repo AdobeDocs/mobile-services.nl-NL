@@ -1,8 +1,7 @@
 ---
 title: Veelgestelde vragen over Adobe Mobile Services
 description: Krijg antwoorden op algemeen gestelde vragen rond de eindedagaankondiging voor de Mobiele Diensten van Adobe.
-exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
+source-git-commit: 0a4e0c9e6172231d8a9f9b561d0a7b7fb230473a
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
